@@ -1,12 +1,13 @@
 .consumerLoanPageWrapper {
   padding: 66px 0 46px 0;
   background-color: var(--light-creame-background);
+  background-image: url("/assets/images/consumerLoanPage_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
   .consumerLoanPageList {
     padding-left: 312px;
-    background-image: url("/assets/images/consumerLoanPage_heroBlock.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 110px) bottom;
+
 
     .consumerLoanHeroItem {
       max-width: 600px;
@@ -234,36 +235,35 @@
     }
   }
 }
+
 // ----- Media queries -----
 @media (max-width: 1390px) {
   .consumerLoanPageWrapper {
-     
-     .consumerLoanPageList {
-        padding-left: 280px;
-        background-position: calc(100% - 50px) bottom;
-        background-size: 350px;
-      }
+    background-position: bottom right;
+    background-size: 100%;
+
+    .consumerLoanPageList {
+      padding-left: 280px;
+
+    }
   }
 }
 
 @media (max-width: 1250px) {
   .consumerLoanPageWrapper {
-     
-     .consumerLoanPageList {
-        padding-left: 50px;
-        background-position: calc(100% - 40px) bottom;
-     }
+
+    .consumerLoanPageList {
+      padding-left: 50px;
+    }
   }
 }
 
 @media (max-width: 974px) {
   .consumerLoanPageWrapper {
-     
-     .consumerLoanPageList {
-        padding-left: 40px;
-        background-position: calc(100% - 20px) bottom;
-        background-size: 200px;
-     }
+
+    .consumerLoanPageList {
+      padding-left: 40px;
+    }
   }
 }
 
@@ -272,70 +272,70 @@
     padding: 36px 0 10px 0;
 
     .StepsWrapper {
-       padding: 0 25px 0 15px;
+      padding: 0 25px 0 15px;
 
-       .stepsItem {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 25px;
+      .stepsItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
 
-          .stepsNumber {
-             width: 70px;
-             height: 70px;
-             flex: none;
+        .stepsNumber {
+          width: 70px;
+          height: 70px;
+          flex: none;
+        }
+
+        .stepsText {
+          text-align: center;
+
+          .stepsDescription {
+            text-align: justify;
+            font-size: 14px;
           }
 
-          .stepsText {
-             text-align: center;
-
-             .stepsDescription {
-                text-align: justify;
-                font-size: 14px;
-             }
-
-             p {
-              text-align: left;
-           }
+          p {
+            text-align: left;
           }
-       }
+        }
+      }
     }
- }
+  }
 
- .clientSuportSection {
-  padding: 20px 0 15px 0;
-}
+  .clientSuportSection {
+    padding: 20px 0 15px 0;
+  }
 
-.faqSection {
-  padding: 38px 0 50px 0;
+  .faqSection {
+    padding: 38px 0 50px 0;
 
-  .faqWrapper {
-     .faqList {
+    .faqWrapper {
+      .faqList {
         padding: 30px 50px 30px 50px;
       }
     }
-  } 
+  }
 }
 
 @media (max-width: 768px) {
   .consumerLoanPageWrapper {
-     padding: 36px 36px 36px 0;
+    padding: 36px 36px 36px 0;
+    background-image: none;
 
-     .consumerLoanPageList {
-        padding-left: 40px;
-        background-image: none;
-     }
+    .consumerLoanPageList {
+      padding-left: 40px;
+    }
   }
 
   .innerNavigationSection {
 
     .innerNavigationLinkList {
-       display: flex;
-       justify-content: flex-start;
-       padding: 0 80px;
-       gap: 10px;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 80px;
+      gap: 10px;
     }
- }
+  }
 
   .benefitsSection {
 

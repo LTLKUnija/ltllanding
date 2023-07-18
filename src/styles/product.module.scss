@@ -3,14 +3,13 @@
 .currentAccountPageWrapper {
   padding: 66px 0 78px 0;
   background-color: var(--light-creame-background);
- 
+  background-image: url("/assets/images/productPage_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
   .currentAccountPageList {
     padding-left: 312px;
-    background-image: url("/assets/images/productPage_heroBlock.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 110px);
-  
+
 
 
     .currentAccountHeroItem {
@@ -319,72 +318,70 @@
     }
   }
 }
+
 // ----- Media queries -----
 @media (max-width: 1320px) {
   .currentAccountPageWrapper {
-     
-     .currentAccountPageList {
-        padding-left: 280px;
-        background-position: calc(100% - 50px) bottom;
-     }
+
+    .currentAccountPageList {
+      padding-left: 280px;
+    }
   }
 }
 
 @media (max-width: 1250px) {
   .currentAccountPageWrapper {
-     
-     .currentAccountPageList {
-        padding-left: 50px;
-        background-position: calc(100% - 40px) bottom;
-     }
+
+    .currentAccountPageList {
+      padding-left: 50px;
+    }
   }
 }
 
 @media (max-width: 974px) {
   .currentAccountPageWrapper {
-     
-     .currentAccountPageList {
-        padding-left: 40px;
-        background-position: calc(100% - 20px) bottom;
-        background-size: 200px;
-     }
+    background-size: 100%;
+
+    .currentAccountPageList {
+      padding-left: 40px;
+    }
   }
 }
 
 
 @media (max-width: 780px) {
   .stepsSection {
-     padding: 36px 0 10px 0;
+    padding: 36px 0 10px 0;
 
-     .stepsWrapper {
-        padding: 0 25px 0 15px;
+    .stepsWrapper {
+      padding: 0 25px 0 15px;
 
-        .stepsItem {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           gap: 25px;
+      .stepsItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
 
-           .stepsNumber {
-              width: 70px;
-              height: 70px;
-              flex: none;
-           }
-
-           .stepsText {
-              text-align: center;
-
-              .stepsDescription {
-                 text-align: justify;
-                 font-size: 14px;
-              }
-
-              p {
-                 text-align: left;
-              }
-           }
+        .stepsNumber {
+          width: 70px;
+          height: 70px;
+          flex: none;
         }
-     }
+
+        .stepsText {
+          text-align: center;
+
+          .stepsDescription {
+            text-align: justify;
+            font-size: 14px;
+          }
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 
   .infoList {
@@ -400,49 +397,49 @@
   }
 
   .clientSuportSection {
-     padding: 20px 0 15px 0;
+    padding: 20px 0 15px 0;
   }
 
   .faqSection {
-     padding: 38px 0 50px 0;
+    padding: 38px 0 50px 0;
 
-     .faqWrapper {
-        .faqList {
-           padding: 30px 50px 30px 50px;
-        }
-     }
+    .faqWrapper {
+      .faqList {
+        padding: 30px 50px 30px 50px;
+      }
+    }
   }
 }
 
 @media (max-width: 768px) {
   .currentAccountPageWrapper {
-     padding: 36px 36px 36px 0;
-     
-     .currentAccountPageList {
-        padding-left: 40px;
-        background-image: none;
-     }
+    padding: 36px 36px 36px 0;
+    background-image: none;
+
+    .currentAccountPageList {
+      padding-left: 40px;
+    }
   }
 
   .innerNavigationSection {
 
     .innerNavigationLinkList {
-       display: flex;
-       justify-content: flex-start;
-       padding: 0 30px;
-       gap: 10px;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 30px;
+      gap: 10px;
     }
- }
+  }
 
   .articleSection {
     padding: 50px 0 24px 0;
 
     .articleWrapper {
-    
+
       .articleItem {
         max-width: 490px;
       }
-      
+
       .articleItemTitle {
         text-align: center;
       }

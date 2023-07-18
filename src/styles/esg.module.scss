@@ -6,33 +6,33 @@
 .esgHeroPage {
    padding: 66px 0 78px 0;
    background-color: var(--theme-color5);
-   background-image: url("/assets/images/homePage_heroBlock.svg");
+   background-image: url("/assets/images/esgPage_HeroBlock.svg");
    background-size: contain;
    background-repeat: no-repeat;
-   background-position: calc(100% - 90px) 0;  
+   background-position: bottom right;
 
    .esgPageList {
-     padding-left: 250px;
+      padding-left: 250px;
    }
- 
+
    .Description {
-     font-weight: 400;
-     font-size: 18px;
-     color: #000000;
-     white-space: pre-line;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      white-space: pre-line;
    }
 
    .esgHeroItem {
       width: 474px;
-    }
+   }
 
-    .esgTitle {
+   .esgTitle {
       font-size: 30px;
       font-weight: 700;
       line-height: 38px;
       margin-bottom: 35px;
-     }
- }
+   }
+}
 
 .innerNavigationSection {
    padding: 44px 0 24px 0;
@@ -42,32 +42,32 @@
    z-index: 8;
 
    .innerNavigationLinkList {
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
    }
- 
-   .innerNavLink {
-     font-family: 'Lexend';
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 24px;
-     color: var(--main-text-color);
-     text-decoration: none;
-     margin-right: 30px;
- 
-     &:last-child {
-       margin-right: 0;
-     }
- 
-     &.change-language-link {
-       text-transform: uppercase;
-       font-weight: 600;
-     }
-   }
- }
 
- .enviromentalProtectionSection {
+   .innerNavLink {
+      font-family: 'Lexend';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--main-text-color);
+      text-decoration: none;
+      margin-right: 30px;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &.change-language-link {
+         text-transform: uppercase;
+         font-weight: 600;
+      }
+   }
+}
+
+.enviromentalProtectionSection {
    padding: 100px 0 54px 0;
 
    .enviromentalProtectionBlock {
@@ -85,6 +85,7 @@
       min-width: 429px;
       height: 429px;
    }
+
    .imgMargin {
       margin-top: 25px;
    }
@@ -107,16 +108,16 @@
          margin-bottom: 54px;
       }
    }
- }
+}
 
- .annualReportsSection {
+.annualReportsSection {
    padding: 64px 0 70px 0;
 
    .annualReportsWrapper {
       max-width: 770px;
       padding: 0 15px 0 15px;
       margin: 0 auto;
-   
+
       h3 {
          font-size: 25px;
          font-weight: 700;
@@ -124,25 +125,25 @@
          text-align: center;
          margin-bottom: 30px;
       }
-   
+
       ul {
          display: flex;
          border-bottom: 1px solid #ACACAC;
          margin-bottom: 40px;
-   
+
          li {
             width: 324px;
             list-style: none;
             padding-left: 35px;
             margin-bottom: 17px;
             cursor: pointer;
-   
+
             &:last-child {
                margin-bottom: 0;
             }
          }
       }
-   
+
       .linkStyle {
          font-size: 16px;
          font-weight: 400;
@@ -150,7 +151,7 @@
          color: var(--light-color);
          text-decoration: none;
       }
-   
+
       .annualLintsReport {
          margin: 0 auto;
          max-width: 380px;
@@ -174,6 +175,5 @@
          height: 32px;
          background: url(/assets/images/Pdficon.svg);
       }
-    }
- }
- 
+   }
+}

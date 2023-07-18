@@ -7,6 +7,14 @@
     background-position: 0 58px;
   }
 
+  .slickSlide2 {
+    height: 580px;
+    background-color: var(--theme-color5);
+    background-image: url(/assets/images/heroLider1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 58px;
+  }
+
   .slideContent {
     padding-top: 80px;
 
@@ -23,12 +31,13 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
-      color: var(--main-text-color);  
+      color: var(--main-text-color);
       max-width: 470px;
       margin-bottom: 44px;
     }
   }
 }
+
 @media (max-width: 1460px) {
   .indexPageSlider {
 
@@ -43,7 +52,7 @@
 
     .slideContent {
       padding-top: 80px;
-  
+
       h1 {
         font-weight: 800;
         font-size: 50px;
@@ -51,25 +60,26 @@
         color: var(--main-text-color);
         margin-bottom: 44px;
       }
-  
+
       p {
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
-        color: var(--main-text-color);  
+        color: var(--main-text-color);
         max-width: 470px;
         margin-bottom: 44px;
       }
     }
   }
 }
+
 @media (max-width: 1250px) {
   .indexPageSlider {
 
     .slideContent {
       padding-left: 30px;
       padding-top: 80px;
-  
+
       h1 {
         font-weight: 800;
         font-size: 40px;
@@ -77,18 +87,19 @@
         color: var(--main-text-color);
         margin-bottom: 44px;
       }
-  
+
       p {
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
-        color: var(--main-text-color);  
+        color: var(--main-text-color);
         max-width: 470px;
         margin-bottom: 44px;
       }
     }
   }
 }
+
 @media (max-width: 1024px) {
   .indexPageSlider {
 
@@ -108,7 +119,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  
+
       h1 {
         font-weight: 800;
         font-size: 40px;
@@ -118,18 +129,19 @@
         text-align: center;
         max-width: 680px;
       }
-  
+
       p {
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
-        color: var(--main-text-color);  
+        color: var(--main-text-color);
         max-width: 470px;
         margin-bottom: 44px;
       }
     }
   }
 }
+
 @media (max-width: 768px) {
   .indexPageSlider {
     .slickSlide {
@@ -148,7 +160,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  
+
       h1 {
         font-weight: 800;
         font-size: 35px;
@@ -158,16 +170,15 @@
         text-align: center;
         max-width: 680px;
       }
-  
+
       p {
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
-        color: var(--main-text-color);  
+        color: var(--main-text-color);
         max-width: 470px;
         margin-bottom: 44px;
       }
     }
   }
 }
-
