@@ -309,11 +309,7 @@ export default function Deposit() {
               </div>
             </div>
             <div className={styles.depositSectionButton}>
-              <Link
-                className="light-green-action-button long"
-                style={{ background: "#FC5E48" }}
-                href="/"
-              >
+              <Link className="containedBtn long red" href="/">
                 {t.termDeposit.calcBlock.button}
               </Link>
             </div>

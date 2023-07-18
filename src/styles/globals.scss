@@ -436,6 +436,7 @@ footer {
   color: #E9B317;
   text-decoration: none;
   transition: all 0.3s ease-out;
+  cursor: pointer;
 
   &:hover {
     background-color: #E9B317;
@@ -445,6 +446,54 @@ footer {
 
   &.long {
     width: 252px;
+  }
+}
+
+.containedBtn {
+  width: 194px;
+  height: 42px;
+  background: #E9B317;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: inherit;
+    border: solid 1px #E9B317;
+    color: #E9B317;
+    transition: all 0.3s ease-out;
+  }
+
+  &.long {
+    width: 252px;
+  }
+
+  &.red {
+    background: #FC5E48;
+
+    &:hover {
+      background: white;
+      border: solid 1px #FC5E48;
+      color: #FC5E48;
+    }
+  }
+
+  &.blue {
+    background: #034585;
+
+    &:hover {
+      background: white;
+      border: solid 1px #034585;
+      color: #034585;
+    }
   }
 }
 
