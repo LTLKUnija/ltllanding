@@ -5,12 +5,12 @@ export const links = [
       uid: 0,
       links: [
          {
-            linkName: "1General provisions",
+            linkName: "Link from my account",
             linkUrl: "https://storage.cloud.google.com/llp_bucket-1/test_Pdf.pdf",
          },
          {
-            linkName: "2Identification and representation",
-            linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
+            linkName: "Link from LTL account",
+            linkUrl: "https://storage.cloud.google.com/ltlku_web_page/test_Pdf.pdf",
          },
          {
             linkName: "3Banking secret and processing customer data",

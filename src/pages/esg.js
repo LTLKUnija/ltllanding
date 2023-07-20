@@ -17,16 +17,6 @@ export default function Esg() {
   const [annualLink, setAnnualLinks] = useState([]);
   const [activeAnnualLinks, setActiveLinks] = useState([]);
 
-  useEffect(() => {
-    const getLinks = async () => {
-      const resp = await fetch(`/api/annualReports`);
-      const data = await resp.json();
-      setAnnualLinks(data.reverse());
-      setActiveLinks(data[0].links);
-    };
-    getLinks();
-  }, []);
-
   function tabHandler(e) {
     let idx = annualLink.findIndex((year) => year.uid == e.target.dataset.id);
     let temp = [...annualLink];
@@ -46,94 +36,49 @@ export default function Esg() {
             <div className={styles.esgHeroItem}>
               <h1 className={styles.esgTitle}>{t.esg.heroBlock.title}</h1>
               <div className={styles.Description}>
-                <p>{t.esg.heroBlock.description1}</p>
+                <p>{t.esg.heroBlock.description}</p>
               </div>
             </div>
           </div>
-        </section>
-        <section className={styles.innerNavigationSection}>
-          <div className={styles.innerNavigationLinkList}>
-            <Link
-              className={styles.innerNavLink}
-              href="#enviromentalProtection"
-            >
-              {t.esg.innerLinkBlock.link1}
-            </Link>
-            <Link className={styles.innerNavLink} href="#socialPolitics">
-              {t.esg.innerLinkBlock.link2}
-            </Link>
-            <Link className={styles.innerNavLink} href="#esgPolicy">
-              {t.esg.innerLinkBlock.link3}
-            </Link>
-            <Link className={styles.innerNavLink} href="#reports">
-              {t.esg.innerLinkBlock.link4}
-            </Link>
-          </div>
-        </section>
-        <section className={styles.enviromentalProtectionSection}>
-          <div className={styles.container}>
-            <div
-              id="enviromentalProtection"
-              className={styles.enviromentalProtectionBlock}
-            >
-              <Image
-                src={Img1}
-                alt="Available Jobs"
-                style={{
-                  width: "auto",
-                  height: "auto",
-                }}
-              />
-              <div className={styles.enviromentalProtectionArticle}>
-                <h3>{t.esg.articleBlock.article1.title}</h3>
-                <p>{t.esg.articleBlock.article1.text}</p>
-                <div className="actionButtonBlock">
-                  <Link href="/" className="containedBtn">
-                    {t.esg.learnMoreButton}
-                  </Link>
-                </div>
+          <div
+            id="socialPolitics"
+            className={styles.enviromentalProtectionBlock}
+          >
+            <div className={styles.enviromentalProtectionArticle}>
+              <h3>{t.esg.articleBlock.article2.title}</h3>
+              <p>{t.esg.articleBlock.article2.text}</p>
+              <div className="actionButtonBlock">
+                <Link href="/" className="outlinedBtn">
+                  {t.esg.learnMoreButton}
+                </Link>
               </div>
             </div>
-            <div
-              id="socialPolitics"
-              className={styles.enviromentalProtectionBlock}
-            >
-              <div className={styles.enviromentalProtectionArticle}>
-                <h3>{t.esg.articleBlock.article2.title}</h3>
-                <p>{t.esg.articleBlock.article2.text}</p>
-                <div className="actionButtonBlock">
-                  <Link href="/" className="outlinedBtn">
-                    {t.esg.learnMoreButton}
-                  </Link>
-                </div>
-              </div>
 
-              <Image
-                src={Img2}
-                alt="Available Jobs"
-                style={{
-                  width: "auto",
-                  height: "auto",
-                }}
-              />
-            </div>
-            <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
-              <Image
-                src={Img3}
-                alt="Available Jobs"
-                style={{
-                  width: "auto",
-                  height: "auto",
-                }}
-              />
-              <div className={styles.enviromentalProtectionArticle}>
-                <h3>{t.esg.articleBlock.article3.title}</h3>
-                <p>{t.esg.articleBlock.article3.text}</p>
-                <div className="actionButtonBlock">
-                  <Link href="/" className="outlinedBtn">
-                    {t.esg.learnMoreButton}
-                  </Link>
-                </div>
+            <Image
+              src={Img2}
+              alt="Available Jobs"
+              style={{
+                width: "auto",
+                height: "auto",
+              }}
+            />
+          </div>
+          <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
+            <Image
+              src={Img3}
+              alt="Available Jobs"
+              style={{
+                width: "auto",
+                height: "auto",
+              }}
+            />
+            <div className={styles.enviromentalProtectionArticle}>
+              <h3>{t.esg.articleBlock.article3.title}</h3>
+              <p>{t.esg.articleBlock.article3.text}</p>
+              <div className="actionButtonBlock">
+                <Link href="/" className="outlinedBtn">
+                  {t.esg.learnMoreButton}
+                </Link>
               </div>
             </div>
           </div>

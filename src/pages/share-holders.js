@@ -2,8 +2,14 @@ import styles from "@/styles/share-holders.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function ShareHolders() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+ 
    const [links, setLinks] = useState([]);
    const [activeTabLinks, setActiveTabLinks] = useState([]);
    const [activeAgendaList, setActiveAgendaList] = useState([]);
@@ -36,13 +42,9 @@ export default function ShareHolders() {
          <main>
             <section className={styles.shareHoldersSection}>
                <div className={styles.shareHoldersWrapper}>
-                  <h2>Akcininkams</h2>
-                  <p>Our vision is to create a world where everyone has access to financial services, 
-                     enabling them to build a brighter future for themselves and their communities. 
-                     We strive to unlock financial inclusion by empowering individuals to make informed 
-                     decisions about their financial wellbeing.
-                  </p>
-                  <h3>Akcininkų susirinkimai</h3>
+                  <h2>{t.shareholders.title}</h2>
+                  <p>{t.shareholders.description}</p>
+                  <h3>{t.shareholders.subTitle}</h3>
                   <ul className={styles.tabsList}>
                      {links.map((tab, idx) => {
                         return (
@@ -77,11 +79,11 @@ export default function ShareHolders() {
             </section>
             <section className={styles.contactsSection}>
                <div className={styles.contactsWrapper}>
-                  <h3>Kontaktai</h3>
+                  <h3>{t.shareholders.contacts.title}</h3>
                   <div className={styles.contactsBlock}>
                      <div className={styles.img}></div>
                      <div className={styles.contactsInfo}>
-                        <h4>Direktorius</h4>
+                        <h4>{t.shareholders.contacts.director}</h4>
                         <p>Ruslanas Telnovas
                            ruslanas.telnovas@ltlku.lt
                            (8 5) 205 5240
@@ -89,7 +91,7 @@ export default function ShareHolders() {
                         </p>
                      </div>
                      <div className={styles.contactsInfo}>
-                        <h4>LTL Kredito Unija</h4>
+                        <h4>{t.shareholders.contacts.companyName}</h4>
                         <p>Sporto g. 18, LT-09238, Vilnius Įmonės kodas 302791356
                            (8 5) 205 5240
                            info@ltlku.lt

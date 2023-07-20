@@ -78,6 +78,23 @@ export default {
     },
     learnMoreButton: "Learn More",
   },
+  priceList: {
+    title: "Price List",
+    innerLinkBlock: {
+      link1: "Interest rates on term-deposits",
+      link2: "Price list for private individuals",
+      link3: "Price list for corporate",
+    },
+    table: {
+      accounts: "Accounts",
+      openingAccount: "Opening an account",
+      maintainingAccount: "Maintaining the account",
+      closingAccount: "Closing the account",
+      cashPoolingAccount: "Cash pooling account",
+      agreementSigning: "Agreement signing",
+      entrepreneuAccount: "Entrepreneur account",
+    },
+  },
   licence: {
     pageTitle: "Licence",
     description:
@@ -219,6 +236,9 @@ export default {
       title: "Contacts",
       text: "To gain access to our infrastructure, qualified trusted service providers (AISPs, PISPs) can reach out to us via email openbanking@ltlku.lt.",
     },
+  },
+  career: {
+    title: "Career",
   },
   privetCurrentAccount: {
     pageTitle: "Current account: You don‘t have to be big to be international",
@@ -383,6 +403,31 @@ export default {
       bullet4: "Low fees for early loan repayment",
       bullet5: "Loan terms of up to 20 years are available",
       bullet6: "Interest rates starting from 3.50%",
+    },
+  },
+  finacialReporting: {
+    title: "Financial reporting",
+    quarterlyReports: "Quarterly reports",
+    annualReporting: "Annual reports",
+    factsheets: "Factsheets",
+    presentations: "Presentations",
+    finacialCalendar: {
+      title: "Financial calendar",
+      description:
+        "LTL discloses monthly and quarterly financial results at 8.00 a.m on the dates announced in the Financial calendar. After disclosing the quarterly results, in the same morning at 9.00 a.m.",
+    },
+    innerLinkBlock: {
+      quarterlyReports: "Quarterly reports",
+      annualReporting: "Annual reports",
+      factsheets: "Factsheets",
+      presentations: "Presentations",
+      contacts: "Contacts",
+      finacialCalendar: "Financial Calendar",
+    },
+    contacts: {
+      title: "Contacts",
+      director: "Director",
+      companyName: "LTL Credit Union",
     },
   },
   equityLoan: {
@@ -571,7 +616,25 @@ export default {
     },
   },
   privacyPolicy: {
-    pageTitle: "Privacy Policy & Cookies",
+    title: "Privacy Policy & Cookies",
+    description:
+      "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+  },
+  shareholders: {
+    title: "For shareholders",
+    description:
+      "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+    subTitle: "Shareholders' meetings",
+    contacts: {
+      title: "Contacts",
+      director: "Director",
+      companyName: "LTL Credit Union",
+    },
+  },
+  security: {
+    title: "Security",
+    description:
+      "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
   },
   suportsComplaints: {
     pageTitle: "Support & Complaints",
@@ -632,6 +695,10 @@ export default {
     namePlaceholder: "Name",
     emailPlaceholder: "E-mail address",
     button: "Send",
+  },
+  news: {
+    title: "News",
+    readMore: "Read More",
   },
   business: {
     termDeposit: {

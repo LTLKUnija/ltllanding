@@ -10,7 +10,7 @@ import en from '@/locales/en'
 export default function TemrsAndConditions() {
 
    const db = getFirestore();
-   const colRef = collection(db, "tnc")
+   const colRef = collection(db, "ltl-test")
    getDocs(colRef)
    .then((snapshot) => {
       let tncList = []
