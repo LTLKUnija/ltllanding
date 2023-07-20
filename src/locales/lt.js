@@ -749,9 +749,15 @@ export default {
   },
   moneyLoundering: {
     title:
-      "Pinigų plovimo ir teroristų finansavimo prevencija, tarptautinių sankcijų įgyvendinimas",
-    description:
-      "Mes esame tvirtai įsipareigoję kovoti su finansiniais nusikaltimais ir teroristų finansavimu (PPTFP), taip pat užtikrinti tarptautinių sankcijų įgyvendinimą. Siekdami išspręsti šias problemas, mes esame apibrėžę bei vykdome vidaus PPTFP politiką, kuri yra orientuotą į efektyvų šių rizikų valdymą. Savo veiksmais siekiame užkirsti kelią bet kokiam piktnaudžiavimui mūsų produktais ir paslaugomis pinigų plovimo, teroristų finansavimo ir/ar sankcijų vengimo tikslais. PPTFP politika yra pagrindas nustatant bei įgyvendinant aiškias procedūras ir instrukcijas PPTFP srityje, kurių mūsų darbuotojai privalo laikytis savo kasdienėje veikloje.\n\n Mūsų tikslas – nustatyti, įvertinti ir suprasti finansinių nusikaltimų rizikas, su kuriomis susiduriame, ir įgyvendinti atitinkamas kontrolės priemones, atitinkančias prisiimamą riziką. Nesvarbu, ar tai susiję su individualiais klientais, ar bendrais mūsų verslo procesais, kiekvienam scenarijui stengiamės įsivertinti tikrąjį rizikos lygį. Pripažįstame, kad veiksmingai sprendžiant PPTFP problemas, iš mūsų klientų ir partnerių šis procesas galėtų pareikalauti papildomo įsitraukimo, laiko sąnaudų ir pastangų. Todėl, siekdami užtikrinti sklandų ir veiksmingą procesą, taikome rizika pagrįstą metodą, leidžiantį imtis specifinių veiksmų, kurie priklauso nuo individualių klientų ir/ar transakcijų rizikos profilių.\n \n Užmezgant ir palaikant santykius su mūsų klientais, visada atsiremiam mūsų apibrėžtu rizikos apetitu, kuris tapo vienu esminiu PPTFP politikos įgyvendinimo elementu bei nustato mums priimtinos rizikos ribas. Maloniai prašome skirti šiek tiek laiko ir susipažinti su Rizikos apetito deklaraciją (link).",
+      "Pinigų plovimo ir teroristų finansavimo prevencija, tarptautinių sankcijų įgyvendinima",
+    articleBlock: {
+      article1:
+        "Mes esame tvirtai įsipareigoję kovoti su finansiniais nusikaltimais ir teroristų finansavimu (PPTFP), taip pat užtikrinti tarptautinių sankcijų įgyvendinimą. Siekdami išspręsti šias problemas, mes esame apibrėžę bei vykdome vidaus PPTFP politiką, kuri yra orientuotą į efektyvų šių rizikų valdymą. Savo veiksmais siekiame užkirsti kelią bet kokiam piktnaudžiavimui mūsų produktais ir paslaugomis pinigų plovimo, teroristų finansavimo ir/ar sankcijų vengimo tikslais. PPTFP politika yra pagrindas nustatant bei įgyvendinant aiškias procedūras ir instrukcijas PPTFP srityje, kurių mūsų darbuotojai privalo laikytis savo kasdienėje veikloje.",
+      article2:
+        "Mūsų tikslas – nustatyti, įvertinti ir suprasti finansinių nusikaltimų rizikas, su kuriomis susiduriame, ir įgyvendinti atitinkamas kontrolės priemones, atitinkančias prisiimamą riziką. Nesvarbu, ar tai susiję su individualiais klientais, ar bendrais mūsų verslo procesais, kiekvienam scenarijui stengiamės įsivertinti tikrąjį rizikos lygį. Pripažįstame, kad veiksmingai sprendžiant PPTFP problemas, iš mūsų klientų ir partnerių šis procesas galėtų pareikalauti papildomo įsitraukimo, laiko sąnaudų ir pastangų. Todėl, siekdami užtikrinti sklandų ir veiksmingą procesą, taikome rizika pagrįstą metodą, leidžiantį imtis specifinių veiksmų, kurie priklauso nuo individualių klientų ir/ar transakcijų rizikos profilių.",
+      article3:
+        "Užmezgant ir palaikant santykius su mūsų klientais, visada atsiremiam mūsų apibrėžtu rizikos apetitu, kuris tapo vienu esminiu PPTFP politikos įgyvendinimo elementu bei nustato mums priimtinos rizikos ribas. Maloniai prašome skirti šiek tiek laiko ir susipažinti su Rizikos apetito deklaraciją (link).",
+    },
   },
   contacts: {
     heroBlock: {

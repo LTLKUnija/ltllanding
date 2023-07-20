@@ -66,7 +66,7 @@ export default function Home() {
                   <h2>{t.indexPage.articleBlock.article3.title}</h2>
                   <p>{t.indexPage.articleBlock.article3.description}</p>
                   <div className="actionButtonBlock">
-                    <Link className="light-green-action-button" href="/">
+                    <Link className="outlinedBtn" href="/">
                       Learn More
                     </Link>
                   </div>

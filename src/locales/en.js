@@ -46,6 +46,94 @@ export default {
         "With Kocomo, a home is co-owned by no more than eight families while we act as a neutral third-party administrator to ensure transparency and fairness",
       learnMoreButton: "Learn more",
     },
+    articleBlock: {
+      article1: {
+        title: "Tired of spending time in bank branches?",
+        description:
+          "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba).",
+      },
+      article2: {
+        title: "Borrowing wisely pays off!",
+        description:
+          "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba).",
+      },
+      article3: {
+        title: "Let the money work for you",
+        description:
+          "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba).",
+      },
+    },
+    bulletsBlock: {
+      title: "The LTL makes banking easy",
+      bullet1: "An exquisite home that you could not afford otherwise",
+      bullet2: "Potential appreciation in value",
+      bullet3: "Potential rental income if you so desire",
+      bullet4: "Renting facilitated and managed by a third party",
+    },
+    button: {
+      text: "Learn more",
+    },
+  },
+  aboutUs: {
+    heroBlock: {
+      title: "About Us",
+      description: {
+        visionTitle: "Vision",
+        visionDescription:
+          "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+        missionTitle: "Mission",
+        missionDescription:
+          "Unlocking Financial Inclusion - Our Mission, Your Future.",
+      },
+    },
+    innerLinkBlock: {
+      people: "People",
+      values: "Values",
+      jobs: "Jobs/Career",
+      sponsorship: "Sponsorship",
+      history: "History",
+      news: "News",
+    },
+    team: {
+      title: "LTL Team",
+      description:
+        "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+      duties: "Duties",
+    },
+    jobsSection: {
+      title: "Available jobs",
+      description:
+        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
+      readMore: "Available Jobs",
+    },
+    sponsorshipSection: {
+      title: "Available jobs",
+      description:
+        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
+      readMore: "Available Jobs",
+    },
+    benefitsArticle: {
+      article1: {
+        title: "Transparency & accountability",
+        description:
+          "We are aiming to provide access to fair and affordable banking services. We are transparent and accountable in our decisions, and take into account the impact of our actions on people's daily lives.",
+      },
+      article2: {
+        title: "Balancing interests and empowering people",
+        description:
+          "We are striving to create a more equitable financial system that balances the interests of our company, our customers and our society. We allocate resources and provide education to empower customers to understand the banking system and make informed decisions.",
+      },
+      article3: {
+        title: "Human-centric approach to banking",
+        description:
+          "Finally, we apply a more human-centric approach to banking, ensuring that customers are treated with respect and dignity, and respecting the emotional and psychological needs of customers.",
+      },
+    },
+    history: {
+      title: "History",
+      description:
+        "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+    },
   },
   esg: {
     heroBlock: {
