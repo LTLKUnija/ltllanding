@@ -45,7 +45,7 @@ export default function Esg() {
                   {t.esg.heroBlock.title}
                 </h1>
                 <div className={styles.Description}>
-                  <p>{t.esg.heroBlock.description1}</p>
+                  <p>{t.esg.heroBlock.description}</p>
                 </div>
               </div>
             </div>

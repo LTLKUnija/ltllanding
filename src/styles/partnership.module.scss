@@ -1,6 +1,10 @@
 .partnershipSection {
    padding: 100px 0 70px 0;
    background-color: var(--ligh-grey-background);
+   background-image: url("/assets/images/partnership_heroBlock.svg");
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   background-size: 35%;
 
    .partnershipWrapper {
       max-width: 920px;

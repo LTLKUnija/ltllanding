@@ -1,7 +1,7 @@
 .privacyPolicySection {
    padding: 26px 0 180px 0;
 
-   .tprivacyPolicyBlock {
+   .privacyPolicyBlock {
       max-width: 920px;
       margin: 0 auto;
       padding: 15px 0 15px 0;
@@ -12,6 +12,14 @@
       font-size: 50px;
       font-weight: 700;
       line-height: 62px;
+      margin-bottom: 80px;
+   }
+
+   p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
       margin-bottom: 80px;
    }
 

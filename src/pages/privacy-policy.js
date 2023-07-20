@@ -26,7 +26,8 @@ export default function PrivacyPolicy() {
          <main>
          <section className={styles.privacyPolicySection}>
             <div className={styles.privacyPolicyBlock}>
-               <h1>{t.privacyPolicy.pageTitle}</h1>
+               <h1>{t.privacyPolicy.title}</h1>
+               <p>{t.privacyPolicy.description}</p>
             </div>
             <div className={styles.privacyPolicyLinks}>
                <ul>

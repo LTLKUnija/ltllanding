@@ -4,8 +4,14 @@ import IndexNews from "@/components/IndexNews"
 import Link from "next/link"
 import styles from '@/styles/Home.module.scss'
 import Image from 'next/image'
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function Home() {
+  const router = useRouter();
+  const t = router.locale === 'lt' ? lt : en
+
   
   return (
     <>
@@ -26,16 +32,12 @@ export default function Home() {
                 />
               </div>
               <div className={styles.articleBlock}>
-                <h2>Pabodo laiką leisti banko skyriuose?</h2>
+                <h2>{t.indexPage.articleBlock.article1.title}</h2>
                 <p>
-                  Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. 
-                  The Romans stocked their grain silos here, 
-                  Christians walked stages of a medieval pilgrimage route, 
-                  and Napoleon plundered art 
-                  (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba). 
+                  {t.indexPage.articleBlock.article1.description} 
                 </p>
                 <div className="actionButtonBlock">
-                  <Link className="light-green-action-button" href="/">Learn More</Link>
+                  <Link className="light-green-action-button" href="/">{t.indexPage.button.text}</Link>
                 </div>
               </div>
             </article>
@@ -49,13 +51,9 @@ export default function Home() {
                   />
               </div>
               <div className={styles.articleBlock}>
-                <h2>Pabodo laiką leisti banko skyriuose?</h2>
+                <h2>{t.indexPage.articleBlock.article2.title}</h2>
                 <p>
-                  Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. 
-                  The Romans stocked their grain silos here, 
-                  Christians walked stages of a medieval pilgrimage route, 
-                  and Napoleon plundered art 
-                  (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba). 
+                  {t.indexPage.articleBlock.article2.description}
                 </p>
                 <div className="actionButtonBlock">
                   <Link className="light-green-action-button" href="/">Learn More</Link>
@@ -72,13 +70,9 @@ export default function Home() {
                   />
               </div>
               <div className={styles.articleBlock}>
-                <h2>Pabodo laiką leisti banko skyriuose?</h2>
+                <h2>{t.indexPage.articleBlock.article3.title}</h2>
                 <p>
-                  Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. 
-                  The Romans stocked their grain silos here, 
-                  Christians walked stages of a medieval pilgrimage route, 
-                  and Napoleon plundered art 
-                  (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba). 
+                  {t.indexPage.articleBlock.article3.description} 
                 </p>
                 <div className="actionButtonBlock">
                   <Link className="light-green-action-button" href="/">Learn More</Link>
@@ -89,12 +83,12 @@ export default function Home() {
         </section>
         <section className={styles.bulletPoints}>
           <div className="container">
-            <h2>The LTL makes banking easy</h2>
+            <h2>{t.indexPage.bulletsBlock.title}</h2>
             <ul>
-              <li>An exquisite home that you could not afford otherwise</li>
-              <li>Potential appreciation in value</li>
-              <li>Potential rental income if you so desire</li>
-              <li>Renting facilitated and managed by a third party</li>
+              <li>{t.indexPage.bulletsBlock.bullet1}</li>
+              <li>{t.indexPage.bulletsBlock.bullet2}</li>
+              <li>{t.indexPage.bulletsBlock.bullet3}</li>
+              <li>{t.indexPage.bulletsBlock.bullet4}</li>
             </ul>
           </div>
         </section>

@@ -44,12 +44,88 @@ export default {
       heroBlockH1: 'Making the dream possible at a fraction of the price',
       heroBlockText: 'With Kocomo, a home is co-owned by no more than eight families while we act as a neutral third-party administrator to ensure transparency and fairness',
       learnMoreButton: "Learn more"
+    },
+    articleBlock: {
+      article1: {
+        title: "Tired of spending time in bank branches?",
+        description: "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba)."
+      },
+      article2: {
+        title: "Borrowing wisely pays off!",
+        description: "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba)."
+      },
+      article3: {
+        title: "Let the money work for you",
+        description: "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba)."
+      }
+    },
+    bulletsBlock: {
+      title: "The LTL makes banking easy",
+      bullet1: "An exquisite home that you could not afford otherwise",
+      bullet2: "Potential appreciation in value",
+      bullet3: "Potential rental income if you so desire",
+      bullet4: "Renting facilitated and managed by a third party"
+    },
+    button: {
+      text: "Learn more"
+    }
+  },
+  aboutUs: {
+    heroBlock: {
+      title: "About Us",
+      description: {
+        visionTitle: "Vision",
+        visionDescription: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+        missionTitle: "Mission",
+        missionDescription: "Unlocking Financial Inclusion - Our Mission, Your Future."
+      }
+    },
+    innerLinkBlock: {
+      people: "People",
+      values: "Values",
+      jobs: "Jobs/Career",
+      sponsorship: "Sponsorship",
+      history: "History",
+      news: "News"
+    },
+    team: {
+      title: "LTL Team",
+      description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+      duties: "Duties"
+    },
+    jobsSection: {
+      title: "Available jobs",
+      description: "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
+      readMore: "Available Jobs"
+    },
+    sponsorshipSection: {
+      title: "Available jobs",
+      description: "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
+      readMore: "Available Jobs"
+    },
+    benefitsArticle: {
+      article1: {
+        title: "Transparency & accountability",
+        description: "We are aiming to provide access to fair and affordable banking services. We are transparent and accountable in our decisions, and take into account the impact of our actions on people's daily lives."
+      },
+      article2: {
+        title: "Balancing interests and empowering people",
+        description: "We are striving to create a more equitable financial system that balances the interests of our company, our customers and our society. We allocate resources and provide education to empower customers to understand the banking system and make informed decisions."
+      },
+      article3: {
+        title: "Human-centric approach to banking",
+        description: "Finally, we apply a more human-centric approach to banking, ensuring that customers are treated with respect and dignity, and respecting the emotional and psychological needs of customers."
+      }
+    },
+    history: {
+      title: "History",
+      description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing."
     }
   },
   esg: {
     heroBlock: {
       title: "ESG Policy",
-      description1: "Our organization is dedicated to supporting the global goals set by the United Nations. These goals focus on sustainable development, aiming for prosperity and peace for everyone and the planet. We are creating a responsible organization that cares about the environment and society.  We practice good ethics, improve our governance, and uphold the United Nations Global Compact (UNGC).\n\nFor a detailed insight into our ESG Policy please follow the link.",
+      description: "Our organization is dedicated to supporting the global goals set by the United Nations. These goals focus on sustainable development, aiming for prosperity and peace for everyone and the planet. We are creating a responsible organization that cares about the environment and society.  We practice good ethics, improve our governance, and uphold the United Nations Global Compact (UNGC).\n\nFor a detailed insight into our ESG Policy please follow the link.",
     },
     articleBlock: {
       article1: {
@@ -75,6 +151,23 @@ export default {
       link4: "ESG Reports"
     },
     learnMoreButton: "Learn More"
+  },
+  priceList: {
+    title: "Price List",
+    innerLinkBlock: {
+      link1: "Interest rates on term-deposits",
+      link2: "Price list for private individuals",
+      link3: "Price list for corporate",
+    },
+    table: {
+      accounts: "Accounts",
+      openingAccount: "Opening an account",
+      maintainingAccount: "Maintaining the account",
+      closingAccount: "Closing the account",
+      cashPoolingAccount: "Cash pooling account",
+      agreementSigning: "Agreement signing",
+      entrepreneuAccount: "Entrepreneur account",
+    },
   },
   licence: {
     pageTitle: "Licence",
@@ -201,8 +294,11 @@ export default {
     },
     contactBlock: {
       title: "Contacts",
-      text: "To gain access to our infrastructure, qualified trusted service providers (AISPs, PISPs) can reach out to us via email openbanking@ltlku.lt."
+      text: "To gain access to our infrastructure, qualified trusted service providers (AISPs, PISPs) can reach out to us via email "
     }
+  },
+  career: {
+    title: "Career"
   },
   privetCurrentAccount: {
     pageTitle: "Current account: You don‘t have to be big to be international",
@@ -351,6 +447,30 @@ export default {
       bullet4: "Low fees for early loan repayment",
       bullet5: "Loan terms of up to 20 years are available",
       bullet6: "Interest rates starting from 3.50%"
+    }
+  },
+  finacialReporting: {
+    title: "Financial reporting",
+    quarterlyReports: "Quarterly reports",
+    annualReporting: "Annual reports",
+    factsheets: "Factsheets",
+    presentations: "Presentations",
+    finacialCalendar: {
+      title: "Financial calendar",
+      description: "LTL discloses monthly and quarterly financial results at 8.00 a.m on the dates announced in the Financial calendar. After disclosing the quarterly results, in the same morning at 9.00 a.m."
+    },
+    innerLinkBlock: {
+      quarterlyReports: "Quarterly reports",
+      annualReporting: "Annual reports",
+      factsheets: "Factsheets",
+      presentations: "Presentations",
+      contacts: "Contacts",
+      finacialCalendar: "Financial Calendar"
+    },
+    contacts: {
+      title: "Contacts",
+      director: "Director",
+      companyName: "LTL Credit Union"
     }
   },
   equityLoan: {
@@ -515,7 +635,22 @@ export default {
     }
   },
   privacyPolicy: {
-    pageTitle: "Privacy Policy & Cookies",
+    title: "Privacy Policy & Cookies",
+    description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing."
+  },
+  shareholders: {
+    title: "For shareholders",
+    description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+    subTitle: "Shareholders' meetings",
+    contacts: {
+      title: "Contacts",
+      director: "Director",
+      companyName: "LTL Credit Union"
+    }
+  },
+  security: {
+    title: "Security",
+    description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing."
   },
   suportsComplaints: {
     pageTitle: "Support & Complaints",
@@ -561,6 +696,10 @@ export default {
     namePlaceholder: "Name",
     emailPlaceholder: "E-mail address",
     button: "Send"
+  },
+  news:{
+    title: "News",
+    readMore: "Read More"
   },
   business: {
     termDeposit: {
@@ -902,6 +1041,5 @@ export default {
       },
       faq: "D.U.K."
     }
-
-  }
+  },
 }

@@ -4,7 +4,6 @@ import { useRouter } from "next/router"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
 
-
 const Steper = ({ steperData }) => {
 
   const router = useRouter();

@@ -1,8 +1,14 @@
 import Link from "next/link";
 import styles from '@/styles/IndexNews.module.scss';
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function IndexNews() {
+  const router = useRouter();
+  const t = router.locale === 'lt' ? lt : en
+
   const [newsList, setNewsList] = useState([]);
 
   useEffect(() => {
@@ -18,14 +24,14 @@ export default function IndexNews() {
         <div className={styles.newsItem}  key={idx}>
           <h3>{news.title}</h3>
           <p>{news.previewText}</p>
-          <Link href={`/news/${news.id}`}>Read More &gt;</Link>
+          <Link href={`/news/${news.id}`}>{t.news.readMore} &gt;</Link>
         </div>
     )
   })
 
   return (
     <div className="container">
-      <h2 className={styles.newsTitle}>Naujienos</h2>
+      <h2 className={styles.newsTitle}>{t.news.title}</h2>
       <div className={styles.newsBlock}>
         {elNewsList}
       </div>

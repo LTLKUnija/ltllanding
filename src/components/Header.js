@@ -69,7 +69,6 @@ function Header() {
               :
               <Link className="header-nav-link" href="/deposits">{ t.headerNavLinks.deposit }</Link>
             }
-            
             <div className="navigation-parent-link" onMouseEnter={ () => {toggleSubMenu('open', 'payment')} } onMouseLeave={() => {toggleSubMenu('close', 'payment')}}>
               
               {t.headerNavLinks.payments}
@@ -126,7 +125,7 @@ function Header() {
                 </div>
               }
             </div>
-            <Link className="header-nav-link" href="/contacts">{ t.headerNavLinks.contacts }</Link>
+            <Link className="header-nav-link" href="/contacts">{t.headerNavLinks.contacts}</Link>
             <span className="header-nav-link change-language-link" onClick={setLanguage} href="/eng">{langBtnState}</span>
           </nav>
         </div>

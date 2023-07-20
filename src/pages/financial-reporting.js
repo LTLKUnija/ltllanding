@@ -2,8 +2,14 @@ import styles from "@/styles/financial-reporting.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function FinancialReporting() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+ 
    const [quarterLinks, setQuarterLinks] = useState([]);
    const [activeQuarterList, setActiveQuarterList] = useState([]);
    const [annualLink, setAnnualLinks] = useState([]);
@@ -92,19 +98,19 @@ export default function FinancialReporting() {
       <IndexLayout>
          <main>
             <section className={styles.financialReportingSection}>
-               <h3 className={styles.financialReportingTitle}>Finansinė atskaitomybė</h3>
+               <h3 className={styles.financialReportingTitle}>{t.finacialReporting.title}</h3>
                <div className={styles.innerNavigationLinkList}>
-                  <Link className={styles.innerNavLink} href="#quarterReports">Ketvirčio ataskaita</Link>
-                  <Link className={styles.innerNavLink} href="#annualReports">Metinė ataskaita</Link>
-                  <Link className={styles.innerNavLink} href="#factsheets">Factsheet</Link>
-                  <Link className={styles.innerNavLink} href="#presentations">Prezentacijos</Link>
-                  <Link className={styles.innerNavLink} href="#contacts">Kontaktai</Link>
-                  <Link className={styles.innerNavLink} href="#calendar">Finansinis kalendorius</Link>
+                  <Link className={styles.innerNavLink} href="#quarterReports">{t.finacialReporting.innerLinkBlock.quarterlyReports}</Link>
+                  <Link className={styles.innerNavLink} href="#annualReports">{t.finacialReporting.innerLinkBlock.annualReporting}</Link>
+                  <Link className={styles.innerNavLink} href="#factsheets">{t.finacialReporting.innerLinkBlock.factsheets}</Link>
+                  <Link className={styles.innerNavLink} href="#presentations">{t.finacialReporting.innerLinkBlock.presentations}</Link>
+                  <Link className={styles.innerNavLink} href="#contacts">{t.finacialReporting.innerLinkBlock.contacts}</Link>
+                  <Link className={styles.innerNavLink} href="#calendar">{t.finacialReporting.innerLinkBlock.finacialCalendar}</Link>
                </div>
             </section>
             <section id="quarterReports" className={styles.ReportsSection}>
                <div className={styles.ReportsWrapper}>
-                  <h3 className={styles.sectionTitle}>Ketvirčio ataskaitos</h3>
+                  <h3 className={styles.sectionTitle}>{t.finacialReporting.quarterlyReports}</h3>
                   <div className={styles.tabsList}>
                      {quarterLinks.map((tab, idx) => {
                         return (
@@ -142,7 +148,7 @@ export default function FinancialReporting() {
             </section>
             <section id="annualReports" className={styles.presentationsSection}>
                <div className={styles.presentationsWrapper}>
-                  <h3 className={styles.sectionTitle}>Metinės ESG ataskaitos</h3>
+                  <h3 className={styles.sectionTitle}>{t.finacialReporting.annualReporting}</h3>
                   <ul className={styles.tabsList}>
                      {annualLink.map((year, idx) => {
                         return (
@@ -169,7 +175,7 @@ export default function FinancialReporting() {
             </section>
             <section id="factsheets" className={[styles.ReportsSection, styles.factsheetsSection].join(' ')}>
                <div className={styles.ReportsWrapper}>
-                  <h3 className={styles.sectionTitle}>Factsheet</h3>
+                  <h3 className={styles.sectionTitle}>{t.finacialReporting.factsheets}</h3>
                   <div className={styles.tabsList}>
                      {factSheetList.map((tab, idx) => {
                         return (
@@ -206,7 +212,7 @@ export default function FinancialReporting() {
             </section>
             <section id="presentations" className={styles.presentationsSection}>
                <div className={styles.presentationsWrapper}>
-                  <h3 className={styles.sectionTitle}>Prezentacijos</h3>
+                  <h3 className={styles.sectionTitle}>{t.finacialReporting.presentations}</h3>
                   <ul className={styles.tabsList}>
                      {presentationsList.map((year, idx) => {
                         return (
@@ -233,17 +239,17 @@ export default function FinancialReporting() {
             </section>
             <section id="contacts" className={styles.contactsSection}>
                <div className={styles.contactsWrapper}>
-                  <h3>Kontaktai</h3>
+                  <h3>{t.finacialReporting.contacts.title}</h3>
                   <div className={styles.contactsBlock}>
                      <div className={styles.img}></div>
                      <div className={styles.contactsInfo}>
-                        <h4>Direktorius</h4>
+                        <h4>{t.finacialReporting.contacts.director}</h4>
                         <p>Ruslanas Telnovas ruslanas.telnovas@ltlku.lt </p>
                         <p>(8 5) 205 5240</p>  
                         <p>(8 5) 205 5241</p>  
                      </div>
                      <div className={styles.contactsInfo}>
-                        <h4>LTL Kredito Unija</h4>
+                        <h4>{t.finacialReporting.contacts.companyName}</h4>
                         <p>Sporto g. 18, LT-09238, Vilnius Įmonės kodas 302791356</p>
                         <p>(8 5) 205 5240</p>   
                         <p>info@ltlku.lt</p>   
@@ -254,11 +260,8 @@ export default function FinancialReporting() {
             </section>
             <section id="calendar" className={styles.calendarSection}>
                <div className={styles.calendarWrapper}>
-                  <h3>Finansinis kalendorius</h3>
-                  <p className={styles.calendarDescription}>LTL discloses monthly and quarterly financial results at 8.00 a.m on the dates announced
-                     in the Financial calendar. After disclosing the quarterly results, in the same morning 
-                     at 9.00 a.m.
-                  </p>
+                  <h3>{t.finacialReporting.finacialCalendar.title}</h3>
+                  <p className={styles.calendarDescription}>{t.finacialReporting.finacialCalendar.description}</p>
                   <div className={styles.calendarBlock}>
                      <p className={styles.date}>15.08.2023 <span>Ex-dividend date (ex-date)</span></p>
                      <p className={styles.date}>15.08.2023 <span>Q1 interim results</span></p>
