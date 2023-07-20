@@ -102,7 +102,7 @@ export default function Esg() {
                 <h3>{t.esg.articleBlock.article2.title}</h3>
                 <p>{t.esg.articleBlock.article2.text}</p>
                 <div className="actionButtonBlock">
-                  <Link href="/" className="light-green-action-button">
+                  <Link href="/" className="outlinedBtn">
                     {t.esg.learnMoreButton}
                   </Link>
                 </div>
@@ -130,7 +130,7 @@ export default function Esg() {
                 <h3>{t.esg.articleBlock.article3.title}</h3>
                 <p>{t.esg.articleBlock.article3.text}</p>
                 <div className="actionButtonBlock">
-                  <Link href="/" className="light-green-action-button">
+                  <Link href="/" className="outlinedBtn">
                     {t.esg.learnMoreButton}
                   </Link>
                 </div>

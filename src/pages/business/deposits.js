@@ -9,6 +9,8 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import Image from "next/image";
+import HeroMobile from "../../../public/assets/images/Business_Hero_mobile.png";
 
 export default function Deposit() {
   const router = useRouter();
@@ -67,6 +69,12 @@ export default function Deposit() {
           <section className={busynessStyle.depositPageWrapper}>
             <div className={busynessStyle.depositPageList}>
               <div className={busynessStyle.depositHeroItem}>
+                <Image
+                  src={HeroMobile}
+                  alt={"Hero Mobile"}
+                  style={{ width: "250px", height: "auto" }}
+                  className={busynessStyle.heroImage}
+                />
                 <h1 className={busynessStyle.depositTitle}>
                   {t.business.termDeposit.heroBlock.title}
                 </h1>

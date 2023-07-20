@@ -256,6 +256,12 @@
   }
 }
 
+@media(max-width: 1100px) {
+  .innerNavigationSection {
+    display: none;
+  }
+}
+
 @media (max-width: 974px) {
   .pageWrapper {
 
@@ -266,6 +272,10 @@
 }
 
 @media (max-width: 780px) {
+  .benefitsTitle {
+    text-align: left;
+  }
+
   .StepsSection {
     padding: 36px 0 10px 0;
 

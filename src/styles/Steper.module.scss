@@ -35,6 +35,7 @@
       font-size: 17px;
       font-weight: 300;
       line-height: 22px;
+
     }
 
     .stepsDescription {
@@ -48,23 +49,31 @@
 
 @media (max-width: 780px) {
   .stepsItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+
+    gap: 16px;
 
     .stepsNumber {
-      width: 70px;
-      height: 70px;
-      flex: none;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+
     }
 
     .stepsText {
-      text-align: center;
+      text-align: left;
+
+      .stepsTitle {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+      }
 
       .stepsDescription {
         text-align: justify;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        max-width: 500px;
       }
 
       p {

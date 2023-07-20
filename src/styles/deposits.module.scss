@@ -499,6 +499,12 @@
    }
 }
 
+@media(max-width: 1100px) {
+   .innerNavigationSection {
+      display: none;
+   }
+}
+
 @media (max-width: 974px) {
    .depositPageWrapper {
       background-position: bottom right;
@@ -506,7 +512,6 @@
 
       .depositPageList {
          padding-left: 40px;
-
       }
    }
 }

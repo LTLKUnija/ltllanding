@@ -42,7 +42,7 @@ export default function SimpleSlider() {
             <h1>{t.indexPage.slideOne.heroBlockH1}</h1>
             <p>{t.indexPage.slideOne.heroBlockText}</p>
             <div className="action-button-block">
-              <Link className="light-green-action-button" href="/">
+              <Link className="outlinedBtn" href="/">
                 {t.indexPage.slideOne.learnMoreButton}
               </Link>
             </div>
@@ -55,7 +55,7 @@ export default function SimpleSlider() {
             <h1>{t.indexPage.slideOne.heroBlockH1}</h1>
             <p>{t.indexPage.slideOne.heroBlockText}</p>
             <div className="action-button-block">
-              <Link className="light-green-action-button" href="/">
+              <Link className="outlinedBtn" href="/">
                 {t.indexPage.slideOne.learnMoreButton}
               </Link>
             </div>
@@ -68,7 +68,7 @@ export default function SimpleSlider() {
             <h1>{t.indexPage.slideOne.heroBlockH1}</h1>
             <p>{t.indexPage.slideOne.heroBlockText}</p>
             <div className="action-button-block">
-              <Link className="light-green-action-button" href="/">
+              <Link className="outlinedBtn" href="/">
                 {t.indexPage.slideOne.learnMoreButton}
               </Link>
             </div>

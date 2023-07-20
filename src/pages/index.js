@@ -40,7 +40,7 @@ export default function Home() {
                     sea view on the paradisiacal island of Elba).
                   </p>
                   <div className="actionButtonBlock">
-                    <Link className="light-green-action-button" href="/">
+                    <Link className="outlinedBtn" href="/">
                       Learn More
                     </Link>
                   </div>
@@ -68,7 +68,7 @@ export default function Home() {
                     sea view on the paradisiacal island of Elba).
                   </p>
                   <div className="actionButtonBlock">
-                    <Link className="light-green-action-button" href="/">
+                    <Link className="outlinedBtn" href="/">
                       Learn More
                     </Link>
                   </div>
@@ -96,7 +96,7 @@ export default function Home() {
                     sea view on the paradisiacal island of Elba).
                   </p>
                   <div className="actionButtonBlock">
-                    <Link className="light-green-action-button" href="/">
+                    <Link className="outlinedBtn" href="/">
                       Learn More
                     </Link>
                   </div>
