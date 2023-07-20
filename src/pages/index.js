@@ -7,8 +7,13 @@ import Image from "next/image";
 import ArticleImg1 from "@../../../public/assets/images/article1.png";
 import ArticleImg2 from "@../../../public/assets/images/article2.png";
 import ArticleImg3 from "@../../../public/assets/images/article3.png";
+import lt from "@/locales/lt";
+import en from "@/locales/en";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+  const t = router.locale === "lt" ? lt : en;
   return (
     <>
       <IndexLayout>
