@@ -1,16 +1,16 @@
 .partnershipSection {
    padding: 100px 0 70px 0;
-   background-color: var(--ligh-grey-background);
-   background-image: url("/assets/images/partnership_heroBlock.svg");
+   background-color: var(--theme-color5);
+   background-image: url("/assets/images/partnershipPage_HeroBlock.svg");
+   background-size: contain;
    background-repeat: no-repeat;
-   background-position: right bottom;
-   background-size: 35%;
+   background-position: bottom right;
 
    .partnershipWrapper {
       max-width: 920px;
       margin: 0 auto;
       padding: 0 15px 0 15px;
-      
+
       h1 {
          font-size: 50px;
          font-weight: 700;
@@ -18,7 +18,7 @@
          margin-bottom: 34px;
       }
 
-      p{
+      p {
          max-width: 520px;
          font-size: 25px;
          font-weight: 400;
@@ -35,7 +35,7 @@
       padding: 15px 0 15px 0;
       margin: 0 auto;
    }
-   
+
    p {
       font-size: 17px;
       font-weight: 300;
@@ -45,6 +45,6 @@
 
       &:last-child {
          margin-bottom: 0;
-       }
+      }
    }
 }

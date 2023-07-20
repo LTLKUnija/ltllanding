@@ -1,3 +1,71 @@
+.depositPageWrapper {
+  padding: 66px 0 46px 0;
+  background-color: var(--businness-background);
+  background-image: url("/assets/images/business_depositPage_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  .depositPageList {
+    padding-left: 312px;
+
+
+    .depositHeroItem {
+      max-width: 600px;
+    }
+
+    .depositTitle {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .depositPageDescription {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 35px;
+
+    li {
+      font-weight: 300;
+      list-style-type: none;
+      padding-left: 26px;
+      background: url(/assets/images/check2.svg) no-repeat left center;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .CheckText {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+
+  .actionButtonBlock {
+    width: 251px;
+    height: 42px;
+    background: var(--theme-color2);
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-text-color);
+    text-decoration: none;
+  }
+}
+
 .benefitsSection {
   padding: 80px 0 64px 0;
 
@@ -202,111 +270,59 @@
   }
 }
 
-.depositPageWrapper {
-  padding: 66px 0 46px 0;
-  background-color: var(--businness-background);
 
-  .depositPageList {
-    padding-left: 312px;
-    background-image: url("/assets/images/business_depositPage_heroBlock.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 110px) bottom;
+// ----- Media queries -----
+@media (min-width: 1100px) {
+  .depositPageWrapper {
 
-    .depositHeroItem {
-      max-width: 600px;
+    .heroImage {
+      display: none;
     }
-
-    .depositTitle {
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 38px;
-      margin-bottom: 35px;
-    }
-  }
-
-  .depositPageDescription {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    margin-bottom: 35px;
-
-    li {
-      font-weight: 300;
-      list-style-type: none;
-      padding-left: 26px;
-      background: url(/assets/images/check2.svg) no-repeat left center;
-      margin-bottom: 8px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    p {
-      margin-bottom: 30px;
-    }
-
-    .CheckText {
-      font-weight: 300;
-      font-size: 16px;
-    }
-  }
-
-  .actionButtonBlock {
-    width: 251px;
-    height: 42px;
-    background: var(--theme-color2);
-    border-radius: 33px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--white-text-color);
-    text-decoration: none;
   }
 }
-// ----- Media queries -----
+
 @media (max-width: 1320px) {
   .depositPageWrapper {
     .depositPageList {
       padding-left: 280px;
-      background-position: calc(100% - 50px) bottom;
     }
   }
 }
 
 @media (max-width: 1250px) {
   .depositPageWrapper {
+    background-position: bottom right;
+
     .depositPageList {
       padding-left: 50px;
-      background-position: calc(100% - 40px) bottom;
     }
   }
 }
 
-@media (max-width: 974px) {
+@media (max-width: 1100px) {
   .depositPageWrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: none;
+
     .depositPageList {
-      padding-left: 40px;
-      background-position: calc(100% - 20px) bottom;
-      background-size: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .depositHeroItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
     }
   }
 }
 
 @media (max-width: 780px) {
-  .depositPageWrapper {
-    padding: 36px 36px 36px 0;
-
-    .depositPageList {
-      padding-left: 40px;
-      background-image: none;
-    }
-  }
-
   .calculatorSection {
     padding: 30px 0 30px 0;
 
@@ -342,11 +358,16 @@
 
   .benefitsSection {
     padding: 50px 0 24px 0;
+
     .benefitsWrapper {
+      gap: 34px;
+
       .benefitsBlock {
         max-width: unset;
+
         .benefitsTitle {
-          text-align: center;
+          text-align: left;
+          margin-bottom: 20px;
         }
 
         .benefitsDescription {

@@ -79,10 +79,12 @@ export default {
       title: "About Us",
       description: {
         visionTitle: "Vision",
-        visionDescription: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+        visionDescription:
+          "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
         missionTitle: "Mission",
-        missionDescription: "Unlocking Financial Inclusion - Our Mission, Your Future."
-      }
+        missionDescription:
+          "Unlocking Financial Inclusion - Our Mission, Your Future.",
+      },
     },
     innerLinkBlock: {
       people: "Žmonės",
@@ -90,41 +92,48 @@ export default {
       jobs: "Corporate Governance",
       sponsorship: "Rėmimas",
       history: "Istorija",
-      news: "Naujienos"
+      news: "Naujienos",
     },
     team: {
       title: "LTL Komanda",
-      description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
-      duties: "Pareigos"
+      description:
+        "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+      duties: "Pareigos",
     },
     jobsSection: {
       title: "Available jobs",
-      description: "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
-      readMore: "Available Jobs"
+      description:
+        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
+      readMore: "Available Jobs",
     },
     sponsorshipSection: {
       title: "Available jobs",
-      description: "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
-      readMore: "Available Jobs"
+      description:
+        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
+      readMore: "Available Jobs",
     },
     benefitsArticle: {
       article1: {
         title: "Transparency & accountability",
-        description: "We are aiming to provide access to fair and affordable banking services. We are transparent and accountable in our decisions, and take into account the impact of our actions on people's daily lives."
+        description:
+          "We are aiming to provide access to fair and affordable banking services. We are transparent and accountable in our decisions, and take into account the impact of our actions on people's daily lives.",
       },
       article2: {
         title: "Balancing interests and empowering people",
-        description: "We are striving to create a more equitable financial system that balances the interests of our company, our customers and our society. We allocate resources and provide education to empower customers to understand the banking system and make informed decisions."
+        description:
+          "We are striving to create a more equitable financial system that balances the interests of our company, our customers and our society. We allocate resources and provide education to empower customers to understand the banking system and make informed decisions.",
       },
       article3: {
         title: "Human-centric approach to banking",
-        description: "Finally, we apply a more human-centric approach to banking, ensuring that customers are treated with respect and dignity, and respecting the emotional and psychological needs of customers."
-      }
+        description:
+          "Finally, we apply a more human-centric approach to banking, ensuring that customers are treated with respect and dignity, and respecting the emotional and psychological needs of customers.",
+      },
     },
     history: {
       title: "Istorija",
-      description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing."
-    }
+      description:
+        "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+    },
   },
   esg: {
     heroBlock: {
@@ -171,7 +180,7 @@ export default {
       closingAccount: "Sąskaitos uždarymas",
       cashPoolingAccount: "Pinigų kaupimo sąskaita",
       agreementSigning: "Sutarties pasirašymas",
-      entrepreneuAccount: "Verslininko paskyra"
+      entrepreneuAccount: "Verslininko paskyra",
     },
   },
   licence: {
@@ -318,7 +327,7 @@ export default {
     },
   },
   career: {
-    title: "Karjera"
+    title: "Karjera",
   },
   privetCurrentAccount: {
     pageTitle: "Einamoji sąskaita: Nebereikia būti dideliam, kad ... ",
@@ -495,7 +504,8 @@ export default {
     presentations: "Pristatymai",
     finacialCalendar: {
       title: "Finansinis kalendorius",
-      description: "LTL discloses monthly and quarterly financial results at 8.00 a.m on the dates announced in the Financial calendar. After disclosing the quarterly results, in the same morning at 9.00 a.m."
+      description:
+        "LTL discloses monthly and quarterly financial results at 8.00 a.m on the dates announced in the Financial calendar. After disclosing the quarterly results, in the same morning at 9.00 a.m.",
     },
     innerLinkBlock: {
       quarterlyReports: "Ketvirčio ataskaitos",
@@ -503,13 +513,13 @@ export default {
       factsheets: "Faktų suvestinė",
       presentations: "Pristatymai",
       contacts: "Kontaktai",
-      finacialCalendar: "Finansinis kalendorius"
+      finacialCalendar: "Finansinis kalendorius",
     },
     contacts: {
       title: "Kontaktai",
       director: "Direktorius",
-      companyName: "LTL Kredito Unija"
-    }
+      companyName: "LTL Kredito Unija",
+    },
   },
   mortgageLoan: {
     heroBlock: {
@@ -697,21 +707,24 @@ export default {
   },
   privacyPolicy: {
     title: "Privatumo politika ir slapukai",
-    description: "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės."
+    description:
+      "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
   },
   shareholders: {
     title: "Akcininkams",
-    description: "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+    description:
+      "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
     subTitle: "Akcininkų susirinkimai",
     contacts: {
       title: "Kontaktai",
       director: "Direktorius",
-      companyName: "LTL Kredito Unija"
-    }
+      companyName: "LTL Kredito Unija",
+    },
   },
   security: {
     title: "Saugumas",
-    description: "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės."
+    description:
+      "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
   },
   suportsComplaints: {
     pageTitle: "Atsiliepimai ir skundai",
@@ -736,9 +749,15 @@ export default {
   },
   moneyLoundering: {
     title:
-      "Pinigų plovimo ir teroristų finansavimo prevencija, tarptautinių sankcijų įgyvendinimas",
-    description:
-      "Mes esame tvirtai įsipareigoję kovoti su finansiniais nusikaltimais ir teroristų finansavimu (PPTFP), taip pat užtikrinti tarptautinių sankcijų įgyvendinimą. Siekdami išspręsti šias problemas, mes esame apibrėžę bei vykdome vidaus PPTFP politiką, kuri yra orientuotą į efektyvų šių rizikų valdymą. Savo veiksmais siekiame užkirsti kelią bet kokiam piktnaudžiavimui mūsų produktais ir paslaugomis pinigų plovimo, teroristų finansavimo ir/ar sankcijų vengimo tikslais. PPTFP politika yra pagrindas nustatant bei įgyvendinant aiškias procedūras ir instrukcijas PPTFP srityje, kurių mūsų darbuotojai privalo laikytis savo kasdienėje veikloje.\n\n Mūsų tikslas – nustatyti, įvertinti ir suprasti finansinių nusikaltimų rizikas, su kuriomis susiduriame, ir įgyvendinti atitinkamas kontrolės priemones, atitinkančias prisiimamą riziką. Nesvarbu, ar tai susiję su individualiais klientais, ar bendrais mūsų verslo procesais, kiekvienam scenarijui stengiamės įsivertinti tikrąjį rizikos lygį. Pripažįstame, kad veiksmingai sprendžiant PPTFP problemas, iš mūsų klientų ir partnerių šis procesas galėtų pareikalauti papildomo įsitraukimo, laiko sąnaudų ir pastangų. Todėl, siekdami užtikrinti sklandų ir veiksmingą procesą, taikome rizika pagrįstą metodą, leidžiantį imtis specifinių veiksmų, kurie priklauso nuo individualių klientų ir/ar transakcijų rizikos profilių.\n \n Užmezgant ir palaikant santykius su mūsų klientais, visada atsiremiam mūsų apibrėžtu rizikos apetitu, kuris tapo vienu esminiu PPTFP politikos įgyvendinimo elementu bei nustato mums priimtinos rizikos ribas. Maloniai prašome skirti šiek tiek laiko ir susipažinti su Rizikos apetito deklaraciją (link).",
+      "Pinigų plovimo ir teroristų finansavimo prevencija, tarptautinių sankcijų įgyvendinima",
+    articleBlock: {
+      article1:
+        "Mes esame tvirtai įsipareigoję kovoti su finansiniais nusikaltimais ir teroristų finansavimu (PPTFP), taip pat užtikrinti tarptautinių sankcijų įgyvendinimą. Siekdami išspręsti šias problemas, mes esame apibrėžę bei vykdome vidaus PPTFP politiką, kuri yra orientuotą į efektyvų šių rizikų valdymą. Savo veiksmais siekiame užkirsti kelią bet kokiam piktnaudžiavimui mūsų produktais ir paslaugomis pinigų plovimo, teroristų finansavimo ir/ar sankcijų vengimo tikslais. PPTFP politika yra pagrindas nustatant bei įgyvendinant aiškias procedūras ir instrukcijas PPTFP srityje, kurių mūsų darbuotojai privalo laikytis savo kasdienėje veikloje.",
+      article2:
+        "Mūsų tikslas – nustatyti, įvertinti ir suprasti finansinių nusikaltimų rizikas, su kuriomis susiduriame, ir įgyvendinti atitinkamas kontrolės priemones, atitinkančias prisiimamą riziką. Nesvarbu, ar tai susiję su individualiais klientais, ar bendrais mūsų verslo procesais, kiekvienam scenarijui stengiamės įsivertinti tikrąjį rizikos lygį. Pripažįstame, kad veiksmingai sprendžiant PPTFP problemas, iš mūsų klientų ir partnerių šis procesas galėtų pareikalauti papildomo įsitraukimo, laiko sąnaudų ir pastangų. Todėl, siekdami užtikrinti sklandų ir veiksmingą procesą, taikome rizika pagrįstą metodą, leidžiantį imtis specifinių veiksmų, kurie priklauso nuo individualių klientų ir/ar transakcijų rizikos profilių.",
+      article3:
+        "Užmezgant ir palaikant santykius su mūsų klientais, visada atsiremiam mūsų apibrėžtu rizikos apetitu, kuris tapo vienu esminiu PPTFP politikos įgyvendinimo elementu bei nustato mums priimtinos rizikos ribas. Maloniai prašome skirti šiek tiek laiko ir susipažinti su Rizikos apetito deklaraciją (link).",
+    },
   },
   contacts: {
     heroBlock: {

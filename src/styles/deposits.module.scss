@@ -1,12 +1,14 @@
 .depositPageWrapper {
    padding: 66px 0 46px 0;
    background-color: var(--light-creame-background);
+   background-image: url("/assets/images/deposit_heroBlock.svg");
+   background-repeat: no-repeat;
+   background-position: bottom right;
+   background-size: cover;
 
    .depositPageList {
       padding-left: 312px;
-      background-image: url("/assets/images/deposit_heroBlock.svg");
-      background-repeat: no-repeat;
-      background-position: calc(100% - 110px) bottom;
+
 
       .depositHeroItem {
          max-width: 600px;
@@ -27,7 +29,8 @@
       color: #000000;
       margin-bottom: 35px;
 
-      li {font-size: 16px;
+      li {
+         font-size: 16px;
          font-weight: 300;
          line-height: 20px;
          list-style-type: none;
@@ -78,32 +81,32 @@
    z-index: 8;
 
    .innerNavigationLinkList {
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
    }
- 
-   .innerNavLink {
-     font-family: 'Lexend';
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 24px;
-     color: var(--main-text-color);
-     text-decoration: none;
-     margin-right: 30px;
- 
-     &:last-child {
-       margin-right: 0;
-     }
- 
-     &.change-language-link {
-       text-transform: uppercase;
-       font-weight: 600;
-     }
-   }
- }
 
- .depositBenefitsSection {
+   .innerNavLink {
+      font-family: 'Lexend';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--main-text-color);
+      text-decoration: none;
+      margin-right: 30px;
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &.change-language-link {
+         text-transform: uppercase;
+         font-weight: 600;
+      }
+   }
+}
+
+.depositBenefitsSection {
    padding: 100px 0 54px 0;
 
    .depositBenefitsWrapper {
@@ -132,10 +135,11 @@
          line-height: 22px;
       }
    }
- }
+}
 
- .calculatorSection {
+.calculatorSection {
    padding: 50px 0 64px 0;
+
    .calculatorWrapper {
       max-width: 790px;
       margin: 0 auto;
@@ -158,7 +162,7 @@
       padding-right: 49px;
       padding-top: 42px;
    }
-   
+
    .resultBlockItem {
       width: 270px;
       display: flex;
@@ -183,7 +187,7 @@
          text-align: center;
       }
    }
-   
+
    .calculatorLine {
       display: flex;
       gap: 40px;
@@ -226,15 +230,15 @@
    .select {
       width: 198px;
       background: url(/assets/images/men.svg) no-repeat right center;
-      
-         &::after {
-            content: "";
-            display: block;
-            position: relative;
-            height: 1px;
-            background-color: var(--theme-color4);
-            margin-top: 6px;
-         }
+
+      &::after {
+         content: "";
+         display: block;
+         position: relative;
+         height: 1px;
+         background-color: var(--theme-color4);
+         margin-top: 6px;
+      }
 
       select {
          border: none;
@@ -282,6 +286,7 @@
       background-color: var(--main-background);
       transform: rotate(45deg) translate(319px, -258px);
    }
+
    .depositSectionButton {
       margin: 0 auto;
       padding: 0 15px 0 15px;
@@ -344,7 +349,7 @@
    .column3 {
       width: 227px;
    }
-   
+
    .tableDataLine {
       display: flex;
       border-top: solid 1px var(--table-border-color);
@@ -358,146 +363,155 @@
 
 .stepsSection {
    padding: 66px 0 56px 0;
- 
+
    .stepsWrapper {
-     max-width: 765px;
-     padding: 0 15px 0 15px;
-     margin: 0 auto;
- 
-     .stepsHeader {
-       font-family: Lexend;
-       font-size: 25px;
-       font-weight: 700;
-       text-align: center;
-       margin-bottom: 54px;
-     }
- 
-     .stepsItem {
-       display: flex;
-       gap: 60px;
-       margin-bottom: 49px;
+      max-width: 765px;
+      padding: 0 15px 0 15px;
+      margin: 0 auto;
 
-       li {
-         list-style-position: outside;
-         margin-left: 20px;
-       }
- 
-       .stepsNumber {
-         background-color: var(--theme-color1);
-         color: var(--white-text-color);
-         font-size: 23px;
-         border-radius: 50%;
+      .stepsHeader {
+         font-family: Lexend;
+         font-size: 25px;
+         font-weight: 700;
+         text-align: center;
+         margin-bottom: 54px;
+      }
+
+      .stepsItem {
          display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 51px;
-         height: 51px;
-       }
- 
-       .stepsText {
-         display: flex;
-         flex-direction: column;
- 
-         .stepsTitle {
-           font-weight: 700;
-           font-size: 20px;
-           line-height: 25px;
-           margin-bottom: 20px;
+         gap: 60px;
+         margin-bottom: 49px;
+
+         li {
+            list-style-position: outside;
+            margin-left: 20px;
          }
 
-         p {
-            font-size: 17px;
-            font-weight: 300;
-            line-height: 22px;
-          }
- 
-         .stepsDescription {
-           font-size: 17px;
-           font-weight: 300;
-           line-height: 21px;
-           max-width: 624px;
+         .stepsNumber {
+            background-color: var(--theme-color1);
+            color: var(--white-text-color);
+            font-size: 23px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 51px;
+            height: 51px;
          }
-       }
-     }
-   }
- }
 
- .clientSuportSection {
-   padding: 56px 0 22px 0;
- 
-   .clientSuportWrapper {
-     max-width: 890px;
-     margin: 0 auto;
-     padding: 0 15px 0 15px;
- 
-     .clientSuportHeader {
-       font-size: 25px;
-       font-weight: 700;
-       line-height: 31px;
-       text-align: center;
-       margin-bottom: 60px;
-     }
- 
-     .clientSuportDescription {
-       font-size: 17px;
-       font-weight: 300;
-       line-height: 21px;
-       text-align: center;
-     }
-   }
- }
- 
-.faqSection {
-   padding: 58px 0 108px 0;
- 
-   .faqWrapper {
-     max-width: 1060px;
-     padding: 0 15px 0 15px;
-     margin: 0 auto;
- 
-     .faqHeader {
-       font-size: 25px;
-       font-weight: 700;
-       line-height: 31px;
-       margin-bottom: 56px;
-       text-align: center;
-     }
- 
-     .faqList {
-       padding: 71px 105px 70px 105px;
-       box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-       background-color: #F9F8F7;
-     }
+         .stepsText {
+            display: flex;
+            flex-direction: column;
+
+            .stepsTitle {
+               font-weight: 700;
+               font-size: 20px;
+               line-height: 25px;
+               margin-bottom: 20px;
+            }
+
+            p {
+               font-size: 17px;
+               font-weight: 300;
+               line-height: 22px;
+            }
+
+            .stepsDescription {
+               font-size: 17px;
+               font-weight: 300;
+               line-height: 21px;
+               max-width: 624px;
+            }
+         }
+      }
    }
 }
+
+.clientSuportSection {
+   padding: 56px 0 22px 0;
+
+   .clientSuportWrapper {
+      max-width: 890px;
+      margin: 0 auto;
+      padding: 0 15px 0 15px;
+
+      .clientSuportHeader {
+         font-size: 25px;
+         font-weight: 700;
+         line-height: 31px;
+         text-align: center;
+         margin-bottom: 60px;
+      }
+
+      .clientSuportDescription {
+         font-size: 17px;
+         font-weight: 300;
+         line-height: 21px;
+         text-align: center;
+      }
+   }
+}
+
+.faqSection {
+   padding: 58px 0 108px 0;
+
+   .faqWrapper {
+      max-width: 1060px;
+      padding: 0 15px 0 15px;
+      margin: 0 auto;
+
+      .faqHeader {
+         font-size: 25px;
+         font-weight: 700;
+         line-height: 31px;
+         margin-bottom: 56px;
+         text-align: center;
+      }
+
+      .faqList {
+         padding: 71px 105px 70px 105px;
+         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+         background-color: #F9F8F7;
+      }
+   }
+}
+
 // ----- Media queries -----
 @media (max-width: 1320px) {
    .depositPageWrapper {
-      
+      background-position: bottom right;
+
       .depositPageList {
          padding-left: 280px;
-         background-position: calc(100% - 50px) bottom;
+
       }
    }
 }
 
 @media (max-width: 1250px) {
    .depositPageWrapper {
-      
+      background-size: 120%;
+
       .depositPageList {
          padding-left: 50px;
-         background-position: calc(100% - 40px) bottom;
+
       }
+   }
+}
+
+@media(max-width: 1100px) {
+   .innerNavigationSection {
+      display: none;
    }
 }
 
 @media (max-width: 974px) {
    .depositPageWrapper {
-      
+      background-position: bottom right;
+      background-size: 90%;
+
       .depositPageList {
          padding-left: 40px;
-         background-position: calc(100% - 20px) bottom;
-         background-size: 200px;
       }
    }
 }
@@ -523,7 +537,7 @@
                font-size: 20px;
             }
          }
-   
+
          .borderCorner {
             width: 15px;
             height: 15px;
@@ -556,7 +570,7 @@
 
             .stepsText {
                text-align: center;
-               
+
                .stepsDescription {
                   text-align: justify;
                   font-size: 14px;
@@ -589,10 +603,11 @@
 @media (max-width: 768px) {
    .depositPageWrapper {
       padding: 36px 36px 36px 0;
-      
+      background-image: none;
+
       .depositPageList {
          padding-left: 40px;
-         background-image: none;
+
       }
    }
 

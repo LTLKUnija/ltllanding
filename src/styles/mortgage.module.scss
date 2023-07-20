@@ -1,12 +1,12 @@
 .mortgagePageWrapper {
   padding: 66px 0 46px 0;
   background-color: var(--light-creame-background);
+  background-image: url("/assets/images/mortgagePage_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
   .mortgagePageList {
     padding-left: 312px;
-    background-image: url("/assets/images/mortgagePage_heroBlock.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 110px) bottom;
 
     .mortgageHeroItem {
       max-width: 800px;
@@ -186,32 +186,31 @@
     }
   }
 }
+
 // ----- Media queries -----
 @media (max-width: 1390px) {
   .mortgagePageWrapper {
     .mortgagePageList {
       padding-left: 280px;
-      background-position: calc(100% - 50px) bottom;
-      background-size: 350px;
     }
   }
 }
 
 @media (max-width: 1250px) {
   .mortgagePageWrapper {
+
     .mortgagePageList {
       padding-left: 50px;
-      background-position: calc(100% - 40px) bottom;
     }
   }
 }
 
 @media (max-width: 974px) {
   .mortgagePageWrapper {
+    background-size: 100%;
+
     .mortgagePageList {
       padding-left: 40px;
-      background-position: calc(100% - 20px) bottom;
-      background-size: 200px;
     }
   }
 }
@@ -235,10 +234,10 @@
 @media (max-width: 768px) {
   .mortgagePageWrapper {
     padding: 36px 36px 36px 0;
+    background-image: none;
 
     .mortgagePageList {
       padding-left: 40px;
-      background-image: none;
     }
   }
 

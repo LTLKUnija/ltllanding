@@ -1,12 +1,12 @@
 .pageWrapper {
   padding: 66px 0 46px 0;
   background-color: var(--businness-background);
+  background-image: url("/assets/images/business_investLoanPage_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
   .pageList {
     padding-left: 312px;
-    background-image: url("/assets/images/business_investLoanPage_heroBlock.svg");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 90px) 80px;
 
     .heroItem {
       max-width: 600px;
@@ -49,7 +49,16 @@
     }
   }
 }
+
 // ----- Media queries -----
+@media (min-width: 1100px) {
+  .pageWrapper {
+    .heroImage {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 1320px) {
   .pageWrapper {
     .pageList {
@@ -59,32 +68,45 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1100px) {
   .pageWrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: none;
+
     .pageList {
-      padding-left: 50px;
-      background-position: calc(100% - 40px) bottom;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .heroItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
     }
   }
 }
 
 @media (max-width: 974px) {
   .pageWrapper {
+    background-image: none;
+
     .pageList {
-      padding-left: 40px;
-      background-position: calc(100% - 20px) bottom;
-      background-size: 200px;
+      padding: 10px;
     }
   }
 }
 
 @media (max-width: 768px) {
   .pageWrapper {
-    padding: 36px 36px 36px 0;
+    padding: 10px 36px 10px 0;
 
     .pageList {
       padding-left: 40px;
-      background-image: none;
     }
   }
 }
