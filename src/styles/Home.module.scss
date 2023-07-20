@@ -4,7 +4,8 @@
   padding: 154px 0 164px 0;
 }
 
-.beneficialArticle, .beneficialArticleMirror {
+.beneficialArticle,
+.beneficialArticleMirror {
   display: flex;
   gap: 120px;
   margin-bottom: 158px;
@@ -51,7 +52,7 @@
     font-size: 50px;
     line-height: 62px;
     color: var(--main-text-color);
-    max-width: 390px; 
+    max-width: 390px;
     margin-bottom: 40px;
   }
 
@@ -90,15 +91,17 @@
     line-height: 62px;
     text-align: center;
     color: #0D222E;
-    margin-bottom: 80px; 
+    margin-bottom: 80px;
   }
 }
+
 //------ Media queries --------------------------------
 @media (max-width: 1460px) {
   .heroblock {
     max-width: 1200px;
     margin: 0 auto;
   }
+
   .bulletPoints {
     max-width: 1200px;
     margin: 0 auto;
@@ -112,7 +115,8 @@
     margin: 0 auto;
   }
 
-  .beneficialArticle, .beneficialArticleMirror {
+  .beneficialArticle,
+  .beneficialArticleMirror {
     margin-bottom: 90px;
     gap: 60px;
   }
@@ -124,6 +128,7 @@
       line-height: 52px;
       margin-bottom: 34px;
     }
+
     p {
       font-weight: 300;
       font-size: 15px;
@@ -171,19 +176,22 @@
       font-size: 14px;
     }
   }
-}  
+}
 
 @media (max-width: 768px) {
   .beneficialArticles {
     padding-bottom: 80px;
   }
-  .beneficialArticle, .beneficialArticleMirror {
+
+  .beneficialArticle,
+  .beneficialArticleMirror {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 70px;
     margin-bottom: 40px;
   }
+
   .imageBlock {
     order: 1;
     display: flex;
@@ -193,7 +201,7 @@
       max-height: 220px;
     }
   }
- 
+
   .articleBlock {
     margin: 0 auto;
     padding-left: 15px;
@@ -219,7 +227,7 @@
     max-width: 600px;
     padding: 20px 0 40px 0;
 
-    margin: 0  auto;
+    margin: 0 auto;
     background: var(--theme-color5) url('/assets/images/homePage_bulletPoints.svg') no-repeat calc(100% - -40px) bottom;
     background-size: 60%;
 
@@ -238,7 +246,7 @@
   .newsSection {
     padding-top: 60px;
     padding-bottom: 45px;
-    
+
     h2 {
       margin-bottom: 40px;
     }
@@ -249,6 +257,7 @@
   .beneficialArticles {
     padding: 80px 0;
   }
+
   .bulletPoints {
     max-width: 450px;
     margin: 0 auto;
@@ -258,12 +267,13 @@
   .newsSection {
     padding-top: 60px;
     padding-bottom: 45px;
-    
+
     h2 {
       margin-bottom: 40px;
     }
   }
 }
+
 @media (max-width: 450px) {
   .bulletPoints {
     max-width: 390px;

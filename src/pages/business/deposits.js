@@ -1,28 +1,30 @@
-import styles from "@/styles/deposits.module.scss"
-import busynessStyle from "@/styles/business.deposits.module.scss"
-import IndexLayout from "@/Layouts/IndexLayout"
-import Accordion from "@/components/Accordion"
-import Steper from "@/components/Steper"
-import { termDepositSteperData } from "@/pages/api/data/stepersData"
-import Link from "next/link"
-import { useState } from "react"
-import { useRouter } from "next/router"
-import lt from '@/locales/lt'
-import en from '@/locales/en'
+import styles from "@/styles/deposits.module.scss";
+import busynessStyle from "@/styles/business.deposits.module.scss";
+import IndexLayout from "@/Layouts/IndexLayout";
+import Accordion from "@/components/Accordion";
+import Steper from "@/components/Steper";
+import { termDepositSteperData } from "@/pages/api/data/stepersData";
+import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/router";
+import lt from "@/locales/lt";
+import en from "@/locales/en";
+import Image from "next/image";
+import HeroMobile from "../../../public/assets/images/Business_Hero_mobile.png";
 
 export default function Deposit() {
   const router = useRouter();
-  const t = router.locale === 'lt' ? lt : en
-  
+  const t = router.locale === "lt" ? lt : en;
+
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
-    selectedRate: 1.75
-  })
+    selectedRate: 1.75,
+  });
   let ratesList = [
     {
       term: 1,
-      rate: 1.00,
+      rate: 1.0,
     },
     {
       term: 3,
@@ -30,29 +32,35 @@ export default function Deposit() {
     },
     {
       term: 6,
-      rate: 2.00,
+      rate: 2.0,
     },
     {
       term: 12,
-      rate: 2.50,
+      rate: 2.5,
     },
     {
       term: 18,
-      rate: 3.10,
-    },            
-  ]
+      rate: 3.1,
+    },
+  ];
   function createSelectOptions() {
-    return ratesList.map((el, idx) => <option data-rate={el.rate} key={idx}>{el.term}</option>)
+    return ratesList.map((el, idx) => (
+      <option data-rate={el.rate} key={idx}>
+        {el.term}
+      </option>
+    ));
   }
 
   function selectTerm(e) {
-    let selectedRate = +Array.from(e.target.options).filter(opt => opt.value == e.target.value)[0].getAttribute('data-rate')
-    setCalc({ ...calc, term: +e.target.value, selectedRate: selectedRate })
+    let selectedRate = +Array.from(e.target.options)
+      .filter((opt) => opt.value == e.target.value)[0]
+      .getAttribute("data-rate");
+    setCalc({ ...calc, term: +e.target.value, selectedRate: selectedRate });
   }
 
   function amountHandler(e) {
     var digits = e.target.value.replace(/\D/g, "");
-    setCalc({ ...calc, amount: +digits }) 
+    setCalc({ ...calc, amount: +digits });
   }
   return (
     <>
@@ -61,11 +69,17 @@ export default function Deposit() {
           <section className={busynessStyle.depositPageWrapper}>
             <div className={busynessStyle.depositPageList}>
               <div className={busynessStyle.depositHeroItem}>
-                <h1 className={busynessStyle.depositTitle}>{t.business.termDeposit.heroBlock.title}</h1>
+                <Image
+                  src={HeroMobile}
+                  alt={"Hero Mobile"}
+                  style={{ width: "250px", height: "auto" }}
+                  className={busynessStyle.heroImage}
+                />
+                <h1 className={busynessStyle.depositTitle}>
+                  {t.business.termDeposit.heroBlock.title}
+                </h1>
                 <div className={busynessStyle.depositPageDescription}>
-                  <p>
-                    {t.business.termDeposit.heroBlock.description}
-                  </p>
+                  <p>{t.business.termDeposit.heroBlock.description}</p>
                   <ul>
                     <li>{t.business.termDeposit.heroBlock.bullet1}</li>
                     <li>{t.business.termDeposit.heroBlock.bullet2}</li>
@@ -80,11 +94,21 @@ export default function Deposit() {
           </section>
           <section className={styles.innerNavigationSection}>
             <div className={styles.innerNavigationLinkList}>
-              <Link className={styles.innerNavLink} href="#benefits">{t.business.termDeposit.innerLinkBlock.benefits}</Link>
-              <Link className={styles.innerNavLink} href="#process">{t.business.termDeposit.innerLinkBlock.process}</Link>
-              <Link className={styles.innerNavLink} href="#calculator">{t.business.termDeposit.innerLinkBlock.calculator}</Link>
-              <Link className={styles.innerNavLink} href="#clientSuport">{t.business.termDeposit.innerLinkBlock.clientSuport}</Link>
-              <Link className={styles.innerNavLink} href="#faq">{t.business.termDeposit.faq}</Link>
+              <Link className={styles.innerNavLink} href="#benefits">
+                {t.business.termDeposit.innerLinkBlock.benefits}
+              </Link>
+              <Link className={styles.innerNavLink} href="#process">
+                {t.business.termDeposit.innerLinkBlock.process}
+              </Link>
+              <Link className={styles.innerNavLink} href="#calculator">
+                {t.business.termDeposit.innerLinkBlock.calculator}
+              </Link>
+              <Link className={styles.innerNavLink} href="#clientSuport">
+                {t.business.termDeposit.innerLinkBlock.clientSuport}
+              </Link>
+              <Link className={styles.innerNavLink} href="#faq">
+                {t.business.termDeposit.faq}
+              </Link>
             </div>
           </section>
           <section id="benefits" className={busynessStyle.benefitsSection}>
@@ -130,51 +154,95 @@ export default function Deposit() {
               <div className={busynessStyle.calculatorBlock}>
                 <div className={busynessStyle.borderCorner}></div>
                 <div className={busynessStyle.calculatorLine}>
-                  <div className={busynessStyle.label}>{t.business.termDeposit.calcBlock.ammoutOfDeposit}</div>
-                  <input type="text" value={calc.amount} pattern="[0-9\.\-]*"  onChange={(e) => {amountHandler(e)}} placeholder="Enter amount" />
+                  <div className={busynessStyle.label}>
+                    {t.business.termDeposit.calcBlock.ammoutOfDeposit}
+                  </div>
+                  <input
+                    type="text"
+                    value={calc.amount}
+                    pattern="[0-9\.\-]*"
+                    onChange={(e) => {
+                      amountHandler(e);
+                    }}
+                    placeholder="Enter amount"
+                  />
                 </div>
                 <div className={busynessStyle.calculatorLine}>
-                  <div className={busynessStyle.label}>{t.business.termDeposit.calcBlock.term}</div>
+                  <div className={busynessStyle.label}>
+                    {t.business.termDeposit.calcBlock.term}
+                  </div>
                   <div className={busynessStyle.select}>
-                    <select value={calc.term} onChange={(e) => { selectTerm(e) }}>{createSelectOptions()}</select>
+                    <select
+                      value={calc.term}
+                      onChange={(e) => {
+                        selectTerm(e);
+                      }}
+                    >
+                      {createSelectOptions()}
+                    </select>
                   </div>
                 </div>
               </div>
               <div className={busynessStyle.resultBlock}>
                 <div className={busynessStyle.resultBlockList}>
                   <div className={busynessStyle.resultBlockItem}>
-                    <div className={busynessStyle.left}>{t.business.termDeposit.calcBlock.interestRate}:</div>
-                    <div className={busynessStyle.right}>{calc.selectedRate}%</div>
+                    <div className={busynessStyle.left}>
+                      {t.business.termDeposit.calcBlock.interestRate}:
+                    </div>
+                    <div className={busynessStyle.right}>
+                      {calc.selectedRate}%
+                    </div>
                   </div>
                   <div className={busynessStyle.resultBlockItem}>
-                    <div className={busynessStyle.left}>{t.business.termDeposit.calcBlock.altogether}:</div>
-                    <div className={busynessStyle.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term + calc.amount).toFixed(2)}€</div>
+                    <div className={busynessStyle.left}>
+                      {t.business.termDeposit.calcBlock.altogether}:
+                    </div>
+                    <div className={busynessStyle.right}>
+                      {(
+                        (((+calc.amount / 100) * +calc.selectedRate) / 12) *
+                          calc.term +
+                        calc.amount
+                      ).toFixed(2)}
+                      €
+                    </div>
                   </div>
                   <div className={busynessStyle.resultBlockItem}>
-                    <div className={busynessStyle.left}>{t.business.termDeposit.calcBlock.amountOfInterest}:</div>
-                    <div className={busynessStyle.right}>{(+calc.amount / 100 * +calc.selectedRate / 12 * calc.term).toFixed(2)}€</div>
+                    <div className={busynessStyle.left}>
+                      {t.business.termDeposit.calcBlock.amountOfInterest}:
+                    </div>
+                    <div className={busynessStyle.right}>
+                      {(
+                        (((+calc.amount / 100) * +calc.selectedRate) / 12) *
+                        calc.term
+                      ).toFixed(2)}
+                      €
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className={busynessStyle.depositSectionButton}>
-              <Link className="light-green-action-button long" href="/">{t.business.termDeposit.calcBlock.button}</Link>
+              <Link className="containedBtn long blue" href="/">
+                {t.business.termDeposit.calcBlock.button}
+              </Link>
             </div>
           </section>
           <section id="process" className={styles.stepsSection}>
             <div className={styles.stepsWrapper}>
-                <div className={styles.stepsHeader}>
-                  <h3>{t.business.termDeposit.stepProcess.title}</h3>
-                </div>
-                <Steper steperData={termDepositSteperData}/>
+              <div className={styles.stepsHeader}>
+                <h3>{t.business.termDeposit.stepProcess.title}</h3>
+              </div>
+              <Steper steperData={termDepositSteperData} />
             </div>
           </section>
           <section id="clientSuport" className={styles.clientSuportSection}>
             <div className={styles.clientSuportWrapper}>
-                <h3 className={styles.clientSuportHeader}>{t.business.termDeposit.clientSuport.title}</h3>
-                <div className={styles.clientSuportDescription}>
-                  {t.business.termDeposit.clientSuport.description}
-                </div>
+              <h3 className={styles.clientSuportHeader}>
+                {t.business.termDeposit.clientSuport.title}
+              </h3>
+              <div className={styles.clientSuportDescription}>
+                {t.business.termDeposit.clientSuport.description}
+              </div>
             </div>
           </section>
           <section id="faq" className={styles.faqSection}>
@@ -188,5 +256,5 @@ export default function Deposit() {
         </main>
       </IndexLayout>
     </>
-  )
+  );
 }

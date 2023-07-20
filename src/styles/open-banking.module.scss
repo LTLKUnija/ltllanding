@@ -1,21 +1,24 @@
-.openBankingPageWrapper {
+.pageWrapper {
    padding: 66px 0 46px 0;
-   background-color: var(--ligh-grey-background);
+   background-color: var(--theme-color5);
+   background-image: url("/assets/images/operBankingPage_HeroBlock.svg");
+   background-repeat: no-repeat;
+   background-position: bottom right;
 
-   .copenBankingPageList {
-      padding-left: 312px;
+   .pageList {
+      padding-left: 300px;
 
-      .openBankingHeroItem {
-         width: 474px;
+      .heroItem {
+         max-width: 474px;
       }
 
-      .openBankingTitle {
+      .title {
          font-size: 30px;
          margin-bottom: 35px;
       }
    }
 
-   .openBankingPageDescription {
+   .description {
       font-weight: 400;
       font-size: 18px;
       color: #000000;
@@ -59,10 +62,10 @@
    }
 }
 
-.openBankingArticlesSection {
+.articlesSection {
    padding: 86px 0 55px 0;
 
-   .openBankingArticlesWrapper {
+   .articlesWrapper {
       max-width: 1050px;
       margin: 0 auto;
       padding: 0 15px 0 15px;
@@ -70,11 +73,11 @@
       gap: 60px;
    }
 
-   .openBankingArticlesBlock {
+   .articlesBlock {
       width: 295px;
-      
+
       h4 {
-         
+
          font-size: 25px;
          font-weight: 700;
          line-height: 32px;
@@ -90,10 +93,10 @@
 
 }
 
-.openBankingContactsSection {
+.contactsSection {
    padding: 55px 0 130px 0;
 
-   .openBankingContactsWrapper {
+   .contactsWrapper {
       max-width: 890px;
       padding: 0 15px 0 15px;
       margin: 0 auto;
@@ -105,7 +108,7 @@
          text-align: center;
          margin-bottom: 40px;
       }
-      
+
       p {
          font-size: 17px;
          font-weight: 300;

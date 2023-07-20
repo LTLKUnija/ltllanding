@@ -2,8 +2,14 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import styles from '@/styles/news.module.scss';
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function News() {
+  const router = useRouter();
+  const t = router.locale === 'lt' ? lt : en
+
   const [thisYearNews, setThisYearNews] = useState([{}]);
 
   const [yearVocab, setYearVocab] = useState( [
@@ -61,7 +67,7 @@ export default function News() {
       <IndexLayout>
         <main className={styles.newsListBlock}>
           <div className={styles.newsListWrapper}>
-            <h1 className='page-title'>News</h1>
+            <h1 className='page-title'>{t.news.title}</h1>
             <div className={styles.yearlyLinksBlock}>
               {yearVocab.map((link, idx) => {
                 return (
@@ -85,7 +91,7 @@ export default function News() {
                       <div className={styles.newsTitle}>{news.title}</div>
                       <div className={styles.newsPreviewText}>{news.previewText}</div>
                       <div>
-                        <Link className={styles.readMoreLink} href={`news/${news.id}`}>Read More &#x3e;</Link>
+                        <Link className={styles.readMoreLink} href={`news/${news.id}`}>{t.news.readMore} &#x3e;</Link>
                       </div>
                     </div>
                   )

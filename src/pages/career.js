@@ -2,9 +2,14 @@ import styles from "@/styles/career.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import Link from "next/link"
 import { useEffect, useState } from "react";
-
+import { useRouter } from "next/router"
+import lt from '@/locales/lt'
+import en from '@/locales/en'
 
 export default function Partnership() {
+   const router = useRouter();
+   const t = router.locale === 'lt' ? lt : en
+ 
 
    const [links, setLinks] = useState([]);
    const [activeTabLinks, setActiveTabLinks] = useState([]);
@@ -36,7 +41,7 @@ export default function Partnership() {
          <main>
             <section className={styles.careerSection}>
                <div className={styles.careerWrapper}>
-                  <h3>Karjera</h3>
+                  <h3>{t.career.title}</h3>
                   <div className={styles.innerNavigationLinkList}>
                      {links.map((tab, idx) => {
                         return (

@@ -52,7 +52,6 @@ function Footer() {
           </Link>        
         </div>
       </div>  
-
       <div className="footer-navigation-section footer-img">
         <Link className="social-link" href="/">
           <Image
