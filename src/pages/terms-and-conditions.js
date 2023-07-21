@@ -29,13 +29,12 @@ export default function TemrsAndConditions() {
   const [activeTabLinks, setActiveTabLinks] = useState([]);
 
   useEffect(() => {
-    const getLinks = async () => {
+    (async () => {
       const resp = await fetch(`/api/tnc`);
       const data = await resp.json();
       setLinks(data);
       setActiveTabLinks(data[0].links);
-    };
-    getLinks();
+    })();
   }, []);
 
   function tabHandler(e) {
