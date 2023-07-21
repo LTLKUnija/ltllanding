@@ -300,12 +300,6 @@ footer {
       display: none;
     }
 
-    .bgm {
-      border: solid 1px red;
-      width: 30px;
-      height: 30px;
-    }
-
     .burger-menu-toggle {
       min-width: 30px;
       min-height: 25px;
@@ -314,6 +308,26 @@ footer {
       top: 58px;
       right: 40px;
       z-index: 12;
+
+      .showInnerLink {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        gap: 10px;
+
+        a {
+          padding-left: 15px;
+        }
+      }
+
+      .hideInnerLink {
+        display: none;
+      }
+
+      .rotate {
+        transform: rotate(180deg);
+      }
 
       input {
         display: none;
@@ -335,20 +349,24 @@ footer {
       ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 30px 0 0 10px;
         background-color: var(--white-background);
         position: fixed;
         top: 0;
         right: 0;
-        width: 200px;
+        width: 390px;
         height: 100%;
         overflow: hidden;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
       }
 
-      ul li {
-        padding: 20px;
+      li {
+        padding: 10px;
+
+        &:last-of-type {
+          margin-bottom: 30px;
+        }
       }
 
       input:checked~ul {
@@ -366,6 +384,8 @@ footer {
           transform: rotate(45deg) translate(-5px, -6px);
         }
       }
+
+
     }
 
     .container {
@@ -373,6 +393,19 @@ footer {
       margin: 0 auto;
       padding: 0 15px 0 15px;
     }
+  }
+}
+
+.burgerLink {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black-text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:first-of-type {
+    margin-right: 30px;
   }
 }
 
