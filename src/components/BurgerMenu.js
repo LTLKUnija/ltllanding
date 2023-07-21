@@ -33,6 +33,9 @@ function BurgerMenu() {
       setIsOpen(false);
     }
   };
+  const handleClose = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     if (locale === "lt") {
@@ -69,15 +72,31 @@ function BurgerMenu() {
         <span></span>
       </label>
       <ul className="menu">
-        {isBusiness ? (
-          <Link className={styles.burgerLink} href="/">
-            {t.headerNavLinks.private}
-          </Link>
-        ) : (
-          <Link className={styles.burgerLink} href="/business">
-            {t.headerNavLinks.business}
-          </Link>
-        )}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            maxWidth: "350px",
+          }}
+        >
+          {isBusiness ? (
+            <Link className={styles.burgerLink} href="/">
+              {t.headerNavLinks.private}
+            </Link>
+          ) : (
+            <Link className={styles.burgerLink} href="/business">
+              {t.headerNavLinks.business}
+            </Link>
+          )}
+          <div onClick={handleClose} style={{ cursor: "pointer" }}>
+            <Image
+              src="/assets/images/close.svg"
+              width={15}
+              height={15}
+              alt="check"
+            />
+          </div>
+        </div>
         {isBusiness ? (
           <>
             <li>

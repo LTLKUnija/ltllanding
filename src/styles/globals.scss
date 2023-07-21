@@ -235,6 +235,12 @@ footer {
   .burger-menu-toggle {
     display: none;
   }
+
+  footer {
+    .chevron {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1250px) {
@@ -310,7 +316,6 @@ footer {
       z-index: 12;
 
       .showInnerLink {
-        overflow: hidden;
         display: flex;
         flex-direction: column;
         padding-top: 15px;
@@ -415,12 +420,12 @@ footer {
     flex-direction: column;
     gap: 30px;
     padding: 30px;
-    border: solid 1px;
 
     .footer-navigation-section {
-      min-width: 430px;
+      max-width: 430px;
       gap: 8px;
       display: flex;
+
 
       .footer-navigation-header {
         width: 100%;

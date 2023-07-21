@@ -43,7 +43,7 @@ function Footer() {
               alt="check"
               data-id="usefulLinks"
               onClick={(e) => handleClick(e)}
-              className={showLinks.usefulLinks ? "" : "rotate"}
+              className={`chevron ${showLinks.usefulLinks ? "" : "rotate"}`}
               style={{
                 cursor: "pointer",
               }}
@@ -86,7 +86,7 @@ function Footer() {
               alt="check"
               data-id="aboutUs"
               onClick={(e) => handleClick(e)}
-              className={showLinks.aboutUs ? "" : "rotate"}
+              className={`chevron ${showLinks.aboutUs ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />
           </div>
@@ -121,7 +121,7 @@ function Footer() {
               alt="check"
               data-id="accountability"
               onClick={(e) => handleClick(e)}
-              className={showLinks.accountability ? "" : "rotate"}
+              className={`chevron ${showLinks.accountability ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />
           </div>
@@ -156,7 +156,7 @@ function Footer() {
               alt="check"
               data-id="possibilities"
               onClick={(e) => handleClick(e)}
-              className={showLinks.possibilities ? "" : "rotate"}
+              className={`chevron ${showLinks.possibilities ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />
           </div>
