@@ -45,7 +45,7 @@ export default function Esg() {
             <div className={styles.esgHeroItem}>
               <h1 className={styles.esgTitle}>{t.esg.heroBlock.title}</h1>
               <div className={styles.description}>
-                <p>{t.esg.heroBlock.description} aaaaaa</p>
+                <p>{t.esg.heroBlock.description1}</p>
               </div>
             </div>
           </div>
@@ -69,89 +69,31 @@ export default function Esg() {
             </Link>
           </div>
         </section>
-        <section className={styles.enviromentalProtectionSection}>
-          <div className={styles.container}>
-            <div
-              id="enviromentalProtection"
-              className={styles.enviromentalProtectionBlock}
-            >
-              <div
-                className={[
-                  styles.enviromentalProtectionImg,
-                  styles.imgMargin,
-                ].join(" ")}
-              >
-                <Image
-                  src="/assets/images/article1.svg"
-                  width={429}
-                  height={429}
-                  alt="Image"
-                />
-              </div>
-              <div className={styles.enviromentalProtectionArticle}>
-                <h3>{t.esg.articleBlock.article1.title}</h3>
-                <p>{t.esg.articleBlock.article1.text}</p>
-                <div className="actionButtonBlock">
-                  <Link href="/" className="light-green-action-button">
-                    {t.esg.learnMoreButton}
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div
-              id="socialPolitics"
-              className={styles.enviromentalProtectionBlock}
-            >
-              <div className={styles.enviromentalProtectionArticle}>
-                <h3>{t.esg.articleBlock.article2.title}</h3>
-                <p>{t.esg.articleBlock.article2.text}</p>
-                <div className="actionButtonBlock">
-                  <Link href="/" className="light-green-action-button">
-                    {t.esg.learnMoreButton}
-                  </Link>
-                </div>
-              </div>
-              <div className={styles.enviromentalProtectionImg}>
-                <Image
-                  src="/assets/images/article2.svg"
-                  width={429}
-                  height={429}
-                  alt="Image"
-                />
-              </div>
-            </div>
-            <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
-              <div
-                className={[
-                  styles.enviromentalProtectionImg,
-                  styles.imgMargin,
-                ].join(" ")}
-              >
-                <Image
-                  src="/assets/images/article3.svg"
-                  width={429}
-                  height={429}
-                  alt="Image"
-                />
-              </div>
-              <div className={styles.enviromentalProtectionArticle}>
-                <h3>{t.esg.articleBlock.article3.title}</h3>
-                <p>{t.esg.articleBlock.article3.text}</p>
-                <div className="actionButtonBlock">
-                  <Link href="/" className="light-green-action-button">
-                    {t.esg.learnMoreButton}
-                  </Link>
-                </div>
+
+        <section
+          id="socialPolitics"
+          className={styles.enviromentalProtectionSection}
+        >
+          <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
+            <Image
+              src={Img1}
+              alt="Available Jobs"
+              style={{
+                width: "auto",
+                height: "auto",
+              }}
+            />
+            <div className={styles.enviromentalProtectionArticle}>
+              <h3>{t.esg.articleBlock.article1.title}</h3>
+              <p>{t.esg.articleBlock.article1.text}</p>
+              <div className="actionButtonBlock">
+                <Link href="/" className="outlinedBtn">
+                  {t.esg.learnMoreButton}
+                </Link>
               </div>
             </div>
           </div>
-        </section>
-
-        <section>
-          <div
-            id="socialPolitics"
-            className={styles.enviromentalProtectionBlock}
-          >
+          <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
             <div className={styles.enviromentalProtectionArticle}>
               <h3>{t.esg.articleBlock.article2.title}</h3>
               <p>{t.esg.articleBlock.article2.text}</p>
@@ -161,7 +103,6 @@ export default function Esg() {
                 </Link>
               </div>
             </div>
-
             <Image
               src={Img2}
               alt="Available Jobs"
@@ -171,6 +112,7 @@ export default function Esg() {
               }}
             />
           </div>
+
           <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
             <Image
               src={Img3}

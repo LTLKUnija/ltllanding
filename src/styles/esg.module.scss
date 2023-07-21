@@ -72,12 +72,32 @@
 
    .enviromentalProtectionBlock {
       display: flex;
+      justify-content: center;
       gap: 120px;
       margin-bottom: 48px;
       padding-top: 40px;
 
       &:last-child {
          margin-bottom: 0;
+      }
+
+      .enviromentalProtectionArticle {
+         max-width: 580px;
+         white-space: pre-line;
+
+         h3 {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 62px;
+            margin-bottom: 34px;
+         }
+
+         p {
+            font-size: 19px;
+            font-weight: 300;
+            line-height: 28px;
+            margin-bottom: 54px;
+         }
       }
    }
 
@@ -90,24 +110,7 @@
       margin-top: 25px;
    }
 
-   .enviromentalProtectionArticle {
-      max-width: 580px;
-      white-space: pre-line;
 
-      h3 {
-         font-size: 50px;
-         font-weight: 700;
-         line-height: 62px;
-         margin-bottom: 34px;
-      }
-
-      p {
-         font-size: 19px;
-         font-weight: 300;
-         line-height: 28px;
-         margin-bottom: 54px;
-      }
-   }
 }
 
 .annualReportsSection {
