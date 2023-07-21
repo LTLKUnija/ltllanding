@@ -86,15 +86,15 @@ export default function ShareHolders() {
                         <h4>{t.shareholders.contacts.director}</h4>
                         <p>Ruslanas Telnovas
                            ruslanas.telnovas@ltlku.lt
-                           (8 5) 205 5240
-                           (8 5) 205 5241
+                        <p>(8 5) 205 5240</p>   
+                        <p>(8 5) 205 5241</p>   
                         </p>
                      </div>
                      <div className={styles.contactsInfo}>
                         <h4>{t.shareholders.contacts.companyName}</h4>
                         <p>Sporto g. 18, LT-09238, Vilnius Įmonės kodas 302791356
-                           (8 5) 205 5240
-                           info@ltlku.lt
+                        <p>(8 5) 205 5240</p>  
+                        <p>info@ltlku.lt</p>  
                         </p>
                      </div>
                   </div>

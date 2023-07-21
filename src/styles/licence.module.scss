@@ -24,7 +24,7 @@
 }
 
 .imgSection {
-   padding: 28px 0 102px 0;
+   padding: 28px 0 10px 0;
 
    .imgWrapper {
       max-width: 1055px;
@@ -33,8 +33,51 @@
    }
 
    .img {
-      width: 1025px;
-      height: 1683px;
-      background: url(/assets/images/Licence.png);
+      max-width: 1025px;
+      height: 1700px;
+      background-image: url(/assets/images/Licence.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: 100%;
+   }
+}
+//----Media Query----
+@media (max-width: 900px) {
+   .imgSection {
+      .imgWrapper {
+         .img {
+            height: 1413px;
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .imgSection {
+      .imgWrapper {
+         .img {
+            height: 1150px;
+         }
+      }
+   }
+}
+
+@media (max-width: 620px) {
+   .imgSection {
+      .imgWrapper {
+         .img {
+            height: 950px;
+         }
+      }
+   }
+}
+
+@media (max-width: 500px) {
+   .imgSection {
+      .imgWrapper {
+         .img {
+            height: 780px;
+         }
+      }
    }
 }

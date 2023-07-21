@@ -37,14 +37,6 @@ export default function SuportAndComplaints() {
                      />
                   </div>
             </section>
-            <section id="faq" className={styles.faqSection}>
-            <div className={styles.faqWrapper}>
-              <h3 className={styles.faqHeader}>{t.suportsComplaints.faq}</h3>
-              <div className={styles.faqList}>
-                <Accordion accId="1" singleLevel="true" />
-              </div>
-            </div>
-          </section>
          </main>
       </IndexLayout>
    )

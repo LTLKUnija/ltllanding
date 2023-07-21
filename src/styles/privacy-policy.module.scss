@@ -57,3 +57,18 @@
       }
    }
 }
+// ----- Media queries -----
+@media (max-width: 768px) {
+   .privacyPolicySection {
+      padding: 26px 0 50px 0;
+      .privacyPolicyLinks {
+         ul {
+            width: 300px;
+            margin: 0 auto;
+            min-height: 600px;
+            display: flex;
+            justify-content: center;
+         }
+      }
+   }
+ }

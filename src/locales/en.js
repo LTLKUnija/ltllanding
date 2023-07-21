@@ -37,7 +37,7 @@ export default {
     api: "API",
     career: "Career",
     contacts: "Contacts",
-    address: "Sporto st. 18, LT- 09238 Vilnius",
+    address: "Sporto st. 18, \n LT- 09238 Vilnius",
   },
   indexPage: {
     slideOne: {
