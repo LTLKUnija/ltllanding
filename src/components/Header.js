@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
-import BurgerMenu from "./BurgerMenu";
+import Drawer from "./Drawer";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const drawerRef = useRef(null);
+
   const [langBtnState, setLangBtnState] = useState("ENG");
 
   const router = useRouter();
@@ -27,6 +30,24 @@ function Header() {
     if (type === "open") setCreditSubMenu(true);
     else setCreditSubMenu(false);
   };
+
+  const handleToggleBurgerMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (drawerRef.current && !drawerRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   useEffect(() => {
     if (locale === "lt") {
@@ -192,7 +213,7 @@ function Header() {
           {t.headerNavLinks.openAccount}
         </Link>
       </div>
-      <BurgerMenu />
+      <Drawer isOpen={isMenuOpen} onClose={handleToggleBurgerMenu} />
     </header>
   );
 }
