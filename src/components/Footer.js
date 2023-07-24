@@ -1,20 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 
-function Footer() {
+function Footer({ setShowLinks, showLinks }) {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
-
-  const [showLinks, setShowLinks] = useState({
-    usefulLinks: false,
-    aboutUs: false,
-    accountability: false,
-    possibilities: false,
-  });
 
   const handleClick = (e) => {
     const key = e.target.dataset.id;
