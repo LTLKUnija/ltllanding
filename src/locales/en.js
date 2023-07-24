@@ -16,6 +16,9 @@ export default {
     investmentLoan: "investment loan",
     capitalLoan: "Capital loan",
   },
+  burgerMenu: {
+    openAccount: "Open account",
+  },
   footerNavLinks: {
     usefulLinks: "Useful links",
     priceList: "Price list",

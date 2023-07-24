@@ -6,21 +6,53 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import FinacialReportsData from "@/components/FinacialReportsData";
 
 export default function TemrsAndConditions() {
-  const db = getFirestore();
-  const colRef = collection(db, "ltl-test");
-  getDocs(colRef)
-    .then((snapshot) => {
-      let tncList = [];
-      snapshot.docs.forEach((tab) => {
-        tncList.push({ ...tab.data(), id: tab.id });
-      });
-      console.log(tncList);
-    })
-    .catch((err) => {
-      console.log(err.message);
-    });
+  // const db = getFirestore();
+  // const colRef = collection(db, "financialReports");
+  // getDocs(colRef)
+  //   .then((snapshot) => {
+  //     let List = [];
+  //     snapshot.docs.forEach((tab) => {
+  //       List.push({ ...tab.data(), id: tab.id });
+  //     });
+  //     console.log(List);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err.message);
+  //   });
+
+  const [financialData, setFinancialData] = useState([]);
+
+  useEffect(() => {
+    const fetchFinancialReports = async () => {
+      const db = getFirestore();
+      const collectionNames = ["financialReports"];
+
+      const allData = [];
+
+      for (const collectionName of collectionNames) {
+        const colRef = collection(db, collectionName);
+        try {
+          const snapshot = await getDocs(colRef);
+          snapshot.docs.forEach((doc) => {
+            allData.push({ ...doc.data(), id: doc.id });
+          });
+          // console.log(allData);
+        } catch (error) {
+          console.error(
+            `Error fetching data from ${collectionName}:`,
+            error.message
+          );
+        }
+      }
+
+      setFinancialData(allData);
+    };
+
+    fetchFinancialReports();
+  }, []);
 
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
@@ -56,6 +88,7 @@ export default function TemrsAndConditions() {
             <h1>{t.termConditions.pageTitle}</h1>
             <p>{t.termConditions.description}</p>
           </div>
+          {/* <FinacialReportsData /> */}
           <div className={styles.innerNavigationLinkList}>
             {links.map((tab, idx) => {
               return (

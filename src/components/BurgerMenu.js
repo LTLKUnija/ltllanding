@@ -41,6 +41,21 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
       ref={ref}
       className={`${styles.burgerMenu} ${isOpen ? styles.open : ""}`}
     >
+      <div className={styles.closeBtn}>
+        <Image
+          src="/assets/images/close.svg"
+          width={15}
+          height={15}
+          alt="check"
+          onClick={onClose}
+          style={{ cursor: "pointer" }}
+        />
+      </div>
+      <div className={styles.openAcc}>
+        <Link href="/open-account" className={styles.burgerLink}>
+          {t.burgerMenu.openAccount}
+        </Link>
+      </div>
       <div className={styles.burgerHeader}>
         {isBusiness ? (
           <Link className={styles.burgerLink} href="/">
@@ -51,14 +66,7 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
             {t.headerNavLinks.business}
           </Link>
         )}
-        <div onClick={onClose} style={{ cursor: "pointer" }}>
-          <Image
-            src="/assets/images/close.svg"
-            width={15}
-            height={15}
-            alt="check"
-          />
-        </div>
+        <div style={{ cursor: "pointer" }}></div>
       </div>
 
       {isBusiness ? (
