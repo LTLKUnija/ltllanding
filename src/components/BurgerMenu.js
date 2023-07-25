@@ -66,7 +66,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
       </div>
       {isBusiness ? (
         <div className={styles.burgerBox}>
-          <Link className={styles.lowerCaseLink} href="/business/deposit">
+          <Link className={styles.lowerCaseLink} href="/business/deposits">
             {t.headerNavLinks.deposit}
           </Link>
           <div
@@ -153,7 +153,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
         </div>
       ) : (
         <div className={styles.burgerBox}>
-          <Link className={styles.lowerCaseLink} href="/deposit">
+          <Link className={styles.lowerCaseLink} href="/deposits">
             {t.headerNavLinks.deposit}
           </Link>
 

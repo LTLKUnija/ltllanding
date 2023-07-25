@@ -426,6 +426,20 @@ footer {
   &.long {
     width: 252px;
   }
+
+  &.blue {
+    background: #034585;
+
+    &:hover {
+      background: white;
+      border: solid 1px #034585;
+      color: #034585;
+    }
+  }
+
+  &.noBorder {
+    border: none;
+  }
 }
 
 .containedBtn {

@@ -46,6 +46,19 @@ export default {
         "Su Kocomo namas bendrai priklauso ne daugiau kaip aštuonioms šeimoms o mes veikiame kaip neutralus trečiosios šalies administratorius, siekdami užtikrinti skaidrumą ir sąžiningumą",
       learnMoreButton: "Sužinokite daugiau",
     },
+    slideTwo: {
+      heroBlockH1: "Get the financing you need to grow your business",
+      heroBlockText:
+        "Are you looking for a way to grow your business? A business loan may be the perfect solution.",
+      learnMoreButton: "Learn more",
+    },
+    slideThree: {
+      heroBlockH1:
+        "There's no place like home, especially with a mortgage loan from us!",
+      heroBlockText:
+        "Are you looking for a way to finance your next big project? A mortage loan may be the perfect solution.",
+      learnMoreButton: "Learn more",
+    },
     articleBlock: {
       article1: {
         title: "Pabodo laiką leisti banko skyriuose?",
