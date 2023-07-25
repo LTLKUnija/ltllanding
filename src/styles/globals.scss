@@ -316,9 +316,7 @@ footer {
       padding: 0 15px 0 15px;
     }
   }
-}
 
-@media (max-width: 974px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -326,7 +324,7 @@ footer {
     padding: 30px;
 
     .footer-navigation-section {
-      max-width: 430px;
+      max-width: 100%;
       gap: 8px;
       display: flex;
 
@@ -336,8 +334,11 @@ footer {
       }
 
       h4 {
+        width: 100px;
         margin-bottom: 8px;
+        cursor: pointer;
       }
+
     }
 
     .footer-img {
@@ -352,11 +353,20 @@ footer {
       align-items: center;
     }
 
+    .chevron {
+      width: 32px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .adress {
       white-space: pre-line;
     }
   }
 }
+
 
 @media (max-width: 768px) {
   .container {

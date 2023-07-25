@@ -16,9 +16,6 @@ export default {
     investmentLoan: "Investicinė paskola",
     capitalLoan: "Paskola apyvartiniam kapitalui",
   },
-  burgerMenu: {
-    openAccount: "Atidaryti sąskaitą",
-  },
   footerNavLinks: {
     usefulLinks: "Useful links",
     priceList: "Price list",

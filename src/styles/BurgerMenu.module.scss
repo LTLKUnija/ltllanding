@@ -27,6 +27,13 @@
     justify-content: space-between;
   }
 
+  .burgerItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+  }
+
   .burgerBox {
     padding: 10px;
     display: flex;
@@ -54,15 +61,30 @@
   }
 }
 
-.burgerLink {
+.upperCaseLink {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: var(--black-text-color);
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 
   &:first-of-type {
     margin-right: 30px;
   }
+
+}
+
+.lowerCaseLink {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black-text-color);
+  text-decoration: none;
+
+  &:first-of-type {
+    margin-right: 30px;
+  }
+
 }

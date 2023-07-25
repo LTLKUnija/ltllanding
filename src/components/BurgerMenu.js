@@ -52,45 +52,40 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
         />
       </div>
       <div className={styles.openAcc}>
-        <Link href="/open-account" className={styles.burgerLink}>
-          {t.burgerMenu.openAccount}
+        <Link href="/open-account" className={styles.upperCaseLink}>
+          {t.headerNavLinks.openAccount}
         </Link>
       </div>
       <div className={styles.burgerHeader}>
         {isBusiness ? (
-          <Link className={styles.burgerLink} href="/">
+          <Link className={styles.upperCaseLink} href="/">
             {t.headerNavLinks.private}
           </Link>
         ) : (
-          <Link className={styles.burgerLink} href="/business">
+          <Link className={styles.upperCaseLink} href="/business">
             {t.headerNavLinks.business}
           </Link>
         )}
-        <div style={{ cursor: "pointer" }}></div>
       </div>
-
       {isBusiness ? (
         <div className={styles.burgerBox}>
-          <Link className={styles.burgerLink} href="/business/deposit">
+          <Link className={styles.lowerCaseLink} href="/business/deposit">
             {t.headerNavLinks.deposit}
           </Link>
-
           <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              maxWidth: "270px",
-            }}
+            className={styles.burgerItem}
+            data-id="payment"
+            onClick={(e) => handleShowInnerLinks(e)}
           >
-            <p className={styles.burgerLink}>{t.headerNavLinks.payments}</p>
+            <h4 className={styles.upperCaseLink} data-id="payment">
+              {t.headerNavLinks.payments}
+            </h4>
             <Image
               src="/assets/images/chevronBlack.svg"
               width={14}
               height={8}
               alt="check"
               data-id="payment"
-              onClick={(e) => handleShowInnerLinks(e)}
               className={`${showInnerLinks.payment ? "" : styles.rotate}`}
               style={{
                 cursor: "pointer",
@@ -105,32 +100,29 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
             }`}
           >
             <Link
-              className={styles.burgerLink}
+              className={styles.lowerCaseLink}
               href="/business/current-account"
             >
               {t.headerNavLinks.currentAccount}
             </Link>
-            <Link className={styles.burgerLink} href="/business/payments">
+            <Link className={styles.lowerCaseLink} href="/business/payments">
               {t.headerNavLinks.payments}
             </Link>
           </div>
-
           <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              maxWidth: "270px",
-            }}
+            className={styles.burgerItem}
+            data-id="credit"
+            onClick={(e) => handleShowInnerLinks(e)}
           >
-            <p className={styles.burgerLink}>{t.headerNavLinks.credit}</p>
+            <h4 className={styles.upperCaseLink} data-id="credit">
+              {t.headerNavLinks.credit}
+            </h4>
             <Image
               src="/assets/images/chevronBlack.svg"
               width={14}
               height={8}
               alt="check"
               data-id="credit"
-              onClick={(e) => handleShowInnerLinks(e)}
               className={`${showInnerLinks.credit ? "" : styles.rotate}`}
               style={{
                 cursor: "pointer",
@@ -145,42 +137,43 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
             }`}
           >
             <Link
-              className={styles.burgerLink}
+              className={styles.lowerCaseLink}
               href="/business/investment-loan"
             >
               {t.headerNavLinks.investmentLoan}
             </Link>
-            <Link className={styles.burgerLink} href="/business/capital-loan">
+            <Link
+              className={styles.lowerCaseLink}
+              href="/business/capital-loan"
+            >
               {t.headerNavLinks.capitalLoan}
             </Link>
           </div>
 
-          <Link className={styles.burgerLink} href="/contacts">
+          <Link className={styles.lowerCaseLink} href="/contacts">
             {t.headerNavLinks.contacts}
           </Link>
         </div>
       ) : (
         <div className={styles.burgerBox}>
-          <Link className={styles.burgerLink} href="/deposit">
+          <Link className={styles.lowerCaseLink} href="/deposit">
             {t.headerNavLinks.deposit}
           </Link>
 
           <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              maxWidth: "270px",
-            }}
+            className={styles.burgerItem}
+            data-id="payment"
+            onClick={(e) => handleShowInnerLinks(e)}
           >
-            <p className={styles.burgerLink}>{t.headerNavLinks.payments}</p>
+            <h4 className={styles.upperCaseLink} data-id="payment">
+              {t.headerNavLinks.payments}
+            </h4>
             <Image
               src="/assets/images/chevronBlack.svg"
               width={14}
               height={8}
               alt="check"
               data-id="payment"
-              onClick={(e) => handleShowInnerLinks(e)}
               className={`${showInnerLinks.payment ? "" : styles.rotate}`}
               style={{
                 cursor: "pointer",
@@ -194,30 +187,28 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
                 : styles.hideInnerLink
             }`}
           >
-            <Link className={styles.burgerLink} href="/product">
+            <Link className={styles.lowerCaseLink} href="/product">
               {t.headerNavLinks.currentAccount}
             </Link>
-            <Link className={styles.burgerLink} href="/payments">
+            <Link className={styles.lowerCaseLink} href="/payments">
               {t.headerNavLinks.payments}
             </Link>
           </div>
 
           <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              maxWidth: "270px",
-            }}
+            className={styles.burgerItem}
+            data-id="credit"
+            onClick={(e) => handleShowInnerLinks(e)}
           >
-            <p className={styles.burgerLink}>{t.headerNavLinks.credit}</p>
+            <h4 className={styles.upperCaseLink} data-id="credit">
+              {t.headerNavLinks.credit}
+            </h4>
             <Image
               src="/assets/images/chevronBlack.svg"
               width={14}
               height={8}
               alt="check"
               data-id="credit"
-              onClick={(e) => handleShowInnerLinks(e)}
               className={`${showInnerLinks.credit ? "" : styles.rotate}`}
               style={{
                 cursor: "pointer",
@@ -231,30 +222,33 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
                 : styles.hideInnerLink
             }`}
           >
-            <Link className={styles.burgerLink} href="/credits/mortgage">
+            <Link className={styles.lowerCaseLink} href="/credits/mortgage">
               {t.headerNavLinks.mortgageLoan}
             </Link>
-            <Link className={styles.burgerLink} href="/credits/consumer-loan">
+            <Link
+              className={styles.lowerCaseLink}
+              href="/credits/consumer-loan"
+            >
               {t.headerNavLinks.consumerLoan}
             </Link>
-            <Link className={styles.burgerLink} href="/credits/equity-loan">
+            <Link className={styles.lowerCaseLink} href="/credits/equity-loan">
               {t.headerNavLinks.equityLoan}
             </Link>
           </div>
 
-          <Link className={styles.burgerLink} href="/contacts">
+          <Link className={styles.lowerCaseLink} href="/contacts">
             {t.headerNavLinks.contacts}
           </Link>
         </div>
       )}
-      <p
+      <span
         style={{ width: "40px", fontWeight: "bold" }}
         className="header-nav-link change-language-link"
         onClick={setLanguage}
         href="/eng"
       >
         {langBtnState}
-      </p>
+      </span>
     </div>
   );
 };

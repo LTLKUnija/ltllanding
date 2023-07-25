@@ -23,18 +23,22 @@ function Footer({ setShowLinks, showLinks }) {
         <div className="footer-navigation-header">
           <h4
             className="footer-navigation-section-title"
-            style={{ width: "100px" }}
+            data-id="usefulLinks"
+            onClick={(e) => handleClick(e)}
           >
             {t.footerNavLinks.usefulLinks}
           </h4>
-          <div>
+          <div
+            className="chevron"
+            onClick={(e) => handleClick(e)}
+            data-id="usefilLinks"
+          >
             <Image
               src="/assets/images/chevron.svg"
               width={14}
               height={8}
               alt="check"
               data-id="usefulLinks"
-              onClick={(e) => handleClick(e)}
               className={`chevron ${showLinks.usefulLinks ? "" : "rotate"}`}
               style={{
                 cursor: "pointer",
@@ -67,17 +71,23 @@ function Footer({ setShowLinks, showLinks }) {
           <h4
             className="footer-navigation-section-title"
             style={{ width: "100px" }}
+            onClick={(e) => handleClick(e)}
+            data-id="aboutUs"
           >
             {t.footerNavLinks.aboutUs}
           </h4>
-          <div>
+
+          <div
+            className="chevron"
+            onClick={(e) => handleClick(e)}
+            data-id="aboutUs"
+          >
             <Image
               src="/assets/images/chevron.svg"
               width={14}
               height={8}
               alt="check"
               data-id="aboutUs"
-              onClick={(e) => handleClick(e)}
               className={`chevron ${showLinks.aboutUs ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />
@@ -102,17 +112,24 @@ function Footer({ setShowLinks, showLinks }) {
         }`}
       >
         <div className="footer-navigation-header">
-          <h4 className="footer-navigation-section-title">
+          <h4
+            className="footer-navigation-section-title"
+            data-id="accountability"
+            onClick={(e) => handleClick(e)}
+          >
             {t.footerNavLinks.accountability}
           </h4>
-          <div>
+          <div
+            className="chevron"
+            onClick={(e) => handleClick(e)}
+            data-id="accountability"
+          >
             <Image
               src="/assets/images/chevron.svg"
               width={14}
               height={8}
               alt="check"
               data-id="accountability"
-              onClick={(e) => handleClick(e)}
               className={`chevron ${showLinks.accountability ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />
@@ -137,17 +154,22 @@ function Footer({ setShowLinks, showLinks }) {
           <h4
             className="footer-navigation-section-title"
             style={{ width: "100px" }}
+            data-id="possibilities"
+            onClick={(e) => handleClick(e)}
           >
             {t.footerNavLinks.possibilities}
           </h4>
-          <div>
+          <div
+            className="chevron"
+            onClick={(e) => handleClick(e)}
+            data-id="possibilities"
+          >
             <Image
               src="/assets/images/chevron.svg"
               width={14}
               height={8}
               alt="check"
               data-id="possibilities"
-              onClick={(e) => handleClick(e)}
               className={`chevron ${showLinks.possibilities ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />

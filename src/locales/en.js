@@ -13,11 +13,8 @@ export default {
     contacts: "Contacts",
     login: "Log In",
     openAccount: "Open account",
-    investmentLoan: "investment loan",
+    investmentLoan: "Investment loan",
     capitalLoan: "Capital loan",
-  },
-  burgerMenu: {
-    openAccount: "Open account",
   },
   footerNavLinks: {
     usefulLinks: "Useful links",
