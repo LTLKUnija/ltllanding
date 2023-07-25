@@ -232,8 +232,14 @@ footer {
 
 // ----- Media queries -----
 @media (min-width: 1024px) {
-  .burger-menu-toggle {
+  .burgerIcon {
     display: none;
+  }
+
+  footer {
+    .chevron {
+      display: none;
+    }
   }
 }
 
@@ -241,7 +247,7 @@ footer {
   .main-layout {
 
     header {
-      padding: 40px 15px 37px 15px;
+      padding: 40px 25px 37px 15px;
     }
 
     .logo-block {
@@ -300,72 +306,8 @@ footer {
       display: none;
     }
 
-    .bgm {
-      border: solid 1px red;
-      width: 30px;
-      height: 30px;
-    }
-
-    .burger-menu-toggle {
-      min-width: 30px;
-      min-height: 25px;
-      display: block;
-      position: fixed;
-      top: 58px;
-      right: 40px;
-      z-index: 12;
-
-      input {
-        display: none;
-      }
-
-      label {
-        cursor: pointer;
-      }
-
-      span {
-        display: block;
-        width: 30px;
-        height: 3px;
-        margin-bottom: 5px;
-        background-color: #333;
-        transition: transform 0.3s ease-in-out;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        background-color: var(--white-background);
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 200px;
-        height: 100%;
-        overflow: hidden;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
-      }
-
-      ul li {
-        padding: 20px;
-      }
-
-      input:checked~ul {
-        transform: translateX(0%);
-
-        &~span:nth-child(1) {
-          transform: rotate(-45deg) translate(-5px, 6px);
-        }
-
-        &~span:nth-child(2) {
-          opacity: 0;
-        }
-
-        &~span:nth-child(3) {
-          transform: rotate(45deg) translate(-5px, -6px);
-        }
-      }
+    .burgerIcon {
+      cursor: pointer;
     }
 
     .container {
@@ -374,28 +316,29 @@ footer {
       padding: 0 15px 0 15px;
     }
   }
-}
 
-@media (max-width: 974px) {
   footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 30px;
-    border: solid 1px;
 
     .footer-navigation-section {
-      min-width: 430px;
+      max-width: 100%;
       gap: 8px;
       display: flex;
+
 
       .footer-navigation-header {
         width: 100%;
       }
 
       h4 {
+        width: 100px;
         margin-bottom: 8px;
+        cursor: pointer;
       }
+
     }
 
     .footer-img {
@@ -410,11 +353,20 @@ footer {
       align-items: center;
     }
 
+    .chevron {
+      width: 32px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .adress {
       white-space: pre-line;
     }
   }
 }
+
 
 @media (max-width: 768px) {
   .container {

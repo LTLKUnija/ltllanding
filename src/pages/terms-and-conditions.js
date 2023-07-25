@@ -8,20 +8,6 @@ import lt from "@/locales/lt";
 import en from "@/locales/en";
 
 export default function TemrsAndConditions() {
-  const db = getFirestore();
-  const colRef = collection(db, "ltl-test");
-  getDocs(colRef)
-    .then((snapshot) => {
-      let tncList = [];
-      snapshot.docs.forEach((tab) => {
-        tncList.push({ ...tab.data(), id: tab.id });
-      });
-      console.log(tncList);
-    })
-    .catch((err) => {
-      console.log(err.message);
-    });
-
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
 

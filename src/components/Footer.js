@@ -1,20 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 
-function Footer() {
+function Footer({ setShowLinks, showLinks }) {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
-
-  const [showLinks, setShowLinks] = useState({
-    usefulLinks: false,
-    aboutUs: false,
-    accountability: false,
-    possibilities: false,
-  });
 
   const handleClick = (e) => {
     const key = e.target.dataset.id;
@@ -31,19 +23,23 @@ function Footer() {
         <div className="footer-navigation-header">
           <h4
             className="footer-navigation-section-title"
-            style={{ width: "100px" }}
+            data-id="usefulLinks"
+            onClick={(e) => handleClick(e)}
           >
             {t.footerNavLinks.usefulLinks}
           </h4>
-          <div>
+          <div
+            className="chevron"
+            onClick={(e) => handleClick(e)}
+            data-id="usefilLinks"
+          >
             <Image
               src="/assets/images/chevron.svg"
               width={14}
               height={8}
               alt="check"
               data-id="usefulLinks"
-              onClick={(e) => handleClick(e)}
-              className={showLinks.usefulLinks ? "" : "rotate"}
+              className={`chevron ${showLinks.usefulLinks ? "" : "rotate"}`}
               style={{
                 cursor: "pointer",
               }}
@@ -75,18 +71,24 @@ function Footer() {
           <h4
             className="footer-navigation-section-title"
             style={{ width: "100px" }}
+            onClick={(e) => handleClick(e)}
+            data-id="aboutUs"
           >
             {t.footerNavLinks.aboutUs}
           </h4>
-          <div>
+
+          <div
+            className="chevron"
+            onClick={(e) => handleClick(e)}
+            data-id="aboutUs"
+          >
             <Image
               src="/assets/images/chevron.svg"
               width={14}
               height={8}
               alt="check"
               data-id="aboutUs"
-              onClick={(e) => handleClick(e)}
-              className={showLinks.aboutUs ? "" : "rotate"}
+              className={`chevron ${showLinks.aboutUs ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />
           </div>
@@ -110,18 +112,25 @@ function Footer() {
         }`}
       >
         <div className="footer-navigation-header">
-          <h4 className="footer-navigation-section-title">
+          <h4
+            className="footer-navigation-section-title"
+            data-id="accountability"
+            onClick={(e) => handleClick(e)}
+          >
             {t.footerNavLinks.accountability}
           </h4>
-          <div>
+          <div
+            className="chevron"
+            onClick={(e) => handleClick(e)}
+            data-id="accountability"
+          >
             <Image
               src="/assets/images/chevron.svg"
               width={14}
               height={8}
               alt="check"
               data-id="accountability"
-              onClick={(e) => handleClick(e)}
-              className={showLinks.accountability ? "" : "rotate"}
+              className={`chevron ${showLinks.accountability ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />
           </div>
@@ -145,18 +154,23 @@ function Footer() {
           <h4
             className="footer-navigation-section-title"
             style={{ width: "100px" }}
+            data-id="possibilities"
+            onClick={(e) => handleClick(e)}
           >
             {t.footerNavLinks.possibilities}
           </h4>
-          <div>
+          <div
+            className="chevron"
+            onClick={(e) => handleClick(e)}
+            data-id="possibilities"
+          >
             <Image
               src="/assets/images/chevron.svg"
               width={14}
               height={8}
               alt="check"
               data-id="possibilities"
-              onClick={(e) => handleClick(e)}
-              className={showLinks.possibilities ? "" : "rotate"}
+              className={`chevron ${showLinks.possibilities ? "" : "rotate"}`}
               style={{ cursor: "pointer" }}
             />
           </div>
