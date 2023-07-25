@@ -35,20 +35,6 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleOutsideClick = (event) => {
-    if (drawerRef.current && !drawerRef.current.contains(event.target)) {
-      setIsMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleOutsideClick);
-
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, []);
-
   useEffect(() => {
     if (locale === "lt") {
       setLangBtnState("ENG");
