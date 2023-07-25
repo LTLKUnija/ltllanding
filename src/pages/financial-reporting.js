@@ -113,7 +113,7 @@ export default function FinancialReporting() {
             <h3 className={styles.sectionTitle}>
               {t.finacialReporting.quarterlyReports}
             </h3>
-            <div className={styles.tabsList}>
+            <div className={[styles.tabsList, styles.center].join(" ")}>
               {quarterLinks.map((tab, idx) => {
                 return (
                   <div
@@ -168,7 +168,7 @@ export default function FinancialReporting() {
             <h3 className={styles.sectionTitle}>
               {t.finacialReporting.factsheets}
             </h3>
-            <div className={styles.tabsList}>
+            <div className={[styles.tabsList, styles.center].join(" ")}>
               {factSheetList.map((tab, idx) => {
                 return (
                   <div
@@ -214,7 +214,7 @@ export default function FinancialReporting() {
             <h3 className={styles.sectionTitle}>
               {t.finacialReporting.presentations}
             </h3>
-            <ul className={styles.tabsList}>
+            <ul className={[styles.tabsList, styles.center].join(" ")}>
               {presentationsList.map((year, idx) => {
                 return (
                   <li

@@ -16,28 +16,23 @@ export default function FinacialReportsData() {
   useEffect(() => {
     const getAnnualLinks = async () => {
       const db = getFirestore();
-      const collectionNames = ["financialReports"];
+      const collectionName = "financialReports";
+      const colRef = collection(db, collectionName);
 
-      const allData = [];
-
-      for (const collectionName of collectionNames) {
-        const colRef = collection(db, collectionName);
-        try {
-          const snapshot = await getDocs(colRef);
-          snapshot.docs.forEach((doc) => {
-            allData.push({ ...doc.data(), id: doc.id });
-          });
-          console.log(allData);
-        } catch (error) {
-          console.error(
-            `Error fetching data from ${collectionName}:`,
-            error.message
-          );
-        }
+      try {
+        const snapshot = await getDocs(colRef);
+        const allData = snapshot.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }));
+        setAnnualLinks(allData.reverse());
+        setActiveLinks(allData[0].links);
+      } catch (error) {
+        console.error(
+          `Error fetching data from ${collectionName}:`,
+          error.message
+        );
       }
-
-      setAnnualLinks(allData.reverse());
-      setActiveLinks(allData[0].links);
     };
 
     getAnnualLinks();
@@ -79,7 +74,11 @@ export default function FinacialReportsData() {
         {activeAnnualLinks.map((link, index) => (
           <div key={index} className={styles.reportItem}>
             <img src="/assets/images/Pdficon.svg" alt="Pdf File" />
-            <Link href={link.linkUrl} className={styles.linkStyle}>
+            <Link
+              href={link.linkUrl}
+              className={styles.linkStyle}
+              target="_blank"
+            >
               {link.linkName}
             </Link>
           </div>
