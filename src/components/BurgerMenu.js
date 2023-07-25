@@ -11,8 +11,6 @@ const BurgerMenu = ({ isOpen, onClose }) => {
   const { locale } = router;
   const t = locale === "lt" ? lt : en;
   const isBusiness = router.pathname.includes("/business");
-  const [langBtnState, setLangBtnState] = useState("ENG");
-
   const [showInnerLinks, setShowInnerLinks] = useState({
     payment: false,
     credit: false,
@@ -22,19 +20,6 @@ const BurgerMenu = ({ isOpen, onClose }) => {
     const key = e.target.dataset.id;
     setShowInnerLinks((prev) => ({ ...prev, [key]: !prev[key] }));
   };
-
-  useEffect(() => {
-    if (locale === "lt") {
-      setLangBtnState("ENG");
-    } else {
-      setLangBtnState("LT");
-    }
-  }, [locale]);
-
-  function setLanguage() {
-    if (langBtnState === "ENG") router.push("/", "/", { locale: "en" });
-    else router.push("/", "/", { locale: "lt" });
-  }
 
   return (
     <div className={`${styles.burgerMenu} ${isOpen ? styles.open : ""}`}>
@@ -238,14 +223,6 @@ const BurgerMenu = ({ isOpen, onClose }) => {
           </Link>
         </div>
       )}
-      <span
-        style={{ width: "40px", fontWeight: "bold" }}
-        className="header-nav-link change-language-link"
-        onClick={setLanguage}
-        href="/eng"
-      >
-        {langBtnState}
-      </span>
     </div>
   );
 };
