@@ -1,11 +1,8 @@
-import React, { useRef } from "react";
 import styles from "@/styles/BurgerMenu.module.scss";
 import Image from "next/image";
 import BurgerMenu from "./BurgerMenu";
 
 const Drawer = ({ isOpen, onClose }) => {
-  const burgerMenuRef = useRef(null);
-
   const handleToggleBurgerMenu = () => {
     onClose(!isOpen);
   };
@@ -20,7 +17,7 @@ const Drawer = ({ isOpen, onClose }) => {
         onClick={handleToggleBurgerMenu}
         className="burgerIcon"
       />
-      <BurgerMenu ref={burgerMenuRef} isOpen={isOpen} onClose={onClose} />
+      <BurgerMenu isOpen={isOpen} onClose={onClose} />
     </div>
   );
 };

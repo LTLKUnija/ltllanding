@@ -6,7 +6,7 @@ import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Image from "next/image";
 
-const BurgerMenu = ({ isOpen, onClose }, ref) => {
+const BurgerMenu = ({ isOpen, onClose }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "lt" ? lt : en;
@@ -37,10 +37,7 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
   }
 
   return (
-    <div
-      ref={ref}
-      className={`${styles.burgerMenu} ${isOpen ? styles.open : ""}`}
-    >
+    <div className={`${styles.burgerMenu} ${isOpen ? styles.open : ""}`}>
       <div className={styles.closeBtn}>
         <Image
           src="/assets/images/close.svg"
@@ -253,4 +250,4 @@ const BurgerMenu = ({ isOpen, onClose }, ref) => {
   );
 };
 
-export default React.forwardRef(BurgerMenu);
+export default BurgerMenu;

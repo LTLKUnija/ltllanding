@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Drawer from "./Drawer";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const drawerRef = useRef(null);
 
   const [langBtnState, setLangBtnState] = useState("ENG");
 
