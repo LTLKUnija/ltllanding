@@ -11,10 +11,15 @@ import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/Business_Hero_mobile.png";
+import BackBtn from "../../../public/assets/images/backBtn.png";
 
 export default function Deposit() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
+
+  const handleBack = () => {
+    router.back();
+  };
 
   const [calc, setCalc] = useState({
     amount: 10000,
@@ -69,16 +74,28 @@ export default function Deposit() {
           <section className={busynessStyle.depositPageWrapper}>
             <div className={busynessStyle.depositPageList}>
               <div className={busynessStyle.depositHeroItem}>
-                <Image
-                  src={HeroMobile}
-                  alt={"Hero Mobile"}
-                  style={{ width: "250px", height: "auto" }}
-                  className={busynessStyle.heroImage}
-                />
-                <h1 className={busynessStyle.depositTitle}>
+                <div className={busynessStyle.imgBlock}>
+                  <Image
+                    src={BackBtn}
+                    alt={"Hero Mobile"}
+                    style={{ width: "24", height: "12" }}
+                    className={[
+                      busynessStyle.heroImage,
+                      busynessStyle.backBtn,
+                    ].join(" ")}
+                    onClick={handleBack}
+                  />
+                  <Image
+                    src={HeroMobile}
+                    alt={"Hero Mobile"}
+                    style={{ width: "70%", height: "auto" }}
+                    className={busynessStyle.heroImage}
+                  />
+                </div>
+                <h1 className={busynessStyle.title}>
                   {t.business.termDeposit.heroBlock.title}
                 </h1>
-                <div className={busynessStyle.depositPageDescription}>
+                <div className={busynessStyle.description}>
                   <p>{t.business.termDeposit.heroBlock.description}</p>
                   <ul>
                     <li>{t.business.termDeposit.heroBlock.bullet1}</li>

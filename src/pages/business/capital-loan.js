@@ -10,10 +10,15 @@ import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/capitalLoan_Hero_mobile.png";
+import BackBtn from "../../../public/assets/images/backBtn.png";
 
 export default function Mortgage() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
+
+  const handleBack = () => {
+    router.back();
+  };
 
   return (
     <IndexLayout>
@@ -21,16 +26,28 @@ export default function Mortgage() {
         <section className={businessStyle.pageWrapper}>
           <div className={businessStyle.pageList}>
             <div className={businessStyle.heroItem}>
-              <Image
-                src={HeroMobile}
-                alt={"Hero Mobile"}
-                style={{ width: "70%", height: "auto" }}
-                className={businessStyle.heroImage}
-              />
+              <div className={businessStyle.imgBlock}>
+                <Image
+                  src={BackBtn}
+                  alt={"Hero Mobile"}
+                  style={{ width: "24", height: "12" }}
+                  className={[
+                    businessStyle.heroImage,
+                    businessStyle.backBtn,
+                  ].join(" ")}
+                  onClick={handleBack}
+                />
+                <Image
+                  src={HeroMobile}
+                  alt={"Hero Mobile"}
+                  style={{ width: "70%", height: "auto" }}
+                  className={businessStyle.heroImage}
+                />
+              </div>
               <h1 className={businessStyle.title}>
                 {t.business.capitalLoan.heroBlock.title}
               </h1>
-              <div className={businessStyle.heroDescription}>
+              <div className={businessStyle.description}>
                 <p>{t.business.capitalLoan.heroBlock.description}</p>
                 <ul>
                   <li>{t.business.capitalLoan.heroBlock.bullet1}</li>
