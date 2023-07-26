@@ -44,7 +44,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             {t.headerNavLinks.private}
           </Link>
         ) : (
-          <Link className={styles.upperCaseLink} href="/business/deposits">
+          <Link className={styles.upperCaseLink} href="/business">
             {t.headerNavLinks.business}
           </Link>
         )}
