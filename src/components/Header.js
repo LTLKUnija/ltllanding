@@ -82,7 +82,7 @@ function Header() {
             </Link>
           )}
           <div
-            className="navigation-parent-link"
+            className="navigation-parent-link header-nav-link "
             onMouseEnter={() => {
               toggleSubMenu("open", "payment");
             }}
@@ -123,7 +123,7 @@ function Header() {
             )}
           </div>
           <div
-            className="navigation-parent-link-credit"
+            className="navigation-parent-link-credit header-nav-link"
             onMouseEnter={() => {
               toggleSubMenu("open");
             }}
@@ -182,7 +182,7 @@ function Header() {
             {t.headerNavLinks.contacts}
           </Link>
           <span
-            className="header-nav-link change-language-link"
+            className="header-nav-link change-language-link show"
             onClick={setLanguage}
             href="/eng"
           >
@@ -191,10 +191,10 @@ function Header() {
         </nav>
       </div>
       <div className="header-action-buttons-block">
-        <Link className="header-action-button" href="/login">
+        <Link className="header-action-button login" href="/login">
           {t.headerNavLinks.login}
         </Link>
-        <Link className="header-action-button" href="/open-account">
+        <Link className="header-action-button openAcc" href="/open-account">
           {t.headerNavLinks.openAccount}
         </Link>
       </div>

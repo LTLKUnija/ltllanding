@@ -292,6 +292,7 @@ footer {
 
     .logo-block {
       margin-right: 30px;
+      flex: 1;
     }
 
     .bussiness-type-block {
@@ -299,11 +300,25 @@ footer {
     }
 
     .menubar {
-      display: none;
+      .header-nav-link {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
     }
 
     .header-action-buttons-block {
-      display: none;
+      .openAcc {
+        display: none;
+      }
+
+      .login {
+        max-width: 100px;
+        border-radius: 33px;
+        margin-right: 20px;
+      }
     }
 
     .burgerIcon {
