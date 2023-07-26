@@ -9,10 +9,15 @@ import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../public/assets/images/product_Hero_mobile.png";
+import BackBtn from "../../public/assets/images/backBtn.png";
 
 export default function Payments() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
+
+  const handleBack = () => {
+    router.back();
+  };
 
   return (
     <>
@@ -21,12 +26,21 @@ export default function Payments() {
           <section className={styles.currentAccountPageWrapper}>
             <div className={styles.currentAccountPageList}>
               <div className={styles.currentAccountHeroItem}>
-                <Image
-                  src={HeroMobile}
-                  alt={"Hero Mobile"}
-                  style={{ width: "70%", height: "auto" }}
-                  className={styles.heroImage}
-                />
+                <div className={styles.imgBlock}>
+                  <Image
+                    src={BackBtn}
+                    alt={"Hero Mobile"}
+                    style={{ width: "24", height: "12" }}
+                    className={[styles.heroImage, styles.backBtn].join(" ")}
+                    onClick={handleBack}
+                  />
+                  <Image
+                    src={HeroMobile}
+                    alt={"Hero Mobile"}
+                    style={{ width: "70%", height: "auto" }}
+                    className={styles.heroImage}
+                  />
+                </div>
                 <h1 className={styles.title}>
                   {t.privetCurrentAccount.pageTitle}
                 </h1>

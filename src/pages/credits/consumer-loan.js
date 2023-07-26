@@ -9,10 +9,15 @@ import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/consumer_Hero_mobile.png";
+import BackBtn from "../../../public/assets/images/backBtn.png";
 
 export default function Mortgage() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
+
+  const handleBack = () => {
+    router.back();
+  };
 
   return (
     <IndexLayout>
@@ -20,12 +25,21 @@ export default function Mortgage() {
         <section className={styles.consumerLoanPageWrapper}>
           <div className={styles.consumerLoanPageList}>
             <div className={styles.consumerLoanHeroItem}>
-              <Image
-                src={HeroMobile}
-                alt={"Hero Mobile"}
-                style={{ width: "70%", height: "auto" }}
-                className={styles.heroImage}
-              />
+              <div className={styles.imgBlock}>
+                <Image
+                  src={BackBtn}
+                  alt={"Hero Mobile"}
+                  style={{ width: "24", height: "12" }}
+                  className={[styles.heroImage, styles.backBtn].join(" ")}
+                  onClick={handleBack}
+                />
+                <Image
+                  src={HeroMobile}
+                  alt={"Hero Mobile"}
+                  style={{ width: "70%", height: "auto" }}
+                  className={styles.heroImage}
+                />
+              </div>
               <h1 className={styles.title}>{t.consumerLoan.heroBlock.title}</h1>
               <div className={styles.description}>
                 <p>{t.consumerLoan.heroBlock.description}</p>

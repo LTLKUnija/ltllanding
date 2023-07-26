@@ -10,10 +10,15 @@ import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../public/assets/images/deposit_Hero_mobile.png";
+import BackBtn from "../../public/assets/images/backBtn.png";
 
 export default function Deposit() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
+
+  const handleBack = () => {
+    router.back();
+  };
 
   const [calc, setCalc] = useState({
     amount: 10000,
@@ -70,12 +75,21 @@ export default function Deposit() {
           <section className={styles.depositPageWrapper}>
             <div className={styles.depositPageList}>
               <div className={styles.depositHeroItem}>
-                <Image
-                  src={HeroMobile}
-                  alt={"Hero Mobile"}
-                  style={{ width: "70%", height: "auto" }}
-                  className={styles.heroImage}
-                />
+                <div className={styles.imgBlock}>
+                  <Image
+                    src={BackBtn}
+                    alt={"Hero Mobile"}
+                    style={{ width: "24", height: "12" }}
+                    className={[styles.heroImage, styles.backBtn].join(" ")}
+                    onClick={handleBack}
+                  />
+                  <Image
+                    src={HeroMobile}
+                    alt={"Hero Mobile"}
+                    style={{ width: "70%", height: "auto" }}
+                    className={styles.heroImage}
+                  />
+                </div>
                 <h1 className={styles.title}>
                   {t.termDeposit.heroBlock.title}
                 </h1>
