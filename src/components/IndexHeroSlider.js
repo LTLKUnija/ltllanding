@@ -18,9 +18,9 @@ export default function SimpleSlider() {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 4500,
+    autoplaySpeed: 5500,
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: function () {
