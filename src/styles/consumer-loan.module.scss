@@ -13,7 +13,7 @@
       max-width: 600px;
     }
 
-    .consumerLoanTitle {
+    .title {
       font-size: 30px;
       font-weight: 700;
       line-height: 38px;
@@ -21,7 +21,7 @@
     }
   }
 
-  .consumerLoanPageDescription {
+  .description {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -53,36 +53,7 @@
 }
 
 .innerNavigationSection {
-  padding: 44px 0 34px 0;
-  position: sticky;
-  top: 100px;
-  background-color: var(--main-background);
-  z-index: 8;
-
-  .innerNavigationLinkList {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .innerNavLink {
-    font-family: "Lexend";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--main-text-color);
-    text-decoration: none;
-    margin-right: 30px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &.change-language-link {
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-  }
+  display: none;
 }
 
 .benefitsSection {
@@ -237,6 +208,14 @@
 }
 
 // ----- Media queries -----
+@media (min-width: 768px) {
+  .consumerLoanHeroItem {
+    .heroImage {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 1390px) {
   .consumerLoanPageWrapper {
     background-position: bottom right;
@@ -321,6 +300,35 @@
   .consumerLoanPageWrapper {
     padding: 36px 36px 36px 0;
     background-image: none;
+
+    .consumerLoanHeroItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .heroImage {
+        margin-bottom: 30px;
+      }
+
+      .title {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+      }
+
+      .description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+
+        li {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 18px;
+        }
+      }
+    }
 
     .consumerLoanPageList {
       padding-left: 40px;
