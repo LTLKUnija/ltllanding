@@ -35,18 +35,11 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>Pabodo laiką leisti banko skyriuose?</h2>
-                  <p>
-                    Ever since the Etruscans dropped by to party and stayed,
-                    Tuscany has seduced. The Romans stocked their grain silos
-                    here, Christians walked stages of a medieval pilgrimage
-                    route, and Napoleon plundered art (and suffered terribly in
-                    exile in a beautiful neoclassical villa with fig trees and
-                    sea view on the paradisiacal island of Elba).
-                  </p>
+                  <h2>{t.indexPage.articleBlock.article1.title}</h2>
+                  <p>{t.indexPage.articleBlock.article1.description}</p>
                   <div className="actionButtonBlock">
                     <Link className="outlinedBtn" href="/">
-                      Learn More
+                      {t.indexPage.button.text}
                     </Link>
                   </div>
                 </div>
@@ -67,7 +60,28 @@ export default function Home() {
                   <p>{t.indexPage.articleBlock.article3.description}</p>
                   <div className="actionButtonBlock">
                     <Link className="outlinedBtn" href="/">
-                      Learn More
+                      {t.indexPage.button.text}
+                    </Link>
+                  </div>
+                </div>
+              </article>
+              <article className={styles.beneficialArticle}>
+                <div className={styles.imageBlock}>
+                  <Image
+                    src={ArticleImg3}
+                    alt="Available Jobs"
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                    }}
+                  />
+                </div>
+                <div className={styles.articleBlock}>
+                  <h2>{t.indexPage.articleBlock.article3.title}</h2>
+                  <p>{t.indexPage.articleBlock.article3.description}</p>
+                  <div className="actionButtonBlock">
+                    <Link className="outlinedBtn" href="/">
+                      {t.indexPage.button.text}
                     </Link>
                   </div>
                 </div>

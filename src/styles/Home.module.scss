@@ -9,6 +9,10 @@
   display: flex;
   gap: 120px;
   margin-bottom: 158px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .beneficialArticle:last-child {
@@ -222,25 +226,7 @@
   }
 
   .bulletPoints {
-    display: flex;
-    justify-content: center;
-    max-width: 600px;
-    padding: 20px 0 40px 0;
-
-    margin: 0 auto;
-    background: var(--theme-color5) url('/assets/images/homePage_bulletPoints.svg') no-repeat calc(100% - -40px) bottom;
-    background-size: 60%;
-
-    h2 {
-      max-width: 530px;
-      display: block;
-      font-size: 35px;
-      text-align: center;
-    }
-
-    li {
-      font-size: 14px;
-    }
+    display: none;
   }
 
   .newsSection {

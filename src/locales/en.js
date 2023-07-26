@@ -46,6 +46,19 @@ export default {
         "With Kocomo, a home is co-owned by no more than eight families while we act as a neutral third-party administrator to ensure transparency and fairness",
       learnMoreButton: "Learn more",
     },
+    slideTwo: {
+      heroBlockH1: "Get the financing you need to grow your business",
+      heroBlockText:
+        "Are you looking for a way to grow your business? A business loan may be the perfect solution.",
+      learnMoreButton: "Learn more",
+    },
+    slideThree: {
+      heroBlockH1:
+        "There's no place like home, especially with a mortgage loan from us!",
+      heroBlockText:
+        "Are you looking for a way to finance your next big project? A mortage loan may be the perfect solution.",
+      learnMoreButton: "Learn more",
+    },
     articleBlock: {
       article1: {
         title: "Tired of spending time in bank branches?",
