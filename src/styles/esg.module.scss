@@ -15,22 +15,22 @@
       padding-left: 250px;
    }
 
+   .esgHeroItem {
+      max-width: 474px;
+   }
+
+   .title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38px;
+      margin-bottom: 35px;
+   }
+
    .description {
       font-weight: 400;
       font-size: 18px;
       color: #000000;
       white-space: pre-line;
-   }
-
-   .esgHeroItem {
-      width: 474px;
-   }
-
-   .esgTitle {
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 38px;
-      margin-bottom: 35px;
    }
 }
 
@@ -109,8 +109,6 @@
    .imgMargin {
       margin-top: 25px;
    }
-
-
 }
 
 .annualReportsSection {
@@ -182,14 +180,18 @@
 }
 
 //------ Media queries --------
+@media (min-width: 1250px) {
+   .esgHeroPage {
+
+      .heroImage {
+         display: none;
+      }
+   }
+}
+
 @media (max-width: 1460px) {
    .esgHeroPage {
       max-width: 1200px;
-      margin: 0 auto;
-      background-image: url("/assets/images/esg_heroBlock.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: bottom right;
    }
 
    .esgPageList {
@@ -200,21 +202,90 @@
 
 @media (max-width: 1250px) {
    .esgHeroPage {
-      background-position: bottom;
+      background-image: none;
+      padding: 66px 20px 78px 20px;
+
+      .esgHeroItem {
+         max-width: 100%;
+      }
 
       .esgPageList {
-         padding-left: 50px;
+         padding-left: 0;
+         display: flex;
+         justify-content: center;
+      }
+
+      .imgBlock {
+         display: flex;
+         justify-content: center;
+         gap: 30px;
+      }
+
+      .heroImage {
+         margin-bottom: 30px;
+
+         &.backBtn {
+            cursor: pointer;
+            margin-top: 36px;
+         }
       }
    }
-}
 
-@media (max-width: 670px) {
-   .esgHeroPage {
-      background-image: none;
+   .title {
+      font-size: 23px;
+      font-weight: 700;
+      line-height: 29px;
+      text-align: center;
+   }
 
-      .esgPageList {
-         padding: 0 15px 0 15px;
+   .description {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: initial;
+   }
+
+   .innerNavigationSection {
+      display: none;
+   }
+
+   .enviromentalProtectionSection {
+      padding: 50px 0 20px 0;
+   }
+
+   .enviromentalProtectionBlock {
+      padding: 0 20px 0 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px !important;
+
+      .title {
          text-align: center;
+         font-size: 30px !important;
+         font-weight: 700;
+         line-height: 38px;
       }
+
+      .description {
+         font-size: 16px !important;
+         font-weight: 300;
+         line-height: 20px;
+         text-align: justify;
+      }
+
+      img {
+         max-width: 236px;
+         max-height: 208px;
+      }
+   }
+
+   .mirror {
+      order: 2;
+   }
+
+   .annualReportsLinks {
+      padding: 0 15px 0 15px;
+      justify-content: center;
+      overflow: auto;
    }
 }

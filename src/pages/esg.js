@@ -5,6 +5,8 @@ import Image from "next/image";
 import Img1 from "@../../../public/assets/images/esg_img1.png";
 import Img2 from "@../../../public/assets/images/esg_img2.png";
 import Img3 from "@../../../public/assets/images/esg_img3.png";
+import HeroMobile from "../../public/assets/images/capitalLoan_Hero_mobile.png";
+import BackBtn from "../../public/assets/images/backBtn.png";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
@@ -37,15 +39,34 @@ export default function Esg() {
     getLinks();
   }, []);
 
+  const handleBack = () => {
+    router.back();
+  };
+
   return (
     <IndexLayout>
       <main>
         <section className={styles.esgHeroPage}>
           <div className={styles.esgPageList}>
             <div className={styles.esgHeroItem}>
-              <h1 className={styles.esgTitle}>{t.esg.heroBlock.title}</h1>
+              <div className={styles.imgBlock}>
+                <Image
+                  src={BackBtn}
+                  alt={"Hero Mobile"}
+                  style={{ width: "24", height: "12" }}
+                  className={[styles.heroImage, styles.backBtn].join(" ")}
+                  onClick={handleBack}
+                />
+                <Image
+                  src={HeroMobile}
+                  alt={"Hero Mobile"}
+                  style={{ width: "70%", height: "auto" }}
+                  className={styles.heroImage}
+                />
+              </div>
+              <h1 className={styles.title}>{t.esg.heroBlock.title}</h1>
               <div className={styles.description}>
-                <p>{t.esg.heroBlock.description1}</p>
+                <p>{t.esg.heroBlock.description}</p>
               </div>
             </div>
           </div>
@@ -79,13 +100,17 @@ export default function Esg() {
               src={Img1}
               alt="Available Jobs"
               style={{
-                width: "auto",
-                height: "auto",
+                width: 430,
+                height: 375,
               }}
             />
             <div className={styles.enviromentalProtectionArticle}>
-              <h3>{t.esg.articleBlock.article1.title}</h3>
-              <p>{t.esg.articleBlock.article1.text}</p>
+              <h3 className={styles.title}>
+                {t.esg.articleBlock.article1.title}
+              </h3>
+              <p className={styles.description}>
+                {t.esg.articleBlock.article1.text}
+              </p>
               <div className="actionButtonBlock">
                 <Link href="/" className="outlinedBtn">
                   {t.esg.learnMoreButton}
@@ -94,9 +119,18 @@ export default function Esg() {
             </div>
           </div>
           <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
-            <div className={styles.enviromentalProtectionArticle}>
-              <h3>{t.esg.articleBlock.article2.title}</h3>
-              <p>{t.esg.articleBlock.article2.text}</p>
+            <div
+              className={[
+                styles.enviromentalProtectionArticle,
+                styles.mirror,
+              ].join(" ")}
+            >
+              <h3 className={styles.title}>
+                {t.esg.articleBlock.article2.title}
+              </h3>
+              <p className={styles.description}>
+                {t.esg.articleBlock.article2.text}
+              </p>
               <div className="actionButtonBlock">
                 <Link href="/" className="outlinedBtn">
                   {t.esg.learnMoreButton}
@@ -107,24 +141,27 @@ export default function Esg() {
               src={Img2}
               alt="Available Jobs"
               style={{
-                width: "auto",
-                height: "auto",
+                width: 430,
+                height: 375,
               }}
             />
           </div>
-
           <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
             <Image
               src={Img3}
               alt="Available Jobs"
               style={{
-                width: "auto",
-                height: "auto",
+                width: 430,
+                height: 375,
               }}
             />
             <div className={styles.enviromentalProtectionArticle}>
-              <h3>{t.esg.articleBlock.article3.title}</h3>
-              <p>{t.esg.articleBlock.article3.text}</p>
+              <h3 className={styles.title}>
+                {t.esg.articleBlock.article3.title}
+              </h3>
+              <p className={styles.description}>
+                {t.esg.articleBlock.article3.text}
+              </p>
               <div className="actionButtonBlock">
                 <Link href="/" className="outlinedBtn">
                   {t.esg.learnMoreButton}
