@@ -270,7 +270,7 @@
 }
 
 // ----- Media queries -----
-@media (min-width: 768px) {
+@media (min-width: 1250px) {
    .aboutUsWrapper {
       .heroImage {
          display: none;
@@ -278,7 +278,11 @@
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
+   .missionDescription {
+      min-width: 100%;
+   }
+
    .aboutUsSection {
       padding: 30px 20px 10px 20px;
       background-image: none;
