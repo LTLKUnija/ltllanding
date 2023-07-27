@@ -241,7 +241,7 @@
    .description {
       font-size: 14px;
       font-weight: 400;
-      line-height: 18px;
+      line-height: 28px;
       text-align: initial;
    }
 
@@ -281,5 +281,11 @@
 
    .mirror {
       order: 2;
+   }
+
+   .annualReportsLinks {
+      padding: 0 15px 0 15px;
+      justify-content: center;
+      overflow: auto;
    }
 }
