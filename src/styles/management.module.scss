@@ -17,7 +17,7 @@
       margin-bottom: 90px;
    }
 
-   .aboutUsHeroTitle {
+   .title {
       font-size: 50px;
       font-weight: 700;
       line-height: 62px;
@@ -40,7 +40,7 @@
    }
 
    .aboutUsHeroVision {
-      width: 474px;
+      max-width: 474px;
    }
 
    .visionTitle {
@@ -158,7 +158,7 @@
    }
 
    .jobsCrediantials {
-      width: 580px;
+      max-width: 580px;
 
       h3 {
          font-size: 35px;
@@ -175,10 +175,10 @@
       }
 
       a {
-         font-weight: 400;
+         font-weight: 700;
          font-size: 16px;
          line-height: 20px;
-         text-decoration-line: underline;
+         text-decoration: none;
          color: var(--main-text-color);
       }
    }
@@ -194,7 +194,7 @@
    }
 
    .valuesBlock {
-      width: 320px;
+      max-width: 320px;
 
       h3 {
          font-size: 25px;
@@ -222,7 +222,7 @@
 
    .historyWrapper {
       max-width: 1056px;
-      padding: 0 15px 0 15px;
+      padding: 0 20px 0 20px;
       margin: 0 auto;
 
       h3 {
@@ -266,5 +266,104 @@
          line-height: 20px;
          text-align: left;
       }
+   }
+}
+
+// ----- Media queries -----
+@media (min-width: 768px) {
+   .aboutUsWrapper {
+      .heroImage {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .aboutUsSection {
+      padding: 30px 20px 10px 20px;
+      background-image: none;
+      align-items: center;
+
+      .imgBlock {
+         display: flex;
+         justify-content: center;
+         gap: 30px;
+      }
+
+      .heroImage {
+         margin-bottom: 50px;
+
+         &.backBtn {
+            cursor: pointer;
+            margin-top: 36px;
+         }
+      }
+
+      .aboutUsHeroBlock {
+         gap: 24px;
+         margin-bottom: 30px;
+         flex-direction: column;
+      }
+
+      .title {
+         font-size: 40px;
+         font-weight: 700;
+         line-height: 29px;
+         margin-bottom: 30px;
+      }
+   }
+
+   .innerNavigationBlock {
+      display: none;
+   }
+
+   .teamBlock {
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+
+   .jobsSection,
+   .sponsorshipMirror {
+
+      .jobsWrapper {
+         display: flex;
+         flex-direction: column;
+         gap: 50px !important;
+         text-align: center;
+         padding: 0 20px 0 20px;
+
+         p {
+            text-align: justify;
+         }
+
+         img {
+            min-width: 50%;
+         }
+      }
+   }
+
+   .valuesSection {
+      padding: 30px 20px 30px 20px;
+
+      .valuesWrapper {
+         flex-wrap: wrap;
+         justify-content: center;
+         text-align: center;
+         padding-left: 20px !important;
+         padding: 0 20px 0 20px;
+
+         .valuesBlock {
+            min-width: 100%;
+         }
+      }
+   }
+
+   .historyYearList {
+      justify-content: center;
+      gap: 10px !important;
+   }
+
+   .historyDescription {
+      text-align: inherit;
    }
 }

@@ -1,9 +1,11 @@
-import styles from "@/styles/about.module.scss";
+import styles from "@/styles/management.module.scss";
 import Link from "next/link";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Image from "next/image";
 import Img1 from "@../../../public/assets/images/managment_img1.png";
 import Img2 from "@../../../public/assets/images/managment_img2.png";
+import HeroMobile from "../../public/assets/images/management_Hero_mobile.png";
+import BackBtn from "../../public/assets/images/backBtn.png";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
@@ -12,27 +14,44 @@ export default function About() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
 
+  const handleBack = () => {
+    router.back();
+  };
+
   return (
     <IndexLayout>
       <main>
         <section className={styles.aboutUsSection}>
           <div className={styles.aboutUsWrapper}>
-            <h1 className={styles.aboutUsHeroTitle}>
-              {t.aboutUs.heroBlock.title}
-            </h1>
+            <div className={styles.imgBlock}>
+              <Image
+                src={BackBtn}
+                alt={"Hero Mobile"}
+                style={{ width: "24", height: "12" }}
+                className={[styles.heroImage, styles.backBtn].join(" ")}
+                onClick={handleBack}
+              />
+              <Image
+                src={HeroMobile}
+                alt={"Hero Mobile"}
+                style={{ width: "70%", height: "auto" }}
+                className={styles.heroImage}
+              />
+            </div>
+            <h1 className={styles.title}>{t.aboutUs.heroBlock.title}</h1>
             <div className={styles.aboutUsHeroBlock}>
               <div classNamAe={styles.aboutUsHeroMission}>
-                <div className={styles.missionTitle}>
+                <h4 className={styles.missionTitle}>
                   {t.aboutUs.heroBlock.description.missionTitle}
-                </div>
+                </h4>
                 <div className={styles.missionDescription}>
                   {t.aboutUs.heroBlock.description.missionDescription}
                 </div>
               </div>
               <div className={styles.aboutUsHeroVision}>
-                <div className={styles.visionTitle}>
+                <h4 className={styles.visionTitle}>
                   {t.aboutUs.heroBlock.description.visionTitle}
-                </div>
+                </h4>
                 <div className={styles.visionDescription}>
                   {t.aboutUs.heroBlock.description.visionDescription}
                 </div>
@@ -105,7 +124,9 @@ export default function About() {
             <div className={styles.jobsCrediantials}>
               <h3>{t.aboutUs.jobsSection.title}</h3>
               <p>{t.aboutUs.jobsSection.description}</p>
-              <Link href="/">{t.aboutUs.jobsSection.readMore} &gt;</Link>
+              <Link href="/" className={styles.readMore}>
+                {t.aboutUs.jobsSection.readMore} &gt;
+              </Link>
             </div>
           </div>
         </section>
@@ -131,7 +152,9 @@ export default function About() {
             <div className={styles.jobsCrediantials}>
               <h3>{t.aboutUs.sponsorshipSection.title}</h3>
               <p>{t.aboutUs.sponsorshipSection.description}</p>
-              <Link href="/">{t.aboutUs.sponsorshipSection.readMore} &gt;</Link>
+              <Link href="/" className={styles.readMore}>
+                {t.aboutUs.sponsorshipSection.readMore} &gt;
+              </Link>
             </div>
             <Image
               src={Img2}
@@ -146,7 +169,9 @@ export default function About() {
         <section id="history" className={styles.historySection}>
           <div className={styles.historyWrapper}>
             <h3>{t.aboutUs.history.title}</h3>
-            <p>{t.aboutUs.history.description}</p>
+            <p className={styles.historyDescription}>
+              {t.aboutUs.history.description}
+            </p>
             <div className={styles.historyYearList}>
               <div className={styles.historyYearItem}>
                 <h4>1999</h4>
