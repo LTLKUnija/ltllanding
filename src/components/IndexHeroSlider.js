@@ -6,7 +6,7 @@ import Link from "next/link";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Image from "next/image";
-import SliderMobile from "../../public/assets/images/slider_mobile.png";
+import SliderMobile from "../../public/assets/images/slider1_mobile.png";
 import SliderMobile2 from "../../public/assets/images/investmentLoan_Hero_mobile.png";
 import SliderMobile3 from "../../public/assets/images/slider3_mobile.png";
 
@@ -32,6 +32,8 @@ export default function SimpleSlider() {
             height: "12px",
             backgroundColor: "#E8E8E8",
             borderRadius: "50%",
+            position: "relative",
+            top: "-70px",
           }}
         ></div>
       );

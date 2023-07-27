@@ -61,13 +61,6 @@
 @media (max-width: 1460px) {
   .indexPageSlider {
 
-    .slickSlide {
-      height: 580px;
-      background-color: var(--light-creame-background);
-      background-image: url(/assets/images/deposit_heroBlock.svg);
-      background-repeat: no-repeat;
-    }
-
     .slideContent {
       padding-top: 80px;
 
@@ -124,7 +117,7 @@
     .slickSlide,
     .slickSlide2,
     .slickSlide3 {
-      height: 580px;
+      height: 600px;
       background-image: none;
     }
 

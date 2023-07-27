@@ -175,7 +175,7 @@ export default function About() {
             <div className={styles.historyYearList}>
               <div className={styles.historyYearItem}>
                 <h4>1999</h4>
-                <p>
+                <p className={styles.description}>
                   Ever since the Etruscans dropped by to party and stayed,
                   Tuscany has seduced.
                 </p>

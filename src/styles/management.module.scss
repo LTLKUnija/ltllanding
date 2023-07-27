@@ -233,7 +233,7 @@
          margin-bottom: 40px;
       }
 
-      p {
+      .historyDescription {
          display: flex;
          font-size: 16px;
          font-weight: 400;
@@ -250,8 +250,8 @@
    }
 
    .historyYearItem {
-      width: 300px;
-      padding: 22px 22px 22px 22px;
+      width: calc((100% - 120px) / 3);
+
 
       h4 {
          font-size: 24px;
@@ -359,8 +359,12 @@
    }
 
    .historyYearList {
-      justify-content: center;
-      gap: 10px !important;
+      flex-direction: column;
+      gap: 30px !important;
+
+      .historyYearItem {
+         width: 100%;
+      }
    }
 
    .historyDescription {
