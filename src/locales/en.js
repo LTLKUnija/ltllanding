@@ -151,7 +151,7 @@ export default {
   esg: {
     heroBlock: {
       title: "ESG Policy",
-      description1:
+      description:
         "Our organization is dedicated to supporting the global goals set by the United Nations. These goals focus on sustainable development, aiming for prosperity and peace for everyone and the planet. We are creating a responsible organization that cares about the environment and society.  We practice good ethics, improve our governance, and uphold the United Nations Global Compact (UNGC).\n\nFor a detailed insight into our ESG Policy please follow the link.",
     },
     articleBlock: {
