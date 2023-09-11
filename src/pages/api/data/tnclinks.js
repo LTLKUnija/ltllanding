@@ -13,11 +13,11 @@ export const links = [
             linkUrl: "https://storage.cloud.google.com/ltlku_web_page/test_Pdf.pdf",
          },
          {
-            linkName: "3Banking secret and processing customer data",
+            linkName: "Banking secret and processing customer data",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
-            linkName: "4Entry into agreements",
+            linkName: "Entry into agreements",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
@@ -60,7 +60,7 @@ export const links = [
       uid: 1,
       links: [
          {
-            linkName: "2General provisions",
+            linkName: "General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
@@ -115,7 +115,7 @@ export const links = [
       uid: 2,
       links: [
          {
-            linkName: "3General provisions",
+            linkName: "General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
@@ -170,7 +170,7 @@ export const links = [
       uid: 3,
       links: [
          {
-            linkName: "4General provisions",
+            linkName: "General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {
@@ -225,7 +225,7 @@ export const links = [
       uid: 4,
       links: [
          {
-            linkName: "5General provisions",
+            linkName: "General provisions",
             linkUrl: "https://www.handbook.fca.org.uk/handbook/GEN.pdf",
          },
          {

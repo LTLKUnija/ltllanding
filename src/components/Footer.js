@@ -191,11 +191,11 @@ function Footer({ setShowLinks, showLinks }) {
             {t.footerNavLinks.contacts}
           </h4>
 
-          <Link className="footer-navigation-link adress" href="/pricelist">
+          <Link className="footer-navigation-link adress" href="/contacts">
             {t.footerNavLinks.address}
           </Link>
           <div className="social-links-block">
-            <Link className="social-link" href="/pricelist">
+            <Link className="social-link" target="_blank" href="https://www.facebook.com/">
               <Image
                 width={8}
                 height={18}
@@ -203,7 +203,7 @@ function Footer({ setShowLinks, showLinks }) {
                 src="/assets/images/fb-icon.svg"
               />
             </Link>
-            <Link className="social-link" href="/pricelist">
+            <Link className="social-link" target="_blank" href="https://www.linkedin.com">
               <Image
                 width={20}
                 height={18}

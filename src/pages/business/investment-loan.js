@@ -69,7 +69,7 @@ export default function Mortgage() {
             <Link className={styles.innerNavLink} href="#process">
               {t.business.investmentLoan.innerLinkBlock.process}
             </Link>
-            <Link className={styles.innerNavLink} href="/pricelist">
+            <Link className={styles.innerNavLink} href="/business/pricelist">
               {t.business.investmentLoan.innerLinkBlock.priceList}
             </Link>
             <Link className={styles.innerNavLink} href="#clientSuport">

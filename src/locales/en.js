@@ -216,7 +216,7 @@ export default {
   termDeposit: {
     heroBlock: {
       title:
-        "Term deposit: You don‘t have to be big to make a fortune/your fortune grow",
+        "You don‘t have to be big to make a fortune/your fortune grow",
       description:
         "Save your own money and watch your wealth grow — free is now more powerful than ever!",
       bullet1: "Get the best (top) interest rates on the market",
@@ -311,7 +311,7 @@ export default {
   openBanking: {
     pageTitle: "Open banking",
     description:
-      "Open banking: You don‘t have to be big to get plugged in. Trusted only.",
+      "You don‘t have to be big to get plugged in. Trusted only.",
     heroBlock: {
       description:
         "Our open banking technology is designed to enhance the overall banking experience. With modern API interface, companies can create state-of-the-art applications that are easy to use and highly integrated with banking services.",
@@ -335,14 +335,14 @@ export default {
     },
     contactBlock: {
       title: "Contacts",
-      text: "To gain access to our infrastructure, qualified trusted service providers (AISPs, PISPs) can reach out to us via email openbanking@ltlku.lt.",
+      text: "To gain access to our infrastructure, qualified trusted service providers (AISPs, PISPs) can reach out to us via email ",
     },
   },
   career: {
     title: "Career",
   },
   privetCurrentAccount: {
-    pageTitle: "Current account: You don‘t have to be big to be international",
+    pageTitle: "You don‘t have to be big to be international",
     heroBlock: {
       description:
         "Open IBAN account with us, make and receive payments from all over Euro area",
@@ -413,7 +413,7 @@ export default {
   },
   consumerLoan: {
     heroBlock: {
-      title: "Credit: You don‘t have to be big to get a loan",
+      title: "You don‘t have to be big to get a loan",
       description: "Decide how you use the extra funds with your consumer loan",
       bullet1:
         "Whether you want to purchase a car, furniture, computer, travel, get education, invest in startup or just pay off bills our loan is designed to give you the financial freedom you need",
@@ -533,7 +533,7 @@ export default {
   },
   equityLoan: {
     heroBlock: {
-      title: "Equity loan: You don‘t have to be big to get a loan",
+      title: "You don‘t have to be big to get a loan",
       description:
         "Looking for a loan to leverage the value of your property? Our customised loan is perfect for those who want to use the equity in their property to secure financing.",
       bullet1: "We can help finance up to 85% of the value of your assets",
@@ -625,7 +625,7 @@ export default {
   },
   mortgageLoan: {
     heroBlock: {
-      title: "Mortage Loan:You don‘t have to be big to get a loan.",
+      title: "You don‘t have to be big to get a loan.",
       description:
         "Get the same great loan options as the big guys, without the hassle! Our mortgage loan product is designed to give everyone an equal chance at homeownership, regardless of their size. With competitive rates and flexible repayment options, there's no better choice for your mortgage needs.",
       bullet1: "We can help finance up to 85% of the value of your dream home",
@@ -706,7 +706,7 @@ export default {
   },
   partnership: {
     pageTitle: "Partnership",
-    description: "Partnerships: You don‘t have to be big to be a partner.",
+    description: "You don‘t have to be big to be a partner.",
     articleBlock: {
       article1:
         "Our commitment lies in ensuring accessibility and reliability of financial services for everyone. The goal is to foster global financial inclusion by removing barriers and promoting ease of use. In this mission, partnerships play a crucial role, inviting businesses of all sizes and backgrounds to join us.",
@@ -755,7 +755,7 @@ export default {
           "If, after our mutual discussion, you still believe that the right balance of interests has not been reached and we have violated your rights or legitimate interests, we recommend that you contact the Bank of Lithuania, which deals with disputes between consumers and financial market participants arising from the provision of financial services. You can find more detailed information by clicking on this link: https://www.lb.lt/en/sfi-disputes-between-consumers-and-financial-market-participants",
       },
     },
-    readMore: "Skaityti daugiau",
+    readMore: "Read more",
     faq: "FAQ",
   },
   moneyLoundering: {
@@ -805,7 +805,7 @@ export default {
     termDeposit: {
       heroBlock: {
         title:
-          "Business - Term deposit: You don‘t have to be big to make a fortune/your fortune grow",
+          "You don‘t have to be big to make a fortune/your fortune grow",
         description:
           "Save your own money and watch your wealth grow — free is now more powerful than ever!",
         bullet1: "Get the best (top) interest rates on the market",
@@ -895,7 +895,7 @@ export default {
     },
     currentAccount: {
       heroBlock: {
-        title: "Business - Credit: You don‘t have to be big to get a loan",
+        title: "You don‘t have to be big to get a loan",
         description:
           "Open IBAN account with us, make and receive payments from all over Euro area",
         bullet1: "Bank on-the-go with our 24/7 online banking services",
@@ -1006,7 +1006,7 @@ export default {
     capitalLoan: {
       heroBlock: {
         title:
-          "Working capital loan:You don‘t have to be big to get a loan/to boost sales",
+          "You don‘t have to be big to get a loan/to boost sales",
         description:
           "With our working capital loan, you can access the funds you need for short-term investments or operational expenditures, helping you grow your business with confidence.",
         bullet1:
@@ -1105,7 +1105,7 @@ export default {
     investmentLoan: {
       heroBlock: {
         title:
-          "Investment loan: You don‘t have to be big to get a loan/to boost sales",
+          "You don‘t have to be big to get a loan/to boost sales",
         description:
           "Our investment loan lets you take advantage of a wide range of investment opportunities, whether you're looking for short-term gains or long-term growth.",
         bullet1:

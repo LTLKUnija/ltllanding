@@ -1,4 +1,3 @@
-import styles from "@/styles/BurgerMenu.module.scss";
 import Image from "next/image";
 import BurgerMenu from "./BurgerMenu";
 
