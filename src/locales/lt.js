@@ -216,7 +216,7 @@ export default {
   termDeposit: {
     heroBlock: {
       title:
-        "Terminuotas indėlis: Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+        "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
       description:
         "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas – nemokama dabar yra galingesnė nei bet kada anksčiau",
       bullet1: "Gaukite geriausias palūkanų normas rinkoje",
@@ -312,7 +312,7 @@ export default {
   openBanking: {
     pageTitle: "Atviroji bankininkystė",
     subTitle:
-      "Atviroji bankininkystė: Nebereikia būti dideliam, kad galėtum prisijungti. Tik patikimiems.",
+      "Nebereikia būti dideliam, kad galėtum prisijungti. Tik patikimiems.",
     heroBlock: {
       description:
         "Mūsų atviros bankininkystės technologija sukurta siekiant pagerinti bendrą banko patirtį. Naudodamos modernią API sąsają, įmonės gali kurti pažangiausias aplikacijas, kurios yra lengvai naudojamos ir puikiai integruotos su banko paslaugomis.",
@@ -343,7 +343,7 @@ export default {
     title: "Karjera",
   },
   privetCurrentAccount: {
-    pageTitle: "Einamoji sąskaita: Nebereikia būti dideliam, kad ... ",
+    pageTitle: "Nebereikia būti dideliam, kad ... ",
     heroBlock: {
       description:
         "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
@@ -414,7 +414,7 @@ export default {
   },
   consumerLoan: {
     heroBlock: {
-      title: "Kreditas: Jūs neturite būti didelis, kad gautumėte paskolą",
+      title: "Jūs neturite būti didelis, kad gautumėte paskolą",
       description:
         "Jūs turite nuspręsti, kaip panaudosite vartojimo paskolos lėšas",
       bullet1:
@@ -536,7 +536,7 @@ export default {
   },
   mortgageLoan: {
     heroBlock: {
-      title: "BŪSTO PASKOLA:Nebereikia būti dideliam, kad gautumėte paskolą.",
+      title: "Nebereikia būti dideliam, kad gautumėte paskolą.",
       description:
         "Gaukite tuos pačius puikius būsto paskolos sprendimus, kaip ir dideli vaikinai, be vargo! Mūsų būsto paskola skirta suteikti visiems vienodas galimybes įsigyti būstą, nepaisant jų pajamų dydžio. Dėl konkurencingų palūkanų normų ir lanksčių grąžinimo galimybių nėra geresnio pasirinkimo jūsų individualiems poreikiams patenkinti.",
       bullet1: "Padedame finansuoti iki 85% jūsų svajonių būsto vertės",
@@ -618,7 +618,7 @@ export default {
   equityLoan: {
     heroBlock: {
       title:
-        "Paskola įkeičiant nuosavą turtą: Jūs neturite būti didelis, kad gautumėte paskolą",
+        "Jūs neturite būti didelis, kad gautumėte paskolą",
       description:
         "Ieškote paskolos, kad dar labiau padidintumėte savo turto vertę? Mūsų paskola įkeičiant nuosavą turtą puikiai tinka tiems, kurie nori panaudoti nuosavą turtą papildomam finansavimui užtikrinti.",
       bullet1: "Padedame finansuoti iki 85% jūsų nuosavo turto vertės",
@@ -807,7 +807,7 @@ export default {
     termDeposit: {
       heroBlock: {
         title:
-          "Verslo - Terminuotas indėlis: Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+          "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
         description:
           "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas – nemokama dabar yra galingesnė nei bet kada anksčiau",
         bullet1: "Gaukite geriausias palūkanų normas rinkoje",
@@ -900,7 +900,7 @@ export default {
     currentAccount: {
       heroBlock: {
         title:
-          "Business - Kreditas: Jūs neturite būti didelis, kad gautumėte paskolą",
+          "Jūs neturite būti didelis, kad gautumėte paskolą",
         description:
           "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
         bullet1: "24/7 internetinė bankininkystė jūsų paslaugoms",
@@ -1010,7 +1010,7 @@ export default {
     capitalLoan: {
       heroBlock: {
         title:
-          "Paskola apyvartiniam kapitalui: Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+          "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
         description:
           "Naudodamiesi mūsų apyvartinių lėšų paskola, galite gauti lėšų, kurių jums reikia trumpalaikėms investicijoms ar išlaidoms, taip padedant užtikrintai plėsti verslą.",
         bullet1:
@@ -1109,7 +1109,7 @@ export default {
     investmentLoan: {
       heroBlock: {
         title:
-          "Investicinė paskola: Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+          "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
         description:
           "Mūsų investicinė paskola leidžia pasinaudoti daugybe investavimo galimybių, nesvarbu, ar ieškote trumpalaikio pelno, ar ilgalaikio augimo.",
         bullet1: "Padedame finansuoti iki 85% jūsų investicijų vertės",
