@@ -9,6 +9,8 @@ import BackBtn from "../../public/assets/images/backBtn.png";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import { aboutUsInnerLinkList } from "@/pages/api/data/innerLinksData";
+import InnerLinks from "@/components/InnerLinks";
 
 export default function About() {
   const router = useRouter();
@@ -60,28 +62,9 @@ export default function About() {
           </div>
         </section>
         <section className={styles.innerNavigationBlock}>
-          <div className={styles.innerNavigationLinkList}>
-            <Link className={styles.innerNavLink} href="#peaople">
-              {t.aboutUs.innerLinkBlock.people}
-            </Link>
-            <Link className={styles.innerNavLink} href="#values">
-              {t.aboutUs.innerLinkBlock.values}
-            </Link>
-            <Link className={styles.innerNavLink} href="#jobs">
-              {t.aboutUs.innerLinkBlock.jobs}
-            </Link>
-            <Link className={styles.innerNavLink} href="#sponsorship">
-              {t.aboutUs.innerLinkBlock.sponsorship}
-            </Link>
-            <Link className={styles.innerNavLink} href="#history">
-              {t.aboutUs.innerLinkBlock.history}
-            </Link>
-            <Link className={styles.innerNavLink} href="/news">
-              {t.aboutUs.innerLinkBlock.news}
-            </Link>
-          </div>
+          <InnerLinks innerLinksData={aboutUsInnerLinkList} />
         </section>
-        <section id="peaople" className={styles.teamSection}>
+        <section id="people" className={styles.teamSection}>
           <div className={styles.teamWrapper}>
             <h3>{t.aboutUs.team.title}</h3>
             <span className={styles.teamDescription}>

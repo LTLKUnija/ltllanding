@@ -10,6 +10,8 @@ import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../public/assets/images/product_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
+import { privetCurrentAccountInnerLinkList } from "@/pages/api/data/innerLinksData";
+import InnerLinks from "@/components/InnerLinks";
 
 export default function Payments() {
   const router = useRouter();
@@ -56,28 +58,9 @@ export default function Payments() {
             </div>
           </section>
           <section className={styles.innerNavigationSection}>
-            <div className={styles.innerNavigationLinkList}>
-              <Link className={styles.innerNavLink} href="#privetClient">
-                {t.privetCurrentAccount.innerLinkBlock.privateClient}
-              </Link>
-              <Link className={styles.innerNavLink} href="#steps">
-                {t.privetCurrentAccount.innerLinkBlock.steps}
-              </Link>
-              <Link className={styles.innerNavLink} href="#after">
-                {t.privetCurrentAccount.innerLinkBlock.afterYouOpened}
-              </Link>
-              <Link className={styles.innerNavLink} href="#priceList">
-                {t.privetCurrentAccount.innerLinkBlock.priceList}
-              </Link>
-              <Link className={styles.innerNavLink} href="#clientSuport">
-                {t.privetCurrentAccount.innerLinkBlock.clientSupport}
-              </Link>
-              <Link className={styles.innerNavLink} href="#faq">
-                {t.privetCurrentAccount.innerLinkBlock.faq}
-              </Link>
-            </div>
+            <InnerLinks innerLinksData={privetCurrentAccountInnerLinkList} />
           </section>
-          <section id="privetClient" className={styles.articleSection}>
+          <section id="privateClient" className={styles.articleSection}>
             <div className={styles.articleWrapper}>
               <div className={styles.articleList}>
                 <div className={styles.articleItem}>

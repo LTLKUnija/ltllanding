@@ -11,6 +11,8 @@ import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../public/assets/images/deposit_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
+import { termDepositInnerLinkList } from "@/pages/api/data/innerLinksData";
+import InnerLinks from "@/components/InnerLinks";
 
 export default function Deposit() {
   const router = useRouter();
@@ -108,26 +110,7 @@ export default function Deposit() {
             </div>
           </section>
           <section className={styles.innerNavigationSection}>
-            <div className={styles.innerNavigationLinkList}>
-              <Link className={styles.innerNavLink} href="#benefits">
-                {t.termDeposit.innerLinkBlock.benefits}
-              </Link>
-              <Link className={styles.innerNavLink} href="#interestRate">
-                {t.termDeposit.innerLinkBlock.interestRates}
-              </Link>
-              <Link className={styles.innerNavLink} href="#calculator">
-                {t.termDeposit.innerLinkBlock.calculator}
-              </Link>
-              <Link className={styles.innerNavLink} href="#process">
-                {t.termDeposit.innerLinkBlock.process}
-              </Link>
-              <Link className={styles.innerNavLink} href="#clientSuport">
-                {t.termDeposit.innerLinkBlock.clientSuport}
-              </Link>
-              <Link className={styles.innerNavLink} href="#faq">
-                {t.termDeposit.faq}
-              </Link>
-            </div>
+            <InnerLinks innerLinksData={termDepositInnerLinkList} />  
           </section>
           <section id="benefits" className={styles.depositBenefitsSection}>
             <div className={styles.depositBenefitsWrapper}>
@@ -145,7 +128,7 @@ export default function Deposit() {
               </div>
             </div>
           </section>
-          <section id="interestRate" className={styles.ratesTableSection}>
+          <section id="interestRates" className={styles.ratesTableSection}>
             <div className={styles.ratesTableWrapper}>
               <h3>{t.termDeposit.interestRatesArticle.title}</h3>
               <p>{t.termDeposit.interestRatesArticle.description}</p>

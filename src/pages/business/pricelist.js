@@ -5,6 +5,8 @@ import Accordion from "@/components/Accordion";
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
+import { priceListInnerLinkList } from "@/pages/api/data/innerLinksData";
+import InnerLinks from "@/components/InnerLinks";
 
 export default function PriceListPage() {
    const router = useRouter();
@@ -16,25 +18,11 @@ export default function PriceListPage() {
         <main>
           <section className={styles.priceListHero}>
             <h3 className={styles.priceHeaderTitle}>{t.priceList.title}</h3>
-            <div className={styles.innerNavigationLinkList}>
-              <Link className={styles.innerNavLink} href="#priceListRates">
-                {t.priceList.innerLinkBlock.link1}
-              </Link>
-              <Link
-                className={styles.innerNavLink}
-                href="#priceListForIndividuals"
-              >
-               {t.priceList.innerLinkBlock.link2}
-              </Link>
-              <Link
-                className={styles.innerNavLink}
-                href="#priceListForCorparate"
-              >
-               {t.priceList.innerLinkBlock.link3}
-              </Link>
-            </div>
           </section>
-          <section id="priceListRates" className={styles.priceListRates}>
+          <section className={styles.innerNavigationSection}>
+            <InnerLinks innerLinksData={priceListInnerLinkList} />
+        </section>
+          <section id="rates" className={styles.priceListRates}>
             <div className={styles.priceWrapper}>
               <ul className={styles.priceList}>
                 <li className={[styles.priceItem, styles.priceTitle].join(" ")}>

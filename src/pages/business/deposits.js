@@ -12,6 +12,8 @@ import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/Business_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
+import { businessTermDepositInnerLinkList } from "@/pages/api/data/innerLinksData";
+import InnerLinks from "@/components/InnerLinks";
 
 export default function Deposit() {
   const router = useRouter();
@@ -110,23 +112,7 @@ export default function Deposit() {
             </div>
           </section>
           <section className={styles.innerNavigationSection}>
-            <div className={styles.innerNavigationLinkList}>
-              <Link className={styles.innerNavLink} href="#benefits">
-                {t.business.termDeposit.innerLinkBlock.benefits}
-              </Link>
-              <Link className={styles.innerNavLink} href="#process">
-                {t.business.termDeposit.innerLinkBlock.process}
-              </Link>
-              <Link className={styles.innerNavLink} href="#calculator">
-                {t.business.termDeposit.innerLinkBlock.calculator}
-              </Link>
-              <Link className={styles.innerNavLink} href="#clientSuport">
-                {t.business.termDeposit.innerLinkBlock.clientSuport}
-              </Link>
-              <Link className={styles.innerNavLink} href="#faq">
-                {t.business.termDeposit.faq}
-              </Link>
-            </div>
+            <InnerLinks innerLinksData={businessTermDepositInnerLinkList} />
           </section>
           <section id="benefits" className={busynessStyle.benefitsSection}>
             <div className={busynessStyle.benefitsWrapper}>
