@@ -1,0 +1,47 @@
+  .innerNavigationLinkList {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     flex-direction: row;
+     gap: 30px;
+  }
+
+  .innerNavLink {
+     font-family: 'Lexend';
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     color: var(--main-text-color);
+     text-decoration: none;
+
+     &:last-child {
+        margin-right: 0;
+     }
+
+     &.change-language-link {
+        text-transform: uppercase;
+        font-weight: 600;
+     }
+  }
+
+  .innerNavLinkActive {
+     font-family: 'Lexend';
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     color: var(--main-text-color);
+     text-decoration: none;
+     text-decoration: underline;
+
+     &:last-child {
+        margin-right: 0;
+     }
+
+     &.change-language-link {
+        text-transform: uppercase;
+        font-weight: 600;
+     }
+  }
+
+  
+  

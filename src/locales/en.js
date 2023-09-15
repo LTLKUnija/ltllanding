@@ -182,9 +182,9 @@ export default {
   priceList: {
     title: "Price List",
     innerLinkBlock: {
-      link1: "Interest rates on term-deposits",
-      link2: "Price list for private individuals",
-      link3: "Price list for corporate",
+      rates: "Interest rates on term-deposits",
+      private: "Price list for private individuals",
+      corporate: "Price list for corporate",
     },
     table: {
       accounts: "Accounts",
@@ -426,7 +426,6 @@ export default {
     },
     innerLinkBlock: {
       benefits: "Benefits",
-      interestRates: "Interest rates",
       process: "Process",
       priceList: "Price List",
       clientSuport: "Client Support",
@@ -545,7 +544,6 @@ export default {
     },
     innerLinkBlock: {
       benefits: "Benefits",
-      interestRates: "Interest rates",
       process: "Process",
       priceList: "Price List",
       clientSuport: "Client Support",
@@ -817,8 +815,7 @@ export default {
       },
       innerLinkBlock: {
         benefits: "Benefits",
-        interestRates: "Interest rates",
-        calculator: "Calculator",
+        calculator: "Calculate",
         process: "Process",
         clientSuport: "Client Support",
         faq: "FAQ",
@@ -905,7 +902,6 @@ export default {
       },
       innerLinkBlock: {
         benefits: "Benefits",
-        interestRates: "Interest rates",
         process: "Process",
         priceList: "Price List",
         clientSuport: "Client Support",
@@ -1020,7 +1016,6 @@ export default {
       },
       innerLinkBlock: {
         benefits: "Benefits",
-        interestRates: "Interest rates",
         process: "Process",
         priceList: "Price List",
         clientSuport: "Client Support",

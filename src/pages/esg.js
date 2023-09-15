@@ -11,6 +11,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import { esgInnerLinkList } from "@/pages/api/data/innerLinksData";
+import InnerLinks from "@/components/InnerLinks";
 
 export default function Esg() {
   const router = useRouter();
@@ -72,27 +74,11 @@ export default function Esg() {
           </div>
         </section>
         <section className={styles.innerNavigationSection}>
-          <div className={styles.innerNavigationLinkList}>
-            <Link
-              className={styles.innerNavLink}
-              href="#enviromentalProtection"
-            >
-              {t.esg.innerLinkBlock.link1}
-            </Link>
-            <Link className={styles.innerNavLink} href="#socialPolitics">
-              {t.esg.innerLinkBlock.link2}
-            </Link>
-            <Link className={styles.innerNavLink} href="#esgPolicy">
-              {t.esg.innerLinkBlock.link3}
-            </Link>
-            <Link className={styles.innerNavLink} href="#reports">
-              {t.esg.innerLinkBlock.link4}
-            </Link>
-          </div>
+            <InnerLinks innerLinksData={esgInnerLinkList} />
         </section>
 
         <section
-          id="socialPolitics"
+          id="enviromentalProtection"
           className={styles.enviromentalProtectionSection}
         >
           <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
@@ -118,7 +104,7 @@ export default function Esg() {
               </div>
             </div>
           </div>
-          <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
+          <div id="socialPrinciples" className={styles.enviromentalProtectionBlock}>
             <div
               className={[
                 styles.enviromentalProtectionArticle,
@@ -146,7 +132,7 @@ export default function Esg() {
               }}
             />
           </div>
-          <div id="esgPolicy" className={styles.enviromentalProtectionBlock}>
+          <div id="enviromental" className={styles.enviromentalProtectionBlock}>
             <Image
               src={Img3}
               alt="Available Jobs"

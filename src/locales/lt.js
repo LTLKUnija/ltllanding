@@ -17,12 +17,12 @@ export default {
     capitalLoan: "Paskola apyvartiniam kapitalui",
   },
   footerNavLinks: {
-    usefulLinks: "Useful links",
-    priceList: "Price list",
-    termsAndCond: "Terms & Conditions",
-    ppAndCookies: "Privacy policy & Cookies",
-    security: "Security",
-    support: "Support & Complaints",
+    usefulLinks: "Naudingos nuorodos",
+    priceList: "Kainoraštis",
+    termsAndCond: "Sąlygos ir nuostatos",
+    ppAndCookies: "Privatumo politika ir slapukai",
+    security: "Saugumas",
+    support: "Palaikymas ir skundai",
     aboutUs: "Apie mus",
     management: "Valdymas",
     shareholders: "Akcininkams",
@@ -182,9 +182,9 @@ export default {
   priceList: {
     title: "Kainoraštis",
     innerLinkBlock: {
-      link1: "Terminuotųjų indėlių palūkanų normos",
-      link2: "Kainoraštis privatiems asmenims",
-      link3: "Kainoraštis įmonėms",
+      rates: "Terminuotųjų indėlių palūkanų normos",
+      private: "Kainoraštis privatiems asmenims",
+      corporate: "Kainoraštis įmonėms",
     },
     table: {
       accounts: "Sąskaitos",
@@ -820,7 +820,6 @@ export default {
       },
       innerLinkBlock: {
         benefits: "Privalumai",
-        interestRates: "Palūkanų normos",
         calculator: "Skaičiuoklė",
         process: "Procesas",
         clientSuport: "Klientų palaikymas",

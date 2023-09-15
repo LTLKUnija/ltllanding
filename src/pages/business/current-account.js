@@ -4,13 +4,14 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";
 import Steper from "@/components/Steper";
 import { currentAccountSteperData } from "@/pages/api/data/stepersData";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/currentAccount_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
+import { businessCurrentAccountInnerLinkList } from "@/pages/api/data/innerLinksData";
+import InnerLinks from "@/components/InnerLinks";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -59,23 +60,7 @@ export default function Mortgage() {
           </div>
         </section>
         <section className={styles.innerNavigationSection}>
-          <div className={styles.innerNavigationLinkList}>
-            <Link className={styles.innerNavLink} href="#benefits">
-              {t.consumerLoan.innerLinkBlock.benefits}
-            </Link>
-            <Link className={styles.innerNavLink} href="#process">
-              {t.consumerLoan.innerLinkBlock.process}
-            </Link>
-            <Link className={styles.innerNavLink} href="#pricelist">
-              {t.consumerLoan.innerLinkBlock.priceList}
-            </Link>
-            <Link className={styles.innerNavLink} href="#clientSuport">
-              {t.consumerLoan.innerLinkBlock.clientSuport}
-            </Link>
-            <Link className={styles.innerNavLink} href="#faq">
-              {t.consumerLoan.innerLinkBlock.faq}
-            </Link>
-          </div>
+          <InnerLinks innerLinksData={businessCurrentAccountInnerLinkList} />
         </section>
         <section id="benefits" className={styles.articleSection}>
           <div className={styles.articleWrapper}>

@@ -46,6 +46,15 @@
    margin-bottom: 30px;
 }
 
+.innerNavigationSection {
+   padding: 34px 0 18px 0;
+   position: sticky;
+   top: 100px;
+   background-color: var(--main-background);
+   z-index: 8;
+}
+
+
 .tabsList {
    display: flex;
    gap: 60px;
@@ -300,5 +309,9 @@
       align-items: center;
       flex-wrap: wrap;
       text-align: center;
+   }
+   
+   .innerNavigationSection {
+      display: none;
    }
 }

@@ -7,6 +7,8 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import FinacialReportsData from "@/components/FinacialReportsData";
+import { finacialReportingInnerLinkList } from "@/pages/api/data/innerLinksData";
+import InnerLinks from "@/components/InnerLinks";
 
 export default function FinancialReporting() {
   const router = useRouter();
@@ -87,28 +89,11 @@ export default function FinancialReporting() {
           <h3 className={styles.financialReportingTitle}>
             {t.finacialReporting.title}
           </h3>
-          <div className={styles.innerNavigationLinkList}>
-            <Link className={styles.innerNavLink} href="#quarterReports">
-              {t.finacialReporting.innerLinkBlock.quarterlyReports}
-            </Link>
-            <Link className={styles.innerNavLink} href="#annualReports">
-              {t.finacialReporting.innerLinkBlock.annualReporting}
-            </Link>
-            <Link className={styles.innerNavLink} href="#factsheets">
-              {t.finacialReporting.innerLinkBlock.factsheets}
-            </Link>
-            <Link className={styles.innerNavLink} href="#presentations">
-              {t.finacialReporting.innerLinkBlock.presentations}
-            </Link>
-            <Link className={styles.innerNavLink} href="#contacts">
-              {t.finacialReporting.innerLinkBlock.contacts}
-            </Link>
-            <Link className={styles.innerNavLink} href="#calendar">
-              {t.finacialReporting.innerLinkBlock.finacialCalendar}
-            </Link>
-          </div>
         </section>
-        <section id="quarterReports" className={styles.ReportsSection}>
+        <section className={styles.innerNavigationSection}>
+          <InnerLinks innerLinksData={finacialReportingInnerLinkList} />
+        </section>
+        <section id="quarterlyReports" className={styles.ReportsSection}>
           <div className={styles.ReportsWrapper}>
             <h3 className={styles.sectionTitle}>
               {t.finacialReporting.quarterlyReports}
@@ -155,7 +140,7 @@ export default function FinancialReporting() {
             </div>
           </div>
         </section>
-        <section id="annualReports" className={styles.presentationsSection}>
+        <section id="annualReporting" className={styles.presentationsSection}>
           <FinacialReportsData />
         </section>
         <section
@@ -268,7 +253,7 @@ export default function FinancialReporting() {
             </div>
           </div>
         </section>
-        <section id="calendar" className={styles.calendarSection}>
+        <section id="finacialCalendar" className={styles.calendarSection}>
           <div className={styles.calendarWrapper}>
             <h3>{t.finacialReporting.finacialCalendar.title}</h3>
             <p className={styles.calendarDescription}>
