@@ -7,12 +7,13 @@
   }
 
   .innerNavLink {
-     font-family: 'Lexend';
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 24px;
-     color: var(--main-text-color);
-     text-decoration: none;
+      font-family: 'Lexend';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--main-text-color);
+      text-decoration: none;
+
 
      &:last-child {
         margin-right: 0;
@@ -22,7 +23,12 @@
         text-transform: uppercase;
         font-weight: 600;
      }
+     &:hover {
+      border-bottom: solid 1px var(--main-text-color);
+     }
   }
+
+
 
   .innerNavLinkActive {
      font-family: 'Lexend';
@@ -31,8 +37,8 @@
      line-height: 24px;
      color: var(--main-text-color);
      text-decoration: none;
-     text-decoration: underline;
-
+     border-bottom: solid 1px var(--main-text-color);
+      
      &:last-child {
         margin-right: 0;
      }

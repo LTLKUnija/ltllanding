@@ -31,13 +31,11 @@ const InnerLinks = ({ innerLinksData }) => {
   }
   
   const showInnerLinks = innerLinksData.map((linkList, idx) => {
-    const arr = linkList.link.split('.')
-    const linkId = `${linkList.id}`
-    const href = `${linkId}` 
+    const linkId = `${linkList.id}` 
     return (
           <div key={idx}>
                <Link key={idx}
-                href={href}
+                href={linkId}
                 data-id={linkId}
                 className={innerLinkActive === `${linkId}` ? styles.innerNavLinkActive : styles.innerNavLink}
                 onClick={() => innerLinkHandler(`${linkId}`)}
