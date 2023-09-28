@@ -215,8 +215,7 @@ export default {
   },
   termDeposit: {
     heroBlock: {
-      title:
-        "You don‘t have to be big to make a fortune/your fortune grow",
+      title: "You don‘t have to be big to make a fortune/your fortune grow",
       description:
         "Save your own money and watch your wealth grow — free is now more powerful than ever!",
       bullet1: "Get the best (top) interest rates on the market",
@@ -310,8 +309,7 @@ export default {
   },
   openBanking: {
     pageTitle: "Open banking",
-    description:
-      "You don‘t have to be big to get plugged in. Trusted only.",
+    description: "You don‘t have to be big to get plugged in. Trusted only.",
     heroBlock: {
       description:
         "Our open banking technology is designed to enhance the overall banking experience. With modern API interface, companies can create state-of-the-art applications that are easy to use and highly integrated with banking services.",
@@ -711,7 +709,7 @@ export default {
       article2:
         "We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all.",
       article3:
-        "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +3700000000.",
+        "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +370 5 205 5240 / +370 5 205 5241.",
     },
   },
   privacyPolicy: {
@@ -745,7 +743,7 @@ export default {
       article1: {
         title: "Support & Complaints",
         description:
-          "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form (standard form have to be added on the web) below or call us at +37000000000. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!",
+          "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form (standard form have to be added on the web) below or call us at +370 5 205 5240 / +370 5 205 524. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!",
       },
       article2: {
         title: "Resolution of Disputes",
@@ -802,8 +800,7 @@ export default {
   business: {
     termDeposit: {
       heroBlock: {
-        title:
-          "You don‘t have to be big to make a fortune/your fortune grow",
+        title: "You don‘t have to be big to make a fortune/your fortune grow",
         description:
           "Save your own money and watch your wealth grow — free is now more powerful than ever!",
         bullet1: "Get the best (top) interest rates on the market",
@@ -1001,8 +998,7 @@ export default {
     },
     capitalLoan: {
       heroBlock: {
-        title:
-          "You don‘t have to be big to get a loan/to boost sales",
+        title: "You don‘t have to be big to get a loan/to boost sales",
         description:
           "With our working capital loan, you can access the funds you need for short-term investments or operational expenditures, helping you grow your business with confidence.",
         bullet1:
@@ -1099,8 +1095,7 @@ export default {
     },
     investmentLoan: {
       heroBlock: {
-        title:
-          "You don‘t have to be big to get a loan/to boost sales",
+        title: "You don‘t have to be big to get a loan/to boost sales",
         description:
           "Our investment loan lets you take advantage of a wide range of investment opportunities, whether you're looking for short-term gains or long-term growth.",
         bullet1:

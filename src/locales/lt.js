@@ -3,7 +3,7 @@ export default {
   headerNavLinks: {
     private: "Privatiems",
     business: "Verslui",
-    payments: "Mokėjimas",
+    payments: "Mokėjimai",
     currentAccount: "Einamoji sąskaita",
     credit: "Kreditas",
     mortgageLoan: "Būsto paskola",
@@ -617,8 +617,7 @@ export default {
   },
   equityLoan: {
     heroBlock: {
-      title:
-        "Jūs neturite būti didelis, kad gautumėte paskolą",
+      title: "Jūs neturite būti didelis, kad gautumėte paskolą",
       description:
         "Ieškote paskolos, kad dar labiau padidintumėte savo turto vertę? Mūsų paskola įkeičiant nuosavą turtą puikiai tinka tiems, kurie nori panaudoti nuosavą turtą papildomam finansavimui užtikrinti.",
       bullet1: "Padedame finansuoti iki 85% jūsų nuosavo turto vertės",
@@ -715,7 +714,7 @@ export default {
       article2:
         "Suprantame, kad kiekvienas iš mūsų partnerių pateikia unikalių privalumų ir perspektyvų, todėl esame įsipareigoję dirbti su jumis kurdami individualius sprendimus, atitinkančius konkrečius klientų poreikius. Nesvarbu, ar esate mažas startuolis, ar didelė korporacija, technologijų įmonė, norinti integruotis su mūsų platforma, ar pardavimų tarpininkas, siekiantis išplėsti savo verslą, esame pasiryžę kurti prieinamą ir integruotą ekosistemą, skatinančią augimą ir naujoves.",
       article3:
-        "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite prašome su mumis užpildydami žemiau esančią formą arba paskambindami telefonu +3700000000.",
+        "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite prašome su mumis užpildydami žemiau esančią formą arba paskambindami telefonu +370 5 205 5240 / +370 5 205 5241.",
     },
   },
   privacyPolicy: {
@@ -749,7 +748,7 @@ export default {
       article1: {
         title: "Atsiliepimai ir skundai",
         description:
-          "Mūsų vizijos dalis ir siekis yra teikti puikias paslaugas, kurios nekelia rūpesčių mūsų klientams. Siekdami nuolat tobulėti, pasitikime jūsų atsiliepimais ir nuomonėmis. Prašome jūsų skirti šiek tiek laiko ir esant progai užpildyti žemiau esančią atsiliepimų formą arba tiesiog paskambinkite mums +37000000000. Į jūsų paklausimą atsakysime per 30 dienų ir stengsimės išspręsti visas iškilusias problemas. Taip pat laukiame jūsų teigiamų atsiliepimų, jei mūsų darbuotojai ir paslaugos viršijo jūsų lūkesčius!",
+          "Mūsų vizijos dalis ir siekis yra teikti puikias paslaugas, kurios nekelia rūpesčių mūsų klientams. Siekdami nuolat tobulėti, pasitikime jūsų atsiliepimais ir nuomonėmis. Prašome jūsų skirti šiek tiek laiko ir esant progai užpildyti žemiau esančią atsiliepimų formą arba tiesiog paskambinkite mums +370 5 205 5240 / +370 5 205 524. Į jūsų paklausimą atsakysime per 30 dienų ir stengsimės išspręsti visas iškilusias problemas. Taip pat laukiame jūsų teigiamų atsiliepimų, jei mūsų darbuotojai ir paslaugos viršijo jūsų lūkesčius!",
       },
       article2: {
         title: "Ginčų sprendimas",
@@ -898,8 +897,7 @@ export default {
     },
     currentAccount: {
       heroBlock: {
-        title:
-          "Jūs neturite būti didelis, kad gautumėte paskolą",
+        title: "Jūs neturite būti didelis, kad gautumėte paskolą",
         description:
           "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
         bullet1: "24/7 internetinė bankininkystė jūsų paslaugoms",
