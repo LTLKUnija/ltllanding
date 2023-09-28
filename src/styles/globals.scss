@@ -528,7 +528,7 @@ footer {
     align-items: center;
 
     .accHeaderTitle {
-      font-weight: 300;
+      font-weight: 500;
       font-size: 16px;
       line-height: 20px;
       color: #000000;
@@ -553,13 +553,16 @@ footer {
     font-size: 14px;
     line-height: 18px;
     color: #000000;
-    transition-duration: 150ms;
+    transition-duration: 500ms;
 
     &.opened {
-      margin-top: 40px;
+      margin-top: 20px;
       height: auto;
       transition-duration: 500ms;
       visibility: visible;
+    }
+    .item {
+      margin-bottom: 10px;
     }
   }
 
