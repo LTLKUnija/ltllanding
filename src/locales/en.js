@@ -191,9 +191,200 @@ export default {
       openingAccount: "Opening an account",
       maintainingAccount: "Maintaining the account",
       closingAccount: "Closing the account",
+      currentAccountClosure: "Current account closure",
       cashPoolingAccount: "Cash pooling account",
       agreementSigning: "Agreement signing",
       entrepreneuAccount: "Entrepreneur account",
+      from: "From",
+      fees: {
+        freeOfCharge: "free of charge",
+        serviceNotAvailable: "the service is not available",
+        notApplicable: "Not applicable",
+        otherServices: "Other services:",
+        actualCost: "Actual costs",
+      },
+      dataVerification:
+        "Fee for data verification during the customer identification and identification process",
+      openingCurrentAccount: "Opening a current account",
+      currentAccountAdministration: "Current account administration/management",
+      cashBalance: "Fee for keeping cash balances on account ",
+      accountStatmentCollectionAtBranch:
+        "Account statement upon collection at a credit union branch:",
+      currentPreviousMonth: "- current and previous month",
+      otherMonthCurrentYeasr: "- for the other months of the current year",
+      forEachPreviousYear: "- for each previous year",
+      onlineStatmentofAccount: "Online statement of account",
+      restrictedAccountService: "Restricted account service**:",
+      administration:
+        "Administration/management of a restricted account (including opening and closing)",
+      transferingFunds:
+        "Transferring funds to replenish an account (to make a down payment, to repay or administer a loan, to enter into a fixed-term deposit agreement)",
+      creditsTransfers:
+        "Credit transfers within a credit union branch for the purpose of (i) drawing on the credit, or (ii) transferring the balance after the credit has been fully repaid, or (iii) transferring the amount of the interest on the deposit",
+      restrictedPayment:
+        "**Restricted payment account - an account intended for the administration of a loan, deposit or other credit union product, opened in cases where the customer does not wish to use the services of the Internet Bank and does not wish to have a current account, but where the account is necessary for the proper administration of the service provided by the credit union. The use of the account for purposes other than the above-mentioned, for initiating transactions not related to the administration of a specific service, shall be subject to the fees set out in the price list.",
+      transferingMoney: "Transferring money at the customer service desk:",
+      freeToRecipient:
+        "Free of charge to the recipient to an account at the credit union",
+      paymentsInEuro: "Payments in the euro area (SEPA)",
+      compulsoryDecommitment: "Compulsory decommitment",
+      paymentCancellation: "Payment cancellation",
+      internationnalMoney:
+        "International money transfer at the customer service desk:",
+      paymentsOutside:
+        "Payments outside the euro area (outside the SEPA payment network)",
+      outgoingPayments: "Outgoing payments",
+      betweenAccounts: "Between accounts at the credit union",
+      cancelationOfPayment: "Cancellation of payment in the euro area (SEPA)",
+      incomingPayments: "Incoming payments",
+      returningPayment: "Returning a payment received in the euro area (SEPA)",
+      internationalMonetTransfer: "International money transfer online:",
+      cashTransaction: "Cash transactions:",
+      cashDepositYourAccount: "Cash deposit to your current account, EUR",
+      amountDeposited:
+        "of the amount deposited. Not applicable up to 3000 EUR/month",
+      cashDepositOnotherAccount:
+        "Grynųjų pinigų įnešimas į kito asmens einamąją sąskaitą, EUR",
+      cashPayment: "Cash payment*",
+      onTheAmount: "on the amount",
+      taxDoesNotApply: "*Tax does not apply:",
+      withInterestPayments: "- with interest payments;",
+      repayingShareContribution: "- Enriching the share contribution;",
+      clientsSalaryTransferred:
+        "- if the client's salary is transferred to the client's account.",
+      penaltyForFailingToCollectFunds:
+        "Penalty for failing to collect ordered funds in cash on the specified date",
+      onAmountOfCashOrdered: "on the amount of cash ordered",
+      feesForCreditServices: "Fees for credit services:",
+      minimumAnnualInterestRate: "Minimum annual interest rate",
+      accordingToTermsOFCreditAgreement:
+        "According to the terms of the credit agreement (from 5%)",
+      creditAgreementConclusionFee: "Credit agreement conclusion fee",
+      ofTheLoanAmount: "From 1.00% of the loan amount, min.",
+      changingTermsOfCredit: "Changing the terms of a credit agreement",
+      existingCreditBalance:
+        "From 0.50% of the amount of the existing credit balance, min.",
+      caseProvidetForInLaw:
+        "*In the cases provided for in the Law, the tax does not apply",
+      changingTermsOfCreditAgreemntInCaseOfConsumer:
+        "Changing the terms of a credit agreement in the case of consumer loans (without collateral)",
+      commitmentFee: "Commitment fee",
+      unusedAmountOfCredit: "on the unused amount of credit",
+      lateFees: "Late fees",
+      amountOverdueForEachDay: "on the amount overdue for each day overdue",
+      loanAdministrationFee: "Loan administration fee (recurring)",
+      creditdisbursementFee:
+        "Credit disbursement fee when credit is disbursed in instalments*",
+      forEachPartialDrawdown: "for each partial drawdown",
+      taxWaivedFullAmountDisbursed:
+        "*Tax is waived when the full amount of the credit is disbursed in one payment",
+      ChangingDueDateInstalments:
+        "Changing the due date for credit instalments and/or interest (by the customer initiative)",
+      changeForEarlyRepayment:
+        "Charge for early repayment of credit or part thereof",
+      loansPersonalNeeds:
+        "Loans for personal, family and household needs, on the date of the variable interest rate reset - no fee, other on other days - the fee set by law, max. 3% of the of the loan to be repaid.",
+      loansPurposeSubject:
+        "Loans for business or professional purposes are subject to a fee of 1% of the amount repaid before maturity, min. 200 EUR",
+      feeOnCreditRepayable:
+        "Fee on credit or part of credit repayable early for consumer loans (excluding in the case of a secured loan",
+      feeForGrantingConsentToASecondCharge:
+        "Fee for granting consent to a second charge",
+      onDaysVariableInterestRate:
+        "On the day of the variable interest rate change - no fee, on other days - the fee set by law, max. 3% of the of the credit being repaid, min. EUR 200.",
+      deregistrationOfAMortgage: "Deregistration of a mortgage",
+      valuationOfAssets:
+        "Valuation of the assets pledged to the credit union by an independent asset appraiser*",
+      basedOnIndependentValueFee: "Based on independent valuers' fees",
+      inCaseOfCreditUnionCommissioning:
+        "*In the case of a credit union commissioning an independent valuation of the pledged/collateralised asset appraisal, the client shall reimburse the cost of the appraisal",
+      internalValuationFee:
+        "Internal valuation fee for assets pledged to a credit union",
+      perPropertyComplex: "From EUR 200 per property complex",
+      certificateFromCentralDataBnak:
+        "Certificate from the Central Data Bank of the Real Estate Register",
+      sendingDefaultNotice: "Sending a default notice",
+      sendingRepeatedNotification:
+        "Sending repeated notifications for non-compliance",
+      preparationCertificateInLithuanian:
+        "Preparation of the certificate in Lithuanian:",
+      certificatesRelaitingCreditAgreement:
+        "Certificates (consents, permits, approvals, etc.) relating to related to the credit agreement/ related to the collateral/security Issuance of documents related to collateral (for services for which there is no separate fee)",
+      otherAgreementsRelatedContract:
+        "Other authorisations/agreements not related to the essential terms of the contract and/or collateral/collateral operations (for services for which there is no separate fee)",
+      issuingCertificatesForeignLanguage:
+        "Issuing certificates, consents, permits in a foreign language",
+      sendingDocumentsByCurier: "Sending documents by courier",
+
+      month: "EUR/month",
+      accountsFinancialInstitutions:
+        "Accounts for legal persons other than financial institutions and multinational companies:",
+      currentAccountAdministration: "Current account administration/management",
+      customerHasOneActiveCredit:
+        "*If the customer has at least one active credit product with the credit union - no fee applies",
+      transferMoneyCustomerService:
+        "Transfer of money at the customer service desk to legal persons other than financial institutions and multinational companies:",
+      feeForCompanies:
+        "Fees for financial institutions and multinational companies",
+      accountsFinancialCompanies:
+        "Accounts for financial institutions and multinational companies:",
+      feeForDataVerification:
+        "Fee for data verification during the customer identification and identification process",
+      fundsCustodyAccounts: "Funds custody account (deposit account)*",
+      custodyAccountMayOpenedIf:
+        "*A custody account may be opened if the customer has a current account with the credit union, which is subject to the relevant fees approved by the credit union and is debited with the fees related to the custody account service",
+      managmentCustodyAccount:
+        "Administration/management of the custody account (depository account)",
+      custodyAccountClosure: "Closure of a custody account (deposit account)",
+      moneyTransferForFinancialInstitution:
+        "Money transfer in the Customer Service Unit for financial institutions and multinational companies",
+      toRecipientsAccountCreditUnion:
+        "To the recipient's account at the credit union",
+      onlineyMOneyTransferToFinancialInstitutions:
+        "Online money transfers to financial institutions and multinational companies:",
+      internationalMoneyTransferAtCustomerService:
+        "International money transfer at a customer service outlet (applies to all legal entities):",
+      internationalMoneyTranser:
+        "International money transfer (applies to all legal entities):",
+      cashTransactionToAllLegalEntities:
+        "Cash transactions (applies to all legal entities):",
+      ammountDeposited:
+        "of the amount deposited. Not applicable up to EUR 3000/month.",
+      creditInterestRate: "Credit interest rate",
+      transferingLoanAgreementOfAnotherPerson:
+        "Transferring a loan agreement in the name of another person/company",
+      amountOfExistingCreditBalance:
+        "From 1% of the current credit balance, min. EUR 350",
+      unusedCreditAmount: "Min. 0.50% of the unused credit amount",
+      forEachDayOverdue: "0,05 % for each day overdue",
+      creditAgreementSpecified:
+        "unless otherwise specified in the credit agreement",
+      feeForGrantingConsentToSecondCharge:
+        "Fee for granting consent to a second charge",
+      ofTheCreditBalance: "1.00% of the credit balance, min EUR 400",
+      creditProjectAnalysis: "Credit project analysis, appraisal*",
+      fromAmountRequestedByClient:
+        "0.25% of the amount requested by the client, min. 250 EUR",
+      caseOfLoanToACliant:
+        "*In the case of a loan to a client, the fee paid by the client is included in the total amount of the credit agreement conclusion fee",
+      unlessOtherwiseSpecified:
+        "From EUR 150, unless otherwise specified in the credit agreement.",
+      provisionOfGuarantee: "Provision of a guarantee:",
+      ofTheGuaranteedAmount:
+        "From 0.1% of the guaranteed amount, min. 350 (only with pledge of funds).",
+      guaranteeFromUnion:
+        "Guarantee from Union (loan) funds - credit facilities apply fees for the conclusion of the agreement, amendment of the terms and conditions.",
+      administrationClaimForPayment:
+        "Administration of a claim for payment under a guarantee",
+      amountMin: "0.2% of the amount, min EUR 150",
+      copiesOfDocuments: "Copies/transcripts of documents",
+      documentsFromArchive: "Sending documents from the archive",
+      actualCostForArchiesServices:
+        "The credit union's actual costs for archive services",
+      translationOfCertificates:
+        "Translation of certificates/agreements into a foreign language (if available)",
+      actualCostTranslationServices:
+        "The credit union's actual costs of purchasing translation services",
     },
   },
   licence: {
@@ -215,8 +406,7 @@ export default {
   },
   termDeposit: {
     heroBlock: {
-      title:
-        "You don‘t have to be big to make a fortune/your fortune grow",
+      title: "You don‘t have to be big to make a fortune/your fortune grow",
       description:
         "Save your own money and watch your wealth grow — free is now more powerful than ever!",
       bullet1: "Get the best (top) interest rates on the market",
@@ -310,8 +500,7 @@ export default {
   },
   openBanking: {
     pageTitle: "Open banking",
-    description:
-      "You don‘t have to be big to get plugged in. Trusted only.",
+    description: "You don‘t have to be big to get plugged in. Trusted only.",
     heroBlock: {
       description:
         "Our open banking technology is designed to enhance the overall banking experience. With modern API interface, companies can create state-of-the-art applications that are easy to use and highly integrated with banking services.",
@@ -802,8 +991,7 @@ export default {
   business: {
     termDeposit: {
       heroBlock: {
-        title:
-          "You don‘t have to be big to make a fortune/your fortune grow",
+        title: "You don‘t have to be big to make a fortune/your fortune grow",
         description:
           "Save your own money and watch your wealth grow — free is now more powerful than ever!",
         bullet1: "Get the best (top) interest rates on the market",
@@ -1001,8 +1189,7 @@ export default {
     },
     capitalLoan: {
       heroBlock: {
-        title:
-          "You don‘t have to be big to get a loan/to boost sales",
+        title: "You don‘t have to be big to get a loan/to boost sales",
         description:
           "With our working capital loan, you can access the funds you need for short-term investments or operational expenditures, helping you grow your business with confidence.",
         bullet1:
@@ -1099,8 +1286,7 @@ export default {
     },
     investmentLoan: {
       heroBlock: {
-        title:
-          "You don‘t have to be big to get a loan/to boost sales",
+        title: "You don‘t have to be big to get a loan/to boost sales",
         description:
           "Our investment loan lets you take advantage of a wide range of investment opportunities, whether you're looking for short-term gains or long-term growth.",
         bullet1:
