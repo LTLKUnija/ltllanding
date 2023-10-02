@@ -43,8 +43,11 @@ function Header() {
   }, [locale]);
 
   function setLanguage() {
-    if (langBtnState === "ENG") router.push("/", "/", { locale: "en" });
-    else router.push("/", "/", { locale: "lt" });
+    if (langBtnState === "ENG") {
+      router.push(router.pathname, router.asPath, { locale: "en" });
+    } else {
+      router.push(router.pathname, router.asPath, { locale: "lt" });
+    }
   }
 
   return (

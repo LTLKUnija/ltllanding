@@ -900,7 +900,7 @@ export default {
       article2:
         "We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all.",
       article3:
-        "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +3700000000.",
+        "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please get in touch by filling out the form below or calling us at +370 5 205 5240 / +370 5 205 5241.",
     },
   },
   privacyPolicy: {
@@ -934,7 +934,7 @@ export default {
       article1: {
         title: "Support & Complaints",
         description:
-          "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form (standard form have to be added on the web) below or call us at +37000000000. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!",
+          "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form (standard form have to be added on the web) below or call us at +370 5 205 5240 / +370 5 205 524. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!",
       },
       article2: {
         title: "Resolution of Disputes",
