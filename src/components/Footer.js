@@ -105,6 +105,9 @@ function Footer({ setShowLinks, showLinks }) {
         <Link className="footer-navigation-link" href="/licence">
           {t.footerNavLinks.license}
         </Link>
+        <Link className="footer-navigation-link" href="/faq">
+          {t.headerNavLinks.faq}
+        </Link>                
       </div>
       <div
         className={`footer-navigation-section ${
