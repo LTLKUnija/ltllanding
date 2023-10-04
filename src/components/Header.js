@@ -43,8 +43,11 @@ function Header() {
   }, [locale]);
 
   function setLanguage() {
-    if (langBtnState === "ENG") router.push("/", "/", { locale: "en" });
-    else router.push("/", "/", { locale: "lt" });
+    if (langBtnState === "ENG") {
+      router.push(router.pathname, router.asPath, { locale: "en" });
+    } else {
+      router.push(router.pathname, router.asPath, { locale: "lt" });
+    }
   }
 
   return (
@@ -180,6 +183,9 @@ function Header() {
           </div>
           <Link className="header-nav-link" href="/contacts">
             {t.headerNavLinks.contacts}
+          </Link>          
+          <Link className="header-nav-link" href="/faq">
+            {t.headerNavLinks.faq}
           </Link>
           <span
             className="header-nav-link change-language-link show"
