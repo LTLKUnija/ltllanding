@@ -340,6 +340,9 @@ export default {
   },
   career: {
     title: "Career",
+    contacts: "Contacts",
+    address: "Sporto st. 18, \n LT- 09238 Vilnius",
+    faq: "F.A.Q",
   },
   privetCurrentAccount: {
     pageTitle: "You don‘t have to be big to be international",
@@ -1192,5 +1195,8 @@ export default {
       },
       faq: "D.U.K.",
     },
+  },
+  faq: {
+    pageTitle: "F.A.Q.",
   },
 };
