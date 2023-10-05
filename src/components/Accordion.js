@@ -26,13 +26,12 @@ export default function Accordion({ faqData, singleLevel }) {
       >
         {data.map((question, idx) => {
           return (
-            <div className="ac">
+            <div className="ac" key={idx}>
               <div className="acHeader">
                 <div
                   className="accHeaderTitle"
                   data-idx={idx}
                   onClick={(e) => openFaq(e)}
-                  key={idx}
                 >
                   {question.header}
                 </div>
