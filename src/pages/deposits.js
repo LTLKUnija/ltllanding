@@ -14,7 +14,6 @@ import BackBtn from "../../public/assets/images/backBtn.png";
 import { termDepositInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { DepositFAQ } from "@/common/AccordionSchemas";
-import { ac2 } from "@/common/AccordionSchemas";
 
 export default function Deposit() {
   const router = useRouter();

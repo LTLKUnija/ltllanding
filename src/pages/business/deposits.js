@@ -14,6 +14,7 @@ import HeroMobile from "../../../public/assets/images/Business_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessTermDepositInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
+import { DepositFAQ } from "@/common/AccordionSchemas";
 
 export default function Deposit() {
   const router = useRouter();
@@ -252,7 +253,7 @@ export default function Deposit() {
             <div className={styles.faqWrapper}>
               <h3 className={styles.faqHeader}>{t.business.termDeposit.faq}</h3>
               <div className={styles.faqList}>
-                <Accordion accId="1" singleLevel="true" />
+                <Accordion faqData={DepositFAQ} singleLevel="true" />
               </div>
             </div>
           </section>

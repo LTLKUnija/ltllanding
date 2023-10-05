@@ -1,0 +1,24 @@
+.faqWrapper {
+  max-width: 1060px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+
+  .faqHeader {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px;
+    margin-bottom: 56px;
+    text-align: center;
+  }
+
+  .faqList {
+    padding: 40px 105px 70px 105px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+    background-color: #f9f8f7;
+    margin-bottom: 40px;
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+}

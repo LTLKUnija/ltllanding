@@ -1,5 +1,11 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
+  common: {
+    loanForPrivates: "Loan For Privates F.A.Q.",
+    loanForBusiness: "Loan For Business F.A.Q.",
+    currentAccount: "Current Account F.A.Q.",
+    deposit: "Deposit F.A.Q.",
+  },
   headerNavLinks: {
     private: "Private",
     business: "Business",
@@ -15,7 +21,7 @@ export default {
     openAccount: "Open account",
     investmentLoan: "Investment loan",
     capitalLoan: "Capital loan",
-    faq: "F.A.Q"
+    faq: "F.A.Q",
   },
   footerNavLinks: {
     usefulLinks: "Useful links",
@@ -39,7 +45,7 @@ export default {
     career: "Career",
     contacts: "Contacts",
     address: "Sporto st. 18, \n LT- 09238 Vilnius",
-    faq: "F.A.Q"
+    faq: "F.A.Q",
   },
   indexPage: {
     slideOne: {
@@ -234,7 +240,7 @@ export default {
       calculator: "Calculator",
       process: "Process",
       clientSuport: "Client Support",
-      faq: "FAQ",
+      faq: "F.A.Q.",
     },
     benefitsArticle: {
       article1: {
@@ -304,10 +310,10 @@ export default {
     clientSuport: {
       title: "Client support",
       description:
-        "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt.",
+        "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt.",
     },
 
-    faq: "FAQ",
+    faq: "F.A.Q.",
   },
   openBanking: {
     pageTitle: "Open banking",
@@ -357,7 +363,7 @@ export default {
       afterYouOpened: "After you opened",
       priceList: "Price list",
       clientSupport: "Client Support",
-      faq: "FAQ",
+      faq: "F.A.Q.",
     },
     articleBlock: {
       article1: {
@@ -407,9 +413,9 @@ export default {
     clientSuport: {
       title: "Client support",
       description:
-        "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt.",
+        "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt.",
     },
-    faq: "FAQ",
+    faq: "F.A.Q.",
   },
   consumerLoan: {
     heroBlock: {
@@ -429,7 +435,7 @@ export default {
       process: "Process",
       priceList: "Price List",
       clientSuport: "Client Support",
-      faq: "FAQ",
+      faq: "F.A.Q.",
     },
     benefitsArticle: {
       article1: {
@@ -487,9 +493,9 @@ export default {
     clientSuport: {
       title: "Client support",
       description:
-        "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt.",
+        "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt.",
     },
-    faq: "FAQ",
+    faq: "F.A.Q.",
   },
   investmentLoan: {
     pageTitle: "Investment loan",
@@ -547,7 +553,7 @@ export default {
       process: "Process",
       priceList: "Price List",
       clientSuport: "Client Support",
-      faq: "FAQ",
+      faq: "F.A.Q.",
     },
     benefitsArticle: {
       article1: {
@@ -617,9 +623,9 @@ export default {
     clientSuport: {
       title: "Client support",
       description:
-        "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt.",
+        "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt.",
     },
-    faq: "FAQ",
+    faq: "F.A.Q.",
   },
   mortgageLoan: {
     heroBlock: {
@@ -638,7 +644,7 @@ export default {
       process: "Process",
       priceList: "Price List",
       clientSuport: "Client Support",
-      faq: "FAQ",
+      faq: "F.A.Q.",
     },
     articleBlock: {
       article1: {
@@ -745,7 +751,7 @@ export default {
       article1: {
         title: "Support & Complaints",
         description:
-          "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form (standard form have to be added on the web) below or call us at +370 5 205 5240 / +370 5 205 524. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!",
+          "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form (standard form have to be added on the web) below or call us at +370 5 205 5240 / +370 5 205 5241. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!",
       },
       article2: {
         title: "Resolution of Disputes",
@@ -754,7 +760,7 @@ export default {
       },
     },
     readMore: "Read more",
-    faq: "FAQ",
+    faq: "F.A.Q.",
   },
   moneyLoundering: {
     title:
@@ -817,7 +823,7 @@ export default {
         calculator: "Calculate",
         process: "Process",
         clientSuport: "Client Support",
-        faq: "FAQ",
+        faq: "F.A.Q.",
       },
       benefitsArticle: {
         article1: {
@@ -885,9 +891,9 @@ export default {
       clientSuport: {
         title: "Client support",
         description:
-          "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt.",
+          "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt.",
       },
-      faq: "FAQ",
+      faq: "F.A.Q.",
     },
     currentAccount: {
       heroBlock: {
@@ -904,7 +910,7 @@ export default {
         process: "Process",
         priceList: "Price List",
         clientSuport: "Client Support",
-        faq: "FAQ",
+        faq: "F.A.Q.",
       },
       benefitsArticle: {
         article1: {
@@ -994,9 +1000,9 @@ export default {
       clientSuport: {
         title: "Client support",
         description:
-          "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt.",
+          "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt.",
       },
-      faq: "FAQ",
+      faq: "F.A.Q.",
     },
     capitalLoan: {
       heroBlock: {
@@ -1017,7 +1023,7 @@ export default {
         process: "Process",
         priceList: "Price List",
         clientSuport: "Client Support",
-        faq: "FAQ",
+        faq: "F.A.Q.",
       },
       benefitsArticle: {
         article1: {
@@ -1091,9 +1097,9 @@ export default {
       clientSuport: {
         title: "Client support",
         description:
-          "If you need any assistance applying for a corporate loan, signing the agreements, performing loan repayments or any other credit related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt.",
+          "If you need any assistance applying for a corporate loan, signing the agreements, performing loan repayments or any other credit related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt.",
       },
-      faq: "D.U.K.",
+      faq: "F.A.Q.",
     },
     investmentLoan: {
       heroBlock: {
@@ -1114,7 +1120,7 @@ export default {
         process: "Process",
         priceList: "Price List",
         clientSuport: "Client Support",
-        faq: "FAQ",
+        faq: "F.A.Q.",
       },
       benefitsArticle: {
         article1: {
@@ -1188,12 +1194,12 @@ export default {
       clientSuport: {
         title: "Client support",
         description:
-          "If you need any assistance applying for a corporate loan, signing the agreements, performing loan repayments or any other credit related issues, please reach out to us via phone +370 xxx or email pagalba@ltlku.lt.",
+          "If you need any assistance applying for a corporate loan, signing the agreements, performing loan repayments or any other credit related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt.",
       },
-      faq: "D.U.K.",
+      faq: "F.A.Q.",
     },
   },
   faq: {
-    pageTitle: 'F.A.Q.'
-  }
+    pageTitle: "F.A.Q.",
+  },
 };

@@ -85,7 +85,7 @@ export const CurrentAccFAQ = [
   },
 ];
 
-export const LoadForPrivates = [
+export const LoanForPrivates = [
   {
     id: 1,
     header: "Who can get a home loan?",
@@ -185,6 +185,49 @@ export const LoanForBusiness = [
       `Real estate is pledged as collateral for the performance of the obligations. In individual cases, credit repayment guarantees provided by UAB 'Investicijų ir verslo garantijos' may be used.`,
     ],
     opened: false,
+  },
+];
+export const basic = [
+  {
+    id: 1,
+    header: "Kaip atsidaryti einamąją sąskaitą?",
+    body: [
+      "Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis",
+    ],
+    opened: false,
+  },
+  {
+    id: 2,
+    header: "Kaip padėti terminuotąjį indėlį?",
+    body: [
+      "Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis.",
+    ],
+    opened: false,
+  },
+  {
+    id: 3,
+    header:
+      "Kada galiu atvykti pasiimti sukauptų terminuotojo indėlio palūkanų?",
+    body: [
+      "Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis.",
+    ],
+    opened: false,
+  },
+  {
+    id: 4,
+    header: "Ar galiu nutraukti terminuotojo indėlio sutartį?",
+    opened: false,
+    body: [
+      "Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis.",
+    ],
+  },
+  {
+    id: 5,
+    header: "Ar būtina pinigines lėšas įnešti grynais pinigais, ar pavedimu?",
+    opened: false,
+    body: [
+      "Sveiki Mariau. Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis.",
+    ],
   },
 ];
 
