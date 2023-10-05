@@ -2,14 +2,15 @@ import styles from "@/styles/priceList.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import Accordion from "@/components/Accordion";
-import { useRouter } from "next/router"
-import lt from '@/locales/lt'
-import en from '@/locales/en'
+import { useRouter } from "next/router";
+import lt from "@/locales/lt";
+import en from "@/locales/en";
+import { basic } from "@/common/AccordionSchemas";
 
 export default function PriceListPage() {
-   const router = useRouter();
-   const t = router.locale === 'lt' ? lt : en
- 
+  const router = useRouter();
+  const t = router.locale === "lt" ? lt : en;
+
   return (
     <>
       <IndexLayout>
@@ -24,13 +25,13 @@ export default function PriceListPage() {
                 className={styles.innerNavLink}
                 href="#priceListForIndividuals"
               >
-               {t.priceList.innerLinkBlock.link2}
+                {t.priceList.innerLinkBlock.link2}
               </Link>
               <Link
                 className={styles.innerNavLink}
                 href="#priceListForCorparate"
               >
-               {t.priceList.innerLinkBlock.link3}
+                {t.priceList.innerLinkBlock.link3}
               </Link>
             </div>
           </section>
@@ -329,7 +330,7 @@ export default function PriceListPage() {
             <div className={styles.faqWrapper}>
               <h3 className={styles.faqHeader}>FAQ</h3>
               <div className={styles.faqList}>
-                <Accordion accId="1" singleLevel="true" />
+                <Accordion faqData={basic} singleLevel="true" />
               </div>
             </div>
           </section>
