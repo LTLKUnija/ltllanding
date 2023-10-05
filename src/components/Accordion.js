@@ -32,6 +32,7 @@ export default function Accordion({ faqData, singleLevel }) {
                   className="accHeaderTitle"
                   data-idx={idx}
                   onClick={(e) => openFaq(e)}
+                  key={idx}
                 >
                   {question.header}
                 </div>

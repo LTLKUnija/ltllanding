@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import { basic } from "@/common/AccordionSchemas";
 
 export default function Credits() {
   const router = useRouter();
@@ -178,7 +179,7 @@ export default function Credits() {
         <section id="faq" className={styles.faqSection}>
           <div className={styles.faqWrapper}>
             <div className={styles.faqList}>
-              <Accordion accId="1" singleLevel="true" />
+              <Accordion faqData={basic} singleLevel="true" />
             </div>
           </div>
         </section>
