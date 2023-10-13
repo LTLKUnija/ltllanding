@@ -68,7 +68,7 @@ export default function TemrsAndConditions() {
                       href={link.linkUrl}
                       className={styles.linkStyle}
                     >
-                      {link.linkName}
+                      {t.termConditions.innerTabLinks[link.linkName]}
                     </Link>
                   </li>
                 );

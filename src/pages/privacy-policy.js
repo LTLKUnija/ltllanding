@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
                       href={link.linkUrl}
                       className={styles.linkStyle}
                     >
-                      {link.linkName}
+                      {t.privacyPolicy.innerTabLinks[link.linkName]}
                     </Link>
                   </li>
                 );
