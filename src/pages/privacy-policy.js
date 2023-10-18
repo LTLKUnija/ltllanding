@@ -5,21 +5,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import { privacyLinks } from "@/common/privacyLinks";
 
 export default function PrivacyPolicy() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
-
-  const [links, setLinks] = useState([]);
-
-  useEffect(() => {
-    const getLinks = async () => {
-      const resp = await fetch(`/api/privacy`);
-      const data = await resp.json();
-      setLinks(data);
-    };
-    getLinks();
-  }, []);
 
   return (
     <IndexLayout>
@@ -31,7 +21,7 @@ export default function PrivacyPolicy() {
           </div>
           <div className={styles.privacyPolicyLinks}>
             <ul>
-              {links.map((link, idx) => {
+              {privacyLinks.map((link, idx) => {
                 return (
                   <li key={idx}>
                     <Link

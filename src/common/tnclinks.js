@@ -1,4 +1,4 @@
-export const links = [
+export const tncLinks = [
   {
     tabName: "accounts",
     active: true,
