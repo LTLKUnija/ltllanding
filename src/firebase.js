@@ -8,4 +8,4 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE__APP_ID,
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASSUREMENT_ID,
 };
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
