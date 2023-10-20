@@ -1,5 +1,11 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
+  common: {
+    loanForPrivates: "Paskola privatiems darbuotojams D.U.K.",
+    loanForBusiness: "Paskola verslui D.U.K.",
+    currentAccount: "Einamoji sąskaita D.U.K.",
+    deposit: "Depozitas D.U.K.",
+  },
   headerNavLinks: {
     private: "Privatiems",
     business: "Verslui",
@@ -321,7 +327,7 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description:
-        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
     },
     faq: "D.U.K.",
   },
@@ -427,7 +433,7 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description:
-        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
     },
     faq: "D.U.K.",
   },
@@ -508,7 +514,7 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description:
-        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
     },
     faq: "D.U.K.",
   },
@@ -591,7 +597,7 @@ export default {
       },
     },
     stepProcess: {
-      title: "Loan application process:",
+      title: "Paskolos paraiškos teikimo procesas:",
       step1: {
         title: "Fill in a loan application form and give the consent",
         description:
@@ -720,7 +726,7 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description:
-        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
     },
     faq: "D.U.K.",
   },
@@ -775,7 +781,7 @@ export default {
       article1: {
         title: "Atsiliepimai ir skundai",
         description:
-          "Mūsų vizijos dalis ir siekis yra teikti puikias paslaugas, kurios nekelia rūpesčių mūsų klientams. Siekdami nuolat tobulėti, pasitikime jūsų atsiliepimais ir nuomonėmis. Prašome jūsų skirti šiek tiek laiko ir esant progai užpildyti žemiau esančią atsiliepimų formą arba tiesiog paskambinkite mums +370 5 205 5240 / +370 5 205 524. Į jūsų paklausimą atsakysime per 30 dienų ir stengsimės išspręsti visas iškilusias problemas. Taip pat laukiame jūsų teigiamų atsiliepimų, jei mūsų darbuotojai ir paslaugos viršijo jūsų lūkesčius!",
+          "Mūsų vizijos dalis ir siekis yra teikti puikias paslaugas, kurios nekelia rūpesčių mūsų klientams. Siekdami nuolat tobulėti, pasitikime jūsų atsiliepimais ir nuomonėmis. Prašome jūsų skirti šiek tiek laiko ir esant progai užpildyti žemiau esančią atsiliepimų formą arba tiesiog paskambinkite mums +370 5 205 5240 / +370 5 205 5241. Į jūsų paklausimą atsakysime per 30 dienų ir stengsimės išspręsti visas iškilusias problemas. Taip pat laukiame jūsų teigiamų atsiliepimų, jei mūsų darbuotojai ir paslaugos viršijo jūsų lūkesčius!",
       },
       article2: {
         title: "Ginčų sprendimas",
@@ -918,7 +924,7 @@ export default {
       clientSuport: {
         title: "Pagalba klientams",
         description:
-          "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+          "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
       },
       faq: "D.U.K.",
     },
@@ -1027,7 +1033,7 @@ export default {
       clientSuport: {
         title: "Pagalba klientams",
         description:
-          "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+          "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
       },
       faq: "D.U.K.",
     },
@@ -1126,7 +1132,7 @@ export default {
       clientSuport: {
         title: "Pagalba klientams",
         description:
-          "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+          "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
       },
       faq: "D.U.K.",
     },
@@ -1224,7 +1230,7 @@ export default {
       clientSuport: {
         title: "Pagalba klientams",
         description:
-          "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+          "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
       },
       faq: "D.U.K.",
     },

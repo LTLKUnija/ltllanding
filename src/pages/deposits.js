@@ -13,6 +13,7 @@ import HeroMobile from "../../public/assets/images/deposit_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { termDepositInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
+import { DepositFAQ } from "@/common/AccordionSchemas";
 
 export default function Deposit() {
   const router = useRouter();
@@ -110,7 +111,7 @@ export default function Deposit() {
             </div>
           </section>
           <section className={styles.innerNavigationSection}>
-            <InnerLinks innerLinksData={termDepositInnerLinkList} />  
+            <InnerLinks innerLinksData={termDepositInnerLinkList} />
           </section>
           <section id="benefits" className={styles.depositBenefitsSection}>
             <div className={styles.depositBenefitsWrapper}>
@@ -341,7 +342,7 @@ export default function Deposit() {
             <div className={styles.faqWrapper}>
               <h3 className={styles.faqHeader}>{t.termDeposit.faq}</h3>
               <div className={styles.faqList}>
-                <Accordion accId="1" singleLevel="true" />
+                <Accordion singleLevel="true" faqData={DepositFAQ} />
               </div>
             </div>
           </section>

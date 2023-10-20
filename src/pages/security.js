@@ -4,6 +4,7 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import { basic } from "@/common/AccordionSchemas";
 
 export default function Security() {
   const router = useRouter();
@@ -16,14 +17,16 @@ export default function Security() {
           <section className={styles.securityPage}>
             <div className={styles.securityPageWrapper}>
               <h1 className="page-title">{t.security.title}</h1>
-              <div className={styles.securityPageDescription}></div>
+              <div className={styles.securityPageDescription}>
+                {t.security.description}
+              </div>
             </div>
           </section>
           <section id="faq" className={styles.faqSection}>
             <div className={styles.faqWrapper}>
               <h3 className={styles.faqHeader}>{t.business.capitalLoan.faq}</h3>
               <div className={styles.faqList}>
-                <Accordion accId="1" singleLevel="true" />
+                <Accordion faqData={basic} singleLevel="true" />
               </div>
             </div>
           </section>
