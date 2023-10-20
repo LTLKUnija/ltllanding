@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
+import { previewTextMaker } from '../../utils/helpers'
 
 export default function News() {
   const router = useRouter();
@@ -49,6 +50,11 @@ export default function News() {
     })
 
     setYearsLinksVocab(updatedYearsLinksVocab);
+
+    router.push({
+      pathname:`/news`,
+      query: {}
+    });
   
   }, [router.isReady])
 
@@ -129,7 +135,7 @@ export default function News() {
                     <div className={styles.singleNewsPreviewBlock} key={idx}>
                       <div className={styles.newsDate}>{item.date}</div>
                       <div className={styles.newsTitle}>{item.title}</div>
-                      <div className={styles.newsPreviewText}>{item.text}</div>
+                      <div className={styles.newsPreviewText}>{previewTextMaker(item.text, 50)+ ' ...'}</div>
                       <div>
                         <Link
                           className={styles.readMoreLink}
