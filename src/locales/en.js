@@ -125,13 +125,13 @@ export default {
       title: "Available jobs",
       description:
         "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
-      readMore: "Available Jobs",
+      availableJobs: "Available Jobs",
     },
     sponsorshipSection: {
-      title: "Available jobs",
+      title: "Sponsorship",
       description:
         "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
-      readMore: "Available Jobs",
+      readMore: "Read more",
     },
     benefitsArticle: {
       article1: {

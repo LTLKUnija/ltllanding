@@ -97,9 +97,9 @@ export default {
   },
   aboutUs: {
     heroBlock: {
-      title: "About Us",
+      title: "Apie mus",
       description: {
-        visionTitle: "Vision",
+        visionTitle: "Vizija",
         visionDescription:
           "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
         missionTitle: "Mission",
@@ -124,14 +124,14 @@ export default {
     jobsSection: {
       title: "Available jobs",
       description:
-        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
-      readMore: "Available Jobs",
+        "Siūlome galimybę dirbti sparčiai besivystančioje šalies įmonėje, kur galėsite pajusti savo sprendimų poveikį ir dirbti su geriausiais savo sričių specialistais. Turime aiškius tikslus ir modernią darbo aplinką. LHV Pank yra 'Svajonių darbdavys 2015'. Ateikite ir prisidėkite prie Estijos banko sėkmės istorijos",
+      availableJobs: "Turimos darbo vietos",
     },
     sponsorshipSection: {
-      title: "Available jobs",
+      title: "Rėmimas",
       description:
-        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
-      readMore: "Available Jobs",
+        "Siūlome galimybę dirbti sparčiai besivystančioje šalies įmonėje, kur galėsite pajusti savo sprendimų poveikį ir dirbti su geriausiais savo sričių specialistais. Turime aiškius tikslus ir modernią darbo aplinką. LHV Pank yra 'Svajonių darbdavys 2015'. Ateikite ir prisidėkite prie Estijos banko sėkmės istorijos",
+      readMore: "Skaityti daugiau",
     },
     benefitsArticle: {
       article1: {
