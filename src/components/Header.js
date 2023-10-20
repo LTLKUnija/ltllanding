@@ -183,6 +183,9 @@ function Header() {
           </div>
           <Link className="header-nav-link" href="/contacts">
             {t.headerNavLinks.contacts}
+          </Link>          
+          <Link className="header-nav-link" href="/faq">
+            {t.headerNavLinks.faq}
           </Link>
           <span
             className="header-nav-link change-language-link show"

@@ -107,8 +107,11 @@ export default function About() {
             <div className={styles.jobsCrediantials}>
               <h3>{t.aboutUs.jobsSection.title}</h3>
               <p>{t.aboutUs.jobsSection.description}</p>
-              <Link href="/" className={styles.readMore}>
-                {t.aboutUs.jobsSection.readMore} &gt;
+              <Link
+                href="https://www.linkedin.com/company/swedbanklietuvoje/jobs/ "
+                className={styles.readMore}
+              >
+                {t.aboutUs.jobsSection.availableJobs} &gt;
               </Link>
             </div>
           </div>
@@ -135,7 +138,7 @@ export default function About() {
             <div className={styles.jobsCrediantials}>
               <h3>{t.aboutUs.sponsorshipSection.title}</h3>
               <p>{t.aboutUs.sponsorshipSection.description}</p>
-              <Link href="/" className={styles.readMore}>
+              <Link href="/partnership" className={styles.readMore}>
                 {t.aboutUs.sponsorshipSection.readMore} &gt;
               </Link>
             </div>

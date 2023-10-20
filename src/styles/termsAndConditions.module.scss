@@ -1,102 +1,98 @@
 .termsAndConditionsSection {
-   padding: 26px 0 180px 0;
+  padding: 26px 0 180px 0;
 
-   .termsAndConditionsBlock {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
-   }
+  .termsAndConditionsBlock {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+  }
 
-   h1 {
-      text-align: center;
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 62px;
-      margin-bottom: 34px;
-   }
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 62px;
+    margin-bottom: 34px;
+  }
 
-   p {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 20px;
-      text-align: center;
-      margin-bottom: 40px;
-   }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-   .innerNavigationLinkList {
+  .innerNavigationLinkList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    gap: 30px;
+    cursor: pointer;
+    color: var(--main-text-color);
+  }
+
+  .innerNavLink {
+    font-family: "Lexend";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-text-color);
+    text-decoration: none;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .termsAndConditionsLinks {
+    max-width: 710px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    display: flex;
+
+    ul {
+      max-width: 690px;
+      height: 300px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       flex-wrap: wrap;
-      margin-bottom: 80px;
-      gap: 30px;
-      cursor: pointer;
-      color: var(--main-text-color);
-   }
 
+      li {
+        list-style: none;
+        background: url(/assets/images/ArrowRight.svg) no-repeat left center;
+        padding-left: 35px;
+        margin-bottom: 17px;
 
-   .innerNavLink {
-      font-family: 'Lexend';
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      color: var(--main-text-color);
-      text-decoration: none;
-      margin-right: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
 
-
-
-      &:last-child {
-         margin-right: 0;
+        .linkStyle {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 20px;
+          color: var(--light-color);
+          text-decoration: none;
+        }
       }
-   }
-
-   .termsAndConditionsLinks {
-      max-width: 710px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-
-
-      ul {
-         max-width: 690px;
-         height: 300px;
-         display: flex;
-         flex-direction: column;
-         flex-wrap: wrap;
-
-         li {
-            max-width: 323px;
-            list-style: none;
-            background: url(/assets/images/ArrowRight.svg) no-repeat left center;
-            padding-left: 35px;
-            margin-bottom: 17px;
-
-            &:last-child {
-               margin-bottom: 0;
-            }
-
-            .linkStyle {
-               font-size: 16px;
-               font-weight: 300;
-               line-height: 20px;
-               color: var(--light-color);
-               text-decoration: none;
-            }
-         }
-      }
-   }
+    }
+  }
 }
 // ----- Media queries -----
 @media (max-width: 768px) {
-   .termsAndConditionsSection {
-      padding: 26px 0 50px 0;
-      .termsAndConditionsLinks {
-         ul {
-            width: 300px;
-            margin: 0 auto;
-            min-height: 600px;
-            display: flex;
-            justify-content: center;
-         }
+  .termsAndConditionsSection {
+    padding: 26px 0 50px 0;
+    .termsAndConditionsLinks {
+      ul {
+        width: 300px;
+        margin: 0 auto;
+        min-height: 600px;
+        display: flex;
+        justify-content: center;
       }
-   }
- }
+    }
+  }
+}

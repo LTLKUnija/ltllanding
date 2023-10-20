@@ -12,6 +12,7 @@ import HeroMobile from "../../../public/assets/images/currentAccount_Hero_mobile
 import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessCurrentAccountInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
+import { CurrentAccFAQ } from "@/common/AccordionSchemas";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -225,7 +226,7 @@ export default function Mortgage() {
           <div className={styles.faqWrapper}>
             <h3 className={styles.faqHeader}>{t.privetCurrentAccount.faq}</h3>
             <div className={styles.faqList}>
-              <Accordion accId="1" singleLevel="true" />
+              <Accordion faqData={CurrentAccFAQ} singleLevel="true" />
             </div>
           </div>
         </section>

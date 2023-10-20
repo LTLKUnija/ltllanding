@@ -1,5 +1,11 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
+  common: {
+    loanForPrivates: "Paskola privatiems darbuotojams D.U.K.",
+    loanForBusiness: "Paskola verslui D.U.K.",
+    currentAccount: "Einamoji sąskaita D.U.K.",
+    deposit: "Depozitas D.U.K.",
+  },
   headerNavLinks: {
     private: "Privatiems",
     business: "Verslui",
@@ -15,6 +21,7 @@ export default {
     openAccount: "Atidaryti sąskaitą",
     investmentLoan: "Investicinė paskola",
     capitalLoan: "Paskola apyvartiniam kapitalui",
+    faq: "D.U.K",
   },
   footerNavLinks: {
     usefulLinks: "Naudingos nuorodos",
@@ -38,6 +45,7 @@ export default {
     career: "Karjera",
     contacts: "Kontaktai",
     address: "Sporto g. 18,\n LT- 09238 Vilnius",
+    faq: "D.U.K",
   },
   indexPage: {
     slideOne: {
@@ -89,9 +97,9 @@ export default {
   },
   aboutUs: {
     heroBlock: {
-      title: "About Us",
+      title: "Apie mus",
       description: {
-        visionTitle: "Vision",
+        visionTitle: "Vizija",
         visionDescription:
           "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
         missionTitle: "Mission",
@@ -116,14 +124,14 @@ export default {
     jobsSection: {
       title: "Available jobs",
       description:
-        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
-      readMore: "Available Jobs",
+        "Siūlome galimybę dirbti sparčiai besivystančioje šalies įmonėje, kur galėsite pajusti savo sprendimų poveikį ir dirbti su geriausiais savo sričių specialistais. Turime aiškius tikslus ir modernią darbo aplinką. LHV Pank yra 'Svajonių darbdavys 2015'. Ateikite ir prisidėkite prie Estijos banko sėkmės istorijos",
+      availableJobs: "Turimos darbo vietos",
     },
     sponsorshipSection: {
-      title: "Available jobs",
+      title: "Rėmimas",
       description:
-        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
-      readMore: "Available Jobs",
+        "Siūlome galimybę dirbti sparčiai besivystančioje šalies įmonėje, kur galėsite pajusti savo sprendimų poveikį ir dirbti su geriausiais savo sričių specialistais. Turime aiškius tikslus ir modernią darbo aplinką. LHV Pank yra 'Svajonių darbdavys 2015'. Ateikite ir prisidėkite prie Estijos banko sėkmės istorijos",
+      readMore: "Skaityti daugiau",
     },
     benefitsArticle: {
       article1: {
@@ -405,6 +413,20 @@ export default {
       loansToPrivateIndividuals: "Paskolos privatiems asmenims",
       loansToCorporates: "Paskolos įmonėms",
     },
+    innerTabLinks: {
+      generalCondition: "Bendrosios salygos",
+      commisionInfo: "Informacijos apie komisinį atlyginimą dokumentas",
+      glossary: "Žodynas",
+      informationDepositor: "Informacijos indelininkui teikimo forma",
+      securitisedDeposit: "Terinuoto indelio sutartis_standartines salygos",
+      currentAccountContract:
+        "Einamosios saskaitos sutartis fiziniam asmeniui_standartines salygos",
+      currentAccountAgreement:
+        "Einamosios saskaitos sutartis juridiniam asmeniui_standartines salygos",
+      yourRights: "Jusu teises vykdant mokejimus Europoje",
+      paymentsServices: "Mokejimo paslaugu teikimo salygos",
+      generalInfo: "Bendro pobudzio informacija apie su NT susijusi kredita.",
+    },
   },
   termDeposit: {
     heroBlock: {
@@ -498,7 +520,7 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description:
-        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
     },
     faq: "D.U.K.",
   },
@@ -534,6 +556,9 @@ export default {
   },
   career: {
     title: "Karjera",
+    contacts: "Kontaktai",
+    address: "Sporto g. 18,\n LT- 09238 Vilnius",
+    faq: "D.U.K",
   },
   privetCurrentAccount: {
     pageTitle: "Nebereikia būti dideliam, kad ... ",
@@ -601,7 +626,7 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description:
-        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
     },
     faq: "D.U.K.",
   },
@@ -682,7 +707,7 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description:
-        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
     },
     faq: "D.U.K.",
   },
@@ -765,7 +790,7 @@ export default {
       },
     },
     stepProcess: {
-      title: "Loan application process:",
+      title: "Paskolos paraiškos teikimo procesas:",
       step1: {
         title: "Fill in a loan application form and give the consent",
         description:
@@ -894,7 +919,7 @@ export default {
     clientSuport: {
       title: "Pagalba klientams",
       description:
-        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+        "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
     },
     faq: "D.U.K.",
   },
@@ -914,6 +939,14 @@ export default {
     title: "Privatumo politika ir slapukai",
     description:
       "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
+    innerTabLinks: {
+      processingPersonalData:
+        "Informacija apie asmens duomenų tvarkymą - juridinio asmens atstovas",
+      processingPersonalDataClient:
+        "Informacija apie asmens duomenų tvarkymą - fizinis asmuo (klientas)",
+      privacyPolicy: "Privatumo politika",
+      cookiePolicy: "Slapukų politika",
+    },
   },
   shareholders: {
     title: "Akcininkams",
@@ -941,7 +974,7 @@ export default {
       article1: {
         title: "Atsiliepimai ir skundai",
         description:
-          "Mūsų vizijos dalis ir siekis yra teikti puikias paslaugas, kurios nekelia rūpesčių mūsų klientams. Siekdami nuolat tobulėti, pasitikime jūsų atsiliepimais ir nuomonėmis. Prašome jūsų skirti šiek tiek laiko ir esant progai užpildyti žemiau esančią atsiliepimų formą arba tiesiog paskambinkite mums +370 5 205 5240 / +370 5 205 524. Į jūsų paklausimą atsakysime per 30 dienų ir stengsimės išspręsti visas iškilusias problemas. Taip pat laukiame jūsų teigiamų atsiliepimų, jei mūsų darbuotojai ir paslaugos viršijo jūsų lūkesčius!",
+          "Mūsų vizijos dalis ir siekis yra teikti puikias paslaugas, kurios nekelia rūpesčių mūsų klientams. Siekdami nuolat tobulėti, pasitikime jūsų atsiliepimais ir nuomonėmis. Prašome jūsų skirti šiek tiek laiko ir esant progai užpildyti žemiau esančią atsiliepimų formą arba tiesiog paskambinkite mums +370 5 205 5240 / +370 5 205 5241. Į jūsų paklausimą atsakysime per 30 dienų ir stengsimės išspręsti visas iškilusias problemas. Taip pat laukiame jūsų teigiamų atsiliepimų, jei mūsų darbuotojai ir paslaugos viršijo jūsų lūkesčius!",
       },
       article2: {
         title: "Ginčų sprendimas",
@@ -1084,7 +1117,7 @@ export default {
       clientSuport: {
         title: "Pagalba klientams",
         description:
-          "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+          "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
       },
       faq: "D.U.K.",
     },
@@ -1193,7 +1226,7 @@ export default {
       clientSuport: {
         title: "Pagalba klientams",
         description:
-          "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+          "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
       },
       faq: "D.U.K.",
     },
@@ -1292,7 +1325,7 @@ export default {
       clientSuport: {
         title: "Pagalba klientams",
         description:
-          "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+          "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
       },
       faq: "D.U.K.",
     },
@@ -1390,9 +1423,12 @@ export default {
       clientSuport: {
         title: "Pagalba klientams",
         description:
-          "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 xxx arba el. paštu support@ltlku.lt.",
+          "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt.",
       },
       faq: "D.U.K.",
     },
+  },
+  faq: {
+    pageTitle: "D.U.K.",
   },
 };

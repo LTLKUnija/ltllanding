@@ -2,7 +2,6 @@ import styles from "@/styles/product.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Steper from "@/components/Steper";
 import { privetCurrentAccountSteperData } from "@/pages/api/data/stepersData";
-import Link from "next/link";
 import Accordion from "@/components/Accordion";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
@@ -12,8 +11,9 @@ import HeroMobile from "../../public/assets/images/product_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { privetCurrentAccountInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
+import { CurrentAccFAQ } from "@/common/AccordionSchemas";
 
-export default function Payments() {
+export default function Product() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
 
@@ -199,7 +199,7 @@ export default function Payments() {
             <div className={styles.faqWrapper}>
               <h3 className={styles.faqHeader}>{t.privetCurrentAccount.faq}</h3>
               <div className={styles.faqList}>
-                <Accordion accId="1" singleLevel="true" />
+                <Accordion faqData={CurrentAccFAQ} singleLevel="true" />
               </div>
             </div>
           </section>

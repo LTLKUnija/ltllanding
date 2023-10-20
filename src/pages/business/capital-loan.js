@@ -12,6 +12,7 @@ import HeroMobile from "../../../public/assets/images/capitalLoan_Hero_mobile.pn
 import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessInvestmentLoanInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
+import { LoanForBusiness } from "@/common/AccordionSchemas";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -123,7 +124,7 @@ export default function Mortgage() {
           <div className={styles.faqWrapper}>
             <h3 className={styles.faqHeader}>{t.business.capitalLoan.faq}</h3>
             <div className={styles.faqList}>
-              <Accordion accId="1" singleLevel="true" />
+              <Accordion faqData={LoanForBusiness} singleLevel="true" />
             </div>
           </div>
         </section>

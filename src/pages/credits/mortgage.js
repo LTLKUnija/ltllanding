@@ -2,7 +2,7 @@ import styles from "@/styles/mortgage.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";
 import Steper from "@/components/Steper";
-import { mortgageSteperData } from "@/pages/api/data/stepersData";
+import { privetCurrentAccountSteperData } from "@/pages/api/data/stepersData";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
@@ -11,6 +11,7 @@ import HeroMobile from "../../../public/assets/images/mortgageLoan_Hero_mobile.p
 import BackBtn from "../../../public/assets/images/backBtn.png";
 import { mortgageLoanInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
+import { LoanForPrivates } from "@/common/AccordionSchemas";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -100,7 +101,7 @@ export default function Mortgage() {
             <div className={styles.stepsHeader}>
               <h3>{t.mortgageLoan.stepProcess.title}</h3>
             </div>
-            <Steper steperData={mortgageSteperData} />
+            <Steper steperData={privetCurrentAccountSteperData} />
           </div>
         </section>
         <section id="clientSuport" className={styles.clientSuportSection}>
@@ -117,7 +118,7 @@ export default function Mortgage() {
           <div className={styles.faqWrapper}>
             <h3 className={styles.faqHeader}>{t.termDeposit.faq}</h3>
             <div className={styles.faqList}>
-              <Accordion accId="1" singleLevel="true" />
+              <Accordion faqData={LoanForPrivates} singleLevel="true" />
             </div>
           </div>
         </section>
