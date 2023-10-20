@@ -199,9 +199,202 @@ export default {
       openingAccount: "Sąskaitos atidarymas",
       maintainingAccount: "Sąskaitos tvarkymas",
       closingAccount: "Sąskaitos uždarymas",
+      currentAccountClosure: "Einamosios sąskaitos uždarymas",
       cashPoolingAccount: "Pinigų kaupimo sąskaita",
       agreementSigning: "Sutarties pasirašymas",
       entrepreneuAccount: "Verslininko paskyra",
+      from: "Nuo",
+      fees: {
+        freeOfCharge: "nemokamai",
+        serviceNotAvailable: "paslauga neteikiama",
+        notApplicable: "Netaikomas",
+        otherServices: "Kitos paslaugos:",
+        actualCost: "Faktinės išlaidos",
+      },
+      dataVerification:
+        "Duomenų patikros kliento identifikavimo ir pažinimo proceso metu mokestis",
+      openingCurrentAccount: "Einamosios sąskaitos atidarymas",
+      currentAccountAdministration:
+        "Einamosios sąskaitos administravimas/tvarkymas",
+      cashBalance: "Mokestis už piniginių lėšų likučio laikymą sąskaitoje",
+      accountStatmentCollectionAtBranch:
+        "Sąskaitos išrašas, atsiimant kredito unijos padalinyje:",
+      currentPreviousMonth: "- einamojo ir praėjusio mėnesio",
+      otherMonthCurrentYeasr: "- už kitus einamųjų metų mėnesius",
+      forEachPreviousYear: "- už kiekvienus praėjusius metus",
+      onlineStatmentofAccount: "Sąskaitos išrašas internetu",
+      restrictedAccountService: "Riboto naudojimo sąskaitos paslauga**:",
+      administration:
+        "Riboto naudojimo sąskaitos administravimas/tvarkymas (įskaitant atidarymą ir uždarymą)",
+      transferingFunds:
+        "Lėšų pervedimas į sąskaitą jos papildymui (pajaus įmokėjimui, kredito dengimui ar jo administravimui, terminuotojo indėlio sutarčiai sudaryti)",
+      creditsTransfers:
+        "Kredito pervedimai kredito unijos padalinyje skirti i) kredito lėšų panaudojimui arba ii) likučio pervedimui po visiško kredito padengimo arba iii) indėlio palūkanų sumos pervedimui",
+      restrictedPayment:
+        "**Riboto naudojimo mokėjimo sąskaita – tai sąskaita, skirta kreditui, indėliui ar kitam kredito unijos produktui administruoti, atidaroma tais atvejais, jei klientas nepageidauja naudotis unijos paslaugomis interneto banku bei turėti einamosios sąskaitos, tačiau sąskaita būtina norint tinkamai administruoti unijos teikiamą paslaugą. Naudojantis sąskaita kitu negu pirmiau nurodytu tikslu, inicijuojant su konkrečios paslaugos administravimu nesusijusias operacijas, taikomi kainyne nustatyti mokesčiai.",
+      transferingMoney: "Pinigų pervedimas klientų aptarnavimo padalinyje:",
+      freeToRecipient: "Gavėjui į kredito unijoje esančią sąskaitą	Nemokamai",
+      compulsoryDecommitment: "Priverstinis lėšų nurašymas",
+      paymentCancellation: "Mokėjimo atšaukimas",
+      internationnalMoney:
+        "Tarptautinis pinigų pervedimas klientų aptarnavimo skyriuje:",
+      paymentsOutside:
+        "Mokėjimai ne euro zonoje (už SEPA mokėjimo tinklo ribų)",
+      transferOnline: "Pinigų pervedimas internetu:",
+      outgoingPayments: "Išeinantys mokėjimai",
+      betweenAccounts: "Tarp kredito unijoje esančių sąskaitų",
+      paymentsInEuro: "Mokėjimai euro zonoje (SEPA)",
+      cancelationOfPayment: "Mokėjimo euro zonoje (SEPA) atšaukimas",
+      returningPayment: "Gauto mokėjimo euro zonoje (SEPA) grąžinimas",
+      incomingPayments: "Įeinantys mokėjimai",
+      internationalMonetTransfer: "Tarptautinis pinigų pervedimas internetu:",
+      cashTransaction: "Grynųjų pinigų operacijos:",
+      cashDepositYourAccount:
+        "Grynųjų pinigų įnešimas į savo einamąją sąskaitą, EUR",
+      amountDeposited:
+        "nuo į sąskaitą įnešamos sumos. Netaikomas iki 3000 EUR/mėn.",
+      cashDepositOnotherAccount:
+        "Grynųjų pinigų įnešimas į kito asmens einamąją sąskaitą, EUR",
+      cashPayment: "Grynųjų pinigų išmokėjimas*",
+      onTheAmount: "nuo sumos",
+      taxDoesNotApply: "*Mokestis netaikomas:",
+      withInterestPayments: "- išmokant palūkanas;",
+      repayingShareContribution: "- gražinant pajinį įnašą;",
+      clientsSalaryTransferred:
+        "- jeigu į kliento sąskaitą pervedamas kliento darbo užmokestis.",
+      penaltyForFailingToCollectFunds:
+        "Bauda neatsiėmus užsakytų piniginių lėšų grynaisiais nurodytą dieną",
+      onAmountOfCashOrdered: "nuo užsakytos grynųjų pinigų sumos",
+      feesForCreditServices: "Kreditavimo paslaugų įkainiai:",
+      minimumAnnualInterestRate: "Minimali metinė palūkanų norma",
+      accordingToTermsOFCreditAgreement:
+        "Pagal kredito sutarties sąlygas (nuo 5%)",
+      creditAgreementConclusionFee: "Kredito sutarties sudarymo mokestis",
+      ofTheLoanAmount: "Nuo 1,00% nuo suteikiamo kredito sumos, min.",
+      changingTermsOfCredit: "Kredito sutarties sąlygų keitimas",
+      existingCreditBalance: "Nuo 0,50% nuo esamo kredito likučio sumos, min.",
+      caseProvidetForInLaw: "*Įstatyme numatytais atvejais mokestis netaikomas",
+      changingTermsOfCreditAgreemntInCaseOfConsumer:
+        "Kredito sutarties sąlygų keitimas vartojimo paskolų (be užstato) atveju",
+      commitmentFee: "Įsipareigojimo mokestis",
+      unusedAmountOfCredit: "nuo nepanaudotos kredito sumos",
+      lateFees: "Delspinigiai",
+      amountOverdueForEachDay:
+        "nuo pradelstos sumos už kiekvieną pradelstą dieną",
+      loanAdministrationFee: "Paskolos administravimo mokestis (periodinis)",
+      creditdisbursementFee:
+        "Kredito išmokėjimo mokestis kai kreditas išmokamas dalimis*",
+      forEachPartialDrawdown: "už kiekvieną dalinį kredito išmokėjimą",
+      taxWaivedFullAmountDisbursed:
+        "*Mokestis netaikomas kai visa kredito suma išmokama vienu mokėjimu",
+      ChangingDueDateInstalments:
+        "Kredito įmokų ir/arba palūkanų mokėjimo dienos keitimas (kliento iniciatyva)",
+      changeForEarlyRepayment:
+        "Mokestis už prieš laiką grąžintiną kreditą ar jo dalį",
+      loansPersonalNeeds:
+        "Paskoloms skirtoms asmeninėms, šeimos, namų ūkio reikmėms, kintamųjų palūkanų keitimo dieną – mokestis netaikomas, kitomis dienomis - teisės aktuose nustatytas mokestis, max. 3% nuo grąžinamo kredito.",
+      loansPurposeSubject:
+        "Paskoloms, skirtoms verslo ar profesinėms reikmėms taikomas mokestis nuo 1% nuo prieš terminą grąžinamos sumos, min. 200 EUR",
+      feeOnCreditRepayable:
+        "Mokestis už prieš laiką grąžintiną kreditą ar jo dalį vartojimo paskolų (be užstato) atveju",
+      feeForGrantingConsentToASecondCharge:
+        "Mokestis už sutikimą antriniam įkeitimui išdavimą",
+      onDaysVariableInterestRate:
+        "Kintamųjų palūkanų keitimo dieną – mokestis netaikomas, kitomis dienomis - teisės aktuose nustatytas mokestis, max. 3% nuo grąžinamo kredito, min. 200 EUR.",
+      deregistrationOfAMortgage: "Hipotekos išregistravimas",
+      valuationOfAssets:
+        "Kredito unijai įkeičiamo turto vertinimas, kurį atlieka nepriklausomas turto vertintojas*",
+      basedOnIndependentValueFee:
+        "Pagal nepriklausomų turto vertintojų įkainius",
+      inCaseOfCreditUnionCommissioning:
+        "*Tuo atveju kai kredito unija užsako įkeičiamo/įkeisto turto nepriklausomą vertinimą, klientas kompensuoja turto vertinimo išlaidas",
+      internalValuationFee:
+        "Kredito unijai įkeičiamo turto vidinio vertinimo mokestis",
+      perPropertyComplex: "Nuo 200 EUR už vieną turtinį kompleksą",
+      certificateFromCentralDataBnak:
+        "Nekilnojamojo turto registro centrinio duomenų banko pažyma",
+      sendingDefaultNotice: "Pranešimo siuntimas dėl įsipareigojimo nevykdymo",
+      sendingRepeatedNotification:
+        "Pakartotinių pranešimų siuntimai dėl įsipareigojimo nevykdymo",
+      preparationCertificateInLithuanian: "Pažymos parengimas lietuvių kalba:",
+      certificatesRelaitingCreditAgreement:
+        "Pažymų (sutikimų, leidimų, patvirtinimų ir kt. dokumentų), susijusių su kreditavimo sutartimi/ susijusių su įkeistu turtu / užtikrinimo priemonėmis, išdavimas (paslaugoms, kurioms nėra nustatytas atskiras mokestis)",
+      otherAgreementsRelatedContract:
+        "Kitų leidimų/sutikimų, nesusijusių su esminėmis sutarties sąlygomis ir/arba įkeisto turto/užtikrinimo priemonių operacijomis, išdavimas (paslaugoms, kurioms nėra nustatytas atskiras mokestis)",
+      issuingCertificatesForeignLanguage:
+        "Pažymų, sutikimų, leidimų išdavimas užsienio kalba",
+      sendingDocumentsByCurier: "Dokumentų siuntimas kurjeriniu paštu",
+
+      month: "EUR/mėn",
+      accountsFinancialInstitutions:
+        "Sąskaitos juridiniams asmenims, išskyrus finansines institucijas ir tarptautines įmones:",
+      currentAccountAdministration:
+        "Einamosios sąskaitos administravimas/tvarkymas*",
+      customerHasOneActiveCredit:
+        "*Klientui turint kredito unijoje bent vieną aktyvų kredito produktą – mokestis nėra taikomas",
+      transferMoneyCustomerService:
+        "Pinigų pervedimas klientų aptarnavimo padalinyje juridiniams asmenims, išskyrus finansines institucijas ir tarptautines įmones:",
+      feeForCompanies:
+        "Įkainiai finansinėms institucijoms ir tarptautinėms įmonėms",
+      accountsFinancialCompanies:
+        "Sąskaitos finansinėms institucijoms ir tarptautinėms įmonėms:",
+      feeForDataVerification:
+        "Duomenų patikros kliento identifikavimo ir pažinimo proceso metu mokestis",
+      fundsCustodyAccounts: "Lėšų saugojimo sąskaita (depozitinė sąskaita)*",
+      custodyAccountMayOpenedIf:
+        "*Lėšų saugojimo sąskaita gali būti atidaroma klientui turint kredito unijoje einamąją sąskaitą, kuriai taikomi atitinkami kredito unijos patvirtinti įkainiai bei nuo kurios nurašomi mokesčiai, susiję su lėšų saugojimo sąskaitos paslaugos teikimu",
+      managmentCustodyAccount:
+        "Lėšų saugojimo sąskaitos (depozitinės sąskaitos) administravimas/tvarkymas",
+      custodyAccountClosure:
+        "Lėšų saugojimo sąskaitos (depozitinės sąskaitos) uždarymas",
+      moneyTransferForFinancialInstitution:
+        "Pinigų pervedimas klientų aptarnavimo padalinyje finansinėms institucijoms ir tarptautinėms įmonėm",
+      toRecipientsAccountCreditUnion:
+        "Gavėjui į kredito unijoje esančią sąskaitą",
+      onlineyMOneyTransferToFinancialInstitutions:
+        "Pinigų pervedimas internetu finansinėms institucijoms ir tarptautinėms įmonėms:",
+      internationalMoneyTransferAtCustomerService:
+        "Tarptautinis pinigų pervedimas klientų aptarnavimo padalinyje (galioja visiems juridiniams asmenims):",
+      internationalMoneyTranser:
+        "Tarptautinis pinigų pervedimas (galioja visiems juridiniams asmenims):",
+      cashTransactionToAllLegalEntities:
+        "Grynųjų pinigų operacijos (galioja visiems juridiniams asmenims):",
+      ammountDeposited:
+        "nuo į sąskaitą įnešamos sumos. Netaikomas iki 3000 EUR/mėn.",
+      creditInterestRate: "Kredito palūkanų norma",
+      transferingLoanAgreementOfAnotherPerson:
+        "Paskolos sutarties perkėlimas kito asmens / įmonės vardu",
+      amountOfExistingCreditBalance:
+        "Nuo 1% esamo kredito likučio sumos, min. 350 EUR",
+      unusedCreditAmount: "Min. 0,50% nuo nepanaudotos kredito sumos",
+      forEachDayOverdue: "0,05 % už kiekvieną pradelstą dieną",
+      creditAgreementSpecified: "jeigu kredito sutartyje nenustatyta kitaip",
+      feeForGrantingConsentToSecondCharge:
+        "Mokestis už sutikimą antriniam įkeitimui išdavimą",
+      ofTheCreditBalance: "1,00% nuo kredito likučio sumos, min 400 EUR",
+      creditProjectAnalysis: "Kreditavimo projekto analizė, vertinimas*",
+      fromAmountRequestedByClient:
+        "0,25% nuo kliento prašomos sumos, min. 250 EUR ",
+      caseOfLoanToACliant:
+        "*Tuo atveju kai klientui suteikiama paskola – kliento apmokėtas mokestis įtraukiamas į bendrą kredito sutarties sudarymo mokesčio sumą",
+      unlessOtherwiseSpecified:
+        "Nuo 150 EUR, jeigu kredito sutartyje nenumatyta kitaip.",
+      provisionOfGuarantee: "Garantijos suteikimas:",
+      ofTheGuaranteedAmount:
+        "Nuo 0,1% garantuojamos sumos, min. 350 (tik su lėšų įkeitimu).",
+      guaranteeFromUnion:
+        "Garantijos suteikimas iš Unijos (paskolos) lėšų – taikomi kredito sutarties sudarymo, sąlygų keitimo mokesčiai.",
+      administrationClaimForPayment:
+        "Reikalavimo mokėti pagal garantiją administravimas",
+      amountMin: "0,2% nuo sumos, min 150 EUR",
+      copiesOfDocuments: "Dokumentų kopijos/ nuorašai",
+      documentsFromArchive: "Dokumentų siuntimas iš archyvo",
+      actualCostForArchiesServices:
+        "Faktinės kredito unijos išlaidos už archyvo paslaugas",
+      translationOfCertificates:
+        "Pažymų/ susitarimų vertimas į užsienio kalbą (jei yra galimybė išversti)",
+      actualCostTranslationServices:
+        "Faktinės kredito unijos išlaidos vertimo paslaugoms įsigyti",
     },
   },
   licence: {
