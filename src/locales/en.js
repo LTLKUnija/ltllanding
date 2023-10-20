@@ -20,8 +20,8 @@ export default {
     login: "Log In",
     openAccount: "Open account",
     investmentLoan: "Investment loan",
-    capitalLoan: "Capital loan",
     faq: "F.A.Q",
+    capitalLoan: "Capital loan",
   },
   footerNavLinks: {
     usefulLinks: "Useful links",
