@@ -1,84 +1,126 @@
 .contactsPageWrapper {
-   padding: 66px 0 38px 0;
-   background-color: var(--ligh-grey-background);
+  padding: 66px 0 38px 0;
+  background-color: var(--ligh-grey-background);
 
-   .contactsPageList {
-      padding-left: 312px;
-      display: flex;
-      gap: 168px;
+  .contactsPageList {
+    max-width: 1280px;
+    width: 100%;
+    padding-left: calc((100% - 664px) / 2);
+    display: flex;
+    gap: 168px;
 
-      .contactsHeroItem {
-         width: 275px;
-      }
+    .contactsHeroItem {
+      width: 275px;
+    }
 
-      .contactsTitle {
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 32px;
-         margin-bottom: 35px;
-      }
-   }
-
-   .contactsPageDescription {
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 30px;
-      color: var(--main-text-color);
+    .contactsTitle {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
       margin-bottom: 35px;
-   }
+    }
+  }
+
+  .contactsPageDescription {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--main-text-color);
+    margin-bottom: 35px;
+  }
 }
 
 .contactsCustomerServiceSection {
-   padding: 38px 0 37px 0;
+  padding: 38px 0 37px 0;
 
-   .contactsCustomerServiceWrapper {
-      max-width: 658px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-      
-      h3 {
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 25px;
-         text-align: center;
-         margin-bottom: 20px;
-      }
-   }
+  .contactsCustomerServiceWrapper {
+    max-width: 658px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
 
-   .contactsCustomerServiceWorkingDays {
-      display: flex;
-      gap: 70px;
-      justify-content: center;
-      margin-bottom: 20px;
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 30px;
-   }
-
-   .workDays {
-      margin-bottom: 9px;
-   }
-
-   .workHours {
-      font-weight: 500;
-   }
-
-   h2 {
+    h3 {
       font-size: 25px;
       font-weight: 700;
-      line-height: 38px;
+      line-height: 25px;
       text-align: center;
       margin-bottom: 20px;
-   }
+    }
+  }
 
-   .contactsCustomerServiceCredentials {
-      text-align: center;
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 30px;
-   }
+  .contactsCustomerServiceWorkingDays {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  .workDays {
+    margin-bottom: 9px;
+  }
+
+  .workHours {
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contactsCustomerServiceCredentials {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+  }
 }
 
 .contactsForm {
-   padding: 38px 0 134px 0;
+  padding: 38px 20px 134px 20px;
+}
+
+@media (max-width: 900px) {
+  .contactsPageWrapper {
+    .contactsPageList {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      flex-direction: column;
+      .contactsTitle {
+        margin-bottom: 10px;
+      }
+      .contactsTitle {
+        font-size: 22px;
+      }
+      .contactsPageDescription {
+        font-size: 16px;
+      }
+    }
+  }
+  .contactsCustomerServiceSection {
+    .contactsCustomerServiceWrapper {
+      h3 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .contactsCustomerServiceWorkingDays {
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+    }
+  }
 }
