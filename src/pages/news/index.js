@@ -9,6 +9,7 @@ import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 export default function News() {
   const router = useRouter();
+
   const t = router.locale === "lt" ? lt : en;
 
   const [allNewsData, setAllNewsData] = useState([]);
@@ -25,7 +26,7 @@ export default function News() {
   const getCurrentYearNewsData = () => {
     const currentYear = yearsLinksVocab.filter((year) => year.selected)[0];
     const currentYearNews = allNewsData.filter(
-      (n) => n.id === currentYear.year
+      (n) => n.id === currentYear?.year
     )[0];
     setCurrentYearNewsData(currentYearNews);
   };
@@ -39,7 +40,20 @@ export default function News() {
   };
 
   useEffect(() => {
-    const getNewsList = async () => {
+
+    if(!router.query.year) return;
+
+    const {year: prevRouteYear} = router.query;
+    const updatedYearsLinksVocab = yearsLinksVocab.map(year => {
+      return {...year, selected: year.year === prevRouteYear}
+    })
+
+    setYearsLinksVocab(updatedYearsLinksVocab);
+  
+  }, [router.isReady])
+
+  useEffect(() => {
+      const getNewsList = async () => {
       const db = getFirestore();
       const collectionName = "news";
       const colRef = collection(db, collectionName);
@@ -61,7 +75,6 @@ export default function News() {
             news: newsData,
           };
         });
-
         setAllNewsData(allData.reverse());
       } catch (error) {
         console.error(
@@ -80,6 +93,7 @@ export default function News() {
 
   useEffect(() => {
     getCurrentYearNewsData();
+
   }, [yearsLinksVocab]);
 
   return (
@@ -119,7 +133,7 @@ export default function News() {
                       <div>
                         <Link
                           className={styles.readMoreLink}
-                          href={`news/${currentYearNewsData?.id}/${idx}`}
+                          href={`news/${currentYearNewsData?.id}-${idx}`}
                         >
                           {t.news.readMore} &#x3e;
                         </Link>
