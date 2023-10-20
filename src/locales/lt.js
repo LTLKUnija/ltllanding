@@ -15,7 +15,7 @@ export default {
     openAccount: "Atidaryti sąskaitą",
     investmentLoan: "Investicinė paskola",
     capitalLoan: "Paskola apyvartiniam kapitalui",
-    faq: "D.U.K"
+    faq: "D.U.K",
   },
   footerNavLinks: {
     usefulLinks: "Naudingos nuorodos",
@@ -39,7 +39,7 @@ export default {
     career: "Karjera",
     contacts: "Kontaktai",
     address: "Sporto g. 18,\n LT- 09238 Vilnius",
-    faq: "D.U.K"
+    faq: "D.U.K",
   },
   indexPage: {
     slideOne: {
@@ -1205,6 +1205,6 @@ export default {
     },
   },
   faq: {
-    pageTitle: 'D.U.K.'
-  }  
+    pageTitle: "D.U.K.",
+  },
 };

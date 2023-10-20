@@ -3,7 +3,6 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import FinacialReportsData from "@/components/FinacialReportsData";

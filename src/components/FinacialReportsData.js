@@ -21,10 +21,14 @@ export default function FinacialReportsData() {
 
       try {
         const snapshot = await getDocs(colRef);
-        const allData = snapshot.docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }));
+        const allData = snapshot.docs.map((doc) => {
+          return {
+            ...doc.data(),
+            id: doc.id,
+          };
+        });
+        console.log(allData);
+
         setAnnualLinks(allData.reverse());
         setActiveLinks(allData[0].links);
       } catch (error) {

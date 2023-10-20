@@ -1,100 +1,131 @@
 import IndexLayout from "@/Layouts/IndexLayout";
-import styles from '@/styles/news.module.scss';
+import styles from "@/styles/news.module.scss";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router"
-import lt from '@/locales/lt'
-import en from '@/locales/en'
+import { useRouter } from "next/router";
+import lt from "@/locales/lt";
+import en from "@/locales/en";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 export default function News() {
   const router = useRouter();
-  const t = router.locale === 'lt' ? lt : en
+  const t = router.locale === "lt" ? lt : en;
 
-  const [thisYearNews, setThisYearNews] = useState([{}]);
+  const [allNewsData, setAllNewsData] = useState([]);
+  const [currentYearNewsData, setCurrentYearNewsData] = useState({});
+  const [yearsLinksVocab, setYearsLinksVocab] = useState([
+    { year: "2023", selected: true },
+    { year: "2022", selected: false },
+    { year: "2021", selected: false },
+    { year: "2020", selected: false },
+    { year: "2019", selected: false },
+    { year: "2018", selected: false },
+  ]);
 
-  const [yearVocab, setYearVocab] = useState( [
-    {year: 2023, selected: true},
-    {year: 2022, selected: false},
-    {year: 2021, selected: false},
-    {year: 2020, selected: false},
-    {year: 2019, selected: false},
-    {year: 2018, selected: false},
-  ])
-
-  const thisYearGetter = () => {
-    return yearVocab.filter(year => year.selected)[0].year
+  const getCurrentYearNewsData = () => {
+    const currentYear = yearsLinksVocab.filter((year) => year.selected)[0];
+    const currentYearNews = allNewsData.filter(
+      (n) => n.id === currentYear.year
+    )[0];
+    setCurrentYearNewsData(currentYearNews);
   };
 
-  const yearSelectHandler = (e) => {
-    let idx = e.target.dataset.id
-    let temp = [...yearVocab]
-    temp.forEach(year => {
-      year.selected = false
-    })
-    temp[idx].selected = true
-    setYearVocab(temp)
+  const yearSelectedTabHandler = (e) => {
+    const idx = parseInt(e.target.dataset.id);
+    const updatedYearsLinksVocab = yearsLinksVocab.map((year, index) => {
+      return { ...year, selected: index === idx };
+    });
+    setYearsLinksVocab(updatedYearsLinksVocab);
   };
 
   useEffect(() => {
-    let idx = localStorage.getItem('backToYearIdx');
-    
-    if (idx) {
-      let temp = [...yearVocab]
-      temp.forEach(year => {
-        year.selected = false
-      })
-      temp[idx].selected = true
-      setYearVocab(temp)
-      localStorage.removeItem('backToYearIdx')
-    }
-    
-    else {
-      const getThisYearNews = async () => {
-        const resp = await fetch(`/api/news`)
-        const data = await resp.json()
-        const thisYear = data.filter(news => {
-          return news.year == thisYearGetter()
-        })
-        setThisYearNews(thisYear)
+    const getNewsList = async () => {
+      const db = getFirestore();
+      const collectionName = "news";
+      const colRef = collection(db, collectionName);
+
+      try {
+        const snapshot = await getDocs(colRef);
+        const allData = snapshot.docs.map((doc) => {
+          const data = doc.data();
+          const newsData = data.news.map((newsItem) => {
+            return {
+              title: newsItem.title,
+              text: newsItem.text,
+              date: newsItem.date,
+            };
+          });
+          return {
+            ...data,
+            id: doc.id,
+            news: newsData,
+          };
+        });
+
+        setAllNewsData(allData.reverse());
+      } catch (error) {
+        console.error(
+          `Error fetching data from ${collectionName}:`,
+          error.message
+        );
       }
-  
-      getThisYearNews()
-    }
-  }, [yearVocab])
+    };
+
+    getNewsList();
+  }, []);
+
+  useEffect(() => {
+    getCurrentYearNewsData();
+  }, [allNewsData]);
+
+  useEffect(() => {
+    getCurrentYearNewsData();
+  }, [yearsLinksVocab]);
 
   return (
     <>
       <IndexLayout>
         <main className={styles.newsListBlock}>
           <div className={styles.newsListWrapper}>
-            <h1 className='page-title'>{t.news.title}</h1>
+            <h1 className="page-title">{t.news.title}</h1>
             <div className={styles.yearlyLinksBlock}>
-              {yearVocab.map((link, idx) => {
+              {yearsLinksVocab.map((year, idx) => {
                 return (
-                  <span 
-                    data-id={idx} 
-                    key={idx}
-                    onClick={(e)=> yearSelectHandler(e)}
-                    className={[styles.yearlyLink, link.selected ? styles.active : ''].join(" ")}
-                  >
-                    {link.year}
-                  </span>
-                )
+                  <div key={idx}>
+                    <span
+                      data-id={idx}
+                      onClick={(e) => yearSelectedTabHandler(e)}
+                      className={[
+                        styles.yearlyLink,
+                        year.selected ? styles.active : "",
+                      ]
+                        .filter(Boolean)
+                        .join(" ")}
+                    >
+                      {year.year}
+                    </span>
+                  </div>
+                );
               })}
             </div>
             <div className={styles.newsList}>
               <div className="news">
-                {thisYearNews.map((news, idx) => {
+                {currentYearNewsData?.news?.reverse().map((item, idx) => {
                   return (
                     <div className={styles.singleNewsPreviewBlock} key={idx}>
-                      <div className={styles.newsDate}>{news.date}</div>
-                      <div className={styles.newsTitle}>{news.title}</div>
-                      <div className={styles.newsPreviewText}>{news.previewText}</div>
+                      <div className={styles.newsDate}>{item.date}</div>
+                      <div className={styles.newsTitle}>{item.title}</div>
+                      <div className={styles.newsPreviewText}>{item.text}</div>
                       <div>
-                        <Link className={styles.readMoreLink} href={`news/${news.id}`}>{t.news.readMore} &#x3e;</Link>
+                        <Link
+                          className={styles.readMoreLink}
+                          href={`news/${currentYearNewsData?.id}/${idx}`}
+                        >
+                          {t.news.readMore} &#x3e;
+                        </Link>
                       </div>
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -102,5 +133,5 @@ export default function News() {
         </main>
       </IndexLayout>
     </>
-  )
+  );
 }

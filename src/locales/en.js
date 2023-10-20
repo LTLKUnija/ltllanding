@@ -15,7 +15,7 @@ export default {
     openAccount: "Open account",
     investmentLoan: "Investment loan",
     capitalLoan: "Capital loan",
-    faq: "F.A.Q"
+    faq: "F.A.Q",
   },
   footerNavLinks: {
     usefulLinks: "Useful links",
@@ -39,7 +39,7 @@ export default {
     career: "Career",
     contacts: "Contacts",
     address: "Sporto st. 18, \n LT- 09238 Vilnius",
-    faq: "F.A.Q"
+    faq: "F.A.Q",
   },
   indexPage: {
     slideOne: {
@@ -1194,6 +1194,6 @@ export default {
     },
   },
   faq: {
-    pageTitle: 'F.A.Q.'
-  }
+    pageTitle: "F.A.Q.",
+  },
 };
