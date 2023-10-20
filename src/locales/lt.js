@@ -15,7 +15,7 @@ export default {
     openAccount: "Atidaryti sąskaitą",
     investmentLoan: "Investicinė paskola",
     capitalLoan: "Paskola apyvartiniam kapitalui",
-    faq: "D.U.K"
+    faq: "D.U.K",
   },
   footerNavLinks: {
     usefulLinks: "Naudingos nuorodos",
@@ -39,7 +39,7 @@ export default {
     career: "Karjera",
     contacts: "Kontaktai",
     address: "Sporto g. 18,\n LT- 09238 Vilnius",
-    faq: "D.U.K"
+    faq: "D.U.K",
   },
   indexPage: {
     slideOne: {
@@ -214,6 +214,20 @@ export default {
       loansToPrivateIndividuals: "Paskolos privatiems asmenims",
       loansToCorporates: "Paskolos įmonėms",
     },
+    innerTabLinks: {
+      generalCondition: "Bendrosios salygos",
+      commisionInfo: "Informacijos apie komisinį atlyginimą dokumentas",
+      glossary: "Žodynas",
+      informationDepositor: "Informacijos indelininkui teikimo forma",
+      securitisedDeposit: "Terinuoto indelio sutartis_standartines salygos",
+      currentAccountContract:
+        "Einamosios saskaitos sutartis fiziniam asmeniui_standartines salygos",
+      currentAccountAgreement:
+        "Einamosios saskaitos sutartis juridiniam asmeniui_standartines salygos",
+      yourRights: "Jusu teises vykdant mokejimus Europoje",
+      paymentsServices: "Mokejimo paslaugu teikimo salygos",
+      generalInfo: "Bendro pobudzio informacija apie su NT susijusi kredita.",
+    },
   },
   termDeposit: {
     heroBlock: {
@@ -343,6 +357,9 @@ export default {
   },
   career: {
     title: "Karjera",
+    contacts: "Kontaktai",
+    address: "Sporto g. 18,\n LT- 09238 Vilnius",
+    faq: "D.U.K",
   },
   privetCurrentAccount: {
     pageTitle: "Nebereikia būti dideliam, kad ... ",
@@ -723,6 +740,14 @@ export default {
     title: "Privatumo politika ir slapukai",
     description:
       "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
+    innerTabLinks: {
+      processingPersonalData:
+        "Informacija apie asmens duomenų tvarkymą - juridinio asmens atstovas",
+      processingPersonalDataClient:
+        "Informacija apie asmens duomenų tvarkymą - fizinis asmuo (klientas)",
+      privacyPolicy: "Privatumo politika",
+      cookiePolicy: "Slapukų politika",
+    },
   },
   shareholders: {
     title: "Akcininkams",
@@ -1205,6 +1230,6 @@ export default {
     },
   },
   faq: {
-    pageTitle: 'D.U.K.'
-  }  
+    pageTitle: "D.U.K.",
+  },
 };

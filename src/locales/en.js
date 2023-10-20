@@ -15,7 +15,7 @@ export default {
     openAccount: "Open account",
     investmentLoan: "Investment loan",
     capitalLoan: "Capital loan",
-    faq: "F.A.Q"
+    faq: "F.A.Q",
   },
   footerNavLinks: {
     usefulLinks: "Useful links",
@@ -39,7 +39,7 @@ export default {
     career: "Career",
     contacts: "Contacts",
     address: "Sporto st. 18, \n LT- 09238 Vilnius",
-    faq: "F.A.Q"
+    faq: "F.A.Q",
   },
   indexPage: {
     slideOne: {
@@ -214,6 +214,22 @@ export default {
       loansToPrivateIndividuals: "Loans to private individuals",
       loansToCorporates: "Loans to corporates",
     },
+    innerTabLinks: {
+      generalCondition: "General conditions",
+      commisionInfo: "Commission information document",
+      glossary: "Glossary",
+      informationDepositor: "Form for providing information to the depositor",
+      securitisedDeposit:
+        "Securitised deposit agreement_standard terms and conditions",
+      currentAccountContract:
+        "Current account contract for a natural person_standard terms",
+      currentAccountAgreement:
+        "Current account agreement for a legal entity_standard terms",
+      yourRights: "Your rights when making payments in Europe",
+      paymentsServices:
+        "Terms and conditions for the provision of payment services",
+      generalInfo: "General information on credit related to property.",
+    },
   },
   termDeposit: {
     heroBlock: {
@@ -340,6 +356,9 @@ export default {
   },
   career: {
     title: "Career",
+    contacts: "Contacts",
+    address: "Sporto st. 18, \n LT- 09238 Vilnius",
+    faq: "F.A.Q",
   },
   privetCurrentAccount: {
     pageTitle: "You don‘t have to be big to be international",
@@ -718,6 +737,14 @@ export default {
     title: "Privacy Policy & Cookies",
     description:
       "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+    innerTabLinks: {
+      processingPersonalData:
+        "Information on the processing of personal data - representative of the legal person",
+      processingPersonalDataClient:
+        "Information on the processing of personal data - natural person (client)",
+      privacyPolicy: "Privacy Policy",
+      cookiePolicy: "Cookie Policy",
+    },
   },
   shareholders: {
     title: "For shareholders",
@@ -1194,6 +1221,6 @@ export default {
     },
   },
   faq: {
-    pageTitle: 'F.A.Q.'
-  }
+    pageTitle: "F.A.Q.",
+  },
 };
