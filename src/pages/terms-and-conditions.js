@@ -1,25 +1,22 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
 import styles from "@/styles/termsAndConditions.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import { tncLinks } from "@/common/tnclinks";
 
 export default function TemrsAndConditions() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
 
-  const [links, setLinks] = useState([]);
+  const [links, setLinks] = useState(tncLinks);
   const [activeTabLinks, setActiveTabLinks] = useState([]);
-
   useEffect(() => {
     (async () => {
-      const resp = await fetch(`/api/tnc`);
-      const data = await resp.json();
-      setLinks(data);
-      setActiveTabLinks(data[0].links);
+      setLinks(tncLinks);
+      setActiveTabLinks(tncLinks[0].links);
     })();
   }, []);
 
@@ -68,7 +65,7 @@ export default function TemrsAndConditions() {
                       href={link.linkUrl}
                       className={styles.linkStyle}
                     >
-                      {link.linkName}
+                      {t.termConditions.innerTabLinks[link.linkName]}
                     </Link>
                   </li>
                 );
