@@ -13,8 +13,6 @@ export default function FinacialQuartalReportsData() {
   const [quarterYearLink, setquarterYearLink] = useState([]);
   const [activeQuarters, setActiveQuarters] = useState([]);
 
-  useEffect(() => {}, []);
-
   useEffect(() => {
     const getQuarterlLinks = async () => {
       const db = getFirestore();

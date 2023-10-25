@@ -14,20 +14,12 @@ export default function FinancialReporting() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
 
-  const [quarterLinks, setQuarterLinks] = useState([]);
-  const [activeQuarterList, setActiveQuarterList] = useState([]);
   const [factSheetList, setFactSheetList] = useState([]);
   const [activeFactSheetList, setActiveFactSheetList] = useState([]);
   const [presentationsList, setPresentationsList] = useState([]);
   const [activePresentationsList, setActivePresentationsList] = useState([]);
 
   useEffect(() => {
-    const getTabLinks = async () => {
-      const resp = await fetch(`/api/quarterlyReports`);
-      const data = await resp.json();
-      setQuarterLinks(data);
-      setActiveQuarterList(data[0].quarters);
-    };
     const getFactsheetsList = async () => {
       const resp = await fetch(`/api/factsheets`);
       const data = await resp.json();
@@ -40,21 +32,10 @@ export default function FinancialReporting() {
       setPresentationsList(data);
       setActivePresentationsList(data[0].links);
     };
-    getTabLinks();
+
     getFactsheetsList();
     getPresentationsList();
   }, []);
-
-  function QuartersTabHandler(e) {
-    let idx = quarterLinks.findIndex((tab) => tab.uid == e.target.dataset.id);
-    let temp = [...quarterLinks];
-    temp.forEach((tab, index) => {
-      if (idx == index) tab.active = true;
-      else tab.active = false;
-    });
-    setQuarterLinks(temp);
-    setActiveQuarterList(temp[idx].quarters);
-  }
 
   function factsheetTabHandler(e) {
     let idx = factSheetList.findIndex(
