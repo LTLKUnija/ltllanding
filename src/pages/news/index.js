@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
-import { previewTextMaker } from '../../utils/helpers'
+import { previewTextMaker } from "../../utils/helpers";
 import { getNewsList } from "@/common/dataGetters";
 
 export default function News() {
@@ -42,29 +42,27 @@ export default function News() {
   };
 
   useEffect(() => {
+    if (!router.query.year) return;
 
-    if(!router.query.year) return;
-
-    const {year: prevRouteYear} = router.query;
-    const updatedYearsLinksVocab = yearsLinksVocab.map(year => {
-      return {...year, selected: year.year === prevRouteYear}
-    })
+    const { year: prevRouteYear } = router.query;
+    const updatedYearsLinksVocab = yearsLinksVocab.map((year) => {
+      return { ...year, selected: year.year === prevRouteYear };
+    });
 
     setYearsLinksVocab(updatedYearsLinksVocab);
 
     router.push({
-      pathname:`/news`,
-      query: {}
+      pathname: `/news`,
+      query: {},
     });
-  
-  }, [router.isReady])
+  }, [router.isReady]);
 
   useEffect(() => {
-    const getNews = async() => {
-      const news = await getNewsList()
+    const getNews = async () => {
+      const news = await getNewsList();
       setAllNewsData(news);
-    }
-    getNews()
+    };
+    getNews();
   }, []);
 
   useEffect(() => {
@@ -73,7 +71,6 @@ export default function News() {
 
   useEffect(() => {
     getCurrentYearNewsData();
-
   }, [yearsLinksVocab]);
 
   return (
@@ -109,7 +106,9 @@ export default function News() {
                     <div className={styles.singleNewsPreviewBlock} key={idx}>
                       <div className={styles.newsDate}>{item.date}</div>
                       <div className={styles.newsTitle}>{item.title}</div>
-                      <div className={styles.newsPreviewText}>{previewTextMaker(item.text, 50)+ ' ...'}</div>
+                      <div className={styles.newsPreviewText}>
+                        {previewTextMaker(item.text, 50) + " ..."}
+                      </div>
                       <div>
                         <Link
                           className={styles.readMoreLink}

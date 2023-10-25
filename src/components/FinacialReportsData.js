@@ -27,7 +27,6 @@ export default function FinacialReportsData() {
             id: doc.id,
           };
         });
-        console.log(allData);
 
         setAnnualLinks(allData.reverse());
         setActiveLinks(allData[0].links);

@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import FinacialReportsData from "@/components/FinacialReportsData";
+import FinancialQuarterReportsData from "@/components/FinacialQuarterReportsData";
 import { finacialReportingInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 
@@ -13,20 +14,12 @@ export default function FinancialReporting() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
 
-  const [quarterLinks, setQuarterLinks] = useState([]);
-  const [activeQuarterList, setActiveQuarterList] = useState([]);
   const [factSheetList, setFactSheetList] = useState([]);
   const [activeFactSheetList, setActiveFactSheetList] = useState([]);
   const [presentationsList, setPresentationsList] = useState([]);
   const [activePresentationsList, setActivePresentationsList] = useState([]);
 
   useEffect(() => {
-    const getTabLinks = async () => {
-      const resp = await fetch(`/api/quarterlyReports`);
-      const data = await resp.json();
-      setQuarterLinks(data);
-      setActiveQuarterList(data[0].quarters);
-    };
     const getFactsheetsList = async () => {
       const resp = await fetch(`/api/factsheets`);
       const data = await resp.json();
@@ -39,21 +32,10 @@ export default function FinancialReporting() {
       setPresentationsList(data);
       setActivePresentationsList(data[0].links);
     };
-    getTabLinks();
+
     getFactsheetsList();
     getPresentationsList();
   }, []);
-
-  function QuartersTabHandler(e) {
-    let idx = quarterLinks.findIndex((tab) => tab.uid == e.target.dataset.id);
-    let temp = [...quarterLinks];
-    temp.forEach((tab, index) => {
-      if (idx == index) tab.active = true;
-      else tab.active = false;
-    });
-    setQuarterLinks(temp);
-    setActiveQuarterList(temp[idx].quarters);
-  }
 
   function factsheetTabHandler(e) {
     let idx = factSheetList.findIndex(
@@ -93,51 +75,7 @@ export default function FinancialReporting() {
           <InnerLinks innerLinksData={finacialReportingInnerLinkList} />
         </section>
         <section id="quarterlyReports" className={styles.ReportsSection}>
-          <div className={styles.ReportsWrapper}>
-            <h3 className={styles.sectionTitle}>
-              {t.finacialReporting.quarterlyReports}
-            </h3>
-            <div className={[styles.tabsList, styles.center].join(" ")}>
-              {quarterLinks.map((tab, idx) => {
-                return (
-                  <div
-                    data-id={tab.uid}
-                    onClick={(e) => {
-                      QuartersTabHandler(e);
-                    }}
-                    key={idx}
-                    className={tab.active ? "active-tnc-tab" : ""}
-                  >
-                    {tab.year}
-                  </div>
-                );
-              })}
-            </div>
-            <div className={styles.quarterList}>
-              {activeQuarterList.map((quater, idx) => {
-                return (
-                  <div key={idx} className={styles.quarterItem}>
-                    <h4>{quater.quarterName}</h4>
-                    <div className={styles.linkList}>
-                      {quater.quarterLinks.map((link, index) => {
-                        return (
-                          <div className={styles.linksItem} key={index}>
-                            <div className={styles.iconImg}>
-                              <img
-                                src="/assets/images/Pdficon.svg"
-                                alt="Pdf IFile"
-                              />
-                            </div>
-                            <Link href={link.linkUrl}>{link.linkName}</Link>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <FinancialQuarterReportsData />
         </section>
         <section id="annualReporting" className={styles.presentationsSection}>
           <FinacialReportsData />
