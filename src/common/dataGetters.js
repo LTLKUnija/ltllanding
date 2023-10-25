@@ -12,7 +12,9 @@ export const getNewsList = async () => {
       const newsData = data.news.map((newsItem) => {
         return {
           title: newsItem.title,
+          titleEn: newsItem.titleEn,
           text: newsItem.text,
+          textEn: newsItem.textEn,
           date: newsItem.date,
         };
       });

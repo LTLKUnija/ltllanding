@@ -14,12 +14,13 @@ export default function IndexNews() {
 
   const [newsList, setNewsList] = useState([]);
 
+
   const getLastSixNews = (newsData) => {
     const lastSix = []
     newsData.forEach(year => {
       year.news.forEach((news, idx) => {
         if (lastSix.length > 5)  return
-        lastSix.push({id: year.id, text: news.text, title: news.title, idx }) 
+        lastSix.push({id: year.id, text: news.text, textEn: news.textEn, title: news.title, titleEn: news.titleEn, idx }) 
       })
     })
     return lastSix
@@ -36,8 +37,8 @@ export default function IndexNews() {
   const elNewsList = newsList.map((news, idx) => {
     return (      
         <div className={styles.newsItem}  key={idx}>
-          <h3>{news.title}</h3>
-          <p>{previewTextMaker(news.text, 20) + '...'}</p>
+          <h3>{router.locale === 'lt' ? news.title : news.titleEn}</h3>
+          <p>{previewTextMaker(router.locale === 'lt' ? news.text: news.textEn, 20) + '...'}</p>
           <Link href={`news/${news.id}-${news.idx}`}>{t.news.readMore} &#x3e;</Link>
         </div>
     )
