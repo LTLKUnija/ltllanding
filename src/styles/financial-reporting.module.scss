@@ -1,317 +1,317 @@
 .financialReportingSection {
-   padding: 40px 0 40px 0;
-   position: sticky;
-   top: 0%;
-   background-color: var(--main-background);
+  padding: 40px 0 40px 0;
+  position: sticky;
+  top: 0%;
+  background-color: var(--main-background);
 
-   .innerNavigationLinkList {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+  .innerNavigationLinkList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-      .innerNavLink {
-         font-family: 'Lexend';
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 24px;
-         color: var(--main-text-color);
-         text-decoration: none;
-         margin-right: 30px;
+    .innerNavLink {
+      font-family: "Lexend";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--main-text-color);
+      text-decoration: none;
+      margin-right: 30px;
 
-         &:last-child {
-            margin-right: 0;
-         }
-
-         &.change-language-link {
-            text-transform: uppercase;
-            font-weight: 600;
-         }
+      &:last-child {
+        margin-right: 0;
       }
-   }
 
-   .financialReportingTitle {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 62px;
-      text-align: center;
-      margin-bottom: 34px;
-   }
+      &.change-language-link {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .financialReportingTitle {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 62px;
+    text-align: center;
+    margin-bottom: 34px;
+  }
 }
 
 .sectionTitle {
-   font-size: 25px;
-   font-weight: 700;
-   line-height: 32px;
-   text-align: center;
-   margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .innerNavigationSection {
-   padding: 34px 0 18px 0;
-   position: sticky;
-   top: 100px;
-   background-color: var(--main-background);
-   z-index: 8;
+  padding: 34px 0 18px 0;
+  position: sticky;
+  top: 100px;
+  background-color: var(--main-background);
+  z-index: 8;
 }
 
-
 .tabsList {
-   display: flex;
-   gap: 60px;
-   list-style: none;
-   border-bottom: solid 1px var(--table-border-color);
-   padding: 0 15px 30px 15px;
-   margin-bottom: 40px;
-   cursor: pointer;
-   overflow: auto;
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  border-bottom: solid 1px var(--table-border-color);
+  padding: 0 15px 30px 15px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  overflow: auto;
 }
 
 .center {
-   justify-content: center;
+  justify-content: center;
 }
 
 .linkStyle {
-   font-size: 16px;
-   font-weight: 300;
-   line-height: 20px;
-   color: var(--light-color);
-   text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--light-color);
+  text-decoration: none;
 }
 
 .presentationsWrapper {
-   max-width: 770px;
-   padding: 0 15px 0 15px;
-   margin: 0 auto;
+  max-width: 770px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
 }
 
 .reporstBlockList {
-   max-width: 380px;
-   margin: 0 auto;
+  max-width: 380px;
+  margin: 0 auto;
 }
 
 .reportItem {
+  min-height: 64px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+  gap: 20px;
 
-   min-height: 64px;
-   padding: 0 20px;
-   display: flex;
-   align-items: center;
-   background: rgba(255, 255, 255, 0.6);
-   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-   margin-bottom: 40px;
-   gap: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-   &:last-child {
-      margin-bottom: 0;
-   }
-
-   img {
-      min-width: 24px;
-      height: 32px;
-   }
+  img {
+    min-width: 24px;
+    height: 32px;
+  }
 }
 
 .ReportsSection {
-   padding: 80px 0 80px 0;
+  padding: 80px 0 80px 0;
 
-   .ReportsWrapper {
-      max-width: 770px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-   }
+  .ReportsWrapper {
+    max-width: 770px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+  }
 
-   .quarterList {
+  .quarterList {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .quarterItem {
+    width: 150px;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .linkList {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+
+      a {
+        text-decoration: none;
+        color: var(--light-color);
+        word-break: break-word;
+      }
+    }
+
+    .linksItem {
+      display: flex;
+      gap: 18px;
       display: flex;
       justify-content: center;
-      gap: 10px;
-   }
+      align-items: center;
+    }
 
-   .quarterItem {
-      width: 150px;
-      margin-right: 40px;
+    img {
+      width: 16px;
+      height: 21px;
+      object-fit: contain;
+    }
 
-      &:last-child {
-         margin-right: 0;
-      }
-
-      .linkList {
-         display: flex;
-         flex-direction: column;
-         gap: 20px;
-         font-size: 16px;
-         font-weight: 300;
-         line-height: 20px;
-
-         a {
-            text-decoration: none;
-            color: var(--light-color);
-            word-break: break-word;
-         }
-      }
-
-      .linksItem {
-         display: flex;
-         gap: 18px;
-      }
-
-      img {
-         width: 16px;
-         height: 21px;
-         object-fit: contain;
-      }
-
-      h4 {
-         font-size: 50px;
-         font-weight: 200;
-         line-height: 62px;
-         margin-bottom: 24px;
-         padding: 0 0 0 34px;
-      }
-   }
+    h4 {
+      font-size: 50px;
+      font-weight: 200;
+      line-height: 62px;
+      margin-bottom: 24px;
+      padding: 0 0 0 34px;
+    }
+  }
 }
 
-
 .presentationsSection {
-   padding: 80px 0 80px 0;
+  padding: 80px 0 80px 0;
 
-   .presentationsWrapper {
-      max-width: 770px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-   }
+  .presentationsWrapper {
+    max-width: 770px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+  }
 }
 
 .contactsSection {
-   padding: 80px 0 120px 0;
+  padding: 80px 0 120px 0;
 
-   .contactsWrapper {
-      max-width: 770px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-   }
+  .contactsWrapper {
+    max-width: 770px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+  }
 
-   h3 {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 32px;
-      text-align: center;
-      border-bottom: solid 1px var(--table-border-color);
-      padding-bottom: 40px;
-      margin-bottom: 40px;
-   }
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: solid 1px var(--table-border-color);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
 
-   .contactsBlock {
-      display: flex;
-      justify-content: center;
-      gap: 64px;
-   }
+  .contactsBlock {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+  }
 
-   .img {
-      min-width: 127px;
-      height: 135px;
-      background-color: var(--theme-color1);
-   }
+  .img {
+    min-width: 127px;
+    height: 135px;
+    background-color: var(--theme-color1);
+  }
 
-   .contactsInfo {
-      width: 265px;
-      display: flex;
-      flex-direction: column;
-   }
+  .contactsInfo {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+  }
 
-   h4 {
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 22px;
-      margin-bottom: 16px;
-   }
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
 
-   p {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 24px;
-   }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
 }
 
 .calendarSection {
-   padding: 80px 0 140px 0;
+  padding: 80px 0 140px 0;
 
-   .calendarWrapper {
-      max-width: 770px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-   }
+  .calendarWrapper {
+    max-width: 770px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+  }
 
-   h3 {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 32px;
-      text-align: center;
-      border-bottom: solid 1px var(--table-border-color);
-      padding-bottom: 40px;
-      margin-bottom: 40px;
-   }
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: solid 1px var(--table-border-color);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
 
-   .calendarDescription {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22px;
-      text-align: center;
-      margin-bottom: 50px;
-   }
+  .calendarDescription {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-   .calendarBlock {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
+  .calendarBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-   .date {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 22px;
-      width: 400px;
-      text-align: left;
-      margin-bottom: 16px;
+  .date {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    width: 400px;
+    text-align: left;
+    margin-bottom: 16px;
 
-      span {
-         font-weight: 300;
-         padding-left: 40px;
-      }
-   }
+    span {
+      font-weight: 300;
+      padding-left: 40px;
+    }
+  }
 }
 
 // ----- Media queries -----
 @media (max-width: 765px) {
-   .tabsList {
-      gap: 30px;
-   }
+  .tabsList {
+    gap: 30px;
+  }
 
-   .quarterList {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+  .quarterList {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 
-      .quarterItem {
-         max-width: 150px;
-         margin-right: 0;
-         margin-bottom: 40px;
-      }
-   }
+    .quarterItem {
+      max-width: 150px;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
 
-   .agendaBlock {
-      h4 {
-         text-align: center;
-      }
-   }
-
-   .contactsBlock {
-      max-width: 300px;
-      margin: 0 auto;
-      align-items: center;
-      flex-wrap: wrap;
+  .agendaBlock {
+    h4 {
       text-align: center;
-   }
-   
-   .innerNavigationSection {
-      display: none;
-   }
+    }
+  }
+
+  .contactsBlock {
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .innerNavigationSection {
+    display: none;
+  }
 }
