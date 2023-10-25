@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router"
 import lt from '@/locales/lt'
 import en from '@/locales/en'
+import { getNewsList } from "@/common/dataGetters";
+import { previewTextMaker } from "@/utils/helpers"; 
+
 
 export default function IndexNews() {
   const router = useRouter();
@@ -11,20 +14,32 @@ export default function IndexNews() {
 
   const [newsList, setNewsList] = useState([]);
 
-  useEffect(() => {
-    fetch(`/api/news`)
-    .then(response => response.json())
-    .then(data => {
-      setNewsList(data.filter(news => news.year == 2023).splice(0,6))
+
+  const getLastSixNews = (newsData) => {
+    const lastSix = []
+    newsData.forEach(year => {
+      year.news.forEach((news, idx) => {
+        if (lastSix.length > 5)  return
+        lastSix.push({id: year.id, text: news.text, textEn: news.textEn, title: news.title, titleEn: news.titleEn, idx }) 
+      })
     })
-  },[])
+    return lastSix
+  }
+
+  useEffect(() => {
+    const getNews = async() => {
+      const news = await getNewsList()
+      setNewsList(getLastSixNews(news));
+    }
+    getNews()
+  }, []);
 
   const elNewsList = newsList.map((news, idx) => {
     return (      
         <div className={styles.newsItem}  key={idx}>
-          <h3>{news.title}</h3>
-          <p>{news.previewText}</p>
-          <Link href={`/news/${news.id}`}>{t.news.readMore} &gt;</Link>
+          <h3>{router.locale === 'lt' ? news.title : news.titleEn}</h3>
+          <p>{previewTextMaker(router.locale === 'lt' ? news.text: news.textEn, 20) + '...'}</p>
+          <Link href={`news/${news.id}-${news.idx}`}>{t.news.readMore} &#x3e;</Link>
         </div>
     )
   })

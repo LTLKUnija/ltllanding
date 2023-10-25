@@ -7,6 +7,7 @@ import lt from "@/locales/lt";
 import en from "@/locales/en";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 import { previewTextMaker } from "../../utils/helpers";
+import { getNewsList } from "@/common/dataGetters";
 
 export default function News() {
   const router = useRouter();
@@ -57,39 +58,11 @@ export default function News() {
   }, [router.isReady]);
 
   useEffect(() => {
-    const getNewsList = async () => {
-      const db = getFirestore();
-      const collectionName = "news";
-      const colRef = collection(db, collectionName);
-
-      try {
-        const snapshot = await getDocs(colRef);
-        const allData = snapshot.docs.map((doc) => {
-          const data = doc.data();
-          const newsData = data.news.map((newsItem) => {
-            return {
-              title: newsItem.title,
-              text: newsItem.text,
-              date: newsItem.date,
-            };
-          });
-          return {
-            ...data,
-            id: doc.id,
-            news: newsData,
-          };
-        });
-        console.log(allData);
-        setAllNewsData(allData.reverse());
-      } catch (error) {
-        console.error(
-          `Error fetching data from ${collectionName}:`,
-          error.message
-        );
-      }
+    const getNews = async () => {
+      const news = await getNewsList();
+      setAllNewsData(news);
     };
-
-    getNewsList();
+    getNews();
   }, []);
 
   useEffect(() => {
