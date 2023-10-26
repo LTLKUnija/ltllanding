@@ -64,12 +64,12 @@ export default function NewsPage() {
             {selectedNews && (
               <div>
                 <div className={styles.newsDate}>{selectedNews.date}</div>
-                <div className={styles.newsTitle}>{selectedNews.title}</div>
-                <div className={styles.newsText}>{selectedNews.text}</div>
+                <div className={styles.newsTitle}>{router.locale === "lt" ? selectedNews.title : selectedNews.titleEn}</div>
+                <div className={styles.newsText}>{router.locale === "lt" ? selectedNews.text : selectedNews.textEn}</div>
               </div>
             )}
             <span style={{cursor: "pointer"}} className={styles.backToNewsLink} onClick={backToYearHandler}>
-              &#x3c; Back to News
+              &#x3c; {t.news.backToNews}
             </span>
           </div>
         </main>

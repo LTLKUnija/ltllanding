@@ -105,9 +105,9 @@ export default function News() {
                   return (
                     <div className={styles.singleNewsPreviewBlock} key={idx}>
                       <div className={styles.newsDate}>{item.date}</div>
-                      <div className={styles.newsTitle}>{item.title}</div>
+                      <div className={styles.newsTitle}>{router.locale === "lt" ? item.title : item.titleEn}</div>
                       <div className={styles.newsPreviewText}>
-                        {previewTextMaker(item.text, 50) + " ..."}
+                        {previewTextMaker(router.locale === "lt" ? item.text: item.textEn, 50) + " ..."}
                       </div>
                       <div>
                         <Link
