@@ -95,6 +95,7 @@ export default function Home() {
               </article>
             </div>
           </section>
+
           <section className={styles.bulletPoints}>
             <div className="container">
               <h2>{t.indexPage.bulletsBlock.title}</h2>
@@ -106,6 +107,7 @@ export default function Home() {
               </ul>
             </div>
           </section>
+          
           <section id="news" className={styles.newsSection}>
             <IndexNews />
           </section>

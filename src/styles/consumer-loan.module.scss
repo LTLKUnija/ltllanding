@@ -8,7 +8,6 @@
   .consumerLoanPageList {
     padding-left: 312px;
 
-
     .consumerLoanHeroItem {
       max-width: 600px;
     }
@@ -68,8 +67,8 @@
   padding: 60px 0 64px 0;
 
   .benefitsWrapper {
-    max-width: 750px;
-    padding: 0 15px 0 15px;
+    max-width: 760px;
+    padding: 0 20px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -105,7 +104,7 @@
 
   .StepsWrapper {
     max-width: 765px;
-    padding: 0 15px 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
 
     .stepsHeader {
@@ -172,8 +171,7 @@
   .clientSuportWrapper {
     max-width: 890px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
-
+    padding: 0 20px;
     .clientSuportHeader {
       font-size: 25px;
       font-weight: 700;
@@ -196,7 +194,7 @@
 
   .faqWrapper {
     max-width: 1060px;
-    padding: 0 15px 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
 
     .faqHeader {
@@ -231,14 +229,12 @@
 
     .consumerLoanPageList {
       padding-left: 280px;
-
     }
   }
 }
 
 @media (max-width: 1250px) {
   .consumerLoanPageWrapper {
-
     .consumerLoanPageList {
       padding-left: 50px;
     }
@@ -247,7 +243,6 @@
 
 @media (max-width: 974px) {
   .consumerLoanPageWrapper {
-
     .consumerLoanPageList {
       padding-left: 40px;
     }
@@ -358,9 +353,7 @@
   }
 
   .benefitsSection {
-
     .benefitsWrapper {
-
       .benefitsBlock {
         max-width: 490px;
         text-align: center;

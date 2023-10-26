@@ -1027,6 +1027,7 @@ export default {
   news: {
     title: "Naujienos",
     readMore: "Skaityti daugiau",
+    backToNews: "Atgal į naujienas"
   },
   business: {
     termDeposit: {

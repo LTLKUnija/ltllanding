@@ -59,15 +59,13 @@
   z-index: 8;
 }
 
-
 .articleSection {
   padding: 48px 0 66px 0;
 
   .articleWrapper {
     max-width: 1060px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
-
+    padding: 0 20px 0 20px;
     .articleList {
       display: flex;
       flex-wrap: wrap;
@@ -99,7 +97,7 @@
 
   .stepsWrapper {
     max-width: 765px;
-    padding: 0 15px 0 15px;
+    padding: 0 20px 0 20px;
     margin: 0 auto;
 
     .stepsHeader {
@@ -160,7 +158,7 @@
   .infoWrapper {
     max-width: 870px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 20px;
 
     .infoHeader {
       font-size: 25px;
@@ -196,7 +194,7 @@
   .priceWrapper {
     max-width: 850px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 20px;
 
     .priceHeader {
       font-size: 25px;
@@ -207,13 +205,12 @@
     }
 
     .priceList {
-
       &:last-child {
-        border-bottom: solid 1px #ACACAC;
+        border-bottom: solid 1px #acacac;
       }
 
       .priceItem {
-        border-top: solid 1px #ACACAC;
+        border-top: solid 1px #acacac;
         padding: 16px 0;
         display: flex;
         justify-content: space-between;
@@ -249,7 +246,7 @@
   .clientSuportWrapper {
     max-width: 890px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 20px;
 
     .clientSuportHeader {
       font-size: 25px;
@@ -273,7 +270,7 @@
 
   .faqWrapper {
     max-width: 1060px;
-    padding: 0 15px 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
 
     .faqHeader {
@@ -287,7 +284,7 @@
     .faqList {
       padding: 71px 105px 70px 105px;
       box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-      background-color: #F9F8F7;
+      background-color: #f9f8f7;
     }
   }
 }
@@ -303,7 +300,6 @@
 
 @media (max-width: 1320px) {
   .currentAccountPageWrapper {
-
     .currentAccountPageList {
       padding-left: 280px;
     }
@@ -312,7 +308,6 @@
 
 @media (max-width: 1250px) {
   .currentAccountPageWrapper {
-
     .currentAccountPageList {
       padding-left: 50px;
     }
@@ -329,7 +324,7 @@
   }
 }
 
-@media(max-width: 1100px) {
+@media (max-width: 1100px) {
   .innerNavigationSection {
     display: none;
   }
@@ -447,7 +442,6 @@
   }
 
   .innerNavigationSection {
-
     .innerNavigationLinkList {
       display: flex;
       justify-content: flex-start;
@@ -460,7 +454,6 @@
     padding: 50px 0 24px 0;
 
     .articleWrapper {
-
       .articleItem {
         max-width: 490px;
       }
