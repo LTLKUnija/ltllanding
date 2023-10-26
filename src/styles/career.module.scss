@@ -1,86 +1,85 @@
 .careerSection {
-   padding: 100px 0 200px 0;
+  padding: 100px 0 200px 0;
 
-   .careerWrapper {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
+  .careerWrapper {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px;
+    h3 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+  }
 
-      h3 {
-         font-size: 50px;
-         font-weight: 700;
-         line-height: 62px;
-         text-align: center;
-         margin-bottom: 32px;
-      }
-   }
+  .innerNavigationLinkList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    gap: 30px;
+    cursor: pointer;
+    color: var(--main-text-color);
+    border-bottom: solid 1px var(--table-border-color);
 
-   .innerNavigationLinkList {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 80px;
-      padding-bottom: 40px;
-      gap: 30px;
-      cursor: pointer;
+    .innerNavLink {
+      font-family: "Lexend";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
       color: var(--main-text-color);
-      border-bottom: solid 1px var(--table-border-color);
+      text-decoration: none;
+      margin-right: 30px;
 
-      .innerNavLink {
-         font-family: 'Lexend';
-         font-weight: 400;
-         font-size: 16px;
-         line-height: 24px;
-         color: var(--main-text-color);
-         text-decoration: none;
-         margin-right: 30px;
-
-         &:last-child {
-            margin-right: 0;
-         }
-
-         &.change-language-link {
-            text-transform: uppercase;
-            font-weight: 600;
-         }
+      &:last-child {
+        margin-right: 0;
       }
-   }
 
-   .careerBlock {
-      margin: 0 auto;
-      max-width: 380px;
-      padding: 30px 0 30px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.6);
-      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-   }
-
-   .careerLinks {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-
-      li {
-         list-style: none;
-         background: url(/assets/images/Pdficon.svg) no-repeat left center;
-         background-size: 16px 20px;
-         padding-left: 35px;
-         margin-bottom: 17px;
-
-         &:last-child {
-            margin-bottom: 0;
-         }
-
-         .linkStyle {
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 20px;
-            color: var(--light-color);
-            text-decoration: none;
-         }
+      &.change-language-link {
+        text-transform: uppercase;
+        font-weight: 600;
       }
-   }
+    }
+  }
+
+  .careerBlock {
+    margin: 0 auto;
+    max-width: 380px;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  .careerLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    li {
+      list-style: none;
+      background: url(/assets/images/Pdficon.svg) no-repeat left center;
+      background-size: 16px 20px;
+      padding-left: 35px;
+      margin-bottom: 17px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .linkStyle {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        color: var(--light-color);
+        text-decoration: none;
+      }
+    }
+  }
 }

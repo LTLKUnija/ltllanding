@@ -65,8 +65,7 @@
 .priceWrapper {
   max-width: 850px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
-
+  padding: 0 20px;
   .priceList {
     &:last-child {
       border-bottom: solid 1px #acacac;
@@ -141,7 +140,7 @@
 
   .faqWrapper {
     max-width: 1060px;
-    padding: 0 15px 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
 
     .faqHeader {

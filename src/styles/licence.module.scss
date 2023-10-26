@@ -1,83 +1,82 @@
 .licenceSection {
-   padding: 100px 0 28px 0;
+  padding: 100px 0 28px 0;
 
-   .licenceWrapper {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
+  .licenceWrapper {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px;
+    h3 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-      h3 {
-         font-size: 50px;
-         font-weight: 700;
-         line-height: 62px;
-         text-align: center;
-         margin-bottom: 60px;
-      }
-
-      p {
-         font-size: 16px;
-         font-weight: 300;
-         line-height: 20px;
-         text-align: center;
-      }
-   }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
 }
 
 .imgSection {
-   padding: 28px 0 10px 0;
+  padding: 28px 0 10px 0;
 
-   .imgWrapper {
-      max-width: 1055px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
-   }
+  .imgWrapper {
+    max-width: 1055px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-   .img {
-      max-width: 1025px;
-      height: 1700px;
-      background-image: url(/assets/images/Licence.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-size: 100%;
-   }
+  .img {
+    max-width: 1025px;
+    height: 1700px;
+    background-image: url(/assets/images/Licence.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+  }
 }
 //----Media Query----
 @media (max-width: 900px) {
-   .imgSection {
-      .imgWrapper {
-         .img {
-            height: 1413px;
-         }
+  .imgSection {
+    .imgWrapper {
+      .img {
+        height: 1413px;
       }
-   }
+    }
+  }
 }
 
 @media (max-width: 768px) {
-   .imgSection {
-      .imgWrapper {
-         .img {
-            height: 1150px;
-         }
+  .imgSection {
+    .imgWrapper {
+      .img {
+        height: 1150px;
       }
-   }
+    }
+  }
 }
 
 @media (max-width: 620px) {
-   .imgSection {
-      .imgWrapper {
-         .img {
-            height: 950px;
-         }
+  .imgSection {
+    .imgWrapper {
+      .img {
+        height: 950px;
       }
-   }
+    }
+  }
 }
 
 @media (max-width: 500px) {
-   .imgSection {
-      .imgWrapper {
-         .img {
-            height: 780px;
-         }
+  .imgSection {
+    .imgWrapper {
+      .img {
+        height: 780px;
       }
-   }
+    }
+  }
 }

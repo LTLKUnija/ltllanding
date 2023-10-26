@@ -1,194 +1,192 @@
 .creditsPageWrapper {
-   padding: 66px 0 46px 0;
-   background-color: var(--ligh-grey-background);
+  padding: 66px 0 46px 0;
+  background-color: var(--ligh-grey-background);
 
-   .creditsPageList {
-      padding-left: 312px;
+  .creditsPageList {
+    padding-left: 312px;
 
-      .creditsHeroItem {
-         width: 474px;
-         h2 {
-            font-size: 30px;
-            font-weight: 700;
-            margin-bottom: 35px;
-         }
+    .creditsHeroItem {
+      width: 474px;
+      h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 35px;
       }
-   }
+    }
+  }
 
-   .creditsPageDescription {
-      font-weight: 400;
-      font-size: 18px;
-      color: #000000;
-      margin-bottom: 35px;
+  .creditsPageDescription {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 35px;
 
-      li {
-         list-style-type: none;
-         padding-left: 26px;
-         background: url(/assets/images/check2.svg) no-repeat left top;
-         background-position-y: 5px;
-         margin-bottom: 8px;
+    li {
+      list-style-type: none;
+      padding-left: 26px;
+      background: url(/assets/images/check2.svg) no-repeat left top;
+      background-position-y: 5px;
+      margin-bottom: 8px;
 
-         &:last-child {
-            margin-bottom: 0;
-         }
+      &:last-child {
+        margin-bottom: 0;
       }
+    }
 
-      p {
-         margin-bottom: 30px;
-      }
+    p {
+      margin-bottom: 30px;
+    }
 
-      .CheckText {
-         font-weight: 300;
-         font-size: 16px;
-      }
-
-   }
-
-   .actionButtonBlock {
-      width: 251px;
-      height: 42px;
-      background: var(--theme-color2);
-      border-radius: 33px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 600;
+    .CheckText {
+      font-weight: 300;
       font-size: 16px;
-      line-height: 24px;
-      color: var(--white-text-color);
-      text-decoration: none;
-   }
+    }
+  }
+
+  .actionButtonBlock {
+    width: 251px;
+    height: 42px;
+    background: var(--theme-color2);
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-text-color);
+    text-decoration: none;
+  }
 }
 
 .monthlyPaymentSection {
-   padding: 46px 0 64px 0;
+  padding: 46px 0 64px 0;
 
-   .calculatorWrapper {
-      width: 790px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
-      display: flex;
-      justify-content: center;
-      gap: 46px;
-   }
+  .calculatorWrapper {
+    width: 790px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+  }
 
-   .calculatorBlock {
-      width: 460px;
-      border-right: solid 1px var(--theme-color4);
-      padding-right: 49px;
-      position: relative;
-   }
+  .calculatorBlock {
+    width: 460px;
+    border-right: solid 1px var(--theme-color4);
+    padding-right: 49px;
+    position: relative;
+  }
 
-   .calculatorLine {
-      display: flex;
-      gap: 40px;
-      margin-bottom: 15px;
-   }
+  .calculatorLine {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+  }
 
-   .label {
-      width: 230px;
-      display: flex;
-      align-items: center;
-      justify-content: right;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 20px;
-      color: var(--theme-color4);
-   }
+  .label {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--theme-color4);
+  }
 
-   input {
-      width: 235px;
-      height: 30px;
-      background: url(/assets/images/euro.svg) no-repeat right center;
-      border: none;
-      border-bottom: 1px solid #939096;
+  input {
+    width: 235px;
+    height: 30px;
+    background: url(/assets/images/euro.svg) no-repeat right center;
+    border: none;
+    border-bottom: 1px solid #939096;
+    color: var(--black-text-color);
+    padding-right: 20px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
       color: var(--black-text-color);
+    }
+  }
+
+  .procent {
+    background: url(/assets/images/procent.svg) no-repeat right center;
+  }
+
+  .select {
+    width: 242px;
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      width: 63%;
+      height: 1px;
+      background-color: var(--theme-color4);
+      margin-top: 6px;
+    }
+
+    select {
+      border: none;
+      background: transparent;
+      cursor: pointer;
       padding-right: 20px;
 
       &:focus {
-         outline: none;
+        outline: none;
       }
+    }
 
-      &::placeholder {
-         color: var(--black-text-color);
-      }
-   }
-
-   .procent {
-      background: url(/assets/images/procent.svg) no-repeat right center;
-   }
-
-   .select {
-      width: 242px;
-      &::after {
-         content: "";
-         display: block;
-         position: relative;
-         width: 63%;
-         height: 1px;
-         background-color: var(--theme-color4);
-         margin-top: 6px;
-      }
-
-      select {
-         border: none;
-         background: transparent;
-         cursor: pointer;
-         padding-right: 20px;
-
-         &:focus {
-            outline: none;
-         }
-      }
-
-      span {
-         color: var(--theme-color4);
-         padding-left: 20px;
-         font-size: 16px;
-         font-weight: 300;
-         line-height: 20px;
-      }
-   }
-
-   h3 {
+    span {
+      color: var(--theme-color4);
+      padding-left: 20px;
       font-size: 16px;
       font-weight: 300;
       line-height: 20px;
-      margin-bottom: 8px;
-   }
+    }
+  }
 
-   .resultBlock {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-   }
+  h3 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
 
-   .resultBlockTitle {
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 50px;
-      margin-bottom: 30px;
-   }
+  .resultBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-   .borderCorner {
-      width: 15px;
-      height: 15px;
-      z-index: 1;
-      border-top: solid 1px var(--theme-color4);
-      border-right: solid 1px var(--theme-color4);
-      background-color: var(--main-background);
-      transform:
-         rotate(45deg) translate(399px, -241px);
-   }
+  .resultBlockTitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .borderCorner {
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    border-top: solid 1px var(--theme-color4);
+    border-right: solid 1px var(--theme-color4);
+    background-color: var(--main-background);
+    transform: rotate(45deg) translate(399px, -241px);
+  }
 }
 
 .monthlyPaymentCrediancials {
-   padding: 64px 0 60px 0;
-   background-color: var(--theme-color1);
+  padding: 64px 0 60px 0;
+  background-color: var(--theme-color1);
 
-   .monthlyPaymentCrediancialsList {
-   padding: 0 0 0 347px;
+  .monthlyPaymentCrediancialsList {
+    padding: 0 0 0 347px;
     margin: 0 auto;
     font-size: 18px;
     font-weight: 400;
@@ -199,55 +197,55 @@
     li {
       list-style-position: inside;
     }
-   }
+  }
 }
 
 .monthlyPaymentDescription {
-   padding: 60px 0 64px 0;
+  padding: 60px 0 64px 0;
 
-   .monthlyPaymentDescriptionList {
-      max-width: 1030px;
-      padding: 0 15px 0 15px;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 67px;
-   }
+  .monthlyPaymentDescriptionList {
+    max-width: 1040px;
+    padding: 0 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 67px;
+  }
 
-   .monthlyPaymentDescriptionItem {
-      width: 462px;
-      .monthlyPaymentTitle {
-         font-size: 35px;
-         font-weight: 700;
-         line-height: 44px;
-         margin-bottom: 34px;
+  .monthlyPaymentDescriptionItem {
+    width: 462px;
+    .monthlyPaymentTitle {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 44px;
+      margin-bottom: 34px;
+    }
+
+    .monthlyPaymentDesc {
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 28px;
+
+      li {
+        list-style-position: inside;
+        padding-left: 15px;
       }
-
-      .monthlyPaymentDesc {
-         font-size: 19px;
-         font-weight: 300;
-         line-height: 28px;
-
-         li {
-            list-style-position: inside;
-            padding-left: 15px;
-         }
-      }
-   }
+    }
+  }
 }
 
 .faqSection {
-   padding: 22px 0 60px 0;
+  padding: 22px 0 60px 0;
 
-   .faqWrapper {
-      max-width: 1060px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
+  .faqWrapper {
+    max-width: 1060px;
+    padding: 0 20px;
+    margin: 0 auto;
 
-      .faqList {
-         padding: 71px 105px 70px 105px;
-         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-         background-color: #F9F8F7;
-      }
-   }
+    .faqList {
+      padding: 71px 105px 70px 105px;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+      background-color: #f9f8f7;
+    }
+  }
 }

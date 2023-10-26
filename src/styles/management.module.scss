@@ -1,352 +1,350 @@
 .aboutUsSection {
-   padding: 140px 0 30px 0;
-   background-color: var(--theme-color3);
-   background-image: url("/assets/images/managmentPage_heroBlock.svg");
-   background-repeat: no-repeat;
-   background-position: bottom right;
+  padding: 140px 0 30px 0;
+  background-color: var(--theme-color3);
+  background-image: url("/assets/images/managmentPage_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
-   .aboutUsWrapper {
-      max-width: 820px;
-      margin: 0 auto;
-   }
+  .aboutUsWrapper {
+    max-width: 820px;
+    margin: 0 auto;
+  }
 
-   .aboutUsHeroBlock {
-      display: flex;
-      justify-content: center;
-      gap: 70px;
-      margin-bottom: 90px;
-   }
+  .aboutUsHeroBlock {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 90px;
+  }
 
-   .title {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 62px;
-      text-align: center;
-      margin-bottom: 90px;
-   }
+  .title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 62px;
+    text-align: center;
+    margin-bottom: 90px;
+  }
 
-   .missionTitle {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 32px;
-      margin-bottom: 20px;
-   }
+  .missionTitle {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
 
-   .missionDescription {
-      font-size: 25px;
-      font-weight: 300;
-      line-height: 32px;
-      max-width: 280px;
-   }
+  .missionDescription {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 32px;
+    max-width: 280px;
+  }
 
-   .aboutUsHeroVision {
-      max-width: 474px;
-   }
+  .aboutUsHeroVision {
+    max-width: 474px;
+  }
 
-   .visionTitle {
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 32px;
-      margin-bottom: 20px;
-   }
+  .visionTitle {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
 
-   .visionDescription {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 20px;
-   }
+  .visionDescription {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+  }
 }
 
 .innerNavigationBlock {
-   padding: 30px 0 48px 0;
-   position: sticky;
-   z-index: 11;
-   top: 90px;
-   background-color: var(--main-background);
+  padding: 30px 0 48px 0;
+  position: sticky;
+  z-index: 11;
+  top: 90px;
+  background-color: var(--main-background);
 }
 
 .teamSection {
-   padding: 30px 0 48px 0;
+  padding: 30px 0 48px 0;
 
-   .teamWrapper {
-      max-width: 1050px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-   }
+  .teamWrapper {
+    max-width: 1050px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 
-   h3 {
+  h3 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .teamDescription {
+    display: flex;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .teamBlock {
+    max-width: 868px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .teamMembers {
+    width: 154px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .membersPhoto {
+    width: 154px;
+    height: 154px;
+    background-color: var(--theme-color1);
+    margin-bottom: 18px;
+  }
+
+  .membersName {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}
+
+.jobsSection,
+.sponsorshipMirror {
+  padding: 40px 0 48px 0;
+  background-color: var(--white-background);
+
+  .jobsWrapper {
+    padding: 42px 15px 42px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+  }
+
+  .jobsCrediantials {
+    max-width: 580px;
+
+    h3 {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 44px;
+      margin-bottom: 34px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      margin-bottom: 34px;
+    }
+
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration: none;
+      color: var(--main-text-color);
+    }
+  }
+}
+
+.valuesSection {
+  padding: 168px 0 168px 0;
+
+  .valuesWrapper {
+    display: flex;
+    padding-left: 206px;
+    gap: 64px;
+  }
+
+  .valuesBlock {
+    max-width: 320px;
+
+    h3 {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+  }
+}
+
+.sponsorshipMirror {
+  .img {
+    order: 1;
+  }
+}
+
+.historySection {
+  padding: 73px 0 162px 0;
+
+  .historyWrapper {
+    max-width: 1056px;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+
+    h3 {
       font-size: 35px;
       font-weight: 700;
       line-height: 44px;
       text-align: center;
       margin-bottom: 40px;
-   }
+    }
 
-   .teamDescription {
+    .historyDescription {
       display: flex;
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 20px;
       text-align: center;
       margin-bottom: 40px;
-   }
+    }
+  }
 
-   .teamBlock {
-      max-width: 868px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-   }
+  .historyYearList {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
 
-   .teamMembers {
-      width: 154px;
-      display: flex;
-      flex-direction: column;
-   }
+  .historyYearItem {
+    width: calc((100% - 120px) / 3);
 
-   .membersPhoto {
-      width: 154px;
-      height: 154px;
-      background-color: var(--theme-color1);
-      margin-bottom: 18px;
-   }
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
 
-   .membersName {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 22px;
-      margin-bottom: 16px;
-   }
-}
-
-.jobsSection,
-.sponsorshipMirror {
-   padding: 40px 0 48px 0;
-   background-color: var(--white-background);
-
-   .jobsWrapper {
-      padding: 42px 15px 42px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 120px;
-   }
-
-   .jobsCrediantials {
-      max-width: 580px;
-
-      h3 {
-         font-size: 35px;
-         font-weight: 700;
-         line-height: 44px;
-         margin-bottom: 34px;
-      }
-
-      p {
-         font-size: 16px;
-         font-weight: 300;
-         line-height: 20px;
-         margin-bottom: 34px;
-      }
-
-      a {
-         font-weight: 700;
-         font-size: 16px;
-         line-height: 20px;
-         text-decoration: none;
-         color: var(--main-text-color);
-      }
-   }
-}
-
-.valuesSection {
-   padding: 168px 0 168px 0;
-
-   .valuesWrapper {
-      display: flex;
-      padding-left: 206px;
-      gap: 64px;
-   }
-
-   .valuesBlock {
-      max-width: 320px;
-
-      h3 {
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 32px;
-         margin-bottom: 20px;
-      }
-
-      p {
-         font-size: 16px;
-         font-weight: 300;
-         line-height: 20px;
-      }
-   }
-}
-
-.sponsorshipMirror {
-   .img {
-      order: 1;
-   }
-}
-
-.historySection {
-   padding: 73px 0 162px 0;
-
-   .historyWrapper {
-      max-width: 1056px;
-      padding: 0 20px 0 20px;
-      margin: 0 auto;
-
-      h3 {
-         font-size: 35px;
-         font-weight: 700;
-         line-height: 44px;
-         text-align: center;
-         margin-bottom: 40px;
-      }
-
-      .historyDescription {
-         display: flex;
-         font-size: 16px;
-         font-weight: 400;
-         line-height: 20px;
-         text-align: center;
-         margin-bottom: 40px;
-      }
-   }
-
-   .historyYearList {
-      display: flex;
-      gap: 60px;
-      flex-wrap: wrap;
-   }
-
-   .historyYearItem {
-      width: calc((100% - 120px) / 3);
-
-
-      h4 {
-         font-size: 24px;
-         font-weight: 700;
-         line-height: 32px;
-         margin-bottom: 20px;
-      }
-
-      p {
-         font-size: 16px;
-         font-weight: 300;
-         line-height: 20px;
-         text-align: left;
-      }
-   }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: left;
+    }
+  }
 }
 
 // ----- Media queries -----
 @media (min-width: 1250px) {
-   .aboutUsWrapper {
-      .heroImage {
-         display: none;
-      }
-   }
+  .aboutUsWrapper {
+    .heroImage {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1250px) {
-   .missionDescription {
-      min-width: 100%;
-   }
+  .missionDescription {
+    min-width: 100%;
+  }
 
-   .aboutUsSection {
-      padding: 30px 20px 10px 20px;
-      background-image: none;
-      align-items: center;
+  .aboutUsSection {
+    padding: 30px 20px 10px 20px;
+    background-image: none;
+    align-items: center;
 
-      .imgBlock {
-         display: flex;
-         justify-content: center;
-         gap: 30px;
-      }
-
-      .heroImage {
-         margin-bottom: 50px;
-
-         &.backBtn {
-            cursor: pointer;
-            margin-top: 36px;
-         }
-      }
-
-      .aboutUsHeroBlock {
-         gap: 24px;
-         margin-bottom: 30px;
-         flex-direction: column;
-      }
-
-      .title {
-         font-size: 40px;
-         font-weight: 700;
-         line-height: 29px;
-         margin-bottom: 30px;
-      }
-   }
-
-   .innerNavigationBlock {
-      display: none;
-   }
-
-   .teamBlock {
-      flex-wrap: wrap;
+    .imgBlock {
+      display: flex;
+      justify-content: center;
       gap: 30px;
-   }
+    }
 
-   .jobsSection,
-   .sponsorshipMirror {
+    .heroImage {
+      margin-bottom: 50px;
 
-      .jobsWrapper {
-         display: flex;
-         flex-direction: column;
-         gap: 50px !important;
-         text-align: center;
-         padding: 0 20px 0 20px;
-
-         p {
-            text-align: justify;
-         }
-
-         img {
-            min-width: 50%;
-         }
+      &.backBtn {
+        cursor: pointer;
+        margin-top: 36px;
       }
-   }
+    }
 
-   .valuesSection {
-      padding: 30px 20px 30px 20px;
-
-      .valuesWrapper {
-         flex-wrap: wrap;
-         justify-content: center;
-         text-align: center;
-         padding-left: 20px !important;
-         padding: 0 20px 0 20px;
-
-         .valuesBlock {
-            min-width: 100%;
-         }
-      }
-   }
-
-   .historyYearList {
+    .aboutUsHeroBlock {
+      gap: 24px;
+      margin-bottom: 30px;
       flex-direction: column;
-      gap: 30px !important;
+    }
 
-      .historyYearItem {
-         width: 100%;
+    .title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 29px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .innerNavigationBlock {
+    display: none;
+  }
+
+  .teamBlock {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .jobsSection,
+  .sponsorshipMirror {
+    .jobsWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 50px !important;
+      text-align: center;
+      padding: 0 20px 0 20px;
+
+      p {
+        text-align: justify;
       }
-   }
 
-   .historyDescription {
-      text-align: inherit;
-   }
+      img {
+        min-width: 50%;
+      }
+    }
+  }
+
+  .valuesSection {
+    padding: 30px 20px 30px 20px;
+
+    .valuesWrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      padding-left: 20px !important;
+      padding: 0 20px 0 20px;
+
+      .valuesBlock {
+        min-width: 100%;
+      }
+    }
+  }
+
+  .historyYearList {
+    flex-direction: column;
+    gap: 30px !important;
+
+    .historyYearItem {
+      width: 100%;
+    }
+  }
+
+  .historyDescription {
+    text-align: inherit;
+  }
 }

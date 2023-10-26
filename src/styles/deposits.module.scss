@@ -1,680 +1,672 @@
 .depositPageWrapper {
-   padding: 66px 0 46px 0;
-   background-color: var(--light-creame-background);
-   background-image: url("/assets/images/deposit_heroBlock.svg");
-   background-repeat: no-repeat;
-   background-position: bottom right;
-   background-size: cover;
+  padding: 66px 0 46px 0;
+  background-color: var(--light-creame-background);
+  background-image: url("/assets/images/deposit_heroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 
-   .depositPageList {
-      padding-left: 312px;
+  .depositPageList {
+    padding-left: 312px;
 
+    .depositHeroItem {
+      max-width: 600px;
+    }
 
-      .depositHeroItem {
-         max-width: 600px;
-      }
-
-      .title {
-         font-size: 30px;
-         font-weight: 700;
-         line-height: 38px;
-         margin-bottom: 35px;
-      }
-   }
-
-   .description {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
-      color: #000000;
+    .title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38px;
       margin-bottom: 35px;
+    }
+  }
 
-      li {
-         font-size: 16px;
-         font-weight: 300;
-         line-height: 20px;
-         list-style-type: none;
-         padding-left: 26px;
-         background: url(/assets/images/check2.svg) no-repeat left center;
-         margin-bottom: 8px;
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 35px;
 
-         &:last-child {
-            margin-bottom: 0;
-         }
-      }
-
-      p {
-         margin-bottom: 30px;
-      }
-
-      .CheckText {
-         font-weight: 300;
-         font-size: 16px;
-      }
-   }
-
-   .actionButtonBlock {
-      width: 251px;
-      height: 42px;
-      background: var(--theme-color2);
-      border-radius: 33px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 24px;
-      color: var(--white-text-color);
-      text-decoration: none;
-   }
-}
-
-.innerNavigationBlock {
-   padding: 30px 0 45px 0;
-}
-
-.innerNavigationSection {
-   padding: 44px 0 34px 0;
-   position: sticky;
-   top: 100px;
-   background-color: var(--main-background);
-   z-index: 8;
-}
-
-.depositBenefitsSection {
-   padding: 100px 0 54px 0;
-
-   .depositBenefitsWrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 54px;
-   }
-
-   .depositBenefitsBlock {
-      max-width: 274px;
-
-      h2 {
-         font-size: 20px;
-         font-weight: 700;
-         line-height: 25px;
-         margin-bottom: 34px;
-      }
-
-      p {
-         font-size: 17px;
-         font-weight: 300;
-         line-height: 22px;
-      }
-   }
-}
-
-.calculatorSection {
-   padding: 50px 0 64px 0;
-
-   .calculatorWrapper {
-      max-width: 790px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 46px;
-      margin-bottom: 35px;
-   }
-
-   h2 {
-      text-align: center;
-      margin-bottom: 35px;
-   }
-
-   .calculatorBlock {
-      width: 416px;
-      border-right: solid 1px var(--theme-color4);
-      padding-right: 49px;
-      padding-top: 42px;
-   }
-
-   .resultBlockItem {
-      width: 270px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-
-      .left {
-         font-size-adjust: 16px;
-         font-weight: 300;
-         line-height: 20px;
-         color: var(--black-text-color);
-         text-align: center;
-         padding-right: 20px;
-      }
-
-      .right {
-         font-size: 30px;
-         font-weight: 700;
-         line-height: 38px;
-         color: var(--black-text-color);
-         text-align: center;
-      }
-   }
-
-   .calculatorLine {
-      display: flex;
-      gap: 40px;
-      margin-bottom: 15px;
-   }
-
-   .label {
-      width: 132px;
-      display: flex;
-      align-items: center;
-      justify-content: right;
-      text-align: right;
+    li {
       font-size: 16px;
       font-weight: 300;
       line-height: 20px;
-      color: var(--theme-color4);
-   }
+      list-style-type: none;
+      padding-left: 26px;
+      background: url(/assets/images/check2.svg) no-repeat left center;
+      margin-bottom: 8px;
 
-   input {
-      width: 198px;
-      height: 30px;
-      background: url(/assets/images/euro.svg) no-repeat right center;
-      border: none;
-      border-bottom: 1px solid #939096;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .CheckText {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+
+  .actionButtonBlock {
+    width: 251px;
+    height: 42px;
+    background: var(--theme-color2);
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-text-color);
+    text-decoration: none;
+  }
+}
+
+.innerNavigationBlock {
+  padding: 30px 0 45px 0;
+}
+
+.innerNavigationSection {
+  padding: 44px 0 34px 0;
+  position: sticky;
+  top: 100px;
+  background-color: var(--main-background);
+  z-index: 8;
+}
+
+.depositBenefitsSection {
+  padding: 100px 0 54px 0;
+
+  .depositBenefitsWrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 54px;
+  }
+
+  .depositBenefitsBlock {
+    max-width: 274px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 25px;
+      margin-bottom: 34px;
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+  }
+}
+
+.calculatorSection {
+  padding: 50px 0 64px 0;
+
+  .calculatorWrapper {
+    max-width: 790px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 46px;
+    margin-bottom: 35px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .calculatorBlock {
+    width: 416px;
+    border-right: solid 1px var(--theme-color4);
+    padding-right: 49px;
+    padding-top: 42px;
+  }
+
+  .resultBlockItem {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .left {
+      font-size-adjust: 16px;
+      font-weight: 300;
+      line-height: 20px;
       color: var(--black-text-color);
+      text-align: center;
+      padding-right: 20px;
+    }
+
+    .right {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 38px;
+      color: var(--black-text-color);
+      text-align: center;
+    }
+  }
+
+  .calculatorLine {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+  }
+
+  .label {
+    width: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--theme-color4);
+  }
+
+  input {
+    width: 198px;
+    height: 30px;
+    background: url(/assets/images/euro.svg) no-repeat right center;
+    border: none;
+    border-bottom: 1px solid #939096;
+    color: var(--black-text-color);
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--black-text-color);
+    }
+  }
+
+  .select {
+    width: 198px;
+    background: url(/assets/images/men.svg) no-repeat right center;
+
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      height: 1px;
+      background-color: var(--theme-color4);
+      margin-top: 6px;
+    }
+
+    select {
+      border: none;
+      background: transparent;
+      cursor: pointer;
       padding-right: 20px;
       font-size: 16px;
       font-weight: 300;
       line-height: 20px;
 
       &:focus {
-         outline: none;
+        outline: none;
       }
+    }
+  }
 
-      &::placeholder {
-         color: var(--black-text-color);
-      }
-   }
+  h3 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
 
-   .select {
-      width: 198px;
-      background: url(/assets/images/men.svg) no-repeat right center;
+  .resultBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
 
-      &::after {
-         content: "";
-         display: block;
-         position: relative;
-         height: 1px;
-         background-color: var(--theme-color4);
-         margin-top: 6px;
-      }
+  .resultBlockTitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
 
-      select {
-         border: none;
-         background: transparent;
-         cursor: pointer;
-         padding-right: 20px;
-         font-size: 16px;
-         font-weight: 300;
-         line-height: 20px;
+  .borderCorner {
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    border-top: solid 1px var(--theme-color4);
+    border-right: solid 1px var(--theme-color4);
+    background-color: var(--main-background);
+    transform: rotate(45deg) translate(319px, -258px);
+  }
 
-         &:focus {
-            outline: none;
-         }
-      }
-   }
-
-   h3 {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 20px;
-      margin-bottom: 8px;
-   }
-
-   .resultBlock {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-top: 10px;
-   }
-
-   .resultBlockTitle {
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 50px;
-      margin-bottom: 30px;
-   }
-
-   .borderCorner {
-      width: 15px;
-      height: 15px;
-      z-index: 1;
-      border-top: solid 1px var(--theme-color4);
-      border-right: solid 1px var(--theme-color4);
-      background-color: var(--main-background);
-      transform: rotate(45deg) translate(319px, -258px);
-   }
-
-   .depositSectionButton {
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
-      display: flex;
-      justify-content: center;
-   }
+  .depositSectionButton {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .ratesTableSection {
-   padding: 64px 0 58px 0;
+  padding: 64px 0 58px 0;
 
-   .ratesTableWrapper {
-      max-width: 870px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 22px;
-   }
+  .ratesTableWrapper {
+    max-width: 870px;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+  }
 
-   h3 {
-      text-align: center;
-      font-size: 25px;
-      font-weight: 700;
-      line-height: 32px;
-      color: var(--main-text-color);
-      margin-bottom: 56px;
-   }
+  h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--main-text-color);
+    margin-bottom: 56px;
+  }
 
-   p {
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 22px;
-      margin-bottom: 56px;
-      text-align: center;
-   }
+  p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 56px;
+    text-align: center;
+  }
 
-   .tableHeading {
-      display: flex;
-      border-top: solid 1px var(--table-border-color);
-      padding: 15px 0 15px 0;
-   }
+  .tableHeading {
+    display: flex;
+    border-top: solid 1px var(--table-border-color);
+    padding: 15px 0 15px 0;
+  }
 
-   .tableHeadingCell {
-      font-weight: 600;
-   }
+  .tableHeadingCell {
+    font-weight: 600;
+  }
 
-   .tableDataCell {
-      font-weight: 300;
-   }
+  .tableDataCell {
+    font-weight: 300;
+  }
 
-   .column1 {
-      width: 227px;
-   }
+  .column1 {
+    width: 227px;
+  }
 
-   .column2 {
-      width: 335px;
-   }
+  .column2 {
+    width: 335px;
+  }
 
-   .column3 {
-      width: 227px;
-   }
+  .column3 {
+    width: 227px;
+  }
 
-   .tableDataLine {
-      display: flex;
-      border-top: solid 1px var(--table-border-color);
-      padding: 15px 0 15px 0;
+  .tableDataLine {
+    display: flex;
+    border-top: solid 1px var(--table-border-color);
+    padding: 15px 0 15px 0;
 
-      &:last-child {
-         border-bottom: solid 1px var(--table-border-color);
-      }
-   }
+    &:last-child {
+      border-bottom: solid 1px var(--table-border-color);
+    }
+  }
 }
 
 .stepsSection {
-   padding: 66px 0 56px 0;
+  padding: 66px 0 56px 0;
 
-   .stepsWrapper {
-      max-width: 765px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
+  .stepsWrapper {
+    max-width: 765px;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
 
-      .stepsHeader {
-         font-family: Lexend;
-         font-size: 25px;
-         font-weight: 700;
-         text-align: center;
-         margin-bottom: 54px;
+    .stepsHeader {
+      font-family: Lexend;
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 54px;
+    }
+
+    .stepsItem {
+      display: flex;
+      gap: 60px;
+      margin-bottom: 49px;
+
+      li {
+        list-style-position: outside;
+        margin-left: 20px;
       }
 
-      .stepsItem {
-         display: flex;
-         gap: 60px;
-         margin-bottom: 49px;
-
-         li {
-            list-style-position: outside;
-            margin-left: 20px;
-         }
-
-         .stepsNumber {
-            background-color: var(--theme-color1);
-            color: var(--white-text-color);
-            font-size: 23px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 51px;
-            height: 51px;
-         }
-
-         .stepsText {
-            display: flex;
-            flex-direction: column;
-
-            .stepsTitle {
-               font-weight: 700;
-               font-size: 20px;
-               line-height: 25px;
-               margin-bottom: 20px;
-            }
-
-            p {
-               font-size: 17px;
-               font-weight: 300;
-               line-height: 22px;
-            }
-
-            .stepsDescription {
-               font-size: 17px;
-               font-weight: 300;
-               line-height: 21px;
-               max-width: 624px;
-            }
-         }
+      .stepsNumber {
+        background-color: var(--theme-color1);
+        color: var(--white-text-color);
+        font-size: 23px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 51px;
+        height: 51px;
       }
-   }
+
+      .stepsText {
+        display: flex;
+        flex-direction: column;
+
+        .stepsTitle {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 25px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 17px;
+          font-weight: 300;
+          line-height: 22px;
+        }
+
+        .stepsDescription {
+          font-size: 17px;
+          font-weight: 300;
+          line-height: 21px;
+          max-width: 624px;
+        }
+      }
+    }
+  }
 }
 
 .clientSuportSection {
-   padding: 56px 0 22px 0;
+  padding: 56px 0 22px 0;
 
-   .clientSuportWrapper {
-      max-width: 890px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
+  .clientSuportWrapper {
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
 
-      .clientSuportHeader {
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 31px;
-         text-align: center;
-         margin-bottom: 60px;
-      }
+    .clientSuportHeader {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 31px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-      .clientSuportDescription {
-         font-size: 17px;
-         font-weight: 300;
-         line-height: 21px;
-         text-align: center;
-      }
-   }
+    .clientSuportDescription {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 21px;
+      text-align: center;
+    }
+  }
 }
 
 .faqSection {
-   padding: 58px 0 108px 0;
+  padding: 58px 0 108px 0;
 
-   .faqWrapper {
-      max-width: 1060px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
+  .faqWrapper {
+    max-width: 1060px;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
 
-      .faqHeader {
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 31px;
-         margin-bottom: 56px;
-         text-align: center;
-      }
+    .faqHeader {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 31px;
+      margin-bottom: 56px;
+      text-align: center;
+    }
 
-      .faqList {
-         padding: 71px 105px 70px 105px;
-         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-         background-color: #F9F8F7;
-      }
-   }
+    .faqList {
+      padding: 71px 105px 70px 105px;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+      background-color: #f9f8f7;
+    }
+  }
 }
 
 // ----- Media queries -----
 @media (min-width: 768px) {
-   .depositHeroItem {
-      .heroImage {
-         display: none;
-      }
-   }
+  .depositHeroItem {
+    .heroImage {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1320px) {
-   .depositPageWrapper {
-      background-position: bottom right;
+  .depositPageWrapper {
+    background-position: bottom right;
 
-      .depositPageList {
-         padding-left: 280px;
-
-      }
-   }
+    .depositPageList {
+      padding-left: 280px;
+    }
+  }
 }
 
 @media (max-width: 1250px) {
-   .depositPageWrapper {
-      background-size: 120%;
+  .depositPageWrapper {
+    background-size: 120%;
 
-      .depositPageList {
-         padding-left: 50px;
-
-      }
-   }
+    .depositPageList {
+      padding-left: 50px;
+    }
+  }
 }
 
-@media(max-width: 1100px) {
-   .innerNavigationSection {
-      display: none;
-   }
+@media (max-width: 1100px) {
+  .innerNavigationSection {
+    display: none;
+  }
 }
 
 @media (max-width: 974px) {
-   .depositPageWrapper {
-      background-position: bottom right;
-      background-size: 90%;
+  .depositPageWrapper {
+    background-position: bottom right;
+    background-size: 90%;
 
-      .depositPageList {
-         padding-left: 40px;
-      }
-   }
+    .depositPageList {
+      padding-left: 40px;
+    }
+  }
 }
 
 @media (max-width: 780px) {
-   .calculatorSection {
-      padding: 30px 0 30px 0;
+  .calculatorSection {
+    padding: 30px 0 30px 0;
 
-      .calculatorWrapper {
-         margin-bottom: 10px;
+    .calculatorWrapper {
+      margin-bottom: 10px;
 
-         .calculatorBlock {
-            width: 416px;
-            border-right: none;
-            border-bottom: solid 1px var(--theme-color4);
-            padding-right: 49px;
-            padding-top: 42px;
-            padding-bottom: 30px;
-         }
-
-         .resultBlockItem {
-            .right {
-               font-size: 20px;
-            }
-         }
-
-         .borderCorner {
-            width: 15px;
-            height: 15px;
-            z-index: 1;
-            border-top: solid 1px var(--theme-color4);
-            border-right: solid 1px var(--theme-color4);
-            background-color: var(--main-background);
-            transform: rotate(133deg) translate(-40px, -244px);
-         }
+      .calculatorBlock {
+        width: 416px;
+        border-right: none;
+        border-bottom: solid 1px var(--theme-color4);
+        padding-right: 49px;
+        padding-top: 42px;
+        padding-bottom: 30px;
       }
-   }
 
-   .depositsStepsSection {
-      padding: 36px 0 10px 0;
-
-      .depositsStepsWrapper {
-         padding: 0 25px 0 15px;
-
-         .stepsItem {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-
-            .stepsNumber {
-               width: 70px;
-               height: 70px;
-               flex: none;
-            }
-
-            .stepsText {
-               text-align: center;
-
-               .stepsDescription {
-                  text-align: justify;
-                  font-size: 14px;
-               }
-
-               p {
-                  text-align: left;
-               }
-            }
-         }
+      .resultBlockItem {
+        .right {
+          font-size: 20px;
+        }
       }
-   }
 
-   .clientSuportSection {
-      padding: 20px 0 15px 0;
-   }
-
-   .faqSection {
-      padding: 38px 0 50px 0;
-
-      .faqWrapper {
-
-         .faqList {
-            padding: 30px 50px 30px 50px;
-         }
+      .borderCorner {
+        width: 15px;
+        height: 15px;
+        z-index: 1;
+        border-top: solid 1px var(--theme-color4);
+        border-right: solid 1px var(--theme-color4);
+        background-color: var(--main-background);
+        transform: rotate(133deg) translate(-40px, -244px);
       }
-   }
+    }
+  }
+
+  .depositsStepsSection {
+    padding: 36px 0 10px 0;
+
+    .depositsStepsWrapper {
+      padding: 0 25px 0 15px;
+
+      .stepsItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        .stepsNumber {
+          width: 70px;
+          height: 70px;
+          flex: none;
+        }
+
+        .stepsText {
+          text-align: center;
+
+          .stepsDescription {
+            text-align: justify;
+            font-size: 14px;
+          }
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .clientSuportSection {
+    padding: 20px 0 15px 0;
+  }
+
+  .faqSection {
+    padding: 38px 0 50px 0;
+
+    .faqWrapper {
+      .faqList {
+        padding: 30px 50px 30px 50px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
-   .depositPageWrapper {
-      padding: 36px 36px 36px 0;
-      background-image: none;
+  .depositPageWrapper {
+    padding: 36px 36px 36px 0;
+    background-image: none;
 
-      .depositHeroItem {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
+    .depositHeroItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-         .imgBlock {
-            display: flex;
-            gap: 30px;
-         }
-
-         .heroImage {
-            margin-bottom: 30px;
-
-            &.backBtn {
-               cursor: pointer;
-               margin-top: 36px;
-            }
-         }
-
-         .title {
-            font-size: 23px;
-            font-weight: 700;
-            line-height: 29px;
-            text-align: center;
-         }
-
-         .description {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-
-            li {
-               font-size: 14px;
-               font-weight: 300;
-               line-height: 18px;
-            }
-         }
+      .imgBlock {
+        display: flex;
+        gap: 30px;
       }
 
-      .depositPageList {
-         padding-left: 40px;
+      .heroImage {
+        margin-bottom: 30px;
 
+        &.backBtn {
+          cursor: pointer;
+          margin-top: 36px;
+        }
       }
-   }
 
-   .depositBenefitsSection {
-      padding: 50px 0 24px 0;
-
-      .depositBenefitsBlock {
-         h2 {
-            text-align: left;
-         }
-
-         p {
-            text-align: justify;
-         }
+      .title {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
       }
-   }
 
-   .ratesTableSection {
-      padding: 30px 0 30px 0;
+      .description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
 
-      .ratesTableWrapper {
-         scale: 87%;
+        li {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 18px;
+        }
       }
-   }
+    }
 
-   .calculatorSection {
+    .depositPageList {
+      padding-left: 40px;
+    }
+  }
+
+  .depositBenefitsSection {
+    padding: 50px 0 24px 0;
+
+    .depositBenefitsBlock {
       h2 {
-         margin-bottom: 10px;
+        text-align: left;
       }
-   }
+
+      p {
+        text-align: justify;
+      }
+    }
+  }
+
+  .ratesTableSection {
+    padding: 30px 0 30px 0;
+
+    .ratesTableWrapper {
+      scale: 87%;
+    }
+  }
+
+  .calculatorSection {
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 @media (max-width: 686px) {
+  .ratesTableSection {
+    .column2 {
+      width: 227px;
+    }
+  }
 
-   .ratesTableSection {
-
-      .column2 {
-         width: 227px;
-      }
-   }
-
-   .depositBenefitsSection {
-
-      .depositBenefitsBlock {
-         max-width: 490px;
-      }
-   }
+  .depositBenefitsSection {
+    .depositBenefitsBlock {
+      max-width: 490px;
+    }
+  }
 }
