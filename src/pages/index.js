@@ -10,10 +10,16 @@ import ArticleImg3 from "@../../../public/assets/images/article3.png";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import i18n from "i18next";
+
 
 export default function Home() {
   const router = useRouter();
   const t = router.locale === "lt" ? lt : en;
+  const {t: tTest} = useTranslation('common')
+  
   return (
     <>
       <IndexLayout>
