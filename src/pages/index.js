@@ -10,9 +10,9 @@ import ArticleImg3 from "@../../../public/assets/images/article3.png";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
 import { useRouter } from "next/router";
-import { useTranslation } from "react-i18next";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import i18n from "i18next";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 
 
 export default function Home() {
@@ -24,6 +24,7 @@ export default function Home() {
     <>
       <IndexLayout>
         <main>
+          {tTest('kuzia', {how: 'THE KING'})}
           <section className={styles.heroblock}>
             <SimpleSlider />
           </section>
@@ -112,4 +113,17 @@ export default function Home() {
       </IndexLayout>
     </>
   );
+}
+
+
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+      // Will be passed to the page component as props
+    },
+  }
 }
