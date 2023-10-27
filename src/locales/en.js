@@ -1022,6 +1022,7 @@ export default {
   news: {
     title: "News",
     readMore: "Read More",
+    backToNews: "Back to news"
   },
   business: {
     termDeposit: {

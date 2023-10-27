@@ -1,156 +1,154 @@
 .shareHoldersSection {
-   padding: 100px 0 58px 0;
+  padding: 100px 0 58px 0;
 
-   .shareHoldersWrapper {
-      max-width: 890px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
+  .shareHoldersWrapper {
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 0 20px;
+    h2 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 62px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-      h2 {
-         font-size: 50px;
-         font-weight: 700;
-         line-height: 62px;
-         text-align: center;
-         margin-bottom: 60px;
-      }
-
-      p {
-         font-size: 16px;
-         font-weight: 400;
-         line-height: 20px;
-         text-align: center;
-         margin-bottom: 60px;
-      }
-
-      h3 {
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 32px;
-         text-align: center;
-         margin-bottom: 30px;
-      }
-   }
-
-   ul.tabsList {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      list-style: none;
-      border-bottom: solid 1px var(--table-border-color);
-      padding-bottom: 30px;
-      margin-bottom: 90px;
-
-      li {
-         cursor: pointer;
-      }
-   }
-
-   .linkStyle {
+    p {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 20px;
-      color: var(--light-color);
-      text-decoration: none;
-   }
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-   .agendaBlock {
-      margin-bottom: 50px;
-
-      h4 {
-         font-size: 20px;
-         font-weight: 700;
-         line-height: 25px;
-         margin-bottom: 20px;
-      }
-      ul {
-         list-style-position: inside;
-      }
-
-      li {
-         font-size: 17px;
-         font-weight: 300;
-         line-height: 26px;
-         list-style-type: decimal;
-         background-size: contain;
-      }
-   }
-   .pdfBlock {
-      background-color: var(--white-background);
-      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-      padding: 30px;
-      
-      li {
-         background: url(/assets/images/Pdficon.svg) no-repeat left center; 
-         list-style: none;
-         padding-left: 30px;
-         margin-bottom: 18px;
-         background-size: 35px 20px;
-       }
-   }
-}
-
-.contactsSection {
-   padding: 58px 0 120px 0;
-
-   .contactsWrapper {
-      max-width: 785px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
-   }
-
-   h3 {
+    h3 {
       font-size: 25px;
       font-weight: 700;
       line-height: 32px;
       text-align: center;
-      border-bottom: solid 1px var(--table-border-color);
-      padding-bottom: 40px;
-      margin-bottom: 40px;
-   }
+      margin-bottom: 30px;
+    }
+  }
 
-   .contactsBlock {
-      display: flex;
-      justify-content: center;
-      gap: 64px;
-   }
+  ul.tabsList {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    border-bottom: solid 1px var(--table-border-color);
+    padding-bottom: 30px;
+    margin-bottom: 90px;
 
-   .img {
-      width: 127px;
-      height: 135px;
-      background-color: var(--theme-color1);
-   }
+    li {
+      cursor: pointer;
+    }
+  }
 
-   .contactsInfo {
-      width: 265px;
-      display: flex;
-      flex-direction: column;
-   }
-   h4 {
+  .linkStyle {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--light-color);
+    text-decoration: none;
+  }
 
-      font-size: 18px;
+  .agendaBlock {
+    margin-bottom: 50px;
+
+    h4 {
+      font-size: 20px;
       font-weight: 700;
-      line-height: 22px;
-      margin-bottom: 16px;
-   }
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-position: inside;
+    }
 
-   p {
-      font-size: 16px;
+    li {
+      font-size: 17px;
       font-weight: 300;
-      line-height: 24px;
-   }
+      line-height: 26px;
+      list-style-type: decimal;
+      background-size: contain;
+    }
+  }
+  .pdfBlock {
+    background-color: var(--white-background);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+
+    li {
+      background: url(/assets/images/Pdficon.svg) no-repeat left center;
+      list-style: none;
+      padding-left: 30px;
+      margin-bottom: 18px;
+      background-size: 35px 20px;
+    }
+  }
+}
+
+.contactsSection {
+  padding: 58px 0 120px 0;
+
+  .contactsWrapper {
+    max-width: 785px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: solid 1px var(--table-border-color);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .contactsBlock {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+  }
+
+  .img {
+    width: 127px;
+    height: 135px;
+    background-color: var(--theme-color1);
+  }
+
+  .contactsInfo {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
 }
 // ----- Media queries -----
 @media (max-width: 765px) {
-   .agendaBlock {
-      h4 {
-         text-align: center;
-      }
-   }
-   .contactsBlock {
-      max-width: 300px;
-      margin: 0 auto;
-      align-items: center;
-      flex-wrap: wrap;
+  .agendaBlock {
+    h4 {
       text-align: center;
-   }
+    }
+  }
+  .contactsBlock {
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }

@@ -1,124 +1,121 @@
 .pageWrapper {
-   padding: 66px 0 46px 0;
-   background-color: var(--theme-color5);
-   background-image: url("/assets/images/operBankingPage_HeroBlock.svg");
-   background-repeat: no-repeat;
-   background-position: bottom right;
+  padding: 66px 0 46px 0;
+  background-color: var(--theme-color5);
+  background-image: url("/assets/images/operBankingPage_HeroBlock.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
-   .pageList {
-      padding-left: 300px;
+  .pageList {
+    padding-left: 300px;
 
-      .heroItem {
-         max-width: 474px;
-      }
+    .heroItem {
+      max-width: 474px;
+    }
 
-      .title {
-         font-size: 30px;
-         margin-bottom: 35px;
-      }
-   }
-
-   .description {
-      font-weight: 400;
-      font-size: 18px;
-      color: #000000;
+    .title {
+      font-size: 30px;
       margin-bottom: 35px;
+    }
+  }
 
-      li {
-         list-style-type: none;
-         padding-left: 26px;
-         background: url(/assets/images/check2.svg) no-repeat left center;
-         margin-bottom: 8px;
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 35px;
 
-         &:last-child {
-            margin-bottom: 0;
-         }
+    li {
+      list-style-type: none;
+      padding-left: 26px;
+      background: url(/assets/images/check2.svg) no-repeat left center;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
+    }
 
-      p {
-         margin-bottom: 30px;
-      }
+    p {
+      margin-bottom: 30px;
+    }
 
-      .CheckText {
-         font-weight: 300;
-         font-size: 16px;
-      }
-
-   }
-
-   .actionButtonBlock {
-      width: 251px;
-      height: 42px;
-      background: var(--theme-color2);
-      border-radius: 33px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: 600;
+    .CheckText {
+      font-weight: 300;
       font-size: 16px;
-      line-height: 24px;
-      color: var(--white-text-color);
-      text-decoration: none;
-   }
+    }
+  }
+
+  .actionButtonBlock {
+    width: 251px;
+    height: 42px;
+    background: var(--theme-color2);
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-text-color);
+    text-decoration: none;
+  }
 }
 
 .articlesSection {
-   padding: 86px 0 55px 0;
+  padding: 86px 0 55px 0;
 
-   .articlesWrapper {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 0 15px 0 15px;
-      display: flex;
-      gap: 60px;
-   }
+  .articlesWrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 60px;
+  }
 
-   .articlesBlock {
-      width: 295px;
+  .articlesBlock {
+    width: 295px;
 
-      h4 {
+    h4 {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 34px;
+    }
 
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 32px;
-         margin-bottom: 34px;
-      }
-
-      p {
-         font-size: 17px;
-         font-weight: 300;
-         line-height: 24px;
-      }
-   }
-
+    p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+  }
 }
 
 .contactsSection {
-   padding: 55px 0 130px 0;
+  padding: 55px 0 130px 0;
 
-   .contactsWrapper {
-      max-width: 890px;
-      padding: 0 15px 0 15px;
-      margin: 0 auto;
+  .contactsWrapper {
+    max-width: 890px;
+    padding: 0 20px;
+    margin: 0 auto;
 
-      h4 {
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 32px;
-         text-align: center;
-         margin-bottom: 40px;
+    h4 {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 22px;
+      text-align: center;
+
+      a {
+        font-weight: 700;
+        color: var(--main-text-color);
       }
-
-      p {
-         font-size: 17px;
-         font-weight: 300;
-         line-height: 22px;
-         text-align: center;
-
-         a {
-            font-weight: 700;
-            color: var(--main-text-color);
-         }
-      }
-   }
+    }
+  }
 }

@@ -1,266 +1,265 @@
 .container {
-   max-width: 1130px;
-   margin: 0 auto;
+  max-width: 1130px;
+  margin: 0 auto;
 }
 
 .esgHeroPage {
-   padding: 66px 0 78px 0;
-   background-color: var(--theme-color5);
-   background-image: url("/assets/images/esgPage_HeroBlock.svg");
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: bottom right;
+  padding: 66px 0 78px 0;
+  background-color: var(--theme-color5);
+  background-image: url("/assets/images/esgPage_HeroBlock.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 
-   .esgPageList {
-      padding-left: 250px;
-   }
+  .esgPageList {
+    padding-left: 250px;
+  }
 
-   .esgHeroItem {
-      max-width: 474px;
-   }
+  .esgHeroItem {
+    max-width: 474px;
+  }
 
-   .title {
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 38px;
-      margin-bottom: 35px;
-   }
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 35px;
+  }
 
-   .description {
-      font-weight: 400;
-      font-size: 18px;
-      color: #000000;
-      white-space: pre-line;
-   }
+  .description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    white-space: pre-line;
+  }
 }
 
 .innerNavigationSection {
-   padding: 44px 0 24px 0;
-   position: sticky;
-   top: 100px;
-   background-color: var(--main-background);
-   z-index: 8;
+  padding: 44px 0 24px 0;
+  position: sticky;
+  top: 100px;
+  background-color: var(--main-background);
+  z-index: 8;
 }
 
 .enviromentalProtectionSection {
-   padding: 100px 0 54px 0;
+  padding: 100px 0 54px 0;
 
-   .enviromentalProtectionBlock {
-      display: flex;
-      justify-content: center;
-      gap: 120px;
-      margin-bottom: 48px;
-      padding-top: 40px;
+  .enviromentalProtectionBlock {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 48px;
+    padding-top: 40px;
 
-      &:last-child {
-         margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .enviromentalProtectionArticle {
+      max-width: 580px;
+      white-space: pre-line;
+
+      h3 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 62px;
+        margin-bottom: 34px;
       }
 
-      .enviromentalProtectionArticle {
-         max-width: 580px;
-         white-space: pre-line;
-
-         h3 {
-            font-size: 50px;
-            font-weight: 700;
-            line-height: 62px;
-            margin-bottom: 34px;
-         }
-
-         p {
-            font-size: 19px;
-            font-weight: 300;
-            line-height: 28px;
-            margin-bottom: 54px;
-         }
+      p {
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 28px;
+        margin-bottom: 54px;
       }
-   }
+    }
+  }
 
-   .enviromentalProtectionImg {
-      min-width: 429px;
-      height: 429px;
-   }
+  .enviromentalProtectionImg {
+    min-width: 429px;
+    height: 429px;
+  }
 
-   .imgMargin {
-      margin-top: 25px;
-   }
+  .imgMargin {
+    margin-top: 25px;
+  }
 }
 
 .annualReportsSection {
-   padding: 64px 0 70px 0;
+  padding: 64px 0 70px 0;
 
-   .annualReportsWrapper {
-      max-width: 770px;
-      padding: 0 15px 0 15px;
+  .annualReportsWrapper {
+    max-width: 770px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      display: flex;
+      border-bottom: 1px solid #acacac;
+      margin-bottom: 40px;
+
+      li {
+        width: 324px;
+        list-style: none;
+        padding-left: 35px;
+        margin-bottom: 17px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .linkStyle {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--light-color);
+      text-decoration: none;
+    }
+
+    .annualLintsReport {
       margin: 0 auto;
+      max-width: 380px;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+    }
 
-      h3 {
-         font-size: 25px;
-         font-weight: 700;
-         line-height: 32px;
-         text-align: center;
-         margin-bottom: 30px;
-      }
+    .reportsBlock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
 
-      ul {
-         display: flex;
-         border-bottom: 1px solid #ACACAC;
-         margin-bottom: 40px;
-
-         li {
-            width: 324px;
-            list-style: none;
-            padding-left: 35px;
-            margin-bottom: 17px;
-            cursor: pointer;
-
-            &:last-child {
-               margin-bottom: 0;
-            }
-         }
-      }
-
-      .linkStyle {
-         font-size: 16px;
-         font-weight: 400;
-         line-height: 20px;
-         color: var(--light-color);
-         text-decoration: none;
-      }
-
-      .annualLintsReport {
-         margin: 0 auto;
-         max-width: 380px;
-         height: 64px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         background: rgba(255, 255, 255, 0.6);
-         box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
-      }
-
-      .reportsBlock {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         gap: 20px;
-      }
-
-      .annualLintsReportImg {
-         width: 24px;
-         height: 32px;
-         background: url(/assets/images/Pdficon.svg);
-      }
-   }
+    .annualLintsReportImg {
+      width: 24px;
+      height: 32px;
+      background: url(/assets/images/Pdficon.svg);
+    }
+  }
 }
 
 //------ Media queries --------
 @media (min-width: 1250px) {
-   .esgHeroPage {
-
-      .heroImage {
-         display: none;
-      }
-   }
+  .esgHeroPage {
+    .heroImage {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1460px) {
-   .esgHeroPage {
-      max-width: 1200px;
-   }
+  .esgHeroPage {
+    max-width: 1200px;
+  }
 
-   .esgPageList {
-      max-width: 1200px;
-      margin: 0 auto;
-   }
+  .esgPageList {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1250px) {
-   .esgHeroPage {
-      background-image: none;
-      padding: 66px 20px 78px 20px;
+  .esgHeroPage {
+    background-image: none;
+    padding: 66px 20px 78px 20px;
 
-      .esgHeroItem {
-         max-width: 100%;
-      }
+    .esgHeroItem {
+      max-width: 100%;
+    }
 
-      .esgPageList {
-         padding-left: 0;
-         display: flex;
-         justify-content: center;
-      }
-
-      .imgBlock {
-         display: flex;
-         justify-content: center;
-         gap: 30px;
-      }
-
-      .heroImage {
-         margin-bottom: 30px;
-
-         &.backBtn {
-            cursor: pointer;
-            margin-top: 36px;
-         }
-      }
-   }
-
-   .title {
-      font-size: 23px;
-      font-weight: 700;
-      line-height: 29px;
-      text-align: center;
-   }
-
-   .description {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 28px;
-      text-align: initial;
-   }
-
-   .innerNavigationSection {
-      display: none;
-   }
-
-   .enviromentalProtectionSection {
-      padding: 50px 0 20px 0;
-   }
-
-   .enviromentalProtectionBlock {
-      padding: 0 20px 0 20px;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px !important;
-
-      .title {
-         text-align: center;
-         font-size: 30px !important;
-         font-weight: 700;
-         line-height: 38px;
-      }
-
-      .description {
-         font-size: 16px !important;
-         font-weight: 300;
-         line-height: 20px;
-         text-align: justify;
-      }
-
-      img {
-         max-width: 236px;
-         max-height: 208px;
-      }
-   }
-
-   .mirror {
-      order: 2;
-   }
-
-   .annualReportsLinks {
-      padding: 0 15px 0 15px;
+    .esgPageList {
+      padding-left: 0;
+      display: flex;
       justify-content: center;
-      overflow: auto;
-   }
+    }
+
+    .imgBlock {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .heroImage {
+      margin-bottom: 30px;
+
+      &.backBtn {
+        cursor: pointer;
+        margin-top: 36px;
+      }
+    }
+  }
+
+  .title {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: initial;
+  }
+
+  .innerNavigationSection {
+    display: none;
+  }
+
+  .enviromentalProtectionSection {
+    padding: 50px 0 20px 0;
+  }
+
+  .enviromentalProtectionBlock {
+    padding: 0 20px 0 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px !important;
+
+    .title {
+      text-align: center;
+      font-size: 30px !important;
+      font-weight: 700;
+      line-height: 38px;
+    }
+
+    .description {
+      font-size: 16px !important;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: justify;
+    }
+
+    img {
+      max-width: 236px;
+      max-height: 208px;
+    }
+  }
+
+  .mirror {
+    order: 2;
+  }
+
+  .annualReportsLinks {
+    padding: 0 20px;
+    justify-content: center;
+    overflow: auto;
+  }
 }
