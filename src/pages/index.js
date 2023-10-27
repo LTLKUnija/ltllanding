@@ -7,24 +7,16 @@ import Image from "next/image";
 import ArticleImg1 from "@../../../public/assets/images/article1.png";
 import ArticleImg2 from "@../../../public/assets/images/article2.png";
 import ArticleImg3 from "@../../../public/assets/images/article3.png";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
-import { useRouter } from "next/router";
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-
-
 export default function Home() {
-  const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
-  const {t: tTest} = useTranslation('common')
+  const {t} = useTranslation('common')
   
   return (
     <>
       <IndexLayout>
         <main>
-          {tTest('kuzia', {how: 'THE KING'})}
           <section className={styles.heroblock}>
             <SimpleSlider />
           </section>
@@ -42,11 +34,11 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>{t.indexPage.articleBlock.article1.title}</h2>
-                  <p>{t.indexPage.articleBlock.article1.description}</p>
+                  <h2>{t('indexPage.articleBlock.article1.title')}</h2>
+                  <p>{t('indexPage.articleBlock.article1.description')}</p>
                   <div className="actionButtonBlock">
                     <Link className="outlinedBtn" href="/">
-                      {t.indexPage.button.text}
+                      {t('indexPage.button.text')}
                     </Link>
                   </div>
                 </div>
@@ -63,11 +55,11 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>{t.indexPage.articleBlock.article3.title}</h2>
-                  <p>{t.indexPage.articleBlock.article3.description}</p>
+                  <h2>{t('indexPage.articleBlock.article3.title')}</h2>
+                  <p>{t('indexPage.articleBlock.article3.description')}</p>
                   <div className="actionButtonBlock">
                     <Link className="outlinedBtn" href="/">
-                      {t.indexPage.button.text}
+                      {t('indexPage.button.text')}
                     </Link>
                   </div>
                 </div>
@@ -84,11 +76,11 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>{t.indexPage.articleBlock.article3.title}</h2>
-                  <p>{t.indexPage.articleBlock.article3.description}</p>
+                  <h2>{t('indexPage.articleBlock.article3.title')}</h2>
+                  <p>{t('indexPage.articleBlock.article3.description')}</p>
                   <div className="actionButtonBlock">
                     <Link className="outlinedBtn" href="/">
-                      {t.indexPage.button.text}
+                      {t('indexPage.button.text')}
                     </Link>
                   </div>
                 </div>
@@ -98,12 +90,12 @@ export default function Home() {
 
           <section className={styles.bulletPoints}>
             <div className="container">
-              <h2>{t.indexPage.bulletsBlock.title}</h2>
+              <h2>{t('indexPage.bulletsBlock.title')}</h2>
               <ul>
-                <li>{t.indexPage.bulletsBlock.bullet1}</li>
-                <li>{t.indexPage.bulletsBlock.bullet2}</li>
-                <li>{t.indexPage.bulletsBlock.bullet3}</li>
-                <li>{t.indexPage.bulletsBlock.bullet4}</li>
+                <li>{t('indexPage.bulletsBlock.bullet1')}</li>
+                <li>{t('indexPage.bulletsBlock.bullet2')}</li>
+                <li>{t('indexPage.bulletsBlock.bullet3')}</li>
+                <li>{t('indexPage.bulletsBlock.bullet4')}</li>
               </ul>
             </div>
           </section>
@@ -117,15 +109,12 @@ export default function Home() {
   );
 }
 
-
-
 export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [
         'common',
       ])),
-      // Will be passed to the page component as props
     },
   }
 }
