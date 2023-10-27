@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styles from "@/styles/converter.module.scss";
+import { useRouter } from "next/router";
+import lt from "@/locales/lt";
+import en from "@/locales/en";
 
 export default function CurrencyConverter() {
+  const router = useRouter();
+  const t = router.locale === "lt" ? lt : en;
+
   const [currencyList, setCurrencyList] = useState([]);
   const [baseAmount, setBaseAmount] = useState({ name: "EUR", value: "" });
   const [secondBase, setSecondBase] = useState({
@@ -86,7 +92,7 @@ export default function CurrencyConverter() {
     <>
       <div className={styles.paymentsCurrencyConverter}>
         <div className={styles.paymentsCurrencyConverterTitle}>
-          Mokėjimai visame pasaulyje
+          {t.payments.title}
         </div>
         <div className={styles.paymentsCurrencyConeverterBlock}>
           <div className={styles.paymentsCurrency}>
@@ -149,9 +155,9 @@ export default function CurrencyConverter() {
             <div className={styles.paymentsCurrencyQuestion}>?</div>
           </div>
           <div className={styles.paymentsCurrencyDescription}>
-            Žiūrėti tarptautinių mokėjimų pavedimo įkainius.
+            {t.payments.transferRate}
           </div>
-          <div className="containedBtn">Atsidaryti sąskaitą</div>
+          <div className="containedBtn">{t.payments.openAccount}</div>
         </div>
       </div>
     </>

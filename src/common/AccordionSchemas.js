@@ -2,8 +2,12 @@ export const DepositFAQ = [
   {
     id: 1,
     header: "What is a term deposit?",
+    headerLT: "Kas yra terminuotasis indėlis?",
     body: [
       "A term deposit is a deposit of a specific amount of money, fixed on the date of signing of the deposit agreement, in LTL Kredito unija for a selected period of time, with the possibility to increase your income by the interest paid by LTL Kredito unija. The amount of interest and the frequency of payment are determined on the day the deposit ismade.",
+    ],
+    bodyLT: [
+      "Terminuotasis indėlis - tai indėlio sutarties pasirašymo dieną nustatytos konkrečios pinigų sumos indėlis LTL Kredito unijoje pasirinktam laikotarpiui su galimybe padidinti savo pajamas LTL Kredito unijos mokamomis palūkanomis. Palūkanų dydis ir mokėjimo periodiškumas nustatomas indėlio sudarymo dieną.",
     ],
     opened: false,
     hasInnerChildren: false,
@@ -11,9 +15,14 @@ export const DepositFAQ = [
   {
     id: 2,
     header: "How do I make a term deposit?",
+    headerLT: "Kaip padėti terminuotąjį indėlį?",
     body: [
       "If you already have a current account with LTL Kredito unija, you can make a term deposit by signing-in to our online banking.",
       "If you are a new client, you can sign a term deposit agreement by coming to out branch at Sporto g. 18, LT- 09238 Vilnius.",
+    ],
+    bodyLT: [
+      "Jei jau turite einamąją sąskaitą LTL Kredito unijoje, terminuotąjį indėlį galite padėti prisijungę prie mūsų internetinės bankininkystės.",
+      "Jei esate naujas klientas, terminuotojo indėlio sutartį galite pasirašyti atvykę į mūsų filialą adresu Sporto g. 18, LT- 09238 Vilnius.",
     ],
     opened: false,
     hasInnerChildren: false,
@@ -21,8 +30,12 @@ export const DepositFAQ = [
   {
     id: 3,
     header: "When can I withdraw interest accrued on a term deposit?",
+    headerLT: "Kada galiu atsiimti už terminuotąjį indėlį sukauptas palūkanas?",
     body: [
       "Interest on a term deposit is paid monthly (for the previous month), annually (for the previous year) or at the end of the term of the deposit agreement. \nYou can transfer the interest accrued to your account at another bank or come to our branch at Sporto g. 18, LT- 09238 Vilnius to collect it.",
+    ],
+    bodyLT: [
+      "Terminuotojo indėlio palūkanos mokamos kas mėnesį (už praėjusį mėnesį), kasmet (už praėjusius metus) arba indėlio sutarties termino pabaigoje. Priskaičiuotas palūkanas galite pervesti į savo sąskaitą kitame banke arba atvykti jų atsiimti į mūsų filialą Sporto g. 18, LT- 09238 Vilnius.",
     ],
     opened: false,
     hasInnerChildren: false,
@@ -30,8 +43,12 @@ export const DepositFAQ = [
   {
     id: 4,
     header: "Are term deposits insured?",
+    headerLT: "Ar terminuotieji indėliai yra apdrausti?",
     body: [
       "Deposits up to EUR 100,000.00 held with LTL Kredito unija are insured by the State Enterprise Deposit and Investment Insurance.",
+    ],
+    bodyLT: [
+      "LTL Kredito unijoje laikomi indėliai iki 100 000,00 EUR yra apdrausti VĮ Indėlių ir investicijų draudimas.",
     ],
     opened: false,
     hasInnerChildren: false,
@@ -39,12 +56,21 @@ export const DepositFAQ = [
   {
     id: 5,
     header: "What are the terms and conditions of a term deposit agreement?",
+    headerLT: "Kokios yra terminuoto indėlio sutarties sąlygos?",
     body: [
       "Interest starts being accrued the day after the deposit is placed and does not accrue for the last day of the deposit term.",
       "The deposit may be automatically renewed for the same term at the annual interest rate applicable at the time of renewal.",
       "The amount of a fixed-term deposit may not be reduced or increased by additional contributions.",
       "The deposit shall not be repayable in instalments earlier than the contractually agreed maturity.",
       "No interest shall be payable if the deposit is withdrawn before the agreed maturity.",
+      "The depositor shall notify LTL Kredito unija at least 5 working days in advance of the withdrawal of the deposit before the maturity specified in the agreement.",
+    ],
+    bodyLT: [
+      "Palūkanos pradedamos skaičiuoti kitą dieną po indėlio padėjimo ir neskaičiuojamos paskutinę indėlio termino dieną.",
+      "Indėlis gali būti automatiškai pratęstas tam pačiam terminui, taikant metinę palūkanų normą, galiojančią pratęsimo metu.",
+      "Terminuotojo indėlio suma negali būti mažinama ar didinama papildomais įnašais.",
+      "Indėlis negrąžinamas dalimis anksčiau sutartyje numatyto termino.",
+      "Palūkanos nemokamos, jei indėlis atsiimamas prieš sutartą terminą.",
       "The depositor shall notify LTL Kredito unija at least 5 working days in advance of the withdrawal of the deposit before the maturity specified in the agreement.",
     ],
     opened: false,

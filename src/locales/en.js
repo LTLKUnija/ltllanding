@@ -95,6 +95,49 @@ export default {
       text: "Learn more",
     },
   },
+  payments: {
+    title: "Payments worldwide",
+    benefitsArticle: {
+      article1: {
+        title: "Where to start",
+        description:
+          "To be able to carry out financial activities, you will first need a mano.bank account. You can open such an account quickly and easily online. You can make the payments you want to make in Online Banking or via the Application Programming Interface (API). You can find all payment service fees and related charges in the Fees section... mano.bank can offer its customers:",
+        bullet1: "Local payments throughout Lithuania",
+        bullet2:
+          "International transfers worldwide (both SEPA and SWIFT payments)",
+        bullet3: "Currency exchange operations",
+        bullet4:
+          "Convenient transaction execution and management via mano.bank Internet Banking or API",
+        bullet5: "Professional advice and individual attention",
+        bullet6:
+          "If you want to use these services safely and conveniently, open a mano.bank account now. It's easy!",
+      },
+      article2: {
+        title: "Convenient European money transfer (SEPA)",
+        description:
+          "With my.bank, you can choose the SEPA payment initiation method that suits you best: initiate one-off payments, upload a larger number of payments to a file, or submit payment instructions using the Application Programming Interface (API). If a payment order is submitted to mano.bank before 16:00 on weekdays, the funds are normally credited to the payee's account on the same working day. You can make European money transfers in euro to any financial institution in Lithuania, the United Kingdom, Switzerland, Monaco, San Marino, Andorra, Norway, Iceland, Liechtenstein or a Member State of the European Union that is a member of the SEPA payment system.",
+      },
+      article3: {
+        title: "Making payments worldwide (SWIFT)",
+        description:
+          "With a my.bank account, you can also make payments worldwide. In addition to the European money transfers listed above, euro transfers can also be made to and from your mano.bank account anywhere in the world. You can also initiate payments in other currencies such as AUD, CAD, CHF, DKK, GBP, NOK, PLN, SEK, USD. You can convert the money in euros in your account into another currency at any time, or you can convert another currency into euros and make payments in the currency you choose. The Currency Calculator will tell you the exchange rate of the currency you want to use, the estimated time of receipt of the funds and other information related to the payment. Give your finances more flexibility. Currency exchanges are free of charge and we update rates at least once an hour.",
+      },
+      article4: {
+        title: "Security and cash protection",
+        description:
+          "We are a bank licensed in the European Union, registered in Lithuania and regulated by the Bank of Lithuania, and the security of your money is our top priority. We have developed a convenient self-service system and are connected to secure international payment systems - SWIFT, SEPA, TARGET2. We are constantly improving our services to make it as easy as possible for our customers to transact in euros or other currencies. Safe use of the bank's services depends on you, so here are some basic rules:",
+        bullet1:
+          "Never disclose your Internet Banking user ID, Internet Banking, Smart-ID, mobile e-signature passwords to anyone. My Bank staff never ask for these details, they are usually asked for by financial fraudsters and you must not disclose these details to them over the phone, by SMS, by email or any other means.",
+        bullet2:
+          "Do not click on any links received via email, chat apps or SMS, or follow any requests to enter or dictate your internet banking login details.",
+        bullet3:
+          "Read the address of the web link you receive carefully - scammers often create an almost identical online banking login page, but the link will always differ from the real one by at least one letter or symbol.",
+      },
+    },
+    transferRate: "See international payment transfer rates.",
+    openAccount: "Open an account",
+  },
+
   aboutUs: {
     heroBlock: {
       title: "About Us",
