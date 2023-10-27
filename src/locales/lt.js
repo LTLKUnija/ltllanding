@@ -948,8 +948,9 @@ export default {
   shareholders: {
     title: "Akcininkams",
     description:
-      "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+      "Mūsų vizija - sukurti pasaulį, kuriame kiekvienas žmogus galėtų naudotis finansinėmis paslaugomis ir kurti šviesesnę savo ir savo bendruomenių ateitį. Siekiame užtikrinti finansinę įtrauktį suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
     subTitle: "Akcininkų susirinkimai",
+    agenda: "Darbotvarkė",
     contacts: {
       title: "Kontaktai",
       director: "Direktorius",
@@ -1024,7 +1025,7 @@ export default {
   news: {
     title: "Naujienos",
     readMore: "Skaityti daugiau",
-    backToNews: "Atgal į naujienas"
+    backToNews: "Atgal į naujienas",
   },
   business: {
     termDeposit: {

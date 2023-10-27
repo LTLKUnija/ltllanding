@@ -948,6 +948,7 @@ export default {
     description:
       "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
     subTitle: "Shareholders' meetings",
+    agenda: "Agenda",
     contacts: {
       title: "Contacts",
       director: "Director",
@@ -1022,7 +1023,7 @@ export default {
   news: {
     title: "News",
     readMore: "Read More",
-    backToNews: "Back to news"
+    backToNews: "Back to news",
   },
   business: {
     termDeposit: {
