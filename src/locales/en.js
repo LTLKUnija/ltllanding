@@ -1153,6 +1153,7 @@ export default {
         },
       },
       afterArticle: {
+        title: "After you have opened an account",
         article1: {
           title: "For private individuals:",
           description:

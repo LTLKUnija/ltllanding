@@ -13,6 +13,7 @@ import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessCurrentAccountInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { CurrentAccFAQ } from "@/common/AccordionSchemas";
+import PriceListBusiness from "@/components/PriceListBusiness";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -104,7 +105,7 @@ export default function Mortgage() {
         <section id="after" className={businessStyle.infoSection}>
           <div className={businessStyle.infoWrapper}>
             <div className={businessStyle.infoHeader}>
-              <h3>After you have opened an account</h3>
+              <h3>{t.business.currentAccount.afterArticle.title}</h3>
             </div>
             <div className={businessStyle.infoList}>
               <div className={businessStyle.infoItem}>
@@ -159,7 +160,7 @@ export default function Mortgage() {
           </div>
         </section>
         <section id="pricelist" className={styles.priceListSection}>
-          <div className={styles.priceWrapper}>
+          {/* <div className={styles.priceWrapper}>
             <h3 className={styles.priceHeader}>Price List</h3>
             <ul className={styles.priceList}>
               <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
@@ -210,7 +211,8 @@ export default function Mortgage() {
                 <div className={styles.priceDescription}>100 €</div>
               </li>
             </ul>
-          </div>
+          </div> */}
+          <PriceListBusiness />
         </section>
         <section id="clientSuport" className={styles.clientSuportSection}>
           <div className={styles.clientSuportWrapper}>
