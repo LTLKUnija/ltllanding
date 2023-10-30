@@ -161,7 +161,7 @@ export default {
     team: {
       title: "LTL Team",
       description:
-        "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+        "Your success is our success, and we are proud to have a team that truly cares about your financial well-being.",
       duties: "Duties",
     },
     jobsSection: {
@@ -173,7 +173,7 @@ export default {
     sponsorshipSection: {
       title: "Sponsorship",
       description:
-        "We offer you the opportunity to work in a rapidly developing domestic enterprise, where you can feel the impact of your decisions and work with the top specialists in their respective fields. We have clear goals and a modern working environment. LHV Pank is the “Dream Employer 2015”. Come and contribute to the success story of an Estonian bank.",
+        "At LTL Credit union, we believe in the power of community and giving back. We are proud to sponsor and support local initiatives, from educational programs to charitable events and cultural festivals. Our commitment to sponsorship goes beyond financial assistance; it's about building a stronger, more vibrant community. By partnering with organizations that share our values, we aim to create lasting positive impact, foster growth, and inspire change. We are dedicated to investing in the well-being and prosperity of the communities we serve, because your success is our success.",
       readMore: "Read more",
     },
     benefitsArticle: {
@@ -1058,7 +1058,7 @@ export default {
     heroBlock: {
       contactsTitle: "Contacts",
       adress:
-        "Sporto g. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
+        "Sporto g. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email: info@ltlku.lt",
       companyDetails: "Company details",
       companyDetailsDescription:
         "TL Credit Union Company code: 302791356 VAT payer code: none SWIFT code (BIC): LTKULT21XXX",
