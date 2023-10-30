@@ -20,7 +20,7 @@ export default function IndexNews() {
     newsData.forEach(year => {
       year.news.forEach((news, idx) => {
         if (lastSix.length > 5)  return
-        lastSix.push({id: year.id, text: news.text, textEn: news.textEn, title: news.title, titleEn: news.titleEn, idx }) 
+        lastSix.push({id: year.id, text: news.text, textEn: news.textEn, title: news.title, titleEn: news.titleEn, idx, date: news.date }) 
       })
     })
     return lastSix
@@ -38,6 +38,7 @@ export default function IndexNews() {
     return (      
         <div className={styles.newsItem}  key={idx}>
           <h3>{router.locale === 'lt' ? news.title : news.titleEn}</h3>
+          <div className={styles.newsDate}>{news.date}</div>
           <p>{previewTextMaker(router.locale === 'lt' ? news.text: news.textEn, 20) + '...'}</p>
           <Link href={`news/${news.id}-${news.idx}`}>{t.news.readMore} &#x3e;</Link>
         </div>
