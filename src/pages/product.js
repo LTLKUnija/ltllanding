@@ -4,18 +4,18 @@ import Steper from "@/components/Steper";
 import { privetCurrentAccountSteperData } from "@/pages/api/data/stepersData";
 import Accordion from "@/components/Accordion";
 import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../public/assets/images/product_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { privetCurrentAccountInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { CurrentAccFAQ } from "@/common/AccordionSchemas";
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function Product() {
   const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   const handleBack = () => {
     router.back();
@@ -44,14 +44,14 @@ export default function Product() {
                   />
                 </div>
                 <h1 className={styles.title}>
-                  {t.privetCurrentAccount.pageTitle}
+                  {t('privetCurrentAccount.pageTitle')}
                 </h1>
                 <div className={styles.description}>
-                  <p>{t.privetCurrentAccount.heroBlock.description}</p>
+                  <p>{t('privetCurrentAccount.heroBlock.description')}</p>
                   <ul>
-                    <li>{t.privetCurrentAccount.heroBlock.bullet1}</li>
-                    <li>{t.privetCurrentAccount.heroBlock.bullet2}</li>
-                    <li>{t.privetCurrentAccount.heroBlock.bullet3}</li>
+                    <li>{t('privetCurrentAccount.heroBlock.bullet1')}</li>
+                    <li>{t('privetCurrentAccount.heroBlock.bullet2')}</li>
+                    <li>{t('privetCurrentAccount.heroBlock.bullet3')}</li>
                   </ul>
                 </div>
               </div>
@@ -65,26 +65,26 @@ export default function Product() {
               <div className={styles.articleList}>
                 <div className={styles.articleItem}>
                   <h2 className={styles.articleItemTitle}>
-                    {t.privetCurrentAccount.articleBlock.article1.title}
+                    {t('privetCurrentAccount.articleBlock.article1.title')}
                   </h2>
                   <div className={styles.articleItemDescription}>
-                    {t.privetCurrentAccount.articleBlock.article1.text}
+                    {t('privetCurrentAccount.articleBlock.article1.text')}
                   </div>
                 </div>
                 <div className={styles.articleItem}>
                   <h2 className={styles.articleItemTitle}>
-                    {t.privetCurrentAccount.articleBlock.article2.title}
+                    {t('privetCurrentAccount.articleBlock.article2.title')}
                   </h2>
                   <div className={styles.articleItemDescription}>
-                    {t.privetCurrentAccount.articleBlock.article2.text}
+                    {t('privetCurrentAccount.articleBlock.article2.text')}
                   </div>
                 </div>
                 <div className={styles.articleItem}>
                   <h2 className={styles.articleItemTitle}>
-                    {t.privetCurrentAccount.articleBlock.article3.title}
+                    {t('privetCurrentAccount.articleBlock.article3.title')}
                   </h2>
                   <div className={styles.articleItemDescription}>
-                    {t.privetCurrentAccount.articleBlock.article3.text}
+                    {t('privetCurrentAccount.articleBlock.article3.text')}
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function Product() {
           <section id="steps" className={styles.stepsSection}>
             <div className={styles.stepsWrapper}>
               <div className={styles.stepsHeader}>
-                <h3>{t.privetCurrentAccount.stepProcess.blockTitle}</h3>
+                <h3>{t('privetCurrentAccount.stepProcess.blockTitle')}</h3>
               </div>
               <Steper steperData={privetCurrentAccountSteperData} />
             </div>
@@ -101,16 +101,16 @@ export default function Product() {
           <section id="clientSuport" className={styles.clientSuportSection}>
             <div className={styles.clientSuportWrapper}>
               <h3 className={styles.clientSuportHeader}>
-                {t.privetCurrentAccount.clientSuport.title}
+                {t('privetCurrentAccount.clientSuport.title')}
               </h3>
               <div className={styles.clientSuportDescription}>
-                {t.privetCurrentAccount.clientSuport.description}
+                {t('privetCurrentAccount.clientSuport.description')}
               </div>
             </div>
           </section>
           <section id="faq" className={styles.faqSection}>
             <div className={styles.faqWrapper}>
-              <h3 className={styles.faqHeader}>{t.privetCurrentAccount.faq}</h3>
+              <h3 className={styles.faqHeader}>{t('privetCurrentAccount.faq')}</h3>
               <div className={styles.faqList}>
                 <Accordion faqData={CurrentAccFAQ} singleLevel="true" />
               </div>
@@ -120,4 +120,14 @@ export default function Product() {
       </IndexLayout>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

@@ -126,10 +126,6 @@ export const finacialReportingInnerLinkList = [
 ];
 
 export const priceListInnerLinkList = [
-  // {
-  //   link: "priceList.innerLinkBlock.rates",
-  //   id: "#rates",
-  // },
   {
     link: "priceList.innerLinkBlock.private",
     id: "#priceListForIndividuals",
