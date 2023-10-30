@@ -5,7 +5,13 @@
 .securityPageWrapper {
   max-width: 880px;
   margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: justify;
 
+  .securityPageDescription {
+    margin-bottom: 20px;
+  }
   h1 {
     text-align: center;
     font-size: 50px;
@@ -13,13 +19,27 @@
     line-height: 62px;
     margin-bottom: 80px;
   }
+  .subDescription {
+    margin-bottom: 30px;
+  }
 
-  p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    margin-bottom: 80px;
+  a {
+    font-weight: 700;
+    color: var(--main-text-color);
+    text-decoration: none;
+  }
+  ol {
+    list-style-position: inside;
+    margin-bottom: 20px;
+    li {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

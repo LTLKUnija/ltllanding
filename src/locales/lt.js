@@ -29,7 +29,7 @@ export default {
     termsAndCond: "Sąlygos ir nuostatos",
     ppAndCookies: "Privatumo politika ir slapukai",
     security: "Saugumas",
-    support: "Palaikymas ir skundai",
+    support: "Atsiliepimai ir skundai",
     aboutUs: "Apie mus",
     management: "Valdymas",
     shareholders: "Akcininkams",
@@ -143,10 +143,10 @@ export default {
       description: {
         visionTitle: "Vizija",
         visionDescription:
-          "Mūsų vizija - sukurti pasaulį, kuriame kiekvienas žmogus galėtų naudotis finansinėmis paslaugomis ir kurti šviesesnę savo ir savo bendruomenių ateitį. Siekiame užtikrinti finansinę įtrauktį suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
+          "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų, kad galėtų kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansų pasaulį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
         missionTitle: "Misija",
         missionDescription:
-          "Finansinės įtraukties didinimas - mūsų misija, jūsų ateitis.",
+          "Atrakinta prieiga prie finansinių paslaugų – mūsų misija, jūsų ateitis.",
       },
     },
     innerLinkBlock: {
@@ -160,7 +160,7 @@ export default {
     team: {
       title: "LTL Komanda",
       description:
-        "Mūsų vizija - sukurti pasaulį, kuriame kiekvienas žmogus galėtų naudotis finansinėmis paslaugomis ir kurti šviesesnę savo ir savo bendruomenių ateitį. Siekiame užtikrinti finansinę įtrauktį suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
+        "Jūsų sėkmė yra mūsų sėkmė, todėl didžiuojamės, kad turime komandą, kuriai tikrai rūpi jūsų finansinė gerovė.",
       duties: "Pareigos",
     },
     jobsSection: {
@@ -172,24 +172,24 @@ export default {
     sponsorshipSection: {
       title: "Rėmimas",
       description:
-        "Siūlome galimybę dirbti sparčiai besivystančioje šalies įmonėje, kur galėsite pajusti savo sprendimų poveikį ir dirbti su geriausiais savo sričių specialistais. Turime aiškius tikslus ir modernią darbo aplinką. LHV Pank yra 'Svajonių darbdavys 2015'. Ateikite ir prisidėkite prie Estijos banko sėkmės istorijos",
+        "LTL Kredito unijoje tikime bendruomenės galia ir atsidavimu. Didžiuojamės, kad remiame vietos iniciatyvas - nuo švietimo programų iki labdaros renginių ir kultūros festivalių. Mūsų įsipareigojimas remti neapsiriboja vien finansine parama - tai siekis kurti stipresnę ir gyvybingesnę bendruomenę. Bendradarbiaudami su organizacijomis, kurios puoselėja mūsų vertybes, siekiame sukurti ilgalaikį teigiamą poveikį, skatinti augimą ir įkvėpti pokyčius. Esame pasiryžę investuoti į bendruomenių, kurioms tarnaujame, gerovę ir klestėjimą, nes jūsų sėkmė yra mūsų sėkmė.",
       readMore: "Skaityti daugiau",
     },
     benefitsArticle: {
       article1: {
-        title: "Skaidrumas ir atskaitomybė",
+        title: "Sąžiningumas ir atskaitomybė",
         description:
-          "Siekiame suteikti galimybę naudotis sąžiningomis ir prieinamomis bankininkystės paslaugomis. Priimdami sprendimus esame skaidrūs ir atskaitingi, atsižvelgiame į savo veiksmų poveikį kasdieniam žmonių gyvenimui.",
+          "Siekiame suteikti prieigą prie sąžiningų ir prieinamų banko paslaugų. Priimdami sprendimus esame skaidrūs ir atsakingi, atsižvelgiame į savo veiksmų poveikį kasdieniam žmonių gyvenimui.",
       },
       article2: {
-        title: "Interesų derinimas ir žmonių įgalinimas",
+        title: "Interesų pusiausvyra ir žmonių įgalinimas",
         description:
-          "Siekiame sukurti teisingesnę finansų sistemą, kurioje būtų suderinti mūsų įmonės, klientų ir visuomenės interesai. Skiriame išteklius ir vykdome švietimą, kad klientai galėtų suprasti bankų sistemą ir priimti pagrįstus sprendimus.",
+          "Esame įsipareigoję kurti teisingesnę finansų sistemą, užtikrinančią mūsų įmonės, klientų ir visuomenės interesų pusiausvyrą. Skiriame reikalingus išteklius ir suteikiame švietimą, kurie įgalintų mūsų klientus suprasti bankų sistemą ir priimti pagrįstus finansinius sprendimus.",
       },
       article3: {
-        title: "Į žmogų orientuotas požiūris į bankininkystę",
+        title: "Į žmogų orientuotą bankininkystė",
         description:
-          "Galiausiai, bankininkystėje taikome labiau į žmogų orientuotą požiūrį, užtikrindami, kad su klientais būtų elgiamasi pagarbiai ir oriai, taip pat atsižvelgdami į klientų emocinius ir psichologinius poreikius.",
+          "Galiausiai, bankininkystėje siekiame taikyti labiau į žmogų orientuotą požiūrį, kuris užtikrina, kad su klientais būtų elgiamasi pagarbiai ir oriai, taip pat būtų gerbiami emociniai ir psichologiniai klientų poreikiai.",
       },
     },
     history: {
@@ -1002,7 +1002,23 @@ export default {
   security: {
     title: "Saugumas",
     description:
-      "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
+      "LTL Kredito unijoje jūsų finansinė gerovė yra mūsų didžiausias rūpestis. Suprantame pasitikėjimo svarbą, kai kalbama apie jūsų sunkiai uždirbtus pinigus, todėl esame įsipareigoję užtikrinti saugią ir patikimą aplinką visiems jūsų bankiniams poreikiams. Štai kodėl LTL Kredito unija yra jūsų patikimas finansinio saugumo partneris:",
+    bullet1:
+      "Griežta atitiktis: Laikomės aukščiausių pramonės standartų ir laikomės visų atitinkamų finansinių taisyklių. Mūsų veikla reguliariai tikrinama ir peržiūrima, kad užtikrintume, jog laikomės visų reikalavimų ir juos viršijame.",
+    bullet2: `Indėlių draudimas: Jūsų indėlius iki 100,000 EUR saugo VĮ "Indėlių ir investicijų draudimas". Daugiau informacijos galite rasti adresu`,
+    bullet3:
+      "Be reguliaraus vidaus audito, mus taip pat tikrina nepriklausomos audito įmonės, JCKU Kreda ir Lietuvos centrinis bankas. Užtikriname, kad jūsų lėšos ir jūsų asmens duomenų apsauga yra saugiose rankose.",
+    bullet4:
+      "Pažangiausios technologijos: Investuojame į naujausias technologijas, kad apsaugotume jūsų sandorius ir asmeninę informaciją. Mūsų pažangūs šifravimo ir saugumo protokolai saugo jūsų duomenis, todėl galite būti ramūs atlikdami bankines operacijas internetu ar asmeniškai.",
+    bullet5:
+      "Griežta prieigos kontrolė: Įgyvendiname griežtą prieigos kontrolę, kad jūsų sąskaitos informacija galėtų naudotis tik įgalioti asmenys.",
+    bullet6:
+      "Skaidri politika: Tikime visišku skaidrumu. Visos mūsų politikos nuostatos ir sąlygos yra aiškios ir prieinamos, todėl užtikriname, kad suprastumėte savo, kaip kliento, teises ir pareigas. Mūsų įsipareigojimas siekti aiškumo stiprina pasitikėjimą ir patikimumą.",
+    bullet7:
+      "Budrumas kovojant su sukčiavimu: Šviečiame savo klientus apie dažniausiai pasitaikančias sukčiavimo schemas ir pateikiame išteklių, padedančių apsisaugoti nuo sukčių. Budrumas yra bendra atsakomybė, o mes esame pasirengę padėti jums kiekviename žingsnyje.",
+    subDescription:
+      "LTL Kredito unijoje vertiname jūsų pasitikėjimą mumis ir nenuilstamai dirbame, kad išlaikytume aukščiausius saugos ir saugumo standartus. Jūsų finansinė gerovė yra mūsų prioritetas, todėl esame pasiryžę suteikti jums ramybę, kurios nusipelnėte, kai kalbama apie jūsų bankininkystės poreikius.",
+    credits: "Jūsų pasitikėjimas - mūsų prioritetas.",
   },
   suportsComplaints: {
     pageTitle: "Atsiliepimai ir skundai",
