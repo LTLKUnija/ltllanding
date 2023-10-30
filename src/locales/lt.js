@@ -447,7 +447,7 @@ export default {
   termConditions: {
     pageTitle: "Bendrosios sąlygos",
     description:
-      "Kviečiame jus išsamiau išnagrinėti jus dominančią paslaugą ir susipažinti su bendromis sąlygomis bei kitais susijusiais paslaugų naudojimo dokumentais spustelėdami atitinkamą nuorodą žemiau.",
+      "Kviečiame jus išsamiau išnagrinėti jus dominančią paslaugą ir susipažinti su bendromis sąlygomis bei kitais susijusiais paslaugų naudojimo dokumentais spustelėjus atitinkamą nuorodą žemiau.",
     innerLinkBlock: {
       accounts: "Sąskaitos",
       termDeposits: "Terminuoti indėliai",
@@ -456,18 +456,18 @@ export default {
       loansToCorporates: "Paskolos įmonėms",
     },
     innerTabLinks: {
-      generalCondition: "Bendrosios salygos",
+      generalCondition: "Bendrosios sąlygos",
       commisionInfo: "Informacijos apie komisinį atlyginimą dokumentas",
       glossary: "Žodynas",
       informationDepositor: "Informacijos indelininkui teikimo forma",
-      securitisedDeposit: "Terinuoto indelio sutartis_standartines salygos",
+      securitisedDeposit: "Terinuoto indelio sutartis standartines sąlygos",
       currentAccountContract:
-        "Einamosios saskaitos sutartis fiziniam asmeniui_standartines salygos",
+        "Esmės sąskaitos sutartis fiziniam asmeniui: standartinės sąlygos",
       currentAccountAgreement:
-        "Einamosios saskaitos sutartis juridiniam asmeniui_standartines salygos",
-      yourRights: "Jusu teises vykdant mokejimus Europoje",
-      paymentsServices: "Mokejimo paslaugu teikimo salygos",
-      generalInfo: "Bendro pobudzio informacija apie su NT susijusi kredita.",
+        "Esinės sąskaitos sutartis juridiniam asmeniui: standartinės sąlygos.",
+      yourRights: "Jūsų teisės atliekant mokėjimus Europoe",
+      paymentsServices: "Mokėjimo paslaugų teikimo sąlygos",
+      generalInfo: "Bendro pobudžio informacija apie su NT susijusi kredita.",
     },
   },
   termDeposit: {

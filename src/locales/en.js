@@ -460,11 +460,11 @@ export default {
       glossary: "Glossary",
       informationDepositor: "Form for providing information to the depositor",
       securitisedDeposit:
-        "Securitised deposit agreement_standard terms and conditions",
+        "Securitised deposit agreement standard terms and conditions",
       currentAccountContract:
-        "Current account contract for a natural person_standard terms",
+        "Current account contract for a natural person standard terms",
       currentAccountAgreement:
-        "Current account agreement for a legal entity_standard terms",
+        "Current account agreement for a legal entity standard terms",
       yourRights: "Your rights when making payments in Europe",
       paymentsServices:
         "Terms and conditions for the provision of payment services",
