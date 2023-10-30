@@ -29,7 +29,7 @@ export default {
     termsAndCond: "Sąlygos ir nuostatos",
     ppAndCookies: "Privatumo politika ir slapukai",
     security: "Saugumas",
-    support: "Palaikymas ir skundai",
+    support: "Atsiliepimai ir skundai",
     aboutUs: "Apie mus",
     management: "Valdymas",
     shareholders: "Akcininkams",
