@@ -22,9 +22,12 @@
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    justify-content: center;
+    justify-content: justify;
     flex-wrap: wrap;
     gap: 60px;
+    p {
+      text-align: justify;
+    }
   }
 
   .settlementBlock {
