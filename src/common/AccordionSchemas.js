@@ -387,29 +387,25 @@ export const ac2 = [
       {
         id: 31,
         header: "How much consumer credit can I get?",
-        body: "KThe redemption will be paid to the bank account you specified during the application process, after you have filled in the information required for the credit application, we will check your eligibility for the credit and sign the credit agreements.",
+        headerLT: "Kokio dydžio vartojimo kreditą galiu gauti?",
+        body: [
+          "KThe redemption will be paid to the bank account you specified during the application process, after you have filled in the information required for the credit application, we will check your eligibility for the credit and sign the credit agreements.",
+        ],
+        bodyLT: [
+          "Kreditas bus pervestas į banko sąskaitą, kurią nurodėte paraiškos teikimo metu, po to, kai užpildysite kredito paraiškai reikalingą informaciją, patikrinsime jūsų tinkamumą gauti kreditą ir pasirašysime kredito sutartis.",
+        ],
         opened: false,
       },
       {
         id: 32,
         header: "How much consumer credit can I get?",
-        body: "The credit will be paid into the bank account you provided during the application process, after you have filled in the information required for the credit application, we will check your eligibility for the credit and sign the credit agreements.",
-        opened: false,
-      },
-    ],
-    bodyLT: [
-      {
-        id: 31,
-        headerLT: "Kokio dydžio vartojimo paskolą galiu gauti?",
-        bodyLT:
-          "Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis.",
-        opened: false,
-      },
-      {
-        id: 32,
-        headerLT: "Kokio dydžio vartojimo paskolą galiu gauti?",
-        bodyLT:
-          "Kreditą išmokėsime į paraiškos metu nurodytą banko sąskaitą, po to, kai pilnai užpildysi kredito paraiškai reikalingą informaciją, mes patikrinsime ar galim tau išduoti kreditą ir pasirašysi kredito sutartis.",
+        headerLT: "Kokio dydžio vartojimo kreditą galiu gauti?",
+        body: [
+          "The credit will be paid into the bank account you provided during the application process, after you have filled in the information required for the credit application, we will check your eligibility for the credit and sign the credit agreements.",
+        ],
+        bodyLT: [
+          "Kreditas bus pervestas į banko sąskaitą, kurią nurodėte paraiškos teikimo metu, po to, kai užpildysite kredito paraiškoje reikalaujamą informaciją, patikrinsime jūsų tinkamumą gauti kreditą ir pasirašysime kredito sutartis.",
+        ],
         opened: false,
       },
     ],

@@ -8,12 +8,12 @@ export default function Accordion({ faqData, singleLevel }) {
 
   const openFaq = (e) => {
     const idx = e.target.dataset.idx;
-    let parentIdx = "";
+    let parentidx = "";
     let temp = [...data];
 
-    if (e.target.dataset.parentIdx) {
-      parentIdx = e.target.dataset.parentIdx;
-      temp[parentIdx].body[idx].opened = !temp[parentIdx].body[idx].opened;
+    if (e.target.dataset.parentidx) {
+      parentidx = e.target.dataset.parentidx;
+      temp[parentidx].body[idx].opened = !temp[parentidx].body[idx].opened;
     } else {
       temp[idx].opened = !temp[idx].opened;
     }
@@ -67,7 +67,9 @@ export default function Accordion({ faqData, singleLevel }) {
                             <div
                               className="accHeaderTitle"
                               data-idx={index}
-                              data-parent-idx={index}
+                              data-parentidx={
+                                question.hasInnerChildren ? idx : undefined
+                              }
                               onClick={(e) => openFaq(e)}
                             >
                               {router.locale === "lt"
@@ -86,7 +88,13 @@ export default function Accordion({ faqData, singleLevel }) {
                           <div
                             className={`acPanel ${item.opened ? "opened" : ""}`}
                           >
-                            {router.locale === "lt" ? item.bodyLT : item.body}
+                            {router.locale === "lt"
+                              ? item.bodyLT.map((item, idx) => {
+                                  return <div key={idx}>{item}</div>;
+                                })
+                              : item.body.map((item, idx) => {
+                                  return <div key={idx}>{item}</div>;
+                                })}
                           </div>
                         </div>
                       );
