@@ -335,7 +335,7 @@ export default function PriceListPrivate() {
               {t.priceList.table.changingTermsOfCredit}
             </div>
             <div className={styles.priceDescription}>
-              {t.priceList.table.existingCreditBalance} 200€
+              {t.priceList.table.existingCreditBalance} 200€ *
             </div>
           </li>
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
