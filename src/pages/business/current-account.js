@@ -13,7 +13,6 @@ import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessCurrentAccountInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { CurrentAccFAQ } from "@/common/AccordionSchemas";
-import PriceListBusiness from "@/components/PriceListBusiness";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -158,61 +157,6 @@ export default function Mortgage() {
               </div>
             </div>
           </div>
-        </section>
-        <section id="pricelist" className={styles.priceListSection}>
-          {/* <div className={styles.priceWrapper}>
-            <h3 className={styles.priceHeader}>Price List</h3>
-            <ul className={styles.priceList}>
-              <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
-                <div className={styles.priceTitle}>Accounts</div>
-                <div className={styles.priceDescription}>free of charge</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Opening an account
-                </div>
-                <div className={styles.priceDescription}>free of charge</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Closing the account
-                </div>
-                <div className={styles.priceDescription}>100 €</div>
-              </li>
-              <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
-                <div className={styles.priceTitle}>Entrepreneur account</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Lorem ipsum dolor sit amet
-                </div>
-                <div className={styles.priceDescription}>free of charge</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Closing the account
-                </div>
-                <div className={styles.priceDescription}>100 €</div>
-              </li>
-
-              <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
-                <div className={styles.priceTitle}>Entrepreneur account</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Lorem ipsum dolor sit amet
-                </div>
-                <div className={styles.priceDescription}>free of charge</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Closing the account
-                </div>
-                <div className={styles.priceDescription}>100 €</div>
-              </li>
-            </ul>
-          </div> */}
-          <PriceListBusiness />
         </section>
         <section id="clientSuport" className={styles.clientSuportSection}>
           <div className={styles.clientSuportWrapper}>
