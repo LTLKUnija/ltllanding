@@ -62,7 +62,7 @@ export default function ShareHolders() {
               })}
             </ul>
             <div className={styles.agendaBlock}>
-              <h4>Agenda</h4>
+              <h4>{t.shareholders.agenda}</h4>
               <ul>
                 {activeAgendaList.map((agenda, idx) => {
                   return <li key={idx}>{agenda.agendaName}</li>;

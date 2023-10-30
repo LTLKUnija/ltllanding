@@ -104,7 +104,7 @@ export default function Mortgage() {
         <section id="after" className={businessStyle.infoSection}>
           <div className={businessStyle.infoWrapper}>
             <div className={businessStyle.infoHeader}>
-              <h3>After you have opened an account</h3>
+              <h3>{t.business.currentAccount.afterArticle.title}</h3>
             </div>
             <div className={businessStyle.infoList}>
               <div className={businessStyle.infoItem}>
@@ -156,60 +156,6 @@ export default function Mortgage() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section id="pricelist" className={styles.priceListSection}>
-          <div className={styles.priceWrapper}>
-            <h3 className={styles.priceHeader}>Price List</h3>
-            <ul className={styles.priceList}>
-              <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
-                <div className={styles.priceTitle}>Accounts</div>
-                <div className={styles.priceDescription}>free of charge</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Opening an account
-                </div>
-                <div className={styles.priceDescription}>free of charge</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Closing the account
-                </div>
-                <div className={styles.priceDescription}>100 €</div>
-              </li>
-              <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
-                <div className={styles.priceTitle}>Entrepreneur account</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Lorem ipsum dolor sit amet
-                </div>
-                <div className={styles.priceDescription}>free of charge</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Closing the account
-                </div>
-                <div className={styles.priceDescription}>100 €</div>
-              </li>
-
-              <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
-                <div className={styles.priceTitle}>Entrepreneur account</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Lorem ipsum dolor sit amet
-                </div>
-                <div className={styles.priceDescription}>free of charge</div>
-              </li>
-              <li className={styles.priceItem}>
-                <div className={styles.priceDescriptionLeft}>
-                  Closing the account
-                </div>
-                <div className={styles.priceDescription}>100 €</div>
-              </li>
-            </ul>
           </div>
         </section>
         <section id="clientSuport" className={styles.clientSuportSection}>
