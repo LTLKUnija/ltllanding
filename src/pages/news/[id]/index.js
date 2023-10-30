@@ -78,6 +78,13 @@ export default function NewsPage() {
   );
 }
 
+export async function getStaticPaths() {
+  return {
+    paths: ['/news/[id]'],
+    fallback: true,
+  };
+}
+
 export async function getStaticProps({ locale }) {
   return {
     props: {
