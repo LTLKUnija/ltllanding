@@ -1,20 +1,18 @@
 import styles from "@/styles/licence.module.scss"
-import IndexLayout from "@/Layouts/IndexLayout"
-import { useRouter } from "next/router"
-import lt from '@/locales/lt'
-import en from '@/locales/en'
+import IndexLayout from "@/Layouts/IndexLayout";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Licence() {
-   const router = useRouter();
-   const t = router.locale === 'lt' ? lt : en
+   const {t} = useTranslation('common');
 
    return (
       <IndexLayout>
          <main>
             <section className={styles.licenceSection}>
                <div className={styles.licenceWrapper}>
-                  <h3>{t.licence.pageTitle}</h3>
-                  <p>{t.licence.description}</p>
+                  <h3>{t('licence.pageTitle')}</h3>
+                  <p>{t('licence.description')}</p>
                </div>
             </section>
             <section className={styles.imgSection}>
@@ -26,3 +24,13 @@ export default function Licence() {
       </IndexLayout>
    )
 }
+
+export async function getStaticProps({ locale }) {
+   return {
+     props: {
+       ...(await serverSideTranslations(locale, [
+         'common',
+       ])),
+     },
+   }
+ }

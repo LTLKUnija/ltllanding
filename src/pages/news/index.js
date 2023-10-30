@@ -3,16 +3,15 @@ import styles from "@/styles/news.module.scss";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
-import { collection, getDocs, getFirestore } from "firebase/firestore";
 import { previewTextMaker } from "../../utils/helpers";
 import { getNewsList } from "@/common/dataGetters";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function News() {
   const router = useRouter();
 
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   const [allNewsData, setAllNewsData] = useState([]);
   const [currentYearNewsData, setCurrentYearNewsData] = useState({});
@@ -78,7 +77,7 @@ export default function News() {
       <IndexLayout>
         <main className={styles.newsListBlock}>
           <div className={styles.newsListWrapper}>
-            <h1 className="page-title">{t.news.title}</h1>
+            <h1 className="page-title">{t('news.title')}</h1>
             <div className={styles.yearlyLinksBlock}>
               {yearsLinksVocab.map((year, idx) => {
                 return (
@@ -114,7 +113,7 @@ export default function News() {
                           className={styles.readMoreLink}
                           href={`news/${currentYearNewsData?.id}-${idx}`}
                         >
-                          {t.news.readMore} &#x3e;
+                          {t('news.readMore')} &#x3e;
                         </Link>
                       </div>
                     </div>
@@ -127,4 +126,14 @@ export default function News() {
       </IndexLayout>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

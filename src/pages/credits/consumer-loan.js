@@ -4,18 +4,18 @@ import Accordion from "@/components/Accordion";
 import Steper from "@/components/Steper";
 import { consumerSteperData } from "@/pages/api/data/stepersData";
 import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/consumer_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
 import { consumerLoanInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { LoanForPrivates } from "@/common/AccordionSchemas";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Mortgage() {
   const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   const handleBack = () => {
     router.back();
@@ -42,16 +42,16 @@ export default function Mortgage() {
                   className={styles.heroImage}
                 />
               </div>
-              <h1 className={styles.title}>{t.consumerLoan.heroBlock.title}</h1>
+              <h1 className={styles.title}>{t('consumerLoan.heroBlock.title')}</h1>
               <div className={styles.description}>
-                <p>{t.consumerLoan.heroBlock.description}</p>
+                <p>{t('consumerLoan.heroBlock.description')}</p>
                 <ul>
-                  <li>{t.consumerLoan.heroBlock.bullet1}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet2}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet3}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet4}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet5}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet6}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet1')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet2')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet3')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet4')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet5')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet6')}</li>
                 </ul>
               </div>
             </div>
@@ -64,34 +64,34 @@ export default function Mortgage() {
           <div className={styles.benefitsWrapper}>
             <div className={styles.benefitsBlock}>
               <h3 className={styles.benefitsTitle}>
-                {t.consumerLoan.benefitsArticle.article1.title}
+                {t('consumerLoan.benefitsArticle.article1.title')}
               </h3>
               <div className={styles.benefitsDescription}>
-                {t.consumerLoan.benefitsArticle.article1.description}
+                {t('consumerLoan.benefitsArticle.article1.description')}
               </div>
             </div>
             <div className={styles.benefitsBlock}>
               <h3 className={styles.benefitsTitle}>
-                {t.consumerLoan.benefitsArticle.article2.title}
+                {t('consumerLoan.benefitsArticle.article2.title')}
               </h3>
               <div className={styles.benefitsDescription}>
-                {t.consumerLoan.benefitsArticle.article2.description}
+                {t('consumerLoan.benefitsArticle.article2.description')}
               </div>
             </div>
             <div className={styles.benefitsBlock}>
               <h3 className={styles.benefitsTitle}>
-                {t.consumerLoan.benefitsArticle.article3.title}
+                {t('consumerLoan.benefitsArticle.article3.title')}
               </h3>
               <div className={styles.benefitsDescription}>
-                {t.consumerLoan.benefitsArticle.article3.description}
+                {t('consumerLoan.benefitsArticle.article3.description')}
               </div>
             </div>
             <div className={styles.benefitsBlock}>
               <h3 className={styles.benefitsTitle}>
-                {t.consumerLoan.benefitsArticle.article4.title}
+                {t('consumerLoan.benefitsArticle.article4.title')}
               </h3>
               <div className={styles.benefitsDescription}>
-                {t.consumerLoan.benefitsArticle.article4.description}
+                {t('consumerLoan.benefitsArticle.article4.description')}
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function Mortgage() {
         <section id="process" className={styles.StepsSection}>
           <div className={styles.StepsWrapper}>
             <div className={styles.stepsHeader}>
-              <h3>{t.consumerLoan.stepProcess.title}</h3>
+              <h3>{t('consumerLoan.stepProcess.title')}</h3>
             </div>
             <Steper steperData={consumerSteperData} />
           </div>
@@ -107,16 +107,16 @@ export default function Mortgage() {
         <section id="clientSuport" className={styles.clientSuportSection}>
           <div className={styles.clientSuportWrapper}>
             <h3 className={styles.clientSuportHeader}>
-              {t.consumerLoan.clientSuport.title}
+              {t('consumerLoan.clientSuport.title')}
             </h3>
             <div className={styles.clientSuportDescription}>
-              {t.consumerLoan.clientSuport.description}
+              {t('consumerLoan.clientSuport.description')}
             </div>
           </div>
         </section>
         <section id="faq" className={styles.faqSection}>
           <div className={styles.faqWrapper}>
-            <h3 className={styles.faqHeader}>{t.consumerLoan.faq}</h3>
+            <h3 className={styles.faqHeader}>{t('consumerLoan.faq')}</h3>
             <div className={styles.faqList}>
               <Accordion faqData={LoanForPrivates} singleLevel="true" />
             </div>
@@ -125,4 +125,14 @@ export default function Mortgage() {
       </main>
     </IndexLayout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

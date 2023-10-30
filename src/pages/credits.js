@@ -1,3 +1,5 @@
+// Make sure this page is not needed anymore
+
 import styles from "@/styles/credits.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";

@@ -9,14 +9,14 @@ import HeroMobile from "../../public/assets/images/capitalLoan_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import { esgInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Esg() {
   const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   const [annualLink, setAnnualLinks] = useState([]);
   const [activeAnnualLinks, setActiveLinks] = useState([]);
@@ -66,9 +66,9 @@ export default function Esg() {
                   className={styles.heroImage}
                 />
               </div>
-              <h1 className={styles.title}>{t.esg.heroBlock.title}</h1>
+              <h1 className={styles.title}>{t('esg.heroBlock.title')}</h1>
               <div className={styles.description}>
-                <p>{t.esg.heroBlock.description}</p>
+                <p>{t('esg.heroBlock.description')}</p>
               </div>
             </div>
           </div>
@@ -92,14 +92,14 @@ export default function Esg() {
             />
             <div className={styles.enviromentalProtectionArticle}>
               <h3 className={styles.title}>
-                {t.esg.articleBlock.article1.title}
+                {t('esg.articleBlock.article1.title')}
               </h3>
               <p className={styles.description}>
-                {t.esg.articleBlock.article1.text}
+                {t('esg.articleBlock.article1.text')}
               </p>
               <div className="actionButtonBlock">
                 <Link href="/" className="outlinedBtn">
-                  {t.esg.learnMoreButton}
+                  {t('esg.learnMoreButton')}
                 </Link>
               </div>
             </div>
@@ -112,14 +112,14 @@ export default function Esg() {
               ].join(" ")}
             >
               <h3 className={styles.title}>
-                {t.esg.articleBlock.article2.title}
+                {t('esg.articleBlock.article2.title')}
               </h3>
               <p className={styles.description}>
-                {t.esg.articleBlock.article2.text}
+                {t('esg.articleBlock.article2.text')}
               </p>
               <div className="actionButtonBlock">
                 <Link href="/" className="outlinedBtn">
-                  {t.esg.learnMoreButton}
+                  {t('esg.learnMoreButton')}
                 </Link>
               </div>
             </div>
@@ -143,14 +143,14 @@ export default function Esg() {
             />
             <div className={styles.enviromentalProtectionArticle}>
               <h3 className={styles.title}>
-                {t.esg.articleBlock.article3.title}
+                {t('esg.articleBlock.article3.title')}
               </h3>
               <p className={styles.description}>
-                {t.esg.articleBlock.article3.text}
+                {t('esg.articleBlock.article3.text')}
               </p>
               <div className="actionButtonBlock">
                 <Link href="/" className="outlinedBtn">
-                  {t.esg.learnMoreButton}
+                  {t('esg.learnMoreButton')}
                 </Link>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function Esg() {
         </section>
         <section id="reports" className={styles.annualReportsSection}>
           <div className={styles.annualReportsWrapper}>
-            <h3>{t.esg.annualEsgReport.title}</h3>
+            <h3>{t('esg.annualEsgReport.title')}</h3>
             <ul className={styles.annualReportsLinks}>
               {annualLink.map((year, idx) => {
                 return (
@@ -196,4 +196,14 @@ export default function Esg() {
       </main>
     </IndexLayout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

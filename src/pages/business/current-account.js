@@ -5,7 +5,6 @@ import Accordion from "@/components/Accordion";
 import Steper from "@/components/Steper";
 import { currentAccountSteperData } from "@/pages/api/data/stepersData";
 import { useRouter } from "next/router";
-
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/currentAccount_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
@@ -17,7 +16,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Mortgage() {
   const router = useRouter();
-  const {t} = useTranslation('common')
+  const {t} = useTranslation('common');
 
   const handleBack = () => {
     router.back();

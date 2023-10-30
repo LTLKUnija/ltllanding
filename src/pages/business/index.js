@@ -4,8 +4,12 @@ import IndexNews from "@/components/IndexNews";
 import Link from "next/link";
 import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home() {
+  const {t} = useTranslation('common')
+
   return (
     <>
       <IndexLayout>
@@ -114,4 +118,14 @@ export default function Home() {
       </IndexLayout>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

@@ -3,13 +3,13 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import IndexLayout from "@/Layouts/IndexLayout";
 import { useEffect, useState } from "react";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import { doc, getFirestore, getDoc } from "firebase/firestore";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function NewsPage() {
   const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
 
   const [selectedNews, setSelectedNews] = useState();
@@ -59,7 +59,7 @@ export default function NewsPage() {
       <IndexLayout>
         <main className={styles.newsPageMain}>
           <div className={styles.silngleNewsWrapper}>
-            <h1 className="page-title">{t.footerNavLinks.news}</h1>
+            <h1 className="page-title">{t('footerNavLinks.news')}</h1>
 
             {selectedNews && (
               <div>
@@ -69,11 +69,21 @@ export default function NewsPage() {
               </div>
             )}
             <span style={{cursor: "pointer"}} className={styles.backToNewsLink} onClick={backToYearHandler}>
-              &#x3c; {t.news.backToNews}
+              &#x3c; {t('news.backToNews')}
             </span>
           </div>
         </main>
       </IndexLayout>
     </>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }
