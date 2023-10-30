@@ -1002,7 +1002,23 @@ export default {
   security: {
     title: "Saugumas",
     description:
-      "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
+      "LTL Kredito unijoje jūsų finansinė gerovė yra mūsų didžiausias rūpestis. Suprantame pasitikėjimo svarbą, kai kalbama apie jūsų sunkiai uždirbtus pinigus, todėl esame įsipareigoję užtikrinti saugią ir patikimą aplinką visiems jūsų bankiniams poreikiams. Štai kodėl LTL Kredito unija yra jūsų patikimas finansinio saugumo partneris:",
+    bullet1:
+      "Griežta atitiktis: Laikomės aukščiausių pramonės standartų ir laikomės visų atitinkamų finansinių taisyklių. Mūsų veikla reguliariai tikrinama ir peržiūrima, kad užtikrintume, jog laikomės visų reikalavimų ir juos viršijame.",
+    bullet2: `Indėlių draudimas: Jūsų indėlius iki 100,000 EUR saugo VĮ "Indėlių ir investicijų draudimas". Daugiau informacijos galite rasti adresu`,
+    bullet3:
+      "Be reguliaraus vidaus audito, mus taip pat tikrina nepriklausomos audito įmonės, JCKU Kreda ir Lietuvos centrinis bankas. Užtikriname, kad jūsų lėšos ir jūsų asmens duomenų apsauga yra saugiose rankose.",
+    bullet4:
+      "Pažangiausios technologijos: Investuojame į naujausias technologijas, kad apsaugotume jūsų sandorius ir asmeninę informaciją. Mūsų pažangūs šifravimo ir saugumo protokolai saugo jūsų duomenis, todėl galite būti ramūs atlikdami bankines operacijas internetu ar asmeniškai.",
+    bullet5:
+      "Griežta prieigos kontrolė: Įgyvendiname griežtą prieigos kontrolę, kad jūsų sąskaitos informacija galėtų naudotis tik įgalioti asmenys.",
+    bullet6:
+      "Skaidri politika: Tikime visišku skaidrumu. Visos mūsų politikos nuostatos ir sąlygos yra aiškios ir prieinamos, todėl užtikriname, kad suprastumėte savo, kaip kliento, teises ir pareigas. Mūsų įsipareigojimas siekti aiškumo stiprina pasitikėjimą ir patikimumą.",
+    bullet7:
+      "Budrumas kovojant su sukčiavimu: Šviečiame savo klientus apie dažniausiai pasitaikančias sukčiavimo schemas ir pateikiame išteklių, padedančių apsisaugoti nuo sukčių. Budrumas yra bendra atsakomybė, o mes esame pasirengę padėti jums kiekviename žingsnyje.",
+    subDescription:
+      "LTL Kredito unijoje vertiname jūsų pasitikėjimą mumis ir nenuilstamai dirbame, kad išlaikytume aukščiausius saugos ir saugumo standartus. Jūsų finansinė gerovė yra mūsų prioritetas, todėl esame pasiryžę suteikti jums ramybę, kurios nusipelnėte, kai kalbama apie jūsų bankininkystės poreikius.",
+    credits: "Jūsų pasitikėjimas - mūsų prioritetas.",
   },
   suportsComplaints: {
     pageTitle: "Atsiliepimai ir skundai",

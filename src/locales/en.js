@@ -1001,7 +1001,25 @@ export default {
   security: {
     title: "Security",
     description:
-      "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+      "At LTL Credit union, your financial well-being is our utmost concern. We understand the importance of trust when it comes to your hard-earned money, and we are committed to providing a safe and secure environment for all your banking needs. Here's why LTL Credit union is your trusted partner for financial security:",
+    bullet1:
+      "Rigorous Compliance: We adhere to the highest industry standards and comply with all relevant financial regulations. Our operations are subject to regular audits and reviews to ensure we meet and exceed all requirements.",
+    bullet2:
+      "Deposit Insurance: Your deposits up to EUR 100‘000 are protected by VĮ „Indėlių ir investicijų draudimas”. More information can be found at",
+    bullet3:
+      "In addition to regular internal audits, we are also audited by independent audit firms, JCKU Kreda and the Central Bank of Lithuania. We ensure that your funds and the protection of your personal data are in safe hands.",
+    bullet4:
+      "Cutting-Edge Technology: We invest in the latest technology to safeguard your transactions and personal information. Our advanced encryption and security protocols protect your data, providing you with peace of mind while banking online or in person.",
+    bullet5:
+      "Strict Access Controls: We implement strict access controls to ensure that only authorized individuals can access your account information.",
+    bullet6:
+      "Transparent Policies: We believe in full transparency. All our policies and terms are clear and accessible, ensuring that you understand your rights and responsibilities as a customer. Our commitment to clarity builds trust and confidence.",
+    bullet7:
+      "Vigilance Against Fraud: We educate our customers on common fraud schemes and provide resources to help you protect yourself against scams. Vigilance is a shared responsibility, and we are here to support you every step of the way.",
+    subDescription:
+      "At LTL Credit union, we value the trust you place in us and work tirelessly to maintain the highest standards of safety and security. Your financial well-being is our priority, and we are dedicated to providing you with the peace of mind you deserve when it comes to your banking needs.",
+    credits:
+      "Bank with confidence at LTL Credit union. Your trust, our priority.",
   },
   suportsComplaints: {
     pageTitle: "Support & Complaints",
