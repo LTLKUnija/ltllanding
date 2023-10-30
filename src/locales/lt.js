@@ -55,17 +55,17 @@ export default {
       learnMoreButton: "Sužinokite daugiau",
     },
     slideTwo: {
-      heroBlockH1: "Get the financing you need to grow your business",
+      heroBlockH1: "Gaukite reikiamą finansavimą verslui plėtoti",
       heroBlockText:
-        "Are you looking for a way to grow your business? A business loan may be the perfect solution.",
-      learnMoreButton: "Learn more",
+        "Ieškote būdo, kaip plėsti savo verslą? Verslo paskola gali būti puikus sprendimas.",
+      learnMoreButton: "Sužinokite daugiau",
     },
     slideThree: {
       heroBlockH1:
-        "There's no place like home, especially with a mortgage loan from us!",
+        "Niekur kitur nėra taip gerai kaip namuose, ypač su mūsų būsto paskola!",
       heroBlockText:
-        "Are you looking for a way to finance your next big project? A mortage loan may be the perfect solution.",
-      learnMoreButton: "Learn more",
+        "Ieškote būdo, kaip finansuoti kitą didelį projektą? Hipotekos paskola gali būti puikus sprendimas.",
+      learnMoreButton: "Sužinokite daugiau",
     },
     articleBlock: {
       article1: {
@@ -95,22 +95,64 @@ export default {
       text: "Sužinokite daugiau",
     },
   },
+  payments: {
+    title: "Mokėjimai visame pasaulyje",
+    benefitsArticle: {
+      article1: {
+        title: "Nuo ko pradėti",
+        description:
+          "Kad galėtumėte vykdyti finansinę veiklą, pirmiausia jums reikės banko sąskaitos mano.bank. Tokią sąskaitą paprastai ir greitai galite atidaryti internetu. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje ar naudodamiesi aplikacijų programavimo sąsaja (API). Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti skiltyje Įkainiai.. Savo klientams mano.bank gali pasiūlyti:",
+        bullet1: "Vietinius mokėjimus visoje Lietuvoje",
+        bullet2:
+          "Tarptautinius pervedimus visame pasaulyje (tiek SEPA, tiek SWIFT mokėjimus)",
+        bullet3: "Valiutų keitimo operacijas",
+        bullet4:
+          "Patogų operacijų atlikimą ir valdymą naudojantis mano.bank interneto banku arba API",
+        bullet5: "Profesionalias konsultacijas ir individualų dėmesį",
+        bullet6:
+          "Jeigu norite saugiai ir patogiai naudotis šiomis paslaugomis – atidarykite sąskaitą mano.bank jau dabar. Tai – labai paprasta!",
+      },
+      article2: {
+        title: "Patogus europinių pinigų pervedimas (SEPA)",
+        description:
+          "Naudodamiesi mano.bank paslaugomis galite pasirinkti jums labiausiai tinkantį SEPA mokėjimų iniciavimo būdą: inicijuoti vienkartinius mokėjimus, įkelti didesnį mokėjimų kiekį failu ar pateikti mokėjimų nurodymus, naudojantis aplikacijų programavimo sąsaja (API). Pateikus mokėjimo nurodymą mano.bank darbo dienomis iki 16 val., lėšos įprastai įskaitomos į gavėjo sąskaitą tą pačią darbo dieną. Europinius pinigų pervedimus galite atlikti eurais į bet kurią Lietuvos, Jungtinės Karalystės, Šveicarijos, Monako, San Marino, Andoros, Norvegijos, Islandijos, Lichtenšteino ar Europos Sąjungos valstybės narės finansų instituciją, kuri yra prisijungusi prie SEPA mokėjimų sistemos.",
+      },
+      article3: {
+        title: "Mokėjimų atlikimas visame pasaulyje (SWIFT)",
+        description:
+          "Turėdami mano.bank banko sąskaitą mokėjimus galite atlikti ir visame pasaulyje. Be aukščiau nurodytų europinių pinigų pervedimų, pavedimai eurais taip pat gali būti vykdomi į ir iš mano.bank sąskaitos bet kur pasaulyje. Be to, mokėjimus galite inicijuoti ir kitomis valiutomis - AUD, CAD, CHF, DKK, GBP, NOK, PLN, SEK, USD. Savo sąskaitoje turimus pinigus eurais bet kuriuo metu galite konvertuoti į kitą valiutą arba kitą valiutą konvertuoti į eurus bei atlikti mokėjimus pasirinkta valiuta. Valiutų skaičiuoklėje sužinosite norimos valiutos kursą, lėšų gavimo preliminarų terminą ir kitą su mokėjimu susijusią informaciją. Suteikite savo finansams daugiau lankstumo. Valiutų keitimai atliekami be jokių papildomų mokesčių, o kursus atnaujiname ne rečiau kaip kartą per valandą.",
+      },
+      article4: {
+        title: "Saugumas ir grynųjų pinigų apsauga",
+        description:
+          "Esame Europos Sąjungoje licencijuotas bankas, registruotas Lietuvoje ir reguliuojamas Lietuvos banko, ir jūsų pinigų saugumui teikiame didžiausią dėmesį. Sukūrėme patogią savitarnos sistemą bei esame prisijungę prie saugių tarptautinių mokėjimo sistemų - SWIFT, SEPA, TARGET2. Nuolatos tobuliname savo paslaugas, kad mūsų klientams operacijas eurais ar kitomis valiutomis atlikti būtų kuo paprasčiau. Saugus naudojimasis banko paslaugomis priklauso ir nuo jJūsų, primename pagrindines taisykles:",
+        bullet1:
+          "Niekada niekam neatskleiskite savo interneto banko naudotojo ID, interneto banko, „Smart-ID“, mobiliojo elektroninio parašo slaptažodžių. „Mano banko“ darbuotojai niekada neprašo tokių duomenų, jų dažniausiai prašo ne kas kitas, o finansiniai sukčiai ir šių duomenų neturite atskleisti jiems, kalbėdami telefonu, siunčiant SMS žinutes, el. paštu ar kitais būdais.",
+        bullet2:
+          "Nespauskite jokių el. paštu, pokalbių programėlėse ar SMS žinutėse gautų nuorodų, nevykdykite prašymų suvesti arba padiktuoti prisijungimo prie interneto banko duomenis.",
+        bullet3:
+          "Atidžiai perskaitykite gautos internetinės nuorodos adresą – sukčiai dažnai sukuria beveik identišką interneto banko prisijungimo puslapį, bet jo nuoroda nuo tikrojo visada skirsis bent viena raide ar simboliu.",
+      },
+    },
+    transferRate: "Žiūrėti tarptautinių mokėjimų pavedimo įkainius.",
+    openAccount: "Atsidaryti sąskaitą",
+  },
   aboutUs: {
     heroBlock: {
       title: "Apie mus",
       description: {
         visionTitle: "Vizija",
         visionDescription:
-          "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
-        missionTitle: "Mission",
+          "Mūsų vizija - sukurti pasaulį, kuriame kiekvienas žmogus galėtų naudotis finansinėmis paslaugomis ir kurti šviesesnę savo ir savo bendruomenių ateitį. Siekiame užtikrinti finansinę įtrauktį suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
+        missionTitle: "Misija",
         missionDescription:
-          "Unlocking Financial Inclusion - Our Mission, Your Future.",
+          "Finansinės įtraukties didinimas - mūsų misija, jūsų ateitis.",
       },
     },
     innerLinkBlock: {
       people: "Žmonės",
       values: "Vertybės",
-      jobs: "Corporate Governance",
+      jobs: "Įmonių valdymas",
       sponsorship: "Rėmimas",
       history: "Istorija",
       news: "Naujienos",
@@ -118,11 +160,11 @@ export default {
     team: {
       title: "LTL Komanda",
       description:
-        "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+        "Mūsų vizija - sukurti pasaulį, kuriame kiekvienas žmogus galėtų naudotis finansinėmis paslaugomis ir kurti šviesesnę savo ir savo bendruomenių ateitį. Siekiame užtikrinti finansinę įtrauktį suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
       duties: "Pareigos",
     },
     jobsSection: {
-      title: "Available jobs",
+      title: "Turimos darbo vietos",
       description:
         "Siūlome galimybę dirbti sparčiai besivystančioje šalies įmonėje, kur galėsite pajusti savo sprendimų poveikį ir dirbti su geriausiais savo sričių specialistais. Turime aiškius tikslus ir modernią darbo aplinką. LHV Pank yra 'Svajonių darbdavys 2015'. Ateikite ir prisidėkite prie Estijos banko sėkmės istorijos",
       availableJobs: "Turimos darbo vietos",
@@ -135,25 +177,25 @@ export default {
     },
     benefitsArticle: {
       article1: {
-        title: "Transparency & accountability",
+        title: "Skaidrumas ir atskaitomybė",
         description:
-          "We are aiming to provide access to fair and affordable banking services. We are transparent and accountable in our decisions, and take into account the impact of our actions on people's daily lives.",
+          "Siekiame suteikti galimybę naudotis sąžiningomis ir prieinamomis bankininkystės paslaugomis. Priimdami sprendimus esame skaidrūs ir atskaitingi, atsižvelgiame į savo veiksmų poveikį kasdieniam žmonių gyvenimui.",
       },
       article2: {
-        title: "Balancing interests and empowering people",
+        title: "Interesų derinimas ir žmonių įgalinimas",
         description:
-          "We are striving to create a more equitable financial system that balances the interests of our company, our customers and our society. We allocate resources and provide education to empower customers to understand the banking system and make informed decisions.",
+          "Siekiame sukurti teisingesnę finansų sistemą, kurioje būtų suderinti mūsų įmonės, klientų ir visuomenės interesai. Skiriame išteklius ir vykdome švietimą, kad klientai galėtų suprasti bankų sistemą ir priimti pagrįstus sprendimus.",
       },
       article3: {
-        title: "Human-centric approach to banking",
+        title: "Į žmogų orientuotas požiūris į bankininkystę",
         description:
-          "Finally, we apply a more human-centric approach to banking, ensuring that customers are treated with respect and dignity, and respecting the emotional and psychological needs of customers.",
+          "Galiausiai, bankininkystėje taikome labiau į žmogų orientuotą požiūrį, užtikrindami, kad su klientais būtų elgiamasi pagarbiai ir oriai, taip pat atsižvelgdami į klientų emocinius ir psichologinius poreikius.",
       },
     },
     history: {
       title: "Istorija",
       description:
-        "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+        "Mūsų vizija - sukurti pasaulį, kuriame kiekvienas žmogus galėtų naudotis finansinėmis paslaugomis ir kurti šviesesnę savo ir savo bendruomenių ateitį. Siekiame užtikrinti finansinę įtrauktį suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
     },
   },
   esg: {
@@ -736,7 +778,7 @@ export default {
     finacialCalendar: {
       title: "Finansinis kalendorius",
       description:
-        "LTL discloses monthly and quarterly financial results at 8.00 a.m on the dates announced in the Financial calendar. After disclosing the quarterly results, in the same morning at 9.00 a.m.",
+        "Mėnesio ir ketvirčio finansinius rezultatus LTL skelbia Finansiniame kalendoriuje paskelbtomis datomis 8.00 val. Atskleidusi ketvirčio rezultatus, tą patį rytą 9.00 val.",
     },
     innerLinkBlock: {
       quarterlyReports: "Ketvirčio ataskaitos",
@@ -792,44 +834,42 @@ export default {
     stepProcess: {
       title: "Paskolos paraiškos teikimo procesas:",
       step1: {
-        title: "Fill in a loan application form and give the consent",
+        title: "Užpildykite paskolos paraiškos formą ir duokite sutikimą.",
         description:
-          "Please fill in the application and signed the consent to enable us to perform an initial assessment",
+          "Užpildykite paraišką ir pasirašykite sutikimą, kad galėtume atlikti pirminį vertinimą.",
       },
       step2: {
-        title: "Identify yourself and give the consen",
+        title: "Prisistatykite ir duokite sutikimą",
         description:
-          "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document.",
+          "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodamiesi internetine priemone (nuoroda į išorės paslaugų teikėją). Jums reikės galiojančio asmens tapatybę patvirtinančio dokumento.",
       },
       step3: {
-        title: "Get an initial loan offer",
-        description:
-          "We will reach you within 24 hours with our initial proposal",
+        title: "Gaukite pradinį paskolos pasiūlymą",
+        description: "Pirminį pasiūlymą pateiksime per 24 valandas.",
       },
       step4: {
-        title: "Submit the documents",
-        subTitle:
-          "Since we agree on initial terms and conditions, please send us:",
+        title: "Pateikti dokumentus",
+        subTitle: "Kadangi susitarėme dėl pradinių sąlygų, atsiųskite mums:",
         bulletBlock: [
-          "Copy of passport, ID or residence permit",
-          "Application to join the union",
-          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract).",
+          "Paso, asmens tapatybės kortelės arba leidimo gyventi kopija",
+          "Prašymas įstoti į sąjungą",
+          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar mokotės Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei Jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijų sutartis).",
         ],
       },
       step5: {
-        title: "Get the final credit decision and sign the agreement",
+        title: "Gaukite galutinį sprendimą dėl kredito ir pasirašykite sutartį",
         description:
-          "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions.",
+          "Kai bus priimtas sprendimas išduoti kreditą, pakviesime jus pasirašyti sąskaitos sutartį ir kitas atitinkamas sąlygas.",
       },
       step6: {
-        title: "Sign the pledge agreement in the notary office",
+        title: "Pasirašykite įkeitimo sutartį notaro biure.",
         description:
-          "We will schedule a notary appointment at a mutually convenient time to finalize the mortgage arrangements.",
+          "Suplanuosime susitikimą pas notarą abiem pusėms patogiu laiku, kad užbaigtume hipotekos susitarimus.",
       },
       step7: {
-        title: "Loan disbursement",
+        title: "Paskolos išmokėjimas",
         description:
-          "The credit funds will be disbursed within one business day of completing the pledge.",
+          "Kredito lėšos bus išmokėtos per vieną darbo dieną nuo įkeitimo pabaigos.",
       },
     },
   },
@@ -876,7 +916,7 @@ export default {
       },
     },
     stepProcess: {
-      title: "Loan application process:",
+      title: "Paskolos paraiškos teikimo procesas:",
       step1: {
         title: "Užpildykite sąskaitos atidarymo formą",
         description: "Užpildykite paraišką",
@@ -887,9 +927,8 @@ export default {
           " Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento.",
       },
       step3: {
-        title: "Get an initial loan offer",
-        description:
-          "We will reach you within 24 hours with our initial proposal",
+        title: "Gaukite pradinį paskolos pasiūlymą",
+        description: "Pirminį pasiūlymą pateiksime per 24 valandas.",
       },
       step4: {
         title: "Pateikite dokumentus",
@@ -901,9 +940,9 @@ export default {
         ],
       },
       step5: {
-        title: "Get the final credit decision and sign the agreement",
+        title: "Gaukite galutinį sprendimą dėl kredito ir pasirašykite sutartį",
         description:
-          "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions.",
+          "Kai bus priimtas sprendimas išduoti kreditą, pakviesime jus pasirašyti sąskaitos sutartį ir kitas atitinkamas sąlygas.",
       },
       step6: {
         title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
@@ -911,9 +950,9 @@ export default {
           "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis.",
       },
       step7: {
-        title: "Loan disbursement",
+        title: "Paskolos išmokėjimas",
         description:
-          "The credit funds will be disbursed within one business day of completing the pledge.",
+          "Kredito lėšos bus išmokėtos per vieną darbo dieną nuo įkeitimo pabaigos.",
       },
     },
     clientSuport: {
@@ -951,8 +990,9 @@ export default {
   shareholders: {
     title: "Akcininkams",
     description:
-      "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+      "Mūsų vizija - sukurti pasaulį, kuriame kiekvienas žmogus galėtų naudotis finansinėmis paslaugomis ir kurti šviesesnę savo ir savo bendruomenių ateitį. Siekiame užtikrinti finansinę įtrauktį suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
     subTitle: "Akcininkų susirinkimai",
+    agenda: "Darbotvarkė",
     contacts: {
       title: "Kontaktai",
       director: "Direktorius",
@@ -1027,7 +1067,7 @@ export default {
   news: {
     title: "Naujienos",
     readMore: "Skaityti daugiau",
-    backToNews: "Atgal į naujienas"
+    backToNews: "Atgal į naujienas",
   },
   business: {
     termDeposit: {
@@ -1162,33 +1202,34 @@ export default {
         },
       },
       afterArticle: {
+        title: "Atidarę paskyrą",
         article1: {
-          title: "For private individuals:",
+          title: "Privatiems asmenims:",
           description:
-            "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n2. Save more with our high-interest personal bank account.\n3. Bank on-the-go with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Get a cash bonus of up to $200 when you open a personal bank account with us today.",
+            "1. Atsidarykite pas mus asmeninę banko sąskaitą ir mėgaukitės nuliniais mėnesiniais mokesčiais bei neribotu operacijų skaičiumi.\n2. Sutaupykite daugiau su mūsų asmenine banko sąskaita su didelėmis palūkanomis.\n3. Naudokitės mūsų internetinės ir mobiliosios bankininkystės paslaugomis visą parą ir 7 dienas per savaitę.\n4. Pasirūpinkite savo sąskaitos saugumu, naudodami pažangias saugumo funkcijas, tokias kaip dviejų veiksnių autentifikavimas ir sukčiavimo stebėjimas.\n5. Atsidarydami asmeninę banko sąskaitą šiandien, gaukite iki 200 USD premiją grynaisiais pinigais.",
         },
         article2: {
-          title: "For corporate accounts:",
+          title: "Įmonių sąskaitoms:",
           description:
-            "1. Take your business to the next level with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Access exclusive banking services and account management tools tailored to your business needs.\n4. Enjoy advanced security features such as two-factor authentication and fraud monitoring to keep your account safe.\n5. Open a corporate bank account with us today and receive a cash bonus of up to $500.",
+            "1. Perkelkite savo verslą į aukštesnį lygį su mūsų verslo banko sąskaita.\n2. Lengvai tvarkykite savo finansus internetu naudodamiesi visą parą veikiančia internetinės bankininkystės platforma.\n3. Naudokitės išskirtinėmis banko paslaugomis ir sąskaitos valdymo įrankiais, pritaikytais jūsų verslo poreikiams.\n4. Naudokitės pažangiomis saugumo funkcijomis, tokiomis kaip dviejų veiksnių autentifikavimas ir sukčiavimo stebėjimas, kad jūsų sąskaita būtų saugi.\n5. Atidarykite įmonės banko sąskaitą pas mus šiandien ir gaukite iki 500 USD piniginę premiją.",
         },
         article3: {
-          title: "For personal checking accounts:",
+          title: "Asmeninėms atsiskaitomosioms sąskaitoms:",
           description:
-            "1. Get the most out of your money with our personal checking account, featuring no monthly fees and unlimited transactions.\n2. Earn high interest on your savings with our premium personal checking account.\n3. Enjoy convenient access to your money with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal checking account with us today and receive a cash bonus of up to $200.",
+            "1. Naudokitės savo pinigais naudodamiesi mūsų asmenine atsiskaitomąja sąskaita, kurioje nėra mėnesinių mokesčių ir neribojamas operacijų skaičius.\n2. Gaukite dideles palūkanas už santaupas, naudodamiesi mūsų aukščiausios kokybės asmenine čekine sąskaita.\n3. Naudokitės patogia prieiga prie savo pinigų, naudodamiesi visą parą veikiančiomis internetinės ir mobiliosios bankininkystės paslaugomis.\n4. Pasirūpinkite savo sąskaitos saugumu, naudodami pažangias saugumo funkcijas, tokias kaip dviejų veiksnių autentifikavimas ir sukčiavimo stebėjimas.\n5. Atidarykite pas mus asmeninę atsiskaitomąją sąskaitą šiandien ir gaukite iki 200 USD piniginę premiją.",
         },
         article4: {
-          title: "For business checking accounts:",
+          title: "Verslo čekinės sąskaitos:",
           description:
-            "1. Simplify your business finances with our business checking account, featuring easy online management and no monthly fees.\n2. Access exclusive banking services and account management tools tailored to your business needs.\n3. Stay on top of your finances with 24/7 online banking services.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a business checking account with us today and receive a cash bonus of up to $500.",
+            "1. Supaprastinkite savo verslo finansus su mūsų verslo čekine sąskaita, kurią lengva valdyti internetu ir kurioje nėra mėnesinių mokesčių.\n2. Naudokitės išskirtinėmis banko paslaugomis ir sąskaitos valdymo įrankiais, pritaikytais jūsų verslo poreikiams.\n3. Turėkite nuolatinę informaciją apie savo finansus, naudodamiesi visą parą veikiančiomis internetinės bankininkystės paslaugomis.\n4. Apsaugokite savo sąskaitą naudodami pažangias saugumo funkcijas, tokias kaip dviejų veiksnių autentifikavimas ir sukčiavimo stebėjimas.\n5. Atidarykite pas mus verslo čekinę sąskaitą šiandien ir gaukite iki 500 USD piniginę premiją.",
         },
         article5: {
-          title: "For private individuals:",
+          title: "Privatiems asmenims:",
           description:
-            "1. Enjoy no monthly fees and unlimited transactions with our personal bank account.\n2. Earn high interest rates on your savings with our premium personal bank account.\n3. Our personal bank account offers convenient access to your money with 24/7 online banking and mobile app.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.\n5. Open a personal bank account with us today and receive a cash bonus of up to $200.",
+            "1. Su mūsų asmenine banko sąskaita galėsite mėgautis neribotais mėnesiniais mokesčiais ir neribotu operacijų skaičiumi.\n2. Gaukite dideles palūkanas už santaupas su mūsų asmenine banko sąskaita.\n3. Mūsų asmeninė banko sąskaita suteikia patogią prieigą prie jūsų pinigų su 24/7 internetine bankininkyste ir mobiliąja programėle.\n4. Apsaugokite savo sąskaitą naudodami pažangias saugumo funkcijas, tokias kaip dviejų veiksnių autentifikavimas ir sukčiavimo stebėjimas.\n5. Atsidarykite asmeninę banko sąskaitą pas mus šiandien ir gaukite iki 200 USD piniginę premiją.",
         },
         article6: {
-          title: "For corporate accounts:",
+          title: "Įmonių sąskaitoms:",
           description:
             "1. Streamline your business finances with our corporate bank account.\n2. Manage your finances online with ease through our 24/7 online banking platform.\n3. Get access to exclusive banking services and account management tools tailored to your business needs.\n4. Protect your account with advanced security features such as two-factor authentication and fraud monitoring.",
         },

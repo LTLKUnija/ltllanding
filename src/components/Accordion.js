@@ -1,16 +1,19 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Accordion({ faqData, singleLevel }) {
+  const router = useRouter();
+
   const [data, setData] = useState(faqData);
 
   const openFaq = (e) => {
     const idx = e.target.dataset.idx;
-    let parentIdx = "";
+    let parentidx = "";
     let temp = [...data];
 
-    if (e.target.dataset.parentIdx) {
-      parentIdx = e.target.dataset.parentIdx;
-      temp[parentIdx].body[idx].opened = !temp[parentIdx].body[idx].opened;
+    if (e.target.dataset.parentidx) {
+      parentidx = e.target.dataset.parentidx;
+      temp[parentidx].body[idx].opened = !temp[parentidx].body[idx].opened;
     } else {
       temp[idx].opened = !temp[idx].opened;
     }
@@ -34,7 +37,7 @@ export default function Accordion({ faqData, singleLevel }) {
                   onClick={(e) => openFaq(e)}
                   key={idx}
                 >
-                  {question.header}
+                  {router.locale === "lt" ? question.headerLT : question.header}
                 </div>
                 <div
                   data-idx={idx}
@@ -46,13 +49,17 @@ export default function Accordion({ faqData, singleLevel }) {
               </div>
               <div className={`acPanel ${question.opened ? "opened" : ""}`}>
                 {!question.hasInnerChildren
-                  ? question.body.map((item, idx) => {
-                      return (
+                  ? router.locale === "lt"
+                    ? question.bodyLT.map((item, idx) => (
                         <div className="item" key={idx}>
                           {item}
                         </div>
-                      );
-                    })
+                      ))
+                    : question.body.map((item, idx) => (
+                        <div className="item" key={idx}>
+                          {item}
+                        </div>
+                      ))
                   : question.body.map((item, index) => {
                       return (
                         <div className="ac" key={index}>
@@ -60,14 +67,18 @@ export default function Accordion({ faqData, singleLevel }) {
                             <div
                               className="accHeaderTitle"
                               data-idx={index}
-                              data-parent-idx={idx}
+                              data-parentidx={
+                                question.hasInnerChildren ? idx : undefined
+                              }
                               onClick={(e) => openFaq(e)}
                             >
-                              {item.header}
+                              {router.locale === "lt"
+                                ? question.headerLT
+                                : question.header}
                             </div>
                             <div
                               data-idx={index}
-                              data-parent-idx={idx}
+                              data-parent-idx={index}
                               onClick={(e) => openFaq(e)}
                               className="accOpenBtn"
                             >
@@ -77,7 +88,13 @@ export default function Accordion({ faqData, singleLevel }) {
                           <div
                             className={`acPanel ${item.opened ? "opened" : ""}`}
                           >
-                            {item.body}
+                            {router.locale === "lt"
+                              ? item.bodyLT.map((item, idx) => {
+                                  return <div key={idx}>{item}</div>;
+                                })
+                              : item.body.map((item, idx) => {
+                                  return <div key={idx}>{item}</div>;
+                                })}
                           </div>
                         </div>
                       );
