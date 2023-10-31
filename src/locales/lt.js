@@ -1085,6 +1085,12 @@ export default {
     readMore: "Skaityti daugiau",
     backToNews: "Atgal į naujienas",
   },
+  clientSuport: {
+    title: "Pagalba klientams",
+    description:
+      "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu ",
+    or: " arba el. paštu ",
+  },
   business: {
     termDeposit: {
       heroBlock: {

@@ -1081,6 +1081,12 @@ export default {
     emailPlaceholder: "E-mail address",
     button: "Send",
   },
+  clientSuport: {
+    title: "Client support",
+    description:
+      "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone ",
+    or: " or email ",
+  },
   news: {
     title: "News",
     readMore: "Read More",
