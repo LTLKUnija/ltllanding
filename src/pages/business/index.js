@@ -4,6 +4,10 @@ import IndexNews from "@/components/IndexNews";
 import Link from "next/link";
 import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
+import ArticleImg1 from "@../../../public/assets/images/article1.png";
+import ArticleImg2 from "@../../../public/assets/images/article2.png";
+import ArticleImg3 from "@../../../public/assets/images/article3.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -18,10 +22,12 @@ export default function Home() {
               <article className={styles.beneficialArticle}>
                 <div className={styles.imageBlock}>
                   <Image
-                    src="/assets/images/article1.svg"
-                    width={429}
-                    height={429}
-                    alt="Image"
+                    src={ArticleImg1}
+                    alt="Available Jobs"
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                    }}
                   />
                 </div>
                 <div className={styles.articleBlock}>
@@ -45,10 +51,12 @@ export default function Home() {
               <article className={styles.beneficialArticleMirror}>
                 <div className={styles.imageBlock}>
                   <Image
-                    src="/assets/images/article2.svg"
-                    width={429}
-                    height={429}
-                    alt="Image"
+                    src={ArticleImg2}
+                    alt="Available Jobs"
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                    }}
                   />
                 </div>
                 <div className={styles.articleBlock}>
@@ -71,10 +79,12 @@ export default function Home() {
               <article className={styles.beneficialArticle}>
                 <div className={styles.imageBlock}>
                   <Image
-                    src="/assets/images/article3.svg"
-                    width={429}
-                    height={429}
-                    alt="Image"
+                    src={ArticleImg3}
+                    alt="Available Jobs"
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                    }}
                   />
                 </div>
                 <div className={styles.articleBlock}>
