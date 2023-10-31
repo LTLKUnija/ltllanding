@@ -1,0 +1,25 @@
+.clientSuportWrapper {
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 0 20px;
+  .clientSuportHeader {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .clientSuportDescription {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: center;
+
+    a {
+      font-weight: 700;
+      color: var(--main-text-color);
+      text-decoration: none;
+    }
+  }
+}

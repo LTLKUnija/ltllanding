@@ -15,6 +15,7 @@ import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessTermDepositInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { DepositFAQ } from "@/common/AccordionSchemas";
+import ClientSupport from "@/components/ClientSupport";
 
 export default function Deposit() {
   const router = useRouter();
@@ -240,14 +241,7 @@ export default function Deposit() {
             </div>
           </section>
           <section id="clientSuport" className={styles.clientSuportSection}>
-            <div className={styles.clientSuportWrapper}>
-              <h3 className={styles.clientSuportHeader}>
-                {t.business.termDeposit.clientSuport.title}
-              </h3>
-              <div className={styles.clientSuportDescription}>
-                {t.business.termDeposit.clientSuport.description}
-              </div>
-            </div>
+            <ClientSupport />
           </section>
           <section id="faq" className={styles.faqSection}>
             <div className={styles.faqWrapper}>

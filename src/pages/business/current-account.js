@@ -13,6 +13,7 @@ import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessCurrentAccountInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { CurrentAccFAQ } from "@/common/AccordionSchemas";
+import ClientSupport from "@/components/ClientSupport";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -159,14 +160,7 @@ export default function Mortgage() {
           </div>
         </section>
         <section id="clientSuport" className={styles.clientSuportSection}>
-          <div className={styles.clientSuportWrapper}>
-            <h3 className={styles.clientSuportHeader}>
-              {t.privetCurrentAccount.clientSuport.title}
-            </h3>
-            <div className={styles.clientSuportDescription}>
-              {t.privetCurrentAccount.clientSuport.description}
-            </div>
-          </div>
+          <ClientSupport />
         </section>
         <section id="faq" className={styles.faqSection}>
           <div className={styles.faqWrapper}>
