@@ -521,7 +521,7 @@ export default {
     stepProcess: {
       title: "Terminuoto indėlio sąskaitos atidarymo procesas",
       step1: {
-        title: "Užpildykite sąskaitos atidarymo form",
+        title: "Užpildykite sąskaitos atidarymo formą",
         description: "Užpildykite paraišką",
       },
       step2: {
