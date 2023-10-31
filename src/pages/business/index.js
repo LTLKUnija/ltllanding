@@ -7,7 +7,6 @@ import Image from "next/image";
 import ArticleImg1 from "@../../../public/assets/images/article1.png";
 import ArticleImg2 from "@../../../public/assets/images/article2.png";
 import ArticleImg3 from "@../../../public/assets/images/article3.png";
-import Image from "next/image";
 
 export default function Home() {
   return (
