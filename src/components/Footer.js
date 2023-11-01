@@ -195,7 +195,11 @@ function Footer({ setShowLinks, showLinks }) {
             {t('footerNavLinks.address')}
           </Link>
           <div className="social-links-block">
-            <Link className="social-link" target="_blank" href="https://www.facebook.com/">
+            <Link
+              className="social-link"
+              target="_blank"
+              href="https://www.facebook.com/LTLKreditoUnija"
+            >
               <Image
                 width={8}
                 height={18}
@@ -203,7 +207,11 @@ function Footer({ setShowLinks, showLinks }) {
                 src="/assets/images/fb-icon.svg"
               />
             </Link>
-            <Link className="social-link" target="_blank" href="https://www.linkedin.com">
+            <Link
+              className="social-link"
+              target="_blank"
+              href="https://www.linkedin.com"
+            >
               <Image
                 width={20}
                 height={18}

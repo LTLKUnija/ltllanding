@@ -14,6 +14,7 @@ import InnerLinks from "@/components/InnerLinks";
 import { DepositFAQ } from "@/common/AccordionSchemas";
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import ClientSupport from "@/components/ClientSupport";
 
 export default function Deposit() {
   const router = useRouter();
@@ -329,14 +330,7 @@ export default function Deposit() {
             </div>
           </section>
           <section id="clientSuport" className={styles.clientSuportSection}>
-            <div className={styles.clientSuportWrapper}>
-              <h3 className={styles.clientSuportHeader}>
-                {t('termDeposit.clientSuport.title')}
-              </h3>
-              <div className={styles.clientSuportDescription}>
-                {t('termDeposit.clientSuport.description')}
-              </div>
-            </div>
+            <ClientSupport />
           </section>
           <section id="faq" className={styles.faqSection}>
             <div className={styles.faqWrapper}>

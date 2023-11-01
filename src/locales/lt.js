@@ -521,7 +521,7 @@ export default {
     stepProcess: {
       title: "Terminuoto indėlio sąskaitos atidarymo procesas",
       step1: {
-        title: "Užpildykite sąskaitos atidarymo form",
+        title: "Užpildykite sąskaitos atidarymo formą",
         description: "Užpildykite paraišką",
       },
       step2: {
@@ -1084,6 +1084,12 @@ export default {
     title: "Naujienos",
     readMore: "Skaityti daugiau",
     backToNews: "Atgal į naujienas",
+  },
+  clientSuport: {
+    title: "Pagalba klientams",
+    description:
+      "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu ",
+    or: " arba el. paštu ",
   },
   business: {
     termDeposit: {
