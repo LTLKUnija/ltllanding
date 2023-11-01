@@ -28,7 +28,7 @@ export default function News() {
     const currentYear = yearsLinksVocab.filter((year) => year.selected)[0];
     const currentYearNews = allNewsData.filter(
       (n) => n.id === currentYear?.year
-    )[0];
+      )[0];
     setCurrentYearNewsData(currentYearNews);
   };
 

@@ -865,7 +865,8 @@
   },
   "news": {
     "title": "Naujienos",
-    "readMore": "Skaityti daugiau"
+    "readMore": "Skaityti daugiau",
+    "backToNews": "Atgal į naujienas"
   },
   "business": {
     "termDeposit": {
@@ -982,6 +983,7 @@
         }
       },
       "afterArticle": {
+        "title": "Atidarę paskyrą",
         "article1": {
           "title": "For private individuals:",
           "description": "1. Open a personal bank account with us and enjoy zero monthly fees and unlimited transactions.\n2. Save more with our high-interest personal bank account.\n3. Bank on-the-go with our 24/7 online and mobile banking services.\n4. Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring.\n5. Get a cash bonus of up to $200 when you open a personal bank account with us today."

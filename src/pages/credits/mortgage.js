@@ -4,8 +4,6 @@ import Accordion from "@/components/Accordion";
 import Steper from "@/components/Steper";
 import { privetCurrentAccountSteperData } from "@/pages/api/data/stepersData";
 import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/mortgageLoan_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";

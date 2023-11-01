@@ -7,8 +7,6 @@ import { termDepositSteperData } from "@/pages/api/data/stepersData";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/Business_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
@@ -20,7 +18,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Deposit() {
   const router = useRouter();
-  const {t} = useTranslation('common')
+  const {t} = useTranslation('common');
 
   const handleBack = () => {
     router.back();

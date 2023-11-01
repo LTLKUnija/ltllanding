@@ -12,7 +12,7 @@ import { businessInvestmentLoanInnerLinkList } from "@/pages/api/data/innerLinks
 import InnerLinks from "@/components/InnerLinks";
 import { LoanForBusiness } from "@/common/AccordionSchemas";
 import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 
 export default function Mortgage() {

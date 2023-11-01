@@ -104,7 +104,7 @@ export default function Mortgage() {
         <section id="after" className={businessStyle.infoSection}>
           <div className={businessStyle.infoWrapper}>
             <div className={businessStyle.infoHeader}>
-              <h3>{t.business.currentAccount.afterArticle.title}</h3>
+              <h3>{t('business.currentAccount.afterArticle.title')}</h3>
             </div>
             <div className={businessStyle.infoList}>
               <div className={businessStyle.infoItem}>

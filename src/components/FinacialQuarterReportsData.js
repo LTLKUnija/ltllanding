@@ -3,12 +3,11 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "@/styles/financial-reporting.module.scss";
 import Link from "next/link";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
+import { useTranslation } from 'next-i18next';
 
 export default function FinacialQuartalReportsData() {
   const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   const [quarterYearLink, setquarterYearLink] = useState([]);
   const [activeQuarters, setActiveQuarters] = useState([]);
@@ -58,7 +57,7 @@ export default function FinacialQuartalReportsData() {
   return (
     <div className={styles.presentationsWrapper}>
       <h3 className={styles.sectionTitle}>
-        {t.finacialReporting.quarterlyReports}
+        {t('finacialReporting.quarterlyReports')}
       </h3>
       <div className={[styles.tabsList, styles.center].join(" ")}>
         {quarterYearLink.map((year, idx) => {

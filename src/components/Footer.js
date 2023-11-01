@@ -1,12 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
+import { useTranslation } from 'next-i18next';
 
 function Footer({ setShowLinks, showLinks }) {
-  const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   const handleClick = (e) => {
     const key = e.target.dataset.id;
@@ -26,7 +23,7 @@ function Footer({ setShowLinks, showLinks }) {
             data-id="usefulLinks"
             onClick={(e) => handleClick(e)}
           >
-            {t.footerNavLinks.usefulLinks}
+            {t('footerNavLinks.usefulLinks')}
           </h4>
           <div
             className="chevron"
@@ -47,19 +44,19 @@ function Footer({ setShowLinks, showLinks }) {
           </div>
         </div>
         <Link className="footer-navigation-link" href="/pricelist">
-          {t.footerNavLinks.priceList}
+          {t('footerNavLinks.priceList')}
         </Link>
         <Link className="footer-navigation-link" href="/terms-and-conditions">
-          {t.footerNavLinks.termsAndCond}
+          {t('footerNavLinks.termsAndCond')}
         </Link>
         <Link className="footer-navigation-link" href="/privacy-policy">
-          {t.footerNavLinks.ppAndCookies}
+          {t('footerNavLinks.ppAndCookies')}
         </Link>
         <Link className="footer-navigation-link" href="/security">
-          {t.footerNavLinks.security}
+          {t('footerNavLinks.security')}
         </Link>
         <Link className="footer-navigation-link" href="/suport-and-complaints">
-          {t.footerNavLinks.support}
+          {t('footerNavLinks.support')}
         </Link>
       </div>
       <div
@@ -74,7 +71,7 @@ function Footer({ setShowLinks, showLinks }) {
             onClick={(e) => handleClick(e)}
             data-id="aboutUs"
           >
-            {t.footerNavLinks.aboutUs}
+            {t('footerNavLinks.aboutUs')}
           </h4>
 
           <div
@@ -94,19 +91,19 @@ function Footer({ setShowLinks, showLinks }) {
           </div>
         </div>
         <Link className="footer-navigation-link" href="/management">
-          {t.footerNavLinks.management}
+          {t('footerNavLinks.management')}
         </Link>
         <Link className="footer-navigation-link" href="/share-holders">
-          {t.footerNavLinks.shareholders}
+          {t('footerNavLinks.shareholders')}
         </Link>
         <Link className="footer-navigation-link" href="/news">
-          {t.footerNavLinks.news}
+          {t('footerNavLinks.news')}
         </Link>
         <Link className="footer-navigation-link" href="/licence">
-          {t.footerNavLinks.license}
+          {t('footerNavLinks.license')}
         </Link>
         <Link className="footer-navigation-link" href="/faq">
-          {t.headerNavLinks.faq}
+          {t('headerNavLinks.faq')}
         </Link>                
       </div>
       <div
@@ -120,7 +117,7 @@ function Footer({ setShowLinks, showLinks }) {
             data-id="accountability"
             onClick={(e) => handleClick(e)}
           >
-            {t.footerNavLinks.accountability}
+            {t('footerNavLinks.accountability')}
           </h4>
           <div
             className="chevron"
@@ -139,13 +136,13 @@ function Footer({ setShowLinks, showLinks }) {
           </div>
         </div>
         <Link className="footer-navigation-link" href="/financial-reporting">
-          {t.footerNavLinks.financialAccountability}
+          {t('footerNavLinks.financialAccountability')}
         </Link>
         <Link className="footer-navigation-link" href="/esg">
-          {t.footerNavLinks.esg}
+          {t('footerNavLinks.esg')}
         </Link>
         <Link className="footer-navigation-link" href="/money-loundrying">
-          {t.footerNavLinks.moneyLoundering}
+          {t('footerNavLinks.moneyLoundering')}
         </Link>
       </div>
       <div
@@ -160,7 +157,7 @@ function Footer({ setShowLinks, showLinks }) {
             data-id="possibilities"
             onClick={(e) => handleClick(e)}
           >
-            {t.footerNavLinks.possibilities}
+            {t('footerNavLinks.possibilities')}
           </h4>
           <div
             className="chevron"
@@ -179,23 +176,23 @@ function Footer({ setShowLinks, showLinks }) {
           </div>
         </div>
         <Link className="footer-navigation-link" href="/partnership">
-          {t.footerNavLinks.partner}
+          {t('footerNavLinks.partner')}
         </Link>
         <Link className="footer-navigation-link" href="/open-banking">
-          {t.footerNavLinks.api}
+          {t('footerNavLinks.api')}
         </Link>
         <Link className="footer-navigation-link" href="/career">
-          {t.footerNavLinks.career}
+          {t('footerNavLinks.career')}
         </Link>
       </div>
       <div className="footer-navigation-section mobile">
         <div className="mobile_adress">
           <h4 className="footer-navigation-section-title">
-            {t.footerNavLinks.contacts}
+            {t('footerNavLinks.contacts')}
           </h4>
 
           <Link className="footer-navigation-link adress" href="/contacts">
-            {t.footerNavLinks.address}
+            {t('footerNavLinks.address')}
           </Link>
           <div className="social-links-block">
             <Link className="social-link" target="_blank" href="https://www.facebook.com/">
