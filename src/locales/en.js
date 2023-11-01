@@ -95,6 +95,7 @@ export default {
       text: "Learn more",
     },
   },
+  
   payments: {
     title: "Payments worldwide",
     benefitsArticle: {

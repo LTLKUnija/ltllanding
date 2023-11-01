@@ -95,6 +95,7 @@ export default {
       text: "Sužinokite daugiau",
     },
   },
+
   payments: {
     title: "Mokėjimai visame pasaulyje",
     benefitsArticle: {
@@ -137,6 +138,7 @@ export default {
     transferRate: "Žiūrėti tarptautinių mokėjimų pavedimo įkainius.",
     openAccount: "Atsidaryti sąskaitą",
   },
+  
   aboutUs: {
     heroBlock: {
       title: "Apie mus",

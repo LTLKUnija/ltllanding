@@ -9,7 +9,7 @@
     "private": "Privatiems",
     "business": "Verslui",
     "payments": "Mokėjimai",
-    "currentAccount": "Einamoji sąskaita {{name}}",
+    "currentAccount": "Einamoji sąskaita",
     "credit": "Kreditas",
     "mortgageLoan": "Būsto paskola",
     "consumerLoan": "Vartojimo paskola",
@@ -87,6 +87,38 @@
       "text": "Sužinokite daugiau"
     }
   },
+  "payments": {
+    "title": "Mokėjimai visame pasaulyje",
+    "benefitsArticle": {
+      "article1": {
+        "title": "Nuo ko pradėti",
+        "description": "Kad galėtumėte vykdyti finansinę veiklą, pirmiausia jums reikės banko sąskaitos mano.bank. Tokią sąskaitą paprastai ir greitai galite atidaryti internetu. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje ar naudodamiesi aplikacijų programavimo sąsaja (API). Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti skiltyje Įkainiai.. Savo klientams mano.bank gali pasiūlyti:",
+        "bullet1": "Vietinius mokėjimus visoje Lietuvoje",
+        "bullet2": "Tarptautinius pervedimus visame pasaulyje (tiek SEPA, tiek SWIFT mokėjimus)",
+        "bullet3": "Valiutų keitimo operacijas",
+        "bullet4": "Patogų operacijų atlikimą ir valdymą naudojantis mano.bank interneto banku arba API",
+        "bullet5": "Profesionalias konsultacijas ir individualų dėmesį",
+        "bullet6": "Jeigu norite saugiai ir patogiai naudotis šiomis paslaugomis – atidarykite sąskaitą mano.bank jau dabar. Tai – labai paprasta!"
+      },
+      "article2": {
+        "title": "Patogus europinių pinigų pervedimas (SEPA)",
+        "description": "Naudodamiesi mano.bank paslaugomis galite pasirinkti jums labiausiai tinkantį SEPA mokėjimų iniciavimo būdą: inicijuoti vienkartinius mokėjimus, įkelti didesnį mokėjimų kiekį failu ar pateikti mokėjimų nurodymus, naudojantis aplikacijų programavimo sąsaja (API). Pateikus mokėjimo nurodymą mano.bank darbo dienomis iki 16 val., lėšos įprastai įskaitomos į gavėjo sąskaitą tą pačią darbo dieną. Europinius pinigų pervedimus galite atlikti eurais į bet kurią Lietuvos, Jungtinės Karalystės, Šveicarijos, Monako, San Marino, Andoros, Norvegijos, Islandijos, Lichtenšteino ar Europos Sąjungos valstybės narės finansų instituciją, kuri yra prisijungusi prie SEPA mokėjimų sistemos."
+      },
+      "article3": {
+        "title": "Mokėjimų atlikimas visame pasaulyje (SWIFT)",
+        "description": "Turėdami mano.bank banko sąskaitą mokėjimus galite atlikti ir visame pasaulyje. Be aukščiau nurodytų europinių pinigų pervedimų, pavedimai eurais taip pat gali būti vykdomi į ir iš mano.bank sąskaitos bet kur pasaulyje. Be to, mokėjimus galite inicijuoti ir kitomis valiutomis - AUD, CAD, CHF, DKK, GBP, NOK, PLN, SEK, USD. Savo sąskaitoje turimus pinigus eurais bet kuriuo metu galite konvertuoti į kitą valiutą arba kitą valiutą konvertuoti į eurus bei atlikti mokėjimus pasirinkta valiuta. Valiutų skaičiuoklėje sužinosite norimos valiutos kursą, lėšų gavimo preliminarų terminą ir kitą su mokėjimu susijusią informaciją. Suteikite savo finansams daugiau lankstumo. Valiutų keitimai atliekami be jokių papildomų mokesčių, o kursus atnaujiname ne rečiau kaip kartą per valandą."
+      },
+      "article4": {
+        "title": "Saugumas ir grynųjų pinigų apsauga",
+        "description": "Esame Europos Sąjungoje licencijuotas bankas, registruotas Lietuvoje ir reguliuojamas Lietuvos banko, ir jūsų pinigų saugumui teikiame didžiausią dėmesį. Sukūrėme patogią savitarnos sistemą bei esame prisijungę prie saugių tarptautinių mokėjimo sistemų - SWIFT, SEPA, TARGET2. Nuolatos tobuliname savo paslaugas, kad mūsų klientams operacijas eurais ar kitomis valiutomis atlikti būtų kuo paprasčiau. Saugus naudojimasis banko paslaugomis priklauso ir nuo jJūsų, primename pagrindines taisykles:",
+        "bullet1": "Niekada niekam neatskleiskite savo interneto banko naudotojo ID, interneto banko, „Smart-ID“, mobiliojo elektroninio parašo slaptažodžių. „Mano banko“ darbuotojai niekada neprašo tokių duomenų, jų dažniausiai prašo ne kas kitas, o finansiniai sukčiai ir šių duomenų neturite atskleisti jiems, kalbėdami telefonu, siunčiant SMS žinutes, el. paštu ar kitais būdais.",
+        "bullet2": "Nespauskite jokių el. paštu, pokalbių programėlėse ar SMS žinutėse gautų nuorodų, nevykdykite prašymų suvesti arba padiktuoti prisijungimo prie interneto banko duomenis.",
+        "bullet3": "Atidžiai perskaitykite gautos internetinės nuorodos adresą – sukčiai dažnai sukuria beveik identišką interneto banko prisijungimo puslapį, bet jo nuoroda nuo tikrojo visada skirsis bent viena raide ar simboliu."
+      }
+    },
+    "transferRate": "Žiūrėti tarptautinių mokėjimų pavedimo įkainius.",
+    "openAccount": "Atsidaryti sąskaitą"
+  },  
   "aboutUs": {
     "heroBlock": {
       "title": "Apie mus",
@@ -804,6 +836,7 @@
     "title": "Akcininkams",
     "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
     "subTitle": "Akcininkų susirinkimai",
+    "agenda": "Darbotvarkė",
     "contacts": {
       "title": "Kontaktai",
       "director": "Direktorius",
@@ -1210,3 +1243,4 @@
     "pageTitle": "D.U.K."
   }
 }
+
