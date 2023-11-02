@@ -1,15 +1,16 @@
+// Make sure this page is not needed anymore
+
 import styles from "@/styles/credits.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { basic } from "@/common/AccordionSchemas";
 
 export default function Credits() {
-  const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
+
 
   function createSelectOptions(number) {
     let arr = [];
@@ -22,17 +23,17 @@ export default function Credits() {
         <section className={styles.creditsPageWrapper}>
           <div className={styles.creditsPageList}>
             <div className={styles.creditsHeroItem}>
-              <h2>{t.consumerLoan.heroBlock.title}</h2>
+              <h2>{t('consumerLoan.heroBlock.title')}</h2>
               <div className={styles.creditsPageDescription}>
-                <p>{t.consumerLoan.heroBlock.description}</p>
+                <p>{t('consumerLoan.heroBlock.description')}</p>
                 <ul>
-                  <li>{t.consumerLoan.heroBlock.bullet1}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet2}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet3}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet4}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet5}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet6}</li>
-                  <li>{t.consumerLoan.heroBlock.bullet7}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet1')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet2')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet3')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet4')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet5')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet6')}</li>
+                  <li>{t('consumerLoan.heroBlock.bullet7')}</li>
                 </ul>
               </div>
               <div>
@@ -187,3 +188,13 @@ export default function Credits() {
     </IndexLayout>
   );
 }
+
+export async function getStaticProps({ locale }) {
+   return {
+     props: {
+       ...(await serverSideTranslations(locale, [
+         'common',
+       ])),
+     },
+   }
+ }

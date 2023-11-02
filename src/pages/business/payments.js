@@ -2,6 +2,8 @@ import styles from "@/styles/payments.module.scss"
 import IndexLayout from "@/Layouts/IndexLayout"
 import CurrencyConverter from "@/components/CurrencyConverter"
 import Image from "next/image"
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Payments() {
    return (
@@ -98,3 +100,13 @@ export default function Payments() {
       </>
    )
 }
+
+export async function getStaticProps({ locale }) {
+   return {
+     props: {
+       ...(await serverSideTranslations(locale, [
+         'common',
+       ])),
+     },
+   }
+ }

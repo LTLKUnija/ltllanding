@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import styles from "@/styles/BurgerMenu.module.scss";
 import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import Image from "next/image";
+import { useTranslation } from 'next-i18next';
 
 const BurgerMenu = ({ isOpen, onClose }) => {
   const router = useRouter();
-  const { locale } = router;
-  const t = locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
   const isBusiness = router.pathname.includes("/business");
   const [showInnerLinks, setShowInnerLinks] = useState({
     payment: false,
@@ -35,24 +33,24 @@ const BurgerMenu = ({ isOpen, onClose }) => {
       </div>
       <div className={styles.openAcc}>
         <Link href="/open-account" className={styles.upperCaseLink}>
-          {t.headerNavLinks.openAccount}
+          {t('headerNavLinks.openAccount')}
         </Link>
       </div>
       <div className={styles.burgerHeader}>
         {isBusiness ? (
           <Link className={styles.upperCaseLink} href="/">
-            {t.headerNavLinks.private}
+            {t('headerNavLinks.private')}
           </Link>
         ) : (
           <Link className={styles.upperCaseLink} href="/business">
-            {t.headerNavLinks.business}
+            {t('headerNavLinks.business')}
           </Link>
         )}
       </div>
       {isBusiness ? (
         <div className={styles.burgerBox}>
           <Link className={styles.lowerCaseLink} href="/business/deposits">
-            {t.headerNavLinks.deposit}
+            {t('headerNavLinks.deposit')}
           </Link>
           <div
             className={styles.burgerItem}
@@ -60,7 +58,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             onClick={(e) => handleShowInnerLinks(e)}
           >
             <h4 className={styles.upperCaseLink} data-id="payment">
-              {t.headerNavLinks.payments}
+              {t('headerNavLinks.payments')}
             </h4>
             <Image
               src="/assets/images/chevronBlack.svg"
@@ -85,10 +83,10 @@ const BurgerMenu = ({ isOpen, onClose }) => {
               className={styles.lowerCaseLink}
               href="/business/current-account"
             >
-              {t.headerNavLinks.currentAccount}
+              {t('headerNavLinks.currentAccount')}
             </Link>
             <Link className={styles.lowerCaseLink} href="/business/payments">
-              {t.headerNavLinks.payments}
+              {t('headerNavLinks.payments')}
             </Link>
           </div>
           <div
@@ -97,7 +95,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             onClick={(e) => handleShowInnerLinks(e)}
           >
             <h4 className={styles.upperCaseLink} data-id="credit">
-              {t.headerNavLinks.credit}
+              {t('headerNavLinks.credit')}
             </h4>
             <Image
               src="/assets/images/chevronBlack.svg"
@@ -122,24 +120,24 @@ const BurgerMenu = ({ isOpen, onClose }) => {
               className={styles.lowerCaseLink}
               href="/business/investment-loan"
             >
-              {t.headerNavLinks.investmentLoan}
+              {t('headerNavLinks.investmentLoan')}
             </Link>
             <Link
               className={styles.lowerCaseLink}
               href="/business/capital-loan"
             >
-              {t.headerNavLinks.capitalLoan}
+              {t('headerNavLinks.capitalLoan')}
             </Link>
           </div>
 
           <Link className={styles.lowerCaseLink} href="/contacts">
-            {t.headerNavLinks.contacts}
+            {t('headerNavLinks.contacts')}
           </Link>
         </div>
       ) : (
         <div className={styles.burgerBox}>
           <Link className={styles.lowerCaseLink} href="/deposits">
-            {t.headerNavLinks.deposit}
+            {t('headerNavLinks.deposit')}
           </Link>
 
           <div
@@ -148,7 +146,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             onClick={(e) => handleShowInnerLinks(e)}
           >
             <h4 className={styles.upperCaseLink} data-id="payment">
-              {t.headerNavLinks.payments}
+              {t('headerNavLinks.payments')}
             </h4>
             <Image
               src="/assets/images/chevronBlack.svg"
@@ -170,10 +168,10 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             }`}
           >
             <Link className={styles.lowerCaseLink} href="/product">
-              {t.headerNavLinks.currentAccount}
+              {t('headerNavLinks.currentAccount')}
             </Link>
             <Link className={styles.lowerCaseLink} href="/payments">
-              {t.headerNavLinks.payments}
+              {t('headerNavLinks.payments')}
             </Link>
           </div>
 
@@ -183,7 +181,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             onClick={(e) => handleShowInnerLinks(e)}
           >
             <h4 className={styles.upperCaseLink} data-id="credit">
-              {t.headerNavLinks.credit}
+              {t('headerNavLinks.credit')}
             </h4>
             <Image
               src="/assets/images/chevronBlack.svg"
@@ -205,21 +203,21 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             }`}
           >
             <Link className={styles.lowerCaseLink} href="/credits/mortgage">
-              {t.headerNavLinks.mortgageLoan}
+              {t('headerNavLinks.mortgageLoan')}
             </Link>
             <Link
               className={styles.lowerCaseLink}
               href="/credits/consumer-loan"
             >
-              {t.headerNavLinks.consumerLoan}
+              {t('headerNavLinks.consumerLoan')}
             </Link>
             <Link className={styles.lowerCaseLink} href="/credits/equity-loan">
-              {t.headerNavLinks.equityLoan}
+              {t('headerNavLinks.equityLoan')}
             </Link>
           </div>
 
           <Link className={styles.lowerCaseLink} href="/contacts">
-            {t.headerNavLinks.contacts}
+            {t('headerNavLinks.contacts')}
           </Link>
         </div>
       )}

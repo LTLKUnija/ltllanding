@@ -2,17 +2,15 @@ import styles from "@/styles/financial-reporting.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import FinacialReportsData from "@/components/FinacialReportsData";
 import FinancialQuarterReportsData from "@/components/FinacialQuarterReportsData";
 import { finacialReportingInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function FinancialReporting() {
-  const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   const [factSheetList, setFactSheetList] = useState([]);
   const [activeFactSheetList, setActiveFactSheetList] = useState([]);
@@ -68,7 +66,7 @@ export default function FinancialReporting() {
       <main>
         <section className={styles.financialReportingSection}>
           <h3 className={styles.financialReportingTitle}>
-            {t.finacialReporting.title}
+            {t('finacialReporting.title')}
           </h3>
         </section>
         <section className={styles.innerNavigationSection}>
@@ -88,7 +86,7 @@ export default function FinancialReporting() {
         >
           <div className={styles.ReportsWrapper}>
             <h3 className={styles.sectionTitle}>
-              {t.finacialReporting.factsheets}
+              {t('finacialReporting.factsheets')}
             </h3>
             <div className={[styles.tabsList, styles.center].join(" ")}>
               {factSheetList.map((tab, idx) => {
@@ -134,7 +132,7 @@ export default function FinancialReporting() {
         <section id="presentations" className={styles.presentationsSection}>
           <div className={styles.presentationsWrapper}>
             <h3 className={styles.sectionTitle}>
-              {t.finacialReporting.presentations}
+              {t('finacialReporting.presentations')}
             </h3>
             <ul className={[styles.tabsList, styles.center].join(" ")}>
               {presentationsList.map((year, idx) => {
@@ -172,17 +170,17 @@ export default function FinancialReporting() {
         </section>
         <section id="contacts" className={styles.contactsSection}>
           <div className={styles.contactsWrapper}>
-            <h3>{t.finacialReporting.contacts.title}</h3>
+            <h3>{t('finacialReporting.contacts.title')}</h3>
             <div className={styles.contactsBlock}>
               <div className={styles.img}></div>
               <div className={styles.contactsInfo}>
-                <h4>{t.finacialReporting.contacts.director}</h4>
+                <h4>{t('finacialReporting.contacts.director')}</h4>
                 <p>Ruslanas Telnovas ruslanas.telnovas@ltlku.lt </p>
                 <p>(8 5) 205 5240</p>
                 <p>(8 5) 205 5241</p>
               </div>
               <div className={styles.contactsInfo}>
-                <h4>{t.finacialReporting.contacts.companyName}</h4>
+                <h4>{t('finacialReporting.contacts.companyName')}</h4>
                 <p>Sporto g. 18, LT-09238, Vilnius Įmonės kodas 302791356</p>
                 <p>(8 5) 205 5240</p>
                 <p>info@ltlku.lt</p>
@@ -192,9 +190,9 @@ export default function FinancialReporting() {
         </section>
         <section id="finacialCalendar" className={styles.calendarSection}>
           <div className={styles.calendarWrapper}>
-            <h3>{t.finacialReporting.finacialCalendar.title}</h3>
+            <h3>{t('finacialReporting.finacialCalendar.title')}</h3>
             <p className={styles.calendarDescription}>
-              {t.finacialReporting.finacialCalendar.description}
+              {t('finacialReporting.finacialCalendar.description')}
             </p>
             <div className={styles.calendarBlock}>
               <p className={styles.date}>
@@ -224,4 +222,14 @@ export default function FinancialReporting() {
       </main>
     </IndexLayout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

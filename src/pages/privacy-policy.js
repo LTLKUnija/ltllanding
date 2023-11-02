@@ -1,23 +1,20 @@
 import styles from "@/styles/privacy-policy.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import { privacyLinks } from "@/common/privacyLinks";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function PrivacyPolicy() {
-  const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   return (
     <IndexLayout>
       <main>
         <section className={styles.privacyPolicySection}>
           <div className={styles.privacyPolicyBlock}>
-            <h1>{t.privacyPolicy.title}</h1>
-            <p>{t.privacyPolicy.description}</p>
+            <h1>{t('privacyPolicy.title')}</h1>
+            <p>{t('privacyPolicy.description')}</p>
           </div>
           <div className={styles.privacyPolicyLinks}>
             <ul>
@@ -29,7 +26,7 @@ export default function PrivacyPolicy() {
                       href={link.linkUrl}
                       className={styles.linkStyle}
                     >
-                      {t.privacyPolicy.innerTabLinks[link.linkName]}
+                      {t(`privacyPolicy.innerTabLinks.${link.linkName}`)}
                     </Link>
                   </li>
                 );
@@ -40,4 +37,14 @@ export default function PrivacyPolicy() {
       </main>
     </IndexLayout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

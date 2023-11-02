@@ -5,19 +5,20 @@ import Accordion from "@/components/Accordion";
 import Steper from "@/components/Steper";
 import { capitalLoanSteperData } from "@/pages/api/data/stepersData";
 import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/capitalLoan_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessInvestmentLoanInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { LoanForBusiness } from "@/common/AccordionSchemas";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import ClientSupport from "@/components/ClientSupport";
 
 export default function Mortgage() {
   const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common')
+
 
   const handleBack = () => {
     router.back();
@@ -48,17 +49,17 @@ export default function Mortgage() {
                 />
               </div>
               <h1 className={businessStyle.title}>
-                {t.business.capitalLoan.heroBlock.title}
+                {t('business.capitalLoan.heroBlock.title')}
               </h1>
               <div className={businessStyle.description}>
-                <p>{t.business.capitalLoan.heroBlock.description}</p>
+                <p>{t('business.capitalLoan.heroBlock.description')}</p>
                 <ul>
-                  <li>{t.business.capitalLoan.heroBlock.bullet1}</li>
-                  <li>{t.business.capitalLoan.heroBlock.bullet2}</li>
-                  <li>{t.business.capitalLoan.heroBlock.bullet3}</li>
-                  <li>{t.business.capitalLoan.heroBlock.bullet4}</li>
-                  <li>{t.business.capitalLoan.heroBlock.bullet5}</li>
-                  <li>{t.business.capitalLoan.heroBlock.bullet6}</li>
+                  <li>{t('business.capitalLoan.heroBlock.bullet1')}</li>
+                  <li>{t('business.capitalLoan.heroBlock.bullet2')}</li>
+                  <li>{t('business.capitalLoan.heroBlock.bullet3')}</li>
+                  <li>{t('business.capitalLoan.heroBlock.bullet4')}</li>
+                  <li>{t('business.capitalLoan.heroBlock.bullet5')}</li>
+                  <li>{t('business.capitalLoan.heroBlock.bullet6')}</li>
                 </ul>
               </div>
             </div>
@@ -71,34 +72,34 @@ export default function Mortgage() {
           <div className={styles.benefitsWrapper}>
             <div className={styles.benefitsBlock}>
               <h3 className={styles.benefitsTitle}>
-                {t.business.capitalLoan.benefitsArticle.article1.title}
+                {t('business.capitalLoan.benefitsArticle.article1.title')}
               </h3>
               <div className={styles.benefitsDescription}>
-                {t.business.capitalLoan.benefitsArticle.article1.description}
+                {t('business.capitalLoan.benefitsArticle.article1.description')}
               </div>
             </div>
             <div className={styles.benefitsBlock}>
               <h3 className={styles.benefitsTitle}>
-                {t.business.capitalLoan.benefitsArticle.article2.title}
+                {t('business.capitalLoan.benefitsArticle.article2.title')}
               </h3>
               <div className={styles.benefitsDescription}>
-                {t.business.capitalLoan.benefitsArticle.article2.description}
+                {t('business.capitalLoan.benefitsArticle.article2.description')}
               </div>
             </div>
             <div className={styles.benefitsBlock}>
               <h3 className={styles.benefitsTitle}>
-                {t.business.capitalLoan.benefitsArticle.article3.title}
+                {t('business.capitalLoan.benefitsArticle.article3.title')}
               </h3>
               <div className={styles.benefitsDescription}>
-                {t.business.capitalLoan.benefitsArticle.article3.description}
+                {t('business.capitalLoan.benefitsArticle.article3.description')}
               </div>
             </div>
             <div className={styles.benefitsBlock}>
               <h3 className={styles.benefitsTitle}>
-                {t.business.capitalLoan.benefitsArticle.article4.title}
+                {t('business.capitalLoan.benefitsArticle.article4.title')}
               </h3>
               <div className={styles.benefitsDescription}>
-                {t.business.capitalLoan.benefitsArticle.article4.description}
+                {t('business.capitalLoan.benefitsArticle.article4.description')}
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@ export default function Mortgage() {
         <section id="process" className={styles.StepsSection}>
           <div className={styles.StepsWrapper}>
             <div className={styles.stepsHeader}>
-              <h3>{t.business.capitalLoan.stepProcess.title}</h3>
+              <h3>{t('business.capitalLoan.stepProcess.title')}</h3>
             </div>
             <Steper steperData={capitalLoanSteperData} />
           </div>
@@ -116,7 +117,7 @@ export default function Mortgage() {
         </section>
         <section id="faq" className={styles.faqSection}>
           <div className={styles.faqWrapper}>
-            <h3 className={styles.faqHeader}>{t.business.capitalLoan.faq}</h3>
+            <h3 className={styles.faqHeader}>{t('business.capitalLoan.faq')}</h3>
             <div className={styles.faqList}>
               <Accordion faqData={LoanForBusiness} singleLevel="true" />
             </div>
@@ -125,4 +126,14 @@ export default function Mortgage() {
       </main>
     </IndexLayout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

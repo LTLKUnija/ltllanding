@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import styles from "@/styles/termsAndConditions.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import { tncLinks } from "@/common/tnclinks";
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function TemrsAndConditions() {
-  const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const {t} = useTranslation('common');
 
   const [links, setLinks] = useState(tncLinks);
   const [activeTabLinks, setActiveTabLinks] = useState([]);
@@ -36,8 +34,8 @@ export default function TemrsAndConditions() {
       <main>
         <section className={styles.termsAndConditionsSection}>
           <div className={styles.termsAndConditionsBlock}>
-            <h1>{t.termConditions.pageTitle}</h1>
-            <p>{t.termConditions.description}</p>
+            <h1>{t('termConditions.pageTitle')}</h1>
+            <p>{t('termConditions.description')}</p>
           </div>
           <div className={styles.innerNavigationLinkList}>
             {links.map((tab, idx) => {
@@ -50,7 +48,7 @@ export default function TemrsAndConditions() {
                   key={idx}
                   className={tab.active ? "active-tnc-tab" : ""}
                 >
-                  {t.termConditions.innerLinkBlock[tab.tabName]}
+                  {t(`termConditions.innerLinkBlock.${tab.tabName}`)}
                 </div>
               );
             })}
@@ -65,7 +63,7 @@ export default function TemrsAndConditions() {
                       href={link.linkUrl}
                       className={styles.linkStyle}
                     >
-                      {t.termConditions.innerTabLinks[link.linkName]}
+                      {t(`termConditions.innerTabLinks.${link.linkName}`)}
                     </Link>
                   </li>
                 );
@@ -76,4 +74,14 @@ export default function TemrsAndConditions() {
       </main>
     </IndexLayout>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }
