@@ -70,6 +70,13 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
+    
+    &.benefitsWrapperLT {
+      max-width: 900px;
+      .benefitsBlock {
+        max-width: 390px;
+      }
+    }
   }
 
   .benefitsBlock {

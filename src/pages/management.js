@@ -10,7 +10,8 @@ import { useRouter } from "next/router";
 import { aboutUsInnerLinkList } from "@/pages/api/data/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import ModalImage from "react-modal-image";
 
 export default function About() {
   const router = useRouter();
@@ -94,27 +95,15 @@ export default function About() {
             </div>
           </div>
         </section>
+
         <section id="jobs" className={styles.jobsSection}>
-          <div className={styles.jobsWrapper}>
-            <Image
-              src={Img1}
-              alt="Available Jobs"
-              style={{
-                width: "30%",
-                height: "auto",
-              }}
-            />
-            <div className={styles.jobsCrediantials}>
-              <h3>{t('aboutUs.jobsSection.title')}</h3>
-              <p>{t('aboutUs.jobsSection.description')}</p>
-              <Link
-                href="https://www.linkedin.com/company/swedbanklietuvoje/jobs/ "
-                className={styles.readMore}
-              >
-                {t('aboutUs.jobsSection.availableJobs')} &gt;
-              </Link>
-            </div>
-          </div>
+          <h3>{t('aboutUs.companyManagementScheme.title')}</h3>
+          <ModalImage
+            small={"/assets/images/112.png"}
+            large={"/assets/images/org_structure.png"}
+            
+          />
+
         </section>
         <section id="values" className={styles.valuesSection}>
           <div className={styles.valuesWrapper}>

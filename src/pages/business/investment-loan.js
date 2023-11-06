@@ -68,8 +68,9 @@ export default function Mortgage() {
           <InnerLinks innerLinksData={businessInvestmentLoanInnerLinkList} />
         </section>
         <section id="benefits" className={styles.benefitsSection}>
-          <div className={styles.benefitsWrapper}>
+          <div className={[styles.benefitsWrapper, router.locale === "lt"? styles.benefitsWrapperLT : ''].join(" ")}>
             <div className={styles.benefitsBlock}>
+            
               <h3 className={styles.benefitsTitle}>
                 {t('business.investmentLoan.benefitsArticle.article1.title')}
               </h3>

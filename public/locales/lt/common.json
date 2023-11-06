@@ -28,7 +28,7 @@
     "termsAndCond": "Sąlygos ir nuostatos",
     "ppAndCookies": "Privatumo politika ir slapukai",
     "security": "Saugumas",
-    "support": "Palaikymas ir skundai",
+    "support": "Atsiliepimai ir skundai",
     "aboutUs": "Apie mus",
     "management": "Valdymas",
     "shareholders": "Akcininkams",
@@ -124,22 +124,22 @@
       "title": "Apie mus",
       "description": {
         "visionTitle": "Vizija",
-        "visionDescription": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
-        "missionTitle": "Mission",
-        "missionDescription": "Unlocking Financial Inclusion - Our Mission, Your Future."
+        "visionDescription": "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų, kad galėtų kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansų pasaulį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
+        "missionTitle": "Misija",
+        "missionDescription": "Atrakinta prieiga prie finansinių paslaugų – mūsų misija, jūsų ateitis."
       }
     },
     "innerLinkBlock": {
       "people": "Žmonės",
       "values": "Vertybės",
-      "jobs": "Corporate Governance",
+      "jobs": "Įmonės valdymas",
       "sponsorship": "Rėmimas",
       "history": "Istorija",
       "news": "Naujienos"
     },
     "team": {
       "title": "LTL Komanda",
-      "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
+      "description": "Jūsų sėkmė yra mūsų sėkmė, todėl didžiuojamės, kad turime komandą, kuriai tikrai rūpi jūsų finansinė gerovė.",
       "duties": "Pareigos"
     },
     "jobsSection": {
@@ -147,23 +147,26 @@
       "description": "Siūlome galimybę dirbti sparčiai besivystančioje šalies įmonėje, kur galėsite pajusti savo sprendimų poveikį ir dirbti su geriausiais savo sričių specialistais. Turime aiškius tikslus ir modernią darbo aplinką. LHV Pank yra 'Svajonių darbdavys 2015'. Ateikite ir prisidėkite prie Estijos banko sėkmės istorijos",
       "availableJobs": "Turimos darbo vietos"
     },
+    "companyManagementScheme": {
+      "title": "Įmonės valdymas"
+    },
     "sponsorshipSection": {
       "title": "Rėmimas",
-      "description": "Siūlome galimybę dirbti sparčiai besivystančioje šalies įmonėje, kur galėsite pajusti savo sprendimų poveikį ir dirbti su geriausiais savo sričių specialistais. Turime aiškius tikslus ir modernią darbo aplinką. LHV Pank yra 'Svajonių darbdavys 2015'. Ateikite ir prisidėkite prie Estijos banko sėkmės istorijos",
+      "description": "LTL Kredito unijoje tikime bendruomenės galia ir atsidavimu. Didžiuojamės, kad remiame vietos iniciatyvas - nuo švietimo programų iki labdaros renginių ir kultūros festivalių. Mūsų įsipareigojimas remti neapsiriboja vien finansine parama - tai siekis kurti stipresnę ir gyvybingesnę bendruomenę. Bendradarbiaudami su organizacijomis, kurios puoselėja mūsų vertybes, siekiame sukurti ilgalaikį teigiamą poveikį, skatinti augimą ir įkvėpti pokyčius. Esame pasiryžę investuoti į bendruomenių, kurioms tarnaujame, gerovę ir klestėjimą, nes jūsų sėkmė yra mūsų sėkmė.",
       "readMore": "Skaityti daugiau"
     },
     "benefitsArticle": {
       "article1": {
-        "title": "Transparency & accountability",
-        "description": "We are aiming to provide access to fair and affordable banking services. We are transparent and accountable in our decisions, and take into account the impact of our actions on people's daily lives."
+        "title": "Sąžiningumas ir atskaitomybė",
+        "description": "Siekiame suteikti prieigą prie sąžiningų ir prieinamų banko paslaugų. Priimdami sprendimus esame skaidrūs ir atsakingi, atsižvelgiame į savo veiksmų poveikį kasdieniam žmonių gyvenimui."
       },
       "article2": {
-        "title": "Balancing interests and empowering people",
-        "description": "We are striving to create a more equitable financial system that balances the interests of our company, our customers and our society. We allocate resources and provide education to empower customers to understand the banking system and make informed decisions."
+        "title": "Interesų pusiausvyra ir žmonių įgalinimas",
+        "description": "Esame įsipareigoję kurti teisingesnę finansų sistemą, užtikrinančią mūsų įmonės, klientų ir visuomenės interesų pusiausvyrą. Skiriame reikalingus išteklius ir suteikiame švietimą, kurie įgalintų mūsų klientus suprasti bankų sistemą ir priimti pagrįstus finansinius sprendimus."
       },
       "article3": {
-        "title": "Human-centric approach to banking",
-        "description": "Finally, we apply a more human-centric approach to banking, ensuring that customers are treated with respect and dignity, and respecting the emotional and psychological needs of customers."
+        "title": "Į žmogų orientuotą bankininkystė",
+        "description": "Galiausiai, bankininkystėje siekiame taikyti labiau į žmogų orientuotą požiūrį, kuris užtikrina, kad su klientais būtų elgiamasi pagarbiai ir oriai, taip pat būtų gerbiami emociniai ir psichologiniai klientų poreikiai."
       }
     },
     "history": {
@@ -360,16 +363,16 @@
       "loansToCorporates": "Paskolos įmonėms"
     },
     "innerTabLinks": {
-      "generalCondition": "Bendrosios salygos",
+      "generalCondition": "Bendrosios sąlygos",
       "commisionInfo": "Informacijos apie komisinį atlyginimą dokumentas",
       "glossary": "Žodynas",
       "informationDepositor": "Informacijos indelininkui teikimo forma",
-      "securitisedDeposit": "Terinuoto indelio sutartis_standartines salygos",
-      "currentAccountContract": "Einamosios saskaitos sutartis fiziniam asmeniui_standartines salygos",
-      "currentAccountAgreement": "Einamosios saskaitos sutartis juridiniam asmeniui_standartines salygos",
-      "yourRights": "Jusu teises vykdant mokejimus Europoje",
-      "paymentsServices": "Mokejimo paslaugu teikimo salygos",
-      "generalInfo": "Bendro pobudzio informacija apie su NT susijusi kredita."
+      "securitisedDeposit": "Terinuoto indelio sutartis standartines sąlygos",
+      "currentAccountContract": "Einamosios saskaitos sutartis fiziniam asmeniui standartines sąlygos",
+      "currentAccountAgreement": "Einamosios saskaitos sutartis juridiniam asmeniui standartines sąlygos",
+      "yourRights": " Jūsų teisės vykdant mokėjimus Europoje",
+      "paymentsServices": "Mokėjimo paslaugų teikimo sąlygos",
+      "generalInfo": "Bendro pobūdžio informacija apie susijusį su nekilnojamuoju turtu kreditą."
     }
   },
   "termDeposit": {
@@ -416,7 +419,7 @@
     "stepProcess": {
       "title": "Terminuoto indėlio sąskaitos atidarymo procesas",
       "step1": {
-        "title": "Užpildykite sąskaitos atidarymo form",
+        "title": "Užpildykite sąskaitos atidarymo formą",
         "description": "Užpildykite paraišką"
       },
       "step2": {
