@@ -8,7 +8,8 @@ import { finacialReportingInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-
+import { factsheetsData } from "@/common/factsheetsLinks";
+import { presentationsLinksData } from "@/common/presentationsLinks";
 export default function FinancialReporting() {
   const { t } = useTranslation("common");
 
@@ -16,19 +17,14 @@ export default function FinancialReporting() {
   const [activeFactSheetList, setActiveFactSheetList] = useState([]);
   const [presentationsList, setPresentationsList] = useState([]);
   const [activePresentationsList, setActivePresentationsList] = useState([]);
-
   useEffect(() => {
     const getFactsheetsList = async () => {
-      const resp = await fetch(`/api/factsheets`);
-      const data = await resp.json();
-      setFactSheetList(data);
-      setActiveFactSheetList(data[0].factsheets);
+      setFactSheetList(factsheetsData);
+      setActiveFactSheetList(factsheetsData[0].factsheets);
     };
     const getPresentationsList = async () => {
-      const resp = await fetch(`/api/presentations`);
-      const data = await resp.json();
-      setPresentationsList(data);
-      setActivePresentationsList(data[0].links);
+      setPresentationsList(presentationsLinksData);
+      setActivePresentationsList(presentationsLinksData[0].links);
     };
 
     getFactsheetsList();
