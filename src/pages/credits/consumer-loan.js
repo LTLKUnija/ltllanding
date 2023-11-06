@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/consumer_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
-import { consumerLoanInnerLinkList } from "@/pages/api/data/innerLinksData";
+import { consumerLoanInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { LoanForPrivates } from "@/common/AccordionSchemas";
 import { useTranslation } from "next-i18next";

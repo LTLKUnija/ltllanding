@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/investmentLoan_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
-import { businessInvestmentLoanInnerLinkList } from "@/pages/api/data/innerLinksData";
+import { businessInvestmentLoanInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { LoanForBusiness } from "@/common/AccordionSchemas";
 import { useTranslation } from "next-i18next";
