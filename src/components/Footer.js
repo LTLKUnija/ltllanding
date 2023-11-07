@@ -97,9 +97,7 @@ function Footer({ setShowLinks, showLinks }) {
           <Link className="footer-navigation-link" href="/management">
             {t("footerNavLinks.management")}
           </Link>
-          <Link className="footer-navigation-link" href="/share-holders">
-            {t("footerNavLinks.shareholders")}
-          </Link>
+
           <Link className="footer-navigation-link" href="/news">
             {t("footerNavLinks.news")}
           </Link>
