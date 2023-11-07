@@ -1,6 +1,6 @@
 import styles from "@/styles/contacts.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
-import ContactForm from "@/components/ContactForm";
+import {ContactForm} from "@/components/ContactForm";
 import Gmap from "@/components/Gmap";
 import { useJsApiLoader } from "@react-google-maps/api";
 import { useTranslation } from 'next-i18next'

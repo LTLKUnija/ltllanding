@@ -1,31 +1,38 @@
-import styles from "@/styles/ContactForm.module.scss";
-import { useTranslation } from 'next-i18next';
 
-function ContactForm(props) {
-  const {t} = useTranslation('common');
-
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+export const ContactForm = () => {
+  const [state, handleSubmit] = useForm("xqkvjgol");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
-    <div className={styles.formTitleBlock}>
-      {props.formTitle && (
-        <div>
-          <h3>{t('contactForm.title')}</h3>
-          <p>{t('contactForm.description')}</p>
-        </div>
-      )}
-      <form className={styles.formBlock}>
-        <div className={styles.formInputBlock}>
-          <input type="text" placeholder={t('contactForm.topicPlaceholder')} />
-          <textarea
-            placeholder={t('contactForm.feedbackPlaceholder')}
-            className={styles.feedbackInput}
-          />
-          <input type="text" placeholder={t('contactForm.namePlaceholder')} />
-          <input type="text" placeholder={t('contactForm.emailPlaceholder')} />
-        </div>
-        <div className="containedBtn">{t('contactForm.button')}</div>
-      </form>
-    </div>
+      <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
   );
 }
-
-export default ContactForm;
