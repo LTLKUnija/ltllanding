@@ -5,7 +5,7 @@ import { priceListInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import PriceListPrivate from "@/components/PriceListPrivate";
 import PriceListBusiness from "@/components/PriceListBusiness";
-import { basic } from "@/common/AccordionSchemas";
+import { CurrentAccFAQ } from "@/common/AccordionSchemas";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -38,7 +38,7 @@ export default function PriceListPage() {
             <div className={styles.faqWrapper}>
               <h3 className={styles.faqHeader}>FAQ</h3>
               <div className={styles.faqList}>
-                <Accordion faqData={basic} singleLevel="true" />
+                <Accordion faqData={CurrentAccFAQ} singleLevel="true" />
               </div>
             </div>
           </section>

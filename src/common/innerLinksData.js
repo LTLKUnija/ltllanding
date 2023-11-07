@@ -62,7 +62,7 @@ export const privetCurrentAccountInnerLinkList = [
     id: "#priceList",
   },
   {
-    link: "privetCurrentAccount.innerLinkBlock.clientSuport",
+    link: "privetCurrentAccount.innerLinkBlock.clientSupport",
     id: "#clientSuport",
   },
   {

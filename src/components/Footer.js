@@ -238,6 +238,7 @@ function Footer({ setShowLinks, showLinks }) {
 
           <Link
             className="social-link"
+            target="_blank"
             href="https://www.kreda.lt/jcku-kreda-grupe-jungtine-centrine-kredito-unija/"
           >
             <Image
