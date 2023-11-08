@@ -42,7 +42,6 @@ export default function News() {
     if (!router.query.year) return;
 
     const { year: prevRouteYear } = router.query;
-    console.log(prevRouteYear)
     const updatedYearsLinksVocab = yearsLinksVocab.map((year) => {
       return { ...year, selected: year.year === prevRouteYear };
     });
