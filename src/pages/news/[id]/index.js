@@ -2,10 +2,12 @@ import styles from "@/styles/news[id].module.scss";
 import { useRouter } from "next/router";
 import IndexLayout from "@/Layouts/IndexLayout";
 import { useEffect, useState } from "react";
-import { doc, getFirestore, getDoc } from "firebase/firestore";
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getNewsList } from "@/common/dataGetters";
+import { useSelector } from "react-redux";
+import { getNewsState } from "@/store/news/news.slice";
+
 
 export default function NewsPage() {
   const router = useRouter();
@@ -14,6 +16,9 @@ export default function NewsPage() {
   const [selectedNews, setSelectedNews] = useState();
   const [currentYear, setCurrentYear] = useState('');
 
+  const newsData = useSelector(getNewsState);
+
+
   const backToYearHandler = (e) => {
     localStorage.setItem("backToYearIdx", e.target.dataset.idx);
     router.push({
@@ -21,33 +26,21 @@ export default function NewsPage() {
       query: {year: currentYear}
     });
   };
-  
+
   useEffect(() => {
+    if (newsData.length < 1) return;
+
     const id = router.asPath.split('/')[2];
     if (id) {
       const [year, idx] = id.split('-')
-      const getNewsDetails = async () => {
-        const db = getFirestore();
-        const docRef = doc(db, "news", `${year}`);
-        try {
-          const docSnap = await getDoc(docRef);
-          if (docSnap.exists()) {
-            const newsData = docSnap.get("news");
-  
-            if (newsData.length > 0) {
-              setSelectedNews(newsData.reverse()[idx]);
-            }
-          } else {
-            console.log("No such document!");
-          }
-        } catch (error) {
-          console.error("Error getting document:", error);
-        }
-      };
-      getNewsDetails();
+      const currentNews = newsData?.filter(newsItem => {
+        return newsItem.id === year
+      })[0].news
+      setSelectedNews([...currentNews].reverse()[idx]);
+
       setCurrentYear(year)
     }
-  }, [router.isReady])
+  }, [newsData]);
 
   return (
     <IndexLayout>

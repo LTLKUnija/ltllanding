@@ -1,0 +1,16 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+export const newsSlice = createSlice({
+  name: 'news',
+  initialState: [],
+  reducers: {
+    setNews: (state, {payload}) => {
+      const data = [...state, ...payload]
+      return data
+    }
+  }
+})
+
+export const {actions, reducer} = newsSlice
+
+export const getNewsState = (state) => state.news;

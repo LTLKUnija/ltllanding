@@ -4,10 +4,12 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'next-i18next';
 import Drawer from "./Drawer";
+import { useDispatch, useSelector } from "react-redux";
+import {actions} from "../store/news/news.slice";
+import { getNewsList } from "@/common/dataGetters";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const [langBtnState, setLangBtnState] = useState("ENG");
 
   const router = useRouter();
@@ -19,6 +21,8 @@ function Header() {
 
   const [paymentSubMenu, setPaymentSubMenu] = useState(false);
   const [creditSubMenu, setCreditSubMenu] = useState(false);
+
+  const dispatch = useDispatch();
 
   const toggleSubMenu = (type, parentLink) => {
     if (parentLink == "payment") {
@@ -34,12 +38,20 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const dataGetter = async () => {
+    const news = await getNewsList();
+    dispatch(actions.setNews(news));
+  }
+
   useEffect(() => {
     if (locale === "lt") {
       setLangBtnState("ENG");
     } else {
       setLangBtnState("LT");
     }
+
+    dataGetter()
+
   }, [locale]);
 
   function setLanguage() {
