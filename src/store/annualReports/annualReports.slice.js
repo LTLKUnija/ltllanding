@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const annualReportsSlice = createSlice({
   name: "annualReports",
-  initialState: [],
+  initialState: {},
   reducers: {
     setAnnualReports: (state, { payload }) => {
       const data = [...payload];
@@ -11,6 +11,6 @@ export const annualReportsSlice = createSlice({
   },
 });
 
-export const { actions, reducer } = annualReportsSlice;
+export const { actions: annualReportsActions, reducer } = annualReportsSlice;
 
 export const getAnnualReportsState = (state) => state.annualReports;

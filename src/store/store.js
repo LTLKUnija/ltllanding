@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { reducer as newsReducer } from "./news/news.slice";
-import { reducer as annualReportsReducer } from "./annualReports/AnnualReports.slice";
+import { reducer as annualReportsReducer } from "./annualReports/annualReports.slice";
 
 const reducers = combineReducers({
   news: newsReducer,

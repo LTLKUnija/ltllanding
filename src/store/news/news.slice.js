@@ -11,6 +11,6 @@ export const newsSlice = createSlice({
   },
 });
 
-export const { actions, reducer } = newsSlice;
+export const { actions: newsActions, reducer } = newsSlice;
 
 export const getNewsState = (state) => state.news;
