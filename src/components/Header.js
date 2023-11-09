@@ -7,8 +7,14 @@ import Drawer from "./Drawer";
 import { useDispatch } from "react-redux";
 import { newsActions } from "../store/news/news.slice";
 import { annualReportsActions } from "../store/annualReports/annualReports.slice";
-import { getNewsList } from "@/common/dataGetters";
-import { getAnnualReports } from "@/common/dataGetters";
+import { quarterReportsActions } from "@/store/quarterReports/quarterReports.slice";
+import { priceListActions } from "@/store/priceList/priceList.slice";
+import {
+  getNewsList,
+  getAnnualReports,
+  getQuarterlReports,
+  getPriceList,
+} from "@/common/dataGetters";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,6 +51,14 @@ function Header() {
 
     const annualReports = await getAnnualReports();
     dispatch(annualReportsActions.setAnnualReports(annualReports));
+
+    const quaterReportsLT = await getQuarterlReports("lt");
+    const quaterReportsEN = await getQuarterlReports("en");
+    dispatch(quarterReportsActions.setQuarterReportsLT(quaterReportsLT));
+    dispatch(quarterReportsActions.setQuarterReportsEN(quaterReportsEN));
+
+    const priceList = await getPriceList();
+    dispatch(priceListActions.setPriceList(priceList));
   };
 
   useEffect(() => {

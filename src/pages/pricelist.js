@@ -1,4 +1,5 @@
 import styles from "@/styles/priceList.module.scss";
+import { useEffect } from "react";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";
 import { priceListInnerLinkList } from "@/common/innerLinksData";
@@ -8,9 +9,16 @@ import PriceListBusiness from "@/components/PriceListBusiness";
 import { CurrentAccFAQ } from "@/common/AccordionSchemas";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useSelector } from "react-redux";
+import { getPriceListState } from "@/store/priceList/priceList.slice";
 
 export default function PriceListPage() {
   const { t } = useTranslation("common");
+  const priceListData = useSelector(getPriceListState);
+
+  useEffect(() => {
+    console.log(priceListData);
+  }, [priceListData]);
 
   return (
     <>

@@ -1,4 +1,3 @@
-import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import styles from "@/styles/financial-reporting.module.scss";
 import Link from "next/link";
@@ -33,6 +32,7 @@ export default function FinacialReportsData() {
     setAnnualLinks([...annualData].reverse());
     setActiveAnnualLinks([...annualData].reverse()[0].links);
   }, [annualData]);
+
   return (
     <div className={styles.presentationsWrapper}>
       <h3 className={styles.sectionTitle}>
