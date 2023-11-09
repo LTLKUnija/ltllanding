@@ -24,11 +24,70 @@ export const getNewsList = async () => {
         news: newsData,
       };
     });
-    return allData.reverse()
+    return allData.reverse();
   } catch (error) {
-    console.error(
-      `Error fetching data from ${collectionName}:`,
-      error.message
-    );
+    console.error(`Error fetching data from ${collectionName}:`, error.message);
+  }
+};
+
+export const getAnnualReports = async () => {
+  const db = getFirestore();
+  const collectionName = "financialReports";
+  const colRef = collection(db, collectionName);
+
+  try {
+    const snapshot = await getDocs(colRef);
+    const allData = snapshot.docs.map((doc) => {
+      return {
+        ...doc.data(),
+        id: doc.id,
+      };
+    });
+    return allData;
+  } catch (error) {
+    console.error(`Error fetching data from ${collectionName}:`, error.message);
+  }
+};
+
+export const getQuarterlReports = async (locale) => {
+  const db = getFirestore();
+  let collectionName =
+    locale === "lt"
+      ? "financialQuartalReportsLT"
+      : "financialQuartalReportsENG";
+  ("financialQuartalReportsENG");
+  const colRef = collection(db, collectionName);
+
+  try {
+    const snapshot = await getDocs(colRef);
+    const allData = snapshot.docs.map((doc) => {
+      return {
+        ...doc.data(),
+        id: doc.id,
+      };
+    });
+
+    return allData;
+  } catch (error) {
+    console.error(`Error fetching data from ${collectionName}:`, error.message);
+  }
+};
+
+export const getPriceList = async () => {
+  const db = getFirestore();
+  const collectionName = "pricelist";
+  const colRef = collection(db, collectionName);
+
+  try {
+    const snapshot = await getDocs(colRef);
+    const allData = snapshot.docs.map((doc) => {
+      return {
+        ...doc.data(),
+        id: doc.id,
+      };
+    });
+    return allData;
+  } catch (error) {
+    console.error(`Error fetching data from ${collectionName}:`, error.message);
   }
 };

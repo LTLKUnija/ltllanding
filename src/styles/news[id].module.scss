@@ -2,6 +2,8 @@
 
 .newsPageMain {
   padding: 92px 0 132px 0;
+  min-height: 500px;
+
 
   .yearlyLinksBlock {
     display: flex;
@@ -42,7 +44,7 @@
   .newsText {
     font-weight: 300;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 22px;
     color: #000000;
     white-space: pre-line;
     margin-bottom: 16px;

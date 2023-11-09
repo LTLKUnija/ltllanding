@@ -17,19 +17,6 @@ export default function FinancialReporting() {
   const [activeFactSheetList, setActiveFactSheetList] = useState([]);
   const [presentationsList, setPresentationsList] = useState([]);
   const [activePresentationsList, setActivePresentationsList] = useState([]);
-  useEffect(() => {
-    const getFactsheetsList = async () => {
-      setFactSheetList(factsheetsData);
-      setActiveFactSheetList(factsheetsData[0].factsheets);
-    };
-    const getPresentationsList = async () => {
-      setPresentationsList(presentationsLinksData);
-      setActivePresentationsList(presentationsLinksData[0].links);
-    };
-
-    getFactsheetsList();
-    getPresentationsList();
-  }, []);
 
   function factsheetTabHandler(e) {
     let idx = factSheetList.findIndex(
@@ -57,6 +44,20 @@ export default function FinancialReporting() {
     setActivePresentationsList(temp[idx].links);
   }
 
+  useEffect(() => {
+    const getFactsheetsList = async () => {
+      setFactSheetList(factsheetsData);
+      setActiveFactSheetList(factsheetsData[0].factsheets);
+    };
+
+    const getPresentationsList = async () => {
+      setPresentationsList(presentationsLinksData);
+      setActivePresentationsList(presentationsLinksData[0].links);
+    };
+
+    getFactsheetsList();
+    getPresentationsList();
+  }, []);
   return (
     <IndexLayout>
       <main>

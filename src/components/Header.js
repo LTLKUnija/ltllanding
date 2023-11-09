@@ -2,23 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from "next-i18next";
 import Drawer from "./Drawer";
+import { useDispatch } from "react-redux";
+import { newsActions } from "../store/news/news.slice";
+import { annualReportsActions } from "../store/annualReports/annualReports.slice";
+import { quarterReportsActions } from "@/store/quarterReports/quarterReports.slice";
+import { priceListActions } from "@/store/priceList/priceList.slice";
+import {
+  getNewsList,
+  getAnnualReports,
+  getQuarterlReports,
+  getPriceList,
+} from "@/common/dataGetters";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const [langBtnState, setLangBtnState] = useState("ENG");
 
   const router = useRouter();
   const isBusiness = router.pathname.includes("/business");
 
   const { locale } = router;
-  const {t} = useTranslation('common');
-
+  const { t } = useTranslation("common");
 
   const [paymentSubMenu, setPaymentSubMenu] = useState(false);
   const [creditSubMenu, setCreditSubMenu] = useState(false);
+
+  const dispatch = useDispatch();
 
   const toggleSubMenu = (type, parentLink) => {
     if (parentLink == "payment") {
@@ -34,12 +45,30 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const dataGetter = async () => {
+    const news = await getNewsList();
+    dispatch(newsActions.setNews(news));
+
+    const annualReports = await getAnnualReports();
+    dispatch(annualReportsActions.setAnnualReports(annualReports));
+
+    const quaterReportsLT = await getQuarterlReports("lt");
+    const quaterReportsEN = await getQuarterlReports("en");
+    dispatch(quarterReportsActions.setQuarterReportsLT(quaterReportsLT));
+    dispatch(quarterReportsActions.setQuarterReportsEN(quaterReportsEN));
+
+    const priceList = await getPriceList();
+    dispatch(priceListActions.setPriceList(priceList));
+  };
+
   useEffect(() => {
     if (locale === "lt") {
       setLangBtnState("ENG");
     } else {
       setLangBtnState("LT");
     }
+
+    dataGetter();
   }, [locale]);
 
   function setLanguage() {
@@ -65,11 +94,11 @@ function Header() {
       <div className="bussiness-type-block">
         {isBusiness ? (
           <Link className="header-bussinness-type-nav-link" href="/">
-            {t('headerNavLinks.private')}
+            {t("headerNavLinks.private")}
           </Link>
         ) : (
           <Link className="header-bussinness-type-nav-link" href="/business">
-            {t('headerNavLinks.business')}
+            {t("headerNavLinks.business")}
           </Link>
         )}
       </div>
@@ -77,11 +106,11 @@ function Header() {
         <nav className="header-navigation">
           {isBusiness ? (
             <Link className="header-nav-link" href="/business/deposits">
-              {t('headerNavLinks.deposit')}
+              {t("headerNavLinks.deposit")}
             </Link>
           ) : (
             <Link className="header-nav-link" href="/deposits">
-              {t('headerNavLinks.deposit')}
+              {t("headerNavLinks.deposit")}
             </Link>
           )}
           <div
@@ -93,7 +122,7 @@ function Header() {
               toggleSubMenu("close", "payment");
             }}
           >
-            {t('headerNavLinks.payments')}
+            {t("headerNavLinks.payments")}
 
             {paymentSubMenu && (
               <div className="dropDownMenu">
@@ -103,22 +132,22 @@ function Header() {
                       className="header-nav-link"
                       href="/business/current-account"
                     >
-                      {t('headerNavLinks.currentAccount')}
+                      {t("headerNavLinks.currentAccount")}
                     </Link>
                   ) : (
                     <Link className="header-nav-link" href="/product">
-                      {t('headerNavLinks.currentAccount')}
+                      {t("headerNavLinks.currentAccount")}
                     </Link>
                   )}
                 </div>
                 <div className="toggleSubMenu">
                   {isBusiness ? (
                     <Link className="header-nav-link" href="/business/payments">
-                      {t('headerNavLinks.payments')}
+                      {t("headerNavLinks.payments")}
                     </Link>
                   ) : (
                     <Link className="header-nav-link" href="/payments">
-                      {t('headerNavLinks.payments')}
+                      {t("headerNavLinks.payments")}
                     </Link>
                   )}
                 </div>
@@ -134,7 +163,7 @@ function Header() {
               toggleSubMenu("close");
             }}
           >
-            {t('headerNavLinks.credit')}
+            {t("headerNavLinks.credit")}
             {creditSubMenu && (
               <div className="dropDownMenu">
                 <div className="toggleSubMenu">
@@ -143,11 +172,11 @@ function Header() {
                       className="header-nav-link"
                       href="/business/investment-loan"
                     >
-                      {t('headerNavLinks.investmentLoan')}
+                      {t("headerNavLinks.investmentLoan")}
                     </Link>
                   ) : (
                     <Link className="header-nav-link" href="/credits/mortgage">
-                      {t('headerNavLinks.mortgageLoan')}
+                      {t("headerNavLinks.mortgageLoan")}
                     </Link>
                   )}
                 </div>
@@ -157,7 +186,7 @@ function Header() {
                       className="header-nav-link"
                       href="/credits/consumer-loan"
                     >
-                      {t('headerNavLinks.consumerLoan')}
+                      {t("headerNavLinks.consumerLoan")}
                     </Link>
                   </div>
                 )}
@@ -167,14 +196,14 @@ function Header() {
                       className="header-nav-link"
                       href="/business/capital-loan"
                     >
-                      {t('headerNavLinks.capitalLoan')}
+                      {t("headerNavLinks.capitalLoan")}
                     </Link>
                   ) : (
                     <Link
                       className="header-nav-link"
                       href="/credits/equity-loan"
                     >
-                      {t('headerNavLinks.equityLoan')}
+                      {t("headerNavLinks.equityLoan")}
                     </Link>
                   )}
                 </div>
@@ -182,10 +211,10 @@ function Header() {
             )}
           </div>
           <Link className="header-nav-link" href="/contacts">
-            {t('headerNavLinks.contacts')}
-          </Link>          
+            {t("headerNavLinks.contacts")}
+          </Link>
           <Link className="header-nav-link" href="/faq">
-            {t('headerNavLinks.faq')}
+            {t("headerNavLinks.faq")}
           </Link>
           <span
             className="header-nav-link change-language-link show"
@@ -198,10 +227,10 @@ function Header() {
       </div>
       <div className="header-action-buttons-block">
         <Link className="header-action-button login" href="/login">
-          {t('headerNavLinks.login')}
+          {t("headerNavLinks.login")}
         </Link>
         <Link className="header-action-button openAcc" href="/open-account">
-          {t('headerNavLinks.openAccount')}
+          {t("headerNavLinks.openAccount")}
         </Link>
       </div>
       <Drawer isOpen={isMenuOpen} onClose={handleToggleBurgerMenu} />

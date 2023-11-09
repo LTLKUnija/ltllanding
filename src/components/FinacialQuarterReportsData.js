@@ -1,51 +1,38 @@
-import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "@/styles/financial-reporting.module.scss";
 import Link from "next/link";
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from "next-i18next";
+import { useSelector } from "react-redux";
+import { getQuarterReportsState } from "@/store/quarterReports/quarterReports.slice";
 
 export default function FinacialQuartalReportsData() {
   const router = useRouter();
-  const {t} = useTranslation('common');
+  const { locale } = router;
+  const { t } = useTranslation("common");
+
+  const quarterData = useSelector(getQuarterReportsState);
 
   const [quarterYearLink, setquarterYearLink] = useState([]);
   const [activeQuarters, setActiveQuarters] = useState([]);
 
   useEffect(() => {
-    const getQuarterlLinks = async () => {
-      const db = getFirestore();
-      let collectionName =
-        router.locale === "lt"
-          ? "financialQuartalReportsLT"
-          : "financialQuartalReportsENG";
-      const colRef = collection(db, collectionName);
-
-      try {
-        const snapshot = await getDocs(colRef);
-        const allData = snapshot.docs.map((doc) => {
-          return {
-            ...doc.data(),
-            id: doc.id,
-          };
-        });
-
-        setquarterYearLink(allData.reverse());
-        setActiveQuarters(allData[0].quarters);
-      } catch (error) {
-        console.error(
-          `Error fetching data from ${collectionName}:`,
-          error.message
-        );
-      }
-    };
-
-    getQuarterlLinks();
-  }, [router]);
+    if (quarterData.en.length < 1 || quarterData.en.length < 1) return;
+    setquarterYearLink(
+      locale === "lt"
+        ? [...quarterData.lt].reverse()
+        : [...quarterData.en].reverse()
+    );
+    setActiveQuarters(
+      locale === "lt"
+        ? [...quarterData.lt].reverse()[0].quarters
+        : [...quarterData.en].reverse()[0].quarters
+    );
+  }, [quarterData]);
 
   function AnnualTabHandler(e) {
     let idx = quarterYearLink.findIndex((tab) => tab.id == e.target.dataset.id);
-    let temp = [...quarterYearLink];
+    let temp = JSON.parse(JSON.stringify(quarterYearLink));
     temp.forEach((year, index) => {
       if (idx == index) year.active = true;
       else year.active = false;
@@ -57,7 +44,7 @@ export default function FinacialQuartalReportsData() {
   return (
     <div className={styles.presentationsWrapper}>
       <h3 className={styles.sectionTitle}>
-        {t('finacialReporting.quarterlyReports')}
+        {t("finacialReporting.quarterlyReports")}
       </h3>
       <div className={[styles.tabsList, styles.center].join(" ")}>
         {quarterYearLink.map((year, idx) => {
