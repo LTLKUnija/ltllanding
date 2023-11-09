@@ -2,11 +2,10 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import styles from "@/styles/financial-reporting.module.scss";
 import Link from "next/link";
-import { useTranslation } from 'next-i18next';
-
+import { useTranslation } from "next-i18next";
 
 export default function FinacialReportsData() {
-  const {t} = useTranslation('common');
+  const { t } = useTranslation("common");
 
   const [annualLink, setAnnualLinks] = useState([]);
   const [activeAnnualLinks, setActiveLinks] = useState([]);
@@ -25,7 +24,7 @@ export default function FinacialReportsData() {
             id: doc.id,
           };
         });
-
+        console.log(allData);
         setAnnualLinks(allData.reverse());
         setActiveLinks(allData[0].links);
       } catch (error) {
@@ -53,7 +52,7 @@ export default function FinacialReportsData() {
   return (
     <div className={styles.presentationsWrapper}>
       <h3 className={styles.sectionTitle}>
-        {t('finacialReporting.annualReporting')}
+        {t("finacialReporting.annualReporting")}
       </h3>
       <div className={styles.tabsList}>
         {annualLink.map((year, idx) => {
