@@ -4,9 +4,11 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useSelector } from "react-redux";
 import { getAnnualReportsState } from "@/store/annualReports/annualReports.slice";
+import { useRouter } from "next/router";
 
 export default function FinacialReportsData() {
   const { t } = useTranslation("common");
+  const router = useRouter();
 
   const [annualLinks, setAnnualLinks] = useState([]);
   const [activeAnnualLinks, setActiveAnnualLinks] = useState([]);
@@ -63,7 +65,7 @@ export default function FinacialReportsData() {
               className={styles.linkStyle}
               target="_blank"
             >
-              {link.linkName}
+              {router.locale === "lt" ? link.linkName : link.linkNameEn}
             </Link>
           </div>
         ))}
