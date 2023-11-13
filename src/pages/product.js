@@ -9,14 +9,17 @@ import HeroMobile from "../../public/assets/images/product_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { privetCurrentAccountInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
-import { CurrentAccFAQ } from "@/common/AccordionSchemas";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
+import { useSelector } from "react-redux";
+import { getCurrentAccFAQ } from "@/store/faqList/faqList.slice";
 
 export default function Product() {
   const router = useRouter();
   const { t } = useTranslation("common");
+
+  const faqData = useSelector(getCurrentAccFAQ);
 
   const handleBack = () => {
     router.back();
@@ -103,14 +106,16 @@ export default function Product() {
             <ClientSupport />
           </section>
           <section id="faq" className={styles.faqSection}>
-            <div className={styles.faqWrapper}>
-              <h3 className={styles.faqHeader}>
-                {t("privetCurrentAccount.faq")}
-              </h3>
-              <div className={styles.faqList}>
-                <Accordion faqData={CurrentAccFAQ} singleLevel="true" />
+            {!!faqData.data && (
+              <div className={styles.faqWrapper}>
+                <h3 className={styles.faqHeader}>
+                  {t("privetCurrentAccount.faq")}
+                </h3>
+                <div className={styles.faqList}>
+                  <Accordion faqData={faqData.data} singleLevel="true" />
+                </div>
               </div>
-            </div>
+            )}
           </section>
         </main>
       </IndexLayout>

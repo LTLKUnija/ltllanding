@@ -3,11 +3,13 @@ import Accordion from "@/components/Accordion";
 import IndexLayout from "@/Layouts/IndexLayout";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { basic } from "@/common/AccordionSchemas";
 import Link from "next/link";
+import { useSelector } from "react-redux";
+import { getCurrentAccFAQ } from "@/store/faqList/faqList.slice";
 
 export default function Security() {
   const { t } = useTranslation("common");
+  const faqData = useSelector(getCurrentAccFAQ);
 
   return (
     <IndexLayout>
@@ -39,34 +41,18 @@ export default function Security() {
           </div>
         </section>
         <section id="faq" className={styles.faqSection}>
-          <div className={styles.faqWrapper}>
-            <h3 className={styles.faqHeader}>
-              {t("business.capitalLoan.faq")}
-            </h3>
-            <div className={styles.faqList}>
-              <Accordion faqData={basic} singleLevel="true" />
+          {!!faqData.data && (
+            <div className={styles.faqWrapper}>
+              <h3 className={styles.faqHeader}>
+                {t("business.capitalLoan.faq")}
+              </h3>
+              <div className={styles.faqList}>
+                <Accordion faqData={faqData.data} singleLevel="true" />
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </main>
-      {/* <main>
-        <section className={styles.securityPage}>
-          <div className={styles.securityPageWrapper}>
-            <h1 className="page-title">{t('security.title')}</h1>
-            <div className={styles.securityPageDescription}>
-              {t('security.description')}
-            </div>
-          </div>
-        </section>
-        <section id="faq" className={styles.faqSection}>
-          <div className={styles.faqWrapper}>
-            <h3 className={styles.faqHeader}>{t('business.capitalLoan.faq')}</h3>
-            <div className={styles.faqList}>
-              <Accordion faqData={basic} singleLevel="true" />
-            </div>
-          </div>
-        </section>
-      </main> */}
     </IndexLayout>
   );
 }

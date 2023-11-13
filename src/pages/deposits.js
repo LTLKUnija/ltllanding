@@ -11,14 +11,16 @@ import HeroMobile from "../../public/assets/images/deposit_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { termDepositInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
-import { DepositFAQ } from "@/common/AccordionSchemas";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
+import { useSelector } from "react-redux";
+import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
 
 export default function Deposit() {
   const router = useRouter();
   const { t } = useTranslation("common");
+  const faqData = useSelector(getLoanForPrivatesState);
 
   const handleBack = () => {
     router.back();
@@ -333,12 +335,14 @@ export default function Deposit() {
             <ClientSupport />
           </section>
           <section id="faq" className={styles.faqSection}>
-            <div className={styles.faqWrapper}>
-              <h3 className={styles.faqHeader}>{t("termDeposit.faq")}</h3>
-              <div className={styles.faqList}>
-                <Accordion singleLevel="true" faqData={DepositFAQ} />
+            {!!faqData.data && (
+              <div className={styles.faqWrapper}>
+                <h3 className={styles.faqHeader}>{t("termDeposit.faq")}</h3>
+                <div className={styles.faqList}>
+                  <Accordion faqData={faqData.data} singleLevel="true" />
+                </div>
               </div>
-            </div>
+            )}
           </section>
         </main>
       </IndexLayout>

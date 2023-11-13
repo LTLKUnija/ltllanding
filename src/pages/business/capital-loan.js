@@ -10,14 +10,17 @@ import HeroMobile from "../../../public/assets/images/capitalLoan_Hero_mobile.pn
 import BackBtn from "../../../public/assets/images/backBtn.png";
 import { businessInvestmentLoanInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
-import { LoanForBusiness } from "@/common/AccordionSchemas";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
+import { useSelector } from "react-redux";
+import { getLoanForBusiness } from "@/store/faqList/faqList.slice";
 
 export default function Mortgage() {
   const router = useRouter();
   const { t } = useTranslation("common");
+
+  const faqData = useSelector(getLoanForBusiness);
 
   const handleBack = () => {
     router.back();
@@ -115,14 +118,16 @@ export default function Mortgage() {
           <ClientSupport />
         </section>
         <section id="faq" className={styles.faqSection}>
-          <div className={styles.faqWrapper}>
-            <h3 className={styles.faqHeader}>
-              {t("business.capitalLoan.faq")}
-            </h3>
-            <div className={styles.faqList}>
-              <Accordion faqData={LoanForBusiness} singleLevel="true" />
+          {!!faqData.data && (
+            <div className={styles.faqWrapper}>
+              <h3 className={styles.faqHeader}>
+                {t("business.capitalLoan.faq")}
+              </h3>
+              <div className={styles.faqList}>
+                <Accordion faqData={faqData.data} singleLevel="true" />
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </main>
     </IndexLayout>
