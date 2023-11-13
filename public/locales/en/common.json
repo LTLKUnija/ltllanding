@@ -917,7 +917,8 @@
     "feedbackPlaceholder": "Feedback",
     "namePlaceholder": "Name",
     "emailPlaceholder": "E-mail address",
-    "button": "Send"
+    "button": "Send",
+    "joining" : "Thanks for joining!"
   },
   "news": {
     "title": "News",

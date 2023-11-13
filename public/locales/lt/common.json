@@ -914,7 +914,8 @@
     "feedbackPlaceholder": "Atsiliepimas",
     "namePlaceholder": "Vardas",
     "emailPlaceholder": "Elektroninio pašto adresas",
-    "button": "Siųsti"
+    "button": "Siųsti",
+    "joining" : "Ačiū, kad prisijungėte!"
   },
   "news": {
     "title": "Naujienos",
