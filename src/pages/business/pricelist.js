@@ -5,12 +5,15 @@ import { priceListInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import PriceListPrivate from "@/components/PriceListPrivate";
 import PriceListBusiness from "@/components/PriceListBusiness";
-import { basic } from "@/common/AccordionSchemas";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useSelector } from "react-redux";
+import { getLoanForBusiness } from "@/store/faqList/faqList.slice";
 
 export default function PriceListPage() {
   const { t } = useTranslation("common");
+
+  const faqData = useSelector(getLoanForBusiness);
 
   return (
     <IndexLayout>
@@ -34,12 +37,14 @@ export default function PriceListPage() {
           <PriceListBusiness />
         </section>
         <section id="faq" className={styles.faqSection}>
-          <div className={styles.faqWrapper}>
-            <h3 className={styles.faqHeader}>FAQ</h3>
-            <div className={styles.faqList}>
-              <Accordion faqData={basic} singleLevel="true" />
+          {!!faqData.data && (
+            <div className={styles.faqWrapper}>
+              <h3 className={styles.faqHeader}>FAQ</h3>
+              <div className={styles.faqList}>
+                <Accordion faqData={faqData.data} singleLevel="true" />
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </main>
     </IndexLayout>

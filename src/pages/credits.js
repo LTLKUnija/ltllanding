@@ -4,13 +4,15 @@ import styles from "@/styles/credits.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";
 import Link from "next/link";
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { basic } from "@/common/AccordionSchemas";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useSelector } from "react-redux";
+import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
 
 export default function Credits() {
-  const {t} = useTranslation('common');
+  const { t } = useTranslation("common");
 
+  const faqData = useSelector(getLoanForPrivatesState);
 
   function createSelectOptions(number) {
     let arr = [];
@@ -23,17 +25,17 @@ export default function Credits() {
         <section className={styles.creditsPageWrapper}>
           <div className={styles.creditsPageList}>
             <div className={styles.creditsHeroItem}>
-              <h2>{t('consumerLoan.heroBlock.title')}</h2>
+              <h2>{t("consumerLoan.heroBlock.title")}</h2>
               <div className={styles.creditsPageDescription}>
-                <p>{t('consumerLoan.heroBlock.description')}</p>
+                <p>{t("consumerLoan.heroBlock.description")}</p>
                 <ul>
-                  <li>{t('consumerLoan.heroBlock.bullet1')}</li>
-                  <li>{t('consumerLoan.heroBlock.bullet2')}</li>
-                  <li>{t('consumerLoan.heroBlock.bullet3')}</li>
-                  <li>{t('consumerLoan.heroBlock.bullet4')}</li>
-                  <li>{t('consumerLoan.heroBlock.bullet5')}</li>
-                  <li>{t('consumerLoan.heroBlock.bullet6')}</li>
-                  <li>{t('consumerLoan.heroBlock.bullet7')}</li>
+                  <li>{t("consumerLoan.heroBlock.bullet1")}</li>
+                  <li>{t("consumerLoan.heroBlock.bullet2")}</li>
+                  <li>{t("consumerLoan.heroBlock.bullet3")}</li>
+                  <li>{t("consumerLoan.heroBlock.bullet4")}</li>
+                  <li>{t("consumerLoan.heroBlock.bullet5")}</li>
+                  <li>{t("consumerLoan.heroBlock.bullet6")}</li>
+                  <li>{t("consumerLoan.heroBlock.bullet7")}</li>
                 </ul>
               </div>
               <div>
@@ -178,11 +180,13 @@ export default function Credits() {
           </div>
         </section>
         <section id="faq" className={styles.faqSection}>
-          <div className={styles.faqWrapper}>
-            <div className={styles.faqList}>
-              <Accordion faqData={basic} singleLevel="true" />
+          {!!faqData.data && (
+            <div className={styles.faqWrapper}>
+              <div className={styles.faqList}>
+                <Accordion faqData={faqData.data} singleLevel="true" />
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </main>
     </IndexLayout>
@@ -190,11 +194,9 @@ export default function Credits() {
 }
 
 export async function getStaticProps({ locale }) {
-   return {
-     props: {
-       ...(await serverSideTranslations(locale, [
-         'common',
-       ])),
-     },
-   }
- }
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}

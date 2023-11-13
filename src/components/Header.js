@@ -9,11 +9,13 @@ import { newsActions } from "../store/news/news.slice";
 import { annualReportsActions } from "../store/annualReports/annualReports.slice";
 import { quarterReportsActions } from "@/store/quarterReports/quarterReports.slice";
 import { priceListActions } from "@/store/priceList/priceList.slice";
+import { faqListActions } from "@/store/faqList/faqList.slice";
 import {
   getNewsList,
   getAnnualReports,
   getQuarterlReports,
   getPriceList,
+  getFaqList,
 } from "@/common/dataGetters";
 
 function Header() {
@@ -59,6 +61,11 @@ function Header() {
 
     const priceList = await getPriceList();
     dispatch(priceListActions.setPriceList(priceList));
+
+    const faqList = await getFaqList();
+    faqList.forEach((faqItem) =>
+      dispatch(faqListActions[`set${faqItem.id}`](faqItem))
+    );
   };
 
   useEffect(() => {
