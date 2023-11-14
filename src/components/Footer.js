@@ -47,7 +47,11 @@ function Footer({ setShowLinks, showLinks }) {
               />
             </div>
           </div>
-          <Link className="footer-navigation-link" href={`${isBusiness ? '/business' : ''}/pricelist`}>
+
+          <Link
+            className="footer-navigation-link"
+            href={`${isBusiness ? "/business" : ""}/pricelist`}
+          >
             {t("footerNavLinks.priceList")}
           </Link>
 
