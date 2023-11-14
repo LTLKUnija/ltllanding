@@ -89,25 +89,14 @@ function Header() {
   return (
     <header>
       <div className="logo-block">
-        {isBusiness ? (
-          <Link href="/business">
-            <Image
-              src="/assets/images/ltl-logo.svg"
-              alt="Picture of the author"
-              width={90}
-              height={46}
-            />
-          </Link>
-        ) : (
-          <Link href="/">
-            <Image
-              src="/assets/images/ltl-logo.svg"
-              alt="Picture of the author"
-              width={90}
-              height={46}
-            />
-          </Link>
-        )}
+        <Link href={`${isBusiness ? "/business" : ""}/`}>
+          <Image
+            src="/assets/images/ltl-logo.svg"
+            alt="Picture of the author"
+            width={90}
+            height={46}
+          />
+        </Link>
       </div>
       <div className="bussiness-type-block">
         {isBusiness ? (
