@@ -47,15 +47,9 @@ function Footer({ setShowLinks, showLinks }) {
               />
             </div>
           </div>
-          {isBusiness ? (
-            <Link className="footer-navigation-link" href="/business/pricelist">
-              {t("footerNavLinks.priceList")}
-            </Link>
-          ) : (
-            <Link className="footer-navigation-link" href="/pricelist">
-              {t("footerNavLinks.priceList")}
-            </Link>
-          )}
+          <Link className="footer-navigation-link" href={`${isBusiness ? '/business' : ''}/pricelist`}>
+            {t("footerNavLinks.priceList")}
+          </Link>
 
           <Link className="footer-navigation-link" href="/terms-and-conditions">
             {t("footerNavLinks.termsAndCond")}
