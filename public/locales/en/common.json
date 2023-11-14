@@ -64,16 +64,57 @@
     },
     "articleBlock": {
       "article1": {
-        "title": "Tired of spending time in bank branches?",
-        "description": "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba)."
+        "title": "Community-Centric Banking",
+        "description": "At LTL Credit Union, we take pride in being more than just a financial institution; we&#39;re a community. As a member-owned credit union, our focus is on you and your financial well-being. Enjoy personalized service, tailored financial solutions, and a sense of belonging that larger banks simply can&#39;t offer. Join a financial institution that cares about your community as much as you do."
       },
       "article2": {
-        "title": "Borrowing wisely pays off!",
-        "description": "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba)."
+        "title": "Competitive Rates and Transparent Practices",
+        "description": "Discover the advantage of banking with LTL Credit Union, where competitive rates and transparency go hand in hand. Unlike traditional banks, we prioritize your financial success over profit margins. Benefit from attractive interest rates on loans and savings, and rest easy knowing that our commitment to openness ensures you always understand the terms of your financial transactions. Welcome to a banking experience that values your prosperity."
       },
       "article3": {
-        "title": "Let the money work for you",
-        "description": "Ever since the Etruscans dropped by to party and stayed, Tuscany has seduced. The Romans stocked their grain silos here, Christians walked stages of a medieval pilgrimage route, and Napoleon plundered art (and suffered terribly in exile in a beautiful neoclassical villa with fig trees and sea view on the paradisiacal island of Elba)."
+        "title": "Member-Centric Convenience",
+        "description": "Your time is valuable, and we understand that. LTL Credit Union is designed with you in mind, offering convenient services that fit seamlessly into your lifestyle. From online banking to a personalized in-branch service, we make managing your finances easy and accessible. Embrace a banking experience that revolves around your needs, providing the flexibility and convenience you deserve."
+      }
+    },
+    "bulletsBlock": {
+      "title": "The LTL makes banking easy",
+      "bullet1": "An exquisite home that you could not afford otherwise",
+      "bullet2": "Potential appreciation in value",
+      "bullet3": "Potential rental income if you so desire",
+      "bullet4": "Renting facilitated and managed by a third party"
+    },
+    "button": {
+      "text": "Learn more"
+    }
+  },
+  "businessIndexPage": {
+    "slideOne": {
+      "heroBlockH1": "Making the dream possible at a fraction of the price",
+      "heroBlockText": "With Kocomo, a home is co-owned by no more than eight families while we act as a neutral third-party administrator to ensure transparency and fairness",
+      "learnMoreButton": "Learn more"
+    },
+    "slideTwo": {
+      "heroBlockH1": "Get the financing you need to grow your business",
+      "heroBlockText": "Are you looking for a way to grow your business? A business loan may be the perfect solution.",
+      "learnMoreButton": "Learn more"
+    },
+    "slideThree": {
+      "heroBlockH1": "There's no place like home, especially with a mortgage loan from us!",
+      "heroBlockText": "Are you looking for a way to finance your next big project? A mortage loan may be the perfect solution.",
+      "learnMoreButton": "Learn more"
+    },
+    "articleBlock": {
+      "article1": {
+        "title": "Tailored Business Solutions",
+        "description": "At LTL Credit Union, we recognize that every business is unique. That&#39;s why we offer customized financial solutions to meet the distinct needs of your enterprise. Our team is dedicated to understanding your goals and providing the financial tools necessary for your success. Experience a banking partner committed to your business&#39;s growth and prosperity."
+      },
+      "article2": {
+        "title": "Streamlined Business Banking",
+        "description": "Time is of the essence in the business world. That&#39;s why we&#39;ve streamlined our business banking services at LTL Credit union. Enjoy efficient online business banking, quick loan approvals, and a suite of tools designed to simplify your financial management. We believe in providing the resources to empower your business, allowing you to focus on what matters most – your company&#39;s growth and profitability."
+      },
+      "article3": {
+        "title": "Supporting Local Businesses",
+        "description": "LTL Credit Union is proud to be a cornerstone of the local business community. When you choose us as your financial partner, you&#39;re not just getting a suite of services; you&#39;re investing in the growth and sustainability of local businesses. From small startups to established enterprises, we&#39;re here to provide the financial support and expertise needed to fuel the success of businesses in our community. Join a credit union that actively contributes to the strength of local commerce."
       }
     },
     "bulletsBlock": {
@@ -493,7 +534,7 @@
     "contacts": "Contacts",
     "address": "Sporto st. 18, \n LT- 09238 Vilnius",
     "faq": "F.A.Q"
-  },
+  }, 
   "privetCurrentAccount": {
     "pageTitle": "You don‘t have to be big to be international",
     "heroBlock": {
