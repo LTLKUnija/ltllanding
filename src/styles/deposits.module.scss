@@ -107,6 +107,7 @@
       font-size: 17px;
       font-weight: 300;
       line-height: 22px;
+      text-align: justify;
     }
   }
 }
@@ -295,13 +296,23 @@
     font-weight: 300;
     line-height: 22px;
     margin-bottom: 56px;
-    text-align: center;
+    text-align: justify;
+  }
+  .ratesContainer {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .tableHeading {
     display: flex;
+    justify-content: space-evenly;
     border-top: solid 1px var(--table-border-color);
     padding: 15px 0 15px 0;
+    max-width: 600px;
   }
 
   .tableHeadingCell {
@@ -314,18 +325,18 @@
 
   .column1 {
     width: 227px;
+    text-align: center;
   }
 
   .column2 {
     width: 335px;
-  }
-
-  .column3 {
-    width: 227px;
+    text-align: center;
   }
 
   .tableDataLine {
+    max-width: 600px;
     display: flex;
+    justify-content: space-between;
     border-top: solid 1px var(--table-border-color);
     padding: 15px 0 15px 0;
 
