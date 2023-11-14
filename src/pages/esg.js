@@ -5,7 +5,7 @@ import Image from "next/image";
 import Img1 from "@../../../public/assets/images/esg_img1.png";
 import Img2 from "@../../../public/assets/images/esg_img2.png";
 import Img3 from "@../../../public/assets/images/esg_img3.png";
-import HeroMobile from "../../public/assets/images/capitalLoan_Hero_mobile.png";
+import HeroMobile from "../../public/assets/images/esgPage_HeroBlock_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { useRouter } from "next/router";
 import { esgInnerLinkList } from "@/common/innerLinksData";

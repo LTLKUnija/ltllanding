@@ -39,7 +39,7 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 22px;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 42px;
 
     &:last-child {
@@ -49,6 +49,13 @@
 }
 
 // ----- Media queries -----
+@media (min-width: 1250px) {
+  .partnershipSection {
+    .heroImage {
+      display: none;
+    }
+  }
+}
 @media (max-width: 1400px) {
   .partnershipSection {
     background-position: calc(100% - 50px) bottom;
@@ -62,9 +69,30 @@
 
 @media (max-width: 1250px) {
   .partnershipSection {
+    background-image: none;
     .partnershipWrapper {
-      padding-left: 50px;
-      background-position: calc(100% - 40px) bottom;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .imgBlock {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .heroImage {
+      margin-bottom: 30px;
+
+      &.backBtn {
+        cursor: pointer;
+        margin-top: 36px;
+      }
+    }
+    .articleBlock {
+      p {
+        text-align: center;
+      }
     }
   }
 }

@@ -186,6 +186,7 @@ footer {
   padding: 60px 76px 0 120px;
   min-height: 350px;
   background-color: var(--theme-color1);
+  text-align: left !important;
 
   .footerWrapper {
     display: flex;
@@ -199,7 +200,7 @@ footer {
   }
 
   .mobile_adress {
-    max-width: 120px;
+    max-width: 174px;
   }
 
   .footer-navigation-section {
