@@ -1,9 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 function Footer({ setShowLinks, showLinks }) {
   const { t } = useTranslation("common");
+  const router = useRouter();
+  const isBusiness = router.pathname.includes("/business");
 
   const handleClick = (e) => {
     const key = e.target.dataset.id;
@@ -44,9 +47,16 @@ function Footer({ setShowLinks, showLinks }) {
               />
             </div>
           </div>
-          <Link className="footer-navigation-link" href="/pricelist">
-            {t("footerNavLinks.priceList")}
-          </Link>
+          {isBusiness ? (
+            <Link className="footer-navigation-link" href="/business/pricelist">
+              {t("footerNavLinks.priceList")}
+            </Link>
+          ) : (
+            <Link className="footer-navigation-link" href="/pricelist">
+              {t("footerNavLinks.priceList")}
+            </Link>
+          )}
+
           <Link className="footer-navigation-link" href="/terms-and-conditions">
             {t("footerNavLinks.termsAndCond")}
           </Link>
