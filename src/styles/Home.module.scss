@@ -1,9 +1,8 @@
 // INDEX PAGE
 .beneficialArticles {
-  background: #F4F4F4;
+  background: #f4f4f4;
   padding: 154px 0 164px 0;
 }
-
 
 .beneficialArticle,
 .beneficialArticleMirror {
@@ -38,6 +37,7 @@
     font-size: 50px;
     line-height: 62px;
     margin-bottom: 34px;
+    text-align: left;
   }
 
   p {
@@ -50,7 +50,9 @@
 
 .bulletPoints {
   padding: 120px 0;
-  background: var(--theme-color5) url('/assets/images/homePage_bulletPoints.svg') no-repeat calc(100% - 120px) 45px;
+  background: var(--theme-color5)
+    url("/assets/images/homePage_bulletPoints.svg") no-repeat calc(100% - 120px)
+    45px;
 
   h2 {
     font-weight: 700;
@@ -66,7 +68,7 @@
 
     li {
       padding: 0 0 0 40px;
-      background: url('/assets/images/check.svg') no-repeat 0 0;
+      background: url("/assets/images/check.svg") no-repeat 0 0;
       margin-bottom: 16px;
       font-weight: 400;
       font-size: 16px;
@@ -86,7 +88,7 @@
 }
 
 .newsSection {
-  background: #F4F4F4;
+  background: #f4f4f4;
   padding: 112px 0;
   color: var(--main-text-color);
 
@@ -95,7 +97,7 @@
     font-size: 50px;
     line-height: 62px;
     text-align: center;
-    color: #0D222E;
+    color: #0d222e;
     margin-bottom: 80px;
   }
 }
@@ -110,7 +112,9 @@
   .bulletPoints {
     max-width: 1200px;
     margin: 0 auto;
-    background: var(--theme-color5) url('/assets/images/homePage_bulletPoints.svg') no-repeat calc(100% - 36px) 45px;
+    background: var(--theme-color5)
+      url("/assets/images/homePage_bulletPoints.svg") no-repeat
+      calc(100% - 36px) 45px;
   }
 }
 
@@ -145,7 +149,9 @@
   .bulletPoints {
     max-width: 1000px;
     margin: 0 auto;
-    background: var(--theme-color5) url('/assets/images/homePage_bulletPoints.svg') no-repeat calc(100% - 36px) bottom;
+    background: var(--theme-color5)
+      url("/assets/images/homePage_bulletPoints.svg") no-repeat
+      calc(100% - 36px) bottom;
     background-size: 100%;
   }
 }
@@ -169,7 +175,9 @@
   .bulletPoints {
     max-width: 850px;
     margin: 0 auto;
-    background: var(--theme-color5) url('/assets/images/homePage_bulletPoints.svg') no-repeat calc(100% - -40px) bottom;
+    background: var(--theme-color5)
+      url("/assets/images/homePage_bulletPoints.svg") no-repeat
+      calc(100% - -40px) bottom;
     background-size: 100%;
 
     h2 {

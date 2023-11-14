@@ -129,17 +129,23 @@
     }
   },
   "payments": {
-    "title": "Mokėjimai visame pasaulyje",
+    "title": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto",
+    "heroBlock" : {
+      "description" : "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos",
+      "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
+      "bullet2": "Lengvai siųskite ir gaukite jūsų lėšasy",
+      "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
+    },
     "benefitsArticle": {
       "article1": {
-        "title": "Nuo ko pradėti",
-        "description": "Kad galėtumėte vykdyti finansinę veiklą, pirmiausia jums reikės banko sąskaitos mano.bank. Tokią sąskaitą paprastai ir greitai galite atidaryti internetu. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje ar naudodamiesi aplikacijų programavimo sąsaja (API). Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti skiltyje Įkainiai.. Savo klientams mano.bank gali pasiūlyti:",
+        "title": "Atsidarykite sąskaitą LTL Kredito unijoje",
+        "description": "Kad galėtumėte vykdyti mokėjimus, pirmiausia jums reikės sąskaitos LTL Kredito unijoje. Jei esate naujas klientas, galite tapti LTL Kredito unijos nariu ir atsidaryti einamąją sąskaitą atvykę į mūsų skyrių adresu Sporto g. 18, LT- 09238 Vilnius. Su savimi turėkite asmens tapatybę patvirtinantį dokumentą. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje. Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti čia ",
+        "restDescription": " Kredito unijos nariams siūlome:",
         "bullet1": "Vietinius mokėjimus visoje Lietuvoje",
-        "bullet2": "Tarptautinius pervedimus visame pasaulyje (tiek SEPA, tiek SWIFT mokėjimus)",
-        "bullet3": "Valiutų keitimo operacijas",
-        "bullet4": "Patogų operacijų atlikimą ir valdymą naudojantis mano.bank interneto banku arba API",
-        "bullet5": "Profesionalias konsultacijas ir individualų dėmesį",
-        "bullet6": "Jeigu norite saugiai ir patogiai naudotis šiomis paslaugomis – atidarykite sąskaitą mano.bank jau dabar. Tai – labai paprasta!"
+        "bullet2": "Tarptautinius SEPA pervedimus visoje Europoje",
+        "bullet3": "Patogų operacijų atlikimą ir valdymą naudojantis LTL Kredito unijos elektroninėje bankininkystėje",
+        "bullet4": "Profesionalias konsultacijas ir individualų dėmesį",
+        "link": "(Nuoroda)"
       },
       "article2": {
         "title": "Patogus europinių pinigų pervedimas (SEPA)",
@@ -537,7 +543,7 @@
   "privetCurrentAccount": {
     "pageTitle": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto.",
     "heroBlock": {
-      "description": "atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
+      "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
       "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
       "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
       "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
