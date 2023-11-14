@@ -53,27 +53,68 @@
       "learnMoreButton": "Sužinokite daugiau"
     },
     "slideTwo": {
-      "heroBlockH1": "Get the financing you need to grow your business",
-      "heroBlockText": "Are you looking for a way to grow your business? A business loan may be the perfect solution.",
-      "learnMoreButton": "Learn more"
+      "heroBlockH1": "Gaukite reikiamą finansavimą verslui plėtoti",
+      "heroBlockText": "Ar ieškote būdo plėsti savo verslą? Verslo paskola gali būti puikus sprendimas.",
+      "learnMoreButton": "Sužinokite daugiau"
     },
     "slideThree": {
-      "heroBlockH1": "There's no place like home, especially with a mortgage loan from us!",
-      "heroBlockText": "Are you looking for a way to finance your next big project? A mortage loan may be the perfect solution.",
-      "learnMoreButton": "Learn more"
+      "heroBlockH1": "Nėra tokios vietos kaip namai, ypač su hipotekos paskola iš mūsų!",
+      "heroBlockText": "Ar ieškote būdo finansuoti kitą didelį projektą? Hipotekos paskola gali būti puikus sprendimas.",
+      "learnMoreButton": "Sužinokite daugiau"
     },
     "articleBlock": {
       "article1": {
-        "title": "Pabodo laiką leisti banko skyriuose?",
-        "description": "Nuo tada, kai etruskai užsuko į vakarėlį ir pasiliko, Toskana viliojo. Romėnai čia kaupė savo grūdų silosus, krikščionys vaikščiojo viduramžių piligrimystės kelio etapais, o Napoleonas grobė meną (ir siaubingai kentėjo tremtyje gražioje neoklasikinėje viloje su figmedžiais ir vaizdu į jūrą rojaus Elbos saloje)."
+        "title": "Į bendruomenę orientuota bankininkystė",
+        "description": "LTL kredito unija didžiuojasi tuo, kad esame ne tik finansų įstaiga, bet ir bendruomenė. Būdami nariams priklausanti kredito unija, daugiausia dėmesio skiriame jums ir jūsų finansinei gerovei. Mėgaukitės asmeniniu aptarnavimu, individualiais finansiniais sprendimais ir priklausymo jausmu, kurio didesni bankai tiesiog negali pasiūlyti. Prisijunkite prie finansų įstaigos, kuriai jūsų bendruomenė rūpi taip pat, kaip ir jums."
       },
       "article2": {
-        "title": "Skolintis protingai apsimoka!",
-        "description": "Nuo tada, kai etruskai užsuko į vakarėlį ir pasiliko, Toskana viliojo. Romėnai čia kaupė savo grūdų silosus, krikščionys vaikščiojo viduramžių piligrimystės kelio etapais, o Napoleonas grobė meną (ir siaubingai kentėjo tremtyje gražioje neoklasikinėje viloje su figmedžiais ir vaizdu į jūrą rojaus Elbos saloje)."
+        "title": "Konkurencingos palūkanų normos ir skaidri praktika",
+        "description": "Atraskite privalumus, kuriuos teikia LTL Kredito unija, kurioje konkurencingos palūkanos ir skaidrumas eina koja kojon. Kitaip nei tradiciniai bankai, mes teikiame pirmenybę jūsų finansinei sėkmei, o ne pelno maržai. Pasinaudokite patraukliomis paskolų ir santaupų palūkanų normomis ir būkite ramūs žinodami, kad mūsų atvirumo principas užtikrina, jog visada suprasite savo finansinių operacijų sąlygas. Sveiki atvykę į bankininkystę, kurioje vertinama jūsų gerovė."
       },
       "article3": {
-        "title": "Leisk pinigams dirbti už tave",
-        "description": "Nuo tada, kai etruskai užsuko į vakarėlį ir pasiliko, Toskana viliojo. Romėnai čia kaupė savo grūdų silosus, krikščionys vaikščiojo viduramžių piligrimystės kelio etapais, o Napoleonas grobė meną (ir siaubingai kentėjo tremtyje gražioje neoklasikinėje viloje su figmedžiais ir vaizdu į jūrą rojaus Elbos saloje)."
+        "title": "Į narius orientuotas patogumas",
+        "description": "Jūsų laikas yra brangus, ir mes tai suprantame. LTL Kredito unija sukurta atsižvelgiant į jus ir siūlo patogias paslaugas, kurios sklandžiai dera prie Jūsų gyvenimo būdo. Nuo internetinės bankininkystės iki asmeninių paslaugų skyriuje - jūsų finansus valdyti paprasta ir prieinama. Naudokitės bankininkystės patirtimi, kuri sukasi aplink jūsų poreikius, užtikrindama lankstumą ir patogumą, kurio nusipelnėte."
+      }
+    },
+    "bulletsBlock": {
+      "title": "LTL palengvina bankininkystę",
+      "bullet1": "Puikūs namai, kurių kitaip negalėtumėte sau leisti",
+      "bullet2": "Galimas vertės padidėjimas",
+      "bullet3": "Galimos pajamos iš nuomos, jei to norite",
+      "bullet4": "Nuoma palengvinta ir valdoma trečiosios šalies"
+    },
+    "button": {
+      "text": "Sužinokite daugiau"
+    }
+  },
+  "businessIndexPage": {
+    "slideOne": {
+      "heroBlockH1": "Įgyvendinti svajonę už nedidelę kainą",
+      "heroBlockText": "Su Kocomo namas bendrai priklauso ne daugiau kaip aštuonioms šeimoms o mes veikiame kaip neutralus trečiosios šalies administratorius, siekdami užtikrinti skaidrumą ir sąžiningumą",
+      "learnMoreButton": "Sužinokite daugiau"
+    },
+    "slideTwo": {
+      "heroBlockH1": "Gaukite reikiamą finansavimą verslui plėtoti",
+      "heroBlockText": "Ar ieškote būdo plėsti savo verslą? Verslo paskola gali būti puikus sprendimas.",
+      "learnMoreButton": "Sužinokite daugiau"
+    },
+    "slideThree": {
+      "heroBlockH1": "Nėra tokios vietos kaip namai, ypač su hipotekos paskola iš mūsų!",
+      "heroBlockText": "Ar ieškote būdo finansuoti kitą didelį projektą? Hipotekos paskola gali būti puikus sprendimas.",
+      "learnMoreButton": "Sužinokite daugiau"
+    },
+    "articleBlock": {
+      "article1": {
+        "title": "Individualūs verslo sprendimai",
+        "description": "LTL Kredito unija žino, kad kiekvienas verslas yra unikalus. Todėl siūlome individualiai pritaikytus finansinius sprendimus, atitinkančius jūsų įmonės poreikius. Mūsų komanda stengiasi suprasti jūsų tikslus ir suteikti finansines priemones, reikalingas jūsų sėkmei. Susipažinkite su bankininkystės partneriu, įsipareigojusiu siekti jūsų verslo augimo ir klestėjimo."
+      },
+      "article2": {
+        "title": "Supaprastinta verslo bankininkystė",
+        "description": "Verslo pasaulyje laikas yra labai svarbus. Todėl LTL kredito unijoje supaprastinome verslo bankininkystės paslaugas. Mėgaukitės efektyvia internetine verslo bankininkyste, greitu paskolų patvirtinimu ir įrankių rinkiniu, skirtu supaprastinti jūsų finansų valdymą. Tikime, kad suteikiame išteklių, kurie įgalins jūsų verslą, todėl galėsite sutelkti dėmesį į tai, kas svarbiausia - savo įmonės augimą ir pelningumą."
+      },
+      "article3": {
+        "title": "Vietos verslų rėmimas",
+        "description": "LTL Kredito unija didžiuojasi, kad yra vietos verslo bendruomenės pagrindas. Pasirinkę mus kaip savo finansinį partnerį, gaunate ne tik paslaugų rinkinį, bet ir investuojate į vietos verslo augimą ir tvarumą. Nuo mažų pradedančiųjų įmonių iki įsitvirtinusių įmonių - mes esame čia, kad suteiktume finansinę paramą ir kompetenciją, reikalingą mūsų bendruomenės įmonių sėkmei skatinti. Prisijunkite prie kredito unijos, kuri aktyviai prisideda prie vietos prekybos stiprinimo."
       }
     },
     "bulletsBlock": {
