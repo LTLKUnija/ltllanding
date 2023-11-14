@@ -378,14 +378,12 @@
   },
   "termDeposit": {
     "heroBlock": {
-      "title": "You don‘t have to be big to make a fortune/your fortune grow",
-      "description": "Save your own money and watch your wealth grow — free is now more powerful than ever!",
-      "bullet1": "Get the best (top) interest rates on the market",
-      "bullet2": "Your deposits are protected by deposit insurance. Learn more",
-      "bullet3": "Attractive loyalty rewards and benefits",
-      "bullet4": "Get individual offers",
-      "bullet5": "Deposit terms from 3 to 60 months are available",
-      "bullet6": "Interest rates up to 3.95%",
+      "title": "You don‘t have to be big to make a fortune/your fortune grow", 
+      "description": "Save your own money and watch your wealth grow — free is now more powerful than ever! ",
+      "bullet1": "Attractive loyalty rewards and benefits",
+      "bullet2": "Get individual offers",
+      "bullet3": "Deposit terms from 3 to 60 months available",
+      "bullet4": "Interest rates up to 4,3%",
       "button": "Submit a deposit application"
     },
     "innerLinkBlock": {
@@ -458,7 +456,9 @@
       "title": "Client support",
       "description": "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt."
     },
-    "faq": "F.A.Q."
+    "faq": "F.A.Q.",
+    "learnMore" : "Learn more",
+    "link" : "(link)"
   },
   "openBanking": {
     "pageTitle": "Open banking",
@@ -497,7 +497,7 @@
   "privetCurrentAccount": {
     "pageTitle": "You don‘t have to be big to be international",
     "heroBlock": {
-      "description": "Open IBAN account with us, make and receive payments from all over Euro area",
+      "description": "open IBAN account with us, make and receive payments from all over the Euro area.",
       "bullet1": "Bank on-the-go with our 24/7 online banking services",
       "bullet2": "Move your inbound and outbound funds effortlessly",
       "bullet3": "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"

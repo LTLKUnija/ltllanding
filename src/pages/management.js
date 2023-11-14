@@ -4,7 +4,7 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import Image from "next/image";
 import Img1 from "@../../../public/assets/images/managment_img1.png";
 import Img2 from "@../../../public/assets/images/managment_img2.png";
-import HeroMobile from "../../public/assets/images/management_Hero_mobile.png";
+import HeroMobile from "../../public/assets/images/managmentPage_heroBlock-mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { useRouter } from "next/router";
 import { aboutUsInnerLinkList } from "@/common/innerLinksData";
@@ -41,23 +41,23 @@ export default function About() {
                 className={styles.heroImage}
               />
             </div>
-            <h1 className={styles.title}>{t("aboutUs.heroBlock.title")}</h1>
-            <div className={styles.aboutUsHeroBlock}>
-              <div className={styles.aboutUsHeroMission}>
-                <h4 className={styles.missionTitle}>
-                  {t("aboutUs.heroBlock.description.missionTitle")}
-                </h4>
-                <div className={styles.missionDescription}>
-                  {t("aboutUs.heroBlock.description.missionDescription")}
-                </div>
+          </div>
+          <h1 className={styles.title}>{t("aboutUs.heroBlock.title")}</h1>
+          <div className={styles.aboutUsHeroBlock}>
+            <div className={styles.aboutUsHeroMission}>
+              <h4 className={styles.missionTitle}>
+                {t("aboutUs.heroBlock.description.missionTitle")}
+              </h4>
+              <div className={styles.missionDescription}>
+                {t("aboutUs.heroBlock.description.missionDescription")}
               </div>
-              <div className={styles.aboutUsHeroVision}>
-                <h4 className={styles.visionTitle}>
-                  {t("aboutUs.heroBlock.description.visionTitle")}
-                </h4>
-                <div className={styles.visionDescription}>
-                  {t("aboutUs.heroBlock.description.visionDescription")}
-                </div>
+            </div>
+            <div className={styles.aboutUsHeroVision}>
+              <h4 className={styles.visionTitle}>
+                {t("aboutUs.heroBlock.description.visionTitle")}
+              </h4>
+              <div className={styles.visionDescription}>
+                {t("aboutUs.heroBlock.description.visionDescription")}
               </div>
             </div>
           </div>
