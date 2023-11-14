@@ -4,14 +4,14 @@ import IndexNews from "@/components/IndexNews";
 import Link from "next/link";
 import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ArticleImg1 from "@../../../public/assets/images/article1.png";
 import ArticleImg2 from "@../../../public/assets/images/article2.png";
 import ArticleImg3 from "@../../../public/assets/images/article3.png";
 
 export default function Home() {
-  const {t} = useTranslation('common')
+  const { t } = useTranslation("common");
 
   return (
     <>
@@ -34,18 +34,13 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>Pabodo laiką leisti banko skyriuose?</h2>
+                  <h2>{t("businessIndexPage.articleBlock.article1.title")}</h2>
                   <p>
-                    Ever since the Etruscans dropped by to party and stayed,
-                    Tuscany has seduced. The Romans stocked their grain silos
-                    here, Christians walked stages of a medieval pilgrimage
-                    route, and Napoleon plundered art (and suffered terribly in
-                    exile in a beautiful neoclassical villa with fig trees and
-                    sea view on the paradisiacal island of Elba).
+                    {t("businessIndexPage.articleBlock.article1.description")}
                   </p>
                   <div className="actionButtonBlock">
-                    <Link className="outlinedBtn" href="/">
-                      Learn More
+                    <Link className="containedBtn blue" href="/">
+                      {t("businessIndexPage.button.text")}
                     </Link>
                   </div>
                 </div>
@@ -63,18 +58,13 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>Pabodo laiką leisti banko skyriuose?</h2>
+                  <h2>{t("businessIndexPage.articleBlock.article3.title")}</h2>
                   <p>
-                    Ever since the Etruscans dropped by to party and stayed,
-                    Tuscany has seduced. The Romans stocked their grain silos
-                    here, Christians walked stages of a medieval pilgrimage
-                    route, and Napoleon plundered art (and suffered terribly in
-                    exile in a beautiful neoclassical villa with fig trees and
-                    sea view on the paradisiacal island of Elba).
+                    {t("businessIndexPage.articleBlock.article3.description")}
                   </p>
                   <div className="actionButtonBlock">
-                    <Link className="outlinedBtn" href="/">
-                      Learn More
+                    <Link className="containedBtn blue" href="/">
+                      {t("businessIndexPage.button.text")}
                     </Link>
                   </div>
                 </div>
@@ -91,18 +81,13 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>Pabodo laiką leisti banko skyriuose?</h2>
+                  <h2>{t("businessIndexPage.articleBlock.article3.title")}</h2>
                   <p>
-                    Ever since the Etruscans dropped by to party and stayed,
-                    Tuscany has seduced. The Romans stocked their grain silos
-                    here, Christians walked stages of a medieval pilgrimage
-                    route, and Napoleon plundered art (and suffered terribly in
-                    exile in a beautiful neoclassical villa with fig trees and
-                    sea view on the paradisiacal island of Elba).
+                    {t("businessIndexPage.articleBlock.article3.description")}
                   </p>
                   <div className="actionButtonBlock">
-                    <Link className="outlinedBtn" href="/">
-                      Learn More
+                    <Link className="containedBtn blue" href="/">
+                      {t("businessIndexPage.button.text")}
                     </Link>
                   </div>
                 </div>
@@ -111,12 +96,12 @@ export default function Home() {
           </section>
           <section className={styles.bulletPoints}>
             <div className="container">
-              <h2>The LTL makes banking easy</h2>
+              <h2>{t("businessIndexPage.bulletsBlock.title")}</h2>
               <ul>
-                <li>An exquisite home that you could not afford otherwise</li>
-                <li>Potential appreciation in value</li>
-                <li>Potential rental income if you so desire</li>
-                <li>Renting facilitated and managed by a third party</li>
+                <li>{t("businessIndexPage.bulletsBlock.bullet1")}</li>
+                <li>{t("businessIndexPage.bulletsBlock.bullet2")}</li>
+                <li>{t("businessIndexPage.bulletsBlock.bullet3")}</li>
+                <li>{t("businessIndexPage.bulletsBlock.bullet4")}</li>
               </ul>
             </div>
           </section>
@@ -132,9 +117,7 @@ export default function Home() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'common',
-      ])),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
-  }
+  };
 }
