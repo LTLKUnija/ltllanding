@@ -1,10 +1,19 @@
 import styles from "@/styles/money-loundrying.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useRouter } from "next/router";
+import HeroMobile from "../../public/assets/images/moneyLoundryingPage_heroBlock_mobile.png";
+import BackBtn from "../../public/assets/images/backBtn.png";
+import Image from "next/image";
 
 export default function MoneyLoundrying() {
-  const {t} = useTranslation('common');
+  const { t } = useTranslation("common");
+  const router = useRouter();
+
+  const handleBack = () => {
+    router.back();
+  };
 
   return (
     <IndexLayout>
@@ -12,21 +21,36 @@ export default function MoneyLoundrying() {
         <section className={styles.pageWrapper}>
           <div className={styles.pageList}>
             <div className={styles.heroItem}>
-              <h1 className={styles.title}>{t('moneyLoundering.title')}</h1>
+              <div className={styles.imgBlock}>
+                <Image
+                  src={BackBtn}
+                  alt={"Hero Mobile"}
+                  style={{ width: "24", height: "12" }}
+                  className={[styles.heroImage, styles.backBtn].join(" ")}
+                  onClick={handleBack}
+                />
+                <Image
+                  src={HeroMobile}
+                  alt={"Hero Mobile"}
+                  style={{ width: "70%", height: "auto" }}
+                  className={styles.heroImage}
+                />
+              </div>
+              <h1 className={styles.title}>{t("moneyLoundering.title")}</h1>
             </div>
           </div>
         </section>
         <section className={styles.articlesSection}>
           <div className={styles.articlesWrapper}>
             <div className={styles.articlesBlock}>
-              <p>{t('moneyLoundering.articleBlock.article1')}</p>
+              <p>{t("moneyLoundering.articleBlock.article1")}</p>
             </div>
             <div className={styles.articlesBlock}>
-              <p>{t('moneyLoundering.articleBlock.article2')}</p>
+              <p>{t("moneyLoundering.articleBlock.article2")}</p>
             </div>
           </div>
           <p className={styles.articleParagraph}>
-            {t('moneyLoundering.articleBlock.article3')}
+            {t("moneyLoundering.articleBlock.article3")}
           </p>
         </section>
       </main>
@@ -37,9 +61,7 @@ export default function MoneyLoundrying() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'common',
-      ])),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
-  }
+  };
 }

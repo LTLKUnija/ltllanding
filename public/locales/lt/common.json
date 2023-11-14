@@ -418,14 +418,12 @@
   },
   "termDeposit": {
     "heroBlock": {
-      "title": "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-      "description": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas – nemokama dabar yra galingesnė nei bet kada anksčiau",
-      "bullet1": "Gaukite geriausias palūkanų normas rinkoje",
-      "bullet2": "Jūsų indėliai yra apsaugoti indėlių draudimu. Sužinokite daugiau",
-      "bullet3": "Patrauklus lojalumo atlygis ir nauda",
-      "bullet4": "Gaukite individualius pasiūlymus",
-      "bullet5": "Indėlių terminas nuo 3 iki 60 mėnesių",
-      "bullet6": "Paskolos palūkanos nuo 3.50%",
+      "title": "Nebereikia būti dideliam, kad susikrautumėte turtus Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas",
+      "description": "Gaukite geriausias palūkanų normas rinkoje Jūsų indėliai yra apsaugoti indėlių draudimu. ",
+      "bullet1": "Patrauklus lojalumo atlygis ir nauda",
+      "bullet2": "Gaukite individualius pasiūlymus",
+      "bullet3": "Indėlių terminas nuo 3 iki 60 mėnesių",
+      "bullet4": "Paskolos palūkanos iki 4,3%",
       "button": "Pateikti indėlio paraišką"
     },
     "innerLinkBlock": {
@@ -443,7 +441,7 @@
       },
       "article2": {
         "title": "Indėlių apsauga",
-        "description": "Galite drąsiai deponuoti lėšas, žinodami, kad jūsų lėšos yra maksimaliai apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad Jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo sąlygomis (link)."
+        "description": "Galite drąsiai deponuoti lėšas, žinodami, jog jos yra apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo sąlygomis."
       },
       "article3": {
         "title": "Lojalumo atlygis",
@@ -498,7 +496,9 @@
       "title": "Pagalba klientams",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
-    "faq": "D.U.K."
+    "faq": "D.U.K.",
+    "learnMore" : "Sužinokite daugiau",
+    "link" : "(nuoroda)"
   },
   "openBanking": {
     "pageTitle": "Atviroji bankininkystė",
@@ -535,9 +535,9 @@
     "faq": "D.U.K"
   },
   "privetCurrentAccount": {
-    "pageTitle": "Nebereikia būti dideliam, kad ... ",
+    "pageTitle": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto.",
     "heroBlock": {
-      "description": "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
+      "description": "atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
       "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
       "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
       "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"

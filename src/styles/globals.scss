@@ -27,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--main-background);
+  text-align: justify;
 
   * {
     font-family: "Lexend", sans-serif;
@@ -185,6 +186,7 @@ footer {
   padding: 60px 76px 0 120px;
   min-height: 350px;
   background-color: var(--theme-color1);
+  text-align: left !important;
 
   .footerWrapper {
     display: flex;
@@ -198,7 +200,7 @@ footer {
   }
 
   .mobile_adress {
-    max-width: 120px;
+    max-width: 174px;
   }
 
   .footer-navigation-section {
@@ -517,6 +519,14 @@ footer {
       color: #034585;
     }
   }
+}
+
+.readMoreLink {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #000000;
 }
 
 .slick-active > .index-page-hero-slider-dot {

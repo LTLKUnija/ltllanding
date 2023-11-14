@@ -2,6 +2,7 @@ import styles from "@/styles/client-suport.module.scss";
 import { useRouter } from "next/router";
 import lt from "@/locales/lt";
 import en from "@/locales/en";
+import Link from "next/link";
 
 export default function ClientSupport() {
   const router = useRouter();
@@ -18,7 +19,7 @@ export default function ClientSupport() {
           </span>
           {t.clientSuport.or}
           <p>
-            <a href="mailto:pagalba@ltlku.lt">pagalba@ltlku.lt</a>
+            <Link href="mailto:pagalba@ltlku.lt">pagalba@ltlku.lt</Link>
           </p>
         </div>
       </div>

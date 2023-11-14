@@ -34,24 +34,40 @@ export default function Deposit() {
 
   let ratesList = [
     {
-      term: 1,
-      rate: 1.0,
-    },
-    {
       term: 3,
-      rate: 1.75,
+      rate: 3.75,
     },
     {
       term: 6,
-      rate: 2.0,
+      rate: 4.0,
+    },
+    {
+      term: 9,
+      rate: 4.1,
     },
     {
       term: 12,
-      rate: 2.5,
+      rate: 4.2,
     },
     {
       term: 18,
-      rate: 3.1,
+      rate: 4.25,
+    },
+    {
+      term: 24,
+      rate: 4.3,
+    },
+    {
+      term: 36,
+      rate: 4.2,
+    },
+    {
+      term: 48,
+      rate: 4,
+    },
+    {
+      term: 60,
+      rate: 4,
     },
   ];
 
@@ -100,14 +116,20 @@ export default function Deposit() {
                   {t("termDeposit.heroBlock.title")}
                 </h1>
                 <div className={styles.description}>
-                  <p>{t("termDeposit.heroBlock.description")}</p>
+                  <p>
+                    {t("termDeposit.heroBlock.description")}
+                    <Link
+                      className="readMoreLink"
+                      href="https://www.iidraudimas.lt/lt/indeliu-draudimas/duk-4/"
+                    >
+                      {t("termDeposit.learnMore")} &#x3e;
+                    </Link>
+                  </p>
                   <ul>
                     <li>{t("termDeposit.heroBlock.bullet1")}</li>
                     <li>{t("termDeposit.heroBlock.bullet2")}</li>
                     <li>{t("termDeposit.heroBlock.bullet3")}</li>
                     <li>{t("termDeposit.heroBlock.bullet4")}</li>
-                    <li>{t("termDeposit.heroBlock.bullet5")}</li>
-                    <li>{t("termDeposit.heroBlock.bullet6")}</li>
                   </ul>
                 </div>
               </div>
@@ -124,7 +146,16 @@ export default function Deposit() {
               </div>
               <div className={styles.depositBenefitsBlock}>
                 <h2>{t("termDeposit.benefitsArticle.article2.title")}</h2>
-                <p>{t("termDeposit.benefitsArticle.article2.description")}</p>
+                <p>
+                  {t("termDeposit.benefitsArticle.article2.description")}
+                  <Link
+                    className="readMoreLink"
+                    target="_blank"
+                    href="https://www.iidraudimas.lt/lt/indeliu-draudimas/duk-4/"
+                  >
+                    {t("termDeposit.link")}
+                  </Link>
+                </p>
               </div>
               <div className={styles.depositBenefitsBlock}>
                 <h2>{t("termDeposit.benefitsArticle.article3.title")}</h2>
@@ -136,112 +167,142 @@ export default function Deposit() {
             <div className={styles.ratesTableWrapper}>
               <h3>{t("termDeposit.interestRatesArticle.title")}</h3>
               <p>{t("termDeposit.interestRatesArticle.description")}</p>
-              <div className={styles.tableHeading}>
-                <div
-                  className={[styles.tableHeadingCell, styles.column1].join(
-                    " "
-                  )}
-                >
-                  {t("termDeposit.interestRatesArticle.period")}
+              <div className={styles.ratesContainer}>
+                <div className={styles.tableHeading}>
+                  <div
+                    className={[styles.tableHeadingCell, styles.column1].join(
+                      " "
+                    )}
+                  >
+                    {t("termDeposit.interestRatesArticle.period")}
+                  </div>
+                  <div
+                    className={[styles.tableHeadingCell, styles.column2].join(
+                      " "
+                    )}
+                  >
+                    {t("termDeposit.interestRatesArticle.interestRate")} (EUR)
+                  </div>
                 </div>
-                <div
-                  className={[styles.tableHeadingCell, styles.column2].join(
-                    " "
-                  )}
-                >
-                  {t("termDeposit.interestRatesArticle.interestRate")} (EUR)
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    1 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    -
+                  </div>
                 </div>
-                <div
-                  className={[styles.tableHeadingCell, styles.column3].join(
-                    " "
-                  )}
-                >
-                  {t("termDeposit.interestRatesArticle.interestRate")} (USD)
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    3 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    3.75%
+                  </div>
                 </div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div
-                  className={[styles.tableDataCell, styles.column1].join(" ")}
-                >
-                  1 {t("termDeposit.interestRatesArticle.month")}
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    6 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    4.00%
+                  </div>
                 </div>
-                <div
-                  className={[styles.tableDataCell, styles.column2].join(" ")}
-                >
-                  1.00%
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    9 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    4.10%
+                  </div>
                 </div>
-                <div
-                  className={[styles.tableDataCell, styles.column3].join(" ")}
-                >
-                  1.00%
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    12 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    4.20%
+                  </div>
                 </div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div
-                  className={[styles.tableDataCell, styles.column1].join(" ")}
-                >
-                  3 {t("termDeposit.interestRatesArticle.month")}
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    18 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    4.25%
+                  </div>
                 </div>
-                <div
-                  className={[styles.tableDataCell, styles.column2].join(" ")}
-                >
-                  1.75%
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    24 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    4.30%
+                  </div>
                 </div>
-                <div
-                  className={[styles.tableDataCell, styles.column3].join(" ")}
-                >
-                  1.75%
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    36 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    4.20%
+                  </div>
                 </div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div
-                  className={[styles.tableDataCell, styles.column1].join(" ")}
-                >
-                  6 {t("termDeposit.interestRatesArticle.month")}
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    48 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    4.00%
+                  </div>
                 </div>
-                <div
-                  className={[styles.tableDataCell, styles.column2].join(" ")}
-                >
-                  2.00%
-                </div>
-                <div
-                  className={[styles.tableDataCell, styles.column3].join(" ")}
-                >
-                  2.00%
-                </div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div
-                  className={[styles.tableDataCell, styles.column1].join(" ")}
-                >
-                  12 {t("termDeposit.interestRatesArticle.month")}
-                </div>
-                <div
-                  className={[styles.tableDataCell, styles.column2].join(" ")}
-                >
-                  2.50%
-                </div>
-                <div
-                  className={[styles.tableDataCell, styles.column3].join(" ")}
-                >
-                  3.00%
-                </div>
-              </div>
-              <div className={styles.tableDataLine}>
-                <div
-                  className={[styles.tableDataCell, styles.column1].join(" ")}
-                >
-                  18 {t("termDeposit.interestRatesArticle.month")}
-                </div>
-                <div
-                  className={[styles.tableDataCell, styles.column2].join(" ")}
-                >
-                  3.10%
-                </div>
-                <div
-                  className={[styles.tableDataCell, styles.column3].join(" ")}
-                >
-                  3.00%
+                <div className={styles.tableDataLine}>
+                  <div
+                    className={[styles.tableDataCell, styles.column1].join(" ")}
+                  >
+                    60 {t("termDeposit.interestRatesArticle.month")}
+                  </div>
+                  <div
+                    className={[styles.tableDataCell, styles.column2].join(" ")}
+                  >
+                    4.00%
+                  </div>
                 </div>
               </div>
             </div>
