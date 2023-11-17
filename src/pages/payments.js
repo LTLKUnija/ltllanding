@@ -78,27 +78,6 @@ export default function Payments() {
                     {t("payments.benefitsArticle.article2.description")}
                   </div>
                 </div>
-                {/* <div className={styles.paymentsArticeBlockItem}>
-                  <h1 className={styles.paymentsArticleTitle}>
-                    {t("payments.benefitsArticle.article3.title")}
-                  </h1>
-                  <div className={styles.paymentsArticleDescription}>
-                    {t("payments.benefitsArticle.article3.description")}
-                  </div>
-                </div>
-                <div className={styles.paymentsArticeBlockItem}>
-                  <h1 className={styles.paymentsArticleTitle}>
-                    {t("payments.benefitsArticle.article4.title")}
-                  </h1>
-                  <div className={styles.paymentsArticleDescription}>
-                    {t("payments.benefitsArticle.article4.description")}
-                    <ul>
-                      <li>{t("payments.benefitsArticle.article4.bullet1")}</li>
-                      <li>{t("payments.benefitsArticle.article4.bullet2")}</li>
-                      <li>{t("payments.benefitsArticle.article4.bullet3")}</li>
-                    </ul>
-                  </div>
-                </div> */}
               </div>
             </div>
           </section>

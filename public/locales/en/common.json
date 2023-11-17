@@ -128,7 +128,6 @@
       "text": "Learn more"
     }
   },
-
   "payments":{
     "title": "You don't have to be big to be international",
     "heroBlock" : {
@@ -156,7 +155,6 @@
     "transferRate": "See international payment transfer rates.",
     "openAccount": "Open an account"
   },
-
   "aboutUs": {
     "heroBlock": {
       "title": "About Us",
@@ -1297,6 +1295,33 @@
         "description": "If you need any assistance applying for a corporate loan, signing the agreements, performing loan repayments or any other credit related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt."
       },
       "faq": "F.A.Q."
+    },
+    "payments":{
+      "title": "Marius You don't have to be big to be international",
+      "heroBlock" : {
+        "description" : "Open an IBAN account with us, make and receive payments from all over the Euro area",
+        "bullet1": "Bank on-the-go with our 24/7 online banking services",
+        "bullet2": "Move your inbound and outbound funds effortlessly",
+        "bullet3": "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
+      },
+      "benefitsArticle": {
+        "article1": {
+          "title": "Open an account with LTL Credit Uniont",
+          "description": "To be able to make payments, you will first need an account with LTL Credit Union. If you are a new customer, you can become a member of LTL Credit Union and open a current account by coming to our branch at Sporto st. 18, LT- 09238 Vilnius. Please bring your ID with you. You will be able to make all your payments through Online Banking. You can find all payment service fees and related charges here ",
+          "restDescription": " We offer the following to Credit Union members:",
+          "bullet1": "Local payments in all of Lithuania",
+          "bullet2": "International SEPA transfers throughout Europe",
+          "bullet3": "Convenient transaction execution and management via LTL Credit Union's e-banking",
+          "bullet4": "Professional advice and undivided individual attention",
+          "link": "(Link)"
+        },
+        "article2": {
+          "title": "Convenient European money transfer (SEPA)",
+          "description": "Our online banking allows you not only to initiate one-off payments, but also to upload multiple payment orders at once. If you submit a payment order before 4pm on weekdays, the funds are usually credited to the payee's account on the same working day.\n\n You can make euro payments to all SEPA countries. These include the 27 EU Member States (Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Poland, Portugal, Spain, Romania, Slovakia, Slovenia, Sweden, Spain, Sweden) as well as Switzerland, the United Kingdom, San Marino, San Marino, the Vatican City, Andorra, Monaco and the three EEA countries of Iceland, Norway, and Lichtenstein."
+        }
+      },
+      "transferRate": "See international payment transfer rates.",
+      "openAccount": "Open an account"
     }
   },
   "faq": {
