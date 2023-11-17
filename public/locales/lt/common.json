@@ -720,8 +720,7 @@
       "bullet2": "Gaukite pradinį pasiūlymą per 24 valandas",
       "bullet3": "Jei reikia, atidėkite paskolos grąžinimą nemokamai",
       "bullet4": "Jokių mokesčių už išankstinį paskolos grąžinimą",
-      "bullet5": "Paskolos terminas iki 30 metų",
-      "bullet6": "Paskolos palūkanos nuo 3.50%"
+      "bullet5": "Paskolos terminas iki 30 metų"
     },
     "innerLinkBlock": {
       "benefits": "Privalumai",
@@ -732,20 +731,20 @@
     },
     "articleBlock": {
       "article1": {
-        "title": "Būsto finansavimas",
-        "text": "Būsto kreditas yra skirtas jūsų svajonių būsto įsigijimui. Taip pat naudojant kredito lėšas jus galite pasistatyti naują namą arba atnaujinti jau turimą būstą."
+        "title": "Būsto paskolų finansavimas",
+        "text": "Nesvarbu, ar norite įsigyti būstą, statyti naują, ar renovuoti esamą, LTL Kredito unjos būsto paskola suteiks jums reikiamų lėšų."
       },
       "article2": {
         "title": "Individualus klientų aptarnavimas",
-        "text": "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis būsto paskolos procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+        "text": "Mūsų banke pirmenybę teikiame individualiam klientų aptarnavimui, o tai reiškia, kad padėsime jums pereiti būsto paskolos procesą ir rasti paskolos sąlygas, atitinkančias jūsų konkrečius poreikius ir galimybes."
       },
       "article3": {
-        "title": "Lankstus paskolos grąžinimo grafikas",
-        "text": "Mūsų būsto paskola apima daugybę grąžinimo galimybių, kurios gali būti pritaikytos jūsų individualiems poreikiams, kad galėtumėte mėgautis būstu be streso. Taip pat, galite nemokamai atidėti paskolos grąžinimo mokėjimus, jei to prireiktų."
+        "title": "Lankstus grąžinimo grafikas",
+        "text": "Mūsų būsto paskola teikiama su įvairiomis grąžinimo galimybėmis, kurios gali būti pritaikytos prie jūsų individualių poreikių, kad galėtumėte mėgautis būsto įsigijimo patirtimi be streso. Be to, prireikus galite nemokamai atidėti paskolos įmokas."
       },
       "article4": {
-        "title": "Greitas paskolos sprendimas",
-        "text": "Greitas ir paprastas paraiškos pateikimo procesas vyksta su mūsų būsto paskola, todėl galite greičiau gauti patvirtinimą."
+        "title": "Greitas pradinis pasiūlymas",
+        "text": "Mūsų būsto paskolos pateikimo procesas – paprastas ir aiškus, o pradinį pasiūlymą gausite greitai."
       }
     },
     "stepProcess": {

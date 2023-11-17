@@ -57,7 +57,6 @@ export default function Mortgage() {
                   <li>{t("mortgageLoan.heroBlock.bullet3")}</li>
                   <li>{t("mortgageLoan.heroBlock.bullet4")}</li>
                   <li>{t("mortgageLoan.heroBlock.bullet5")}</li>
-                  <li>{t("mortgageLoan.heroBlock.bullet6")}</li>
                 </ul>
               </div>
             </div>
