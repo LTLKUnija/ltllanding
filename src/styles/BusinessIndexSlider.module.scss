@@ -1,8 +1,9 @@
 .indexPageSlider {
+  padding: 66px 0 46px 0;
   .slickSlide {
     height: 580px;
-    background-color: var(--light-creame-background);
-    background-image: url(/assets/images/deposit_heroBlock.svg);
+    background-color: var(--businness-background);
+    background-image: url(/assets/images/business_depositPage_heroBlock.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
   }
@@ -10,15 +11,15 @@
   .slickSlide2 {
     height: 580px;
     background-color: var(--businness-background);
-    background-image: url(/assets/images/slider_bg2.svg);
+    background-image: url(/assets/images/business_investLoanPage_heroBlock.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
   }
 
   .slickSlide3 {
     height: 580px;
-    background-color: var(--light-creame-background);
-    background-image: url(/assets/images/slider_bg3.svg);
+    background-color: var(--businness-background);
+    background-image: url(/assets/images/business_currentAccPage_heroBlock.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
   }
@@ -33,6 +34,7 @@
       color: var(--main-text-color);
       margin-bottom: 44px;
       max-width: 680px;
+      text-align: left;
     }
 
     p {
