@@ -89,18 +89,18 @@
   },
   "businessIndexPage": {
     "slideOne": {
-      "heroBlockH1": "Įgyvendinti svajonę už nedidelę kainą",
-      "heroBlockText": "Su Kocomo namas bendrai priklauso ne daugiau kaip aštuonioms šeimoms o mes veikiame kaip neutralus trečiosios šalies administratorius, siekdami užtikrinti skaidrumą ir sąžiningumą",
+      "heroBlockH1": "Nebereikia būti dideliam, kad susikrautumėte turtus.",
+      "heroBlockText": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas!",
       "learnMoreButton": "Sužinokite daugiau"
     },
     "slideTwo": {
-      "heroBlockH1": "Gaukite reikiamą finansavimą verslui plėtoti",
-      "heroBlockText": "Ar ieškote būdo plėsti savo verslą? Verslo paskola gali būti puikus sprendimas.",
+      "heroBlockH1": "Nebereikia būti dideliam, kad gautumėte paskolą.",
+      "heroBlockText": "Gaukite tuos pačius puikius paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
       "learnMoreButton": "Sužinokite daugiau"
     },
     "slideThree": {
-      "heroBlockH1": "Nėra tokios vietos kaip namai, ypač su hipotekos paskola iš mūsų!",
-      "heroBlockText": "Ar ieškote būdo finansuoti kitą didelį projektą? Hipotekos paskola gali būti puikus sprendimas.",
+      "heroBlockH1": "NNebūtina būti dideliam, kad būtumėte pasaulinio masto.",
+      "heroBlockText": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
       "learnMoreButton": "Sužinokite daugiau"
     },
     "articleBlock": {

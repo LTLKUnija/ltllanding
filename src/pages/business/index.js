@@ -1,5 +1,5 @@
 import IndexLayout from "@/Layouts/IndexLayout";
-import SimpleSlider from "@/components/IndexHeroSlider";
+import SimpleSlider from "@/components/BusinessIndexSlider";
 import IndexNews from "@/components/IndexNews";
 import Link from "next/link";
 import styles from "@/styles/Home.module.scss";
