@@ -17,6 +17,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getDepositFAQ } from "@/store/faqList/faqList.slice";
+import InterestRate from "@/components/InterestRate";
 
 export default function Deposit() {
   const router = useRouter();
@@ -106,7 +107,15 @@ export default function Deposit() {
                   <p>{t("business.termDeposit.heroBlock.description")}</p>
                   <ul>
                     <li>{t("business.termDeposit.heroBlock.bullet1")}</li>
-                    <li>{t("business.termDeposit.heroBlock.bullet2")}</li>
+                    <li>
+                      {t("business.termDeposit.heroBlock.bullet2")}
+                      <Link
+                        className="readMoreLink"
+                        href="https://www.iidraudimas.lt/lt/indeliu-draudimas/duk-4/"
+                      >
+                        {t("business.termDeposit.heroBlock.learnMore")} &#x3e;
+                      </Link>
+                    </li>
                     <li>{t("business.termDeposit.heroBlock.bullet3")}</li>
                     <li>{t("business.termDeposit.heroBlock.bullet4")}</li>
                     <li>{t("business.termDeposit.heroBlock.bullet5")}</li>
@@ -162,6 +171,9 @@ export default function Deposit() {
                 </div>
               </div>
             </div>
+          </section>
+          <section id="interestRates" className={styles.ratesTableSection}>
+            <InterestRate />
           </section>
           <section id="calculator" className={busynessStyle.calculatorSection}>
             <h2>{t("business.termDeposit.calcBlock.title")}</h2>
