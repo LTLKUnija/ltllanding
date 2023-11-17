@@ -1145,8 +1145,8 @@
     },
     "capitalLoan": {
       "heroBlock": {
-        "title": "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-        "description": "Naudodamiesi mūsų apyvartinių lėšų paskola, galite gauti lėšų, kurių jums reikia trumpalaikėms investicijoms ar išlaidoms, taip padedant užtikrintai plėsti verslą.",
+        "title": "Nebereikia būti dideliam, kad gautumėte paskolą.",
+        "description": "Gaukite tuos pačius puikius paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
         "bullet1": "Padedame finansuoti iki 70% jūsų investicijų ar veiklos išlaidų, tokių kaip įrangos pirkimas, inventorius ar kitos einamosios išlaidos",
         "bullet2": "Gaukite pradinį pasiūlymą per 48 valandas",
         "bullet3": "Paskolos grąžinimas termino pabaigoje arba specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
@@ -1164,19 +1164,19 @@
       "benefitsArticle": {
         "article1": {
           "title": "Paskola apyvartinėms lėšoms",
-          "description": "Reikia finansavimo jūsų verslo išlaidoms, tokioms kaip inventorius, rinkodara, smulkesnė įranga ar kitos veiklos išlaidos? Mūsų paskolos suteikia jums lanksčias apyvartinio kapitalo finansavimo galimybes. Padėsime pasirinkti jums tinkamą finansavimo būdą: greitąją paskolą su grąžinimu pasibaigus terminui arba kredito liniją, leidžiančią atsiimti ir grąžinti lėšas pagal poreikį neviršijant suteikto kredito limito."
+          "description": "Reikia finansavimo jūsų verslo išlaidoms, tokioms kaip inventorius, rinkodara, smulkesnė įranga ar kitos veiklos išlaidos? Mūsų paskolos suteikia jums lanksčias apyvartinio kapitalo finansavimo galimybes. Padėsime pasirinkti jums tinkamą finansavimo būdą: greitąją paskolą su grąžinimu pasibaigus tarminui arba kredito liniją, leidžiančia atsiimti ir grąžinti lėšas pagal poreikį neviršijant suteikto kredito limito."
         },
         "article2": {
           "title": "Individualus klientų aptarnavimas",
-          "description": "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+          "description": "Mūsų banke pirmenybę teikiame individualiam klientų aptarnavimui, o tai reiškia, kad padėsime jums pereiti paskolos procesą ir rasti paskolos sąlygas, atitinkančias jūsų konkrečius poreikius ir galimybes."
         },
         "article3": {
-          "title": "Lankstus paskolos grąžinimo grafikas",
-          "description": "Mūsų paskolos suteikia įvairias grąžinimo galimybių, kurios gali būti pritaikytos individualiems jūsų verslo poreikiams, kad galėtumėte susifokusuoti ties prioritetinių verslo tikslų siekimo. Taip pat galite atidėti paskolos grąžinimo įmokas, jei jums reikia susidoroti su pinigų srautų svyravimais."
+          "title": "Lankstus grąžinimo grafikas",
+          "description": "Mūsų paskola suteikiama su įvairiomis grąžinimo galimybėmis, kurios gali būti pritaikytos prie jūsų individualių poreikių, kad galėtumėte susitelkti į savo verslo plėtrą. Be to, galite atidėti paskolos mokėjimus, jei reikia spręsti pinigų srautų svyravimų problemą."
         },
         "article4": {
-          "title": "Greitas paskolos sprendimas",
-          "description": "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti verslo paskolos patvirtinimą."
+          "title": "Greitas pradinis pasiūlymas",
+          "description": "Su mūsų įmonės paskola galima greitai ir paprastai pateikti paraišką, todėl greičiau gausite patvirtinimą."
         }
       },
       "stepProcess": {
