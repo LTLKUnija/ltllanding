@@ -142,7 +142,7 @@ function Header() {
                       {t("headerNavLinks.currentAccount")}
                     </Link>
                   ) : (
-                    <Link className="header-nav-link" href="/product">
+                    <Link className="header-nav-link" href="/current-account">
                       {t("headerNavLinks.currentAccount")}
                     </Link>
                   )}

@@ -531,12 +531,12 @@
     "faq": "F.A.Q"
   }, 
   "privetCurrentAccount": {
-    "pageTitle": "You don‘t have to be big to be international",
+    "pageTitle": "You don’t have to be big to be international",
     "heroBlock": {
-      "description": "Open IBAN account with us, make and receive payments from all over the Euro area.",
-      "bullet1": "Bank on-the-go with our 24/7 online banking services",
+      "description": "Open an IBAN account with us, make and receive payments from all over the Euro area.",
+      "bullet1": "Bank on the go with our 24/7 online banking services",
       "bullet2": "Move your inbound and outbound funds effortlessly",
-      "bullet3": "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
+      "bullet3": "Keep your account secure with advances security features"
     },
     "innerLinkBlock": {
       "privateClient": "Private client",
@@ -548,12 +548,12 @@
     },
     "articleBlock": {
       "article1": {
-        "title": "Open account",
-        "text": "We welcome customers with Lithuanian passports, ID cards, or residence permits issued by the Lithuanian government to open an account with us. You also need to become a member of a credit union to open an account. Please to the process provided below."
+        "title": "Open a current account",
+        "text": "We welcome customers with Lithuanian passports, ID cards, or residence permits issued by the Lithuanian government to open an account with us. You will also need to become a member of a credit union to open an account. Please refer to the process provided below."
       },
       "article2": {
-        "title": "Log in",
-        "text": "Upon opening an account, we will grant you access to our internet banking platform. The most useful way to access your account is to use digital signature (mobile-ID). In case you don’t have the digital ID we can also issue you an unique code."
+        "title": "Logging in",
+        "text": "Upon opening an account, we will grant you access to our internet banking platform. The most convenient way to access your account is to use digital signature (mobile-ID). In case you don’t have the digital ID we can also issue you an unique code."
       },
       "article3": {
         "title": "Payments",
