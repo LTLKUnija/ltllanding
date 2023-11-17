@@ -1043,35 +1043,28 @@
     },
     "currentAccount": {
       "heroBlock": {
-        "title": "You don‘t have to be big to get a loan",
-        "description": "Open IBAN account with us, make and receive payments from all over Euro area",
-        "bullet1": "Bank on-the-go with our 24/7 online banking services",
-        "bullet2": "Move your inbound and outbound funds effortlessly",
-        "bullet3": "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
+        "title": "You don’t have to be big to be international",
+        "description": "Open an IBAN account with us, make and receive payments from all over the Euro area.",
+        "bullet1": "Bank on the go with our 24/7 online banking services",
+        "bullet2": "Move your inbound and outbound funds effortlessly.",
+        "bullet3": "Keep your account secure with advances security features"
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
         "process": "Process",
+        "afterYouOpened": "After you opened",
         "priceList": "Price List",
         "clientSuport": "Client Support",
         "faq": "F.A.Q."
       },
       "benefitsArticle": {
         "article1": {
-          "title": "Consumer loan",
-          "description": "Whether you want to purchase a car, furniture, computer, travel, get education, invest in startup or just pay off bills our loan is designed to give you the financial freedom you need."
+          "title": "Open a current account",
+          "description": "To open an account with LTL Credit Union, your company must be registered or have a branch in Vilnius or Vilnius district and Trakai district. You also need to become a member of the credit union. Please see the account opening process below."
         },
         "article2": {
-          "title": "Individual customer service",
-          "description": "At our bank, we prioritize individual customer service, which means we guide you through the consumer loan process and help you find the loan conditions that match your specific needs and abilities."
-        },
-        "article3": {
-          "title": "Simple repayment schedule",
-          "description": "Our consumer loan repayment schedule is simple: fixed monthly payments. Based on your individual needs, a loan repayment schedule can be tailored to your individual needs. Also, you can postpone loan repayments for free, if needed."
-        },
-        "article4": {
-          "title": "Quick initial offer",
-          "description": "Quick and easy application process is available with our consumer loan, so you can get approved faster."
+          "title": "Logging in",
+          "description": "Upon opening an account, we will grant you access to our internet banking platform. The most convenient way to access your account is to use digital signature (mobile-ID). In case you don’t have the digital ID we can also issue you an unique code."
         }
       },
       "afterArticle": {
@@ -1102,37 +1095,9 @@
         }
       },
       "stepProcess": {
-        "title": "Loan application process:",
-        "step1": {
-          "title": "Fill in an account opening form",
-          "description": "Please fill in the application"
-        },
-        "step2": {
-          "title": "Identify yourself",
-          "description": "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
-        },
-        "step3": {
-          "title": "Submit the documents",
-          "subTitle": "Please send us:",
-          "bulletBlock": [
-            "Copy of passport, ID or residence permit",
-            "Application to join the union",
-            "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
-          ]
-        },
-        "step4": {
-          "title": "Sign the bank account agreement",
-          "description": "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
-        },
-        "step5": {
-          "title": "Start using our payment services",
-          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
-        }
+        "title": "Loan application process:"
       },
-      "clientSuport": {
-        "title": "Client support",
-        "description": "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt."
-      },
+    
       "faq": "F.A.Q."
     },
     "capitalLoan": {
