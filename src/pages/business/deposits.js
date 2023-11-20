@@ -32,30 +32,48 @@ export default function Deposit() {
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
-    selectedRate: 1.75,
+    selectedRate: 3.75,
   });
+
   let ratesList = [
     {
-      term: 1,
-      rate: 1.0,
-    },
-    {
       term: 3,
-      rate: 1.75,
+      rate: 3.75,
     },
     {
       term: 6,
-      rate: 2.0,
+      rate: 4.0,
+    },
+    {
+      term: 9,
+      rate: 4.1,
     },
     {
       term: 12,
-      rate: 2.5,
+      rate: 4.2,
     },
     {
       term: 18,
-      rate: 3.1,
+      rate: 4.25,
+    },
+    {
+      term: 24,
+      rate: 4.3,
+    },
+    {
+      term: 36,
+      rate: 4.2,
+    },
+    {
+      term: 48,
+      rate: 4,
+    },
+    {
+      term: 60,
+      rate: 4,
     },
   ];
+
   function createSelectOptions() {
     return ratesList.map((el, idx) => (
       <option data-rate={el.rate} key={idx}>

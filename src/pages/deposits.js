@@ -30,7 +30,7 @@ export default function Deposit() {
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
-    selectedRate: 1.75,
+    selectedRate: 3.75,
   });
 
   let ratesList = [
