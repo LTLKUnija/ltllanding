@@ -1,4 +1,4 @@
-import styles from "@/styles/product.module.scss";
+import styles from "@/styles/current-account.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Steper from "@/components/Steper";
 import { privetCurrentAccountSteperData } from "@/common/stepersData";
@@ -81,14 +81,6 @@ export default function Product() {
                   </h2>
                   <div className={styles.articleItemDescription}>
                     {t("privetCurrentAccount.articleBlock.article2.text")}
-                  </div>
-                </div>
-                <div className={styles.articleItem}>
-                  <h2 className={styles.articleItemTitle}>
-                    {t("privetCurrentAccount.articleBlock.article3.title")}
-                  </h2>
-                  <div className={styles.articleItemDescription}>
-                    {t("privetCurrentAccount.articleBlock.article3.text")}
                   </div>
                 </div>
               </div>

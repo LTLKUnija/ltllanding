@@ -1,4 +1,4 @@
-import styles from "@/styles/product.module.scss";
+import styles from "@/styles/current-account.module.scss";
 import businessStyle from "@/styles/business.current-account.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";

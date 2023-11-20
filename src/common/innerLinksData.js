@@ -54,12 +54,8 @@ export const privetCurrentAccountInnerLinkList = [
     id: "#steps",
   },
   {
-    link: "privetCurrentAccount.innerLinkBlock.afterYouOpened",
-    id: "#after",
-  },
-  {
     link: "privetCurrentAccount.innerLinkBlock.priceList",
-    id: "#priceList",
+    id: "/pricelist",
   },
   {
     link: "privetCurrentAccount.innerLinkBlock.clientSupport",

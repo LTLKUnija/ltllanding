@@ -545,8 +545,8 @@
     "heroBlock": {
       "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
       "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
-      "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
-      "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
+      "bullet2": "Lengvai siųskite ir gaukite savo lėšas",
+      "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas"
     },
     "innerLinkBlock": {
       "privateClient": "Privatus klientas",
@@ -559,11 +559,11 @@
     "articleBlock": {
       "article1": {
         "title": "Banko sąskaitos atidarymas",
-        "text": "Pas mus galite atsidaryti sąskaitą, jei turite Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat norint atidaryti sąskaitą, reikia tapti kredito unijos nariu. Peržiūrėkite toliau pateiktą procesą."
+        "text": "Norint atsidaryti sąskaitą LTL Kredito unijoje, būtina turėti Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat reikia tapti unijos nariu. Peržvelkite apačioje pateiktą sąskaitos atidarymo procesą."
       },
       "article2": {
         "title": "Prisijungimas prie sąskaitos",
-        "text": "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos..."
+        "text": "Atidarę sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos. Patogiausias būdas prisijungti prie savo sąskaitos - naudoti skaitmeninį parašą (mobilųjį ID). Jei skaitmeninio ID neturite, taip pat galime jums išduoti unikalų kodą."
       },
       "article3": {
         "title": "Mokėjimai",

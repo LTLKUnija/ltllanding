@@ -89,7 +89,7 @@ export default function SimpleSlider() {
             <h1>{t("indexPage.slideThree.heroBlockH1")}</h1>
             <p>{t("indexPage.slideThree.heroBlockText")}</p>
             <div className="action-button-block">
-              <Link className="outlinedBtn" href="/product">
+              <Link className="outlinedBtn" href="/current-account">
                 {t("indexPage.slideThree.learnMoreButton")}
               </Link>
             </div>
