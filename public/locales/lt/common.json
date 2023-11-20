@@ -1226,8 +1226,8 @@
     },
     "investmentLoan": {
       "heroBlock": {
-        "title": "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-        "description": "Mūsų investicinė paskola leidžia pasinaudoti daugybe investavimo galimybių, nesvarbu, ar ieškote trumpalaikio pelno, ar ilgalaikio augimo.",
+        "title": "Nebereikia būti dideliam, kad gautumėte paskolą",
+        "description": "Gaukite tuos pačius puikius paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
         "bullet1": "Padedame finansuoti iki 85% jūsų investicijų vertės",
         "bullet2": "Gaukite pradinį pasiūlymą per 48 valandas",
         "bullet3": "Specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
@@ -1245,19 +1245,19 @@
       "benefitsArticle": {
         "article1": {
           "title": "Investicinė paskola",
-          "description": "Verslo dydis neturi reikšmės, kai reikia pasinaudoti galimybėmis. Suteiksime jums finansavimą, kuris padės jums pasiekti verslo tikslus. Nesvarbu, ar norite plėsti rinkos dalį, investuoti į naujas technologijas, nekilnojamąjį turtą ar kitą turtą, mūsų investicinė paskola užtikrins jūsų veiklai reikalingas lėšas bei suteiks jūsų veiklai lankstumą realizuojant jūsų verslo idėjas."
+          "description": "Verslo dydis neturi reikšmės, kai reikia pasinaudoti galimybėmis. Gaukite paramą, kurios reikia verslo tikslams pasiekti, pasinaudodami mūsų investicine paskola. Nesvarbu, ar norite plėstis, investuoti į naujas technologijas, nekilnojamąjį turtą ar kitą nuosavybę, mūsų verslo paskola siūlo finansavimą ir lankstumą, kad tai įgyvendintumėte."
         },
         "article2": {
           "title": "Individualus klientų aptarnavimas",
-          "description": "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+          "description": "Mūsų banke pirmenybę teikiame individualiam klientų aptarnavimui, o tai reiškia, kad padėsime jums pereiti nuosavo kapitalo paskolos procesą ir rasti paskolos sąlygas, atitinkančias jūsų konkrečius poreikius ir galimybes."
         },
         "article3": {
-          "title": "Lankstus paskolos grąžinimo grafikas",
-          "description": "Mūsų paskolos suteikia įvairias grąžinimo galimybių, kurios gali būti pritaikytos individualiems jūsų verslo poreikiams, kad galėtumėte susifokusuoti ties prioritetinių verslo tikslų siekimo. Taip pat galite atidėti paskolos grąžinimo įmokas, jei jums reikia susidoroti su pinigų srautų svyravimais."
+          "title": "Lankstus grąžinimo grafikas",
+          "description": "Mūsų paskola suteikiama su įvairiomis grąžinimo galimybėmis, kurios gali būti pritaikytos prie jūsų individualių poreikių, kad galėtumėte susitelkti į savo verslo plėtrą. Be to, galite atidėti paskolos mokėjimus, jei reikia spręsti pinigų srautų svyravimų problemą."
         },
         "article4": {
-          "title": "Greitas paskolos sprendimas",
-          "description": "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti verslo paskolos patvirtinimą."
+          "title": "Greitas pradinis pasiūlymas",
+          "description": "Su mūsų įmonės paskola galima greitai ir paprastai pateikti paraišką, todėl galite greičiau gausite patvirtinimą."
         }
       },
       "stepProcess": {
