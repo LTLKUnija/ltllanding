@@ -1051,27 +1051,28 @@
     },
     "currentAccount": {
       "heroBlock": {
-        "title": "Jūs neturite būti didelis, kad gautumėte paskolą",
-        "description": "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
+        "title": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto.",
+        "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
         "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
-        "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
-        "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
+        "bullet2": "Lengvai siųskite ir gaukite savo lėšas",
+        "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas"
       },
       "innerLinkBlock": {
         "benefits": "Privalumai",
         "process": "Procesas",
+        "afterYouOpened": "Jums atidarius",
         "priceList": "Kainoraštis",
         "clientSuport": "Klientų palaikymas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
         "article1": {
-          "title": "Vartojimo paskola",
-          "description": "Nesvarbu, ar norite įsigyti automobilį, baldus, kompiuterį, keliauti, apmokėti mokslus, investuoti į verslo pradžią ar tiesiog apmokėti sąskaitas, mūsų vartojimo paskola suteiks jums reikalingą finansinę laisvę."
+          "title": "Banko sąskaitos atidarymas",
+          "description": "Norint atsidaryti sąskaitą LTL Kredito unijoje, jūsų įmonė turi būti įregistruota arba turėti padalinį Vilniuje arba Vilniaus, Trakų rajonuose. Taip pat reikia tapti unijos nariu. Peržvelkite apačioje pateiktą sąskaitos atidarymo procesą."
         },
         "article2": {
-          "title": "Individualus klientų aptarnavimas ",
-          "description": "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis vartojimo paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+          "title": "Prisijungimas prie sąskaitos",
+          "description": "Atidarę sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos. Patogiausias būdas prisijungti prie savo sąskaitos - naudoti skaitmeninį parašą (mobilųjį ID). Jei skaitmeninio ID neturite, taip pat galime jums išduoti unikalų kodą."
         },
         "article3": {
           "title": "Parastas paskolos grąžinimo grafikas",
@@ -1110,36 +1111,7 @@
         }
       },
       "stepProcess": {
-        "title": "Paskolos paraiškos pateikimo tvarka",
-        "step1": {
-          "title": "Užpildykite sąskaitos atidarymo formą",
-          "description": "Užpildykite paraišką"
-        },
-        "step2": {
-          "title": "Identifikuokite save",
-          "description": "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
-        },
-        "step3": {
-          "title": "Pateikite dokumentus",
-          "subTitle": "Prašome atsiųsti mums:",
-          "bulletBlock": [
-            "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-            "Prašymas įstoti į kredito uniją",
-            "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
-          ]
-        },
-        "step4": {
-          "title": "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-          "description": "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
-        },
-        "step5": {
-          "title": "Valdykite savo terminuoto indėlio sąskaitą",
-          "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
-        }
-      },
-      "clientSuport": {
-        "title": "Pagalba klientams",
-        "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
+        "title": "Paskolos paraiškos pateikimo tvarka"
       },
       "faq": "D.U.K."
     },
