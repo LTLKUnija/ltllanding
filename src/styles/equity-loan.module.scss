@@ -70,7 +70,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
-    
+
     &.benefitsWrapperLT {
       max-width: 900px;
       .benefitsBlock {
@@ -87,6 +87,7 @@
       font-weight: 700;
       line-height: 25px;
       margin-bottom: 34px;
+      text-align: left;
     }
 
     .benefitsDescription {

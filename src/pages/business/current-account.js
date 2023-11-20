@@ -72,26 +72,22 @@ export default function Mortgage() {
             <div className={styles.articleList}>
               <div className={styles.articleItem}>
                 <h2 className={styles.articleItemTitle}>
-                  {t("privetCurrentAccount.articleBlock.article1.title")}
+                  {t("business.currentAccount.benefitsArticle.article1.title")}
                 </h2>
                 <div className={styles.articleItemDescription}>
-                  {t("privetCurrentAccount.articleBlock.article1.text")}
+                  {t(
+                    "business.currentAccount.benefitsArticle.article1.description"
+                  )}
                 </div>
               </div>
               <div className={styles.articleItem}>
                 <h2 className={styles.articleItemTitle}>
-                  {t("privetCurrentAccount.articleBlock.article2.title")}
+                  {t("business.currentAccount.benefitsArticle.article2.title")}
                 </h2>
                 <div className={styles.articleItemDescription}>
-                  {t("privetCurrentAccount.articleBlock.article2.text")}
-                </div>
-              </div>
-              <div className={styles.articleItem}>
-                <h2 className={styles.articleItemTitle}>
-                  {t("privetCurrentAccount.articleBlock.article3.title")}
-                </h2>
-                <div className={styles.articleItemDescription}>
-                  {t("privetCurrentAccount.articleBlock.article3.text")}
+                  {t(
+                    "business.currentAccount.benefitsArticle.article2.description"
+                  )}
                 </div>
               </div>
             </div>
