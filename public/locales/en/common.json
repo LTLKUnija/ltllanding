@@ -961,14 +961,15 @@
   "business": {
     "termDeposit": {
       "heroBlock": {
-        "title": "You don‘t have to be big to make a fortune/your fortune grow",
-        "description": "Save your own money and watch your wealth grow — free is now more powerful than ever!",
-        "bullet1": "Get the best (top) interest rates on the market",
-        "bullet2": "Your deposits are protected by deposit insurance. Learn more",
+        "title": "You don’t have to be big to make a fortune",
+        "description": "Save your own money and watch your wealth grow – free is now more powerful than ever!",
+        "bullet1": "Get the best interest rates on the market",
+        "bullet2": "Your deposits are protected by deposit insurance.",
         "bullet3": "Attractive loyalty rewards and benefits",
         "bullet4": "Get individual offers",
-        "bullet5": "Deposit terms from 3 to 60 months are available",
-        "bullet6": "Interest rates up to 3.95%"
+        "bullet5": "Deposit terms from 3 to 6 month are available",
+        "bullet6": "Interest rates up to 4.3%",
+        "learnMore": "Learn more"
       },
       "innerLinkBlock": {
         "benefits": "Benefits",

@@ -971,14 +971,15 @@
   "business": {
     "termDeposit": {
       "heroBlock": {
-        "title": "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-        "description": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas – nemokama dabar yra galingesnė nei bet kada anksčiau",
-        "bullet1": "Gaukite geriausias palūkanų normas rinkoje",
-        "bullet2": "Jūsų indėliai yra apsaugoti indėlių draudimu. Sužinokite daugiau",
-        "bullet3": "Patrauklus lojalumo atlygis ir nauda",
-        "bullet4": "Gaukite individualius pasiūlymus",
-        "bullet5": "Indėlių terminas nuo 3 iki 60 mėnesių",
-        "bullet6": "Paskolos palūkanos nuo 3.50%"
+        "title": "Nebereikia būti dideliam, kad susikrautumėte turtus.",
+        "description": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas!",
+        "bullet1": "Gaukite geriausias palūkanų normas rinkojke",
+        "bullet2": "Jūsų indėliai yra apsaugoti indėlių draudimu. ",
+        "bullet3": "Patraukus lojalumo atlygis",
+        "bullet4": "Gaukite individualius pasiūlymus.",
+        "bullet5": "Indėlių terminas nuo 3 iki 60 mėnesių.",
+        "bullet6": "Paskolos palūkanos iki 4.3%",
+        "learnMore": " Sužinokite daugiau"
       },
       "innerLinkBlock": {
         "benefits": "Privalumai",
