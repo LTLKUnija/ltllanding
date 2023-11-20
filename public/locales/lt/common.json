@@ -1117,8 +1117,8 @@
     },
     "capitalLoan": {
       "heroBlock": {
-        "title": "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-        "description": "Naudodamiesi mūsų apyvartinių lėšų paskola, galite gauti lėšų, kurių jums reikia trumpalaikėms investicijoms ar išlaidoms, taip padedant užtikrintai plėsti verslą.",
+        "title": "Nebereikia būti dideliam, kad gautumėte paskolą.",
+        "description": "Gaukite tuos pačius puikius paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
         "bullet1": "Padedame finansuoti iki 70% jūsų investicijų ar veiklos išlaidų, tokių kaip įrangos pirkimas, inventorius ar kitos einamosios išlaidos",
         "bullet2": "Gaukite pradinį pasiūlymą per 48 valandas",
         "bullet3": "Paskolos grąžinimas termino pabaigoje arba specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
@@ -1136,19 +1136,19 @@
       "benefitsArticle": {
         "article1": {
           "title": "Paskola apyvartinėms lėšoms",
-          "description": "Reikia finansavimo jūsų verslo išlaidoms, tokioms kaip inventorius, rinkodara, smulkesnė įranga ar kitos veiklos išlaidos? Mūsų paskolos suteikia jums lanksčias apyvartinio kapitalo finansavimo galimybes. Padėsime pasirinkti jums tinkamą finansavimo būdą: greitąją paskolą su grąžinimu pasibaigus terminui arba kredito liniją, leidžiančią atsiimti ir grąžinti lėšas pagal poreikį neviršijant suteikto kredito limito."
+          "description": "Reikia finansavimo jūsų verslo išlaidoms, tokioms kaip inventorius, rinkodara, smulkesnė įranga ar kitos veiklos išlaidos? Mūsų paskolos suteikia jums lanksčias apyvartinio kapitalo finansavimo galimybes. Padėsime pasirinkti jums tinkamą finansavimo būdą: greitąją paskolą su grąžinimu pasibaigus tarminui arba kredito liniją, leidžiančia atsiimti ir grąžinti lėšas pagal poreikį neviršijant suteikto kredito limito."
         },
         "article2": {
           "title": "Individualus klientų aptarnavimas",
-          "description": "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+          "description": "Mūsų banke pirmenybę teikiame individualiam klientų aptarnavimui, o tai reiškia, kad padėsime jums pereiti paskolos procesą ir rasti paskolos sąlygas, atitinkančias jūsų konkrečius poreikius ir galimybes."
         },
         "article3": {
-          "title": "Lankstus paskolos grąžinimo grafikas",
-          "description": "Mūsų paskolos suteikia įvairias grąžinimo galimybių, kurios gali būti pritaikytos individualiems jūsų verslo poreikiams, kad galėtumėte susifokusuoti ties prioritetinių verslo tikslų siekimo. Taip pat galite atidėti paskolos grąžinimo įmokas, jei jums reikia susidoroti su pinigų srautų svyravimais."
+          "title": "Lankstus grąžinimo grafikas",
+          "description": "Mūsų paskola suteikiama su įvairiomis grąžinimo galimybėmis, kurios gali būti pritaikytos prie jūsų individualių poreikių, kad galėtumėte susitelkti į savo verslo plėtrą. Be to, galite atidėti paskolos mokėjimus, jei reikia spręsti pinigų srautų svyravimų problemą."
         },
         "article4": {
-          "title": "Greitas paskolos sprendimas",
-          "description": "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti verslo paskolos patvirtinimą."
+          "title": "Greitas pradinis pasiūlymas",
+          "description": "Su mūsų įmonės paskola galima greitai ir paprastai pateikti paraišką, todėl greičiau gausite patvirtinimą."
         }
       },
       "stepProcess": {
@@ -1198,8 +1198,8 @@
     },
     "investmentLoan": {
       "heroBlock": {
-        "title": "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
-        "description": "Mūsų investicinė paskola leidžia pasinaudoti daugybe investavimo galimybių, nesvarbu, ar ieškote trumpalaikio pelno, ar ilgalaikio augimo.",
+        "title": "Nebereikia būti dideliam, kad gautumėte paskolą",
+        "description": "Gaukite tuos pačius puikius paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
         "bullet1": "Padedame finansuoti iki 85% jūsų investicijų vertės",
         "bullet2": "Gaukite pradinį pasiūlymą per 48 valandas",
         "bullet3": "Specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
@@ -1217,19 +1217,19 @@
       "benefitsArticle": {
         "article1": {
           "title": "Investicinė paskola",
-          "description": "Verslo dydis neturi reikšmės, kai reikia pasinaudoti galimybėmis. Suteiksime jums finansavimą, kuris padės jums pasiekti verslo tikslus. Nesvarbu, ar norite plėsti rinkos dalį, investuoti į naujas technologijas, nekilnojamąjį turtą ar kitą turtą, mūsų investicinė paskola užtikrins jūsų veiklai reikalingas lėšas bei suteiks jūsų veiklai lankstumą realizuojant jūsų verslo idėjas."
+          "description": "Verslo dydis neturi reikšmės, kai reikia pasinaudoti galimybėmis. Gaukite paramą, kurios reikia verslo tikslams pasiekti, pasinaudodami mūsų investicine paskola. Nesvarbu, ar norite plėstis, investuoti į naujas technologijas, nekilnojamąjį turtą ar kitą nuosavybę, mūsų verslo paskola siūlo finansavimą ir lankstumą, kad tai įgyvendintumėte."
         },
         "article2": {
           "title": "Individualus klientų aptarnavimas",
-          "description": "Mes teikiame prioritetą individualaus klientų aptarnavimui, kuris padės jums geriau orientuotis paskolos suteikimo procese bei užtikrinti geriausias paskolos sąlygas pagal jūsų poreikius ir galimybes."
+          "description": "Mūsų banke pirmenybę teikiame individualiam klientų aptarnavimui, o tai reiškia, kad padėsime jums pereiti nuosavo kapitalo paskolos procesą ir rasti paskolos sąlygas, atitinkančias jūsų konkrečius poreikius ir galimybes."
         },
         "article3": {
-          "title": "Lankstus paskolos grąžinimo grafikas",
-          "description": "Mūsų paskolos suteikia įvairias grąžinimo galimybių, kurios gali būti pritaikytos individualiems jūsų verslo poreikiams, kad galėtumėte susifokusuoti ties prioritetinių verslo tikslų siekimo. Taip pat galite atidėti paskolos grąžinimo įmokas, jei jums reikia susidoroti su pinigų srautų svyravimais."
+          "title": "Lankstus grąžinimo grafikas",
+          "description": "Mūsų paskola suteikiama su įvairiomis grąžinimo galimybėmis, kurios gali būti pritaikytos prie jūsų individualių poreikių, kad galėtumėte susitelkti į savo verslo plėtrą. Be to, galite atidėti paskolos mokėjimus, jei reikia spręsti pinigų srautų svyravimų problemą."
         },
         "article4": {
-          "title": "Greitas paskolos sprendimas",
-          "description": "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti verslo paskolos patvirtinimą."
+          "title": "Greitas pradinis pasiūlymas",
+          "description": "Su mūsų įmonės paskola galima greitai ir paprastai pateikti paraišką, todėl galite greičiau gausite patvirtinimą."
         }
       },
       "stepProcess": {
@@ -1276,6 +1276,33 @@
         "description": "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
       },
       "faq": "D.U.K."
+    },
+    "payments": {
+      "title": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto",
+      "heroBlock" : {
+        "description" : "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos",
+        "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
+        "bullet2": "Lengvai siųskite ir gaukite jūsų lėšasy",
+        "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
+      },
+      "benefitsArticle": {
+        "article1": {
+          "title": "Atsidarykite sąskaitą LTL Kredito unijoje",
+          "description": "Kad galėtumėte vykdyti mokėjimus, pirmiausia jums reikės sąskaitos LTL Kredito unijoje. Jei esate naujas klientas, galite tapti LTL Kredito unijos nariu ir atsidaryti einamąją sąskaitą atvykę į mūsų skyrių adresu Sporto g. 18, LT- 09238 Vilnius. Su savimi turėkite asmens tapatybę patvirtinantį dokumentą. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje. Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti čia ",
+          "restDescription": " Kredito unijos nariams siūlome:",
+          "bullet1": "Vietinius mokėjimus visoje Lietuvoje",
+          "bullet2": "Tarptautinius SEPA pervedimus visoje Europoje",
+          "bullet3": "Patogų operacijų atlikimą ir valdymą naudojantis LTL Kredito unijos elektroninėje bankininkystėje",
+          "bullet4": "Profesionalias konsultacijas ir individualų dėmesį",
+          "link": "(Nuoroda)"
+        },
+        "article2": {
+          "title": "Patogus europinių pinigų pervedimas (SEPA)",
+          "description": "Mūsų internetinė bankininkystė leidžia jums ne tik inicijuoti vienkartinius mokėjimus, bet ir įkelti didesnį mokėjimų kiekį vienu metu. Pateikus mokėjimo nurodymą darbo dienomis iki 16 val., lėšos į gavėjo sąskaitą įprastai įskaitomos tą pačią darbo dieną.\n\nGalite atlikti mokėjimus eurais į visas SEPA šalis. Tai: 27 ES valstybės narės (Austrija, Belgija, Bulgarija, Čekija, Danija, Estija, Graikija, Graikija, Ispanija, Airija, Italija, Kipras, Kroatija, Kipras, Latvija, Lietuva, Liuksemburgas, Malta, Nyderlandai, Lenkija, Portugalija, Prancūzija, Rumunija, Slovakija, Slovėnija, Suomija, Švedija, Vengrija, Vokietija), taip pat Šveicarija, Jungtinė Karalystė, San Marinas, Vatikanas, Andora, Monakas ir trys EEE šalys: Islandija, Norvegija ir Lichtenšteinas."
+        }
+      },
+      "transferRate": "Žiūrėti tarptautinių mokėjimų pavedimo įkainius.",
+      "openAccount": "Atsidaryti sąskaitą"
     }
   },
   "faq": {
