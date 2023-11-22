@@ -38,11 +38,6 @@ export default function Home() {
                   <p>
                     {t("businessIndexPage.articleBlock.article1.description")}
                   </p>
-                  <div className="actionButtonBlock">
-                    <Link className="containedBtn blue" href="/">
-                      {t("businessIndexPage.button.text")}
-                    </Link>
-                  </div>
                 </div>
               </article>
 
@@ -58,15 +53,10 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>{t("businessIndexPage.articleBlock.article3.title")}</h2>
+                  <h2>{t("businessIndexPage.articleBlock.article2.title")}</h2>
                   <p>
-                    {t("businessIndexPage.articleBlock.article3.description")}
+                    {t("businessIndexPage.articleBlock.article2.description")}
                   </p>
-                  <div className="actionButtonBlock">
-                    <Link className="containedBtn blue" href="/">
-                      {t("businessIndexPage.button.text")}
-                    </Link>
-                  </div>
                 </div>
               </article>
               <article className={styles.beneficialArticle}>
@@ -85,11 +75,6 @@ export default function Home() {
                   <p>
                     {t("businessIndexPage.articleBlock.article3.description")}
                   </p>
-                  <div className="actionButtonBlock">
-                    <Link className="containedBtn blue" href="/">
-                      {t("businessIndexPage.button.text")}
-                    </Link>
-                  </div>
                 </div>
               </article>
             </div>
