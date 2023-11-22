@@ -36,11 +36,6 @@ export default function Home() {
                 <div className={styles.articleBlock}>
                   <h2>{t("indexPage.articleBlock.article1.title")}</h2>
                   <p>{t("indexPage.articleBlock.article1.description")}</p>
-                  <div className="actionButtonBlock">
-                    <Link className="outlinedBtn" href="/">
-                      {t("indexPage.button.text")}
-                    </Link>
-                  </div>
                 </div>
               </article>
               <article className={styles.beneficialArticleMirror}>
@@ -55,13 +50,8 @@ export default function Home() {
                   />
                 </div>
                 <div className={styles.articleBlock}>
-                  <h2>{t("indexPage.articleBlock.article3.title")}</h2>
-                  <p>{t("indexPage.articleBlock.article3.description")}</p>
-                  <div className="actionButtonBlock">
-                    <Link className="outlinedBtn" href="/">
-                      {t("indexPage.button.text")}
-                    </Link>
-                  </div>
+                  <h2>{t("indexPage.articleBlock.article2.title")}</h2>
+                  <p>{t("indexPage.articleBlock.article2.description")}</p>
                 </div>
               </article>
               <article className={styles.beneficialArticle}>
@@ -78,11 +68,6 @@ export default function Home() {
                 <div className={styles.articleBlock}>
                   <h2>{t("indexPage.articleBlock.article3.title")}</h2>
                   <p>{t("indexPage.articleBlock.article3.description")}</p>
-                  <div className="actionButtonBlock">
-                    <Link className="outlinedBtn" href="/">
-                      {t("indexPage.button.text")}
-                    </Link>
-                  </div>
                 </div>
               </article>
             </div>

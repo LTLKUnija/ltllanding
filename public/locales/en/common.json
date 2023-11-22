@@ -65,7 +65,7 @@
     "articleBlock": {
       "article1": {
         "title": "Community-Centric Banking",
-        "description": "At LTL Credit Union, we take pride in being more than just a financial institution; we're a community. As a member-owned credit union, our focus is on you and your financial well-being. Enjoy personalized service, tailored financial solutions, and a sense of belonging that larger banks simply can't offer. Join a financial institution that cares about your community as much as you do."
+        "description": "At LTL Credit Union, we take pride in being more than just a financial institution: we're a community. As a member-owned credit union, our focus is on you and your financial well-being. Enjoy personalized service, tailored financial solutions, and a sense of belonging that larger banks simply can't offer. Join a financial institution that cares about your community as much as you do."
       },
       "article2": {
         "title": "Competitive Rates and Transparent Practices",
@@ -114,7 +114,7 @@
       },
       "article3": {
         "title": "Supporting Local Businesses",
-        "description": "LTL Credit Union is proud to be a cornerstone of the local business community. When you choose us as your financial partner, you're not just getting a suite of services; you're investing in the growth and sustainability of local businesses. From small startups to established enterprises, we're here to provide the financial support and expertise needed to fuel the success of businesses in our community. Join a credit union that actively contributes to the strength of local commerce."
+        "description": "LTL Credit Union is proud to be a cornerstone of the local business community. When you choose us as your financial partner, you're not just getting a suite of services; you&#39;re investing in the growth and sustainability of local businesses. From small startups to established enterprises, we&#39;re here to provide the financial support and expertise needed to fuel the success of businesses in our community. Join a credit union that actively contributes to the strength of local commerce."
       }
     },
     "bulletsBlock": {
