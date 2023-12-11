@@ -2,7 +2,7 @@ import styles from "@/styles/mortgage.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Accordion from "@/components/Accordion";
 import Steper from "@/components/Steper";
-import { privetCurrentAccountSteperData } from "@/common/stepersData";
+import { mortgageSteperData } from "@/common/stepersData";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/mortgageLoan_Hero_mobile.png";
@@ -106,7 +106,7 @@ export default function Mortgage() {
             <div className={styles.stepsHeader}>
               <h3>{t("mortgageLoan.stepProcess.title")}</h3>
             </div>
-            <Steper steperData={privetCurrentAccountSteperData} />
+            <Steper steperData={mortgageSteperData} />
           </div>
         </section>
         <section id="clientSuport" className={styles.clientSuportSection}>

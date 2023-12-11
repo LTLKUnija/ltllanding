@@ -35,7 +35,6 @@
       font-size: 17px;
       font-weight: 300;
       line-height: 22px;
-
     }
 
     .stepsDescription {
@@ -43,20 +42,19 @@
       font-weight: 300;
       line-height: 21px;
       max-width: 624px;
+      white-space: pre-line;
     }
   }
 }
 
 @media (max-width: 780px) {
   .stepsItem {
-
     gap: 16px;
 
     .stepsNumber {
       min-width: 40px;
       height: 40px;
       font-size: 20px;
-
     }
 
     .stepsText {

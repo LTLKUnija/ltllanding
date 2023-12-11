@@ -48,7 +48,7 @@
   },
   "indexPage": {
     "slideOne": {
-      "heroBlockH1": "Nebereikia būti dideliam, kad susikrautumėte turtus.",
+      "heroBlockH1": "Nebereikia būti dideliam, kad susikrautumėte turtus",
       "heroBlockText": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas!",
       "learnMoreButton": "Sužinokite daugiau"
     },
@@ -58,7 +58,7 @@
       "learnMoreButton": "Sužinokite daugiau"
     },
     "slideThree": {
-      "heroBlockH1": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto.",
+      "heroBlockH1": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto",
       "heroBlockText": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
       "learnMoreButton": "Sužinokite daugiau"
     },
@@ -89,12 +89,12 @@
   },
   "businessIndexPage": {
     "slideOne": {
-      "heroBlockH1": "Nebereikia būti dideliam, kad susikrautumėte turtus.",
+      "heroBlockH1": "Nebereikia būti dideliam, kad susikrautumėte turtus",
       "heroBlockText": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas!",
       "learnMoreButton": "Sužinokite daugiau"
     },
     "slideTwo": {
-      "heroBlockH1": "Nebereikia būti dideliam, kad gautumėte paskolą.",
+      "heroBlockH1": "Nebereikia būti dideliam, kad gautumėte paskolą",
       "heroBlockText": "Gaukite tuos pačius puikius paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
       "learnMoreButton": "Sužinokite daugiau"
     },
@@ -464,14 +464,10 @@
     "stepProcess": {
       "title": "Terminuoto indėlio sąskaitos atidarymo procesas",
       "step1": {
-        "title": "Užpildykite sąskaitos atidarymo formą",
-        "description": "Užpildykite paraišką"
+        "title": "Atvykite į LTL Kredito uniją",
+        "description": "Mus rasite adresu Sporto g. 18 LT-09238 Vilnius."
       },
       "step2": {
-        "title": "Identifikuokite save",
-        "description": "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
-      },
-      "step3": {
         "title": "Pateikite dokumentus",
         "subTitle": "Prašome atsiųsti mums:",
         "bulletBlock": [
@@ -480,11 +476,11 @@
           "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
         ]
       },
-      "step4": {
+      "step3": {
         "title": "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
         "description": "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
       },
-      "step5": {
+      "step4": {
         "title": "Valdykite savo terminuoto indėlio sąskaitą",
         "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
       }
@@ -541,7 +537,7 @@
     "faq": "D.U.K"
   },
   "privetCurrentAccount": {
-    "pageTitle": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto.",
+    "pageTitle": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto",
     "heroBlock": {
       "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
       "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
@@ -714,7 +710,7 @@
   },
   "mortgageLoan": {
     "heroBlock": {
-      "title": "Nebereikia būti dideliam, kad gautumėte paskolą.",
+      "title": "Nebereikia būti dideliam, kad gautumėte paskolą",
       "description": "Gaukite tuos pačius puikius būsto paskolos sprendimus, kaip ir dideli vaikinai, be vargo! Mūsų būsto paskola skirta suteikti visiems vienodas galimybes įsigyti būstą, nepaisant jų pajamų dydžio. Dėl konkurencingų palūkanų normų ir lanksčių grąžinimo galimybių nėra geresnio pasirinkimo jūsų individualiems poreikiams patenkinti.",
       "bullet1": "Padedame finansuoti iki 85% jūsų svajonių būsto vertės",
       "bullet2": "Gaukite pradinį pasiūlymą per 24 valandas",
@@ -864,7 +860,7 @@
   },
   "partnership": {
     "pageTitle": "Tapkime partneriais",
-    "description": "Nebereikia būti dideliam, kad būtume partneriais.",
+    "description": "Nebereikia būti dideliam, kad būtume partneriais",
     "articleBlock": {
       "article1": "Esame įsipareigoję užtikrinti finansinių paslaugų prieinamumą ir patikimumą kiekvienam. Tikslas – skatinti žmonių įsitraukimą, pašalinant kliūtis ir užtikrinant finansinių paslaugų naudojimo paprastumą. Vykdant šią misiją partnerystė vaidina lemiamą vaidmenį, todėl kviečiame bet kokio dydžio ir verslo sričių įmones prisijungti prie mūsų.",
       "article2": "Suprantame, kad kiekvienas iš mūsų partnerių pateikia unikalių privalumų ir perspektyvų, todėl esame įsipareigoję dirbti su jumis kurdami individualius sprendimus, atitinkančius konkrečius klientų poreikius. Nesvarbu, ar esate mažas startuolis, ar didelė korporacija, technologijų įmonė, norinti integruotis su mūsų platforma, ar pardavimų tarpininkas, siekiantis išplėsti savo verslą, esame pasiryžę kurti prieinamą ir integruotą ekosistemą, skatinančią augimą ir naujoves.",
@@ -1008,29 +1004,26 @@
       "stepProcess": {
         "title": "Terminuoto indėlio sąskaitos atidarymo procesas",
         "step1": {
-          "title": "Užpildykite sąskaitos atidarymo formą",
-          "description": "Užpildykite paraišką"
+          "title": "Atvykite į LTL Kredito uniją",
+          "description": "Mus rasite adresu Sporto g. 18 LT-09238 Vilnius."
         },
         "step2": {
-          "title": "Identifikuokite save",
-          "description": "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
-        },
-        "step3": {
           "title": "Pateikite dokumentus",
           "subTitle": "Prašome atsiųsti mums:",
           "bulletBlock": [
-            "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-            "Prašymas įstoti į kredito uniją",
-            "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+            "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
+            "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
           ]
         },
-        "step4": {
+        "step3": {
           "title": "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-          "description": "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+          "description":
+            "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
         },
-        "step5": {
+        "step4": {
           "title": "Valdykite savo terminuoto indėlio sąskaitą",
-          "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+          "description":
+            "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į skiltį „Kontaktai“). Iš anksto registruotis nereikia."
         }
       },
       "calcBlock": {
@@ -1051,7 +1044,7 @@
     },
     "currentAccount": {
       "heroBlock": {
-        "title": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto.",
+        "title": "Nebūtina būti dideliam, kad būtumėte pasaulinio masto",
         "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
         "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
         "bullet2": "Lengvai siųskite ir gaukite savo lėšas",
@@ -1117,7 +1110,7 @@
     },
     "capitalLoan": {
       "heroBlock": {
-        "title": "Nebereikia būti dideliam, kad gautumėte paskolą.",
+        "title": "Nebereikia būti dideliam, kad gautumėte paskolą",
         "description": "Gaukite tuos pačius puikius paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
         "bullet1": "Padedame finansuoti iki 70% jūsų investicijų ar veiklos išlaidų, tokių kaip įrangos pirkimas, inventorius ar kitos einamosios išlaidos",
         "bullet2": "Gaukite pradinį pasiūlymą per 48 valandas",

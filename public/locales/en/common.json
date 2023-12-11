@@ -412,7 +412,7 @@
   },
   "termDeposit": {
     "heroBlock": {
-      "title": "You don‘t have to be big to make a fortune/your fortune grow", 
+      "title": "You don‘t have to be big to make a fortune", 
       "description": "Save your own money and watch your wealth grow — free is now more powerful than ever! ",
       "bullet1": "Attractive loyalty rewards and benefits",
       "bullet2": "Get individual offers",
@@ -452,29 +452,26 @@
     "stepProcess": {
       "title": "Term deposit opening processs",
       "step1": {
-        "title": "Fill in an account opening form",
-        "description": "Please fill in the application"
+        "title": "Visit LTL Credit Union",
+        "description": "You will find us at Sporto g. 18 LT-09238 Vilnius."
       },
       "step2": {
-        "title": "Identify yourself",
-        "description": "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
-      },
-      "step3": {
         "title": "Submit the documents",
-        "subTitle": "Please send us:",
+        "subTitle": "Please bring:",
         "bulletBlock": [
-          "Copy of passport, ID or residence permit",
-          "Application to join the union",
-          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+          "Passport, ID document or copy of your residence permit",
+          "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
         ]
       },
-      "step4": {
-        "title": "Sign the bank account agreement",
-        "description": "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+      "step3": {
+        "title": "Sign the bank account and time deposit agreements",
+        "description":
+          "Once the decision to open an account has been made, we will invite you to sign the bank account and time deposit agreements and to familiarise yourself with the general terms and conditions of the accounts."
       },
-      "step5": {
-        "title": "Start using our payment services",
-        "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+      "step4": {
+        "title": "Manage your fixed-term deposit account",
+        "description":
+          "Once your bank and fixed-term deposit accounts have been opened, we will give you access to our online banking platform, which allows you to remotely manage your fixed-term deposit agreements, including the creation of new deposit agreements, the renewal or termination of existing fixed-term deposits, etc. For your convenience, we are always ready to serve you in our office (link to the &quot;Contact&quot; section). No prior registration is required."
       }
     },
     "calcBlock": {
@@ -665,7 +662,7 @@
   },
   "investmentLoan": {
     "pageTitle": "Investment loan",
-    "description": "You don‘t have to be big to make a fortune/your fortune grow",
+    "description": "You don‘t have to be big to make a fortune",
     "heroBlock": {
       "description": "Our investment loan lets you take advantage of a wide range of investment opportunities, whether you're looking for short-term gains or long-term growth.",
       "bullet1": "We can help finance up to 85% of the value of your investments",
@@ -780,7 +777,7 @@
   },
   "mortgageLoan": {
     "heroBlock": {
-      "title": "You don‘t have to be big to get a loan.",
+      "title": "You don‘t have to be big to get a loan",
       "description": "Get the same great loan options as the big guys, without the hassle! Our mortgage loan product is designed to give everyone an equal chance at homeownership, regardless of their size. With competitive rates and flexible repayment options, there's no better choice for your mortgage needs.",
       "bullet1": "We can help finance up to 85% of the value of your dream home",
       "bullet2": "Get your initial offer within 24 hours",
@@ -852,7 +849,7 @@
   },
   "partnership": {
     "pageTitle": "Partnership",
-    "description": "You don‘t have to be big to be a partner.",
+    "description": "You don‘t have to be big to be a partner",
     "articleBlock": {
       "article1": "Our commitment lies in ensuring accessibility and reliability of financial services for everyone. The goal is to foster global financial inclusion by removing barriers and promoting ease of use. In this mission, partnerships play a crucial role, inviting businesses of all sizes and backgrounds to join us.",
       "article2": "We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all.",

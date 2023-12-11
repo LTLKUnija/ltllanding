@@ -95,7 +95,7 @@ export default {
       text: "Learn more",
     },
   },
-  
+
   payments: {
     title: "Payments worldwide",
     benefitsArticle: {
@@ -521,32 +521,26 @@ export default {
     stepProcess: {
       title: "Term deposit opening processs",
       step1: {
-        title: "Fill in an account opening form",
-        description: "Please fill in the application",
+        title: "Visit LTL Credit Union",
+        description: "You will find us at Sporto g. 18 LT-09238 Vilnius.",
       },
       step2: {
-        title: "Identify yourself",
-        description:
-          "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document.",
-      },
-      step3: {
         title: "Submit the documents",
-        subTitle: "Please send us:",
+        subTitle: "Please bring:",
         bulletBlock: [
-          "Copy of passport, ID or residence permit",
-          "Application to join the union",
-          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract).",
+          "Passport, ID document or copy of your residence permit",
+          "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities",
         ],
       },
-      step4: {
-        title: "Sign the bank account agreement",
+      step3: {
+        title: "Sign the bank account and time deposit agreements",
         description:
-          "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions.",
+          "Once the decision to open an account has been made, we will invite you to sign the bank account and time deposit agreements and to familiarise yourself with the general terms and conditions of the accounts.",
       },
-      step5: {
-        title: "Start using our payment services",
+      step4: {
+        title: "Manage your fixed-term deposit account",
         description:
-          "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more.",
+          "Once your bank and fixed-term deposit accounts have been opened, we will give you access to our online banking platform, which allows you to remotely manage your fixed-term deposit agreements, including the creation of new deposit agreements, the renewal or termination of existing fixed-term deposits, etc. For your convenience, we are always ready to serve you in our office (link to the &quot;Contact&quot; section). No prior registration is required.",
       },
     },
     calcBlock: {
@@ -636,32 +630,26 @@ export default {
     stepProcess: {
       blockTitle: "Steps",
       step1: {
-        title: "Fill in an account opening form",
-        description: "Please fill in the application",
+        title: "Visit LTL Credit Union",
+        description: "You will find us at Sporto g. 18 LT-09238 Vilnius.",
       },
       step2: {
-        title: "Identify yourself",
-        description:
-          "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document.",
-      },
-      step3: {
-        title: "Submit the documents",
-        subTitle: "Please send us:",
+        title: "Submit your documents",
+        subTitle: "Please bring:",
         bulletBlock: [
-          "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          "Prašymas įstoti į kredito uniją",
-          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)",
+          "Passport, ID document or copy of your residence permit",
+          "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities",
         ],
       },
-      step4: {
+      step3: {
         title: "Sign the bank account agreement",
         description:
-          "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions.",
+          "Once the decision to open an account has been taken, we will invite you to sign the bank account agreement and to familiarise yourself with the general terms and conditions for the use of accounts.",
       },
-      step5: {
-        title: "Start using our payment services",
+      step4: {
+        title: "Manage your current account",
         description:
-          "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more.",
+          "Once your bank account has been opened, we will give you access to our online banking platform, which allows you to manage your account remotely and make payments etc. For your convenience, we are always ready to serve you at our office (link to the &quot;Contact&quot; section). No need to register in advance.",
       },
     },
     clientSuport: {
@@ -716,32 +704,30 @@ export default {
     stepProcess: {
       title: "Loan application process:",
       step1: {
-        title: "Fill in an account opening form",
-        description: "Please fill in the application",
+        title:
+          "To apply for a loan, you must first become a member of the credit union",
+        description:
+          "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the Credit Union with your ID, fill in the membership application form, pay the joining fee of EUR 30 for the purchase of a EUR 30 share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the Credit Union).",
       },
       step2: {
-        title: "Identify yourself",
+        title: "Fill in the loan application form",
         description:
-          "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document.",
+          "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to €15,000 require a guarantor - a person with sufficient income or real estate. A copy of the guarantor&#39;s identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15 000 or for a period of more than 5 years must be secured by a mortgage.",
       },
       step3: {
-        title: "Submit the documents",
-        subTitle: "Please send us:",
+        title: "Please submit the following documents",
         bulletBlock: [
-          "Copy of passport, ID or residence permit",
-          "Application to join the union",
-          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract).",
+          "A completed loan application form",
+          "A completed surety application",
+          "Consent to the processing of personal data",
+          "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership",
         ],
       },
       step4: {
-        title: "Sign the bank account agreement",
+        title: "You will receive a reply within 1-2 days.",
         description:
-          "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions.",
-      },
-      step5: {
-        title: "Start using our payment services",
-        description:
-          "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more.",
+          "You will be contacted by a loan manager and informed of the decision. The Credit Union may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register.",
       },
     },
     clientSuport: {
@@ -834,44 +820,30 @@ export default {
     stepProcess: {
       title: "Loan application process:",
       step1: {
-        title: "Fill in a loan application form and give the consent",
+        title:
+          "To apply for a loan, you must first become a member of the credit union",
         description:
-          "Please fill in the application and signed the consent to enable us to perform an initial assessment",
+          "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the Credit Union with your ID, fill in the membership application form, pay the joining fee of EUR 30 for the purchase of a EUR 30 share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the Credit Union).",
       },
       step2: {
-        title: "Identify yourself and give the consent",
+        title: "Fill in the loan application form",
         description:
-          " You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document.",
+          "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to €15,000 require a guarantor - a person with sufficient income or real estate. A copy of the guarantor&#39;s identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15 000 or for a period of more than 5 years must be secured by a mortgage.",
       },
       step3: {
-        title: "Get an initial loan offer",
-        description:
-          "We will reach you within 24 hours with our initial proposal",
-      },
-      step4: {
-        title: "Submit the documents",
-        subTitle:
-          "Since we agree on initial terms and conditions, please send us:",
+        title: "Please submit the following documents",
         bulletBlock: [
-          "Copy of passport, ID or residence permit",
-          "Application to join the union",
-          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)",
+          "A completed loan application form",
+          "A completed surety application",
+          "Consent to the processing of personal data",
+          "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership",
         ],
       },
-      step5: {
-        title: "Get the final credit decision and sign the agreement",
+      step4: {
+        title: "You will receive a reply within 1-2 days.",
         description:
-          "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions.",
-      },
-      step6: {
-        title: "Sign the pledge agreement in the notary office ",
-        description:
-          "We will schedule a notary appointment at a mutually convenient time to finalize the mortgage arrangements.",
-      },
-      step7: {
-        title: "Loan disbursement",
-        description:
-          "The credit funds will be disbursed within one business day of completing the pledge.",
+          "You will be contacted by a loan manager and informed of the decision. The Credit Union may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register.",
       },
     },
     clientSuport: {
@@ -921,44 +893,30 @@ export default {
     stepProcess: {
       title: "Loan application process:",
       step1: {
-        title: "Fill in a loan application form and give the consent",
+        title:
+          "To apply for a loan, you must first become a member of the credit union",
         description:
-          "Please fill in the application and signed the consent to enable us to perform an initial assessment",
+          "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the Credit Union with your ID, fill in the membership application form, pay the joining fee of EUR 30 for the purchase of a EUR 30 share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the Credit Union).",
       },
       step2: {
-        title: "Identify yourself and give the consen",
+        title: "Fill in the loan application form",
         description:
-          "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document.",
+          "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to €15,000 require a guarantor - a person with sufficient income or real estate. A copy of the guarantor&#39;s identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15 000 or for a period of more than 5 years must be secured by a mortgage.",
       },
       step3: {
-        title: "Get an initial loan offer",
-        description:
-          "We will reach you within 24 hours with our initial proposal",
-      },
-      step4: {
-        title: "Submit the documents",
-        subTitle:
-          "Since we agree on initial terms and conditions, please send us:",
+        title: "Please submit the following documents",
         bulletBlock: [
-          "Copy of passport, ID or residence permit",
-          "Application to join the union",
-          "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract).",
+          "A completed loan application form",
+          "A completed surety application",
+          "Consent to the processing of personal data",
+          "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership",
         ],
       },
-      step5: {
-        title: "Get the final credit decision and sign the agreement",
+      step4: {
+        title: "You will receive a reply within 1-2 days.",
         description:
-          "Once the credit decision to issue the credit is reached, we will invite you to sign the account agreement and other relevant terms and conditions.",
-      },
-      step6: {
-        title: "Sign the pledge agreement in the notary office",
-        description:
-          "We will schedule a notary appointment at a mutually convenient time to finalize the mortgage arrangements.",
-      },
-      step7: {
-        title: "Loan disbursement",
-        description:
-          "The credit funds will be disbursed within one business day of completing the pledge.",
+          "You will be contacted by a loan manager and informed of the decision. The Credit Union may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register.",
       },
     },
   },
