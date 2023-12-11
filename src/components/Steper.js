@@ -15,13 +15,10 @@ const Steper = ({ steperData }) => {
           <h2 className={styles.stepsTitle}>{t(step.title)}</h2>
           <div className={styles.stepsDescription}>
             {t(step.description)}
-            {/* {idx === 3 && (
-              
-            )} */}
             {step.showOnStep4 && (
-              <a href="/contacts" className="readMoreLink">
+              <Link href="/contacts" className="readMoreLink">
                 ( {t("headerNavLinks.contacts")} )
-              </a>
+              </Link>
             )}
             {t(step.restOfDescription)}
             {step.bulletBlock && (
