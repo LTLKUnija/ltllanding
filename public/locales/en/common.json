@@ -458,10 +458,10 @@
       "step2": {
         "title": "Submit the documents",
         "subTitle": "Please bring:",
-        "bulletBlock": [
-          "Passport, ID document or copy of your residence permit",
-          "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
-        ]
+        "bulletBlock": {
+          "bulet1": "Passport, ID document or copy of your residence permit",
+          "bulet2": "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
+        } 
       },
       "step3": {
         "title": "Sign the bank account and time deposit agreements",
@@ -564,10 +564,11 @@
       "step2": {
         "title": "Submit your documents",
         "subTitle": "Please bring:",
-        "bulletBlock": [
-          "Passport, ID document or copy of your residence permit",
-          "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
-        ]
+        "bulletBlock":  {
+         "bulet1" : "Passport, ID document or copy of your residence permit",
+         "bulet2": "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
+      }
+        
       },
       "step3": {
         "title": "Sign the bank account agreement",
@@ -638,13 +639,13 @@
       },
       "step3": {
         "title": "Please submit the following documents",
-        "bulletBlock": [
-          "A completed loan application form",
-          "A completed surety application",
-          "Consent to the processing of personal data",
-          "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
-          "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
-        ]
+        "bulletBlock": {
+          "bulet1":"A completed loan application form",
+          "bulet2":"A completed surety application",
+          "bulet3":"Consent to the processing of personal data",
+          "bulet4":"Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "bulet5":"Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
+        }
       },
       "step4": {
         "title": "You will receive a reply within 1-2 days.",
@@ -746,13 +747,13 @@
       },
       "step3": {
         "title": "Please submit the following documents",
-        "bulletBlock": [
-          "A completed loan application form",
-          "A completed surety application",
-          "Consent to the processing of personal data",
-          "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
-          "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
-        ]
+        "bulletBlock": {
+          "bulet1":"A completed loan application form",
+          "bulet2":"A completed surety application",
+          "bulet3":"Consent to the processing of personal data",
+          "bulet4":"Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "bulet5":"Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
+        }
       },
       "step4": {
         "title": "You will receive a reply within 1-2 days.",
@@ -816,13 +817,13 @@
       },
       "step3": {
         "title": "Please submit the following documents",
-        "bulletBlock": [
-          "A completed loan application form",
-          "A completed surety application",
-          "Consent to the processing of personal data",
-          "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
-          "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
-        ]
+        "bulletBlock": {
+          "bulet1":"A completed loan application form",
+          "bulet2":"A completed surety application",
+          "bulet3":"Consent to the processing of personal data",
+          "bulet4":"Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "bulet5":"Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
+        }
       },
       "step4": {
         "title": "You will receive a reply within 1-2 days.",

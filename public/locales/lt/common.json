@@ -470,11 +470,10 @@
       "step2": {
         "title": "Pateikite dokumentus",
         "subTitle": "Prašome atsiųsti mums:",
-        "bulletBlock": [
-          "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          "Prašymas įstoti į kredito uniją",
-          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
-        ]
+        "bulletBlock": {
+          "bulet1": "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+          "bulet2": "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+        }
       },
       "step3": {
         "title": "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
@@ -575,10 +574,10 @@
       "step2": {
         "title": "Pateikite dokumentus",
         "subTitle": "Su savimi turėkite:",
-        "bulletBlock": [
-          "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
-          "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
-        ]
+        "bulletBlock": {
+          "bulet1" :"Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
+          "bulet2" :"Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
+        }
       },
       "step3": {
         "title": "Pasirašykite banko sąskaitos sutartį",
@@ -649,13 +648,13 @@
       },
       "step3": {
         "title": "Pateikite dokumentus",
-        "bulletBlock": [
-          "Užpildytą paraišką paskolai",
-          "Užpildytą laidavimo paraišką",
-          "Sutikimą dėl asmens duomenų tvarkymo",
-          "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
-          "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
-        ]
+        "bulletBlock": {
+          "bulet1":"Užpildytą paraišką paskolai",
+          "bulet2":"Užpildytą laidavimo paraišką",
+          "bulet3":"Sutikimą dėl asmens duomenų tvarkymo",
+          "bulet4":"Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "bulet5":"Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
+        }
       },
       "step4": {
         "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",
@@ -756,13 +755,13 @@
       },
       "step3": {
         "title": "Pateikite dokumentus",
-        "bulletBlock": [
-          "Užpildytą paraišką paskolai",
-          "Užpildytą laidavimo paraišką",
-          "Sutikimą dėl asmens duomenų tvarkymo",
-          "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
-          "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
-        ]
+        "bulletBlock": {
+          "bulet1": "Užpildytą paraišką paskolai",
+          "bulet2":"Užpildytą laidavimo paraišką",
+          "bulet3": "Sutikimą dėl asmens duomenų tvarkymo",
+          "bulet4":"Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "bulet5":"Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
+      }
       },
       "step4": {
         "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",
@@ -822,13 +821,13 @@
       },
       "step3": {
         "title": "Pateikite dokumentus",
-        "bulletBlock": [
-          "Užpildytą paraišką paskolai",
-          "Užpildytą laidavimo paraišką",
-          "Sutikimą dėl asmens duomenų tvarkymo",
-          "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
-          "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
-        ]
+        "bulletBlock": {
+          "bulet1":"Užpildytą paraišką paskolai",
+          "bulet2":"Užpildytą laidavimo paraišką",
+          "bulet3":"Sutikimą dėl asmens duomenų tvarkymo",
+          "bulet4":"Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "bulet5":"Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
+        }
       },
       "step4": {
         "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",

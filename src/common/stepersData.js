@@ -148,7 +148,13 @@ export const consumerSteperData = [
   {
     number: "3",
     title: "consumerLoan.stepProcess.step3.title",
-    bulletBlock: "consumerLoan.stepProcess.step3.bulletBlock",
+    bulletBlock: [
+      "consumerLoan.stepProcess.step3.bulletBlock.bulet1",
+      "consumerLoan.stepProcess.step3.bulletBlock.bulet2",
+      "consumerLoan.stepProcess.step3.bulletBlock.bulet3",
+      "consumerLoan.stepProcess.step3.bulletBlock.bulet4",
+      "consumerLoan.stepProcess.step3.bulletBlock.bulet5",
+    ],
   },
   {
     number: "4",
@@ -171,7 +177,13 @@ export const equityLoanSteperData = [
   {
     number: "3",
     title: "equityLoan.stepProcess.step3.title",
-    bulletBlock: "equityLoan.stepProcess.step3.bulletBlock",
+    bulletBlock: [
+      "equityLoan.stepProcess.step3.bulletBlock.bulet1",
+      "equityLoan.stepProcess.step3.bulletBlock.bulet2",
+      "equityLoan.stepProcess.step3.bulletBlock.bulet3",
+      "equityLoan.stepProcess.step3.bulletBlock.bulet4",
+      "equityLoan.stepProcess.step3.bulletBlock.bulet5",
+    ],
   },
   {
     number: "4",
@@ -194,7 +206,13 @@ export const mortgageSteperData = [
   {
     number: "3",
     title: "mortgageLoan.stepProcess.step3.title",
-    bulletBlock: "mortgageLoan.stepProcess.step3.bulletBlock",
+    bulletBlock: [
+      "mortgageLoan.stepProcess.step3.bulletBlock.bulet1",
+      "mortgageLoan.stepProcess.step3.bulletBlock.bulet2",
+      "mortgageLoan.stepProcess.step3.bulletBlock.bulet3",
+      "mortgageLoan.stepProcess.step3.bulletBlock.bulet4",
+      "mortgageLoan.stepProcess.step3.bulletBlock.bulet5",
+    ],
   },
   {
     number: "4",
@@ -213,7 +231,10 @@ export const depositSteperData = [
     number: "2",
     title: "termDeposit.stepProcess.step2.title",
     description: "termDeposit.stepProcess.step2.subTitle",
-    bulletBlock: "termDeposit.stepProcess.step2.bulletBlock",
+    bulletBlock: [
+      "termDeposit.stepProcess.step2.bulletBlock.bulet1",
+      "termDeposit.stepProcess.step2.bulletBlock.bulet2",
+    ],
   },
   {
     number: "3",
@@ -237,7 +258,10 @@ export const privetCurrentAccountSteperData = [
     number: "2",
     title: "privetCurrentAccount.stepProcess.step2.title",
     description: "privetCurrentAccount.stepProcess.step2.subTitle",
-    bulletBlock: "privetCurrentAccount.stepProcess.step2.bulletBlock",
+    bulletBlock: [
+      "privetCurrentAccount.stepProcess.step2.bulletBlock.bulet1",
+      "privetCurrentAccount.stepProcess.step2.bulletBlock.bulet2",
+    ],
   },
   {
     number: "3",
