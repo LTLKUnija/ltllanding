@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/Steper.module.scss";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 const Steper = ({ steperData }) => {
   const { t } = useTranslation("common");
@@ -14,6 +15,15 @@ const Steper = ({ steperData }) => {
           <h2 className={styles.stepsTitle}>{t(step.title)}</h2>
           <div className={styles.stepsDescription}>
             {t(step.description)}
+            {/* {idx === 3 && (
+              
+            )} */}
+            {step.showOnStep4 && (
+              <a href="/contacts" className="readMoreLink">
+                ( {t("headerNavLinks.contacts")} )
+              </a>
+            )}
+            {t(step.restOfDescription)}
             {step.bulletBlock && (
               <ul>
                 {step.bulletBlock?.map((bullet, idx) => {

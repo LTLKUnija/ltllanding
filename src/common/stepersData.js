@@ -243,8 +243,10 @@ export const depositSteperData = [
   },
   {
     number: "4",
+    showOnStep4: true,
     title: "termDeposit.stepProcess.step4.title",
     description: "termDeposit.stepProcess.step4.description",
+    restOfDescription: "termDeposit.stepProcess.step4.restOfDescription",
   },
 ];
 
@@ -270,7 +272,10 @@ export const privetCurrentAccountSteperData = [
   },
   {
     number: "4",
+    showOnStep4: true,
     title: "privetCurrentAccount.stepProcess.step4.title",
     description: "privetCurrentAccount.stepProcess.step4.description",
+    restOfDescription:
+      "privetCurrentAccount.stepProcess.step4.restOfDescription",
   },
 ];

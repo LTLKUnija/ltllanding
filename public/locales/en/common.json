@@ -471,7 +471,8 @@
       "step4": {
         "title": "Manage your fixed-term deposit account",
         "description":
-          "Once your bank and fixed-term deposit accounts have been opened, we will give you access to our online banking platform, which allows you to remotely manage your fixed-term deposit agreements, including the creation of new deposit agreements, the renewal or termination of existing fixed-term deposits, etc. For your convenience, we are always ready to serve you in our office (link to the &quot;Contact&quot; section). No prior registration is required."
+          "Once your bank and fixed-term deposit accounts have been opened, we will give you access to our online banking platform, which allows you to remotely manage your fixed-term deposit agreements, including the creation of new deposit agreements, the renewal or termination of existing fixed-term deposits, etc. For your convenience, we are always ready to serve you in our office ",
+          "restOfDescription": ". No prior registration is required." 
       }
     },
     "calcBlock": {
@@ -578,7 +579,8 @@
       "step4": {
         "title": "Manage your current account",
         "description":
-          "Once your bank account has been opened, we will give you access to our online banking platform, which allows you to manage your account remotely and make payments etc. For your convenience, we are always ready to serve you at our office (link to the &quot;Contact&quot; section). No need to register in advance."
+          "Once your bank account has been opened, we will give you access to our online banking platform, which allows you to manage your account remotely and make payments etc. For your convenience, we are always ready to serve you at our office ",
+          "restOfDescription": ". No need to register in advance."  
       }
     },
     "clientSuport": {

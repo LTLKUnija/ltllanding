@@ -469,10 +469,10 @@
       },
       "step2": {
         "title": "Pateikite dokumentus",
-        "subTitle": "Prašome atsiųsti mums:",
+        "subTitle": "Su savimi turėkite:",
         "bulletBlock": {
-          "bulet1": "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          "bulet2": "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+          "bulet1": "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
+          "bulet2": "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
         }
       },
       "step3": {
@@ -481,7 +481,8 @@
       },
       "step4": {
         "title": "Valdykite savo terminuoto indėlio sąskaitą",
-        "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+        "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure ",
+        "restOfDescription": ", iš anksto registruotis nereikia."  
       }
     },
     "calcBlock": {
@@ -587,7 +588,8 @@
       "step4": {
         "title": "Valdykite savo einamąją sąskaitą",
         "description":
-          "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti sąskaitą bei atlikti mokėjimus ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į skiltį „Kontaktai“). Iš anksto registruotis nereikia."
+          "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti sąskaitą bei atlikti mokėjimus ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure ",
+        "restOfDescription": ". Iš anksto registruotis nereikia."  
       }
     },
     "clientSuport": {
