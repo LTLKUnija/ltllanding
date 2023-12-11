@@ -631,7 +631,7 @@ export default {
       },
     },
     stepProcess: {
-      blockTitle: "Žingsniai",
+      blockTitle: "Einamosios sąskaitos atidarymo procesas",
       step1: {
         title: "Atvykite į LTL Kredito uniją",
         description: "Mus rasite adresu Sporto g. 18 LT-09238 Vilnius.",

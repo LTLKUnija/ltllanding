@@ -628,7 +628,7 @@ export default {
       },
     },
     stepProcess: {
-      blockTitle: "Steps",
+      blockTitle: "Current account opening process",
       step1: {
         title: "Visit LTL Credit Union",
         description: "You will find us at Sporto g. 18 LT-09238 Vilnius.",
