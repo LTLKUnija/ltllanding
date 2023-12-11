@@ -180,7 +180,7 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1340px) {
   .mortgagePageWrapper {
     .mortgagePageList {
       padding-left: 50px;
@@ -188,12 +188,12 @@
   }
 }
 
-@media (max-width: 974px) {
+@media (max-width: 1111px) {
   .mortgagePageWrapper {
     background-size: 100%;
 
     .mortgagePageList {
-      padding-left: 40px;
+      padding: 0 20px 0 40px;
     }
   }
 }

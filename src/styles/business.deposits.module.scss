@@ -270,7 +270,7 @@
 }
 
 // ----- Media queries -----
-@media (min-width: 1100px) {
+@media (min-width: 1110px) {
   .depositPageWrapper {
     .heroImage {
       display: none;
@@ -278,10 +278,10 @@
   }
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1390px) {
   .depositPageWrapper {
     .depositPageList {
-      padding-left: 280px;
+      padding-left: 50px;
     }
   }
 }
@@ -289,14 +289,10 @@
 @media (max-width: 1250px) {
   .depositPageWrapper {
     background-position: bottom right;
-
-    .depositPageList {
-      padding-left: 50px;
-    }
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1110px) {
   .depositPageWrapper {
     padding-top: 10px;
     padding-bottom: 10px;
