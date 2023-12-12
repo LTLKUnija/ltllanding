@@ -20,7 +20,6 @@ export default function Home() {
           <section className={styles.heroblock}>
             <SimpleSlider />
           </section>
-          <section>goga</section>
           <section className={styles.beneficialArticles}>
             <div className="container">
               <article className={styles.beneficialArticle}>
