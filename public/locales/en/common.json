@@ -987,16 +987,17 @@
         },
         "step2": {
           "title": "Identify yourself",
-          "description": "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+          "description": "You may verify your identity by coming to our office ",
+          "restOfDescription": " or via online tool (link to external service provider). You will need a valid identity document."
         },
         "step3": {
           "title": "Submit the documents",
           "subTitle": "Please send us:",
-          "bulletBlock": [
-            "Copy of passport, ID or residence permit",
-            "Application to join the union",
-            "A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
-          ]
+          "bulletBlock": {
+            "bulet1":"Copy of passport, ID or residence permit",
+            "bulet2":"Application to join the union",
+            "bulet3":"A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+          }
         },
         "step4": {
           "title": "Sign the bank account agreement",
@@ -1004,7 +1005,8 @@
         },
         "step5": {
           "title": "Start using our payment services",
-          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more."
+          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more.",
+          "restOfDescription": ". No need to register in advance."
         }
       },
       "calcBlock": {
@@ -1077,28 +1079,32 @@
         }
       },
       "stepProcess": {
-        "blockTitle": "Current account opening process",
+        "title": "Term deposit opening processs",
         "step1": {
-          "title": "Visit LTL Credit Union",
-          "description": "You will find us at Sporto g. 18 LT-09238 Vilnius."
+          "title": "Fill in an account opening form",
+          "description": "Please fill in the application"
         },
         "step2": {
-          "title": "Submit your documents",
-          "subTitle": "Please bring:",
-          "bulletBlock": [
-            "Passport, ID document or copy of your residence permit",
-            "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
-          ]
+          "title": "Identify yourself",
+          "description": "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
         },
         "step3": {
-          "title": "Sign the bank account agreement",
-          "description":
-            "Once the decision to open an account has been taken, we will invite you to sign the bank account agreement and to familiarise yourself with the general terms and conditions for the use of accounts."
+          "title": "Submit the documents",
+          "subTitle": "Please send us:",
+          "bulletBlock": {
+            "bulet1":"Copy of passport, ID or residence permit",
+            "bulet2":"Application to join the union",
+            "bulet3":"A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+          }
         },
         "step4": {
-          "title": "Manage your current account",
-          "description":
-            "Once your bank account has been opened, we will give you access to our online banking platform, which allows you to manage your account remotely and make payments etc. For your convenience, we are always ready to serve you at our office (link to the &quot;Contact&quot; section). No need to register in advance."
+          "title": "Sign the bank account agreement",
+          "description": "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+        },
+        "step5": {
+          "title": "Start using our payment services",
+          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more.",
+          "restOfDescription":". No prior registration is required."
         }
       },
     
@@ -1148,7 +1154,8 @@
         },
         "step2": {
           "title": "Identify yourself",
-          "description": "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+          "description": "You may verify your identity by coming to our office ",
+          "restOfDescription": " or via online tool (link to external service provider). You will need a valid identity document."
         },
         "step3": {
           "title": "Get an initial loan offer",
@@ -1157,14 +1164,14 @@
         "step4": {
           "title": "Submit the documents",
           "subTitle": "Since we agree on initial terms and conditions, please send us:",
-          "bulletBlock": [
-            "Application to join the union",
-            "Company registration certificate",
-            "Founders’ agreement and Articles of Association",
-            "CEO appointment document",
-            "Copy of passport, ID or residence permit of CEO of the company",
-            "Property valuation reports"
-          ]
+          "bulletBlock": {
+            "bulet1":"Application to join the union",
+            "bulet2":"Company registration certificate",
+            "bulet3":"Founders’ agreement and Articles of Association",
+            "bulet4":"CEO appointment document",
+            "bulet5":"Copy of passport, ID or residence permit of CEO of the company",
+            "bulet6":"Property valuation reports"
+          }
         },
         "step5": {
           "title": "Get the final credit decision and sign the agreement",
@@ -1230,7 +1237,8 @@
         },
         "step2": {
           "title": "Identify yourself",
-          "description": "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+          "description": "You may verify your identity by coming to our office ",
+          "restOfDescription": " or via online tool (link to external service provider). You will need a valid identity document."
         },
         "step3": {
           "title": "Get an initial loan offer",
@@ -1239,14 +1247,14 @@
         "step4": {
           "title": "Submit the documents",
           "subTitle": "Since we agree on initial terms and conditions, please send us:",
-          "bulletBlock": [
-            "Application to join the union",
-            "Company registration certificate",
-            "Founders’ agreement and Articles of Association",
-            "CEO appointment document",
-            "Copy of passport, ID or residence permit of CEO of the company",
-            "Property valuation reports"
-          ]
+          "bulletBlock": {
+            "bulet1":"Application to join the union",
+            "bulet2":"Company registration certificate",
+            "bulet3":"Founders’ agreement and Articles of Association",
+            "bulet4":"CEO appointment document",
+            "bulet5":"Copy of passport, ID or residence permit of CEO of the company",
+            "bulet6":"Property valuation reports"
+          }
         },
         "step5": {
           "title": "Get the final credit decision and sign the agreement",

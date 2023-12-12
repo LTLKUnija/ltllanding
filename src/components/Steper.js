@@ -15,8 +15,8 @@ const Steper = ({ steperData }) => {
           <h2 className={styles.stepsTitle}>{t(step.title)}</h2>
           <div className={styles.stepsDescription}>
             {t(step.description)}
-            {step.showOnStep4 && (
-              <Link href="/contacts" className="readMoreLink">
+            {step.showStepLink && (
+              <Link href="/contacts" className="showStepLink">
                 ( {t("headerNavLinks.contacts")} )
               </Link>
             )}

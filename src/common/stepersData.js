@@ -2,18 +2,25 @@ export const termDepositSteperData = [
   {
     number: "1",
     title: "business.termDeposit.stepProcess.step1.title",
-    description: "business.termDeposit.stepProcess.step2.description",
+    description: "business.termDeposit.stepProcess.step1.description",
   },
   {
     number: "2",
+    showStepLink: true,
     title: "business.termDeposit.stepProcess.step2.title",
     description: "business.termDeposit.stepProcess.step2.description",
+    restOfDescription:
+      "business.termDeposit.stepProcess.step2.restOfDescription",
   },
   {
     number: "3",
     title: "business.termDeposit.stepProcess.step3.title",
     description: "business.termDeposit.stepProcess.step3.subTitle",
-    bulletBlock: "business.termDeposit.stepProcess.step3.bulletBlock",
+    bulletBlock: [
+      "business.termDeposit.stepProcess.step3.bulletBlock.bulet1",
+      "business.termDeposit.stepProcess.step3.bulletBlock.bulet2",
+      "business.termDeposit.stepProcess.step3.bulletBlock.bulet3",
+    ],
   },
   {
     number: "4",
@@ -22,8 +29,11 @@ export const termDepositSteperData = [
   },
   {
     number: "5",
+    showStepLink: true,
     title: "business.termDeposit.stepProcess.step5.title",
     description: "business.termDeposit.stepProcess.step5.description",
+    restOfDescription:
+      "business.termDeposit.stepProcess.step5.restOfDescription",
   },
 ];
 
@@ -35,8 +45,11 @@ export const capitalLoanSteperData = [
   },
   {
     number: "2",
+    showStepLink: true,
     title: "business.capitalLoan.stepProcess.step2.title",
     description: "business.capitalLoan.stepProcess.step2.description",
+    restOfDescription:
+      "business.capitalLoan.stepProcess.step2.restOfDescription",
   },
   {
     number: "3",
@@ -47,7 +60,14 @@ export const capitalLoanSteperData = [
     number: "4",
     title: "business.capitalLoan.stepProcess.step4.title",
     description: "business.capitalLoan.stepProcess.step4.subTitle",
-    bulletBlock: "business.capitalLoan.stepProcess.step4.bulletBlock",
+    bulletBlock: [
+      "business.capitalLoan.stepProcess.step4.bulletBlock.bulet1",
+      "business.capitalLoan.stepProcess.step4.bulletBlock.bulet2",
+      "business.capitalLoan.stepProcess.step4.bulletBlock.bulet3",
+      "business.capitalLoan.stepProcess.step4.bulletBlock.bulet4",
+      "business.capitalLoan.stepProcess.step4.bulletBlock.bulet5",
+      "business.capitalLoan.stepProcess.step4.bulletBlock.bulet6",
+    ],
   },
   {
     number: "5",
@@ -74,14 +94,21 @@ export const currentAccountSteperData = [
   },
   {
     number: "2",
+    showStepLink: true,
     title: "business.currentAccount.stepProcess.step2.title",
     description: "business.currentAccount.stepProcess.step2.description",
+    restOfDescription:
+      "business.currentAccount.stepProcess.step2.restOfDescription",
   },
   {
     number: "3",
     title: "business.currentAccount.stepProcess.step3.title",
     description: "business.currentAccount.stepProcess.step3.subTitle",
-    bulletBlock: "business.currentAccount.stepProcess.step3.bulletBlock",
+    bulletBlock: [
+      "business.currentAccount.stepProcess.step3.bulletBlock.bulet1",
+      "business.currentAccount.stepProcess.step3.bulletBlock.bulet2",
+      "business.currentAccount.stepProcess.step3.bulletBlock.bulet3",
+    ],
   },
   {
     number: "4",
@@ -90,8 +117,11 @@ export const currentAccountSteperData = [
   },
   {
     number: "5",
+    showStepLink: true,
     title: "business.currentAccount.stepProcess.step5.title",
     description: "business.currentAccount.stepProcess.step5.description",
+    restOfDescription:
+      "business.currentAccount.stepProcess.step5.restOfDescription",
   },
 ];
 
@@ -103,8 +133,11 @@ export const investmentLoanSteperData = [
   },
   {
     number: "2",
+    showStepLink: true,
     title: "business.investmentLoan.stepProcess.step2.title",
     description: "business.investmentLoan.stepProcess.step2.description",
+    restOfDescription:
+      "business.investmentLoan.stepProcess.step2.restOfDescription",
   },
   {
     number: "3",
@@ -115,7 +148,14 @@ export const investmentLoanSteperData = [
     number: "4",
     title: "business.investmentLoan.stepProcess.step4.title",
     description: "business.investmentLoan.stepProcess.step4.subTitle",
-    bulletBlock: "business.investmentLoan.stepProcess.step4.bulletBlock",
+    bulletBlock: [
+      "business.investmentLoan.stepProcess.step4.bulletBlock.bulet1",
+      "business.investmentLoan.stepProcess.step4.bulletBlock.bulet2",
+      "business.investmentLoan.stepProcess.step4.bulletBlock.bulet3",
+      "business.investmentLoan.stepProcess.step4.bulletBlock.bulet4",
+      "business.investmentLoan.stepProcess.step4.bulletBlock.bulet5",
+      "business.investmentLoan.stepProcess.step4.bulletBlock.bulet6",
+    ],
   },
   {
     number: "5",
@@ -243,7 +283,7 @@ export const depositSteperData = [
   },
   {
     number: "4",
-    showOnStep4: true,
+    showStepLink: true,
     title: "termDeposit.stepProcess.step4.title",
     description: "termDeposit.stepProcess.step4.description",
     restOfDescription: "termDeposit.stepProcess.step4.restOfDescription",
@@ -272,7 +312,7 @@ export const privetCurrentAccountSteperData = [
   },
   {
     number: "4",
-    showOnStep4: true,
+    showStepLink: true,
     title: "privetCurrentAccount.stepProcess.step4.title",
     description: "privetCurrentAccount.stepProcess.step4.description",
     restOfDescription:

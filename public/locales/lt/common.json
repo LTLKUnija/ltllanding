@@ -989,26 +989,31 @@
       "stepProcess": {
         "title": "Terminuoto indėlio sąskaitos atidarymo procesas",
         "step1": {
-          "title": "Atvykite į LTL Kredito uniją",
-          "description": "Mus rasite adresu Sporto g. 18 LT-09238 Vilnius."
+          "title": "Užpildykite sąskaitos atidarymo formą",
+          "description": "Užpildykite paraišką"
         },
         "step2": {
-          "title": "Pateikite dokumentus",
-          "subTitle": "Prašome atsiųsti mums:",
-          "bulletBlock": [
-            "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
-            "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
-          ]
+          "title": "Identifikuokite save",
+          "description": "Savo tapatybę galite patvirtinti atvykę į mūsų biurą ",
+          "restOfDescription": " arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
         },
         "step3": {
-          "title": "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-          "description":
-            "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+          "title": "Pateikite dokumentus",
+          "subTitle": "Prašome atsiųsti mums:",
+          "bulletBlock": {
+            "bulet1":"Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+            "bulet2":"Prašymas įstoti į kredito uniją",
+            "bulet3":"Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+          }
         },
         "step4": {
+          "title": "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
+          "description": "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+        },
+        "step5": {
           "title": "Valdykite savo terminuoto indėlio sąskaitą",
-          "description":
-            "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į skiltį „Kontaktai“). Iš anksto registruotis nereikia."
+          "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure ",
+          "restOfDescription": " , iš anksto registruotis nereikia."
         }
       },
       "calcBlock": {
@@ -1097,16 +1102,17 @@
         "step2": {
           "title": "Identifikuokite save",
           "description":
-            "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+            "Savo tapatybę galite patvirtinti atvykę į mūsų biurą  ",
+            "restOfDescription": " arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
         },
         "step3": {
           "title": "Pateikite dokumentus",
           "subTitle": "Prašome atsiųsti mums:",
-          "bulletBlock": [
-            "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-            "Prašymas įstoti į kredito uniją",
-            "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
-          ]
+          "bulletBlock": {
+            "bulet1":"Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
+            "bulet2":"Prašymas įstoti į kredito uniją",
+            "bulet3":"Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+          }
         },
         "step4": {
           "title": "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
@@ -1116,7 +1122,8 @@
         "step5": {
           "title": "Valdykite savo terminuoto indėlio sąskaitą",
           "description":
-            "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia."
+            "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure ",
+          "restOfDescription": " , iš anksto registruotis nereikia."
         }
       },
       "faq": "D.U.K."
@@ -1165,7 +1172,8 @@
         },
         "step2": {
           "title": "Identifikuokite save",
-          "description": "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+          "description": "Savo tapatybę galite patvirtinti atvykę į mūsų biurą ",
+          "restOfDescription": " arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
         },
         "step3": {
           "title": "Gaukite pradinį paskolos pasiūlymą",
@@ -1174,14 +1182,14 @@
         "step4": {
           "title": "Pateikite dokumentus",
           "subTitle": "Kadangi sutariame dėl pradinių sąlygų, prašome pateikti mums:",
-          "bulletBlock": [
-            "Prašymas įstoti į Kredito uniją",
-            "Įmonės registracijos pažymėjimą",
-            "Steigėjų sutartis ir įstatai",
-            "Įmonės steigimo sutartį ir įstatus",
-            "Vadovo paskyrimo dokumentą",
-            "Turto vertinimo ataskaitas"
-          ]
+          "bulletBlock": {
+            "bulet1":"Prašymas įstoti į Kredito uniją",
+            "bulet2":"Įmonės registracijos pažymėjimą",
+            "bulet3":"Steigėjų sutartis ir įstatai",
+            "bulet4":"Įmonės steigimo sutartį ir įstatus",
+            "bulet5":"Vadovo paskyrimo dokumentą",
+            "bulet6":"Turto vertinimo ataskaitas"
+          }
         },
         "step5": {
           "title": "Gaukite galutinį sprendimą dėl kredito ir pasirašykite sutartį",
@@ -1246,7 +1254,8 @@
         },
         "step2": {
           "title": "Identifikuokite save",
-          "description": "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
+          "description": "Savo tapatybę galite patvirtinti atvykę į mūsų biurą ",
+          "restOfDescription": " arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento."
         },
         "step3": {
           "title": "Gaukite pradinį paskolos pasiūlymą",
@@ -1255,14 +1264,14 @@
         "step4": {
           "title": "Pateikite dokumentus",
           "subTitle": "Kadangi sutariame dėl pradinių sąlygų, prašome pateikti mums:",
-          "bulletBlock": [
-            "Prašymas įstoti į Kredito uniją",
-            "Įmonės registracijos pažymėjimą",
-            "Steigėjų sutartis ir įstatai",
-            "Įmonės steigimo sutartį ir įstatus",
-            "Vadovo paskyrimo dokumentą",
-            "Turto vertinimo ataskaitas"
-          ]
+          "bulletBlock": {
+            "bulet1":"Prašymas įstoti į Kredito uniją",
+            "bulet2":"Įmonės registracijos pažymėjimą",
+            "bulet3":"Steigėjų sutartis ir įstatai",
+            "bulet4":"Įmonės steigimo sutartį ir įstatus",
+            "bulet5":"Vadovo paskyrimo dokumentą",
+            "bulet6":"Turto vertinimo ataskaitas"
+          }
         },
         "step5": {
           "title": "Gaukite galutinį sprendimą dėl kredito ir pasirašykite sutartį",
