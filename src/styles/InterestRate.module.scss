@@ -23,7 +23,6 @@
 }
 
 .ratesContainer {
-  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,5 +65,15 @@
 
   &:last-child {
     border-bottom: solid 1px var(--table-border-color);
+  }
+}
+
+@media (max-width: 640px) {
+  .column1 {
+    width: 127px;
+  }
+
+  .column2 {
+    width: 205px;
   }
 }

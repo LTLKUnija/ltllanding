@@ -167,6 +167,13 @@
   .esgHeroPage {
     max-width: 1200px;
   }
+  .esgHeroItem {
+    max-width: 430px;
+  }
+
+  .description {
+    max-width: 430px;
+  }
 
   .esgPageList {
     max-width: 1200px;
@@ -178,10 +185,6 @@
   .esgHeroPage {
     background-image: none;
     padding: 66px 20px 78px 20px;
-
-    .esgHeroItem {
-      max-width: 100%;
-    }
 
     .esgPageList {
       padding-left: 0;

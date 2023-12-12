@@ -15,13 +15,13 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
-import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
+import { getDepositFAQ } from "@/store/faqList/faqList.slice";
 import InterestRate from "@/components/InterestRate";
 
 export default function Deposit() {
   const router = useRouter();
   const { t } = useTranslation("common");
-  const faqData = useSelector(getLoanForPrivatesState);
+  const faqData = useSelector(getDepositFAQ);
 
   const handleBack = () => {
     router.back();

@@ -138,7 +138,7 @@ export default {
     transferRate: "Žiūrėti tarptautinių mokėjimų pavedimo įkainius.",
     openAccount: "Atsidaryti sąskaitą",
   },
-  
+
   aboutUs: {
     heroBlock: {
       title: "Apie mus",
@@ -523,32 +523,26 @@ export default {
     stepProcess: {
       title: "Terminuoto indėlio sąskaitos atidarymo procesas",
       step1: {
-        title: "Užpildykite sąskaitos atidarymo formą",
-        description: "Užpildykite paraišką",
+        title: "Atvykite į LTL Kredito uniją",
+        description: "Mus rasite adresu Sporto g. 18 LT-09238 Vilnius.",
       },
       step2: {
-        title: "Identifikuokite save",
-        description:
-          "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento.",
-      },
-      step3: {
         title: "Pateikite dokumentus",
         subTitle: "Prašome atsiųsti mums:",
         bulletBlock: [
-          "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          "Prašymas įstoti į kredito uniją",
-          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)",
+          "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
+          "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje",
         ],
       },
-      step4: {
+      step3: {
         title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
         description:
           "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis.",
       },
-      step5: {
+      step4: {
         title: "Valdykite savo terminuoto indėlio sąskaitą",
         description:
-          "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia.",
+          "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į skiltį „Kontaktai“). Iš anksto registruotis nereikia.",
       },
     },
     calcBlock: {
@@ -637,34 +631,28 @@ export default {
       },
     },
     stepProcess: {
-      blockTitle: "Žingsniai",
+      blockTitle: "Einamosios sąskaitos atidarymo procesas",
       step1: {
-        title: "Užpildykite sąskaitos atidarymo formą",
-        description: "Užpildykite paraišką",
+        title: "Atvykite į LTL Kredito uniją",
+        description: "Mus rasite adresu Sporto g. 18 LT-09238 Vilnius.",
       },
       step2: {
-        title: "Identifikuokite save",
-        description:
-          "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento.",
-      },
-      step3: {
         title: "Pateikite dokumentus",
-        subTitle: "Prašome atsiųsti mums:",
+        subTitle: "Su savimi turėkite:",
         bulletBlock: [
-          "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          "Prašymas įstoti į kredito uniją",
-          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)",
+          "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
+          "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje",
         ],
       },
-      step4: {
+      step3: {
         title: "Pasirašykite banko sąskaitos sutartį",
         description:
-          "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti sąskaitos sutartį ir susipažinti su bendrosiomis sąskaitos naudojimo sąlygomis.",
+          "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos sutartį bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis.",
       },
-      step5: {
-        title: "Pradėkite naudotis mūsų mokėjimo paslaugomis",
+      step4: {
+        title: "Valdykite savo einamąją sąskaitą",
         description:
-          "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei taikoma) ir kt.",
+          "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti sąskaitą bei atlikti mokėjimus ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į skiltį „Kontaktai“). Iš anksto registruotis nereikia.",
       },
     },
     clientSuport: {
@@ -718,34 +706,32 @@ export default {
       },
     },
     stepProcess: {
-      title: "Paskolos paraiškos pateikimo tvarka",
+      title: "Paskolos paraiškos teikimo procesas:",
       step1: {
-        title: "Užpildykite sąskaitos atidarymo formą",
-        description: "Užpildykite paraišką",
+        title:
+          "Norint gauti paskolą, pirmiausiai reikia tapti kredito unijos nariu",
+        description:
+          "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti).",
       },
       step2: {
-        title: "Identifikuokite save",
+        title: "Užpildykite paraišką paskolai gauti",
         description:
-          "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento.",
+          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15 000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka.",
       },
       step3: {
         title: "Pateikite dokumentus",
-        subTitle: "Prašome atsiųsti mums:",
         bulletBlock: [
-          "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          "Prašymas įstoti į kredito uniją",
-          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)",
+          "Užpildytą paraišką paskolai",
+          "Užpildytą laidavimo paraišką",
+          "Sutikimą dėl asmens duomenų tvarkymo",
+          "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus",
         ],
       },
       step4: {
-        title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
+        title: "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",
         description:
-          "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis.",
-      },
-      step5: {
-        title: "Valdykite savo terminuoto indėlio sąskaitą",
-        description:
-          "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure (nuoroda į adresą), iš anksto registruotis nereikia.",
+          "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. Unija, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre.",
       },
     },
     clientSuport: {
@@ -836,42 +822,30 @@ export default {
     stepProcess: {
       title: "Paskolos paraiškos teikimo procesas:",
       step1: {
-        title: "Užpildykite paskolos paraiškos formą ir duokite sutikimą.",
+        title:
+          "Norint gauti paskolą, pirmiausiai reikia tapti kredito unijos nariu",
         description:
-          "Užpildykite paraišką ir pasirašykite sutikimą, kad galėtume atlikti pirminį vertinimą.",
+          "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti).",
       },
       step2: {
-        title: "Prisistatykite ir duokite sutikimą",
+        title: "Užpildykite paraišką paskolai gauti",
         description:
-          "Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodamiesi internetine priemone (nuoroda į išorės paslaugų teikėją). Jums reikės galiojančio asmens tapatybę patvirtinančio dokumento.",
+          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15 000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka.",
       },
       step3: {
-        title: "Gaukite pradinį paskolos pasiūlymą",
-        description: "Pirminį pasiūlymą pateiksime per 24 valandas.",
-      },
-      step4: {
-        title: "Pateikti dokumentus",
-        subTitle: "Kadangi susitarėme dėl pradinių sąlygų, atsiųskite mums:",
+        title: "Pateikite dokumentus",
         bulletBlock: [
-          "Paso, asmens tapatybės kortelės arba leidimo gyventi kopija",
-          "Prašymas įstoti į sąjungą",
-          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar mokotės Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei Jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijų sutartis).",
+          "Užpildytą paraišką paskolai",
+          "Užpildytą laidavimo paraišką",
+          "Sutikimą dėl asmens duomenų tvarkymo",
+          "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus",
         ],
       },
-      step5: {
-        title: "Gaukite galutinį sprendimą dėl kredito ir pasirašykite sutartį",
+      step4: {
+        title: "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",
         description:
-          "Kai bus priimtas sprendimas išduoti kreditą, pakviesime jus pasirašyti sąskaitos sutartį ir kitas atitinkamas sąlygas.",
-      },
-      step6: {
-        title: "Pasirašykite įkeitimo sutartį notaro biure.",
-        description:
-          "Suplanuosime susitikimą pas notarą abiem pusėms patogiu laiku, kad užbaigtume hipotekos susitarimus.",
-      },
-      step7: {
-        title: "Paskolos išmokėjimas",
-        description:
-          "Kredito lėšos bus išmokėtos per vieną darbo dieną nuo įkeitimo pabaigos.",
+          "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. Unija, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre.",
       },
     },
   },
@@ -920,41 +894,30 @@ export default {
     stepProcess: {
       title: "Paskolos paraiškos teikimo procesas:",
       step1: {
-        title: "Užpildykite sąskaitos atidarymo formą",
-        description: "Užpildykite paraišką",
+        title:
+          "Norint gauti paskolą, pirmiausiai reikia tapti kredito unijos nariu",
+        description:
+          "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti).",
       },
       step2: {
-        title: "Identifikuokite save",
+        title: "Užpildykite paraišką paskolai gauti",
         description:
-          " Savo tapatybę galite patvirtinti atvykę į mūsų biurą (nuoroda į adresą) arba naudodami internetinį įrankį (nuoroda į išorinį paslaugų teikėją). Jums reikės galiojančio asmens dokumento.",
+          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15 000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka.",
       },
       step3: {
-        title: "Gaukite pradinį paskolos pasiūlymą",
-        description: "Pirminį pasiūlymą pateiksime per 24 valandas.",
-      },
-      step4: {
         title: "Pateikite dokumentus",
-        subTitle: "Prašome atsiųsti mums:",
         bulletBlock: [
-          "Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-          "Prašymas įstoti į kredito uniją",
-          "Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)",
+          "Užpildytą paraišką paskolai",
+          "Užpildytą laidavimo paraišką",
+          "Sutikimą dėl asmens duomenų tvarkymo",
+          "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus",
         ],
       },
-      step5: {
-        title: "Gaukite galutinį sprendimą dėl kredito ir pasirašykite sutartį",
+      step4: {
+        title: "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",
         description:
-          "Kai bus priimtas sprendimas išduoti kreditą, pakviesime jus pasirašyti sąskaitos sutartį ir kitas atitinkamas sąlygas.",
-      },
-      step6: {
-        title: "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-        description:
-          "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis.",
-      },
-      step7: {
-        title: "Paskolos išmokėjimas",
-        description:
-          "Kredito lėšos bus išmokėtos per vieną darbo dieną nuo įkeitimo pabaigos.",
+          "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. Unija, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre.",
       },
     },
     clientSuport: {
