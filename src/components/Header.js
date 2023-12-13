@@ -10,12 +10,14 @@ import { annualReportsActions } from "../store/annualReports/annualReports.slice
 import { quarterReportsActions } from "@/store/quarterReports/quarterReports.slice";
 import { priceListActions } from "@/store/priceList/priceList.slice";
 import { faqListActions } from "@/store/faqList/faqList.slice";
+import { factsheetsActions } from "@/store/factsheets/factsheets.slice";
 import {
   getNewsList,
   getAnnualReports,
   getQuarterlReports,
   getPriceList,
   getFaqList,
+  getFactsheets,
 } from "@/common/dataGetters";
 
 function Header() {
@@ -66,6 +68,9 @@ function Header() {
     faqList.forEach((faqItem) =>
       dispatch(faqListActions[`set${faqItem.id}`](faqItem))
     );
+
+    const factsheets = await getFactsheets();
+    dispatch(factsheetsActions.setFactsheets(factsheets));
   };
 
   useEffect(() => {
