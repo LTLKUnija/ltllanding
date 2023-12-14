@@ -117,15 +117,7 @@ export default function Deposit() {
                   {t("termDeposit.heroBlock.title")}
                 </h1>
                 <div className={styles.description}>
-                  <p>
-                    {t("termDeposit.heroBlock.description")}
-                    <Link
-                      className="readMoreLink"
-                      href="https://www.iidraudimas.lt/lt/indeliu-draudimas/duk-4/"
-                    >
-                      {t("termDeposit.learnMore")} &#x3e;
-                    </Link>
-                  </p>
+                  <p>{t("termDeposit.heroBlock.description")}</p>
                   <ul>
                     <li>{t("termDeposit.heroBlock.bullet1")}</li>
                     <li>{t("termDeposit.heroBlock.bullet2")}</li>

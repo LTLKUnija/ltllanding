@@ -17,6 +17,7 @@
       font-weight: 700;
       line-height: 38px;
       margin-bottom: 35px;
+      text-align: left;
     }
   }
 
@@ -84,6 +85,7 @@
       font-weight: 700;
       line-height: 25px;
       margin-bottom: 34px;
+      text-align: left;
     }
 
     .benefitsDescription {
@@ -113,54 +115,6 @@
       font-weight: 700;
       text-align: center;
       margin-bottom: 54px;
-    }
-
-    .stepsItem {
-      display: flex;
-      gap: 60px;
-      margin-bottom: 49px;
-
-      li {
-        list-style-position: outside;
-        margin-left: 20px;
-      }
-
-      .stepsNumber {
-        background-color: var(--theme-color1);
-        color: var(--white-text-color);
-        font-size: 23px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 51px;
-        height: 51px;
-      }
-
-      .stepsText {
-        display: flex;
-        flex-direction: column;
-
-        .stepsTitle {
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 25px;
-          margin-bottom: 20px;
-        }
-
-        p {
-          font-size: 17px;
-          font-weight: 300;
-          line-height: 22px;
-        }
-
-        .stepsDescription {
-          font-size: 17px;
-          font-weight: 300;
-          line-height: 21px;
-          max-width: 624px;
-        }
-      }
     }
   }
 }

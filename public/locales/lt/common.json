@@ -424,8 +424,8 @@
   },
   "termDeposit": {
     "heroBlock": {
-      "title": "Nebereikia būti dideliam, kad susikrautumėte turtus. Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas",
-      "description": "Gaukite geriausias palūkanų normas rinkoje Jūsų indėliai yra apsaugoti indėlių draudimu. ",
+      "title": "Nebereikia būti dideliam, kad susikrautumėte turtus",
+      "description": "Gaukite geriausias palūkanų normas rinkoje. Jūsų indėliai yra apsaugoti indėlių draudimu. ",
       "bullet1": "Patrauklus lojalumo atlygis ir nauda",
       "bullet2": "Gaukite individualius pasiūlymus",
       "bullet3": "Indėlių terminas nuo 3 iki 60 mėnesių",
@@ -447,7 +447,7 @@
       },
       "article2": {
         "title": "Indėlių apsauga",
-        "description": "Galite drąsiai deponuoti lėšas, žinodami, jog jos yra apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo sąlygomis."
+        "description": "Galite drąsiai deponuoti lėšas, žinodami, jog jos yra apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo "
       },
       "article3": {
         "title": "Lojalumo atlygis",
@@ -469,7 +469,7 @@
       },
       "step2": {
         "title": "Pateikite dokumentus",
-        "subTitle": "Su savimi turėkite:",
+        "subTitle": "Su savimi turėkite:\n",
         "bulletBlock": {
           "bulet1": "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
           "bulet2": "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
@@ -495,12 +495,12 @@
       "button": "Pateikti indėlio paraišką"
     },
     "clientSuport": {
-      "title": "Pagalba klientams",
+      "title": "Klientų aptarnavimas",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K.",
     "learnMore" : "Sužinokite daugiau",
-    "link" : "(nuoroda)"
+    "link" : "sąlygomis."
   },
   "openBanking": {
     "pageTitle": "Atviroji bankininkystė",
@@ -593,7 +593,7 @@
       }
     },
     "clientSuport": {
-      "title": "Pagalba klientams",
+      "title": "Klientų aptarnavimas",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K."
@@ -614,7 +614,7 @@
       "benefits": "Privalumai",
       "process": "Procesas",
       "priceList": "Kainoraštis",
-      "clientSuport": "Klientų palaikymas",
+      "clientSuport": "Klientų aptarnavimas",
       "faq": "D.U.K."
     },
     "benefitsArticle": {
@@ -665,7 +665,7 @@
       }
     },
     "clientSuport": {
-      "title": "Pagalba klientams",
+      "title": "Klientų aptarnavimas",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K."
@@ -710,7 +710,7 @@
   "mortgageLoan": {
     "heroBlock": {
       "title": "Nebereikia būti dideliam, kad gautumėte paskolą",
-      "description": "Gaukite tuos pačius puikius būsto paskolos sprendimus, kaip ir dideli vaikinai, be vargo! Mūsų būsto paskola skirta suteikti visiems vienodas galimybes įsigyti būstą, nepaisant jų pajamų dydžio. Dėl konkurencingų palūkanų normų ir lanksčių grąžinimo galimybių nėra geresnio pasirinkimo jūsų individualiems poreikiams patenkinti.",
+      "description": "Gaukite tuos pačius puikius būsto paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
       "bullet1": "Padedame finansuoti iki 85% jūsų svajonių būsto vertės",
       "bullet2": "Gaukite pradinį pasiūlymą per 24 valandas",
       "bullet3": "Jei reikia, atidėkite paskolos grąžinimą nemokamai",
@@ -721,7 +721,7 @@
       "benefits": "Privalumai",
       "process": "Procesas",
       "priceList": "Kainoraštis",
-      "clientSuport": "Klientų palaikymas",
+      "clientSuport": "Klientų aptarnavimas",
       "faq": "D.U.K."
     },
     "articleBlock": {
@@ -787,7 +787,7 @@
       "benefits": "Privalumai",
       "process": "Procesas",
       "priceList": "Kainoraštis",
-      "clientSuport": "Klientų palaikymas",
+      "clientSuport": "Klientų aptarnavimas",
       "faq": "D.U.K."
     },
     "benefitsArticle": {
@@ -838,7 +838,7 @@
       }
     },
     "clientSuport": {
-      "title": "Pagalba klientams",
+      "title": "Klientų aptarnavimas",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K."
@@ -922,10 +922,11 @@
   },
   "contacts": {
     "heroBlock": {
-      "contactsTitle": "Kontaktai",
+      "contactsTitle": "Direktorius",
+      "directorName" : "Ruslanas Telnovas",
       "adress": "Sporto g. 18 LT-09238 Vilnius Telefonas: +370 5 205 5240 El. paštas: info@ltlku.lt",
-      "companyDetails": "Įmonės rekvizitai",
-      "companyDetailsDescription": "LTL Kredito unija Įmonės kodas: 302791356"
+      "companyDetails": "LTL Kredito Unija",
+      "companyDetailsDescription": "Sporto g. 18, LT-09238, Vilnius Įmonės kodas: 302791356"
     },
     "articleBlock": {
       "title": "Klientų aptarnavimas būstinėje",
@@ -935,7 +936,7 @@
     }
   },
   "contactForm": {
-    "title": "Mums svarbi Jūsų nuomonė",
+    "title": "Susisiekite",
     "description": "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms.",
     "topicPlaceholder": "Tema",
     "feedbackPlaceholder": "Atsiliepimas",
@@ -965,7 +966,7 @@
         "benefits": "Privalumai",
         "calculator": "Skaičiuoklė",
         "process": "Procesas",
-        "clientSuport": "Klientų palaikymas",
+        "clientSuport": "Klientų aptarnavimas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
@@ -1027,7 +1028,7 @@
         "button": "Pateikti indėlio paraišką"
       },
       "clientSuport": {
-        "title": "Pagalba klientams",
+        "title": "Klientų aptarnavimas",
         "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
       },
       "faq": "D.U.K."
@@ -1045,7 +1046,7 @@
         "process": "Procesas",
         "afterYouOpened": "Jums atidarius",
         "priceList": "Kainoraštis",
-        "clientSuport": "Klientų palaikymas",
+        "clientSuport": "Klientų aptarnavimas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
@@ -1143,7 +1144,7 @@
         "benefits": "Privalumai",
         "process": "Procesas",
         "priceList": "Kainoraštis",
-        "clientSuport": "Klientų palaikymas",
+        "clientSuport": "Klientų aptarnavimas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
@@ -1205,7 +1206,7 @@
         }
       },
       "clientSuport": {
-        "title": "Pagalba klientams",
+        "title": "Klientų aptarnavimas",
         "description": "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
       },
       "faq": "D.U.K."
@@ -1225,7 +1226,7 @@
         "benefits": "Privalumai",
         "process": "Procesas",
         "priceList": "Kainoraštis",
-        "clientSuport": "Klientų palaikymas",
+        "clientSuport": "Klientų aptarnavimas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
@@ -1287,7 +1288,7 @@
         }
       },
       "clientSuport": {
-        "title": "Pagalba klientams",
+        "title": "Klientų aptarnavimas",
         "description": "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
       },
       "faq": "D.U.K."

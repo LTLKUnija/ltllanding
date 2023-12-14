@@ -435,7 +435,7 @@
       },
       "article2": {
         "title": "Deposit insurance",
-        "description": "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and conditions."
+        "description": "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and "
       },
       "article3": {
         "title": "Loyalty rewards and benefits",
@@ -490,7 +490,7 @@
     },
     "faq": "F.A.Q.",
     "learnMore" : "Learn more",
-    "link" : "(link)"
+    "link" : "conditions."
   },
   "openBanking": {
     "pageTitle": "Open banking",
@@ -772,7 +772,7 @@
   "mortgageLoan": {
     "heroBlock": {
       "title": "You don‘t have to be big to get a loan",
-      "description": "Get the same great loan options as the big guys, without the hassle! Our mortgage loan product is designed to give everyone an equal chance at homeownership, regardless of their size. With competitive rates and flexible repayment options, there's no better choice for your mortgage needs.",
+      "description": "Get the same great loan options as the big guys, without the hassle!",
       "bullet1": "We can help finance up to 85% of the value of your dream home",
       "bullet2": "Get your initial offer within 24 hours",
       "bullet3": "Postpone loan repayment for free if needed",
@@ -899,7 +899,7 @@
       },
       "article2": {
         "title": "Resolution of Disputes",
-        "description": "If, after our mutual discussion, you still believe that the right balance of interests has not been reached and we have violated your rights or legitimate interests, we recommend that you contact the Bank of Lithuania, which deals with disputes between consumers and financial market participants arising from the provision of financial services. You can find more detailed information by clicking on this link: https://www.lb.lt/en/sfi-disputes-between-consumers-and-financial-market-participants"
+        "description": "If, after our mutual discussion, you still believe that the right balance of interests has not been reached and we have violated your rights or legitimate interests, we recommend that you contact the Bank of Lithuania, which deals with disputes between consumers and financial market participants arising from the provision of financial services. You can find more detailed information by clicking on this link: "
       }
     },
     "readMore": "Read more",
@@ -915,10 +915,11 @@
   },
   "contacts": {
     "heroBlock": {
-      "contactsTitle": "Contacts",
-      "adress": "Sporto g. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
-      "companyDetails": "Company details",
-      "companyDetailsDescription": "TL Credit Union Company code: 302791356"
+      "contactsTitle": "Director",
+      "directorName" : "Ruslanas Telnovas",
+      "adress": "Sporto st. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
+      "companyDetails": "LTL Credit Union",
+      "companyDetailsDescription": " Sporto Street 18, LT-09238, Vilnius Company Code: 302791356"
     },
     "articleBlock": {
       "title": "Customer service at headquarters",
@@ -928,13 +929,14 @@
     }
   },
   "contactForm": {
-    "title": "Your opinion is important to us",
+    "title": "Contact",
     "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities.",
     "topicPlaceholder": "Topic",
     "feedbackPlaceholder": "Feedback",
     "namePlaceholder": "Name",
     "emailPlaceholder": "E-mail address",
     "button": "Send"
+
   },
   "news": {
     "title": "News",

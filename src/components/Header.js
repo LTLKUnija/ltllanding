@@ -120,6 +120,63 @@ function Header() {
               {t("headerNavLinks.deposit")}
             </Link>
           )}
+
+          <div
+            className="navigation-parent-link-credit header-nav-link"
+            onMouseEnter={() => {
+              toggleSubMenu("open");
+            }}
+            onMouseLeave={() => {
+              toggleSubMenu("close");
+            }}
+          >
+            {t("headerNavLinks.credit")}
+            {creditSubMenu && (
+              <div className="dropDownMenu">
+                <div className="toggleSubMenu">
+                  {isBusiness ? (
+                    <Link
+                      className="header-nav-link"
+                      href="/business/investment-loan"
+                    >
+                      {t("headerNavLinks.investmentLoan")}
+                    </Link>
+                  ) : (
+                    <Link className="header-nav-link" href="/credits/mortgage">
+                      {t("headerNavLinks.mortgageLoan")}
+                    </Link>
+                  )}
+                </div>
+                {!isBusiness && (
+                  <div className="toggleSubMenu">
+                    <Link
+                      className="header-nav-link"
+                      href="/credits/equity-loan"
+                    >
+                      {t("headerNavLinks.equityLoan")}
+                    </Link>
+                  </div>
+                )}
+                <div className="toggleSubMenu">
+                  {isBusiness ? (
+                    <Link
+                      className="header-nav-link"
+                      href="/business/capital-loan"
+                    >
+                      {t("headerNavLinks.capitalLoan")}
+                    </Link>
+                  ) : (
+                    <Link
+                      className="header-nav-link"
+                      href="/credits/consumer-loan"
+                    >
+                      {t("headerNavLinks.consumerLoan")}
+                    </Link>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
           <div
             className="navigation-parent-link header-nav-link "
             onMouseEnter={() => {
@@ -155,62 +212,6 @@ function Header() {
                   ) : (
                     <Link className="header-nav-link" href="/payments">
                       {t("headerNavLinks.payments")}
-                    </Link>
-                  )}
-                </div>
-              </div>
-            )}
-          </div>
-          <div
-            className="navigation-parent-link-credit header-nav-link"
-            onMouseEnter={() => {
-              toggleSubMenu("open");
-            }}
-            onMouseLeave={() => {
-              toggleSubMenu("close");
-            }}
-          >
-            {t("headerNavLinks.credit")}
-            {creditSubMenu && (
-              <div className="dropDownMenu">
-                <div className="toggleSubMenu">
-                  {isBusiness ? (
-                    <Link
-                      className="header-nav-link"
-                      href="/business/investment-loan"
-                    >
-                      {t("headerNavLinks.investmentLoan")}
-                    </Link>
-                  ) : (
-                    <Link className="header-nav-link" href="/credits/mortgage">
-                      {t("headerNavLinks.mortgageLoan")}
-                    </Link>
-                  )}
-                </div>
-                {!isBusiness && (
-                  <div className="toggleSubMenu">
-                    <Link
-                      className="header-nav-link"
-                      href="/credits/consumer-loan"
-                    >
-                      {t("headerNavLinks.consumerLoan")}
-                    </Link>
-                  </div>
-                )}
-                <div className="toggleSubMenu">
-                  {isBusiness ? (
-                    <Link
-                      className="header-nav-link"
-                      href="/business/capital-loan"
-                    >
-                      {t("headerNavLinks.capitalLoan")}
-                    </Link>
-                  ) : (
-                    <Link
-                      className="header-nav-link"
-                      href="/credits/equity-loan"
-                    >
-                      {t("headerNavLinks.equityLoan")}
                     </Link>
                   )}
                 </div>

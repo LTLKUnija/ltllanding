@@ -18,9 +18,9 @@ export default function ClientSupport() {
             <a href="tel:+370 5 205 5241">+370 5 205 5241</a>
           </span>
           {t.clientSuport.or}
-          <p>
+          <span>
             <Link href="mailto:pagalba@ltlku.lt">pagalba@ltlku.lt</Link>
-          </p>
+          </span>
         </div>
       </div>
     </section>
