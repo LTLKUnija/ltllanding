@@ -124,7 +124,7 @@
   }
 
   .quarterItem {
-    width: 150px;
+    width: 170px;
     margin-right: 40px;
 
     &:last-child {
@@ -142,7 +142,7 @@
       a {
         text-decoration: none;
         color: var(--light-color);
-        word-break: break-word;
+        word-break: break-all;
       }
     }
 

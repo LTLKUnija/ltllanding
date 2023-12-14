@@ -4,6 +4,7 @@ import { reducer as annualReportsReducer } from "./annualReports/annualReports.s
 import { reducer as quarterReportsReducer } from "./quarterReports/quarterReports.slice";
 import { reducer as priceListReducer } from "./priceList/priceList.slice";
 import { reducer as faqListReducer } from "./faqList/faqList.slice";
+import { reducer as factsheetsReducer } from "./factsheets/factsheets.slice";
 
 const reducers = combineReducers({
   news: newsReducer,
@@ -11,6 +12,7 @@ const reducers = combineReducers({
   quarterReports: quarterReportsReducer,
   priceList: priceListReducer,
   faqList: faqListReducer,
+  factsheets: factsheetsReducer,
 });
 
 export const store = configureStore({
