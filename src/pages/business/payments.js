@@ -65,7 +65,7 @@ export default function Payments() {
                       "business.payments.benefitsArticle.article1.restDescription"
                     )}
 
-                    <ul>
+                    <ul className="liMarker">
                       <li>
                         {t(
                           "business.payments.benefitsArticle.article1.bullet1"

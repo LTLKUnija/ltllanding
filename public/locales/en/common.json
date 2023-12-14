@@ -432,6 +432,7 @@
       "article1": {
         "title": "Term deposit",
         "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest rates."
+        
       },
       "article2": {
         "title": "Deposit insurance",
@@ -910,7 +911,8 @@
     "articleBlock": {
       "article1": "Our commitment lies in the fight against financial crime and terrorist financing (AML/CTF) activities, as well as the enforcement of international sanctions. To tackle these concerns, we have implemented an internal policy focused on AML/CTF and sanctions. This policy aims to prevent any misuse of our products and services, such as money laundering, terrorist financing, or sanctions evasion. It serves as a foundation for establishing clear procedures and instructions in the AML/CTF and sanctions area, which our employees must follow in their day-to-day activities.",
       "article2": "Our objective is to identify, assess, and understand the financial crime risks we encounter and implement appropriate control measures in line with those risks. Whether it pertains to individual customers or our overall business processes, we strive to determine the suitable risk level for each scenario. We acknowledge that effectively addressing AML/CTF and sanctions issues may require additional time and effort from our customers and partners. To ensure a smooth and efficient process, we have embraced a risk-based approach that allows for tailored actions based on individual risk profiles.",
-      "article3": "As part of our customer acceptance process, we have defined our risk appetite as a crucial element. This entails setting the boundaries for the risks we are willing to accept. Please take a moment to review our provided Risk Appetite Statement (link) below."
+      "article3": "As part of our customer acceptance process, we have defined our risk appetite as a crucial element. This entails setting the boundaries for the risks we are willing to accept. Please take a moment to review our provided Risk Appetite Statement ",
+      "link": "below."
     }
   },
   "contacts": {
@@ -966,11 +968,13 @@
       "benefitsArticle": {
         "article1": {
           "title": "Term deposit",
-          "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest rates."
+          "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest ",
+          "link": " rates."
         },
         "article2": {
           "title": "Deposit insurance",
-          "description": "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and conditions."
+          "description": "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and ",
+          "link": " conditions."
         },
         "article3": {
           "title": "Loyalty rewards and benefits",

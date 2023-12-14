@@ -5,6 +5,7 @@ import Gmap from "@/components/Gmap";
 import { useJsApiLoader } from "@react-google-maps/api";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Link from "next/link";
 
 export default function Contacts() {
   const { t } = useTranslation("common");
@@ -31,9 +32,24 @@ export default function Contacts() {
               </h3>
               <div className={styles.contactsPageDescription}>
                 <p>{t("contacts.heroBlock.directorName")}</p>
-                <p>ruslanas.telnovas@ltlku.lt</p>
-                <p>+370 5 205 5240</p>
-                <p>+370 5 205 5241</p>
+                <p>
+                  <Link
+                    href="mailto:ruslanas.telnovas@ltlku.lt"
+                    className="readMoreLink"
+                  >
+                    ruslanas.telnovas@ltlku.lt
+                  </Link>
+                </p>
+                <p>
+                  <Link href="tel:+370 5 205 5240" className="readMoreLink">
+                    +370 5 205 5240
+                  </Link>
+                </p>
+                <p>
+                  <Link href="tel:+370 5 205 5241" className="readMoreLink">
+                    +370 5 205 5241
+                  </Link>
+                </p>
               </div>
             </div>
             <div className={styles.contactsHeroItem}>
@@ -42,8 +58,16 @@ export default function Contacts() {
               </h3>
               <div className={styles.contactsPageDescription}>
                 <p>{t("contacts.heroBlock.companyDetailsDescription")}</p>
-                <p>+370 5 205 5240</p>
-                <p>info@ltlku.lt</p>
+                <p>
+                  <Link href="tel:+370 5 205 5240" className="readMoreLink">
+                    +370 5 205 5240
+                  </Link>
+                </p>
+                <p>
+                  <Link href="mailto:info@ltlku.lt" className="readMoreLink">
+                    info@ltlku.lt
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

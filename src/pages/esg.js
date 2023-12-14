@@ -74,11 +74,6 @@ export default function Esg() {
               <p className={styles.description}>
                 {t("esg.articleBlock.article1.text")}
               </p>
-              <div className="actionButtonBlock">
-                <Link href="/" className="outlinedBtn">
-                  {t("esg.learnMoreButton")}
-                </Link>
-              </div>
             </div>
           </div>
           <div
@@ -97,11 +92,6 @@ export default function Esg() {
               <p className={styles.description}>
                 {t("esg.articleBlock.article2.text")}
               </p>
-              <div className="actionButtonBlock">
-                <Link href="/" className="outlinedBtn">
-                  {t("esg.learnMoreButton")}
-                </Link>
-              </div>
             </div>
             <Image
               src={Img2}
@@ -128,11 +118,6 @@ export default function Esg() {
               <p className={styles.description}>
                 {t("esg.articleBlock.article3.text")}
               </p>
-              <div className="actionButtonBlock">
-                <Link href="/" className="outlinedBtn">
-                  {t("esg.learnMoreButton")}
-                </Link>
-              </div>
             </div>
           </div>
         </section>
