@@ -8,28 +8,13 @@ import { finacialReportingInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { factsheetsData } from "@/common/factsheetsLinks";
 import { presentationsLinksData } from "@/common/presentationsLinks";
+import { FactSheetsData } from "@/components/FactSheetsData";
 export default function FinancialReporting() {
   const { t } = useTranslation("common");
 
-  const [factSheetList, setFactSheetList] = useState([]);
-  const [activeFactSheetList, setActiveFactSheetList] = useState([]);
   const [presentationsList, setPresentationsList] = useState([]);
   const [activePresentationsList, setActivePresentationsList] = useState([]);
-
-  function factsheetTabHandler(e) {
-    let idx = factSheetList.findIndex(
-      (year) => year.uid == e.target.dataset.id
-    );
-    let temp = [...factSheetList];
-    temp.forEach((year, index) => {
-      if (idx == index) year.active = true;
-      else year.active = false;
-    });
-    setFactSheetList(temp);
-    setActiveFactSheetList(temp[idx].factsheets);
-  }
 
   function presentationsTabHandler(e) {
     let idx = presentationsList.findIndex(
@@ -45,17 +30,11 @@ export default function FinancialReporting() {
   }
 
   useEffect(() => {
-    const getFactsheetsList = async () => {
-      setFactSheetList(factsheetsData);
-      setActiveFactSheetList(factsheetsData[0].factsheets);
-    };
-
     const getPresentationsList = async () => {
       setPresentationsList(presentationsLinksData);
       setActivePresentationsList(presentationsLinksData[0].links);
     };
 
-    getFactsheetsList();
     getPresentationsList();
   }, []);
   return (
@@ -81,50 +60,7 @@ export default function FinancialReporting() {
             " "
           )}
         >
-          <div className={styles.ReportsWrapper}>
-            <h3 className={styles.sectionTitle}>
-              {t("finacialReporting.factsheets")}
-            </h3>
-            <div className={[styles.tabsList, styles.center].join(" ")}>
-              {factSheetList.map((tab, idx) => {
-                return (
-                  <div
-                    data-id={tab.uid}
-                    onClick={(e) => {
-                      factsheetTabHandler(e);
-                    }}
-                    key={idx}
-                    className={tab.active ? "active-tnc-tab" : ""}
-                  >
-                    {tab.year}
-                  </div>
-                );
-              })}
-            </div>
-            <div className={styles.quarterList}>
-              {activeFactSheetList.map((quater, idx) => {
-                return (
-                  <div key={idx} className={styles.quarterItem}>
-                    <h4>{quater.quarterName}</h4>
-                    <div className={styles.linkList}>
-                      {quater.quarterLinks.map((link, index) => {
-                        return (
-                          <div className={styles.linksItem} key={index}>
-                            <img
-                              className={styles.iconImg}
-                              src="/assets/images/Pdficon.svg"
-                              alt="Pdf File"
-                            />
-                            <Link href={link.linkUrl}>{link.linkName}</Link>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <FactSheetsData />
         </section>
         <section id="presentations" className={styles.presentationsSection}>
           <div className={styles.presentationsWrapper}>
