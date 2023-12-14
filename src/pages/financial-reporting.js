@@ -60,50 +60,6 @@ export default function FinancialReporting() {
             " "
           )}
         >
-          {/* <div className={styles.ReportsWrapper}>
-            <h3 className={styles.sectionTitle}>
-              {t("finacialReporting.factsheets")}
-            </h3>
-            <div className={[styles.tabsList, styles.center].join(" ")}>
-              {factSheetList.map((tab, idx) => {
-                return (
-                  <div
-                    data-id={tab.uid}
-                    onClick={(e) => {
-                      factsheetTabHandler(e);
-                    }}
-                    key={idx}
-                    className={tab.active ? "active-tnc-tab" : ""}
-                  >
-                    {tab.year}
-                  </div>
-                );
-              })}
-            </div>
-            <div className={styles.quarterList}>
-              {activeFactSheetList.map((quater, idx) => {
-                return (
-                  <div key={idx} className={styles.quarterItem}>
-                    <h4>{quater.quarterName}</h4>
-                    <div className={styles.linkList}>
-                      {quater.quarterLinks.map((link, index) => {
-                        return (
-                          <div className={styles.linksItem} key={index}>
-                            <img
-                              className={styles.iconImg}
-                              src="/assets/images/Pdficon.svg"
-                              alt="Pdf File"
-                            />
-                            <Link href={link.linkUrl}>{link.linkName}</Link>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div> */}
           <FactSheetsData />
         </section>
         <section id="presentations" className={styles.presentationsSection}>

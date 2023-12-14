@@ -14,7 +14,8 @@ export const FactSheetsData = () => {
 
   const [factSheetList, setFactSheetList] = useState([]);
   const [activeFactSheetList, setActiveFactSheetList] = useState([]);
-  function factsheetTabHandler(e) {
+
+  const factsheetTabHandler = (e) => {
     let idx = factSheetList.findIndex(
       (year) => year.uid == e.target.dataset.id
     );
@@ -25,7 +26,7 @@ export const FactSheetsData = () => {
     });
     setFactSheetList(temp);
     setActiveFactSheetList(temp[idx].quarters);
-  }
+  };
 
   useEffect(() => {
     if (factsheetsData.length < 1) return;
