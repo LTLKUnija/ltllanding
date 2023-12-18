@@ -2,7 +2,6 @@ import styles from "@/styles/management.module.scss";
 import Link from "next/link";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Image from "next/image";
-import Img1 from "@../../../public/assets/images/managment_img1.png";
 import Img2 from "@../../../public/assets/images/managment_img2.png";
 import HeroMobile from "../../public/assets/images/managmentPage_heroBlock-mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
@@ -11,7 +10,6 @@ import { aboutUsInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import ModalImage from "react-modal-image";
 
 export default function About() {
   const router = useRouter();
@@ -94,14 +92,6 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
-
-        <section id="jobs" className={styles.jobsSection}>
-          <h3>{t("aboutUs.companyManagementScheme.title")}</h3>
-          <ModalImage
-            small={"/assets/images/112.png"}
-            large={"/assets/images/org_structure.png"}
-          />
         </section>
         <section id="values" className={styles.valuesSection}>
           <div className={styles.valuesWrapper}>

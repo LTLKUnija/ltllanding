@@ -10,13 +10,17 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { presentationsLinksData } from "@/common/presentationsLinks";
 import { FactSheetsData } from "@/components/FactSheetsData";
+import { useRouter } from "next/router";
+import financialCalendarData from "@/common/finacialCalendarData";
+
 export default function FinancialReporting() {
   const { t } = useTranslation("common");
+  const router = useRouter();
 
   const [presentationsList, setPresentationsList] = useState([]);
   const [activePresentationsList, setActivePresentationsList] = useState([]);
 
-  function presentationsTabHandler(e) {
+  const presentationsTabHandler = (e) => {
     let idx = presentationsList.findIndex(
       (year) => year.uid == e.target.dataset.id
     );
@@ -27,7 +31,7 @@ export default function FinancialReporting() {
     });
     setPresentationsList(temp);
     setActivePresentationsList(temp[idx].links);
-  }
+  };
 
   useEffect(() => {
     const getPresentationsList = async () => {
@@ -67,7 +71,9 @@ export default function FinancialReporting() {
             <h3 className={styles.sectionTitle}>
               {t("finacialReporting.presentations")}
             </h3>
-            <ul className={[styles.tabsList, styles.center].join(" ")}>
+            {/* client asked to hide date's, im lieving this for future reference, becus its not final theys desition  */}
+
+            {/* <ul className={[styles.tabsList, styles.center].join(" ")}>
               {presentationsList.map((year, idx) => {
                 return (
                   <li
@@ -82,7 +88,7 @@ export default function FinancialReporting() {
                   </li>
                 );
               })}
-            </ul>
+            </ul> */}
             <div className={styles.reporstBlockList}>
               {activePresentationsList.map((link, idx) => {
                 return (
@@ -109,13 +115,13 @@ export default function FinancialReporting() {
               <div className={styles.contactsInfo}>
                 <h4>{t("finacialReporting.contacts.director")}</h4>
                 <p>Ruslanas Telnovas ruslanas.telnovas@ltlku.lt </p>
-                <p>(8 5) 205 5240</p>
-                <p>(8 5) 205 5241</p>
+                <p>+370 5 205 5240</p>
+                <p>+370 5 205 5241</p>
               </div>
               <div className={styles.contactsInfo}>
                 <h4>{t("finacialReporting.contacts.companyName")}</h4>
                 <p>Sporto g. 18, LT-09238, Vilnius Įmonės kodas 302791356</p>
-                <p>(8 5) 205 5240</p>
+                <p>+370 5 205 5240</p>
                 <p>info@ltlku.lt</p>
               </div>
             </div>
@@ -124,31 +130,15 @@ export default function FinancialReporting() {
         <section id="finacialCalendar" className={styles.calendarSection}>
           <div className={styles.calendarWrapper}>
             <h3>{t("finacialReporting.finacialCalendar.title")}</h3>
-            <p className={styles.calendarDescription}>
-              {t("finacialReporting.finacialCalendar.description")}
-            </p>
             <div className={styles.calendarBlock}>
-              <p className={styles.date}>
-                15.08.2023 <span>Ex-dividend date (ex-date)</span>
-              </p>
-              <p className={styles.date}>
-                15.08.2023 <span>Q1 interim results</span>
-              </p>
-              <p className={styles.date}>
-                15.08.2023 <span>April results</span>
-              </p>
-              <p className={styles.date}>
-                15.08.2023 <span>May results</span>
-              </p>
-              <p className={styles.date}>
-                15.08.2023 <span>Q2 interim results</span>
-              </p>
-              <p className={styles.date}>
-                15.08.2023 <span>July results</span>
-              </p>
-              <p className={styles.date}>
-                15.08.2023 <span>August results</span>
-              </p>
+              {financialCalendarData.map((date, idx) => {
+                return (
+                  <p className={styles.date} key={idx}>
+                    {router.locale == "en" ? date.dateEn : date.date}
+                    <span>{date.event}</span>
+                  </p>
+                );
+              })}
             </div>
           </div>
         </section>

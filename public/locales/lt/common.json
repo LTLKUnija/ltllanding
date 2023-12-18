@@ -424,8 +424,8 @@
   },
   "termDeposit": {
     "heroBlock": {
-      "title": "Nebereikia būti dideliam, kad susikrautumėte turtus. Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas",
-      "description": "Gaukite geriausias palūkanų normas rinkoje Jūsų indėliai yra apsaugoti indėlių draudimu. ",
+      "title": "Nebereikia būti dideliam, kad susikrautumėte turtus",
+      "description": "Gaukite geriausias palūkanų normas rinkoje. Jūsų indėliai yra apsaugoti indėlių draudimu. ",
       "bullet1": "Patrauklus lojalumo atlygis ir nauda",
       "bullet2": "Gaukite individualius pasiūlymus",
       "bullet3": "Indėlių terminas nuo 3 iki 60 mėnesių",
@@ -447,7 +447,7 @@
       },
       "article2": {
         "title": "Indėlių apsauga",
-        "description": "Galite drąsiai deponuoti lėšas, žinodami, jog jos yra apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo sąlygomis."
+        "description": "Galite drąsiai deponuoti lėšas, žinodami, jog jos yra apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo "
       },
       "article3": {
         "title": "Lojalumo atlygis",
@@ -469,7 +469,7 @@
       },
       "step2": {
         "title": "Pateikite dokumentus",
-        "subTitle": "Su savimi turėkite:",
+        "subTitle": "Su savimi turėkite:\n",
         "bulletBlock": {
           "bulet1": "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
           "bulet2": "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
@@ -495,12 +495,12 @@
       "button": "Pateikti indėlio paraišką"
     },
     "clientSuport": {
-      "title": "Pagalba klientams",
+      "title": "Klientų aptarnavimas",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K.",
     "learnMore" : "Sužinokite daugiau",
-    "link" : "(nuoroda)"
+    "link" : "sąlygomis."
   },
   "openBanking": {
     "pageTitle": "Atviroji bankininkystė",
@@ -593,7 +593,7 @@
       }
     },
     "clientSuport": {
-      "title": "Pagalba klientams",
+      "title": "Klientų aptarnavimas",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K."
@@ -614,7 +614,7 @@
       "benefits": "Privalumai",
       "process": "Procesas",
       "priceList": "Kainoraštis",
-      "clientSuport": "Klientų palaikymas",
+      "clientSuport": "Klientų aptarnavimas",
       "faq": "D.U.K."
     },
     "benefitsArticle": {
@@ -665,7 +665,7 @@
       }
     },
     "clientSuport": {
-      "title": "Pagalba klientams",
+      "title": "Klientų aptarnavimas",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K."
@@ -710,7 +710,7 @@
   "mortgageLoan": {
     "heroBlock": {
       "title": "Nebereikia būti dideliam, kad gautumėte paskolą",
-      "description": "Gaukite tuos pačius puikius būsto paskolos sprendimus, kaip ir dideli vaikinai, be vargo! Mūsų būsto paskola skirta suteikti visiems vienodas galimybes įsigyti būstą, nepaisant jų pajamų dydžio. Dėl konkurencingų palūkanų normų ir lanksčių grąžinimo galimybių nėra geresnio pasirinkimo jūsų individualiems poreikiams patenkinti.",
+      "description": "Gaukite tuos pačius puikius būsto paskolos sprendimus, kaip ir dideli vaikinai, be vargo!",
       "bullet1": "Padedame finansuoti iki 85% jūsų svajonių būsto vertės",
       "bullet2": "Gaukite pradinį pasiūlymą per 24 valandas",
       "bullet3": "Jei reikia, atidėkite paskolos grąžinimą nemokamai",
@@ -721,7 +721,7 @@
       "benefits": "Privalumai",
       "process": "Procesas",
       "priceList": "Kainoraštis",
-      "clientSuport": "Klientų palaikymas",
+      "clientSuport": "Klientų aptarnavimas",
       "faq": "D.U.K."
     },
     "articleBlock": {
@@ -787,7 +787,7 @@
       "benefits": "Privalumai",
       "process": "Procesas",
       "priceList": "Kainoraštis",
-      "clientSuport": "Klientų palaikymas",
+      "clientSuport": "Klientų aptarnavimas",
       "faq": "D.U.K."
     },
     "benefitsArticle": {
@@ -838,7 +838,7 @@
       }
     },
     "clientSuport": {
-      "title": "Pagalba klientams",
+      "title": "Klientų aptarnavimas",
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K."
@@ -917,15 +917,17 @@
     "articleBlock": {
       "article1": "Mes esame tvirtai įsipareigoję kovoti su finansiniais nusikaltimais ir teroristų finansavimu (PPTFP), taip pat užtikrinti tarptautinių sankcijų įgyvendinimą. Siekdami išspręsti šias problemas, mes esame apibrėžę bei vykdome vidaus PPTFP politiką, kuri yra orientuotą į efektyvų šių rizikų valdymą. Savo veiksmais siekiame užkirsti kelią bet kokiam piktnaudžiavimui mūsų produktais ir paslaugomis pinigų plovimo, teroristų finansavimo ir/ar sankcijų vengimo tikslais. PPTFP politika yra pagrindas nustatant bei įgyvendinant aiškias procedūras ir instrukcijas PPTFP srityje, kurių mūsų darbuotojai privalo laikytis savo kasdienėje veikloje.",
       "article2": "Mūsų tikslas – nustatyti, įvertinti ir suprasti finansinių nusikaltimų rizikas, su kuriomis susiduriame, ir įgyvendinti atitinkamas kontrolės priemones, atitinkančias prisiimamą riziką. Nesvarbu, ar tai susiję su individualiais klientais, ar bendrais mūsų verslo procesais, kiekvienam scenarijui stengiamės įsivertinti tikrąjį rizikos lygį. Pripažįstame, kad veiksmingai sprendžiant PPTFP problemas, iš mūsų klientų ir partnerių šis procesas galėtų pareikalauti papildomo įsitraukimo, laiko sąnaudų ir pastangų. Todėl, siekdami užtikrinti sklandų ir veiksmingą procesą, taikome rizika pagrįstą metodą, leidžiantį imtis specifinių veiksmų, kurie priklauso nuo individualių klientų ir/ar transakcijų rizikos profilių.",
-      "article3": "Užmezgant ir palaikant santykius su mūsų klientais, visada atsiremiam mūsų apibrėžtu rizikos apetitu, kuris tapo vienu esminiu PPTFP politikos įgyvendinimo elementu bei nustato mums priimtinos rizikos ribas. Maloniai prašome skirti šiek tiek laiko ir susipažinti su Rizikos apetito deklaraciją (link)."
+      "article3": "Užmezgant ir palaikant santykius su mūsų klientais, visada atsiremiam mūsų apibrėžtu rizikos apetitu, kuris tapo vienu esminiu PPTFP politikos įgyvendinimo elementu bei nustato mums priimtinos rizikos ribas. Maloniai prašome skirti šiek tiek laiko ir susipažinti su Rizikos apetito ",
+      "link": "deklaraciją."
     }
   },
   "contacts": {
     "heroBlock": {
-      "contactsTitle": "Kontaktai",
+      "contactsTitle": "Direktorius",
+      "directorName" : "Ruslanas Telnovas",
       "adress": "Sporto g. 18 LT-09238 Vilnius Telefonas: +370 5 205 5240 El. paštas: info@ltlku.lt",
-      "companyDetails": "Įmonės rekvizitai",
-      "companyDetailsDescription": "LTL Kredito unija Įmonės kodas: 302791356"
+      "companyDetails": "LTL Kredito Unija",
+      "companyDetailsDescription": "Sporto g. 18, LT-09238, Vilnius Įmonės kodas: 302791356"
     },
     "articleBlock": {
       "title": "Klientų aptarnavimas būstinėje",
@@ -935,7 +937,7 @@
     }
   },
   "contactForm": {
-    "title": "Mums svarbi Jūsų nuomonė",
+    "title": "Susisiekite",
     "description": "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms.",
     "topicPlaceholder": "Tema",
     "feedbackPlaceholder": "Atsiliepimas",
@@ -965,17 +967,19 @@
         "benefits": "Privalumai",
         "calculator": "Skaičiuoklė",
         "process": "Procesas",
-        "clientSuport": "Klientų palaikymas",
+        "clientSuport": "Klientų aptarnavimas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
         "article1": {
           "title": "Terminuotas indėlis",
-          "description": "Terminuotasis indėlis – tai indėlio rūšis, kai sutinkate savo pinigus mūsų finansų įstaigoje laikyti tam tikrą laikotarpį. Per šį laiką jūs uždirbsite fiksuotą palūkanų normą (nuorodą), kuri nustatoma pagal indėlio trukmę. Palūkanas galite gauti kas mėnesį, kas ketvirtį, pusmetį, kasmet arba termino pabaigoje. Atkreipkite dėmesį, kad pasirinkus mėnesines įmokas, palūkanų norma gali šiek tiek mažėti (0,3%) nuo nurodytų palūkanų normų."
+          "description": "Terminuotasis indėlis – tai indėlio rūšis, kai sutinkate savo pinigus mūsų finansų įstaigoje laikyti tam tikrą laikotarpį. Per šį laiką jūs uždirbsite fiksuotą palūkanų normą (nuorodą), kuri nustatoma pagal indėlio trukmę. Palūkanas galite gauti kas mėnesį, kas ketvirtį, pusmetį, kasmet arba termino pabaigoje. Atkreipkite dėmesį, kad pasirinkus mėnesines įmokas, palūkanų norma gali šiek tiek mažėti (0,3%) nuo nurodytų palūkanų ",
+          "link": "normų."
         },
         "article2": {
           "title": "Indėlių apsauga",
-          "description": "Galite drąsiai deponuoti lėšas, žinodami, kad jūsų lėšos yra maksimaliai apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad Jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo sąlygomis (link)."
+          "description": "Galite drąsiai deponuoti lėšas, žinodami, kad jūsų lėšos yra maksimaliai apsaugotos. Mūsų dalyvavimas Lietuvos Respublikos indėlių draudimo sistemoje reiškia, kad Jūsų indėliai iki 100 000 EUR yra apdrausti. Kviečiame jus išsamiau susipažinti su indėlių draudimo ",
+          "link": "sąlygomis."
         },
         "article3": {
           "title": "Lojalumo atlygis",
@@ -1027,7 +1031,7 @@
         "button": "Pateikti indėlio paraišką"
       },
       "clientSuport": {
-        "title": "Pagalba klientams",
+        "title": "Klientų aptarnavimas",
         "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
       },
       "faq": "D.U.K."
@@ -1045,7 +1049,7 @@
         "process": "Procesas",
         "afterYouOpened": "Jums atidarius",
         "priceList": "Kainoraštis",
-        "clientSuport": "Klientų palaikymas",
+        "clientSuport": "Klientų aptarnavimas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
@@ -1143,7 +1147,7 @@
         "benefits": "Privalumai",
         "process": "Procesas",
         "priceList": "Kainoraštis",
-        "clientSuport": "Klientų palaikymas",
+        "clientSuport": "Klientų aptarnavimas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
@@ -1205,7 +1209,7 @@
         }
       },
       "clientSuport": {
-        "title": "Pagalba klientams",
+        "title": "Klientų aptarnavimas",
         "description": "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
       },
       "faq": "D.U.K."
@@ -1225,7 +1229,7 @@
         "benefits": "Privalumai",
         "process": "Procesas",
         "priceList": "Kainoraštis",
-        "clientSuport": "Klientų palaikymas",
+        "clientSuport": "Klientų aptarnavimas",
         "faq": "D.U.K."
       },
       "benefitsArticle": {
@@ -1287,7 +1291,7 @@
         }
       },
       "clientSuport": {
-        "title": "Pagalba klientams",
+        "title": "Klientų aptarnavimas",
         "description": "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
       },
       "faq": "D.U.K."

@@ -54,43 +54,6 @@ const BurgerMenu = ({ isOpen, onClose }) => {
           </Link>
           <div
             className={styles.burgerItem}
-            data-id="payment"
-            onClick={(e) => handleShowInnerLinks(e)}
-          >
-            <h4 className={styles.upperCaseLink} data-id="payment">
-              {t("headerNavLinks.payments")}
-            </h4>
-            <Image
-              src="/assets/images/chevronBlack.svg"
-              width={14}
-              height={8}
-              alt="check"
-              data-id="payment"
-              className={`${showInnerLinks.payment ? "" : styles.rotate}`}
-              style={{
-                cursor: "pointer",
-              }}
-            />
-          </div>
-          <div
-            className={`${
-              showInnerLinks.payment
-                ? styles.showInnerLink
-                : styles.hideInnerLink
-            }`}
-          >
-            <Link
-              className={styles.lowerCaseLink}
-              href="/business/current-account"
-            >
-              {t("headerNavLinks.currentAccount")}
-            </Link>
-            <Link className={styles.lowerCaseLink} href="/business/payments">
-              {t("headerNavLinks.payments")}
-            </Link>
-          </div>
-          <div
-            className={styles.burgerItem}
             data-id="credit"
             onClick={(e) => handleShowInnerLinks(e)}
           >
@@ -129,9 +92,49 @@ const BurgerMenu = ({ isOpen, onClose }) => {
               {t("headerNavLinks.capitalLoan")}
             </Link>
           </div>
+          <div
+            className={styles.burgerItem}
+            data-id="payment"
+            onClick={(e) => handleShowInnerLinks(e)}
+          >
+            <h4 className={styles.upperCaseLink} data-id="payment">
+              {t("headerNavLinks.payments")}
+            </h4>
+            <Image
+              src="/assets/images/chevronBlack.svg"
+              width={14}
+              height={8}
+              alt="check"
+              data-id="payment"
+              className={`${showInnerLinks.payment ? "" : styles.rotate}`}
+              style={{
+                cursor: "pointer",
+              }}
+            />
+          </div>
+          <div
+            className={`${
+              showInnerLinks.payment
+                ? styles.showInnerLink
+                : styles.hideInnerLink
+            }`}
+          >
+            <Link
+              className={styles.lowerCaseLink}
+              href="/business/current-account"
+            >
+              {t("headerNavLinks.currentAccount")}
+            </Link>
+            <Link className={styles.lowerCaseLink} href="/business/payments">
+              {t("headerNavLinks.payments")}
+            </Link>
+          </div>
 
           <Link className={styles.lowerCaseLink} href="/contacts">
             {t("headerNavLinks.contacts")}
+          </Link>
+          <Link className={styles.lowerCaseLink} href="/faq">
+            {t("headerNavLinks.faq")}
           </Link>
         </div>
       ) : (
@@ -140,6 +143,46 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             {t("headerNavLinks.deposit")}
           </Link>
 
+          <div
+            className={styles.burgerItem}
+            data-id="credit"
+            onClick={(e) => handleShowInnerLinks(e)}
+          >
+            <h4 className={styles.upperCaseLink} data-id="credit">
+              {t("headerNavLinks.credit")}
+            </h4>
+            <Image
+              src="/assets/images/chevronBlack.svg"
+              width={14}
+              height={8}
+              alt="check"
+              data-id="credit"
+              className={`${showInnerLinks.credit ? "" : styles.rotate}`}
+              style={{
+                cursor: "pointer",
+              }}
+            />
+          </div>
+          <div
+            className={`${
+              showInnerLinks.credit
+                ? styles.showInnerLink
+                : styles.hideInnerLink
+            }`}
+          >
+            <Link className={styles.lowerCaseLink} href="/credits/mortgage">
+              {t("headerNavLinks.mortgageLoan")}
+            </Link>
+            <Link className={styles.lowerCaseLink} href="/credits/equity-loan">
+              {t("headerNavLinks.equityLoan")}
+            </Link>
+            <Link
+              className={styles.lowerCaseLink}
+              href="/credits/consumer-loan"
+            >
+              {t("headerNavLinks.consumerLoan")}
+            </Link>
+          </div>
           <div
             className={styles.burgerItem}
             data-id="payment"
@@ -175,49 +218,11 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             </Link>
           </div>
 
-          <div
-            className={styles.burgerItem}
-            data-id="credit"
-            onClick={(e) => handleShowInnerLinks(e)}
-          >
-            <h4 className={styles.upperCaseLink} data-id="credit">
-              {t("headerNavLinks.credit")}
-            </h4>
-            <Image
-              src="/assets/images/chevronBlack.svg"
-              width={14}
-              height={8}
-              alt="check"
-              data-id="credit"
-              className={`${showInnerLinks.credit ? "" : styles.rotate}`}
-              style={{
-                cursor: "pointer",
-              }}
-            />
-          </div>
-          <div
-            className={`${
-              showInnerLinks.credit
-                ? styles.showInnerLink
-                : styles.hideInnerLink
-            }`}
-          >
-            <Link className={styles.lowerCaseLink} href="/credits/mortgage">
-              {t("headerNavLinks.mortgageLoan")}
-            </Link>
-            <Link
-              className={styles.lowerCaseLink}
-              href="/credits/consumer-loan"
-            >
-              {t("headerNavLinks.consumerLoan")}
-            </Link>
-            <Link className={styles.lowerCaseLink} href="/credits/equity-loan">
-              {t("headerNavLinks.equityLoan")}
-            </Link>
-          </div>
-
           <Link className={styles.lowerCaseLink} href="/contacts">
             {t("headerNavLinks.contacts")}
+          </Link>
+          <Link className={styles.lowerCaseLink} href="/faq">
+            {t("headerNavLinks.faq")}
           </Link>
         </div>
       )}

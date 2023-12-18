@@ -14,13 +14,13 @@ export default function ClientSupport() {
         <div className={styles.clientSuportDescription}>
           {t.clientSuport.description}
           <span>
-            <a href="tel:+370 5 205 5240">+370 5 205 5240</a> /{" "}
-            <a href="tel:+370 5 205 5241">+370 5 205 5241</a>
+            <Link href="tel:+370 5 205 5240">+370 5 205 5240</Link> /{" "}
+            <Link href="tel:+370 5 205 5241">+370 5 205 5241</Link>
           </span>
           {t.clientSuport.or}
-          <p>
+          <span>
             <Link href="mailto:pagalba@ltlku.lt">pagalba@ltlku.lt</Link>
-          </p>
+          </span>
         </div>
       </div>
     </section>

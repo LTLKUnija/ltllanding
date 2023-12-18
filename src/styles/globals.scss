@@ -344,13 +344,18 @@ footer {
   footer {
     .footerWrapper {
       flex-direction: column;
-      gap: 30px;
+      gap: 10px;
     }
 
     .footer-navigation-section {
       max-width: 100%;
       gap: 8px;
       display: flex;
+      height: auto;
+
+      &.mBottom {
+        margin-bottom: 40px;
+      }
 
       .footer-navigation-header {
         width: 100%;
@@ -419,6 +424,13 @@ footer {
   }
 }
 
+@media (max-width: 390px) {
+  footer {
+    .mobile_adress {
+      max-width: 120px;
+    }
+  }
+}
 .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -636,4 +648,10 @@ footer {
   &.__react_modal_image__medium_img {
     width: 55%;
   }
+}
+
+.liMarker {
+  list-style-position: inside;
+  position: relative;
+  left: 17px;
 }

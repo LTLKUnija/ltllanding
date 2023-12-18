@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import HeroMobile from "../../public/assets/images/moneyLoundryingPage_heroBlock_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MoneyLoundrying() {
   const { t } = useTranslation("common");
@@ -51,6 +52,10 @@ export default function MoneyLoundrying() {
           </div>
           <p className={styles.articleParagraph}>
             {t("moneyLoundering.articleBlock.article3")}
+
+            <Link href="/" className="readMoreLink">
+              {t("moneyLoundering.articleBlock.link")}
+            </Link>
           </p>
         </section>
       </main>

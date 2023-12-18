@@ -27,7 +27,7 @@ export default function SimpleSlider() {
           style={{
             width: "12px",
             height: "12px",
-            backgroundColor: "#E8E8E8",
+            backgroundColor: "#fff",
             borderRadius: "50%",
             position: "relative",
             top: "-70px",

@@ -158,7 +158,7 @@ function Footer({ setShowLinks, showLinks }) {
           </Link>
         </div>
         <div
-          className={`footer-navigation-section ${
+          className={`footer-navigation-section mBottom ${
             showLinks.possibilities ? "useful-links" : ""
           }`}
         >
@@ -193,9 +193,10 @@ function Footer({ setShowLinks, showLinks }) {
           <Link className="footer-navigation-link" href="/open-banking">
             {t("footerNavLinks.api")}
           </Link>
-          <Link className="footer-navigation-link" href="/career">
+          {/* Client asked to hide this content for now */}
+          {/* <Link className="footer-navigation-link" href="/career">
             {t("footerNavLinks.career")}
-          </Link>
+          </Link> */}
         </div>
         <div className="footer-navigation-section mobile">
           <div className="mobile_adress">

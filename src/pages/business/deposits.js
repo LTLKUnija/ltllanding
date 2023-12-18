@@ -156,6 +156,9 @@ export default function Deposit() {
                   {t(
                     "business.termDeposit.benefitsArticle.article1.description"
                   )}
+                  <Link href="#interestRates" className="readMoreLink">
+                    {t("business.termDeposit.benefitsArticle.article1.link")}
+                  </Link>
                 </div>
               </div>
               <div className={busynessStyle.benefitsBlock}>
@@ -166,6 +169,13 @@ export default function Deposit() {
                   {t(
                     "business.termDeposit.benefitsArticle.article2.description"
                   )}
+                  <Link
+                    href="https://www.iidraudimas.lt/lt/indeliu-draudimas/duk-4/"
+                    target="_blank"
+                    className="readMoreLink"
+                  >
+                    {t("business.termDeposit.benefitsArticle.article2.link")}
+                  </Link>
                 </div>
               </div>
               <div className={busynessStyle.benefitsBlock}>

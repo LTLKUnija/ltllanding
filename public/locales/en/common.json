@@ -432,10 +432,11 @@
       "article1": {
         "title": "Term deposit",
         "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest rates."
+        
       },
       "article2": {
         "title": "Deposit insurance",
-        "description": "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and conditions."
+        "description": "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and "
       },
       "article3": {
         "title": "Loyalty rewards and benefits",
@@ -490,7 +491,7 @@
     },
     "faq": "F.A.Q.",
     "learnMore" : "Learn more",
-    "link" : "(link)"
+    "link" : "conditions."
   },
   "openBanking": {
     "pageTitle": "Open banking",
@@ -772,7 +773,7 @@
   "mortgageLoan": {
     "heroBlock": {
       "title": "You don‘t have to be big to get a loan",
-      "description": "Get the same great loan options as the big guys, without the hassle! Our mortgage loan product is designed to give everyone an equal chance at homeownership, regardless of their size. With competitive rates and flexible repayment options, there's no better choice for your mortgage needs.",
+      "description": "Get the same great loan options as the big guys, without the hassle!",
       "bullet1": "We can help finance up to 85% of the value of your dream home",
       "bullet2": "Get your initial offer within 24 hours",
       "bullet3": "Postpone loan repayment for free if needed",
@@ -899,7 +900,7 @@
       },
       "article2": {
         "title": "Resolution of Disputes",
-        "description": "If, after our mutual discussion, you still believe that the right balance of interests has not been reached and we have violated your rights or legitimate interests, we recommend that you contact the Bank of Lithuania, which deals with disputes between consumers and financial market participants arising from the provision of financial services. You can find more detailed information by clicking on this link: https://www.lb.lt/en/sfi-disputes-between-consumers-and-financial-market-participants"
+        "description": "If, after our mutual discussion, you still believe that the right balance of interests has not been reached and we have violated your rights or legitimate interests, we recommend that you contact the Bank of Lithuania, which deals with disputes between consumers and financial market participants arising from the provision of financial services. You can find more detailed information by clicking on this link: "
       }
     },
     "readMore": "Read more",
@@ -910,15 +911,17 @@
     "articleBlock": {
       "article1": "Our commitment lies in the fight against financial crime and terrorist financing (AML/CTF) activities, as well as the enforcement of international sanctions. To tackle these concerns, we have implemented an internal policy focused on AML/CTF and sanctions. This policy aims to prevent any misuse of our products and services, such as money laundering, terrorist financing, or sanctions evasion. It serves as a foundation for establishing clear procedures and instructions in the AML/CTF and sanctions area, which our employees must follow in their day-to-day activities.",
       "article2": "Our objective is to identify, assess, and understand the financial crime risks we encounter and implement appropriate control measures in line with those risks. Whether it pertains to individual customers or our overall business processes, we strive to determine the suitable risk level for each scenario. We acknowledge that effectively addressing AML/CTF and sanctions issues may require additional time and effort from our customers and partners. To ensure a smooth and efficient process, we have embraced a risk-based approach that allows for tailored actions based on individual risk profiles.",
-      "article3": "As part of our customer acceptance process, we have defined our risk appetite as a crucial element. This entails setting the boundaries for the risks we are willing to accept. Please take a moment to review our provided Risk Appetite Statement (link) below."
+      "article3": "As part of our customer acceptance process, we have defined our risk appetite as a crucial element. This entails setting the boundaries for the risks we are willing to accept. Please take a moment to review our provided Risk Appetite Statement ",
+      "link": "below."
     }
   },
   "contacts": {
     "heroBlock": {
-      "contactsTitle": "Contacts",
-      "adress": "Sporto g. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
-      "companyDetails": "Company details",
-      "companyDetailsDescription": "TL Credit Union Company code: 302791356"
+      "contactsTitle": "Director",
+      "directorName" : "Ruslanas Telnovas",
+      "adress": "Sporto st. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
+      "companyDetails": "LTL Credit Union",
+      "companyDetailsDescription": " Sporto Street 18, LT-09238, Vilnius Company Code: 302791356"
     },
     "articleBlock": {
       "title": "Customer service at headquarters",
@@ -928,13 +931,14 @@
     }
   },
   "contactForm": {
-    "title": "Your opinion is important to us",
+    "title": "Contact",
     "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities.",
     "topicPlaceholder": "Topic",
     "feedbackPlaceholder": "Feedback",
     "namePlaceholder": "Name",
     "emailPlaceholder": "E-mail address",
     "button": "Send"
+
   },
   "news": {
     "title": "News",
@@ -964,11 +968,13 @@
       "benefitsArticle": {
         "article1": {
           "title": "Term deposit",
-          "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest rates."
+          "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest ",
+          "link": " rates."
         },
         "article2": {
           "title": "Deposit insurance",
-          "description": "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and conditions."
+          "description": "You can make deposits with confidence, knowing that your funds are maximally secure. Our participation in the deposit insurance system of the Republic of Lithuania means that your deposits up to EUR 100 000 are insured. Take a closer look at the deposit insurance terms and ",
+          "link": " conditions."
         },
         "article3": {
           "title": "Loyalty rewards and benefits",
