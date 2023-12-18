@@ -72,6 +72,7 @@ export default function FinancialReporting() {
               {t("finacialReporting.presentations")}
             </h3>
             {/* client asked to hide date's, im lieving this for future reference, becus its not final theys desition  */}
+
             {/* <ul className={[styles.tabsList, styles.center].join(" ")}>
               {presentationsList.map((year, idx) => {
                 return (
