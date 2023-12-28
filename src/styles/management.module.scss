@@ -1,17 +1,6 @@
 .aboutUsSection {
   padding: 140px 0 30px 0;
   background-color: var(--theme-color3);
-  background-image: url("/assets/images/managmentPage_heroBlock.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-
-  .aboutUsWrapper {
-    max-width: 820px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
   .aboutUsHeroBlock {
     display: flex;
@@ -33,17 +22,18 @@
     font-weight: 700;
     line-height: 32px;
     margin-bottom: 20px;
+    padding-top: 30px;
   }
 
   .missionDescription {
     font-size: 25px;
     font-weight: 300;
     line-height: 32px;
-    max-width: 280px;
+    max-width: 383px;
   }
 
   .aboutUsHeroVision {
-    max-width: 474px;
+    max-width: 383px;
   }
 
   .visionTitle {
@@ -57,6 +47,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
+    text-align: left;
   }
 }
 
@@ -279,14 +270,6 @@
   }
 }
 
-@media (max-width: 1460px) {
-  .aboutUsSection {
-    .aboutUsHeroVision {
-      max-width: 425px;
-    }
-  }
-}
-
 @media (max-width: 1390px) {
   .aboutUsSection {
     background-image: none;
@@ -305,9 +288,6 @@
       margin-bottom: 30px;
       flex-direction: column;
       align-items: center;
-    }
-    .missionDescription {
-      max-width: 470px;
     }
 
     .title {

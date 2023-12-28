@@ -24,7 +24,11 @@ export default function Security() {
               <li>{t("security.bullet1")}</li>
               <li>
                 {t("security.bullet2")}{" "}
-                <Link href="http://www.iidraudimas.lt" target="_blank">
+                <Link
+                  href="http://www.iidraudimas.lt"
+                  target="_blank"
+                  className={styles.text_small}
+                >
                   www.iidraudimas.lt
                 </Link>
               </li>

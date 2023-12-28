@@ -41,12 +41,12 @@ export default function IndexNews() {
   const elNewsList = newsList.map((news, idx) => {
     return (
       <div className={styles.newsItem} key={idx}>
+        <div className={styles.newsDate}>{news.date}</div>
         <h3>
           <Link href={`news/${news.id}-${news.idx}`}>
             {router.locale === "lt" ? news.title : news.titleEn}
           </Link>
         </h3>
-        <div className={styles.newsDate}>{news.date}</div>
         <p>
           {previewTextMaker(
             router.locale === "lt" ? news.text : news.textEn,

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styles from "@/styles/converter.module.scss";
-import { useTranslation } from 'next-i18next';
-
+import { useTranslation } from "next-i18next";
 
 export default function CurrencyConverter() {
-  const {t} = useTranslation('common');
+  const { t } = useTranslation("common");
 
   const [currencyList, setCurrencyList] = useState([]);
   const [baseAmount, setBaseAmount] = useState({ name: "EUR", value: "" });
@@ -90,7 +89,7 @@ export default function CurrencyConverter() {
     <>
       <div className={styles.paymentsCurrencyConverter}>
         <div className={styles.paymentsCurrencyConverterTitle}>
-          {t('payments.title')}
+          {t("payments.title")}
         </div>
         <div className={styles.paymentsCurrencyConeverterBlock}>
           <div className={styles.paymentsCurrency}>
@@ -153,9 +152,9 @@ export default function CurrencyConverter() {
             <div className={styles.paymentsCurrencyQuestion}>?</div>
           </div>
           <div className={styles.paymentsCurrencyDescription}>
-            {t('payments.transferRate')}
+            {t("payments.transferRate")}
           </div>
-          <div className="containedBtn">{t('payments.openAccount')}</div>
+          <div className="containedBtn">{t("payments.openAccount")}</div>
         </div>
       </div>
     </>

@@ -125,22 +125,32 @@ header {
     position: relative;
 
     .dropDownMenu {
-      width: 270px;
+      min-width: 100%;
       background-color: #f4f4f4;
       padding: 10px;
       box-shadow: 3px 10px 5px -4px rgba(0, 0, 0, 0.75);
       opacity: 1;
       position: absolute;
       top: 40px;
-      left: -10px;
+      left: -90px;
       z-index: 9;
       transition: 250ms ease-in-out;
 
       .toggleSubMenu {
+        min-width: 250px;
+        width: 100%;
+        padding-top: 34px;
+        padding-bottom: 34px;
         margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid 1px #d3d3d3;
 
         &:last-child {
           margin-bottom: 0;
+          border-bottom: none;
         }
 
         a:hover {
@@ -162,7 +172,7 @@ header {
       width: 154px;
       height: 42px;
       background: #0d222e;
-      border-radius: 5px;
+      border-radius: 33px;
       text-decoration: none;
       color: #ffffff;
       font-weight: 400;
@@ -292,6 +302,13 @@ footer {
   }
 }
 
+@media (max-width: 1178px) {
+  .breadcrumbs_Wrapper {
+    min-width: 55%;
+    margin-bottom: 30px !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .main-layout {
     header {
@@ -415,6 +432,10 @@ footer {
     display: flex;
     justify-content: center;
   }
+
+  .breadcrumbs_Wrapper {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 720px) {
@@ -471,12 +492,13 @@ footer {
   }
 
   &.blue {
-    background: #034585;
+    border: solid 1px #034585;
+    background: transparent;
+    color: #034585;
 
     &:hover {
-      background: white;
-      border: solid 1px #034585;
-      color: #034585;
+      background: #034585;
+      color: white;
     }
   }
 
@@ -488,7 +510,7 @@ footer {
 .containedBtn {
   width: 194px;
   height: 42px;
-  background: #e9b317;
+  background: inherit;
   border-radius: 33px;
   display: flex;
   justify-content: center;
@@ -496,15 +518,16 @@ footer {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: #e9b317;
+  border: solid 1px #e9b317;
   text-decoration: none;
   transition: all 0.3s ease-out;
   cursor: pointer;
 
   &:hover {
-    background-color: inherit;
-    border: solid 1px #e9b317;
-    color: #e9b317;
+    background-color: #e9b317;
+
+    color: white;
     transition: all 0.3s ease-out;
   }
 
@@ -513,29 +536,30 @@ footer {
   }
 
   &.red {
-    background: #fc5e48;
+    background: white;
+    color: #fc5e48;
+    border: solid 1px #fc5e48;
 
     &:hover {
-      background: white;
-      border: solid 1px #fc5e48;
-      color: #fc5e48;
+      background: #fc5e48;
+      color: white;
     }
   }
 
   &.blue {
-    background: #034585;
-
+    color: #034585;
+    background: white;
+    border: solid 1px #034585;
     &:hover {
-      background: white;
-      border: solid 1px #034585;
-      color: #034585;
+      background: #034585;
+      color: white;
     }
   }
 }
 
 .readMoreLink {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-decoration-line: underline;
   color: #000000;
@@ -547,6 +571,23 @@ footer {
   line-height: 18px;
   text-decoration-line: none;
   color: #000000;
+}
+
+.breadcrumbsLink {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #535353;
+}
+
+.breadcrumbs_Wrapper {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #535353;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .slick-active > .index-page-hero-slider-dot {

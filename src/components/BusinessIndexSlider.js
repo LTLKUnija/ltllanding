@@ -51,10 +51,7 @@ export default function SimpleSlider() {
             <h1>{t("businessIndexPage.slideOne.heroBlockH1")}</h1>
             <p>{t("businessIndexPage.slideOne.heroBlockText")}</p>
             <div className="action-button-block">
-              <Link
-                className="outlinedBtn blue noBorder"
-                href="/business/deposits"
-              >
+              <Link className="outlinedBtn blue" href="/business/deposits">
                 {t("businessIndexPage.slideOne.learnMoreButton")}
               </Link>
             </div>
@@ -74,7 +71,7 @@ export default function SimpleSlider() {
             <p>{t("indexPage.slideTwo.heroBlockText")}</p>
             <div className="action-button-block">
               <Link
-                className="outlinedBtn long blue noBorder"
+                className="outlinedBtn long blue"
                 href="/business/investment-loan"
               >
                 {t("indexPage.slideTwo.learnMoreButton")}
@@ -96,7 +93,7 @@ export default function SimpleSlider() {
             <p>{t("indexPage.slideThree.heroBlockText")}</p>
             <div className="action-button-block">
               <Link
-                className="outlinedBtn blue noBorder"
+                className="outlinedBtn blue"
                 href="/business/current-account"
               >
                 {t("indexPage.slideThree.learnMoreButton")}

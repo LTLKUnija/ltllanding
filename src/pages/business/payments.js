@@ -7,6 +7,7 @@ import BackBtn from "../../../public/assets/images/backBtn.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Payments() {
   const { t } = useTranslation("common");
@@ -19,6 +20,13 @@ export default function Payments() {
         <main>
           <section className={styles.pageWrapper}>
             <div className={styles.pageList}>
+              <div className="breadcrumbs_Wrapper">
+                <Breadcrumbs
+                  business={true}
+                  area={`${t("headerNavLinks.payments")}`}
+                  page={`${t("headerNavLinks.payments")}`}
+                />
+              </div>
               <div className={styles.heroItem}>
                 <div className={styles.imgBlock}>
                   <Image

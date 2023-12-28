@@ -14,6 +14,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getCurrentAccFAQ } from "@/store/faqList/faqList.slice";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Product() {
   const router = useRouter();
@@ -31,6 +32,13 @@ export default function Product() {
         <main className={styles.currentAccountPage}>
           <section className={styles.currentAccountPageWrapper}>
             <div className={styles.currentAccountPageList}>
+              <div className="breadcrumbs_Wrapper">
+                <Breadcrumbs
+                  business={false}
+                  area={`${t("headerNavLinks.payments")}`}
+                  page={`${t("headerNavLinks.currentAccount")}`}
+                />
+              </div>
               <div className={styles.currentAccountHeroItem}>
                 <div className={styles.imgBlock}>
                   <Image
