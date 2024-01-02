@@ -9,6 +9,8 @@ function Footer({ setShowLinks, showLinks }) {
   const isBusiness = router.pathname.includes("/business");
 
   const handleClick = (e) => {
+    if (window.innerWidth > 1017) return;
+
     const key = e.target.dataset.id;
     setShowLinks((prev) => ({ ...prev, [key]: !prev[key] }));
   };

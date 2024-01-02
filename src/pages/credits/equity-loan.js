@@ -14,6 +14,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -30,6 +31,13 @@ export default function Mortgage() {
       <main>
         <section className={styles.pageWrapper}>
           <div className={styles.pageList}>
+            <div className="breadcrumbs_Wrapper">
+              <Breadcrumbs
+                business={false}
+                area={`${t("headerNavLinks.credit")}`}
+                page={`${t("headerNavLinks.equityLoan")}`}
+              />
+            </div>
             <div className={styles.heroItem}>
               <div className={styles.imgBlock}>
                 <Image

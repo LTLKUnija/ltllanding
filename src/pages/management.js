@@ -23,23 +23,6 @@ export default function About() {
     <IndexLayout>
       <main>
         <section className={styles.aboutUsSection}>
-          <div className={styles.aboutUsWrapper}>
-            <div className={styles.imgBlock}>
-              <Image
-                src={BackBtn}
-                alt={"Hero Mobile"}
-                style={{ width: "24", height: "12" }}
-                className={[styles.heroImage, styles.backBtn].join(" ")}
-                onClick={handleBack}
-              />
-              <Image
-                src={HeroMobile}
-                alt={"Hero Mobile"}
-                style={{ width: "70%", height: "auto" }}
-                className={styles.heroImage}
-              />
-            </div>
-          </div>
           <h1 className={styles.title}>{t("aboutUs.heroBlock.title")}</h1>
           <div className={styles.aboutUsHeroBlock}>
             <div className={styles.aboutUsHeroMission}>
