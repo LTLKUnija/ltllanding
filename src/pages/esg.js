@@ -73,6 +73,9 @@ export default function Esg() {
               </h3>
               <p className={styles.description}>
                 {t("esg.articleBlock.article1.text")}
+                <Link href="/" className="readMoreLink">
+                  {t("esg.articleBlock.article1.link")}
+                </Link>
               </p>
             </div>
           </div>
@@ -91,6 +94,9 @@ export default function Esg() {
               </h3>
               <p className={styles.description}>
                 {t("esg.articleBlock.article2.text")}
+                <Link href="/" className="readMoreLink">
+                  {t("esg.articleBlock.article2.link")}
+                </Link>
               </p>
             </div>
             <Image
@@ -117,6 +123,9 @@ export default function Esg() {
               </h3>
               <p className={styles.description}>
                 {t("esg.articleBlock.article3.text")}
+                <Link href="/" className="readMoreLink">
+                  {t("esg.articleBlock.article3.link")}
+                </Link>
               </p>
             </div>
           </div>

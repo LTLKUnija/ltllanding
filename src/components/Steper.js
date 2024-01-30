@@ -17,7 +17,7 @@ const Steper = ({ steperData }) => {
             {t(step.description)}
             {step.showStepLink && (
               <Link href="/contacts" className="showStepLink">
-                ( {t("headerNavLinks.contacts")} )
+                {t("headerNavLinks.office")}
               </Link>
             )}
             {t(step.restOfDescription)}

@@ -5,12 +5,12 @@
   .contactsPageList {
     max-width: 1280px;
     width: 100%;
-    padding-left: calc((100% - 664px) / 2);
+    padding-left: calc((100% - 775px) / 2);
     display: flex;
     gap: 168px;
 
     .contactsHeroItem {
-      width: 276px;
+      max-width: 305px;
     }
 
     .contactsTitle {

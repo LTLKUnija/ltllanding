@@ -28,32 +28,6 @@ export default function Contacts() {
           <div className={styles.contactsPageList}>
             <div className={styles.contactsHeroItem}>
               <h3 className={styles.contactsTitle}>
-                {t("contacts.heroBlock.contactsTitle")}
-              </h3>
-              <div className={styles.contactsPageDescription}>
-                <p>{t("contacts.heroBlock.directorName")}</p>
-                <p>
-                  <Link
-                    href="mailto:ruslanas.telnovas@ltlku.lt"
-                    className="readMoreLink"
-                  >
-                    ruslanas.telnovas@ltlku.lt
-                  </Link>
-                </p>
-                <p>
-                  <Link href="tel:+370 5 205 5240" className="readMoreLink">
-                    +370 5 205 5240
-                  </Link>
-                </p>
-                <p>
-                  <Link href="tel:+370 5 205 5241" className="readMoreLink">
-                    +370 5 205 5241
-                  </Link>
-                </p>
-              </div>
-            </div>
-            <div className={styles.contactsHeroItem}>
-              <h3 className={styles.contactsTitle}>
                 {t("contacts.heroBlock.companyDetails")}
               </h3>
               <div className={styles.contactsPageDescription}>
@@ -68,6 +42,16 @@ export default function Contacts() {
                     info@ltlku.lt
                   </Link>
                 </p>
+              </div>
+            </div>
+            <div className={styles.contactsHeroItem}>
+              <h3 className={styles.contactsTitle}>
+                {t("contacts.heroBlock.otherRequisites")}
+              </h3>
+              <div className={styles.contactsPageDescription}>
+                <p>{t("contacts.heroBlock.sepa")}</p>
+                <p>{t("contacts.heroBlock.bic")}</p>
+                <p>{t("contacts.heroBlock.data")}</p>
               </div>
             </div>
           </div>

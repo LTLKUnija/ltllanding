@@ -114,15 +114,40 @@ export default function FinancialReporting() {
               <div className={styles.img}></div>
               <div className={styles.contactsInfo}>
                 <h4>{t("finacialReporting.contacts.director")}</h4>
-                <p>Ruslanas Telnovas ruslanas.telnovas@ltlku.lt </p>
-                <p>+370 5 205 5240</p>
-                <p>+370 5 205 5241</p>
+                <p>
+                  Ruslanas Telnovas{" "}
+                  <Link
+                    href="mailto:ruslanas.telnovas@ltlku.lt"
+                    className="readMoreLink"
+                  >
+                    ruslanas.telnovas@ltlku.lt
+                  </Link>
+                </p>
+                <p>
+                  <Link href="tel:+370 5 205 5240" className="readMoreLink">
+                    +370 5 205 5240
+                  </Link>
+                </p>
+                <p>
+                  <Link href="tel:+370 5 205 5241" className="readMoreLink">
+                    +370 5 205 5241
+                  </Link>
+                </p>
               </div>
               <div className={styles.contactsInfo}>
                 <h4>{t("finacialReporting.contacts.companyName")}</h4>
                 <p>Sporto g. 18, LT-09238, Vilnius Įmonės kodas 302791356</p>
-                <p>+370 5 205 5240</p>
-                <p>info@ltlku.lt</p>
+                <p>
+                  <Link href="tel:+370 5 205 5240" className="readMoreLink">
+                    +370 5 205 5240
+                  </Link>
+                </p>
+                <p>
+                  {" "}
+                  <Link href="mailto:info@ltlku.lt" className="readMoreLink">
+                    info@ltlku.lt
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

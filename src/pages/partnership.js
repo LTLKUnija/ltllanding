@@ -6,6 +6,7 @@ import HeroMobile from "../../public/assets/images/partnershipPage_HeroBlock_mob
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Partnership() {
   const { t } = useTranslation("common");
@@ -43,7 +44,12 @@ export default function Partnership() {
           <div className={styles.articleBlock}>
             <p>{t("partnership.articleBlock.article1")}</p>
             <p>{t("partnership.articleBlock.article2")}</p>
-            <p>{t("partnership.articleBlock.article3")}</p>
+            <p>
+              {t("partnership.articleBlock.article3")}
+              <Link href="/contacts" className="readMoreLink">
+                {t("partnership.articleBlock.contacts")}
+              </Link>
+            </p>
           </div>
         </section>
       </main>
