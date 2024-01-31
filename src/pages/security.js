@@ -27,7 +27,7 @@ export default function Security() {
                 <Link
                   href="http://www.iidraudimas.lt"
                   target="_blank"
-                  className={styles.text_small}
+                  className="readMoreLink"
                 >
                   www.iidraudimas.lt
                 </Link>
@@ -43,18 +43,6 @@ export default function Security() {
             </p>
             <p>{t("security.credits")}</p>
           </div>
-        </section>
-        <section id="faq" className={styles.faqSection}>
-          {!!faqData.data && (
-            <div className={styles.faqWrapper}>
-              <h3 className={styles.faqHeader}>
-                {t("business.capitalLoan.faq")}
-              </h3>
-              <div className={styles.faqList}>
-                <Accordion faqData={faqData.data} singleLevel="true" />
-              </div>
-            </div>
-          )}
         </section>
       </main>
     </IndexLayout>

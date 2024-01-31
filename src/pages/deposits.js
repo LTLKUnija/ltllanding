@@ -135,7 +135,14 @@ export default function Deposit() {
             <div className={styles.depositBenefitsWrapper}>
               <div className={styles.depositBenefitsBlock}>
                 <h2>{t("termDeposit.benefitsArticle.article1.title")}</h2>
-                <p>{t("termDeposit.benefitsArticle.article1.description")}</p>
+                <p>
+                  {t("termDeposit.benefitsArticle.article1.description")}
+                  <Link href="#interestRates" className="readMoreLink">
+                    {t("termDeposit.benefitsArticle.article1.link")}
+                  </Link>
+
+                  {t("termDeposit.benefitsArticle.article1.restDescription")}
+                </p>
               </div>
               <div className={styles.depositBenefitsBlock}>
                 <h2>{t("termDeposit.benefitsArticle.article2.title")}</h2>

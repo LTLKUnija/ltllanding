@@ -46,7 +46,7 @@ export default function PriceListPrivate() {
               {t("priceList.table.cashBalance")}
             </div>
             <div className={styles.priceDescription}>
-              <span>0 %/ 360 d</span>
+              <span>0% / 360 d.</span>
             </div>
           </li>
           <li className={styles.priceItem}>
@@ -202,7 +202,7 @@ export default function PriceListPrivate() {
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.paymentsInEuro")}
             </div>
-            <div className={styles.priceDescription}>0.50 EUR</div>
+            <div className={styles.priceDescription}>0,50 EUR</div>
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
@@ -333,7 +333,7 @@ export default function PriceListPrivate() {
               {t("priceList.table.changingTermsOfCredit")}
             </div>
             <div className={styles.priceDescription}>
-              {t("priceList.table.existingCreditBalance")} 200€ *
+              {t("priceList.table.existingCreditBalance")} 200 EUR *
             </div>
           </li>
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
@@ -356,7 +356,7 @@ export default function PriceListPrivate() {
               {t("priceList.table.commitmentFee")}
             </div>
             <div className={styles.priceDescription}>
-              0.50% {t("priceList.table.unusedAmountOfCredit")}
+              0,50% {t("priceList.table.unusedAmountOfCredit")}
             </div>
           </li>
           <li className={styles.priceItem}>
@@ -364,7 +364,7 @@ export default function PriceListPrivate() {
               {t("priceList.table.lateFees")}
             </div>
             <div className={styles.priceDescription}>
-              0.50% {t("priceList.table.amountOverdueForEachDay")}
+              0,50% {t("priceList.table.amountOverdueForEachDay")}
             </div>
           </li>
           <li className={styles.priceItem}>

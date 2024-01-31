@@ -98,7 +98,7 @@ export default function About() {
             <div className={styles.jobsCrediantials}>
               <h3>{t("aboutUs.sponsorshipSection.title")}</h3>
               <p>{t("aboutUs.sponsorshipSection.description")}</p>
-              <Link href="/partnership" className={styles.readMore}>
+              <Link href="/contacts" className={styles.readMore}>
                 {t("aboutUs.sponsorshipSection.readMore")} &gt;
               </Link>
             </div>

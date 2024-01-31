@@ -65,7 +65,7 @@
   padding: 86px 0 55px 0;
 
   .articlesWrapper {
-    max-width: 1050px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -75,13 +75,15 @@
   }
 
   .articlesBlock {
-    width: 295px;
+    width: 330px;
 
     h4 {
       font-size: 25px;
       font-weight: 700;
       line-height: 32px;
       margin-bottom: 34px;
+      min-height: 64px;
+      text-align: left;
     }
 
     p {

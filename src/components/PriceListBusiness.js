@@ -53,7 +53,7 @@ export default function PriceListBusiness() {
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.cashBalance")}
             </div>
-            <div className={styles.priceDescription}>0,0% / 360 d.</div>
+            <div className={styles.priceDescription}>0% / 360 d.</div>
           </li>
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
             <div className={styles.priceTitle}>
@@ -116,7 +116,7 @@ export default function PriceListBusiness() {
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.paymentsInEuro")}
             </div>
-            <div className={styles.priceDescription}>0.50 EUR</div>
+            <div className={styles.priceDescription}>0,50 EUR</div>
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
@@ -391,7 +391,7 @@ export default function PriceListBusiness() {
               {t("priceList.table.cashDepositYourAccount")}
             </div>
             <div className={styles.priceDescription}>
-              0.50% {t("priceList.table.ammountDeposited")}
+              0,50% {t("priceList.table.ammountDeposited")}
             </div>
           </li>
           <li className={styles.priceItem}>
@@ -658,7 +658,7 @@ export default function PriceListBusiness() {
               {t("priceList.table.copiesOfDocuments")}
             </div>
             <div className={styles.priceDescription}>
-              {t("priceList.table.fees.from")} 1 EUR
+              {t("priceList.table.from")} 1 EUR
             </div>
           </li>
           <li className={styles.priceItem}>

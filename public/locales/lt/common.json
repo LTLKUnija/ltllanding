@@ -1,6 +1,6 @@
 {
   "common": {
-    "loanForPrivates": "Paskola privatiems darbuotojams D.U.K.",
+    "loanForPrivates": "Paskola privatiems klientams D.U.K.",
     "loanForBusiness": "Paskola verslui D.U.K.",
     "currentAccount": "Einamoji sąskaita D.U.K.",
     "deposit": "Depozitas D.U.K."
@@ -20,7 +20,8 @@
     "openAccount": "Atidaryti sąskaitą",
     "investmentLoan": "Investicinė paskola",
     "capitalLoan": "Paskola apyvartiniam kapitalui",
-    "faq": "D.U.K"
+    "faq": "D.U.K",
+    "office": "biure"
   },
   "footerNavLinks": {
     "usefulLinks": "Naudingos nuorodos",
@@ -78,10 +79,10 @@
     },
     "bulletsBlock": {
       "title": "LTL palengvina bankininkystę",
-      "bullet1": "Puikūs namai, kurių kitaip negalėtumėte sau leisti",
-      "bullet2": "Galimas vertės padidėjimas",
-      "bullet3": "Galimos pajamos iš nuomos, jei to norite",
-      "bullet4": "Nuoma palengvinta ir valdoma trečiosios šalies"
+      "bullet1": "Patogi internetinė bankininkystė",
+      "bullet2": "Individualizuota klientų patirtis",
+      "bullet3": "Saugus ir patikimas aptarnavimas",
+      "bullet4": "Finansinis švietimas"
     },
     "button": {
       "text": "Sužinokite daugiau"
@@ -110,11 +111,11 @@
       },
       "article2": {
         "title": "Supaprastinta verslo bankininkystė",
-        "description": "Verslo pasaulyje laikas yra labai svarbus. Todėl LTL kredito unijoje supaprastinome verslo bankininkystės paslaugas. Mėgaukitės efektyvia internetine verslo bankininkyste, greitu paskolų patvirtinimu ir įrankių rinkiniu, skirtu supaprastinti jūsų finansų valdymą. Tikime, kad suteikiame išteklių, kurie įgalins jūsų verslą, todėl galėsite sutelkti dėmesį į tai, kas svarbiausia - savo įmonės augimą ir pelningumą."
+        "description": "Verslo pasaulyje laikas yra labai svarbus. Todėl LTL supaprastinome verslo bankininkystės paslaugas. Mėgaukitės efektyvia internetine verslo bankininkyste, greitu paskolų patvirtinimu ir įrankių rinkiniu, skirtu supaprastinti jūsų finansų valdymą. Tikime, kad suteikiame išteklių, kurie įgalins jūsų verslą, todėl galėsite sutelkti dėmesį į tai, kas svarbiausia - savo įmonės augimą ir pelningumą."
       },
       "article3": {
         "title": "Vietos verslų rėmimas",
-        "description": "LTL Kredito unija didžiuojasi, kad yra vietos verslo bendruomenės pagrindas. Pasirinkę mus kaip savo finansinį partnerį, gaunate ne tik paslaugų rinkinį, bet ir investuojate į vietos verslo augimą ir tvarumą. Nuo mažų pradedančiųjų įmonių iki įsitvirtinusių įmonių - mes esame čia, kad suteiktume finansinę paramą ir kompetenciją, reikalingą mūsų bendruomenės įmonių sėkmei skatinti. Prisijunkite prie kredito unijos, kuri aktyviai prisideda prie vietos prekybos stiprinimo."
+        "description": "LTL Kredito unija didžiuojasi, kad yra vietos verslo bendruomenės pagrindas. Pasirinkę mus kaip savo finansinį partnerį, gaunate ne tik paslaugų rinkinį, bet ir investuojate į vietos verslo augimą ir tvarumą. Nuo mažų pradedančiųjų įmonių iki įsitvirtinusių įmonių - mes esame čia, kad suteiktume finansinę paramą ir kompetenciją, reikalingą mūsų bendruomenės įmonių sėkmei skatinti. Prisijunkite prie LTL, kuri aktyviai prisideda prie vietos prekybos stiprinimo."
       }
     },
     "bulletsBlock": {
@@ -133,19 +134,19 @@
     "heroBlock" : {
       "description" : "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos",
       "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
-      "bullet2": "Lengvai siųskite ir gaukite jūsų lėšasy",
+      "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
       "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
     },
     "benefitsArticle": {
       "article1": {
-        "title": "Atsidarykite sąskaitą LTL Kredito unijoje",
-        "description": "Kad galėtumėte vykdyti mokėjimus, pirmiausia jums reikės sąskaitos LTL Kredito unijoje. Jei esate naujas klientas, galite tapti LTL Kredito unijos nariu ir atsidaryti einamąją sąskaitą atvykę į mūsų skyrių adresu Sporto g. 18, LT- 09238 Vilnius. Su savimi turėkite asmens tapatybę patvirtinantį dokumentą. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje. Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti čia ",
-        "restDescription": " Kredito unijos nariams siūlome:",
+        "title": "Atsidarykite sąskaitą LTL",
+        "description": "Kad galėtumėte vykdyti mokėjimus, pirmiausia jums reikės sąskaitos LTL. Jei esate naujas klientas, galite tapti LTL nariu ir atsidaryti einamąją sąskaitą atvykę į mūsų skyrių adresu Sporto g. 18, LT- 09238 Vilnius. Su savimi turėkite asmens tapatybę patvirtinantį dokumentą. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje. Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti ",
+        "restDescription": ". LTL nariams siūlome:",
         "bullet1": "Vietinius mokėjimus visoje Lietuvoje",
         "bullet2": "Tarptautinius SEPA pervedimus visoje Europoje",
-        "bullet3": "Patogų operacijų atlikimą ir valdymą naudojantis LTL Kredito unijos elektroninėje bankininkystėje",
+        "bullet3": "Patogų operacijų atlikimą ir valdymą naudojantis LTL elektroninėje bankininkystėje",
         "bullet4": "Profesionalias konsultacijas ir individualų dėmesį",
-        "link": "(Nuoroda)"
+        "link": "čia"
       },
       "article2": {
         "title": "Patogus europinių pinigų pervedimas (SEPA)",
@@ -199,8 +200,8 @@
     },
     "sponsorshipSection": {
       "title": "Rėmimas",
-      "description": "LTL Kredito unijoje tikime bendruomenės galia ir atsidavimu. Didžiuojamės, kad remiame vietos iniciatyvas - nuo švietimo programų iki labdaros renginių ir kultūros festivalių. Mūsų įsipareigojimas remti neapsiriboja vien finansine parama - tai siekis kurti stipresnę ir gyvybingesnę bendruomenę. Bendradarbiaudami su organizacijomis, kurios puoselėja mūsų vertybes, siekiame sukurti ilgalaikį teigiamą poveikį, skatinti augimą ir įkvėpti pokyčius. Esame pasiryžę investuoti į bendruomenių, kurioms tarnaujame, gerovę ir klestėjimą, nes jūsų sėkmė yra mūsų sėkmė.",
-      "readMore": "Skaityti daugiau"
+      "description": "LTL tikime bendruomenės galia ir atsidavimu. Didžiuojamės, kad remiame vietos iniciatyvas - nuo švietimo programų iki labdaros renginių ir kultūros festivalių. Mūsų įsipareigojimas remti neapsiriboja vien finansine parama - tai siekis kurti stipresnę ir gyvybingesnę bendruomenę. Bendradarbiaudami su organizacijomis, kurios puoselėja mūsų vertybes, siekiame sukurti ilgalaikį teigiamą poveikį, skatinti augimą ir įkvėpti pokyčius. Esame pasiryžę investuoti į bendruomenių, kurioms tarnaujame, gerovę ir klestėjimą, nes jūsų sėkmė yra mūsų sėkmė.",
+      "readMore": "Susisiekite"
     },
     "benefitsArticle": {
       "article1": {
@@ -229,15 +230,18 @@
     "articleBlock": {
       "article1": {
         "title": "Aplinkosaugos principai",
-        "text": "Mes imamės iniciatyvų, siekdami skatinti didesnę darbuotojų atsakomybę aplinkai ir aplinkosauginį sąmoningumą, įskaitant efektyvesnį išteklių naudojimą savo kasdienėje veikloje. Siekiame teigiamai prisidėti ir bent jau nepakenkti aplinkosaugos tikslams, iškeltiems pagal Paryžiaus susitarimą ir Europos Sąjungos Žaliąjį susitarimą, kuriuo siekiama iki 2050 m. sukurti klimatui neutralų Europos žemyną.Daugiau apie mūsų Aplinkosaugos politikos (nuoroda) principus sužinokite paspaudę nuorodą."
+        "text": "Mes imamės iniciatyvų, siekdami skatinti didesnę darbuotojų atsakomybę aplinkai ir aplinkosauginį sąmoningumą, įskaitant efektyvesnį išteklių naudojimą savo kasdienėje veikloje. Siekiame teigiamai prisidėti ir bent jau nepakenkti aplinkosaugos tikslams, iškeltiems pagal Paryžiaus susitarimą ir Europos Sąjungos Žaliąjį susitarimą, kuriuo siekiama iki 2050 m. sukurti klimatui neutralų Europos žemyną.Daugiau apie mūsų Aplinkosaugos politikos principus sužinokite paspaudę ",
+        "link": "nuorodą."
       },
       "article2": {
         "title": "Socialiniai principai",
-        "text": "Mes gerbiame socialinius principus, įtvirtintus pagrindinėse Tarptautinės darbo organizacijos konvencijose ir Europos Sąjungos Pagrindinių teisių chartijoje. Mes visiškai netoleruojame visų formų priverstinio ir privalomojo darbo, bet kokių vaikų darbo formų, taip pat laikomės asociacijų laisvės ir kolektyvinių derybų teisės. Skatiname lygias galimybes ir siekiame sukurti aplinką, kurioje visi darbuotojai galėtų realizuoti savo potencialą, pagrįstą bendromis vertybėmis, kultūrų įvairove, lytimi, rase ir kita lygybe.\nNorėdami sužinoti daugiau, peržiūrėkite mūsų Lygių galimybių politiką (nuoroda)."
+        "text": "Mes gerbiame socialinius principus, įtvirtintus pagrindinėse Tarptautinės darbo organizacijos konvencijose ir Europos Sąjungos Pagrindinių teisių chartijoje. Mes visiškai netoleruojame visų formų priverstinio ir privalomojo darbo, bet kokių vaikų darbo formų, taip pat laikomės asociacijų laisvės ir kolektyvinių derybų teisės. Skatiname lygias galimybes ir siekiame sukurti aplinką, kurioje visi darbuotojai galėtų realizuoti savo potencialą, pagrįstą bendromis vertybėmis, kultūrų įvairove, lytimi, rase ir kita lygybe.\nNorėdami sužinoti daugiau, peržiūrėkite mūsų Lygių galimybių ",
+        "link": "politiką."
       },
       "article3": {
         "title": "Gero korporatyvinio valdymo principai",
-        "text": "Siekiame įgyvendinti gero korporatyvinio valdymo principus, kurie galėtų sustiprinti mūsų verslo atsparumą gerinant rizikos valdymą, abipusiu pasitikėjimu pagrįstą verslą bei santykius su klientais. Šie principai apima mūsų rūpinimąsi privatumu ir duomenų saugumu, verslo skaidrumo skatinimą, bet kokių korupcijos, kyšininkavimo, turto prievartavimo, sukčiavimo ir pinigų plovimo formų netoleravimą, sąžiningos ir skaidrios mokesčių praktikos laikymąsi, mūsų paslaugų prieinamumą, atsakingo skolinimo praktika, o taip pat aukščiausių etiško elgesio standartų įgyvendinimą. Kviečiame išsamiau susipažinti su mūsų Etikos kodeksu (nuoroda)."
+        "text": "Siekiame įgyvendinti gero korporatyvinio valdymo principus, kurie galėtų sustiprinti mūsų verslo atsparumą gerinant rizikos valdymą, abipusiu pasitikėjimu pagrįstą verslą bei santykius su klientais. Šie principai apima mūsų rūpinimąsi privatumu ir duomenų saugumu, verslo skaidrumo skatinimą, bet kokių korupcijos, kyšininkavimo, turto prievartavimo, sukčiavimo ir pinigų plovimo formų netoleravimą, sąžiningos ir skaidrios mokesčių praktikos laikymąsi, mūsų paslaugų prieinamumą, atsakingo skolinimo praktika, o taip pat aukščiausių etiško elgesio standartų įgyvendinimą. Kviečiame išsamiau susipažinti su mūsų Etikos ",
+        "link": "kodeksu."
       }
     },
     "annualEsgReport": {
@@ -279,7 +283,7 @@
       "openingCurrentAccount": "Einamosios sąskaitos atidarymas",
       "currentAccountAdministration": "Einamosios sąskaitos administravimas/tvarkymas*",
       "cashBalance": "Mokestis už piniginių lėšų likučio laikymą sąskaitoje",
-      "accountStatmentCollectionAtBranch": "Sąskaitos išrašas, atsiimant kredito unijos padalinyje:",
+      "accountStatmentCollectionAtBranch": "Sąskaitos išrašas, atsiimant LTL padalinyje:",
       "currentPreviousMonth": "- einamojo ir praėjusio mėnesio",
       "otherMonthCurrentYeasr": "- už kitus einamųjų metų mėnesius",
       "forEachPreviousYear": "- už kiekvienus praėjusius metus",
@@ -287,8 +291,8 @@
       "restrictedAccountService": "Riboto naudojimo sąskaitos paslauga**:",
       "administration": "Riboto naudojimo sąskaitos administravimas/tvarkymas (įskaitant atidarymą ir uždarymą)",
       "transferingFunds": "Lėšų pervedimas į sąskaitą jos papildymui (pajaus įmokėjimui, kredito dengimui ar jo administravimui, terminuotojo indėlio sutarčiai sudaryti)",
-      "creditsTransfers": "Kredito pervedimai kredito unijos padalinyje skirti i) kredito lėšų panaudojimui arba ii) likučio pervedimui po visiško kredito padengimo arba iii) indėlio palūkanų sumos pervedimui",
-      "restrictedPayment": "**Riboto naudojimo mokėjimo sąskaita – tai sąskaita, skirta kreditui, indėliui ar kitam kredito unijos produktui administruoti, atidaroma tais atvejais, jei klientas nepageidauja naudotis unijos paslaugomis interneto banku bei turėti einamosios sąskaitos, tačiau sąskaita būtina norint tinkamai administruoti unijos teikiamą paslaugą. Naudojantis sąskaita kitu negu pirmiau nurodytu tikslu, inicijuojant su konkrečios paslaugos administravimu nesusijusias operacijas, taikomi kainyne nustatyti mokesčiai.",
+      "creditsTransfers": "Kredito pervedimai LTL padalinyje skirti i) kredito lėšų panaudojimui arba ii) likučio pervedimui po visiško kredito padengimo arba iii) indėlio palūkanų sumos pervedimui",
+      "restrictedPayment": "**Riboto naudojimo mokėjimo sąskaita – tai sąskaita, skirta kreditui, indėliui ar kitam LTL produktui administruoti, atidaroma tais atvejais, jei klientas nepageidauja naudotis unijos paslaugomis interneto banku bei turėti einamosios sąskaitos, tačiau sąskaita būtina norint tinkamai administruoti unijos teikiamą paslaugą. Naudojantis sąskaita kitu negu pirmiau nurodytu tikslu, inicijuojant su konkrečios paslaugos administravimu nesusijusias operacijas, taikomi kainyne nustatyti mokesčiai.",
       "transferingMoney": "Pinigų pervedimas klientų aptarnavimo padalinyje:",
       "freeToRecipient": "Gavėjui į kredito unijoje esančią sąskaitą\tNemokamai",
       "compulsoryDecommitment": "Priverstinis lėšų nurašymas",
@@ -361,7 +365,7 @@
       "accountsFinancialCompanies": "Sąskaitos finansinėms institucijoms ir tarptautinėms įmonėms:",
       "feeForDataVerification": "Duomenų patikros kliento identifikavimo ir pažinimo proceso metu mokestis",
       "fundsCustodyAccounts": "Lėšų saugojimo sąskaita (depozitinė sąskaita)*",
-      "custodyAccountMayOpenedIf": "*Lėšų saugojimo sąskaita gali būti atidaroma klientui turint kredito unijoje einamąją sąskaitą, kuriai taikomi atitinkami kredito unijos patvirtinti įkainiai bei nuo kurios nurašomi mokesčiai, susiję su lėšų saugojimo sąskaitos paslaugos teikimu",
+      "custodyAccountMayOpenedIf": "*Lėšų saugojimo sąskaita gali būti atidaroma klientui turint kredito unijoje einamąją sąskaitą, kuriai taikomi atitinkami LTL patvirtinti įkainiai bei nuo kurios nurašomi mokesčiai, susiję su lėšų saugojimo sąskaitos paslaugos teikimu",
       "managmentCustodyAccount": "Lėšų saugojimo sąskaitos (depozitinės sąskaitos) administravimas/tvarkymas",
       "custodyAccountClosure": "Lėšų saugojimo sąskaitos (depozitinės sąskaitos) uždarymas",
       "moneyTransferForFinancialInstitution": "Pinigų pervedimas klientų aptarnavimo padalinyje finansinėms institucijoms ir tarptautinėms įmonėm",
@@ -375,7 +379,7 @@
       "transferingLoanAgreementOfAnotherPerson": "Paskolos sutarties perkėlimas kito asmens / įmonės vardu",
       "amountOfExistingCreditBalance": "Nuo 1% esamo kredito likučio sumos, min. 350 EUR",
       "unusedCreditAmount": "Min. 0,50% nuo nepanaudotos kredito sumos",
-      "forEachDayOverdue": "0,05 % už kiekvieną pradelstą dieną",
+      "forEachDayOverdue": "0,05% už kiekvieną pradelstą dieną",
       "creditAgreementSpecified": "jeigu kredito sutartyje nenustatyta kitaip",
       "feeForGrantingConsentToSecondCharge": "Mokestis už sutikimą antriniam įkeitimui išdavimą",
       "ofTheCreditBalance": "1,00% nuo kredito likučio sumos, min 400 EUR",
@@ -384,15 +388,15 @@
       "caseOfLoanToACliant": "*Tuo atveju kai klientui suteikiama paskola – kliento apmokėtas mokestis įtraukiamas į bendrą kredito sutarties sudarymo mokesčio sumą",
       "unlessOtherwiseSpecified": "Nuo 150 EUR, jeigu kredito sutartyje nenumatyta kitaip.",
       "provisionOfGuarantee": "Garantijos suteikimas:",
-      "ofTheGuaranteedAmount": "Nuo 0,1% garantuojamos sumos, min. 350 (tik su lėšų įkeitimu).",
+      "ofTheGuaranteedAmount": "Nuo 0,1% garantuojamos sumos, min. 350 EUR (tik su lėšų įkeitimu).",
       "guaranteeFromUnion": "Garantijos suteikimas iš Unijos (paskolos) lėšų – taikomi kredito sutarties sudarymo, sąlygų keitimo mokesčiai.",
       "administrationClaimForPayment": "Reikalavimo mokėti pagal garantiją administravimas",
       "amountMin": "0,2% nuo sumos, min 150 EUR",
       "copiesOfDocuments": "Dokumentų kopijos/ nuorašai",
       "documentsFromArchive": "Dokumentų siuntimas iš archyvo",
-      "actualCostForArchiesServices": "Faktinės kredito unijos išlaidos už archyvo paslaugas",
+      "actualCostForArchiesServices": "Faktinės LTL išlaidos už archyvo paslaugas",
       "translationOfCertificates": "Pažymų/ susitarimų vertimas į užsienio kalbą (jei yra galimybė išversti)",
-      "actualCostTranslationServices": "Faktinės kredito unijos išlaidos vertimo paslaugoms įsigyti"
+      "actualCostTranslationServices": "Faktinės LTL išlaidos vertimo paslaugoms įsigyti"
     }
   },
   "licence": {
@@ -437,13 +441,15 @@
       "interestRates": "Palūkanų normos",
       "calculator": "Skaičiuoklė",
       "process": "Procesas",
-      "clientSuport": "Klientų palaikymas",
+      "clientSuport": "Pagalba klientams",
       "faq": "D.U.K."
     },
     "benefitsArticle": {
       "article1": {
         "title": "Terminuotas indėlis",
-        "description": "Terminuotasis indėlis – tai indėlio rūšis, kai sutinkate savo pinigus mūsų finansų įstaigoje laikyti tam tikrą laikotarpį. Per šį laiką jūs uždirbsite fiksuotą palūkanų normą (nuorodą), kuri nustatoma pagal indėlio trukmę. Palūkanas galite gauti kas mėnesį, kas ketvirtį, pusmetį, kasmet arba termino pabaigoje. Atkreipkite dėmesį, kad pasirinkus mėnesines įmokas, palūkanų norma gali šiek tiek mažėti (0,3%) nuo nurodytų palūkanų normų."
+        "description": "Terminuotasis indėlis – tai indėlio rūšis, kai sutinkate savo pinigus mūsų finansų įstaigoje laikyti tam tikrą laikotarpį. Per šį laiką jūs uždirbsite fiksuotą palūkanų ",
+        "restDescription": ", kuri nustatoma pagal indėlio trukmę. Palūkanas galite gauti kas mėnesį, kas ketvirtį, pusmetį, kasmet arba termino pabaigoje. Atkreipkite dėmesį, kad pasirinkus mėnesines įmokas, palūkanų norma gali šiek tiek mažėti (0,3%) nuo nurodytų palūkanų normų.",
+        "link": " normą"
       },
       "article2": {
         "title": "Indėlių apsauga",
@@ -464,12 +470,12 @@
     "stepProcess": {
       "title": "Terminuoto indėlio sąskaitos atidarymo procesas",
       "step1": {
-        "title": "Atvykite į LTL Kredito uniją",
+        "title": "Atvykite į LTL",
         "description": "Mus rasite adresu Sporto g. 18 LT-09238 Vilnius."
       },
       "step2": {
         "title": "Pateikite dokumentus",
-        "subTitle": "Su savimi turėkite:\n",
+        "subTitle": "Su savimi turėkite:\n\n",
         "bulletBlock": {
           "bulet1": "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
           "bulet2": "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
@@ -481,7 +487,7 @@
       },
       "step4": {
         "title": "Valdykite savo terminuoto indėlio sąskaitą",
-        "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure ",
+        "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų ",
         "restOfDescription": ", iš anksto registruotis nereikia."  
       }
     },
@@ -549,13 +555,13 @@
       "steps": "Žingsniai",
       "afterYouOpened": "Jums atidarius",
       "priceList": "Kainoraštis",
-      "clientSupport": "Klientų palaikymas",
+      "clientSupport": "Pagalba klientams",
       "faq": "Duk"
     },
     "articleBlock": {
       "article1": {
         "title": "Banko sąskaitos atidarymas",
-        "text": "Norint atsidaryti sąskaitą LTL Kredito unijoje, būtina turėti Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat reikia tapti unijos nariu. Peržvelkite apačioje pateiktą sąskaitos atidarymo procesą."
+        "text": "Norint atsidaryti sąskaitą LTL, būtina turėti Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat reikia tapti unijos nariu. Peržvelkite apačioje pateiktą sąskaitos atidarymo procesą."
       },
       "article2": {
         "title": "Prisijungimas prie sąskaitos",
@@ -569,12 +575,12 @@
     "stepProcess": {
       "blockTitle": "Einamosios sąskaitos atidarymo procesas",
       "step1": {
-        "title": "Atvykite į LTL Kredito uniją",
+        "title": "Atvykite į LTL",
         "description": "Mus rasite adresu Sporto g. 18 LT-09238 Vilnius."
       },
       "step2": {
         "title": "Pateikite dokumentus",
-        "subTitle": "Su savimi turėkite:",
+        "subTitle": "Su savimi turėkite:\n\n",
         "bulletBlock": {
           "bulet1" :"Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
           "bulet2" :"Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
@@ -588,7 +594,7 @@
       "step4": {
         "title": "Valdykite savo einamąją sąskaitą",
         "description":
-          "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti sąskaitą bei atlikti mokėjimus ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure ",
+          "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti sąskaitą bei atlikti mokėjimus ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų ",
         "restOfDescription": ". Iš anksto registruotis nereikia."  
       }
     },
@@ -639,14 +645,14 @@
       "title": "Paskolos paraiškos teikimo procesas:",
       "step1": {
         "title":
-          "Norint gauti paskolą, pirmiausiai reikia tapti kredito unijos nariu",
+          "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
         "description":
           "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
         "description":
-          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15 000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
+          "Pasakykite LTL darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
       },
       "step3": {
         "title": "Pateikite dokumentus",
@@ -746,14 +752,14 @@
       "title": "Paskolos paraiškos teikimo procesas:",
       "step1": {
         "title":
-          "Norint gauti paskolą, pirmiausiai reikia tapti kredito unijos nariu",
+          "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
         "description":
           "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
         "description":
-          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15 000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
+          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
       },
       "step3": {
         "title": "Pateikite dokumentus",
@@ -812,14 +818,14 @@
       "title": "Paskolos paraiškos teikimo procesas:",
       "step1": {
         "title":
-          "Norint gauti paskolą, pirmiausiai reikia tapti kredito unijos nariu",
+          "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
         "description":
           "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
         "description":
-          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15 000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
+          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15,000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
       },
       "step3": {
         "title": "Pateikite dokumentus",
@@ -849,7 +855,8 @@
     "articleBlock": {
       "article1": "Esame įsipareigoję užtikrinti finansinių paslaugų prieinamumą ir patikimumą kiekvienam. Tikslas – skatinti žmonių įsitraukimą, pašalinant kliūtis ir užtikrinant finansinių paslaugų naudojimo paprastumą. Vykdant šią misiją partnerystė vaidina lemiamą vaidmenį, todėl kviečiame bet kokio dydžio ir verslo sričių įmones prisijungti prie mūsų.",
       "article2": "Suprantame, kad kiekvienas iš mūsų partnerių pateikia unikalių privalumų ir perspektyvų, todėl esame įsipareigoję dirbti su jumis kurdami individualius sprendimus, atitinkančius konkrečius klientų poreikius. Nesvarbu, ar esate mažas startuolis, ar didelė korporacija, technologijų įmonė, norinti integruotis su mūsų platforma, ar pardavimų tarpininkas, siekiantis išplėsti savo verslą, esame pasiryžę kurti prieinamą ir integruotą ekosistemą, skatinančią augimą ir naujoves.",
-      "article3": "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite prašome su mumis užpildydami žemiau esančią formą arba paskambindami telefonu +370 5 205 5240 / +370 5 205 5241."
+      "article3": "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite su mumis nurodytais ",
+      "contacts": "kontaktais."
     }
   },
   "privacyPolicy": {
@@ -876,7 +883,7 @@
   "security": {
     "title": "Saugumas",
     "description":
-      "LTL Kredito unijoje jūsų finansinė gerovė yra mūsų didžiausias rūpestis. Suprantame pasitikėjimo svarbą, kai kalbama apie jūsų sunkiai uždirbtus pinigus, todėl esame įsipareigoję užtikrinti saugią ir patikimą aplinką visiems jūsų bankiniams poreikiams. Štai kodėl LTL Kredito unija yra jūsų patikimas finansinio saugumo partneris:",
+      "LTL jūsų finansinė gerovė yra mūsų didžiausias rūpestis. Suprantame pasitikėjimo svarbą, kai kalbama apie jūsų sunkiai uždirbtus pinigus, todėl esame įsipareigoję užtikrinti saugią ir patikimą aplinką visiems jūsų bankiniams poreikiams. Štai kodėl LTL Kredito unija yra jūsų patikimas finansinio saugumo partneris:",
     "bullet1":
       "Griežta atitiktis: Laikomės aukščiausių pramonės standartų ir laikomės visų atitinkamų finansinių taisyklių. Mūsų veikla reguliariai tikrinama ir peržiūrima, kad užtikrintume, jog laikomės visų reikalavimų ir juos viršijame.",
     "bullet2": "Indėlių draudimas: Jūsų indėlius iki 100,000 EUR saugo VĮ 'Indėlių ir investicijų draudimas'. Daugiau informacijos galite rasti adresu",
@@ -891,7 +898,7 @@
     "bullet7":
       "Budrumas kovojant su sukčiavimu: Šviečiame savo klientus apie dažniausiai pasitaikančias sukčiavimo schemas ir pateikiame išteklių, padedančių apsisaugoti nuo sukčių. Budrumas yra bendra atsakomybė, o mes esame pasirengę padėti jums kiekviename žingsnyje.",
     "subDescription":
-      "LTL Kredito unijoje vertiname jūsų pasitikėjimą mumis ir nenuilstamai dirbame, kad išlaikytume aukščiausius saugos ir saugumo standartus. Jūsų finansinė gerovė yra mūsų prioritetas, todėl esame pasiryžę suteikti jums ramybę, kurios nusipelnėte, kai kalbama apie jūsų bankininkystės poreikius.",
+      "LTL vertiname jūsų pasitikėjimą mumis ir nenuilstamai dirbame, kad išlaikytume aukščiausius saugos ir saugumo standartus. Jūsų finansinė gerovė yra mūsų prioritetas, todėl esame pasiryžę suteikti jums ramybę, kurios nusipelnėte, kai kalbama apie jūsų bankininkystės poreikius.",
     "credits": "Jūsų pasitikėjimas - mūsų prioritetas."
   },
   "suportsComplaints": {
@@ -923,11 +930,13 @@
   },
   "contacts": {
     "heroBlock": {
-      "contactsTitle": "Direktorius",
-      "directorName" : "Ruslanas Telnovas",
       "adress": "Sporto g. 18 LT-09238 Vilnius Telefonas: +370 5 205 5240 El. paštas: info@ltlku.lt",
       "companyDetails": "LTL Kredito Unija",
-      "companyDetailsDescription": "Sporto g. 18, LT-09238, Vilnius Įmonės kodas: 302791356"
+      "companyDetailsDescription": "Sporto g. 18, LT-09238, Vilnius Įmonės kodas: 302791356",
+      "otherRequisites": "Kiti rekvizitai",
+      "sepa" : "SEPA mokėjimo tinko narė, kodas 51500",
+      "bic": "BIC kodas LTKULT21XXX",
+      "data": "Duomenys apie bendrovę kaupiami ir saugomi Juridinių asmenų registre"
     },
     "articleBlock": {
       "title": "Klientų aptarnavimas būstinėje",
@@ -1016,7 +1025,7 @@
         },
         "step5": {
           "title": "Valdykite savo terminuoto indėlio sąskaitą",
-          "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure ",
+          "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų ",
           "restOfDescription": " , iš anksto registruotis nereikia."
         }
       },
@@ -1055,7 +1064,7 @@
       "benefitsArticle": {
         "article1": {
           "title": "Banko sąskaitos atidarymas",
-          "description": "Norint atsidaryti sąskaitą LTL Kredito unijoje, jūsų įmonė turi būti įregistruota arba turėti padalinį Vilniuje arba Vilniaus, Trakų rajonuose. Taip pat reikia tapti unijos nariu. Peržvelkite apačioje pateiktą sąskaitos atidarymo procesą."
+          "description": "Norint atsidaryti sąskaitą LTL, jūsų įmonė turi būti įregistruota arba turėti padalinį Vilniuje arba Vilniaus, Trakų rajonuose. Taip pat reikia tapti unijos nariu. Peržvelkite apačioje pateiktą sąskaitos atidarymo procesą."
         },
         "article2": {
           "title": "Prisijungimas prie sąskaitos",
@@ -1126,7 +1135,7 @@
         "step5": {
           "title": "Valdykite savo terminuoto indėlio sąskaitą",
           "description":
-            "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų biure ",
+            "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų ",
           "restOfDescription": " , iš anksto registruotis nereikia."
         }
       },
@@ -1301,19 +1310,19 @@
       "heroBlock" : {
         "description" : "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos",
         "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
-        "bullet2": "Lengvai siųskite ir gaukite jūsų lėšasy",
+        "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
         "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
       },
       "benefitsArticle": {
         "article1": {
-          "title": "Atsidarykite sąskaitą LTL Kredito unijoje",
-          "description": "Kad galėtumėte vykdyti mokėjimus, pirmiausia jums reikės sąskaitos LTL Kredito unijoje. Jei esate naujas klientas, galite tapti LTL Kredito unijos nariu ir atsidaryti einamąją sąskaitą atvykę į mūsų skyrių adresu Sporto g. 18, LT- 09238 Vilnius. Su savimi turėkite asmens tapatybę patvirtinantį dokumentą. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje. Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti čia ",
-          "restDescription": " Kredito unijos nariams siūlome:",
+          "title": "Atsidarykite sąskaitą LTL",
+          "description": "Kad galėtumėte vykdyti mokėjimus, pirmiausia jums reikės sąskaitos LTL. Jei esate naujas klientas, galite tapti LTL nariu ir atsidaryti einamąją sąskaitą atvykę į mūsų skyrių adresu Sporto g. 18, LT- 09238 Vilnius. Su savimi turėkite asmens tapatybę patvirtinantį dokumentą. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje. Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti ",
+          "restDescription": " LTL nariams siūlome:",
           "bullet1": "Vietinius mokėjimus visoje Lietuvoje",
           "bullet2": "Tarptautinius SEPA pervedimus visoje Europoje",
-          "bullet3": "Patogų operacijų atlikimą ir valdymą naudojantis LTL Kredito unijos elektroninėje bankininkystėje",
+          "bullet3": "Patogų operacijų atlikimą ir valdymą naudojantis LTL elektroninėje bankininkystėje",
           "bullet4": "Profesionalias konsultacijas ir individualų dėmesį",
-          "link": "(Nuoroda)"
+          "link": "čia."
         },
         "article2": {
           "title": "Patogus europinių pinigų pervedimas (SEPA)",
