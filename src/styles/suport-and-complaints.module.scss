@@ -29,6 +29,10 @@
       text-align: justify;
       font-weight: 300;
     }
+    a {
+      color: var(--main-text-color);
+      text-decoration: none;
+    }
   }
 
   .settlementBlock {

@@ -24,17 +24,17 @@ export default function Licence() {
           <div className={styles.imgWrapper}>
             {router.locale === "en" ? (
               <Image
-                src={LicenceImg}
+                src={LicenceImgEn}
                 alt="licence"
-                width={1025}
-                height={1700}
+                width={1024}
+                height={1490}
               />
             ) : (
               <Image
-                src={LicenceImgEn}
+                src={LicenceImg}
                 alt="licence"
-                width={1025}
-                height={1700}
+                width={1024}
+                height={1490}
               />
             )}
           </div>

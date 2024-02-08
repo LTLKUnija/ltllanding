@@ -160,7 +160,9 @@ export default function FinancialReporting() {
                 return (
                   <p className={styles.date} key={idx}>
                     {router.locale == "en" ? date.dateEn : date.date}
-                    <span>{date.event}</span>
+                    <span>
+                      {router.locale == "en" ? date.eventEn : date.event}
+                    </span>
                   </p>
                 );
               })}

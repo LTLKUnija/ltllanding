@@ -21,7 +21,7 @@
     "investmentLoan": "Investment loan",
     "faq": "F.A.Q",
     "capitalLoan": "Capital loan",
-    "office": "office"
+    "office": "office. "
   },
   "footerNavLinks": {
     "usefulLinks": "Useful links",
@@ -115,7 +115,7 @@
       },
       "article3": {
         "title": "Supporting Local Businesses",
-        "description": "LTL is proud to be a cornerstone of the local business community. When you choose us as your financial partner, you're not just getting a suite of services; you&#39;re investing in the growth and sustainability of local businesses. From small startups to established enterprises, we&#39;re here to provide the financial support and expertise needed to fuel the success of businesses in our community. Join a LTL that actively contributes to the strength of local commerce."
+        "description": "LTL is proud to be a cornerstone of the local business community. When you choose us as your financial partner, you're not just getting a suite of services; youre investing in the growth and sustainability of local businesses. From small startups to established enterprises, were here to provide the financial support and expertise needed to fuel the success of businesses in our community. Join a LTL that actively contributes to the strength of local commerce."
       }
     },
     "bulletsBlock": {
@@ -150,7 +150,7 @@
       },
       "article2": {
         "title": "Convenient European money transfer (SEPA)",
-        "description": "Our online banking allows you not only to initiate one-off payments, but also to upload multiple payment orders at once. If you submit a payment order before 4pm on weekdays, the funds are usually credited to the payee's account on the same working day."
+        "description": "Our online banking allows you not only to initiate one-off payments, but also to upload multiple payment orders at once. If you submit a payment order before 4pm on weekdays, the funds are usually credited to the payee's account on the same working day.\n\n You can make euro payments to all SEPA countries. These include the 27 EU Member States (Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Poland, Portugal, Spain, Romania, Slovakia, Slovenia, Sweden, Spain, Sweden) as well as Switzerland, the United Kingdom, San Marino, San Marino, the Vatican City, Andorra, Monaco and the three EEA countries of Iceland, Norway, and Lichtenstein."
       }
     },
     "transferRate": "See international payment transfer rates.",
@@ -158,12 +158,12 @@
   },
   "aboutUs": {
     "heroBlock": {
-      "title": "About Us",
+      "title": "You don't have to be big to be important",
       "description": {
         "visionTitle": "Vision",
         "visionDescription": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
         "missionTitle": "Mission",
-        "missionDescription": "Unlocking Financial Inclusion - Our Mission, Your Future."
+        "missionDescription": "Unlocking Financial\nInclusion - Our Mission,\nYour Future."
       }
     },
     "innerLinkBlock": {
@@ -214,7 +214,8 @@
   "esg": {
     "heroBlock": {
       "title": "ESG Policy",
-      "description": "Our organization is dedicated to supporting the global goals set by the United Nations. These goals focus on sustainable development, aiming for prosperity and peace for everyone and the planet. We are creating a responsible organization that cares about the environment and society.  We practice good ethics, improve our governance, and uphold the United Nations Global Compact (UNGC).\n\nFor a detailed insight into our ESG Policy please follow the link."
+      "description": "Our organization is dedicated to supporting the global goals set by the United Nations. These goals focus on sustainable development, aiming for prosperity and peace for everyone and the planet. We are creating a responsible organization that cares about the environment and society.  We practice good ethics, improve our governance, and uphold the United Nations Global Compact (UNGC).\n\nFor a detailed insight into our ESG Policy please follow the ",
+      "restOfDescription": "link."
     },
     "articleBlock": {
       "article1": {
@@ -479,7 +480,7 @@
         "title": "Manage your fixed-term deposit account",
         "description":
           "Once your bank and fixed-term deposit accounts have been opened, we will give you access to our online banking platform, which allows you to remotely manage your fixed-term deposit agreements, including the creation of new deposit agreements, the renewal or termination of existing fixed-term deposits, etc. For your convenience, we are always ready to serve you in our ",
-          "restOfDescription": ". No prior registration is required." 
+          "restOfDescription": " No prior registration is required." 
       }
     },
     "calcBlock": {
@@ -587,7 +588,7 @@
         "title": "Manage your current account",
         "description":
           "Once your bank account has been opened, we will give you access to our online banking platform, which allows you to manage your account remotely and make payments etc. For your convenience, we are always ready to serve you at our ",
-          "restOfDescription": ". No need to register in advance."  
+          "restOfDescription": " No need to register in advance."  
       }
     },
     "clientSuport": {
@@ -634,7 +635,7 @@
       }
     },
     "stepProcess": {
-      "title": "Loan application process:",
+      "title": "Loan application process",
       "step1": {
         "title":
           "To apply for a loan, you must first become a member of the LTL",
@@ -742,7 +743,7 @@
       }
     },
     "stepProcess": {
-      "title": "Loan application process:",
+      "title": "Loan application process",
       "step1": {
         "title":
           "To apply for a loan, you must first become a member of the LTL",
@@ -812,7 +813,7 @@
       }
     },
     "stepProcess": {
-      "title": "Loan application process:",
+      "title": "Loan application process",
       "step1": {
         "title":
           "To apply for a loan, you must first become a member of the LTL",
@@ -926,7 +927,7 @@
     "heroBlock": {
       "adress": "Sporto st. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
       "companyDetails": "LTL Credit Union",
-      "companyDetailsDescription": " Sporto Street 18, LT-09238, Vilnius Company Code: 302791356",
+      "companyDetailsDescription": " Sporto Street 18, LT-09238, Vilnius\nCompany Code: 302791356",
       "otherRequisites": "Other requisites",
       "sepa" : "Member of the SEPA payment network, code 51500",
       "bic": "BIC code LTKULT21XXX",
@@ -969,6 +970,7 @@
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
+        "interestRates":"Interest rates",
         "calculator": "Calculate",
         "process": "Process",
         "clientSuport": "Client Support",
@@ -1002,12 +1004,12 @@
         },
         "step2": {
           "title": "Identify yourself",
-          "description": "You may verify your identity by coming to our office ",
-          "restOfDescription": " or via online tool (link to external service provider). You will need a valid identity document."
+          "description": "You may verify your identity by coming to our ",
+          "restOfDescription": " You will need a valid identity document."
         },
         "step3": {
           "title": "Submit the documents",
-          "subTitle": "Please send us:",
+          "subTitle": "Please send us:\n\n",
           "bulletBlock": {
             "bulet1":"Copy of passport, ID or residence permit",
             "bulet2":"Application to join the union",
@@ -1020,8 +1022,8 @@
         },
         "step5": {
           "title": "Start using our payment services",
-          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more.",
-          "restOfDescription": ". No need to register in advance."
+          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more at our ",
+          "restOfDescription": " No need to register in advance."
         }
       },
       "calcBlock": {
@@ -1097,15 +1099,16 @@
         "title": "Term deposit opening processs",
         "step1": {
           "title": "Fill in an account opening form",
-          "description": "Please fill in the application"
+          "description": "Please fill in the application."
         },
         "step2": {
           "title": "Identify yourself",
-          "description": "You may verify your identity by coming to our office (link to address) or via online tool (link to external service provider). You will need a valid identity document."
+          "description": "You may verify your identity by coming to our ",
+          "restOfDescription": " You will need a valid identity document."
         },
         "step3": {
           "title": "Submit the documents",
-          "subTitle": "Please send us:",
+          "subTitle": "Please send us:\n\n",
           "bulletBlock": {
             "bulet1":"Copy of passport, ID or residence permit",
             "bulet2":"Application to join the union",
@@ -1118,8 +1121,8 @@
         },
         "step5": {
           "title": "Start using our payment services",
-          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more.",
-          "restOfDescription":". No prior registration is required."
+          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more at our ",
+          "restOfDescription":" No prior registration is required."
         }
       },
     
@@ -1169,8 +1172,8 @@
         },
         "step2": {
           "title": "Identify yourself",
-          "description": "You may verify your identity by coming to our office ",
-          "restOfDescription": " or via online tool (link to external service provider). You will need a valid identity document."
+          "description": "You may verify your identity by coming to our ",
+          "restOfDescription": " You will need a valid identity document."
         },
         "step3": {
           "title": "Get an initial loan offer",
@@ -1178,7 +1181,7 @@
         },
         "step4": {
           "title": "Submit the documents",
-          "subTitle": "Since we agree on initial terms and conditions, please send us:",
+          "subTitle": "Since we agree on initial terms and conditions, please send us:\n\n",
           "bulletBlock": {
             "bulet1":"Application to join the union",
             "bulet2":"Company registration certificate",
@@ -1245,15 +1248,15 @@
         }
       },
       "stepProcess": {
-        "title": "Loan application process:",
+        "title": "Loan application process",
         "step1": {
           "title": "Fill in a loan application form, present financial statements and give the consent",
           "description": "Please fill in the application and send us a copy of the annual report, balance sheet and profit (loss) statement of the previous financial year, as well as similar reports of the recent quarter to info@ltlku.lt. We also ask CEO and UBO to provide consents for checking the data in the registers so that we can carry out the initial assessment of the application."
         },
         "step2": {
           "title": "Identify yourself",
-          "description": "You may verify your identity by coming to our office ",
-          "restOfDescription": " or via online tool (link to external service provider). You will need a valid identity document."
+          "description": "You may verify your identity by coming to our ",
+          "restOfDescription": " You will need a valid identity document."
         },
         "step3": {
           "title": "Get an initial loan offer",
@@ -1261,7 +1264,7 @@
         },
         "step4": {
           "title": "Submit the documents",
-          "subTitle": "Since we agree on initial terms and conditions, please send us:",
+          "subTitle": "Since we agree on initial terms and conditions, please send us:\n\n",
           "bulletBlock": {
             "bulet1":"Application to join the union",
             "bulet2":"Company registration certificate",

@@ -45,6 +45,11 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    a {
+      color: var(--main-text-color);
+      text-decoration: none;
+    }
   }
 }
 

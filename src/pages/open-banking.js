@@ -70,7 +70,9 @@ export default function OpenBanking() {
             <h4>{t("openBanking.contactBlock.title")}</h4>
             <p>
               {t("openBanking.contactBlock.text")}
-              <Link href="/">openbanking@ltlku.lt.</Link>
+              <Link href="mailto: openbanking@ltlku.lt.">
+                openbanking@ltlku.lt.
+              </Link>
             </p>
           </div>
         </section>

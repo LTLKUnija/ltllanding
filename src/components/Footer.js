@@ -257,6 +257,7 @@ function Footer({ setShowLinks, showLinks }) {
               alt="Picture of the author"
               width={149}
               height={33}
+              style={{ filter: "grayscale(100%)" }}
             />
           </Link>
         </div>

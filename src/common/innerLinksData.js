@@ -207,6 +207,10 @@ export const businessTermDepositInnerLinkList = [
     id: "#benefits",
   },
   {
+    link: "business.termDeposit.innerLinkBlock.interestRates",
+    id: "#interestRates",
+  },
+  {
     link: "business.termDeposit.innerLinkBlock.calculator",
     id: "#calculator",
   },

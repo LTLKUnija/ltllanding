@@ -45,7 +45,12 @@ export default function Esg() {
               </div>
               <h1 className={styles.title}>{t("esg.heroBlock.title")}</h1>
               <div className={styles.description}>
-                <p>{t("esg.heroBlock.description")}</p>
+                <p>
+                  {t("esg.heroBlock.description")}
+                  <Link href="/privacy-policy" className="readMoreLink">
+                    {t("esg.heroBlock.restOfDescription")}
+                  </Link>
+                </p>
               </div>
             </div>
           </div>
