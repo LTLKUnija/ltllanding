@@ -53,7 +53,11 @@ export default function MoneyLoundrying() {
           <p className={styles.articleParagraph}>
             {t("moneyLoundering.articleBlock.article3")}
 
-            <Link href="/" className="readMoreLink">
+            <Link
+              href="https://storage.cloud.google.com/ltlku_web_page/riskAppetiteDeclaration/2023%2001%2031%20Rizikos%20apetito%20deklaracija.pdf"
+              target="_blank"
+              className="readMoreLink"
+            >
               {t("moneyLoundering.articleBlock.link")}
             </Link>
           </p>

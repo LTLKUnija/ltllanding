@@ -239,13 +239,15 @@
   }
 
   .historyYearList {
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
   }
 
   .historyYearItem {
-    width: calc((100% - 120px) / 3);
+    width: calc((100% - 120px) / 2);
 
     h4 {
       font-size: 24px;

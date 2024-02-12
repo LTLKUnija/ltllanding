@@ -219,7 +219,23 @@
     },
     "history": {
       "title": "Istorija",
-      "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing."
+      "description": "Savo kelią pradėjome dar 2012 m. bei esame Lietuvos banko licencijuota kredito įstaiga, kuri teikia įmonių ir privačių asmenų kreditavimo bei indėlių ir kitų grąžintinų lėšų priėmimo iš neprofesionalių rinkos dalyvių paslaugas, bei taip pat turime teisę teikti įvairias mokėjimo paslaugas, įskaitant paslaugas susijusias su grynųjų pinigų įmokėjimu ir išmokėjimu, sąskaitos informacijos ir mokėjimo inicijavimo paslaugas bei kitas paslaugas.",
+      "story1": {
+        "title": "2012",
+        "description": "LTL Kredito unija yra įsteigta 2012-05-29 d. bei tais pačiais metais Lietuvos bankas suteikė bendrovei licenciją verstis kredito unijos veikla."
+      },
+      "story2": {
+        "title": "2017",
+        "description": "2017-11-20 d. LTL gavo Lietuvos banko leidimą pertvarkyti kredito uniją į specializuotą banką bei pradėjo vykdyti licencijavimo procesą."
+      },
+      "story3": {
+        "title": "2020",
+        "description": "2020 m. gegužės 20 d. LTL prisijungė prie Bendros mokėjimų eurais erdvės (SEPA) sistemos, taip suteikiant klientams galimybes atlikti mokėjimus eurais ES erdvėje ir eilėje ES nepriklausančių šalių."
+      },
+      "story4": {
+        "title": "2023",
+        "description": "2023 m. LTL tapo Jungtinės centrinės kredito unijos Kreda nare."
+      }
     }
   },
   "esg": {

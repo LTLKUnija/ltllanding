@@ -208,7 +208,23 @@
     },
     "history": {
       "title": "History",
-      "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing."
+      "description": "We started our journey back in 2012. LTL is a licensed credit institution authorized by the Bank of Lithuania, which provides lending services for companies and private individuals and acceptance of deposits and other refundable funds from non- professional market participants, as well the company has the right to provide various payment services, including services related to cash deposits and withdrawals, account information (AISP) and payment initiation services (PISP) and other services.",
+      "story1": {
+        "title": "2012",
+        "description": "LTL was registered on 29 May 2012 and in the same year the Bank of Lithuania granted the company a licence to perform the credit union (credit institution) activities."
+      },
+      "story2": {
+        "title": "2017",
+        "description": "On 20 November 2017, LTL received authorisation from the Bank of Lithuania for its reorganisation into a specialised bank."
+      },
+      "story3": {
+        "title": "2020",
+        "description": "LTL joined the Single Euro Payments Area (SEPA) network on 4 May 2020 enabling customers to make cashless euro payments to anywhere in the EU as well as in number non-EU countries."
+      },
+      "story4": {
+        "title": "2023",
+        "description": "LTL became a member of the United Central Credit Union Kreda since 2023."
+      }
     }
   },
   "esg": {
@@ -544,7 +560,7 @@
     },
     "innerLinkBlock": {
       "privateClient": "Private client",
-      "steps": "Steps",
+      "steps": "Process",
       "afterYouOpened": "After you opened",
       "priceList": "Price list",
       "clientSupport": "Client Support",

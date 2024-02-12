@@ -120,46 +120,22 @@ export default function About() {
             </p>
             <div className={styles.historyYearList}>
               <div className={styles.historyYearItem}>
-                <h4>1999</h4>
+                <h4>{t("aboutUs.history.story1.title")}</h4>
                 <p className={styles.description}>
-                  Ever since the Etruscans dropped by to party and stayed,
-                  Tuscany has seduced.
+                  {t("aboutUs.history.story1.description")}
                 </p>
               </div>
               <div className={styles.historyYearItem}>
-                <h4>2005</h4>
-                <p>
-                  Ever since the Etruscans dropped by to party and stayed,
-                  Tuscany has seduced.
-                </p>
+                <h4>{t("aboutUs.history.story2.title")}</h4>
+                <p>{t("aboutUs.history.story2.description")}</p>
               </div>
               <div className={styles.historyYearItem}>
-                <h4>2008</h4>
-                <p>
-                  Ever since the Etruscans dropped by to party and stayed,
-                  Tuscany has seduced.
-                </p>
+                <h4>{t("aboutUs.history.story3.title")}</h4>
+                <p>{t("aboutUs.history.story3.description")}</p>
               </div>
               <div className={styles.historyYearItem}>
-                <h4>1999</h4>
-                <p>
-                  Ever since the Etruscans dropped by to party and stayed,
-                  Tuscany has seduced.
-                </p>
-              </div>
-              <div className={styles.historyYearItem}>
-                <h4>2005</h4>
-                <p>
-                  Ever since the Etruscans dropped by to party and stayed,
-                  Tuscany has seduced.
-                </p>
-              </div>
-              <div className={styles.historyYearItem}>
-                <h4>2008</h4>
-                <p>
-                  Ever since the Etruscans dropped by to party and stayed,
-                  Tuscany has seduced.
-                </p>
+                <h4>{t("aboutUs.history.story4.title")}</h4>
+                <p>{t("aboutUs.history.story4.description")}</p>
               </div>
             </div>
           </div>

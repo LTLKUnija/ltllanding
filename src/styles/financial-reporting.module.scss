@@ -265,15 +265,20 @@
     align-items: center;
   }
 
-  .date {
+  .item {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
     width: 590px;
     text-align: left;
     margin-bottom: 16px;
+    display: flex;
 
-    span {
+    .date {
+      min-width: 110px;
+    }
+
+    .event {
       font-weight: 300;
       padding-left: 40px;
     }
