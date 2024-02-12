@@ -1,6 +1,17 @@
 .aboutUsSection {
-  padding: 140px 0 30px 0;
+  padding: 66px 0 30px 0;
   background-color: var(--theme-color3);
+
+  .title {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 62px;
+    text-align: left;
+    margin-bottom: 90px;
+    white-space: pre-wrap;
+  }
 
   .aboutUsHeroBlock {
     display: flex;
@@ -9,20 +20,11 @@
     margin-bottom: 90px;
   }
 
-  .title {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 62px;
-    text-align: center;
-    margin-bottom: 90px;
-  }
-
   .missionTitle {
     font-size: 25px;
     font-weight: 700;
     line-height: 32px;
     margin-bottom: 20px;
-    padding-top: 30px;
   }
 
   .missionDescription {
@@ -30,6 +32,7 @@
     font-weight: 300;
     line-height: 32px;
     max-width: 383px;
+    white-space: pre-wrap;
   }
 
   .aboutUsHeroVision {
@@ -236,13 +239,15 @@
   }
 
   .historyYearList {
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
   }
 
   .historyYearItem {
-    width: calc((100% - 120px) / 3);
+    width: calc((100% - 120px) / 2);
 
     h4 {
       font-size: 24px;
@@ -292,7 +297,7 @@
     .title {
       font-size: 40px;
       font-weight: 700;
-      line-height: 29px;
+      line-height: 42px;
       margin-bottom: 30px;
     }
   }

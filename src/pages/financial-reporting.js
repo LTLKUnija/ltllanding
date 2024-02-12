@@ -158,10 +158,14 @@ export default function FinancialReporting() {
             <div className={styles.calendarBlock}>
               {financialCalendarData.map((date, idx) => {
                 return (
-                  <p className={styles.date} key={idx}>
-                    {router.locale == "en" ? date.dateEn : date.date}
-                    <span>{date.event}</span>
-                  </p>
+                  <div className={styles.item} key={idx}>
+                    <div className={styles.date}>
+                      {router.locale == "en" ? date.dateEn : date.date}
+                    </div>
+                    <span className={styles.event}>
+                      {router.locale == "en" ? date.eventEn : date.event}
+                    </span>
+                  </div>
                 );
               })}
             </div>
