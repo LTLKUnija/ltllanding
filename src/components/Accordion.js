@@ -80,8 +80,7 @@ export default function Accordion({ faqData, singleLevel }) {
                                     <Link
                                       href={question.links[linkIndex]}
                                       key={index}
-                                      className="readMoreLink"
-                                      style={{ fontSize: "14px" }}
+                                      className="readMoreLink faqLink"
                                       target="_blank"
                                     >
                                       {segment}
@@ -115,8 +114,7 @@ export default function Accordion({ faqData, singleLevel }) {
                                       href={question.links[linkIndex]}
                                       key={index}
                                       target="_blank"
-                                      className="readMoreLink"
-                                      style={{ fontSize: "14px" }}
+                                      className="readMoreLink faqLink"
                                     >
                                       {segment}
                                     </Link>
