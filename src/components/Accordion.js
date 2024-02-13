@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Accordion({ faqData, singleLevel }) {
   const router = useRouter();
@@ -58,16 +59,72 @@ export default function Accordion({ faqData, singleLevel }) {
               <div className={`acPanel ${question.opened ? "opened" : ""}`}>
                 {!question.hasInnerChildren
                   ? router.locale === "lt"
-                    ? question.body.map((item, idx) => (
-                        <div className="item" key={idx}>
-                          {item}
-                        </div>
-                      ))
-                    : question.bodyEn.map((item, idx) => (
-                        <div className="item" key={idx}>
-                          {item}
-                        </div>
-                      ))
+                    ? question.body.map((item, idx) => {
+                        if (typeof item === "string") {
+                          return (
+                            <div className="item" key={idx}>
+                              {item}
+                            </div>
+                          );
+                        } else {
+                          const segments =
+                            item.linkedText.split(/\/\/\/(.*?)\/\/\//g);
+                          return (
+                            <div className="item" key={idx}>
+                              {segments.map((segment, index) => {
+                                if (index % 2 === 0) {
+                                  return segment;
+                                } else {
+                                  const linkIndex = (index - 1) / 2;
+                                  return (
+                                    <Link
+                                      href={question.links[linkIndex]}
+                                      key={index}
+                                      className="readMoreLink faqLink"
+                                      target="_blank"
+                                    >
+                                      {segment}
+                                    </Link>
+                                  );
+                                }
+                              })}
+                            </div>
+                          );
+                        }
+                      })
+                    : question.bodyEn.map((item, idx) => {
+                        if (typeof item === "string") {
+                          return (
+                            <div className="item" key={idx}>
+                              {item}
+                            </div>
+                          );
+                        } else {
+                          const segments =
+                            item.linkedText.split(/\/\/\/(.*?)\/\/\//g);
+                          return (
+                            <div className="item" key={idx}>
+                              {segments.map((segment, index) => {
+                                if (index % 2 === 0) {
+                                  return segment;
+                                } else {
+                                  const linkIndex = (index - 1) / 2;
+                                  return (
+                                    <Link
+                                      href={question.links[linkIndex]}
+                                      key={index}
+                                      target="_blank"
+                                      className="readMoreLink faqLink"
+                                    >
+                                      {segment}
+                                    </Link>
+                                  );
+                                }
+                              })}
+                            </div>
+                          );
+                        }
+                      })
                   : question.bodyEn.map((item, index) => {
                       return (
                         <div className="ac" key={index}>
