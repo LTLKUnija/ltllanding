@@ -12,10 +12,8 @@ function LandingArticle({ title, text, side, image }) {
         <Image
           src={`http:${image.fields.file.url}`}
           alt={image.fields.title}
-          style={{
-            width: "auto",
-            height: "auto",
-          }}
+          width={image.fields.file.details.image.width}
+          height={image.fields.file.details.image.heigh}
         />
       </div>
       <div className={styles.articleBlock}>
