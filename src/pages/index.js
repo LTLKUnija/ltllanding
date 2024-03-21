@@ -1,6 +1,8 @@
+import { createClient } from "contentful";
 import IndexLayout from "@/Layouts/IndexLayout";
 import SimpleSlider from "@/components/IndexHeroSlider";
 import IndexNews from "@/components/IndexNews";
+import LandingArticle from "@/components/LandingArticle";
 import Link from "next/link";
 import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
@@ -10,7 +12,8 @@ import ArticleImg3 from "@../../../public/assets/images/article3.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export default function Home() {
+export default function Home({ landingArticles }) {
+  console.log(landingArticles);
   const { t } = useTranslation("common");
 
   return (
@@ -22,7 +25,18 @@ export default function Home() {
           </section>
           <section className={styles.beneficialArticles}>
             <div className="container">
-              <article className={styles.beneficialArticle}>
+              {landingArticles.map((article) => {
+                return (
+                  <LandingArticle
+                    key={article.sys.id}
+                    title={article.fields.articleTitle}
+                    text={article.fields.articleText}
+                    image={article.fields.articleImage}
+                    side={article.fields.imageOnRightSide}
+                  />
+                );
+              })}
+              {/* <article className={styles.beneficialArticle}>
                 <div className={styles.imageBlock}>
                   <Image
                     src={ArticleImg1}
@@ -69,7 +83,7 @@ export default function Home() {
                   <h2>{t("indexPage.articleBlock.article3.title")}</h2>
                   <p>{t("indexPage.articleBlock.article3.description")}</p>
                 </div>
-              </article>
+              </article> */}
             </div>
           </section>
 
@@ -95,8 +109,19 @@ export default function Home() {
 }
 
 export async function getStaticProps({ locale }) {
+  const client = createClient({
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_API,
+  });
+
+  const res = await client.getEntries({
+    content_type: "mainPageArticle",
+    locale: locale === "lt" ? "lt-LT" : "en-US",
+  });
+
   return {
     props: {
+      landingArticles: res.items,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
