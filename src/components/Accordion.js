@@ -15,6 +15,7 @@ export default function Accordion({ faqData, singleLevel }) {
 
   const openFaq = (e) => {
     const idx = e.target.dataset.idx;
+
     let parentidx = "";
     let temp = JSON.parse(JSON.stringify(data));
 
