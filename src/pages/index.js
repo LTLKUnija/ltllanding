@@ -3,16 +3,12 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import SimpleSlider from "@/components/IndexHeroSlider";
 import IndexNews from "@/components/IndexNews";
 import LandingArticle from "@/components/LandingArticle";
-import Link from "next/link";
 import styles from "@/styles/Home.module.scss";
-import Image from "next/image";
-import ArticleImg1 from "@../../../public/assets/images/article1.png";
-import ArticleImg2 from "@../../../public/assets/images/article2.png";
-import ArticleImg3 from "@../../../public/assets/images/article3.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home({ landingArticles }) {
+  console.log("Main Page Loaded");
   const { t } = useTranslation("common");
 
   return (
@@ -120,7 +116,7 @@ export async function getStaticProps({ locale }) {
 
   return {
     props: {
-      landingArticles: res.items,
+      landingArticles: res.items.reverse(),
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
