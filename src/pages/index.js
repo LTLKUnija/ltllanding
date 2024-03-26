@@ -8,7 +8,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Home({ landingArticles }) {
-  console.log("Main Page Loaded");
+  console.log(landingArticles);
   const { t } = useTranslation("common");
 
   return (
