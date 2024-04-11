@@ -49,7 +49,9 @@ export default function SimpleSlider() {
               className={styles.heroImage}
             />
             <h1>{t("indexPage.slideOne.heroBlockH1")}</h1>
-            <p>{t("indexPage.slideOne.heroBlockText")}</p>
+            <p className={styles.description}>
+              {t("indexPage.slideOne.heroBlockText")}
+            </p>
             <div className="action-button-block">
               <Link className="outlinedBtn" href="/deposits">
                 {t("indexPage.slideOne.learnMoreButton")}
@@ -68,7 +70,9 @@ export default function SimpleSlider() {
               className={styles.heroImage}
             />
             <h1>{t("indexPage.slideTwo.heroBlockH1")}</h1>
-            <p>{t("indexPage.slideTwo.heroBlockText")}</p>
+            <p className={styles.description}>
+              {t("indexPage.slideTwo.heroBlockText")}
+            </p>
             <div className="action-button-block">
               <Link className="outlinedBtn long" href="/credits/mortgage">
                 {t("indexPage.slideTwo.learnMoreButton")}
@@ -87,7 +91,9 @@ export default function SimpleSlider() {
               className={styles.heroImage}
             />
             <h1>{t("indexPage.slideThree.heroBlockH1")}</h1>
-            <p>{t("indexPage.slideThree.heroBlockText")}</p>
+            <p className={styles.description}>
+              {t("indexPage.slideThree.heroBlockText")}
+            </p>
             <div className="action-button-block">
               <Link className="outlinedBtn" href="/current-account">
                 {t("indexPage.slideThree.learnMoreButton")}

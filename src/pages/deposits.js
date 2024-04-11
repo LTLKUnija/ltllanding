@@ -238,7 +238,7 @@ export default function Deposit() {
               </div>
             </div>
             <div className={styles.depositSectionButton}>
-              <Link className="containedBtn long red" href="/">
+              <Link className="containedBtn long red" href="/contacts">
                 {t("termDeposit.calcBlock.button")}
               </Link>
             </div>

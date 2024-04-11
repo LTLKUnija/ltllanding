@@ -56,22 +56,22 @@ export default function About() {
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}></div>
                 <h4 className={styles.membersName}>Vardas Pavardė</h4>
-                <p>{t("aboutUs.team.duties")} : </p>
+                <p>{t("aboutUs.team.duties")}: </p>
               </div>
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}></div>
                 <h4 className={styles.membersName}>Vardas Pavardė</h4>
-                <p>{t("aboutUs.team.duties")} : </p>
+                <p>{t("aboutUs.team.duties")}: </p>
               </div>
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}></div>
                 <h4 className={styles.membersName}>Vardas Pavardė</h4>
-                <p>{t("aboutUs.team.duties")} : </p>
+                <p>{t("aboutUs.team.duties")}: </p>
               </div>
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}></div>
                 <h4 className={styles.membersName}>Vardas Pavardė</h4>
-                <p>{t("aboutUs.team.duties")} : </p>
+                <p>{t("aboutUs.team.duties")}: </p>
               </div>
             </div>
           </div>

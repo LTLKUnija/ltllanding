@@ -242,10 +242,6 @@ export const businessCurrentAccountInnerLinkList = [
     id: "#process",
   },
   {
-    link: "business.currentAccount.innerLinkBlock.afterYouOpened",
-    id: "#after",
-  },
-  {
     link: "business.currentAccount.innerLinkBlock.clientSuport",
     id: "#clientSuport",
   },

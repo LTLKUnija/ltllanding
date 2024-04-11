@@ -49,7 +49,9 @@ export default function SimpleSlider() {
               className={styles.heroImage}
             />
             <h1>{t("businessIndexPage.slideOne.heroBlockH1")}</h1>
-            <p>{t("businessIndexPage.slideOne.heroBlockText")}</p>
+            <p className={styles.description}>
+              {t("businessIndexPage.slideOne.heroBlockText")}
+            </p>
             <div className="action-button-block">
               <Link className="outlinedBtn blue" href="/business/deposits">
                 {t("businessIndexPage.slideOne.learnMoreButton")}
@@ -67,14 +69,16 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1>{t("indexPage.slideTwo.heroBlockH1")}</h1>
-            <p>{t("indexPage.slideTwo.heroBlockText")}</p>
+            <h1>{t("businessIndexPage.slideTwo.heroBlockH1")}</h1>
+            <p className={styles.description}>
+              {t("businessIndexPage.slideTwo.heroBlockText")}
+            </p>
             <div className="action-button-block">
               <Link
                 className="outlinedBtn long blue"
                 href="/business/investment-loan"
               >
-                {t("indexPage.slideTwo.learnMoreButton")}
+                {t("businessIndexPage.slideTwo.learnMoreButton")}
               </Link>
             </div>
           </div>
@@ -89,14 +93,16 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1>{t("indexPage.slideThree.heroBlockH1")}</h1>
-            <p>{t("indexPage.slideThree.heroBlockText")}</p>
+            <h1>{t("businessIndexPage.slideThree.heroBlockH1")}</h1>
+            <p className={styles.description}>
+              {t("businessIndexPage.slideThree.heroBlockText")}
+            </p>
             <div className="action-button-block">
               <Link
                 className="outlinedBtn blue"
                 href="/business/current-account"
               >
-                {t("indexPage.slideThree.learnMoreButton")}
+                {t("businessIndexPage.slideThree.learnMoreButton")}
               </Link>
             </div>
           </div>

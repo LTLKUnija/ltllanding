@@ -32,7 +32,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
         />
       </div>
       <div className={styles.openAcc}>
-        <Link href="/open-account" className={styles.upperCaseLink}>
+        <Link href="/contacts" className={styles.upperCaseLink}>
           {t("headerNavLinks.openAccount")}
         </Link>
       </div>

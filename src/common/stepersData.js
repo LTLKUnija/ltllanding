@@ -20,6 +20,7 @@ export const termDepositSteperData = [
       "business.termDeposit.stepProcess.step3.bulletBlock.bulet1",
       "business.termDeposit.stepProcess.step3.bulletBlock.bulet2",
       "business.termDeposit.stepProcess.step3.bulletBlock.bulet3",
+      "business.termDeposit.stepProcess.step3.bulletBlock.bulet4",
     ],
   },
   {
@@ -108,6 +109,7 @@ export const currentAccountSteperData = [
       "business.currentAccount.stepProcess.step3.bulletBlock.bulet1",
       "business.currentAccount.stepProcess.step3.bulletBlock.bulet2",
       "business.currentAccount.stepProcess.step3.bulletBlock.bulet3",
+      "business.currentAccount.stepProcess.step3.bulletBlock.bulet4",
     ],
   },
   {
@@ -117,11 +119,9 @@ export const currentAccountSteperData = [
   },
   {
     number: "5",
-    showStepLink: true,
+    showStepLink: false,
     title: "business.currentAccount.stepProcess.step5.title",
     description: "business.currentAccount.stepProcess.step5.description",
-    restOfDescription:
-      "business.currentAccount.stepProcess.step5.restOfDescription",
   },
 ];
 

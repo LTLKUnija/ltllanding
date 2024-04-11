@@ -159,9 +159,7 @@ export default function FinancialReporting() {
               {financialCalendarData.map((date, idx) => {
                 return (
                   <div className={styles.item} key={idx}>
-                    <div className={styles.date}>
-                      {router.locale == "en" ? date.dateEn : date.date}
-                    </div>
+                    <div className={styles.date}>{date.date}</div>
                     <span className={styles.event}>
                       {router.locale == "en" ? date.eventEn : date.event}
                     </span>

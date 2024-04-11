@@ -131,8 +131,8 @@
   },
   "payments": {
     "title": "Nebereikia būti dideliam, kad būtumėte pasaulinio masto",
-    "heroBlock" : {
-      "description" : "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos",
+    "heroBlock": {
+      "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos",
       "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
       "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
       "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
@@ -166,7 +166,7 @@
     },
     "transferRate": "Žiūrėti tarptautinių mokėjimų pavedimo įkainius.",
     "openAccount": "Atsidaryti sąskaitą"
-  },  
+  },
   "aboutUs": {
     "heroBlock": {
       "title": "Nebereikia būti dideliam, kad būtum svarbus",
@@ -505,7 +505,7 @@
       "step4": {
         "title": "Valdykite savo terminuoto indėlio sąskaitą",
         "description": "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų ",
-        "restOfDescription": ", iš anksto registruotis nereikia."  
+        "restOfDescription": ", iš anksto registruotis nereikia."
       }
     },
     "calcBlock": {
@@ -522,8 +522,8 @@
       "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
     },
     "faq": "D.U.K.",
-    "learnMore" : "Sužinokite daugiau",
-    "link" : "sąlygomis."
+    "learnMore": "Sužinokite daugiau",
+    "link": "sąlygomis."
   },
   "openBanking": {
     "pageTitle": "Atviroji bankininkystė",
@@ -599,20 +599,18 @@
         "title": "Pateikite dokumentus",
         "subTitle": "Su savimi turėkite:\n\n",
         "bulletBlock": {
-          "bulet1" :"Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
-          "bulet2" :"Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
+          "bulet1": "Pasą, asmens tapatybės dokumentą arba leidimo gyventi Lietuvoje kopiją",
+          "bulet2": "Dokumentą, patvirtinantį, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje"
         }
       },
       "step3": {
         "title": "Pasirašykite banko sąskaitos sutartį",
-        "description":
-          "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos sutartį bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+        "description": "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos sutartį bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
       },
       "step4": {
         "title": "Valdykite savo einamąją sąskaitą",
-        "description":
-          "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti sąskaitą bei atlikti mokėjimus ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų ",
-        "restOfDescription": ". Iš anksto registruotis nereikia."  
+        "description": "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti sąskaitą bei atlikti mokėjimus ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų ",
+        "restOfDescription": ". Iš anksto registruotis nereikia."
       }
     },
     "clientSuport": {
@@ -661,30 +659,26 @@
     "stepProcess": {
       "title": "Paskolos paraiškos teikimo procesas",
       "step1": {
-        "title":
-          "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
-        "description":
-          "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti)."
+        "title": "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
+        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinigus atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
-        "description":
-          "Pasakykite LTL darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
+        "description": "Pasakykite LTL darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15,000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
       },
       "step3": {
         "title": "Pateikite dokumentus",
         "bulletBlock": {
-          "bulet1":"Užpildytą paraišką paskolai",
-          "bulet2":"Užpildytą laidavimo paraišką",
-          "bulet3":"Sutikimą dėl asmens duomenų tvarkymo",
-          "bulet4":"Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
-          "bulet5":"Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
+          "bulet1": "Užpildytą paraišką paskolai",
+          "bulet2": "Užpildytą laidavimo paraišką",
+          "bulet3": "Sutikimą dėl asmens duomenų tvarkymo",
+          "bulet4": "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "bulet5": "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
         }
       },
       "step4": {
-        "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",
-        "description":
-          "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. Unija, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre."
+        "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas",
+        "description": "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. LTL, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre."
       }
     },
     "clientSuport": {
@@ -768,30 +762,26 @@
     "stepProcess": {
       "title": "Paskolos paraiškos teikimo procesas",
       "step1": {
-        "title":
-          "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
-        "description":
-          "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti)."
+        "title": "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
+        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinugus atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
-        "description":
-          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15 000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
+        "description": "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15,000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
       },
       "step3": {
         "title": "Pateikite dokumentus",
         "bulletBlock": {
           "bulet1": "Užpildytą paraišką paskolai",
-          "bulet2":"Užpildytą laidavimo paraišką",
+          "bulet2": "Užpildytą laidavimo paraišką",
           "bulet3": "Sutikimą dėl asmens duomenų tvarkymo",
-          "bulet4":"Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
-          "bulet5":"Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
-      }
+          "bulet4": "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "bulet5": "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
+        }
       },
       "step4": {
-        "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",
-        "description":
-          "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. Unija, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre."
+        "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas",
+        "description": "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. LTL, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre."
       }
     }
   },
@@ -834,30 +824,26 @@
     "stepProcess": {
       "title": "Paskolos paraiškos teikimo procesas",
       "step1": {
-        "title":
-          "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
-        "description":
-          "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pajų atsiimti)."
+        "title": "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
+        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinigus atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
-        "description":
-          "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15,000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
+        "description": "Pasakykite unijos darbuotojui, kokiam tikslui Jums reikalingi paskola/pinigai ir jis Jums pateiks reikalingą paraiškos formą – tai gali būti paskola būsto įsigijimui, būsto remontui, verslui finansuoti ar vartojimui. Paskoloms iki 15,000 EUR būtinas laiduotojas – asmuo, turintis pakankamai pajamų ar nekilnojamojo turto. Pateikiant paraišką dėl paskolos, būtina pateikti ir laiduotojo asmens dokumento kopiją bei užpildytą laidavimo paraišką.\n\nPaskolos virš 15,000 EUR, arba ilgesnės nei  5 metų laikotarpio  turi būti užtikrintos hipoteka."
       },
       "step3": {
         "title": "Pateikite dokumentus",
         "bulletBlock": {
-          "bulet1":"Užpildytą paraišką paskolai",
-          "bulet2":"Užpildytą laidavimo paraišką",
-          "bulet3":"Sutikimą dėl asmens duomenų tvarkymo",
-          "bulet4":"Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
-          "bulet5":"Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
+          "bulet1": "Užpildytą paraišką paskolai",
+          "bulet2": "Užpildytą laidavimo paraišką",
+          "bulet3": "Sutikimą dėl asmens duomenų tvarkymo",
+          "bulet4": "Pajamas įrodančius dokumentus, jeigu tai ne atlyginimas (nuomos pajamos, ūkininkavimo pajamos, pajamos pagal autorines sutartis ir pan.)",
+          "bulet5": "Siūlomo įkeisti nekilnojamojo arba kilnojamojo turto preliminarų vertinimą bei nuosavybę patvirtinančius dokumentus"
         }
       },
       "step4": {
-        "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas.",
-        "description":
-          "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. Unija, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre."
+        "title": "Atsakymą dėl paskolos suteikimo gausite per 1-2 dienas",
+        "description": "Su Jumis susisieks paskolų vadybininkas ir informuos apie priimtą sprendimą. LTL, įvertinusi nario galimybes grąžinti paskolą, gali paprašyti papildomų paskolos užtikrinimo priemonių. Jeigu atsakymas teigiamas, su vadybininku suderinsite patogų laiką atvykti pasirašyti paskolos ir laidavimo sutarčių. Paskola išmokama  iškart po sutarties pasirašymo.\n\nJeigu paskola suteikiama įkeičiant nekilnojamąjį arba kilnojamąjį turtą, turto įkeitimo sandoris patvirtinimas pas notarą. Paskolos išmokėjimas vykdomas po įkeičiamo turto lakšto užregistravimo hipotekos registre."
       }
     },
     "clientSuport": {
@@ -872,8 +858,9 @@
     "articleBlock": {
       "article1": "Esame įsipareigoję užtikrinti finansinių paslaugų prieinamumą ir patikimumą kiekvienam. Tikslas – skatinti žmonių įsitraukimą, pašalinant kliūtis ir užtikrinant finansinių paslaugų naudojimo paprastumą. Vykdant šią misiją partnerystė vaidina lemiamą vaidmenį, todėl kviečiame bet kokio dydžio ir verslo sričių įmones prisijungti prie mūsų.",
       "article2": "Suprantame, kad kiekvienas iš mūsų partnerių pateikia unikalių privalumų ir perspektyvų, todėl esame įsipareigoję dirbti su jumis kurdami individualius sprendimus, atitinkančius konkrečius klientų poreikius. Nesvarbu, ar esate mažas startuolis, ar didelė korporacija, technologijų įmonė, norinti integruotis su mūsų platforma, ar pardavimų tarpininkas, siekiantis išplėsti savo verslą, esame pasiryžę kurti prieinamą ir integruotą ekosistemą, skatinančią augimą ir naujoves.",
-      "article3": "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, susisiekite su mumis nurodytais ",
-      "contacts": "kontaktais."
+      "article3": "Mums svarbu kurti tvirtus dalykinius santykius. Panagrinėkime kartu, kaip galime bendradarbiauti, kad atvertume prieigą prie finansų ir sukurtume geresnę ateitį. Jei jus domina partnerystė, ",
+      "contacts": "susisiekite",
+      "article3Rest": " su mumis."
     }
   },
   "privacyPolicy": {
@@ -899,23 +886,15 @@
   },
   "security": {
     "title": "Saugumas",
-    "description":
-      "LTL jūsų finansinė gerovė yra mūsų didžiausias rūpestis. Suprantame pasitikėjimo svarbą, kai kalbama apie jūsų sunkiai uždirbtus pinigus, todėl esame įsipareigoję užtikrinti saugią ir patikimą aplinką visiems jūsų bankiniams poreikiams. Štai kodėl LTL yra jūsų patikimas finansinio saugumo partneris:",
-    "bullet1":
-      "Griežta atitiktis: Laikomės aukščiausių pramonės standartų ir laikomės visų atitinkamų finansinių taisyklių. Mūsų veikla reguliariai tikrinama ir peržiūrima, kad užtikrintume, jog laikomės visų reikalavimų ir juos viršijame.",
+    "description": "LTL jūsų finansinė gerovė yra mūsų didžiausias rūpestis. Suprantame pasitikėjimo svarbą, kai kalbama apie jūsų sunkiai uždirbtus pinigus, todėl esame įsipareigoję užtikrinti saugią ir patikimą aplinką visiems jūsų bankiniams poreikiams. Štai kodėl LTL yra jūsų patikimas finansinio saugumo partneris:",
+    "bullet1": "Griežta atitiktis: Laikomės aukščiausių pramonės standartų ir laikomės visų atitinkamų finansinių taisyklių. Mūsų veikla reguliariai tikrinama ir peržiūrima, kad užtikrintume, jog laikomės visų reikalavimų ir juos viršijame.",
     "bullet2": "Indėlių draudimas: Jūsų indėlius iki 100,000 EUR saugo VĮ 'Indėlių ir investicijų draudimas'. Daugiau informacijos galite rasti adresu",
-    "bullet3":
-      "Be reguliaraus vidaus audito, mus taip pat tikrina nepriklausomos audito įmonės, JCKU Kreda ir Lietuvos centrinis bankas. Užtikriname, kad jūsų lėšos ir jūsų asmens duomenų apsauga yra saugiose rankose.",
-    "bullet4":
-      "Pažangiausios technologijos: Investuojame į naujausias technologijas, kad apsaugotume jūsų sandorius ir asmeninę informaciją. Mūsų pažangūs šifravimo ir saugumo protokolai saugo jūsų duomenis, todėl galite būti ramūs atlikdami bankines operacijas internetu ar asmeniškai.",
-    "bullet5":
-      "Griežta prieigos kontrolė: Įgyvendiname griežtą prieigos kontrolę, kad jūsų sąskaitos informacija galėtų naudotis tik įgalioti asmenys.",
-    "bullet6":
-      "Skaidri politika: Tikime visišku skaidrumu. Visos mūsų politikos nuostatos ir sąlygos yra aiškios ir prieinamos, todėl užtikriname, kad suprastumėte savo, kaip kliento, teises ir pareigas. Mūsų įsipareigojimas siekti aiškumo stiprina pasitikėjimą ir patikimumą.",
-    "bullet7":
-      "Budrumas kovojant su sukčiavimu: Šviečiame savo klientus apie dažniausiai pasitaikančias sukčiavimo schemas ir pateikiame išteklių, padedančių apsisaugoti nuo sukčių. Budrumas yra bendra atsakomybė, o mes esame pasirengę padėti jums kiekviename žingsnyje.",
-    "subDescription":
-      "LTL vertiname jūsų pasitikėjimą mumis ir nenuilstamai dirbame, kad išlaikytume aukščiausius saugos ir saugumo standartus. Jūsų finansinė gerovė yra mūsų prioritetas, todėl esame pasiryžę suteikti jums ramybę, kurios nusipelnėte, kai kalbama apie jūsų bankininkystės poreikius.",
+    "bullet3": "Be reguliaraus vidaus audito, mus taip pat tikrina nepriklausomos audito įmonės, JCKU Kreda ir Lietuvos centrinis bankas. Užtikriname, kad jūsų lėšos ir jūsų asmens duomenų apsauga yra saugiose rankose.",
+    "bullet4": "Pažangiausios technologijos: Investuojame į naujausias technologijas, kad apsaugotume jūsų sandorius ir asmeninę informaciją. Mūsų pažangūs šifravimo ir saugumo protokolai saugo jūsų duomenis, todėl galite būti ramūs atlikdami bankines operacijas internetu ar asmeniškai.",
+    "bullet5": "Griežta prieigos kontrolė: Įgyvendiname griežtą prieigos kontrolę, kad jūsų sąskaitos informacija galėtų naudotis tik įgalioti asmenys.",
+    "bullet6": "Skaidri politika: Tikime visišku skaidrumu. Visos mūsų politikos nuostatos ir sąlygos yra aiškios ir prieinamos, todėl užtikriname, kad suprastumėte savo, kaip kliento, teises ir pareigas. Mūsų įsipareigojimas siekti aiškumo stiprina pasitikėjimą ir patikimumą.",
+    "bullet7": "Budrumas kovojant su sukčiavimu: Šviečiame savo klientus apie dažniausiai pasitaikančias sukčiavimo schemas ir pateikiame išteklių, padedančių apsisaugoti nuo sukčių. Budrumas yra bendra atsakomybė, o mes esame pasirengę padėti jums kiekviename žingsnyje.",
+    "subDescription": "LTL vertiname jūsų pasitikėjimą mumis ir nenuilstamai dirbame, kad išlaikytume aukščiausius saugos ir saugumo standartus. Jūsų finansinė gerovė yra mūsų prioritetas, todėl esame pasiryžę suteikti jums ramybę, kurios nusipelnėte, kai kalbama apie jūsų bankininkystės poreikius.",
     "credits": "Jūsų pasitikėjimas - mūsų prioritetas."
   },
   "suportsComplaints": {
@@ -951,7 +930,7 @@
       "companyDetails": "LTL Kredito Unija",
       "companyDetailsDescription": "Sporto g. 18, LT-09238, Vilnius\nĮmonės kodas: 302791356",
       "otherRequisites": "Kiti rekvizitai",
-      "sepa" : "SEPA mokėjimo tinklo narė,\nkodas 51500",
+      "sepa": "SEPA mokėjimo tinklo narė,\nkodas 51500",
       "bic": "BIC kodas LTKULT21XXX",
       "data": "Duomenys apie bendrovę kaupiami ir saugomi Juridinių asmenų registre"
     },
@@ -971,6 +950,11 @@
     "emailPlaceholder": "Elektroninio pašto adresas",
     "button": "Siųsti"
   },
+  "clientSuport": {
+    "title": "Pagalba klientams",
+    "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant terminuoto indėlio operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu ",
+    "or": " arba el. paštu "
+  },
   "news": {
     "title": "Naujienos",
     "readMore": "Skaityti daugiau",
@@ -979,19 +963,19 @@
   "business": {
     "termDeposit": {
       "heroBlock": {
-        "title": "Nebereikia būti dideliam, kad susikrautumėte turtus",
-        "description": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas!",
-        "bullet1": "Gaukite geriausias palūkanų normas rinkojke",
-        "bullet2": "Jūsų indėliai yra apsaugoti indėlių draudimu. ",
-        "bullet3": "Patraukus lojalumo atlygis",
-        "bullet4": "Gaukite individualius pasiūlymus.",
-        "bullet5": "Indėlių terminas nuo 3 iki 60 mėnesių.",
-        "bullet6": "Paskolos palūkanos iki 4.3%",
-        "learnMore": " Sužinokite daugiau"
+        "title": "Nebereikia būti dideliam, kad užsidirbtumėte turtus/jūsų turtas augtų",
+        "description": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas.",
+        "bullet1": "Gaukite patraukliausias palūkanų normas rinkoje",
+        "bullet2": "Jūsų indėliai yra apsaugoti indėlių ",
+        "bullet3": "Patrauklus lojalumo atlygis ir nauda",
+        "bullet4": "Gaukite individualius pasiūlymus",
+        "bullet5": "Indėlių terminas nuo 3 iki 60 mėnesių",
+        "bullet6": "Paskolos palūkanos nuo 3,50%",
+        "learnMore": "draudimu"
       },
       "innerLinkBlock": {
         "benefits": "Privalumai",
-        "interestRates":"Palūkanų normos",
+        "interestRates": "Palūkanų normos",
         "calculator": "Skaičiuoklė",
         "process": "Procesas",
         "clientSuport": "Klientų aptarnavimas",
@@ -1000,8 +984,10 @@
       "benefitsArticle": {
         "article1": {
           "title": "Terminuotas indėlis",
-          "description": "Terminuotasis indėlis – tai indėlio rūšis, kai sutinkate savo pinigus mūsų finansų įstaigoje laikyti tam tikrą laikotarpį. Per šį laiką jūs uždirbsite fiksuotą palūkanų normą (nuorodą), kuri nustatoma pagal indėlio trukmę. Palūkanas galite gauti kas mėnesį, kas ketvirtį, pusmetį, kasmet arba termino pabaigoje. Atkreipkite dėmesį, kad pasirinkus mėnesines įmokas, palūkanų norma gali šiek tiek mažėti (0,3%) nuo nurodytų palūkanų ",
-          "link": "normų."
+          "description": "Terminuotasis indėlis – tai indėlio rūšis, kai sutinkate savo pinigus mūsų finansų įstaigoje laikyti tam tikrą laikotarpį. Per šį laiką jūs uždirbsite fiksuotą palūkanų  ",
+          "descriptionRest": " kuri nustatoma pagal indėlio trukmę. Palūkanas galite gauti kas mėnesį, kas ketvirtį, pusmetį, kasmet arba termino pabaigoje. Atkreipkite dėmesį, kad pasirinkus mėnesines įmokas, palūkanų norma gali šiek tiek mažėti (0,3%) nuo nurodytų palūkanų ",
+          "link": "normų.",
+          "rate": "normą,"
         },
         "article2": {
           "title": "Indėlių apsauga",
@@ -1018,10 +1004,10 @@
         }
       },
       "stepProcess": {
-        "title": "Terminuoto indėlio sąskaitos atidarymo procesas",
+        "title": "Sąskaitos atidarymo procesas (įmonėms):",
         "step1": {
           "title": "Užpildykite sąskaitos atidarymo formą",
-          "description": "Užpildykite paraišką."
+          "description": "Užpildykite juridinio asmens anketą ir duokite sutikimą tikrinti informaciją."
         },
         "step2": {
           "title": "Identifikuokite save",
@@ -1030,11 +1016,12 @@
         },
         "step3": {
           "title": "Pateikite dokumentus",
-          "subTitle": "Prašome atsiųsti mums:\n\n",
+          "subTitle": "Prašome pateikti mums:\n\n",
           "bulletBlock": {
-            "bulet1":"Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-            "bulet2":"Prašymas įstoti į kredito uniją",
-            "bulet3":"Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+            "bulet1": "Prašymą įstoti į Kredito uniją",
+            "bulet2": "Įmonės registracijos pažymėjimą",
+            "bulet3": "Įmonės steigimo sutartį ir įstatus",
+            "bulet4": "Esant poreikiui, gali prireikti pateikti papildomus dokumentus"
           }
         },
         "step4": {
@@ -1065,11 +1052,11 @@
     },
     "currentAccount": {
       "heroBlock": {
-        "title": "Nebereikia būti dideliam, kad būtumėte pasaulinio masto",
-        "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
+        "title": "Nebereikia būti dideliam, kad ...",
+        "description": "Atidarykite IBAN sąskaitą pas mus, atlikite ir gaukite mokėjimus iš visos Euro zonos",
         "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
-        "bullet2": "Lengvai siųskite ir gaukite savo lėšas",
-        "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas"
+        "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
+        "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
       },
       "innerLinkBlock": {
         "benefits": "Privalumai",
@@ -1089,12 +1076,8 @@
           "description": "Atidarę sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos. Patogiausias būdas prisijungti prie savo sąskaitos - naudoti skaitmeninį parašą (mobilųjį ID). Jei skaitmeninio ID neturite, taip pat galime jums išduoti unikalų kodą."
         },
         "article3": {
-          "title": "Parastas paskolos grąžinimo grafikas",
-          "description": "Mūsų vartojimo paskolos grąžinimo grafikas yra paprastas: fiksuotos mėnesio įmokos. Esant jūsų individualiems poreikiams kartu surasime lankstesnių jums tinkamų paskolos grąžinimo galimybių. Taip pat, galite nemokamai atidėti paskolos grąžinimo mokėjimus, jei to prireiktų."
-        },
-        "article4": {
-          "title": "Greitas paskolos sprendimas",
-          "description": "Greitas ir paprastas paraiškos pateikimo procesas leistų greičiau gauti vartojimo paskolos patvirtinimą."
+          "title": "Mokėjimai",
+          "description": "Supaprastinkite savo verslo lėšų valdymą naudodami mūsų verslo banko sąskaitą, kurią lengva valdyti internetu bei kuriai taikomi maži mėnesiniai mokesčiai. Nesvarbu, ar jums reikia pervesti lėšas eurais į SEPA šalis, atlikti vidinius mokėjimus tarp banko sąskaitų, ar planuoti periodinius ir masinius SEPA mokėjimus, mūsų produktas padės jums išspęsti šias užduotis. Naudodami supaprastintus procesus ir greitus mokėjimus galėsite sutelkti dėmesį į savo verslo plėtrą, o mes atliksime visą kitą. Pasinaudokite mūsų SEPA mokėjimų produkto patogumais jau šiandien."
         }
       },
       "afterArticle": {
@@ -1125,36 +1108,33 @@
         }
       },
       "stepProcess": {
-        "title": "Sąskaitos atidarymo tvarka",
+        "title": "Sąskaitos atidarymo procesas (įmonėms):",
         "step1": {
           "title": "Užpildykite sąskaitos atidarymo formą",
-          "description": "Užpildykite paraišką."
+          "description": "Užpildykite juridinio asmens anketą ir duokite sutikimą tikrinti informaciją."
         },
         "step2": {
           "title": "Identifikuokite save",
-          "description":
-            "Savo tapatybę galite patvirtinti mūsų ",
-            "restOfDescription": ". Jums reikės galiojančio asmens dokumento."
+          "description": "Savo tapatybę galite patvirtinti mūsų ",
+          "restOfDescription": ". Jums reikės galiojančio asmens dokumento."
         },
         "step3": {
           "title": "Pateikite dokumentus",
-          "subTitle": "Prašome atsiųsti mums:\n\n",
+          "subTitle": "Prašome pateikti mums:\n\n",
           "bulletBlock": {
-            "bulet1":"Paso, asmens tapatybės dokumento arba leidimo gyventi kopija",
-            "bulet2":"Prašymas įstoti į kredito uniją",
-            "bulet3":"Dokumentas, patvirtinantis, kad gyvenate, dirbate ar studijuojate Vilniaus miesto, Vilniaus rajono ar Trakų rajono savivaldybės teritorijoje, jei jūsų deklaruota gyvenamoji vieta yra registruota kitų savivaldybių teritorijoje (pvz., gyvenamosios patalpos nuomos sutartis, darbo sutartis, studijos). sutartis)"
+            "bulet1": "Prašymą įstoti į Kredito uniją",
+            "bulet2": "Įmonės registracijos pažymėjimą",
+            "bulet3": "Įmonės steigimo sutartį ir įstatus",
+            "bulet4": "Esant poreikiui, gali prireikti pateikti papildomus dokumentus"
           }
         },
         "step4": {
           "title": "Pasirašykite banko sąskaitos ir terminuoto indėlio sutartis",
-          "description":
-            "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir terminuoto indėlio sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo sąlygomis."
+          "description": "Kai bus priimtas sprendimas atidaryti sąskaitą, pakviesime jus pasirašyti banko sąskaitos ir e- bankininkystės sutartis bei susipažinti su bendrosiomis sąskaitų naudojimo ir indėlių draudimo sąlygomis."
         },
         "step5": {
-          "title": "Valdykite savo terminuoto indėlio sąskaitą",
-          "description":
-            "Atsidarius banko ir terminuoto indėlio sąskaitas, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, leidžiančios nuotoliniu būdu valdyti terminuotųjų indėlių sutartis, įskaitant naujų indėlių sutarčių sudarymą, esamų terminuotųjų indėlių pratęsimą ar nutraukimą ir kt. Jūsų patogumui mes visada pasiruošę jus aptarnauti mūsų ",
-          "restOfDescription": ", iš anksto registruotis nereikia."
+          "title": "Valdykite savo banko sąskaitą",
+          "description": "Atsidarius banko sąskaitą, suteiksime jums prieigą prie mūsų internetinės bankininkystės platformos, kurioje galėsite naudotis mūsų mokėjimo paslaugomis, tvarkyti terminuotųjų indėlių sutartis, peržiūrėti informaciją apie savo kreditus (jei tokių turėtumėte) ir kt."
         }
       },
       "faq": "D.U.K."
@@ -1168,7 +1148,7 @@
         "bullet3": "Paskolos grąžinimas termino pabaigoje arba specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
         "bullet4": "Maži mokesčiai už išankstinį paskolos grąžinimą",
         "bullet5": "Paskolos terminas iki 36 mėnesių",
-        "bullet6": "Paskolos palūkanos nuo 5.00%"
+        "bullet6": "Paskolos palūkanos nuo 5,00%"
       },
       "innerLinkBlock": {
         "benefits": "Privalumai",
@@ -1214,12 +1194,12 @@
           "title": "Pateikite dokumentus",
           "subTitle": "Kadangi sutariame dėl pradinių sąlygų, prašome pateikti mums:\n\n",
           "bulletBlock": {
-            "bulet1":"Prašymas įstoti į Kredito uniją",
-            "bulet2":"Įmonės registracijos pažymėjimą",
-            "bulet3":"Steigėjų sutartis ir įstatai",
-            "bulet4":"Įmonės steigimo sutartį ir įstatus",
-            "bulet5":"Vadovo paskyrimo dokumentą",
-            "bulet6":"Turto vertinimo ataskaitas"
+            "bulet1": "Prašymas įstoti į Kredito uniją",
+            "bulet2": "Įmonės registracijos pažymėjimą",
+            "bulet3": "Steigėjų sutartis ir įstatai",
+            "bulet4": "Įmonės steigimo sutartį ir įstatus",
+            "bulet5": "Vadovo paskyrimo dokumentą",
+            "bulet6": "Turto vertinimo ataskaitas"
           }
         },
         "step5": {
@@ -1250,7 +1230,7 @@
         "bullet3": "Specialiai jūsų poreikiams pritaikytas paskolos grąžinimo grafikas",
         "bullet4": "Maži mokesčiai už išankstinį paskolos grąžinimą",
         "bullet5": "Paskolos terminas iki 20 metų",
-        "bullet6": "Paskolos palūkanos nuo 5.00%"
+        "bullet6": "Paskolos palūkanos nuo 5,00%"
       },
       "innerLinkBlock": {
         "benefits": "Privalumai",
@@ -1296,12 +1276,12 @@
           "title": "Pateikite dokumentus",
           "subTitle": "Kadangi sutariame dėl pradinių sąlygų, prašome pateikti mums:\n\n",
           "bulletBlock": {
-            "bulet1":"Prašymas įstoti į Kredito uniją",
-            "bulet2":"Įmonės registracijos pažymėjimą",
-            "bulet3":"Steigėjų sutartis ir įstatai",
-            "bulet4":"Įmonės steigimo sutartį ir įstatus",
-            "bulet5":"Vadovo paskyrimo dokumentą",
-            "bulet6":"Turto vertinimo ataskaitas"
+            "bulet1": "Prašymas įstoti į Kredito uniją",
+            "bulet2": "Įmonės registracijos pažymėjimą",
+            "bulet3": "Steigėjų sutartis ir įstatai",
+            "bulet4": "Įmonės steigimo sutartį ir įstatus",
+            "bulet5": "Vadovo paskyrimo dokumentą",
+            "bulet6": "Turto vertinimo ataskaitas"
           }
         },
         "step5": {
@@ -1325,8 +1305,8 @@
     },
     "payments": {
       "title": "Nebereikia būti dideliam, kad būtumėte pasaulinio masto",
-      "heroBlock" : {
-        "description" : "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos",
+      "heroBlock": {
+        "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos",
         "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
         "bullet2": "Lengvai siųskite ir gaukite jūsų lėšas",
         "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas, pvz., dviejų faktorių autentifikavimą ir sukčiavimo stebėjimo sistemas"
@@ -1355,4 +1335,3 @@
     "pageTitle": "D.U.K."
   }
 }
-

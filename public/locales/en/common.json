@@ -8,7 +8,7 @@
   "headerNavLinks": {
     "private": "Private",
     "business": "Business",
-    "payments": "Payment",
+    "payments": "Payments",
     "currentAccount": "Current account",
     "credit": "Credit",
     "mortgageLoan": "Mortgage loan",
@@ -44,7 +44,7 @@
     "api": "API",
     "career": "Career",
     "contacts": "Contacts",
-    "address": "Sporto st. 18, \n LT- 09238 Vilnius",
+    "address": "Sporto str. 18, \n LT- 09238 Vilnius",
     "faq": "F.A.Q"
   },
   "indexPage": {
@@ -129,18 +129,18 @@
       "text": "Learn more"
     }
   },
-  "payments":{
+  "payments": {
     "title": "You don't have to be big to be international",
-    "heroBlock" : {
-      "description" : "Open an IBAN account with us, make and receive payments from all over the Euro area",
+    "heroBlock": {
+      "description": "Open an IBAN account with us, make and receive payments from all over the Euro area",
       "bullet1": "Bank on-the-go with our 24/7 online banking services",
       "bullet2": "Move your inbound and outbound funds effortlessly",
       "bullet3": "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
     },
     "benefitsArticle": {
       "article1": {
-        "title": "Open an account with LTL Credit Uniont",
-        "description": "To be able to make payments, you will first need an account with LTL. If you are a new customer, you can become a member of LTL and open a current account by coming to our branch at Sporto st. 18, LT- 09238 Vilnius. Please bring your ID with you. You will be able to make all your payments through Online Banking. You can find all payment service fees and related charges ",
+        "title": "Open an account with LTL",
+        "description": "To be able to make payments, you will first need an account with LTL. If you are a new customer, you can become a member of LTL and open a current account by coming to our branch at Sporto str. 18, LT- 09238 Vilnius. Please bring your ID with you. You will be able to make all your payments through Online Banking. You can find all payment service fees and related charges ",
         "restDescription": ". We offer the following to LTL members:",
         "bullet1": "Local payments in all of Lithuania",
         "bullet2": "International SEPA transfers throughout Europe",
@@ -177,7 +177,7 @@
     "team": {
       "title": "LTL Team",
       "description": "Your success is our success, and we are proud to have a team that truly cares about your financial well-being.",
-      "duties": "Duties"
+      "duties": "Role"
     },
     "jobsSection": {
       "title": "Available jobs",
@@ -433,7 +433,7 @@
   },
   "termDeposit": {
     "heroBlock": {
-      "title": "You don‘t have to be big to make a fortune", 
+      "title": "You don‘t have to be big to make a fortune",
       "description": "Save your own money and watch your wealth grow — free is now more powerful than ever! ",
       "bullet1": "Attractive loyalty rewards and benefits",
       "bullet2": "Get individual offers",
@@ -455,7 +455,6 @@
         "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest ",
         "restDescription": " that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest rates.",
         "link": " rate"
-        
       },
       "article2": {
         "title": "Deposit insurance",
@@ -477,7 +476,7 @@
       "title": "Term deposit opening processs",
       "step1": {
         "title": "Visit LTL",
-        "description": "You will find us at Sporto g. 18 LT-09238 Vilnius."
+        "description": "You will find us at Sporto str. 18 LT-09238 Vilnius."
       },
       "step2": {
         "title": "Submit the documents",
@@ -485,18 +484,16 @@
         "bulletBlock": {
           "bulet1": "Passport, ID document or copy of your residence permit",
           "bulet2": "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
-        } 
+        }
       },
       "step3": {
         "title": "Sign the bank account and time deposit agreements",
-        "description":
-          "Once the decision to open an account has been made, we will invite you to sign the bank account and time deposit agreements and to familiarise yourself with the general terms and conditions of the accounts."
+        "description": "Once the decision to open an account has been made, we will invite you to sign the bank account and time deposit agreements and to familiarise yourself with the general terms and conditions of the accounts."
       },
       "step4": {
         "title": "Manage your fixed-term deposit account",
-        "description":
-          "Once your bank and fixed-term deposit accounts have been opened, we will give you access to our online banking platform, which allows you to remotely manage your fixed-term deposit agreements, including the creation of new deposit agreements, the renewal or termination of existing fixed-term deposits, etc. For your convenience, we are always ready to serve you in our ",
-          "restOfDescription": " No prior registration is required." 
+        "description": "Once your bank and fixed-term deposit accounts have been opened, we will give you access to our online banking platform, which allows you to remotely manage your fixed-term deposit agreements, including the creation of new deposit agreements, the renewal or termination of existing fixed-term deposits, etc. For your convenience, we are always ready to serve you at our ",
+        "restOfDescription": " No prior registration is required."
       }
     },
     "calcBlock": {
@@ -513,8 +510,8 @@
       "description": "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt."
     },
     "faq": "F.A.Q.",
-    "learnMore" : "Learn more",
-    "link" : "conditions."
+    "learnMore": "Learn more",
+    "link": "conditions."
   },
   "openBanking": {
     "pageTitle": "Open banking",
@@ -547,9 +544,9 @@
   "career": {
     "title": "Career",
     "contacts": "Contacts",
-    "address": "Sporto st. 18, \n LT- 09238 Vilnius",
+    "address": "Sporto str. 18, \n LT- 09238 Vilnius",
     "faq": "F.A.Q"
-  }, 
+  },
   "privetCurrentAccount": {
     "pageTitle": "You don’t have to be big to be international",
     "heroBlock": {
@@ -584,27 +581,24 @@
       "blockTitle": "Current account opening process",
       "step1": {
         "title": "Visit LTL",
-        "description": "You will find us at Sporto g. 18 LT-09238 Vilnius."
+        "description": "You will find us at Sporto str. 18 LT-09238 Vilnius."
       },
       "step2": {
         "title": "Submit your documents",
         "subTitle": "Please bring:\n\n",
-        "bulletBlock":  {
-         "bulet1" : "Passport, ID document or copy of your residence permit",
-         "bulet2": "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
-      }
-        
+        "bulletBlock": {
+          "bulet1": "Passport, ID document or copy of your residence permit",
+          "bulet2": "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
+        }
       },
       "step3": {
         "title": "Sign the bank account agreement",
-        "description":
-          "Once the decision to open an account has been taken, we will invite you to sign the bank account agreement and to familiarise yourself with the general terms and conditions for the use of accounts."
+        "description": "Once the decision to open an account has been taken, we will invite you to sign the bank account agreement and to familiarise yourself with the general terms and conditions for the use of accounts."
       },
       "step4": {
         "title": "Manage your current account",
-        "description":
-          "Once your bank account has been opened, we will give you access to our online banking platform, which allows you to manage your account remotely and make payments etc. For your convenience, we are always ready to serve you at our ",
-          "restOfDescription": " No need to register in advance."  
+        "description": "Once your bank account has been opened, we will give you access to our online banking platform, which allows you to manage your account remotely and make payments etc. For your convenience, we are always ready to serve you at our ",
+        "restOfDescription": " No need to register in advance."
       }
     },
     "clientSuport": {
@@ -653,30 +647,26 @@
     "stepProcess": {
       "title": "Loan application process",
       "step1": {
-        "title":
-          "To apply for a loan, you must first become a member of the LTL",
-        "description":
-          "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the LTL with your ID, fill in the membership application form, pay the joining fee of 30 EUR for the purchase of a 30 EUR share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the LTL)."
+        "title": "To apply for a loan, you must first become a member of the LTL",
+        "description": "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the LTL with your ID, fill in the membership application form, pay the joining fee of 30 EUR for the purchase of a 30 EUR share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the LTL)."
       },
       "step2": {
         "title": "Fill in the loan application form",
-        "description":
-          "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to €15,000 require a guarantor - a person with sufficient income or real estate. A copy of the guarantor's identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15,000 or for a period of more than 5 years must be secured by a mortgage."
+        "description": "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to 15,000 EUR require a guarantor - a person with sufficient income or real estate. A copy of the guarantor's identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15,000 or for a period of more than 5 years must be secured by a mortgage."
       },
       "step3": {
         "title": "Please submit the following documents",
         "bulletBlock": {
-          "bulet1":"A completed loan application form",
-          "bulet2":"A completed surety application",
-          "bulet3":"Consent to the processing of personal data",
-          "bulet4":"Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
-          "bulet5":"Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
+          "bulet1": "A completed loan application form",
+          "bulet2": "A completed surety application",
+          "bulet3": "Consent to the processing of personal data",
+          "bulet4": "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "bulet5": "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
         }
       },
       "step4": {
-        "title": "You will receive a reply within 1-2 days.",
-        "description":
-          "You will be contacted by a loan manager and informed of the decision. The LTL may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register."
+        "title": "You will receive a reply within 1-2 days",
+        "description": "You will be contacted by a loan manager and informed of the decision. The LTL may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register."
       }
     },
     "clientSuport": {
@@ -761,30 +751,26 @@
     "stepProcess": {
       "title": "Loan application process",
       "step1": {
-        "title":
-          "To apply for a loan, you must first become a member of the LTL",
-        "description":
-          "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the LTL with your ID, fill in the membership application form, pay the joining fee of 30 EUR for the purchase of a 30 EUR share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the LTL)."
+        "title": "To apply for a loan, you must first become a member of the LTL",
+        "description": "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the LTL with your ID, fill in the membership application form, pay the joining fee of 30 EUR for the purchase of a 30 EUR share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the LTL)."
       },
       "step2": {
         "title": "Fill in the loan application form",
-        "description":
-          "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to €15,000 require a guarantor - a person with sufficient income or real estate. A copy of the guarantor's identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15,000 or for a period of more than 5 years must be secured by a mortgage."
+        "description": "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to 15,000 EUR require a guarantor - a person with sufficient income or real estate. A copy of the guarantor's identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15,000 or for a period of more than 5 years must be secured by a mortgage."
       },
       "step3": {
         "title": "Please submit the following documents",
         "bulletBlock": {
-          "bulet1":"A completed loan application form",
-          "bulet2":"A completed surety application",
-          "bulet3":"Consent to the processing of personal data",
-          "bulet4":"Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
-          "bulet5":"Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
+          "bulet1": "A completed loan application form",
+          "bulet2": "A completed surety application",
+          "bulet3": "Consent to the processing of personal data",
+          "bulet4": "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "bulet5": "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
         }
       },
       "step4": {
-        "title": "You will receive a reply within 1-2 days.",
-        "description":
-          "You will be contacted by a loan manager and informed of the decision. The LTL may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register."
+        "title": "You will receive a reply within 1-2 days",
+        "description": "You will be contacted by a loan manager and informed of the decision. The LTL may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register."
       }
     },
     "clientSuport": {
@@ -831,30 +817,26 @@
     "stepProcess": {
       "title": "Loan application process",
       "step1": {
-        "title":
-          "To apply for a loan, you must first become a member of the LTL",
-        "description":
-          "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the LTL with your ID, fill in the membership application form, pay the joining fee of 30 EUR for the purchase of a 30 EUR share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the LTL)."
+        "title": "To apply for a loan, you must first become a member of the LTL",
+        "description": "If you live, work or study in Vilnius or Vilnius and Trakai districts, come to the LTL with your ID, fill in the membership application form, pay the joining fee of 30 EUR for the purchase of a 30 EUR share (pajus) (the share will remain your property and you will be able to withdraw the share when you leave the LTL)."
       },
       "step2": {
         "title": "Fill in the loan application form",
-        "description":
-          "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to €15,000 require a guarantor - a person with sufficient income or real estate. A copy of the guarantor's identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15,000 or for a period of more than 5 years must be secured by a mortgage."
+        "description": "Tell the member of staff what you need the loan/money for and he/she will provide you with the necessary application form - this can be for a home purchase, home renovation, business financing or consumption. Loans up to 15,000 EUR require a guarantor - a person with sufficient income or real estate. A copy of the guarantor's identity document and a completed surety application form must also be submitted when applying for a loan.\n\nLoans above EUR 15,000 or for a period of more than 5 years must be secured by a mortgage."
       },
       "step3": {
         "title": "Please submit the following documents",
         "bulletBlock": {
-          "bulet1":"A completed loan application form",
-          "bulet2":"A completed surety application",
-          "bulet3":"Consent to the processing of personal data",
-          "bulet4":"Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
-          "bulet5":"Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
+          "bulet1": "A completed loan application form",
+          "bulet2": "A completed surety application",
+          "bulet3": "Consent to the processing of personal data",
+          "bulet4": "Proof of income, if it is not a salary (rental income, farming income, royalty income, etc.)",
+          "bulet5": "Preliminary valuation of the immovable or movable property proposed to be pledged and proof of ownership"
         }
       },
       "step4": {
-        "title": "You will receive a reply within 1-2 days.",
-        "description":
-          "You will be contacted by a loan manager and informed of the decision. The LTL may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register."
+        "title": "You will receive a reply within 1-2 days",
+        "description": "You will be contacted by a loan manager and informed of the decision. The LTL may ask for additional collateral to secure the loan after assessing the member's ability to repay the loan. If the answer is positive, you will arrange a convenient time with the manager to come and sign the loan and surety agreements. The loan is disbursed immediately after signing the agreement.\n\nIf the loan is granted against a pledge of immovable or movable property, the pledge is notarised. Disbursement of the loan shall take place after registration of the mortgage note in the mortgage register."
       }
     }
   },
@@ -864,8 +846,9 @@
     "articleBlock": {
       "article1": "Our commitment lies in ensuring accessibility and reliability of financial services for everyone. The goal is to foster global financial inclusion by removing barriers and promoting ease of use. In this mission, partnerships play a crucial role, inviting businesses of all sizes and backgrounds to join us.",
       "article2": "We value the unique strengths and perspectives that each of our partners brings to the table. Together, we work closely to develop customized solutions that cater to the specific needs of your customers.  With a strong focus on fostering an inclusive ecosystem, businesses of all types are welcome to join us. This includes small startups, large corporations, technology companies, and sales affiliates.  Our aim is to create an environment that promotes growth and innovation for all.",
-      "article3": "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please contact us using the contact details ",
-      "contacts": "below."
+      "article3": "Building strong relationships is important to us.  Let's explore how we can collaborate to unlock financial inclusion and create a better future. If you're interested in a partnership, please",
+      "contacts": " contact",
+      "article3Rest": " us."
     }
   },
   "privacyPolicy": {
@@ -891,26 +874,16 @@
   },
   "security": {
     "title": "Security",
-    "description":
-      "At LTL, your financial well-being is our utmost concern. We understand the importance of trust when it comes to your hard-earned money, and we are committed to providing a safe and secure environment for all your banking needs. Here's why LTL is your trusted partner for financial security:",
-    "bullet1":
-      "Rigorous Compliance: We adhere to the highest industry standards and comply with all relevant financial regulations. Our operations are subject to regular audits and reviews to ensure we meet and exceed all requirements.",
-    "bullet2":
-      "Deposit Insurance: Your deposits up to 100,000 EUR are protected by VĮ „Indėlių ir investicijų draudimas”. More information can be found at",
-    "bullet3":
-      "In addition to regular internal audits, we are also audited by independent audit firms, JCKU Kreda and the Central Bank of Lithuania. We ensure that your funds and the protection of your personal data are in safe hands.",
-    "bullet4":
-      "Cutting-Edge Technology: We invest in the latest technology to safeguard your transactions and personal information. Our advanced encryption and security protocols protect your data, providing you with peace of mind while banking online or in person.",
-    "bullet5":
-      "Strict Access Controls: We implement strict access controls to ensure that only authorized individuals can access your account information.",
-    "bullet6":
-      "Transparent Policies: We believe in full transparency. All our policies and terms are clear and accessible, ensuring that you understand your rights and responsibilities as a customer. Our commitment to clarity builds trust and confidence.",
-    "bullet7":
-      "Vigilance Against Fraud: We educate our customers on common fraud schemes and provide resources to help you protect yourself against scams. Vigilance is a shared responsibility, and we are here to support you every step of the way.",
-    "subDescription":
-      "At LTL, we value the trust you place in us and work tirelessly to maintain the highest standards of safety and security. Your financial well-being is our priority, and we are dedicated to providing you with the peace of mind you deserve when it comes to your banking needs.",
-    "credits":
-      "Bank with confidence at LTL. Your trust, our priority."
+    "description": "At LTL, your financial well-being is our utmost concern. We understand the importance of trust when it comes to your hard-earned money, and we are committed to providing a safe and secure environment for all your banking needs. Here's why LTL is your trusted partner for financial security:",
+    "bullet1": "Rigorous Compliance: We adhere to the highest industry standards and comply with all relevant financial regulations. Our operations are subject to regular audits and reviews to ensure we meet and exceed all requirements.",
+    "bullet2": "Deposit Insurance: Your deposits up to 100,000 EUR are protected by VĮ „Indėlių ir investicijų draudimas”. More information can be found at",
+    "bullet3": "In addition to regular internal audits, we are also audited by independent audit firms, JCKU Kreda and the Central Bank of Lithuania. We ensure that your funds and the protection of your personal data are in safe hands.",
+    "bullet4": "Cutting-Edge Technology: We invest in the latest technology to safeguard your transactions and personal information. Our advanced encryption and security protocols protect your data, providing you with peace of mind while banking online or in person.",
+    "bullet5": "Strict Access Controls: We implement strict access controls to ensure that only authorized individuals can access your account information.",
+    "bullet6": "Transparent Policies: We believe in full transparency. All our policies and terms are clear and accessible, ensuring that you understand your rights and responsibilities as a customer. Our commitment to clarity builds trust and confidence.",
+    "bullet7": "Vigilance Against Fraud: We educate our customers on common fraud schemes and provide resources to help you protect yourself against scams. Vigilance is a shared responsibility, and we are here to support you every step of the way.",
+    "subDescription": "At LTL, we value the trust you place in us and work tirelessly to maintain the highest standards of safety and security. Your financial well-being is our priority, and we are dedicated to providing you with the peace of mind you deserve when it comes to your banking needs.",
+    "credits": "Bank with confidence at LTL. Your trust, our priority."
   },
   "suportsComplaints": {
     "pageTitle": "Support & Complaints",
@@ -920,7 +893,7 @@
     "articleBlock": {
       "article1": {
         "title": "Support & Complaints",
-        "description": "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form (standard form have to be added on the web) below or call us at +370 5 205 5240 / +370 5 205 5241. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!"
+        "description": "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form below or call us at +370 5 205 5240 / +370 5 205 5241. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!"
       },
       "article2": {
         "title": "Resolution of Disputes",
@@ -935,17 +908,17 @@
     "articleBlock": {
       "article1": "Our commitment lies in the fight against financial crime and terrorist financing (AML/CTF) activities, as well as the enforcement of international sanctions. To tackle these concerns, we have implemented an internal policy focused on AML/CTF and sanctions. This policy aims to prevent any misuse of our products and services, such as money laundering, terrorist financing, or sanctions evasion. It serves as a foundation for establishing clear procedures and instructions in the AML/CTF and sanctions area, which our employees must follow in their day-to-day activities.",
       "article2": "Our objective is to identify, assess, and understand the financial crime risks we encounter and implement appropriate control measures in line with those risks. Whether it pertains to individual customers or our overall business processes, we strive to determine the suitable risk level for each scenario. We acknowledge that effectively addressing AML/CTF and sanctions issues may require additional time and effort from our customers and partners. To ensure a smooth and efficient process, we have embraced a risk-based approach that allows for tailored actions based on individual risk profiles.",
-      "article3": "As part of our customer acceptance process, we have defined our risk appetite as a crucial element. This entails setting the boundaries for the risks we are willing to accept. Please take a moment to review our provided Risk Appetite Statement ",
-      "link": "below."
+      "article3": "As part of our customer acceptance process, we have defined our risk appetite as a crucial element. This entails setting the boundaries for the risks we are willing to accept. Please take a moment to review our provided Risk Appetite ",
+      "link": "Statement."
     }
   },
   "contacts": {
     "heroBlock": {
-      "adress": "Sporto st. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
+      "adress": "Sporto str. 18 LT-09238 Vilnius Phone: +370 5 205 5240 Email e-mail: info@ltlku.lt",
       "companyDetails": "LTL Credit Union",
       "companyDetailsDescription": " Sporto Street 18, LT-09238, Vilnius\nCompany Code: 302791356",
       "otherRequisites": "Other requisites",
-      "sepa" : "Member of the SEPA payment network, code 51500",
+      "sepa": "Member of the SEPA payment network, code 51500",
       "bic": "BIC code LTKULT21XXX",
       "data": "Data on the company is collected and stored in the Register of Legal Entities"
     },
@@ -964,7 +937,11 @@
     "namePlaceholder": "Name",
     "emailPlaceholder": "E-mail address",
     "button": "Send"
-
+  },
+  "clientSuport": {
+    "title": "Client support",
+    "description": "If you need any assistance opening an account, managing your term deposits or other account related issues, please reach out to us via phone ",
+    "or": " or email "
   },
   "news": {
     "title": "News",
@@ -974,19 +951,19 @@
   "business": {
     "termDeposit": {
       "heroBlock": {
-        "title": "You don’t have to be big to make a fortune",
-        "description": "Save your own money and watch your wealth grow – free is now more powerful than ever!",
-        "bullet1": "Get the best interest rates on the market",
-        "bullet2": "Your deposits are protected by deposit insurance.",
+        "title": "You don‘t have to be big to make a fortune/your fortune grow",
+        "description": "Save your own money and watch your wealth!",
+        "bullet1": "Get the best (top) interest rates on the market",
+        "bullet2": "Your deposits are protected by deposit insurance. ",
         "bullet3": "Attractive loyalty rewards and benefits",
         "bullet4": "Get individual offers",
-        "bullet5": "Deposit terms from 3 to 6 month are available",
-        "bullet6": "Interest rates up to 4.3%",
-        "learnMore": "Learn more"
+        "bullet5": "Deposit terms from 3 to 60 months are available",
+        "bullet6": "Interest rates up to 3,95%",
+        "learnMore": "insurance."
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
-        "interestRates":"Interest rates",
+        "interestRates": "Interest rates",
         "calculator": "Calculate",
         "process": "Process",
         "clientSuport": "Client Support",
@@ -995,8 +972,10 @@
       "benefitsArticle": {
         "article1": {
           "title": "Term deposit",
-          "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest rate (link) that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest ",
-          "link": " rates."
+          "description": "A term deposit is a type of deposit where you agree to keep your money with our financial institution for a set period. During this time, you earn a fixed interest  ",
+          "descriptionRest": " that is determined by the length of the deposit. You can choose to receive interest payments monthly, quarterly, semi-annually, annually or at the end of the term. Please note that opting for monthly payments may slightly reduce the interest rate by 0.3% from stated interest ",
+          "link": " rates.",
+          "rate": " rate,"
         },
         "article2": {
           "title": "Deposit insurance",
@@ -1009,14 +988,14 @@
         },
         "article4": {
           "title": "Interest rates",
-          "description": "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers."
+          "description": "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don&#39;t miss out on our interest rate offers."
         }
       },
       "stepProcess": {
-        "title": "Term deposit opening processs",
+        "title": "Account opening process (corporates):",
         "step1": {
           "title": "Fill in an account opening form",
-          "description": "Please fill in the application"
+          "description": "Please fill in the questionnaire and give the consent"
         },
         "step2": {
           "title": "Identify yourself",
@@ -1025,11 +1004,12 @@
         },
         "step3": {
           "title": "Submit the documents",
-          "subTitle": "Please send us:\n\n",
+          "subTitle": "Since we agree on initial terms and conditions, please send us:\n\n",
           "bulletBlock": {
-            "bulet1":"Copy of passport, ID or residence permit",
-            "bulet2":"Application to join the union",
-            "bulet3":"A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+            "bulet1": "Application to join the union",
+            "bulet2": "Company registration certificate",
+            "bulet3": "Founders’ agreement and Articles of Association",
+            "bulet4": "If necessary, additional documents may be required"
           }
         },
         "step4": {
@@ -1061,10 +1041,10 @@
     "currentAccount": {
       "heroBlock": {
         "title": "You don’t have to be big to be international",
-        "description": "Open an IBAN account with us, make and receive payments from all over the Euro area.",
-        "bullet1": "Bank on the go with our 24/7 online banking services",
-        "bullet2": "Move your inbound and outbound funds effortlessly.",
-        "bullet3": "Keep your account secure with advances security features"
+        "description": "Open IBAN account with us, make and receive payments from all over Euro area",
+        "bullet1": "Bank on-the-go with our 24/7 online banking services",
+        "bullet2": "Move your inbound and outbound funds effortlessly",
+        "bullet3": "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
@@ -1076,12 +1056,16 @@
       },
       "benefitsArticle": {
         "article1": {
-          "title": "Open a current account",
-          "description": "To open an account with LTL, your company must be registered or have a branch in Vilnius or Vilnius district and Trakai district. You also need to become a member of the LTL. Please see the account opening process below."
+          "title": "Open account",
+          "description": "We welcome corporate customers incorporated in Lithuania to open a bank account with us. You also need to become a member of a credit union to open an account. Please refer to the process provided below."
         },
         "article2": {
           "title": "Logging in",
-          "description": "Upon opening an account, we will grant you access to our internet banking platform. The most convenient way to access your account is to use digital signature (mobile-ID). In case you don’t have the digital ID we can also issue you an unique code."
+          "description": "Upon opening an account, we will grant you access to our internet banking platform. The most useful way to access your account is to use digital signature (mobile-ID). In case you don’t have the digital ID we can also issue you an unique code."
+        },
+        "article3": {
+          "title": "Payments",
+          "description": "Simplify your business finances with our business bank account, featuring easy online management and low monthly fees. Whether you need to transfer euro funds to SEPA countries, make internal payments between bank accounts, or schedule periodical and mass SEPA payments, our product has got you covered. With streamlined processes and fast transfers, you can focus on growing your business while we handle the rest. Experience the convenience of our SEPA payment product today."
         }
       },
       "afterArticle": {
@@ -1115,7 +1099,7 @@
         "title": "Term deposit opening processs",
         "step1": {
           "title": "Fill in an account opening form",
-          "description": "Please fill in the application."
+          "description": "Please fill in the questionnaire and give the consent"
         },
         "step2": {
           "title": "Identify yourself",
@@ -1124,24 +1108,24 @@
         },
         "step3": {
           "title": "Submit the documents",
-          "subTitle": "Please send us:\n\n",
+          "subTitle": "Since we agree on initial terms and conditions, please send us:\n\n",
           "bulletBlock": {
-            "bulet1":"Copy of passport, ID or residence permit",
-            "bulet2":"Application to join the union",
-            "bulet3":"A document confirming that you live, work or study in the territory of the municipality of Vilnius city, Vilnius district or Trakai district, if your declared place of residence is registered in the territory of other municipalities (e. g. residential lease agreement, employment contract, study contract)."
+            "bulet1": "Application to join the union",
+            "bulet2": "Company registration certificate",
+            "bulet3": "Founders’ agreement and Articles of Association",
+            "bulet4": "If necessary, additional documents may be required"
           }
         },
         "step4": {
-          "title": "Sign the bank account agreement",
-          "description": "Once the decision to open account is reached, we will invite you to sign the account agreement and review the general terms and conditions."
+          "title": "Sign the bank account and e-banking agreements",
+          "description": "Once the decision to open an account is reached, we will invite you to sign the bank account and e-banking agreements as well as review the deposit insurance and general terms and conditions."
         },
         "step5": {
           "title": "Start using our payment services",
-          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements, view information regarding your credits (if applicable), and more at our ",
-          "restOfDescription":" No prior registration is required."
+          "description": "Upon opening an account, we will grant you access to our online banking platform, which enables you to utilize our payment services, manage term deposit agreements (if any), view information regarding your credits (if any), and more."
         }
       },
-    
+
       "faq": "F.A.Q."
     },
     "capitalLoan": {
@@ -1153,7 +1137,7 @@
         "bullet3": "Bullet loan or repayment schedule tailored specifically to your needs",
         "bullet4": "Low fees for early loan repayment",
         "bullet5": "Loan terms of up to 36 months are available",
-        "bullet6": "Interest rates starting from 5.00%"
+        "bullet6": "Interest rates starting from 5,00%"
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
@@ -1199,12 +1183,12 @@
           "title": "Submit the documents",
           "subTitle": "Since we agree on initial terms and conditions, please send us:\n\n",
           "bulletBlock": {
-            "bulet1":"Application to join the union",
-            "bulet2":"Company registration certificate",
-            "bulet3":"Founders’ agreement and Articles of Association",
-            "bulet4":"CEO appointment document",
-            "bulet5":"Copy of passport, ID or residence permit of CEO of the company",
-            "bulet6":"Property valuation reports"
+            "bulet1": "Application to join the union",
+            "bulet2": "Company registration certificate",
+            "bulet3": "Founders’ agreement and Articles of Association",
+            "bulet4": "CEO appointment document",
+            "bulet5": "Copy of passport, ID or residence permit of CEO of the company",
+            "bulet6": "Property valuation reports"
           }
         },
         "step5": {
@@ -1235,7 +1219,7 @@
         "bullet3": "Repayment schedule tailored specifically to your needs",
         "bullet4": "Low fees for early loan repayment",
         "bullet5": "Loan terms of up to 20 years are available",
-        "bullet6": "Interest rates starting from 5.00%"
+        "bullet6": "Interest rates starting from 5,00%"
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
@@ -1282,12 +1266,12 @@
           "title": "Submit the documents",
           "subTitle": "Since we agree on initial terms and conditions, please send us:\n\n",
           "bulletBlock": {
-            "bulet1":"Application to join the union",
-            "bulet2":"Company registration certificate",
-            "bulet3":"Founders’ agreement and Articles of Association",
-            "bulet4":"CEO appointment document",
-            "bulet5":"Copy of passport, ID or residence permit of CEO of the company",
-            "bulet6":"Property valuation reports"
+            "bulet1": "Application to join the union",
+            "bulet2": "Company registration certificate",
+            "bulet3": "Founders’ agreement and Articles of Association",
+            "bulet4": "CEO appointment document",
+            "bulet5": "Copy of passport, ID or residence permit of CEO of the company",
+            "bulet6": "Property valuation reports"
           }
         },
         "step5": {
@@ -1309,10 +1293,10 @@
       },
       "faq": "F.A.Q."
     },
-    "payments":{
+    "payments": {
       "title": "You don't have to be big to be international",
-      "heroBlock" : {
-        "description" : "Open an IBAN account with us, make and receive payments from all over the Euro area",
+      "heroBlock": {
+        "description": "Open an IBAN account with us, make and receive payments from all over the Euro area",
         "bullet1": "Bank on-the-go with our 24/7 online banking services",
         "bullet2": "Move your inbound and outbound funds effortlessly",
         "bullet3": "Keep your account secure with advanced security features such as two-factor authentication and fraud monitoring"
@@ -1320,13 +1304,13 @@
       "benefitsArticle": {
         "article1": {
           "title": "Open an account with LTL Credit Uniont",
-          "description": "To be able to make payments, you will first need an account with LTL. If you are a new customer, you can become a member of LTL and open a current account by coming to our branch at Sporto st. 18, LT- 09238 Vilnius. Please bring your ID with you. You will be able to make all your payments through Online Banking. You can find all payment service fees and related charges here ",
-          "restDescription": " We offer the following to LTL members:",
+          "description": "To be able to make payments, you will first need an account with LTL. If you are a new customer, you can become a member of LTL and open a current account by coming to our branch at Sporto str. 18, LT- 09238 Vilnius. Please bring your ID with you. You will be able to make all your payments through Online Banking. You can find all payment service fees and related charges ",
+          "restDescription": ". We offer the following to LTL members:",
           "bullet1": "Local payments in all of Lithuania",
           "bullet2": "International SEPA transfers throughout Europe",
           "bullet3": "Convenient transaction execution and management via LTL e-banking",
           "bullet4": "Professional advice and undivided individual attention",
-          "link": "(Link)"
+          "link": "here"
         },
         "article2": {
           "title": "Convenient European money transfer (SEPA)",

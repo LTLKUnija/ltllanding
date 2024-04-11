@@ -49,6 +49,7 @@ export default function Partnership() {
               <Link href="/contacts" className="readMoreLink">
                 {t("partnership.articleBlock.contacts")}
               </Link>
+              {t("partnership.articleBlock.article3Rest")}
             </p>
           </div>
         </section>
