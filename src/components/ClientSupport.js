@@ -1,23 +1,20 @@
 import styles from "@/styles/client-suport.module.scss";
-import { useRouter } from "next/router";
-import lt from "@/locales/lt";
-import en from "@/locales/en";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 export default function ClientSupport() {
-  const router = useRouter();
-  const t = router.locale === "lt" ? lt : en;
+  const { t } = useTranslation("common");
   return (
     <section id="clientSuport" className={styles.clientSuportSection}>
       <div className={styles.clientSuportWrapper}>
-        <h3 className={styles.clientSuportHeader}>{t.clientSuport.title}</h3>
+        <h3 className={styles.clientSuportHeader}>{t("clientSuport.title")}</h3>
         <div className={styles.clientSuportDescription}>
-          {t.clientSuport.description}
+          {t("clientSuport.description")}
           <span>
-            <Link href="tel:+370 5 205 5240">+370 5 205 5240</Link> /{" "}
+            <Link href="tel:+370 5 205 5240">+370 5 205 5240</Link> /
             <Link href="tel:+370 5 205 5241">+370 5 205 5241</Link>
           </span>
-          {t.clientSuport.or}
+          {t("clientSuport.or")}
           <span>
             <Link href="mailto:pagalba@ltlku.lt">pagalba@ltlku.lt</Link>
           </span>
@@ -25,4 +22,12 @@ export default function ClientSupport() {
       </div>
     </section>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
 }

@@ -64,9 +64,9 @@ export default function Mortgage() {
               <div className={businessStyle.description}>
                 <p>{t("business.currentAccount.heroBlock.description")}</p>
                 <ul>
-                  <li>{t("privetCurrentAccount.heroBlock.bullet1")}</li>
-                  <li>{t("privetCurrentAccount.heroBlock.bullet2")}</li>
-                  <li>{t("privetCurrentAccount.heroBlock.bullet3")}</li>
+                  <li>{t("business.currentAccount.heroBlock.bullet1")}</li>
+                  <li>{t("business.currentAccount.heroBlock.bullet2")}</li>
+                  <li>{t("business.currentAccount.heroBlock.bullet3")}</li>
                 </ul>
               </div>
             </div>
@@ -95,6 +95,16 @@ export default function Mortgage() {
                 <div className={styles.articleItemDescription}>
                   {t(
                     "business.currentAccount.benefitsArticle.article2.description"
+                  )}
+                </div>
+              </div>
+              <div className={styles.articleItem}>
+                <h2 className={styles.articleItemTitle}>
+                  {t("business.currentAccount.benefitsArticle.article3.title")}
+                </h2>
+                <div className={styles.articleItemDescription}>
+                  {t(
+                    "business.currentAccount.benefitsArticle.article3.description"
                   )}
                 </div>
               </div>

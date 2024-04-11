@@ -131,7 +131,7 @@ export default function Deposit() {
                         className="readMoreLink"
                         href="https://www.iidraudimas.lt/lt/indeliu-draudimas/duk-4/"
                       >
-                        {t("business.termDeposit.heroBlock.learnMore")} &#x3e;
+                        {t("business.termDeposit.heroBlock.learnMore")}
                       </Link>
                     </li>
                     <li>{t("business.termDeposit.heroBlock.bullet3")}</li>
@@ -155,6 +155,13 @@ export default function Deposit() {
                 <div className={busynessStyle.benefitsDescription}>
                   {t(
                     "business.termDeposit.benefitsArticle.article1.description"
+                  )}
+
+                  <Link href="#interestRates" className="readMoreLink">
+                    {t("business.termDeposit.benefitsArticle.article1.rate")}
+                  </Link>
+                  {t(
+                    "business.termDeposit.benefitsArticle.article1.descriptionRest"
                   )}
                   <Link href="#interestRates" className="readMoreLink">
                     {t("business.termDeposit.benefitsArticle.article1.link")}
@@ -278,7 +285,7 @@ export default function Deposit() {
               </div>
             </div>
             <div className={busynessStyle.depositSectionButton}>
-              <Link className="containedBtn long blue" href="/">
+              <Link className="containedBtn long blue" href="/contacts">
                 {t("business.termDeposit.calcBlock.button")}
               </Link>
             </div>
