@@ -951,15 +951,15 @@
   "business": {
     "termDeposit": {
       "heroBlock": {
-        "title": "You don‘t have to be big to make a fortune/your fortune grow",
+        "title": "You don‘t have to be big to make a fortune",
         "description": "Save your own money and watch your wealth!",
         "bullet1": "Get the best (top) interest rates on the market",
-        "bullet2": "Your deposits are protected by deposit insurance. ",
+        "bullet2": "Your deposits are protected by deposit ",
         "bullet3": "Attractive loyalty rewards and benefits",
         "bullet4": "Get individual offers",
         "bullet5": "Deposit terms from 3 to 60 months are available",
-        "bullet6": "Interest rates up to 3,95%",
-        "learnMore": "insurance."
+        "bullet6": "Interest rates up to 4,3%",
+        "learnMore": "insurance"
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
@@ -1136,8 +1136,7 @@
         "bullet2": "Get your initial offer within 48 hours",
         "bullet3": "Bullet loan or repayment schedule tailored specifically to your needs",
         "bullet4": "Low fees for early loan repayment",
-        "bullet5": "Loan terms of up to 36 months are available",
-        "bullet6": "Interest rates starting from 5,00%"
+        "bullet5": "Loan terms of up to 36 months are available"
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
@@ -1218,8 +1217,7 @@
         "bullet2": "Get your initial offer within 48 hours",
         "bullet3": "Repayment schedule tailored specifically to your needs",
         "bullet4": "Low fees for early loan repayment",
-        "bullet5": "Loan terms of up to 20 years are available",
-        "bullet6": "Interest rates starting from 5,00%"
+        "bullet5": "Loan terms of up to 20 years are available"
       },
       "innerLinkBlock": {
         "benefits": "Benefits",
