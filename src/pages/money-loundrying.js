@@ -54,7 +54,7 @@ export default function MoneyLoundrying() {
             {t("moneyLoundering.articleBlock.article3")}
 
             <Link
-              href="https://storage.cloud.google.com/ltlku_web_page/riskAppetiteDeclaration/2023%2001%2031%20Rizikos%20apetito%20deklaracija.pdf"
+              href="https://storage.googleapis.com/ltlku_web_page/riskAppetiteDeclaration/2023%2001%2031%20Rizikos%20apetito%20deklaracija.pdf"
               target="_blank"
               className="readMoreLink"
             >
