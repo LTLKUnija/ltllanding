@@ -239,7 +239,10 @@ function Header() {
         </nav>
       </div>
       <div className="header-action-buttons-block">
-        <Link className="header-action-button login" href="/login">
+        <Link
+          className="header-action-button login"
+          href="https://ib.ltlkreditounija.eu/ib/site/login"
+        >
           {t("headerNavLinks.login")}
         </Link>
         <Link className="header-action-button openAcc" href="/contacts">
