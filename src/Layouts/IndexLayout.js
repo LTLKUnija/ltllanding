@@ -4,6 +4,8 @@ import React from "react";
 import CookieConsent from "@/components/CookieConsent";
 import Cookies from "js-cookie";
 import { useState, useEffect } from "react";
+import Head from "next/head";
+import Script from "next/script";
 
 function IndexLayout({ children }) {
   const [showPopup, setShowPopup] = useState(false);
@@ -56,11 +58,18 @@ function IndexLayout({ children }) {
   }, []);
 
   return (
-    <div className="main-layout">
-      <Header />
-      {children}
-      <Footer showLinks={showLinks} setShowLinks={setShowLinks} />
-      {showPopup && <CookieConsent setShowPopup={setShowPopup} />}
+    <div>
+      <Script
+        id="cookieyes"
+        type="text/javascript"
+        src="https://cdn-cookieyes.com/client_data/33918b941881a09fff1a403a/script.js"
+      ></Script>
+      <div className="main-layout">
+        <Header />
+        {children}
+        <Footer showLinks={showLinks} setShowLinks={setShowLinks} />
+        {showPopup && <CookieConsent setShowPopup={setShowPopup} />}
+      </div>
     </div>
   );
 }
