@@ -93,12 +93,22 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   .teamMembers {
-    width: 154px;
+    width: 198px;
     display: flex;
     flex-direction: column;
+    h4 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+    }
   }
 
   .membersPhoto {
@@ -179,7 +189,7 @@
 }
 
 .valuesSection {
-  padding: 168px 0 168px 0;
+  padding: 100px 0 168px 0;
 
   .valuesWrapper {
     display: flex;

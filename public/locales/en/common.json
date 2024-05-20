@@ -177,7 +177,14 @@
     "team": {
       "title": "LTL Team",
       "description": "Your success is our success, and we are proud to have a team that truly cares about your financial well-being.",
-      "duties": "Role"
+      "duties": "Role",
+      "chairmanSupervisor": "Chairman of the Supervisory Board",
+      "chairman": "Member of the Supervisory Board",
+      "internalAuditor": "Internal Auditor",
+      "ceo": " Chairman of the Board, CEO",
+      "creditDirector": "Board Member, Head of Credits",
+      "developmentDirector": "Board Member, Chief Business Development Officer",
+      "independent": "Independent Board Member"
     },
     "jobsSection": {
       "title": "Available jobs",

@@ -55,23 +55,55 @@ export default function About() {
             <div className={styles.teamBlock}>
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}></div>
-                <h4 className={styles.membersName}>Vardas Pavardė</h4>
-                <p>{t("aboutUs.team.duties")}: </p>
+                <h4 className={styles.membersName}>Arturas Feiferas</h4>
+                <p>{t("aboutUs.team.duties")}:</p>
+                <p>{t("aboutUs.team.chairmanSupervisor")}</p>
               </div>
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}></div>
-                <h4 className={styles.membersName}>Vardas Pavardė</h4>
+                <h4 className={styles.membersName}>Mindaugas Kyguolis</h4>
                 <p>{t("aboutUs.team.duties")}: </p>
+                <p>{t("aboutUs.team.chairman")}</p>
               </div>
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}></div>
-                <h4 className={styles.membersName}>Vardas Pavardė</h4>
+                <h4 className={styles.membersName}> Vytautas Kupliauskas</h4>
                 <p>{t("aboutUs.team.duties")}: </p>
+                <p>{t("aboutUs.team.chairman")}</p>
               </div>
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}></div>
-                <h4 className={styles.membersName}>Vardas Pavardė</h4>
+                <h4 className={styles.membersName}>Nomeda Patackienė</h4>
                 <p>{t("aboutUs.team.duties")}: </p>
+                <p>{t("aboutUs.team.internalAuditor")}</p>
+              </div>
+            </div>
+            <div className={styles.teamBlock}>
+              <div className={styles.teamMembers}>
+                <div className={styles.membersPhoto}></div>
+                <h4 className={styles.membersName}>Ruslanas Telnovas</h4>
+                <p>{t("aboutUs.team.duties")}:</p>
+                <p>{t("aboutUs.team.ceo")}</p>
+              </div>
+              <div className={styles.teamMembers}>
+                <div className={styles.membersPhoto}></div>
+                <h4 className={styles.membersName}>
+                  Aurimas Tomas Staškevičius
+                </h4>
+                <p>{t("aboutUs.team.duties")}: </p>
+                <p>{t("aboutUs.team.creditDirector")}</p>
+              </div>
+              <div className={styles.teamMembers}>
+                <div className={styles.membersPhoto}></div>
+                <h4 className={styles.membersName}> Martynas Skorupskas</h4>
+                <p>{t("aboutUs.team.duties")}: </p>
+                <p>{t("aboutUs.team.developmentDirector")}</p>
+              </div>
+              <div className={styles.teamMembers}>
+                <div className={styles.membersPhoto}></div>
+                <h4 className={styles.membersName}>Tomas Kakanauskas</h4>
+                <p>{t("aboutUs.team.duties")}: </p>
+                <p>{t("aboutUs.team.independent")}</p>
               </div>
             </div>
           </div>

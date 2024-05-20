@@ -188,7 +188,14 @@
     "team": {
       "title": "LTL Komanda",
       "description": "Jūsų sėkmė yra mūsų sėkmė, todėl didžiuojamės, kad turime komandą, kuriai tikrai rūpi jūsų finansinė gerovė.",
-      "duties": "Pareigos"
+      "duties": "Pareigos",
+      "chairmanSupervisor": "Stebėtojų tarybos pirmininkas",
+      "chairman": "Stebėtojų tarybos narys",
+      "internalAuditor": "Vidaus auditorė",
+      "ceo": "Valdybos pirmininkas, generalinis direktorius",
+      "creditDirector": " Valdybos narys, kreditavimo direktorius",
+      "developmentDirector": "Valdybos narys, verslo plėtros direktorius",
+      "independent": "Nepriklausomas valdybos narys"
     },
     "jobsSection": {
       "title": "Available jobs",
