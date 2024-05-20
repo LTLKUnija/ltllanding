@@ -194,8 +194,8 @@
       "internalAuditor": "Vidaus auditorė",
       "ceo": "Valdybos pirmininkas, generalinis direktorius",
       "creditDirector": " Valdybos narys, kreditavimo direktorius",
-      "independent": "Nepriklausomas valdybos narys",
-      "developmentDirector": "Valdybos narys, verslo plėtros direktorius"
+      "developmentDirector": "Valdybos narys, verslo plėtros direktorius",
+      "independent": "Nepriklausomas valdybos narys"
     },
     "jobsSection": {
       "title": "Available jobs",
