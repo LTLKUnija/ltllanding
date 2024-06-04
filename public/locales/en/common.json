@@ -26,10 +26,10 @@
   "footerNavLinks": {
     "usefulLinks": "Useful links",
     "priceList": "Price list",
-    "termsAndCond": "Terms & Conditions",
-    "ppAndCookies": "Privacy policy & Cookies",
+    "termsAndCond": "Terms and Conditions",
+    "ppAndCookies": "Privacy policy and Cookies",
     "security": "Security",
-    "support": "Support & Complaints",
+    "support": "Support and Complaints",
     "aboutUs": "About Us",
     "management": "Management",
     "shareholders": "For Shareholders",
@@ -201,7 +201,7 @@
     },
     "benefitsArticle": {
       "article1": {
-        "title": "Transparency & accountability",
+        "title": "Transparency and accountability",
         "description": "We are aiming to provide access to fair and affordable banking services. We are transparent and accountable in our decisions, and take into account the impact of our actions on people's daily lives."
       },
       "article2": {
@@ -416,7 +416,7 @@
     "description": "Operating under the legal name of LTL Kredito unija, the company is registered in Lithuania (No. 302791356), licensed and supervised as the LTL by the Bank of Lithuania (license No. 80)."
   },
   "termConditions": {
-    "pageTitle": "Term & Conditions",
+    "pageTitle": "Term and Conditions",
     "description": "Please explore the service you are interested in and get familiar with general terms and conditions as well as other related documents of service use by clicking on the relevant link in the navigation panel provided below.",
     "innerLinkBlock": {
       "accounts": "Accounts",
@@ -859,7 +859,7 @@
     }
   },
   "privacyPolicy": {
-    "title": "Privacy Policy & Cookies",
+    "title": "Privacy Policy and Cookies",
     "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
     "innerTabLinks": {
       "processingPersonalData": "Information on the processing of personal data - representative of the legal person",
@@ -893,13 +893,13 @@
     "credits": "Bank with confidence at LTL. Your trust, our priority."
   },
   "suportsComplaints": {
-    "pageTitle": "Support & Complaints",
+    "pageTitle": "Support and Complaints",
     "heroBlock": {
       "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals."
     },
     "articleBlock": {
       "article1": {
-        "title": "Support & Complaints",
+        "title": "Support and Complaints",
         "description": "We are dedicated to delivering excellent and hassle-free services to our customers. In order to continuously improve, we rely on your feedback and opinions. Please take a moment to fill out the feedback form below or call us at +370 5 205 5240 / +370 5 205 5241. We will respond within 30 days and work towards a solution for any issues you may have. We also welcome positive feedback if our people and services exceeded your expectations!"
       },
       "article2": {
@@ -995,7 +995,7 @@
         },
         "article4": {
           "title": "Interest rates",
-          "description": "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don&#39;t miss out on our interest rate offers."
+          "description": "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers."
         }
       },
       "stepProcess": {

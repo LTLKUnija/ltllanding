@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: false,
   i18n,
   images: {
-    domains: ["images.ctfassets.net"],
+    domains: ["images.ctfassets.net", "storage.googleapis.com"],
   },
 };
 
