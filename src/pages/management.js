@@ -10,7 +10,6 @@ import { aboutUsInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-// import Arturas_Feiferas from "../../../public/assets/images/Arturas_Feiferas.jpg";
 export default function About() {
   const router = useRouter();
   const { t } = useTranslation("common");
