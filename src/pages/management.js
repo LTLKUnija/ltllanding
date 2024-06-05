@@ -10,7 +10,6 @@ import { aboutUsInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-
 export default function About() {
   const router = useRouter();
   const { t } = useTranslation("common");
@@ -54,55 +53,112 @@ export default function About() {
             </span>
             <div className={styles.teamBlock}>
               <div className={styles.teamMembers}>
-                <div className={styles.membersPhoto}></div>
+                <div className={styles.membersPhoto}>
+                  <Image
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Arturas_Feiferas.jpg"
+                    width={154}
+                    height={154}
+                    alt=""
+                  />
+                </div>
                 <h4 className={styles.membersName}>Arturas Feiferas</h4>
-                <p>{t("aboutUs.team.duties")}:</p>
+
                 <p>{t("aboutUs.team.chairmanSupervisor")}</p>
               </div>
               <div className={styles.teamMembers}>
-                <div className={styles.membersPhoto}></div>
+                <div className={styles.membersPhoto}>
+                  <Image
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Mindaugas_Kyguolis.jpg"
+                    width={154}
+                    height={154}
+                    alt=""
+                  />
+                </div>
                 <h4 className={styles.membersName}>Mindaugas Kyguolis</h4>
-                <p>{t("aboutUs.team.duties")}: </p>
+
                 <p>{t("aboutUs.team.chairman")}</p>
               </div>
               <div className={styles.teamMembers}>
-                <div className={styles.membersPhoto}></div>
+                <div className={styles.membersPhoto}>
+                  <Image
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Vytautas_Kupliauskas.jpg"
+                    width={154}
+                    height={154}
+                    alt=""
+                  />
+                </div>
                 <h4 className={styles.membersName}> Vytautas Kupliauskas</h4>
-                <p>{t("aboutUs.team.duties")}: </p>
+
                 <p>{t("aboutUs.team.chairman")}</p>
               </div>
               <div className={styles.teamMembers}>
-                <div className={styles.membersPhoto}></div>
+                <div className={styles.membersPhoto}>
+                  <Image
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Nomeda_Patackiene.jpg"
+                    width={154}
+                    height={154}
+                    alt=""
+                  />
+                </div>
                 <h4 className={styles.membersName}>Nomeda Patackienė</h4>
-                <p>{t("aboutUs.team.duties")}: </p>
+
                 <p>{t("aboutUs.team.internalAuditor")}</p>
               </div>
             </div>
             <div className={styles.teamBlock}>
               <div className={styles.teamMembers}>
-                <div className={styles.membersPhoto}></div>
+                <div className={styles.membersPhoto}>
+                  <Image
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Ruslanas_Telnovas.jpg"
+                    width={154}
+                    height={154}
+                    alt=""
+                  />
+                </div>
                 <h4 className={styles.membersName}>Ruslanas Telnovas</h4>
-                <p>{t("aboutUs.team.duties")}:</p>
+
                 <p>{t("aboutUs.team.ceo")}</p>
               </div>
               <div className={styles.teamMembers}>
-                <div className={styles.membersPhoto}></div>
+                <div className={styles.membersPhoto}>
+                  <Image
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Aurimas_Tomas_Staskevicius.jpg"
+                    width={154}
+                    height={154}
+                    alt=""
+                  />
+                </div>
                 <h4 className={styles.membersName}>
                   Aurimas Tomas Staškevičius
                 </h4>
-                <p>{t("aboutUs.team.duties")}: </p>
+
                 <p>{t("aboutUs.team.creditDirector")}</p>
               </div>
               <div className={styles.teamMembers}>
-                <div className={styles.membersPhoto}></div>
+                <div className={styles.membersPhoto}>
+                  <Image
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Martynas_Skorupskas.jpg"
+                    width={154}
+                    height={154}
+                    alt=""
+                  />
+                </div>
                 <h4 className={styles.membersName}> Martynas Skorupskas</h4>
-                <p>{t("aboutUs.team.duties")}: </p>
+
                 <p>{t("aboutUs.team.developmentDirector")}</p>
               </div>
               <div className={styles.teamMembers}>
-                <div className={styles.membersPhoto}></div>
+                <div className={styles.membersPhoto}>
+                  <Image
+                    lazyLoading={true}
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Tomas_Kakanauskas.jpg"
+                    width={154}
+                    height={154}
+                    alt=""
+                  />
+                </div>
                 <h4 className={styles.membersName}>Tomas Kakanauskas</h4>
-                <p>{t("aboutUs.team.duties")}: </p>
+
                 <p>{t("aboutUs.team.independent")}</p>
               </div>
             </div>
