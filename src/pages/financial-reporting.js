@@ -90,7 +90,8 @@ export default function FinancialReporting() {
               })}
             </ul> */}
             <div className={styles.reporstBlockList}>
-              {activePresentationsList.map((link, idx) => {
+              <h2>{t("finacialReporting.innerLinkBlock.noLinksStatus")}</h2>
+              {/* {activePresentationsList.map((link, idx) => {
                 return (
                   <div key={idx} className={styles.reportItem}>
                     <img src="assets/images/Pdficon.svg" alt="Pdf File" />
@@ -103,7 +104,7 @@ export default function FinancialReporting() {
                     </Link>
                   </div>
                 );
-              })}
+              })} */}
             </div>
           </div>
         </section>

@@ -84,8 +84,17 @@
 }
 
 .reporstBlockList {
-  max-width: 380px;
+  max-width: 495px;
+  // max-width: 380px;
   margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    border: solid 1px var(--table-border-color);
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+  }
 }
 
 .reportItem {
