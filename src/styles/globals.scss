@@ -555,6 +555,13 @@ footer {
       color: white;
     }
   }
+
+  &:disabled {
+    background: #d7d7d7;
+    color: #535353;
+    border: solid 1px #d7d7d7;
+    cursor: not-allowed;
+  }
 }
 
 .readMoreLink {
