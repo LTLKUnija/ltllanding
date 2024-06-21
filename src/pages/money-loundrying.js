@@ -11,9 +11,15 @@ import Link from "next/link";
 export default function MoneyLoundrying() {
   const { t } = useTranslation("common");
   const router = useRouter();
+  const { locale } = router;
 
   const handleBack = () => {
     router.back();
+  };
+
+  const links = {
+    en: "https://storage.googleapis.com/ltlku_web_page/riskAppetiteDeclaration/Risk_Appetite_Statement.pdf",
+    lt: "https://storage.googleapis.com/ltlku_web_page/riskAppetiteDeclaration/Rizikos_apetito_deklaracija.pdf",
   };
 
   return (
@@ -54,7 +60,7 @@ export default function MoneyLoundrying() {
             {t("moneyLoundering.articleBlock.article3")}
 
             <Link
-              href="https://storage.googleapis.com/ltlku_web_page/riskAppetiteDeclaration/2023%2001%2031%20Rizikos%20apetito%20deklaracija.pdf"
+              href={links[locale] || links.lt}
               target="_blank"
               className="readMoreLink"
             >
