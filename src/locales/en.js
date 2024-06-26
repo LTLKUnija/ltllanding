@@ -184,7 +184,7 @@ export default {
           "We are aiming to provide access to fair and affordable banking services. We are transparent and accountable in our decisions, and take into account the impact of our actions on people's daily lives.",
       },
       article2: {
-        title: "Balancing interests and empowering people",
+        title: "Balancing interests & empowering people",
         description:
           "We are striving to create a more equitable financial system that balances the interests of our company, our customers and our society. We allocate resources and provide education to empower customers to understand the banking system and make informed decisions.",
       },

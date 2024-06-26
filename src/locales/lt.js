@@ -1008,7 +1008,7 @@ export default {
   },
   moneyLoundering: {
     title:
-      "Pinigų plovimo ir teroristų finansavimo prevencija, tarptautinių sankcijų įgyvendinima",
+      "Pinigų plovimo ir teroristų finansavimo prevencija, tarptautinių sankcijų įgyvendinimas",
     articleBlock: {
       article1:
         "Mes esame tvirtai įsipareigoję kovoti su finansiniais nusikaltimais ir teroristų finansavimu (PPTFP), taip pat užtikrinti tarptautinių sankcijų įgyvendinimą. Siekdami išspręsti šias problemas, mes esame apibrėžę bei vykdome vidaus PPTFP politiką, kuri yra orientuotą į efektyvų šių rizikų valdymą. Savo veiksmais siekiame užkirsti kelią bet kokiam piktnaudžiavimui mūsų produktais ir paslaugomis pinigų plovimo, teroristų finansavimo ir/ar sankcijų vengimo tikslais. PPTFP politika yra pagrindas nustatant bei įgyvendinant aiškias procedūras ir instrukcijas PPTFP srityje, kurių mūsų darbuotojai privalo laikytis savo kasdienėje veikloje.",
