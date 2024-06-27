@@ -31,7 +31,7 @@ export default function IndexNews() {
         });
       });
     });
-    return lastSix;
+    return lastSix.reverse();
   };
 
   useEffect(() => {

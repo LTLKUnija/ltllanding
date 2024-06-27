@@ -4,7 +4,6 @@
   padding: 92px 0 132px 0;
   min-height: 500px;
 
-
   .yearlyLinksBlock {
     display: flex;
     justify-content: center;
@@ -13,16 +12,16 @@
   }
 
   .yearlyLink {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
-      color: #0D222E;
-      text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0d222e;
+    text-decoration: none;
 
-      &:hover {
-        text-decoration-line: underline;
-        cursor: pointer;
-      }
+    &:hover {
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
   }
 
   .newsDate {
@@ -37,7 +36,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #000000;    
+    color: #000000;
     margin-bottom: 16px;
   }
 
@@ -48,6 +47,10 @@
     color: #000000;
     white-space: pre-line;
     margin-bottom: 16px;
+
+    p {
+      margin-bottom: 16px;
+    }
   }
 
   .backToNewsLink {
