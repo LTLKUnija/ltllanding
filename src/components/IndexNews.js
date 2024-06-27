@@ -17,6 +17,7 @@ export default function IndexNews() {
 
   const getLastSixNews = (newsData) => {
     const lastSix = [];
+    console.log(newsData);
     newsData.forEach((year) => {
       year.news.forEach((news, idx) => {
         if (lastSix.length > 5) return;
@@ -26,7 +27,7 @@ export default function IndexNews() {
           textEn: news.textEn,
           title: news.title,
           titleEn: news.titleEn,
-          idx,
+          idx: year.news.length - idx - 1,
           date: news.date,
         });
       });
