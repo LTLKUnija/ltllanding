@@ -102,6 +102,16 @@
 .annualReportsSection {
   padding: 64px 0 70px 0;
 
+  h2 {
+    text-align: center;
+    border: solid 1px var(--table-border-color);
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    max-width: 495px;
+    margin: 0 auto;
+  }
+
   .annualReportsWrapper {
     max-width: 770px;
     padding: 0 20px;
@@ -278,4 +288,12 @@
     justify-content: center;
     overflow: auto;
   }
+}
+
+.separateTitle {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 62px;
+  margin-bottom: 34px;
+  text-align: center;
 }
