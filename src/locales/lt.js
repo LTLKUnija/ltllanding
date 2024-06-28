@@ -225,7 +225,7 @@ export default {
     },
     innerLinkBlock: {
       link1: "Aplinkosauga",
-      link2: "Socialine politika",
+      link2: "Socialinė politika",
       link3: "Valdymas",
       link4: "ESG ataskaitos",
     },
