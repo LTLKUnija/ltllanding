@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = {
   react: { useSuspense: false },
   i18n: {
-    defaultLocale: "lt",
+    defaultLocale: "en",
     locales: ["en", "lt"],
     localePath: path.resolve("./public/locales"),
   },
