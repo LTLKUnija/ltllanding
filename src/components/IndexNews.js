@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { previewTextMaker } from "@/utils/helpers";
+import { formatText } from "@/utils/helpers";
 import { useSelector } from "react-redux";
 import { getNewsState } from "@/store/news/news.slice";
 
@@ -17,7 +18,6 @@ export default function IndexNews() {
 
   const getLastSixNews = (newsData) => {
     const lastSix = [];
-    console.log(newsData);
     newsData.forEach((year) => {
       year.news.forEach((news, idx) => {
         if (lastSix.length > 5) return;
