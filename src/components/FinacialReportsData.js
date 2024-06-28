@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { getAnnualReportsState } from "@/store/annualReports/annualReports.slice";
 import { useRouter } from "next/router";
 
-export default function FinacialReportsData() {
+export default function FinacialReportsData({ name, reportsList }) {
   const { t } = useTranslation("common");
   const router = useRouter();
 
@@ -38,7 +38,8 @@ export default function FinacialReportsData() {
   return (
     <div className={styles.presentationsWrapper}>
       <h3 className={styles.sectionTitle}>
-        {t("finacialReporting.annualReporting")}
+        {name ? name : t("finacialReporting.annualReporting")}
+        {/* {t("finacialReporting.annualReporting")} */}
       </h3>
       <div className={styles.tabsList}>
         {annualLinks.map((year, idx) => {

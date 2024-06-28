@@ -330,3 +330,20 @@
     display: none;
   }
 }
+
+h3.separateTitle {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 62px;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.policyList {
+  max-width: 495px;
+  margin: 0 auto;
+
+  & .reportItem {
+    margin-bottom: 20px;
+  }
+}

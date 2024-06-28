@@ -1,4 +1,5 @@
 import styles from "@/styles/esg.module.scss";
+import stylesESG from "@/styles/financial-reporting.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import Image from "next/image";
@@ -135,8 +136,67 @@ export default function Esg() {
             </div>
           </div>
         </section>
-        <section id="reports" className={styles.annualReportsSection}>
-          <FinancialReporting />
+        <section id="reports" className={stylesESG.annualReportsSection}>
+          {/* <FinancialReporting
+            name={t("finacialReporting.annualESGReporting")}
+          /> */}
+          <h3 className={stylesESG.separateTitle}>
+            {t("finacialReporting.annualESGReporting")}
+          </h3>
+
+          <div className={stylesESG.policyList}>
+            <div className={stylesESG.reportItem}>
+              <img src="/assets/images/Pdficon.svg" alt="Pdf File" />
+              <Link
+                href="https://storage.googleapis.com/ltl-storage/AnnualESGReports/ESG%20Policy%20LTL%202024_ENG.pdf"
+                className={stylesESG.linkStyle}
+                target="_blank"
+              >
+                {router.locale === "lt"
+                  ? "ESG politika LTL 2024"
+                  : "ESG Policy LTL 2024"}
+              </Link>
+            </div>
+
+            <div className={stylesESG.reportItem}>
+              <img src="/assets/images/Pdficon.svg" alt="Pdf File" />
+              <Link
+                href="https://storage.googleapis.com/ltl-storage/AnnualESGReports/Environmental%20Policy%20LTL%202024_ENG.pdf"
+                className={stylesESG.linkStyle}
+                target="_blank"
+              >
+                {router.locale === "lt"
+                  ? "Aplinkos politika LTL 2024"
+                  : "Environmental Policy LTL 2024"}
+              </Link>
+            </div>
+
+            <div className={stylesESG.reportItem}>
+              <img src="/assets/images/Pdficon.svg" alt="Pdf File" />
+              <Link
+                href="https://storage.googleapis.com/ltl-storage/AnnualESGReports/Equal%20Opportunities%20Policy%20LTL%202024_ENG.pdf"
+                className={stylesESG.linkStyle}
+                target="_blank"
+              >
+                {router.locale === "lt"
+                  ? "Lygių galimybių politika LTL 2024"
+                  : "Equal Opportunities Policy LTL 2024"}
+              </Link>
+            </div>
+
+            <div className={stylesESG.reportItem}>
+              <img src="/assets/images/Pdficon.svg" alt="Pdf File" />
+              <Link
+                href="https://storage.googleapis.com/ltl-storage/AnnualESGReports/Etikos%20kodeksas%20LTL%202024_LT.pdf"
+                className={stylesESG.linkStyle}
+                target="_blank"
+              >
+                {router.locale === "lt"
+                  ? "Etikos kodeksas LTL 2024"
+                  : "Code of Ethics LTL 2024"}
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
     </IndexLayout>
