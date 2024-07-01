@@ -245,7 +245,7 @@ function Header() {
         >
           {t("headerNavLinks.login")}
         </Link>
-        <Link className="header-action-button openAcc" href="/contacts">
+        <Link className="header-action-button openAcc" href="/current-account">
           {t("headerNavLinks.openAccount")}
         </Link>
       </div>
