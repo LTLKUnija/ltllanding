@@ -1,6 +1,7 @@
 import styles from "@/styles/financial-reporting.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import FinacialReportsData from "@/components/FinacialReportsData";
 import FinancialQuarterReportsData from "@/components/FinacialQuarterReportsData";
@@ -112,7 +113,14 @@ export default function FinancialReporting() {
           <div className={styles.contactsWrapper}>
             <h3>{t("finacialReporting.contacts.title")}</h3>
             <div className={styles.contactsBlock}>
-              <div className={styles.img}></div>
+              <div className={styles.img}>
+                <Image
+                  src="https://storage.googleapis.com/ltlku_web_page/photo/Ruslanas_Telnovas.jpg"
+                  width={154}
+                  height={154}
+                  alt=""
+                />
+              </div>
               <div className={styles.contactsInfo}>
                 <h4>{t("finacialReporting.contacts.director")}</h4>
                 <p>
