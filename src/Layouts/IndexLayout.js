@@ -2,9 +2,14 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import React from "react";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Script from "next/script";
+import Head from "next/head";
 
 function IndexLayout({ children }) {
+  const router = useRouter();
+  const { locale } = router;
+
   const [showLinks, setShowLinks] = useState({
     usefulLinks: false,
     aboutUs: false,
@@ -49,6 +54,17 @@ function IndexLayout({ children }) {
         type="text/javascript"
         src="https://cdn-cookieyes.com/client_data/33918b941881a09fff1a403a/script.js"
       ></Script>
+      <Head>
+        <title>
+          {locale === "lt" ? "LTL kredito unija" : "LTL Credit Union"}
+        </title>
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href="/assets/images/favicon.svg"
+        />
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+      </Head>
       <div className="main-layout">
         <Header />
         {children}
