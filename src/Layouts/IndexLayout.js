@@ -1,25 +1,16 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import React from "react";
-import CookieConsent from "@/components/CookieConsent";
-import Cookies from "js-cookie";
 import { useState, useEffect } from "react";
-import Head from "next/head";
 import Script from "next/script";
 
 function IndexLayout({ children }) {
-  const [showPopup, setShowPopup] = useState(false);
-
   const [showLinks, setShowLinks] = useState({
     usefulLinks: false,
     aboutUs: false,
     accountability: false,
     possibilities: false,
   });
-
-  const GetCookies = (cookiename) => {
-    return Cookies.get(cookiename);
-  };
 
   const handleScreenSizeChange = (e) => {
     if (e.matches) {
@@ -51,12 +42,6 @@ function IndexLayout({ children }) {
     };
   }, []);
 
-  useEffect(() => {
-    if (!GetCookies("LLP-Cookie")) {
-      setShowPopup(true);
-    }
-  }, []);
-
   return (
     <div>
       <Script
@@ -68,7 +53,6 @@ function IndexLayout({ children }) {
         <Header />
         {children}
         <Footer showLinks={showLinks} setShowLinks={setShowLinks} />
-        {showPopup && <CookieConsent setShowPopup={setShowPopup} />}
       </div>
     </div>
   );
