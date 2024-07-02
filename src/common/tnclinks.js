@@ -29,7 +29,7 @@ export const tncLinks = [
       {
         linkName: "informationDepositor",
         linkUrl:
-          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/temr-deposit/Informacijos%20ind%C4%97lininkui%20teikimo%20forma.pdf",
+          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/temr-deposit/Informacijos-inde%CC%87lininkui-teikimo-forma-nuo-2024-06-13.pdf",
       },
       {
         linkName: "securitisedDeposit",

@@ -461,8 +461,8 @@ export default {
       generalCondition: "Bendrosios sąlygos",
       commisionInfo: "Informacijos apie komisinį atlyginimą dokumentas",
       glossary: "Žodynas",
-      informationDepositor: "Informacijos indelininkui teikimo forma",
-      securitisedDeposit: "Terinuoto indelio sutartis standartines sąlygos",
+      informationDepositor: "Informacijos indėlininkui teikimo forma",
+      securitisedDeposit: "Terminuotojo indėlio sutarties standartinės sąlygos",
       currentAccountContract:
         "Esmės sąskaitos sutartis fiziniam asmeniui: standartinės sąlygos",
       currentAccountAgreement:

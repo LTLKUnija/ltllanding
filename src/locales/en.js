@@ -459,7 +459,7 @@ export default {
       generalCondition: "General conditions",
       commisionInfo: "Commission information document",
       glossary: "Glossary",
-      informationDepositor: "Form for providing information to the depositor",
+      informationDepositor: "Information to the depositor",
       securitisedDeposit:
         "Securitised deposit agreement standard terms and conditions",
       currentAccountContract:
