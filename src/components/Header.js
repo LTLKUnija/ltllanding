@@ -241,7 +241,7 @@ function Header() {
       <div className="header-action-buttons-block">
         <Link
           className="header-action-button login"
-          href="https://ib.ltlkreditounija.eu/ib/site/login"
+          href="https://ib.ltlku.lt/ib/site/login"
         >
           {t("headerNavLinks.login")}
         </Link>
