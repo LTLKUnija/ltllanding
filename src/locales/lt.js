@@ -1015,7 +1015,7 @@ export default {
       article2:
         "Mūsų tikslas – nustatyti, įvertinti ir suprasti finansinių nusikaltimų rizikas, su kuriomis susiduriame, ir įgyvendinti atitinkamas kontrolės priemones, atitinkančias prisiimamą riziką. Nesvarbu, ar tai susiję su individualiais klientais, ar bendrais mūsų verslo procesais, kiekvienam scenarijui stengiamės įsivertinti tikrąjį rizikos lygį. Pripažįstame, kad veiksmingai sprendžiant PPTFP problemas, iš mūsų klientų ir partnerių šis procesas galėtų pareikalauti papildomo įsitraukimo, laiko sąnaudų ir pastangų. Todėl, siekdami užtikrinti sklandų ir veiksmingą procesą, taikome rizika pagrįstą metodą, leidžiantį imtis specifinių veiksmų, kurie priklauso nuo individualių klientų ir/ar transakcijų rizikos profilių.",
       article3:
-        "Užmezgant ir palaikant santykius su mūsų klientais, visada atsiremiam mūsų apibrėžtu rizikos apetitu, kuris tapo vienu esminiu PPTFP politikos įgyvendinimo elementu bei nustato mums priimtinos rizikos ribas. Maloniai prašome skirti šiek tiek laiko ir susipažinti su Rizikos apetito deklaraciją (link).",
+        "Užmezgant ir palaikant santykius su mūsų klientais, visada atsiremiam mūsų apibrėžtu rizikos apetitu, kuris tapo vienu esminiu PPTFP politikos įgyvendinimo elementu bei nustato mums priimtinos rizikos ribas. Maloniai prašome skirti šiek tiek laiko ir susipažinti su Rizikos apetito deklaracija (link).",
     },
   },
   contacts: {
