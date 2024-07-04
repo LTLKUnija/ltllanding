@@ -15,6 +15,16 @@ export const tncLinks = [
           "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/accounts/Informacijos%20apie%20komisin%C4%AF%20atlyginim%C4%85%20dokumentas.pdf",
       },
       {
+        linkName: "kycPhysical",
+        linkUrl:
+          "https://docs.google.com/forms/d/e/1FAIpQLScSSKumnghywSfwchctheYOMPsyr73LKLxFHipV6_e95Npkwg/viewform",
+      },        
+      {
+        linkName: "kycLegal",
+        linkUrl:
+          "https://docs.google.com/forms/d/1g9cuTfoiJwXWZ72hfJp_kwD-wbtr8FPVFFCFr9aq508/viewform",
+      },    
+        {
         linkName: "glossary",
         linkUrl:
           "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/accounts/%C5%BDodynas.pdf",

@@ -440,6 +440,8 @@
     "innerTabLinks": {
       "generalCondition": "Bendrosios sąlygos",
       "commisionInfo": "Informacijos apie komisinį atlyginimą dokumentas",
+      "kycPhysical": "Fizinio asmens anketa",
+      "kycLegal": "Juridinio asmens anketa",
       "glossary": "Žodynas",
       "informationDepositor": "Informacijos indėlininkui teikimo forma",
       "securitisedDeposit": "Terminuotojo indėlio sutarties standartinės sąlygos",
@@ -1321,7 +1323,7 @@
       "benefitsArticle": {
         "article1": {
           "title": "Atsidarykite sąskaitą LTL",
-          "description": "Kad galėtumėte vykdyti mokėjimus, pirmiausia jums reikės sąskaitos LTL. Jei esate naujas klientas, galite tapti LTL nariu ir atsidaryti einamąją sąskaitą atvykę į mūsų skyrių adresu Sporto g. 18, LT- 09238 Vilnius. Su savimi turėkite asmens tapatybę patvirtinantį dokumentą. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje. Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti ",
+          "description": "Kad galėtumėte vykdyti mokėjimus, pirmiausia jums reikės sąskaitos LTL. Jei esate naujas klientas, galite tapti LTL nariu ir atsidaryti einamąją sąskaitą atvykę į mūsų skyrių adresu Sporto g. 18, LT-09238 Vilnius. Su savimi turėkite asmens tapatybę patvirtinantį dokumentą. Norimus mokėjimus galėsite atlikti internetinėje bankininkystėje. Visus mokėjimo paslaugų įkainius ir susijusius mokesčius galite rasti ",
           "restDescription": " LTL nariams siūlome:",
           "bullet1": "Vietinius mokėjimus visoje Lietuvoje",
           "bullet2": "Tarptautinius SEPA pervedimus visoje Europoje",

@@ -460,6 +460,8 @@ export default {
     innerTabLinks: {
       generalCondition: "Bendrosios sąlygos",
       commisionInfo: "Informacijos apie komisinį atlyginimą dokumentas",
+      kycPhysical: "Fizinio asmens anketa",
+      kycLegal: "Juridinio asmens anketa",
       glossary: "Žodynas",
       informationDepositor: "Informacijos indėlininkui teikimo forma",
       securitisedDeposit: "Terminuotojo indėlio sutarties standartinės sąlygos",

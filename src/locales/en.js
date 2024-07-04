@@ -458,6 +458,8 @@ export default {
     innerTabLinks: {
       generalCondition: "General conditions",
       commisionInfo: "Commission information document",
+      kycPhysical: "Physical person form",
+      kycLegal: "Legal entity form",   
       glossary: "Glossary",
       informationDepositor: "Information to the depositor",
       securitisedDeposit:

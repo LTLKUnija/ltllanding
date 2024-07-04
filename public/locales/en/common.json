@@ -140,7 +140,7 @@
     "benefitsArticle": {
       "article1": {
         "title": "Open an account with LTL",
-        "description": "To be able to make payments, you will first need an account with LTL. If you are a new customer, you can become a member of LTL and open a current account by coming to our branch at Sporto str. 18, LT- 09238 Vilnius. Please bring your ID with you. You will be able to make all your payments through Online Banking. You can find all payment service fees and related charges ",
+        "description": "To be able to make payments, you will first need an account with LTL. If you are a new customer, you can become a member of LTL and open a current account by coming to our branch at Sporto str. 18, LT-09238 Vilnius. Please bring your ID with you. You will be able to make all your payments through Online Banking. You can find all payment service fees and related charges ",
         "restDescription": ". We offer the following to LTL members:",
         "bullet1": "Local payments in all of Lithuania",
         "bullet2": "International SEPA transfers throughout Europe",
@@ -428,6 +428,8 @@
     "innerTabLinks": {
       "generalCondition": "General conditions",
       "commisionInfo": "Commission information document",
+      "kycPhysical": "Physical person form",
+      "kycLegal": "Legal entity form",      
       "glossary": "Glossary",
       "informationDepositor": "Information to the depositor",
       "securitisedDeposit": "Terms and conditions of the standard fixed-term deposit agreement",
