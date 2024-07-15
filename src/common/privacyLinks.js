@@ -2,12 +2,12 @@ export const privacyLinks = [
   {
     linkName: "processingPersonalData",
     linkUrl:
-      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/INFORMACIJA%20APIE%20ASMENS%20DUOMENU%CC%A8%20TVARKYMA%CC%A8_Fizinis%20asmuo%20(klientas).pdf",
+      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/INFORMACIJA_APIE_ASMENS_DUOMENU_TVARKYMA_Fizinis_asmuo_(klientas).pdf",
   },
   {
     linkName: "processingPersonalDataClient",
     linkUrl:
-      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/INFORMACIJA%20APIE%20ASMENS%20DUOMENU%CC%A8%20TVARKYMA%CC%A8_juridinio%20asmens%20atstovas%20(direktorius).pdf",
+      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/INFORMACIJA_APIE_ASMENS_DUOMENU_TVARKYMA_juridinio_asmens_atstovas_(direktorius).pdf",
   },
   {
     linkName: "privacyPolicy",
