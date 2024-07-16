@@ -946,9 +946,9 @@ export default {
     description:
       "Mūsų vizija – sukurti pasaulį, kuriame kiekvienas turėtų prieigą prie finansinių paslaugų ir sudarytų jiems galimybę kurti šviesesnę ateitį sau ir savo bendruomenėms. Mes siekiame atverti finansinę įtrauktį, suteikdami asmenims galimybę priimti pagrįstus sprendimus dėl savo finansinės gerovės.",
     innerTabLinks: {
-      processingPersonalData:
-        "Informacija apie asmens duomenų tvarkymą - fizinis asmuo (klientas)",
       processingPersonalDataClient:
+        "Informacija apie asmens duomenų tvarkymą - fizinis asmuo (klientas)",
+      processingPersonalDataLegal:
         "Informacija apie asmens duomenų tvarkymą - juridinio asmens atstovas",
       privacyPolicy: "Privatumo politika",
       cookiePolicy: "Slapukų politika",
