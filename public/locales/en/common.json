@@ -866,8 +866,8 @@
     "title": "Privacy Policy and Cookies",
     "description": "Our vision is to create a world where everyone has access to financial services, enabling them to build a brighter future for themselves and their communities. We strive to unlock financial inclusion by empowering individuals to make informed decisions about their financial wellbeing.",
     "innerTabLinks": {
-      "processingPersonalDataClient": "Information on the processing of personal data - representative of the legal person",
-      "processingPersonalDataLegal": "Information on the processing of personal data - natural person (client)",
+      "processingPersonalDataClient": "Information on the processing of personal data - natural person (client)",
+      "processingPersonalDataLegal": "Information on the processing of personal data - representative of the legal person",
       "privacyPolicy": "Privacy Policy",
       "cookiePolicy": "Cookie Policy"
     }
