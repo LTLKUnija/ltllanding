@@ -12,8 +12,8 @@ export default function Contacts() {
 
   const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
   const defaultCenter = {
-    lat: 54.694947,
-    lng: 25.299126,
+    lat: 54.6949375,
+    lng: 25.2990313,
   };
 
   const { isLoaded: gmapIsLoaded } = useJsApiLoader({
