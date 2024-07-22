@@ -37,14 +37,24 @@ export const tncLinks = [
     uid: 1,
     links: [
       {
-        linkName: "informationDepositor",
+        linkName: "informationDepositorActual",
         linkUrl:
-          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/temr-deposit/Informacijos-inde%CC%87lininkui-teikimo-forma-nuo-2024-06-13.pdf",
+          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/term-deposit/Informacijos-indelininkui-teikimo-forma.pdf",
       },
+      {
+        linkName: "informationDepositorOld1",
+        linkUrl:
+          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/term-deposit/Informacijos-indelininkui-teikimo-forma-nuo-2024-04-02-iki-2024-06-12.pdf",
+      },
+      {
+        linkName: "informationDepositorActualOld2",
+        linkUrl:
+          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/term-deposit/Informacijos-indelininkui-teikimo-forma-iki-2024-04-01.pdf",
+      },        
       {
         linkName: "securitisedDeposit",
         linkUrl:
-          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/temr-deposit/Terminuotojo%20ind%C4%97lio%20sutartis_Standartin%C4%97s%20s%C4%85lygos.pdf",
+          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/term-deposit/Terminuotojo%20inde%CC%87lio%20sutartis_Standartine%CC%87s%20sa%CC%A8lygos.pdf",
       },
     ],
   },
