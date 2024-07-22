@@ -47,7 +47,7 @@ export const tncLinks = [
           "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/term-deposit/Informacijos-indelininkui-teikimo-forma-nuo-2024-04-02-iki-2024-06-12.pdf",
       },
       {
-        linkName: "informationDepositorActualOld2",
+        linkName: "informationDepositorOld2",
         linkUrl:
           "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/term-deposit/Informacijos-indelininkui-teikimo-forma-iki-2024-04-01.pdf",
       },        
