@@ -48,7 +48,7 @@ export default function IndexNews() {
       <div className={styles.newsItem} key={idx}>
         <div className={styles.newsDate}>{news.date}</div>
         <h3>
-          <Link href={`news/${news.id}-${news.length - idx}`}>
+          <Link href={`news/${news.id}-${news.idx}`}>
             {router.locale === "lt" ? news.title : news.titleEn}
           </Link>
         </h3>
