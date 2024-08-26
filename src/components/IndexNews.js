@@ -29,8 +29,9 @@ export default function IndexNews() {
           textEn: news.textEn,
           title: news.title,
           titleEn: news.titleEn,
-          idx: year.news.length - idx - 1,
+          idx,
           date: news.date,
+          link: ``,
         });
       });
     });
@@ -47,7 +48,7 @@ export default function IndexNews() {
       <div className={styles.newsItem} key={idx}>
         <div className={styles.newsDate}>{news.date}</div>
         <h3>
-          <Link href={`news/${news.id}-${news.idx}`}>
+          <Link href={`news/${news.id}-${news.length - idx}`}>
             {router.locale === "lt" ? news.title : news.titleEn}
           </Link>
         </h3>
