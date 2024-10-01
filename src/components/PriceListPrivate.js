@@ -364,7 +364,7 @@ export default function PriceListPrivate() {
               {t("priceList.table.lateFees")}
             </div>
             <div className={styles.priceDescription}>
-              0,05% {t("priceList.table.amountOverdueForEachDay")}
+              0,50% {t("priceList.table.amountOverdueForEachDay")}
             </div>
           </li>
           <li className={styles.priceItem}>
