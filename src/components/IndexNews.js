@@ -18,8 +18,10 @@ export default function IndexNews() {
 
   const getLastSixNews = (newsData) => {
     const lastSix = [];
+
     newsData.forEach((year) => {
-      year.news.forEach((news, idx) => {
+      let reversedNews = [...year.news].reverse();
+      reversedNews.forEach((news, idx) => {
         if (lastSix.length > 5) return;
         lastSix.push({
           id: year.id,
@@ -27,12 +29,14 @@ export default function IndexNews() {
           textEn: news.textEn,
           title: news.title,
           titleEn: news.titleEn,
-          idx: year.news.length - idx - 1,
+          idx,
           date: news.date,
+          link: ``,
         });
       });
     });
-    return lastSix.reverse();
+
+    return lastSix;
   };
 
   useEffect(() => {
