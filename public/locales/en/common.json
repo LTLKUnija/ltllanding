@@ -313,6 +313,7 @@
       "paymentCancellation": "Payment cancellation",
       "internationnalMoney": "International money transfer at the customer service desk:",
       "paymentsOutside": "Payments outside the euro area (outside the SEPA payment network)",
+      "transferOnline": "Money transfer online:",
       "outgoingPayments": "Outgoing payments",
       "betweenAccounts": "Between accounts at the LTL",
       "cancelationOfPayment": "Cancellation of payment in the euro area (SEPA)",

@@ -218,7 +218,7 @@ export default function PriceListPrivate() {
           </li>
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
             <div className={styles.priceTitle}>
-              {t("priceList.table.outgoingPayments")}
+              {t("priceList.table.incomingPayments")}
             </div>
           </li>
           <li className={styles.priceItem}>
