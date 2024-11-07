@@ -190,11 +190,11 @@
       "description": "Jūsų sėkmė yra mūsų sėkmė, todėl didžiuojamės, kad turime komandą, kuriai tikrai rūpi jūsų finansinė gerovė.",
       "duties": "Pareigos",
       "chairmanSupervisor": "Stebėtojų tarybos pirmininkas",
-      "chairman": "Stebėtojų tarybos narys",
+      "chairman": "Stebėtojų tarybos narė",
       "internalAuditor": "Vidaus audito tarnybos vadovė",
-      "ceo": "Valdybos pirmininkas, generalinis direktorius",
-      "creditDirector": " Valdybos narys, kreditavimo direktorius",
-      "developmentDirector": "Valdybos narys, verslo plėtros direktorius",
+      "ceo": "Valdybos pirmininkas, administracijos vadovas",
+      "creditDirector": " Valdybos narys, kreditavimo departamento direktorius",
+      "developmentDirector": "Valdybos narys, verslo plėtros vadovas",
       "independent": "Nepriklausomas valdybos narys"
     },
     "jobsSection": {

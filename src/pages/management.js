@@ -55,7 +55,7 @@ export default function About() {
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
-                    src="https://storage.googleapis.com/ltlku_web_page/photo/Arturas_Feiferas.jpg"
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Mindaugas_Kyguolis.jpg"
                     width={154}
                     height={154}
                     alt=""
@@ -65,19 +65,21 @@ export default function About() {
 
                 <p>{t("aboutUs.team.chairmanSupervisor")}</p>
               </div>
+                    
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
-                    src="https://storage.googleapis.com/ltlku_web_page/photo/Mindaugas_Kyguolis.jpg"
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/photo_Jurgita_Sekliuckiene.jpg"
                     width={154}
                     height={154}
                     alt=""
                   />
                 </div>
-                <h4 className={styles.membersName}>Mindaugas Kyguolis</h4>
+                <h4 className={styles.membersName}>Jurgita Sekliuckienė</h4>
 
                 <p>{t("aboutUs.team.chairman")}</p>
               </div>
+                    
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
@@ -91,6 +93,7 @@ export default function About() {
 
                 <p>{t("aboutUs.team.chairman")}</p>
               </div>
+                    
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
@@ -105,20 +108,22 @@ export default function About() {
                 <p>{t("aboutUs.team.internalAuditor")}</p>
               </div>
             </div>
+                    
             <div className={styles.teamBlock}>
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
-                    src="https://storage.googleapis.com/ltlku_web_page/photo/Ruslanas_Telnovas.jpg"
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Arturas_Feiferas.jpg"
                     width={154}
                     height={154}
                     alt=""
                   />
                 </div>
-                <h4 className={styles.membersName}>Ruslanas Telnovas</h4>
+                <h4 className={styles.membersName}>Arturas Feiferas</h4>
 
                 <p>{t("aboutUs.team.ceo")}</p>
               </div>
+                    
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
@@ -134,6 +139,7 @@ export default function About() {
 
                 <p>{t("aboutUs.team.creditDirector")}</p>
               </div>
+                    
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
@@ -147,6 +153,7 @@ export default function About() {
 
                 <p>{t("aboutUs.team.developmentDirector")}</p>
               </div>
+                    
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
