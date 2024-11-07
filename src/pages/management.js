@@ -61,7 +61,7 @@ export default function About() {
                     alt=""
                   />
                 </div>
-                <h4 className={styles.membersName}>Arturas Feiferas</h4>
+                <h4 className={styles.membersName}>Mindaugas Kyguolis</h4>
 
                 <p>{t("aboutUs.team.chairmanSupervisor")}</p>
               </div>
@@ -77,7 +77,7 @@ export default function About() {
                 </div>
                 <h4 className={styles.membersName}>Jurgita Sekliuckienė</h4>
 
-                <p>{t("aboutUs.team.chairman")}</p>
+                <p>{t("aboutUs.team.chairwoman")}</p>
               </div>
                     
               <div className={styles.teamMembers}>
@@ -89,7 +89,7 @@ export default function About() {
                     alt=""
                   />
                 </div>
-                <h4 className={styles.membersName}> Vytautas Kupliauskas</h4>
+                <h4 className={styles.membersName}>Vytautas Kupliauskas</h4>
 
                 <p>{t("aboutUs.team.chairman")}</p>
               </div>
