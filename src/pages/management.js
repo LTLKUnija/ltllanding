@@ -69,7 +69,7 @@ export default function About() {
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
-                    src="https://storage.googleapis.com/ltlku_web_page/photo/photo_Jurgita_Sekliuckiene.jpg"
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Jurgita_Sekliuckiene.jpg"
                     width={154}
                     height={154}
                     alt=""
