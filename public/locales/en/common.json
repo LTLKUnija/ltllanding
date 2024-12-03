@@ -723,7 +723,7 @@
     },
     "contacts": {
       "title": "Contacts",
-      "direcotherRequisitestor": "Director",
+      "direcotherRequisitestor": "Head of Administration",
       "companyName": "LTL Credit Union"
     }
   },
@@ -883,7 +883,7 @@
     "agenda": "Agenda",
     "contacts": {
       "title": "Contacts",
-      "director": "Director",
+      "director": "Head of Administration",
       "companyName": "LTL"
     }
   },

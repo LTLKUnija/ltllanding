@@ -115,7 +115,7 @@ export default function FinancialReporting() {
             <div className={styles.contactsBlock}>
               <div className={styles.img}>
                 <Image
-                  src="https://storage.googleapis.com/ltlku_web_page/photo/Ruslanas_Telnovas.jpg"
+                  src="https://storage.googleapis.com/ltlku_web_page/photo/Arturas_Feiferas.jpg"
                   width={154}
                   height={154}
                   alt=""
@@ -124,9 +124,9 @@ export default function FinancialReporting() {
               <div className={styles.contactsInfo}>
                 <h4>{t("finacialReporting.contacts.director")}</h4>
                 <p>
-                  Ruslanas Telnovas{" "}
+                  Arturas Feiferas{" "}
                   <Link
-                    href="mailto:ruslanas.telnovas@ltlku.lt"
+                    href="mailto:arturas.feiferas@ltlku.lt"
                     className="readMoreLink"
                   >
                     ruslanas.telnovas@ltlku.lt
