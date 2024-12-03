@@ -125,11 +125,8 @@ export default function FinancialReporting() {
                 <h4>{t("finacialReporting.contacts.director")}</h4>
                 <p>
                   Arturas Feiferas{" "}
-                  <Link
-                    href="mailto:arturas.feiferas@ltlku.lt"
-                    className="readMoreLink"
-                  >
-                    ruslanas.telnovas@ltlku.lt
+                  <Link href="mailto:arturas.feiferas@ltlku.lt" className="readMoreLink">
+                    arturas.feiferas@ltlku.lt
                   </Link>
                 </p>
                 <p>
