@@ -130,6 +130,8 @@ export default function FinancialReporting() {
                   </Link>
                 </p>
                 <p>
+{/* It was asked to hide phone numbers on 2024-12-04, I'm leaving this for future in case this needs to be unhiden  */}
+{/*
                   <Link href="tel:+370 5 205 5240" className="readMoreLink">
                     +370 5 205 5240
                   </Link>
@@ -139,6 +141,8 @@ export default function FinancialReporting() {
                     +370 5 205 5241
                   </Link>
                 </p>
+*/}
+
               </div>
               <div className={styles.contactsInfo}>
                 <h4>{t("finacialReporting.contacts.companyName")}</h4>
