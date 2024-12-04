@@ -129,9 +129,9 @@ export default function FinancialReporting() {
                     arturas.feiferas@ltlku.lt
                   </Link>
                 </p>
-                <p>
 {/* It was asked to hide phone numbers on 2024-12-04, I'm leaving this for future in case this needs to be unhiden  */}
 {/*
+                <p>
                   <Link href="tel:+370 5 205 5240" className="readMoreLink">
                     +370 5 205 5240
                   </Link>
