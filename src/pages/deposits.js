@@ -35,36 +35,40 @@ export default function Deposit() {
 
   let ratesList = [
     {
+      term: 1,
+      rate: 3,
+    },
+    {
       term: 3,
-      rate: 3.50,
+      rate: 3.75,
     },
     {
       term: 6,
-      rate: 3.75,
+      rate: 4,
     },
     {
       term: 9,
-      rate: 3.85,
+      rate: 4,
     },
     {
       term: 12,
-      rate: 4,
+      rate: 3.85,
     },
     {
       term: 18,
-      rate: 4,
+      rate: 3.7,
     },
     {
       term: 24,
-      rate: 4,
+      rate: 3.6,
     },
     {
       term: 36,
-      rate: 3.95,
+      rate: 3.5,
     },
     {
       term: 48,
-      rate: 3.75,
+      rate: 3.5,
     },
     {
       term: 60,
