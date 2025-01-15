@@ -1,5 +1,6 @@
 export const yearsLinksVocabData = [
-  { year: "2024", selected: true },
+  { year: "2025", selected: true },
+  { year: "2024", selected: false },
   { year: "2023", selected: false },
   { year: "2022", selected: false },
   { year: "2021", selected: false },
