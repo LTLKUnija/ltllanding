@@ -20,4 +20,9 @@ export const privacyLinks = [
     linkUrl:
       "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/Slapuku%CC%A8%20politika.pdf",
   },
+  {
+    linkName: "dataSubjectRights",
+    linkUrl:
+      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/Duomenu_subjekto_teisiu_igyvendinimo_tvarka_2023-11-21.pdf",
+  },  
 ];

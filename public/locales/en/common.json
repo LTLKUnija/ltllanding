@@ -873,7 +873,8 @@
       "processingPersonalDataClient": "Information on the processing of personal data - natural person (client)",
       "processingPersonalDataLegal": "Information on the processing of personal data - representative of the legal person",
       "privacyPolicy": "Privacy Policy",
-      "cookiePolicy": "Cookie Policy"
+      "cookiePolicy": "Cookie Policy",
+      "dataSubjectRights": "Procedure for implementing data subject rights at LTL Credit Union"
     }
   },
   "shareholders": {

@@ -884,7 +884,8 @@
       "processingPersonalDataClient": "Informacija apie asmens duomenų tvarkymą - fizinis asmuo (klientas)",
       "processingPersonalDataLegal": "Informacija apie asmens duomenų tvarkymą - juridinio asmens atstovas",
       "privacyPolicy": "Privatumo politika",
-      "cookiePolicy": "Slapukų politika"
+      "cookiePolicy": "Slapukų politika",
+      "dataSubjectRights": "Duomenų subjekto teisių įgyvendinimo LTL Kredito unijoje tvarka"
     }
   },
   "shareholders": {
