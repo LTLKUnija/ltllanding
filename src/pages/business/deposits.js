@@ -74,7 +74,7 @@ export default function Deposit() {
     },
     {
       term: 60,
-      rate: 3.7,
+      rate: 3.6,
     },
   ];
 
