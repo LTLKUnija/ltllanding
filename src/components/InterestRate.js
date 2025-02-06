@@ -47,7 +47,7 @@ export default function InterestRate() {
             9 {t("termDeposit.interestRatesArticle.month")}
           </div>
           <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            4.00%
+            3.85%
           </div>
         </div>
         <div className={styles.tableDataLine}>
@@ -55,7 +55,7 @@ export default function InterestRate() {
             12 {t("termDeposit.interestRatesArticle.month")}
           </div>
           <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.85%
+            3.80%
           </div>
         </div>
         <div className={styles.tableDataLine}>
@@ -87,7 +87,7 @@ export default function InterestRate() {
             48 {t("termDeposit.interestRatesArticle.month")}
           </div>
           <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.50%
+            3.65%
           </div>
         </div>
         <div className={styles.tableDataLine}>
@@ -95,7 +95,7 @@ export default function InterestRate() {
             60 {t("termDeposit.interestRatesArticle.month")}
           </div>
           <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.50%
+            4.00%
           </div>
         </div>
       </div>

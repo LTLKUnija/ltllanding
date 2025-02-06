@@ -48,11 +48,11 @@ export default function Deposit() {
     },
     {
       term: 9,
-      rate: 4,
+      rate: 3.85,
     },
     {
       term: 12,
-      rate: 3.85,
+      rate: 3.8,
     },
     {
       term: 18,
@@ -68,11 +68,11 @@ export default function Deposit() {
     },
     {
       term: 48,
-      rate: 3.5,
+      rate: 3.65,
     },
     {
       term: 60,
-      rate: 3.5,
+      rate: 4,
     },
   ];
 
