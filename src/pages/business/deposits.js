@@ -32,37 +32,37 @@ export default function Deposit() {
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
-    selectedRate: 3.75,
+    selectedRate: 3.55,
   });
 
   let ratesList = [
     {
       term: 1,
-      rate: 3,
+      rate: 3.5,
     },
     {
       term: 3,
-      rate: 3.75,
+      rate: 3.55,
     },
     {
       term: 6,
-      rate: 4,
+      rate: 3.65,
     },
     {
       term: 9,
-      rate: 3.85,
+      rate: 3.65,
     },
     {
       term: 12,
-      rate: 3.8,
+      rate: 3.6,
     },
     {
       term: 18,
-      rate: 3.7,
+      rate: 3.5,
     },
     {
       term: 24,
-      rate: 3.6,
+      rate: 3.5,
     },
     {
       term: 36,
@@ -70,11 +70,11 @@ export default function Deposit() {
     },
     {
       term: 48,
-      rate: 3.65,
+      rate: 3.5,
     },
     {
       term: 60,
-      rate: 4,
+      rate: 3.7,
     },
   ];
 
