@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import { store } from "../store/store.js";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Script from "next/script"; // Importing Next.js Script component
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter();
@@ -18,6 +19,22 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <Provider store={store}>
+      {/* Google Analytics Script */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-6Z2XJJXYH2"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-6Z2XJJXYH2', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
+
       <Component {...pageProps} />
     </Provider>
   );
