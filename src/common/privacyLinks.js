@@ -18,7 +18,7 @@ export const privacyLinks = [
   {
     linkName: "cookiePolicy",
     linkUrl:
-      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/Slapuku%CC%A8%20politika.pdf",
+      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/Slapuku_politika_2025-02-11.pdf",
   },
   {
     linkName: "dataSubjectRights",
