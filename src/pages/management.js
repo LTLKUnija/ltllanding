@@ -153,7 +153,7 @@ export default function About() {
 
                 <p>{t("aboutUs.team.developmentDirector")}</p>
               </div>
-                    
+ {/*                   
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
@@ -165,7 +165,7 @@ export default function About() {
                   />
                 </div>
                 <h4 className={styles.membersName}>Tomas Kakanauskas</h4>
-
+*/}
                 <p>{t("aboutUs.team.independent")}</p>
               </div>
             </div>
