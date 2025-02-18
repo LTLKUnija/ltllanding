@@ -165,9 +165,10 @@ export default function About() {
                   />
                 </div>
                 <h4 className={styles.membersName}>Tomas Kakanauskas</h4>
-*/}
+
                 <p>{t("aboutUs.team.independent")}</p>
               </div>
+*/}              
             </div>
           </div>
         </section>
