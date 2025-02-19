@@ -3,19 +3,31 @@ import styles from "@/styles/termsAndConditions.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import { tncLinks } from "@/common/tnclinks";
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function TemrsAndConditions() {
-  const {t} = useTranslation('common');
+  const { t } = useTranslation("common");
 
   const [links, setLinks] = useState(tncLinks);
   const [activeTabLinks, setActiveTabLinks] = useState([]);
   useEffect(() => {
-    (async () => {
-      setLinks(tncLinks);
-      setActiveTabLinks(tncLinks[0].links);
-    })();
+    const updateActiveTab = (hash) => {
+      const index = tncLinks.findIndex((tab) => tab.tabName === hash);
+      if (index === -1) {
+        setActiveTabLinks(tncLinks[0].links);
+        window.location.hash = tncLinks[0].tabName;
+        return tncLinks.map((tab, idx) => ({ ...tab, active: idx === 0 }));
+      } else {
+        setActiveTabLinks(tncLinks[index].links);
+        window.location.hash = tncLinks[index].tabName;
+        return tncLinks.map((tab, idx) => ({ ...tab, active: idx === index }));
+      }
+    };
+
+    const hash = window.location.hash.replace("#", "");
+    const updatedLinks = updateActiveTab(hash || tncLinks[0].tabName);
+    setLinks(updatedLinks);
   }, []);
 
   function tabHandler(e) {
@@ -27,6 +39,9 @@ export default function TemrsAndConditions() {
     });
     setLinks(temp);
     setActiveTabLinks(temp[idx].links);
+    if (temp[idx] && temp[idx].tabName) {
+      window.location.hash = temp[idx].tabName;
+    }
   }
 
   return (
@@ -34,8 +49,8 @@ export default function TemrsAndConditions() {
       <main>
         <section className={styles.termsAndConditionsSection}>
           <div className={styles.termsAndConditionsBlock}>
-            <h1>{t('termConditions.pageTitle')}</h1>
-            <p>{t('termConditions.description')}</p>
+            <h1>{t("termConditions.pageTitle")}</h1>
+            <p>{t("termConditions.description")}</p>
           </div>
           <div className={styles.innerNavigationLinkList}>
             {links.map((tab, idx) => {
@@ -79,9 +94,7 @@ export default function TemrsAndConditions() {
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        'common',
-      ])),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
-  }
+  };
 }

@@ -2,8 +2,24 @@ import React from "react";
 import styles from "@/styles/InterestRate.module.scss";
 import { useTranslation } from "next-i18next";
 
-export default function InterestRate() {
+export default function InterestRate({ rateList }) {
   const { t } = useTranslation("common");
+
+  const getTermLabel = (term) => {
+    let label = t("termDeposit.interestRatesArticle.month");
+    if (term % 10 === 1 && term % 100 !== 11) {
+      label = t("termDeposit.interestRatesArticle.month");
+    } else if (
+      term % 10 >= 2 &&
+      term % 10 <= 4 &&
+      (term % 100 < 10 || term % 100 >= 20)
+    ) {
+      label = t("termDeposit.interestRatesArticle.month");
+    } else {
+      label = t("termDeposit.interestRatesArticle.months");
+    }
+    return `${term} ${label}`;
+  };
 
   return (
     <div className={styles.ratesTableWrapper}>
@@ -18,86 +34,16 @@ export default function InterestRate() {
             {t("termDeposit.interestRatesArticle.interestRate")} (EUR)
           </div>
         </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            1 {t("termDeposit.interestRatesArticle.month")}
+        {rateList.map((rate) => (
+          <div key={rate.term} className={styles.tableDataLine}>
+            <div className={[styles.tableDataCell, styles.column1].join(" ")}>
+              {getTermLabel(rate.term)}
+            </div>
+            <div className={[styles.tableDataCell, styles.column2].join(" ")}>
+              {rate.rate}%
+            </div>
           </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.00%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            3 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.75%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            6 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            4.00%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            9 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.85%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            12 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.80%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            18 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.70%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            24 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.60%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            36 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.50%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            48 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            3.65%
-          </div>
-        </div>
-        <div className={styles.tableDataLine}>
-          <div className={[styles.tableDataCell, styles.column1].join(" ")}>
-            60 {t("termDeposit.interestRatesArticle.month")}
-          </div>
-          <div className={[styles.tableDataCell, styles.column2].join(" ")}>
-            4.00%
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

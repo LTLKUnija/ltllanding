@@ -1,6 +1,7 @@
 import styles from "@/styles/news[id].module.scss";
 import { useRouter } from "next/router";
 import IndexLayout from "@/Layouts/IndexLayout";
+import { formatText } from "@/utils/helpers";
 import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -39,12 +40,6 @@ export default function NewsPage() {
       setCurrentYear(year);
     }
   }, [newsData]);
-
-  const formatText = (text) => {
-    return text
-      .split("<br/>")
-      .map((paragraph, index) => <p key={index}>{paragraph}</p>);
-  };
 
   return (
     <IndexLayout>

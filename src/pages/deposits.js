@@ -17,6 +17,7 @@ import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getDepositFAQ } from "@/store/faqList/faqList.slice";
 import InterestRate from "@/components/InterestRate";
+import { privateRates } from "@/common/Rates";
 
 export default function Deposit() {
   const router = useRouter();
@@ -33,51 +34,8 @@ export default function Deposit() {
     selectedRate: 3.75,
   });
 
-  let ratesList = [
-    {
-      term: 1,
-      rate: 3,
-    },
-    {
-      term: 3,
-      rate: 3.75,
-    },
-    {
-      term: 6,
-      rate: 4,
-    },
-    {
-      term: 9,
-      rate: 3.85,
-    },
-    {
-      term: 12,
-      rate: 3.8,
-    },
-    {
-      term: 18,
-      rate: 3.7,
-    },
-    {
-      term: 24,
-      rate: 3.6,
-    },
-    {
-      term: 36,
-      rate: 3.5,
-    },
-    {
-      term: 48,
-      rate: 3.65,
-    },
-    {
-      term: 60,
-      rate: 4,
-    },
-  ];
-
   function createSelectOptions() {
-    return ratesList.map((el, idx) => (
+    return privateRates.map((el, idx) => (
       <option data-rate={el.rate} key={idx}>
         {el.term}
       </option>
@@ -168,7 +126,7 @@ export default function Deposit() {
             </div>
           </section>
           <section id="interestRates" className={styles.ratesTableSection}>
-            <InterestRate />
+            <InterestRate rateList={privateRates} />
           </section>
           <section id="calculator" className={styles.calculatorSection}>
             <h2>{t("termDeposit.calcBlock.title")}</h2>

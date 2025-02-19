@@ -431,10 +431,10 @@
       "generalCondition": "General conditions",
       "commisionInfo": "Commission information document",
       "kycPhysical": "Physical person form",
-      "kycLegal": "Legal entity form",      
+      "kycLegal": "Legal entity form",
       "glossary": "Glossary",
       "informationDepositorActual": "Information to the depositor (from 2024-06-13)",
-      "informationDepositorOld1": "Information to the depositor (from 2024-04-02 till 2024-06-12)",      
+      "informationDepositorOld1": "Information to the depositor (from 2024-04-02 till 2024-06-12)",
       "informationDepositorOld2": "Information to the depositor (till 2024-04-01)",
       "securitisedDeposit": "Terms and conditions of the standard fixed-term deposit agreement",
       "currentAccountContract": "Current account contract for a natural person_standard terms",
@@ -483,7 +483,8 @@
       "description": "Maximize your savings with our term deposit options! Enjoy attractive interest rates that guarantee you a fixed return on your investment. Invest with us today and start earning more. Don't miss out on our interest rate offers. Interest rates and terms come into effect from February 6, 2025.",
       "period": "Period",
       "interestRate": "Interest rate",
-      "month": "month"
+      "month": "month",
+      "months": "months"
     },
     "stepProcess": {
       "title": "Term deposit opening processs",
