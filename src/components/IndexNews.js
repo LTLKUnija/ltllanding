@@ -1,10 +1,10 @@
+import React from "react";
 import Link from "next/link";
 import styles from "@/styles/IndexNews.module.scss";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
-import { previewTextMaker } from "@/utils/helpers";
-import { formatText } from "@/utils/helpers";
+import { formatText, previewTextMaker } from "@/utils/helpers";
 import { useSelector } from "react-redux";
 import { getNewsState } from "@/store/news/news.slice";
 
@@ -56,7 +56,10 @@ export default function IndexNews() {
           {previewTextMaker(
             router.locale === "lt" ? news.text : news.textEn,
             20
-          ) + "..."}
+          ).map((element, idx) => (
+            <React.Fragment key={idx}>{element}</React.Fragment>
+          ))}
+          {newsList.length > 20 && "..."}
         </p>
         <Link href={`news/${news.id}-${news.idx}`}>
           {t("news.readMore")} &#x3e;
