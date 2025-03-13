@@ -9,6 +9,7 @@ import {
   getDepositFAQ,
   getLoanForBusiness,
   getLoanForPrivatesState,
+  getInternetBank,
 } from "@/store/faqList/faqList.slice";
 
 export default function Deposit() {
@@ -17,6 +18,7 @@ export default function Deposit() {
   const CurrentAccFAQ = useSelector(getCurrentAccFAQ);
   const LoanForPrivates = useSelector(getLoanForPrivatesState);
   const LoanForBusiness = useSelector(getLoanForBusiness);
+  const InternetBank = useSelector(getInternetBank);
 
   return (
     <>
@@ -55,6 +57,15 @@ export default function Deposit() {
                   />
                 </div>
               )}
+              {!!InternetBank.data && (
+                <div className={styles.faqList}>
+                  <h1>{t("common.InternetBank")}</h1>
+                  <Accordion
+                    faqData={InternetBank.data}
+                    singleLevel="true"
+                  />
+                </div>
+              )}              
             </div>
           </section>
         </main>

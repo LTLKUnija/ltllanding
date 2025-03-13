@@ -5,6 +5,7 @@ export default {
     loanForBusiness: "Paskola verslui D.U.K.",
     currentAccount: "Einamoji sąskaita D.U.K.",
     deposit: "Depozitas D.U.K.",
+    InternetBank: "Internetinė Bankininkystė D.U.K.",
   },
   headerNavLinks: {
     private: "Privatiems",

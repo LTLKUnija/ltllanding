@@ -5,6 +5,7 @@ export default {
     loanForBusiness: "Loan For Business F.A.Q.",
     currentAccount: "Current Account F.A.Q.",
     deposit: "Deposit F.A.Q.",
+    InternetBank: "Internet Banking F.A.Q.",
   },
   headerNavLinks: {
     private: "Private",
