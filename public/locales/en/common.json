@@ -4,7 +4,23 @@
     "loanForBusiness": "Loan For Business F.A.Q.",
     "currentAccount": "Current Account F.A.Q.",
     "deposit": "Deposit F.A.Q.",
-    "internetBank": "Internet Banking F.A.Q."
+    "internetBank": "Internet Banking F.A.Q.",
+
+    "loanFormTitle": "Loan Application Now",
+    "loanFormSubtitle": "Please provide the required information. We will contact you within 1 business day.",
+    "loanAmount": "Loan Amount",
+    "loanTerm": "Loan Term",
+    "months": "months",
+    "loanFormButton": "Submit Application",
+    "loanFormTermsMessage": "I agree that LTL Credit Union processes my personal data provided in this form to register my application, review my request, contact me, and provide a response as indicated",
+    "loanFormTermsMessageLink": "in the privacy policy",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "email": "Email",
+    "companyName": "Company Name",
+    "mobilePhone": "Mobile Phone",
+    "validEmailErrorMessage": "Please enter a valid email",
+    "successLoanFormSend": "Your application has been successfully sent"
   },
   "headerNavLinks": {
     "private": "Private",

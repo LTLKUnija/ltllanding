@@ -306,6 +306,7 @@ footer {
   .breadcrumbs_Wrapper {
     min-width: 55%;
     margin-bottom: 30px !important;
+    align-self: start;
   }
 }
 
@@ -705,4 +706,10 @@ footer {
   list-style-position: inside;
   position: relative;
   left: 17px;
+}
+
+@media (max-width: 974px) {
+  #g-recaptcha {
+    transform: scale(1) !important;
+  }
 }

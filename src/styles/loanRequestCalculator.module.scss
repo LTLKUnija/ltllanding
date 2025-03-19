@@ -1,0 +1,256 @@
+.loanAplicationForm {
+  margin: 20px 0;
+  border: 1px solid #c6c4c7;
+  border-radius: 8px;
+  padding: 20px 30px 10px 30px;
+
+  input:not([type="range"]) {
+    border: none;
+    border-bottom: 1px solid #c6c4c7;
+    background-color: transparent;
+    padding: 0 0 9px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--theme-color4);
+    outline: none;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 36px;
+  }
+
+  .hiddenArea {
+    margin-bottom: 24px;
+    margin-top: 36px;
+  }
+
+  .inputBlocksWrapperParent {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    // margin-bottom: 36px;
+  }
+
+  .inputsBlock {
+    flex: 1;
+  }
+
+  .inputBlocksWrapper {
+    display: flex;
+    gap: 80px;
+  }
+
+  .detailsBlocksWrapper {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 36px;
+
+    .personalDetailsBlock {
+      flex: 1;
+    }
+
+    .nameBlock {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 16px;
+    }
+
+    .nameBlockColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      // max-width: 364px;
+    }
+
+    .corporateDetailsBlock {
+      flex: 1;
+      .companyName,
+      .email {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .termsBlock {
+    display: flex;
+    gap: 14px;
+
+    input[type="checkbox"] {
+      width: 26px;
+      height: 26px;
+      position: relative;
+      top: -1px;
+    }
+
+    .termsText {
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+
+  .actionBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 66px;
+    width: 236px;
+  }
+
+  .submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 76px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  .loanSizeBlock,
+  .loanTermsBlock {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .loanSizeInputBlock {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      margin-bottom: 16px;
+
+      span.inputLabel {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        min-width: 150px;
+      }
+
+      .inputWrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        input {
+          text-align: right;
+        }
+      }
+    }
+
+    .rangeWrapper {
+      position: relative;
+      width: 100%;
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 8px;
+        border-radius: 5px;
+        background: #c6c4c7;
+        outline: none;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+      }
+
+      .rangeLabels {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4px;
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .loanAplicationForm {
+    .inputBlocksWrapperParent,
+    .inputBlocksWrapper,
+    .detailsBlocksWrapper {
+      gap: 40px;
+
+      .loanSizeInputBlock {
+        gap: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 974px) {
+  .loanAplicationForm {
+    width: 100%;
+    padding-bottom: 20px;
+
+    .inputBlocksWrapperParent {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .actionBlock {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      .submitButton {
+        width: 236px;
+        order: 1;
+      }
+
+      #g-recaptcha {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loanAplicationForm {
+    padding: 20px;
+
+    .inputBlocksWrapper {
+      flex-direction: column;
+    }
+
+    .detailsBlocksWrapper {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .loanAplicationForm .detailsBlocksWrapper .nameBlock {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

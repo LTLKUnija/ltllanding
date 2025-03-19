@@ -4,7 +4,23 @@
     "loanForBusiness": "Paskola verslui D.U.K.",
     "currentAccount": "Einamoji sąskaita D.U.K.",
     "deposit": "Depozitas D.U.K.",
-    "internetBank": "Internetinė Bankininkystė D.U.K."
+    "internetBank": "Internetinė Bankininkystė D.U.K.",
+
+    "loanFormTitle": "Paskolos paraiška dabar",
+    "loanFormSubtitle": "Nurodykite reikiama informacija. Susisieksime per 1 darbo diena.",
+    "loanAmount": "Paskolos suma",
+    "loanTerm": "Paskolos terminas",
+    "months": "mėn",
+    "loanFormButton": "Teikti paraišką",
+    "loanFormTermsMessage": "Sutinku, kad LTL Kredito unija tvarkytu Sioje formoje nurodytus mano asmens duomenis, kad uregistruoty mano paraiska, isnagrinéty mano uklausa ir susisiekty su manimi, bei pateikty atsakyma, kaip nurodyta",
+    "loanFormTermsMessageLink": "privatumo politikoje",
+    "firstname": "Vardas",
+    "lastname": "Pavardė",
+    "email": "El. paštas",
+    "companyName": "Įmonės pavadinimas",
+    "mobilePhone": "Mobiliojo telefono numeris",
+    "validEmailErrorMessage": "Prašome įvesti galiojantį el. paštą",
+    "successLoanFormSend": "Jūsų paraiška sėkmingai išsiųsta"
   },
   "headerNavLinks": {
     "private": "Privatiems",
