@@ -56,10 +56,7 @@ export default function IndexNews() {
           {previewTextMaker(
             router.locale === "lt" ? news.text : news.textEn,
             20
-          ).map((element, idx) => (
-            <React.Fragment key={idx}>{element}</React.Fragment>
-          ))}
-          {newsList.length > 20 && "..."}
+          ) + " ..."}
         </p>
         <Link href={`news/${news.id}-${news.idx}`}>
           {t("news.readMore")} &#x3e;
