@@ -622,7 +622,7 @@ export default {
     articleBlock: {
       article1: {
         title: "Banko sąskaitos atidarymas",
-        text: "Pas mus galite atsidaryti sąskaitą, jei turite Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat norint atidaryti sąskaitą, reikia tapti kredito unijos nariu. Peržiūrėkite toliau pateiktą procesą.",
+        text: "Pas mus galite atsidaryti sąskaitą, jei turite Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat norint atidaryti sąskaitą, reikia tapti kredito unijos nariu, įsigyjant pagrindinį pajų ir sumokant 30 Eur stojamąjį mokestį. Peržiūrėkite toliau pateiktą procesą.",
       },
       article2: {
         title: "Prisijungimas prie sąskaitos",
