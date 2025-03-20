@@ -6,7 +6,7 @@ export const previewTextMaker = (text, limit = null) => {
 
   const normalizedText = text
     .replace(/”|“/g, '"')
-    .replace(/(<br\/>\s*)+/g, "<br/>");
+    .replace(/(<br\/>\s*)+/g, " ");
 
   const addWords = (text) => {
     const words = text.split(" ");
@@ -23,56 +23,8 @@ export const previewTextMaker = (text, limit = null) => {
     return wordsToAdd.join(" ");
   };
 
-  const results = normalizedText.split("<br/>").map((paragraph, idx) => {
-    const paragraphParts = [];
-
-    const parts = paragraph.split(
-      /(<b>.*?<\/b>|<u>.*?<\/u>|<i>.*?<\/i>|<link url=".*?">.*?<\/link>)/
-    );
-
-    parts.forEach((part, partIdx) => {
-      if (/<b>(.*?)<\/b>|<u>(.*?)<\/u>|<i>(.*?)<\/i>/.test(part)) {
-        const match = part.match(/<(b|u|i)>(.*?)<\/(b|u|i)>/);
-        if (match && !isLimitReached) {
-          const content = addWords(match[2]);
-          const element = React.createElement(
-            match[1],
-            { key: partIdx },
-            content
-          );
-          paragraphParts.push(element);
-          if (!isLimitReached) paragraphParts.push(" ");
-        }
-      } else if (/<link url="(.*?)">(.*?)<\/link>/.test(part)) {
-        const match = part.match(/<link url="(.*?)">(.*?)<\/link>/);
-        if (match && !isLimitReached) {
-          const content = addWords(match[2]);
-          const element = React.createElement(
-            "a",
-            {
-              key: partIdx,
-              href: match[1],
-              target: "_blank",
-              rel: "noopener noreferrer",
-            },
-            content
-          );
-          paragraphParts.push(element);
-          if (!isLimitReached) paragraphParts.push(" ");
-        }
-      } else {
-        const content = addWords(part);
-        paragraphParts.push(content);
-        if (!isLimitReached) paragraphParts.push(" ");
-      }
-    });
-
-    return <span key={idx}>{paragraphParts}</span>;
-  });
-
-  return results.filter((p) =>
-    React.Children.toArray(p.props.children).some((child) => child !== " ")
-  );
+  const plainText = normalizedText.replace(/<\/?[^>]+(>|$)/g, "");
+  return addWords(plainText);
 };
 
 export const formatText = (text) => {
