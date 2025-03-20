@@ -5,15 +5,15 @@ export const businessRates = [
   },
   {
     term: 3,
-    rate: 3.55,
+    rate: 3.5,
   },
   {
     term: 6,
-    rate: 3.65,
+    rate: 3.5,
   },
   {
     term: 9,
-    rate: 3.65,
+    rate: 3.6,
   },
   {
     term: 12,
@@ -37,7 +37,7 @@ export const businessRates = [
   },
   {
     term: 60,
-    rate: 3.7,
+    rate: 3.5,
   },
 ];
 
@@ -48,7 +48,7 @@ export const privateRates = [
   },
   {
     term: 3,
-    rate: 3.75,
+    rate: 3.55,
   },
   {
     term: 6,
@@ -56,7 +56,7 @@ export const privateRates = [
   },
   {
     term: 9,
-    rate: 3.85,
+    rate: 3.8,
   },
   {
     term: 12,
@@ -64,7 +64,7 @@ export const privateRates = [
   },
   {
     term: 18,
-    rate: 3.7,
+    rate: 3.65,
   },
   {
     term: 24,
@@ -76,10 +76,10 @@ export const privateRates = [
   },
   {
     term: 48,
-    rate: 3.65,
+    rate: 3.75,
   },
   {
     term: 60,
-    rate: 4,
+    rate: 3.75,
   },
 ];
