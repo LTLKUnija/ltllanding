@@ -3,6 +3,7 @@
   border: 1px solid #c6c4c7;
   border-radius: 8px;
   padding: 20px 30px 10px 30px;
+  min-height: 224px;
 
   input:not([type="range"]) {
     border: none;
@@ -41,6 +42,57 @@
     justify-content: space-between;
     gap: 80px;
     // margin-bottom: 36px;
+  }
+
+  .inputBlocksWrapperParentExtra {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    min-height: 192px;
+
+    .inputsBlock {
+      .thankyouBanner {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+        & > span.thankyouText {
+          font-size: 29px;
+          font-weight: 700;
+          line-height: 38px;
+          text-align: center;
+        }
+
+        & > span.thankyouOkButton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 76px;
+          border: 2px solid black;
+          border-radius: 10px;
+          background-color: transparent;
+          color: black;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+
+          &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
   }
 
   .inputsBlock {
@@ -104,6 +156,13 @@
     display: flex;
     flex-direction: column;
     gap: 66px;
+    width: 236px;
+  }
+
+  .actionBlockNoGap {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
     width: 236px;
   }
 

@@ -20,7 +20,7 @@
     "companyName": "Company Name",
     "mobilePhone": "Mobile Phone",
     "validEmailErrorMessage": "Please enter a valid email",
-    "successLoanFormSend": "Your application has been successfully sent"
+    "successLoanFormSend": "Thank you. We have received your request and will contact you shortly."
   },
   "headerNavLinks": {
     "private": "Private",

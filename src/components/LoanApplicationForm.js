@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "@/styles/loanRequestCalculator.module.scss";
 import { useTranslation } from "next-i18next";
-import { ToastContainer, toast } from "react-toastify";
+import { loanFormDataMaker } from "@/utils/helpers";
 
 const LoanApplicationForm = ({ type }) => {
   const { t } = useTranslation("common");
@@ -22,6 +22,7 @@ const LoanApplicationForm = ({ type }) => {
   const [showCaptcha, setShowCaptcha] = useState(false);
   const [submissionDisabled, setSubmissionDisabled] = useState(false);
   const [showHiddenArea, setShowHiddenArea] = useState(false);
+  const [showThankyouBanner, setShowThankyouBanner] = useState(false);
 
   const handleSubmit = async (e) => {
     const form = e.target;
@@ -43,23 +44,7 @@ const LoanApplicationForm = ({ type }) => {
       return;
     }
 
-    const formData = new FormData();
-    formData.append(
-      process.env.NEXT_PUBLIC_LOANFORM_LOANAMOUNT,
-      inputs.loanAmount
-    );
-    formData.append(process.env.NEXT_PUBLIC_LOANFORM_LOANTERM, inputs.loanTerm);
-    formData.append(
-      process.env.NEXT_PUBLIC_LOANFORM_FIRSTNAME,
-      inputs.firstName
-    );
-    formData.append(process.env.NEXT_PUBLIC_LOANFORM_LASTNAME, inputs.lastName);
-    formData.append(process.env.NEXT_PUBLIC_LOANFORM_EMAIL, inputs.email);
-    formData.append(
-      process.env.NEXT_PUBLIC_LOANFORM_COMPANYNAME,
-      inputs.companyName
-    );
-    formData.append(process.env.NEXT_PUBLIC_LOANFORM_PHONE, inputs.phoneNumber);
+    const formData = loanFormDataMaker(inputs);
 
     try {
       const response = await fetch(process.env.NEXT_PUBLIC_LOANFORM_URL, {
@@ -67,8 +52,6 @@ const LoanApplicationForm = ({ type }) => {
         body: formData,
         mode: "no-cors",
       });
-
-      notify();
 
       setInputs({
         loanAmount: 5000,
@@ -79,23 +62,28 @@ const LoanApplicationForm = ({ type }) => {
         companyName: "",
         phoneNumber: "",
       });
+
+      setShowHiddenArea(false);
+      setShowThankyouBanner(true);
     } catch (error) {
       console.error("Error submitting the form: ", error);
       alert("Error submitting the form. Please try again.");
     }
   };
 
-  const notify = () =>
-    toast.success(t("common.successLoanFormSend"), {
-      position: "top-right",
-      autoClose: 2500,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      theme: "colored",
-      transition: "Bounce",
+  const handleThankYouOk = () => {
+    setShowHiddenArea(false);
+    setShowThankyouBanner(false);
+    setInputs({
+      loanAmount: 5000,
+      loanTerm: 3,
+      firstName: "",
+      lastName: "",
+      email: "",
+      companyName: "",
+      phoneNumber: "",
     });
+  };
 
   useEffect(() => {
     if (!window.grecaptcha) {
@@ -136,76 +124,106 @@ const LoanApplicationForm = ({ type }) => {
 
   return (
     <form className={styles.loanAplicationForm} onSubmit={handleSubmit}>
-      <h2>{t("common.loanFormTitle")}</h2>
-      <h4>{t("common.loanFormSubtitle")}</h4>
+      {!showThankyouBanner && <h2>{t("common.loanFormTitle")}</h2>}
+      {!showThankyouBanner && <h4>{t("common.loanFormSubtitle")}</h4>}
 
-      <div className={styles.inputBlocksWrapperParent}>
+      <div
+        className={
+          showThankyouBanner
+            ? styles.inputBlocksWrapperParentExtra
+            : styles.inputBlocksWrapperParent
+        }
+      >
         <div className={styles.inputsBlock}>
-          <div className={styles.inputBlocksWrapper}>
-            <div className={styles.loanSizeBlock}>
-              <div className={styles.loanSizeInputBlock}>
-                <span className={styles.inputLabel}>
-                  {t("common.loanAmount")}:
-                </span>
-                <div className={styles.inputWrapper}>
+          {!showThankyouBanner && (
+            <div className={styles.inputBlocksWrapper}>
+              <div className={styles.loanSizeBlock}>
+                <div className={styles.loanSizeInputBlock}>
+                  <span className={styles.inputLabel}>
+                    {t("common.loanAmount")}:
+                  </span>
+                  <div className={styles.inputWrapper}>
+                    <input
+                      type="number"
+                      min="0"
+                      max="3000000"
+                      step="1000"
+                      value={inputs.loanAmount}
+                      required
+                      name={process.env.NEXT_PUBLIC_LOANFORM_LOANAMOUNT}
+                      onChange={(e) =>
+                        setInputs((prev) => ({
+                          ...prev,
+                          loanAmount: Number(e.target.value),
+                        }))
+                      }
+                      onBlur={() =>
+                        setInputs((prev) => ({
+                          ...prev,
+                          loanAmount: Math.round(prev.loanAmount / 1000) * 1000,
+                        }))
+                      }
+                    />
+                    <div>Eur</div>
+                  </div>
+                </div>
+                <div className={styles.rangeWrapper}>
                   <input
-                    type="number"
+                    type="range"
+                    step="1000"
                     min="0"
                     max="3000000"
-                    step="1000"
                     value={inputs.loanAmount}
-                    required
-                    name={process.env.NEXT_PUBLIC_LOANFORM_LOANAMOUNT}
                     onChange={(e) =>
                       setInputs((prev) => ({
                         ...prev,
                         loanAmount: Number(e.target.value),
                       }))
                     }
-                    onBlur={() =>
-                      setInputs((prev) => ({
-                        ...prev,
-                        loanAmount: Math.round(prev.loanAmount / 1000) * 1000,
-                      }))
-                    }
                   />
-                  <div>Eur</div>
+                  <div className={styles.rangeLabels}>
+                    <span>5 000</span>
+                    <span>3 000 000</span>
+                  </div>
                 </div>
               </div>
-              <div className={styles.rangeWrapper}>
-                <input
-                  type="range"
-                  step="1000"
-                  min="0"
-                  max="3000000"
-                  value={inputs.loanAmount}
-                  onChange={(e) =>
-                    setInputs((prev) => ({
-                      ...prev,
-                      loanAmount: Number(e.target.value),
-                    }))
-                  }
-                />
-                <div className={styles.rangeLabels}>
-                  <span>5 000</span>
-                  <span>3 000 000</span>
-                </div>
-              </div>
-            </div>
 
-            <div className={styles.loanTermsBlock}>
-              <div className={styles.loanSizeInputBlock}>
-                <span className={styles.inputLabel}>
-                  {t("common.loanTerm")}:
-                </span>
-                <div className={styles.inputWrapper}>
+              <div className={styles.loanTermsBlock}>
+                <div className={styles.loanSizeInputBlock}>
+                  <span className={styles.inputLabel}>
+                    {t("common.loanTerm")}:
+                  </span>
+                  <div className={styles.inputWrapper}>
+                    <input
+                      type="number"
+                      min="3"
+                      required
+                      max="84"
+                      step="1"
+                      name={process.env.NEXT_PUBLIC_LOANFORM_LOANTERM}
+                      value={inputs.loanTerm}
+                      onChange={(e) =>
+                        setInputs((prev) => ({
+                          ...prev,
+                          loanTerm: Number(e.target.value),
+                        }))
+                      }
+                      onBlur={() =>
+                        setInputs((prev) => ({
+                          ...prev,
+                          loanTerm: Math.min(prev.loanTerm, 84),
+                        }))
+                      }
+                    />
+                    <div>{t("common.months")}.</div>
+                  </div>
+                </div>
+                <div className={styles.rangeWrapper}>
                   <input
-                    type="number"
-                    min="3"
-                    required
-                    max="84"
+                    type="range"
                     step="1"
-                    name={process.env.NEXT_PUBLIC_LOANFORM_LOANTERM}
+                    min="3"
+                    max="84"
                     value={inputs.loanTerm}
                     onChange={(e) =>
                       setInputs((prev) => ({
@@ -213,37 +231,29 @@ const LoanApplicationForm = ({ type }) => {
                         loanTerm: Number(e.target.value),
                       }))
                     }
-                    onBlur={() =>
-                      setInputs((prev) => ({
-                        ...prev,
-                        loanTerm: Math.min(prev.loanTerm, 84),
-                      }))
-                    }
                   />
-                  <div>{t("common.months")}.</div>
-                </div>
-              </div>
-              <div className={styles.rangeWrapper}>
-                <input
-                  type="range"
-                  step="1"
-                  min="3"
-                  max="84"
-                  value={inputs.loanTerm}
-                  onChange={(e) =>
-                    setInputs((prev) => ({
-                      ...prev,
-                      loanTerm: Number(e.target.value),
-                    }))
-                  }
-                />
-                <div className={styles.rangeLabels}>
-                  <span>3</span>
-                  <span>84</span>
+                  <div className={styles.rangeLabels}>
+                    <span>3</span>
+                    <span>84</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
+
+          {showThankyouBanner && (
+            <div className={styles.thankyouBanner}>
+              <span className={styles.thankyouText}>
+                {t("common.successLoanFormSend")}
+              </span>
+              <span
+                className={styles.thankyouOkButton}
+                onClick={handleThankYouOk}
+              >
+                OK
+              </span>
+            </div>
+          )}
 
           {showHiddenArea && (
             <div className={styles.hiddenArea}>
@@ -376,31 +386,38 @@ const LoanApplicationForm = ({ type }) => {
           )}
         </div>
 
-        <div className={styles.actionBlock}>
-          <button
-            className={styles.submitButton}
-            type="submit"
-            disabled={submissionDisabled}
+        {!showThankyouBanner && (
+          <div
+            className={
+              !showThankyouBanner && !showHiddenArea
+                ? styles.actionBlockNoGap
+                : styles.actionBlock
+            }
           >
-            {t("common.loanFormButton")}
-          </button>
+            <button
+              className={styles.submitButton}
+              type="submit"
+              disabled={submissionDisabled}
+            >
+              {t("common.loanFormButton")}
+            </button>
 
-          {showCaptcha && (
-            <div
-              id="g-recaptcha"
-              className="g-recaptcha"
-              data-sitekey="6LfxFv4pAAAAAA0JxUq4Ho4nh7_9ipPgTUzsN2Bu"
-              data-callback="hello"
-              data-theme="light"
-              style={{
-                transform: "scale(0.77)",
-                transformOrigin: "0 0",
-              }}
-            ></div>
-          )}
-        </div>
+            {showCaptcha && (
+              <div
+                id="g-recaptcha"
+                className="g-recaptcha"
+                data-sitekey="6LfxFv4pAAAAAA0JxUq4Ho4nh7_9ipPgTUzsN2Bu"
+                data-callback="hello"
+                data-theme="light"
+                style={{
+                  transform: "scale(0.77)",
+                  transformOrigin: "0 0",
+                }}
+              ></div>
+            )}
+          </div>
+        )}
       </div>
-      <ToastContainer />
     </form>
   );
 };
