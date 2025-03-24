@@ -269,9 +269,18 @@
     width: 100%;
     padding-bottom: 20px;
 
+    h2,
+    h4 {
+      text-align: center;
+    }
+
     .inputBlocksWrapperParent {
       flex-direction: column;
       gap: 40px;
+    }
+
+    .actionBlockNoGap {
+      align-self: center;
     }
 
     .actionBlock {
