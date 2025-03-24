@@ -364,12 +364,25 @@ const LoanApplicationForm = ({ type }) => {
                     placeholder={t("common.mobilePhone")}
                     name={process.env.NEXT_PUBLIC_LOANFORM_PHONE}
                     value={inputs.phoneNumber}
-                    onChange={(e) =>
+                    onChange={(e) => {
+                      let value = e.target.value;
+                      if (value.startsWith("+")) {
+                        value = "+" + value.slice(1).replace(/[^\d]/g, "");
+                      } else {
+                        value = value.replace(/[^\d]/g, "");
+                      }
                       setInputs((prev) => ({
                         ...prev,
-                        phoneNumber: e.target.value,
-                      }))
-                    }
+                        phoneNumber: value,
+                      }));
+                    }}
+                    onBlur={(e) => {
+                      const trimmed = e.target.value.trim();
+                      setInputs((prev) => ({
+                        ...prev,
+                        phoneNumber: trimmed,
+                      }));
+                    }}
                     required
                   />
                 </div>
