@@ -47,11 +47,14 @@ const LoanApplicationForm = ({ type }) => {
     const formData = loanFormDataMaker(inputs);
 
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_LOANFORM_URL, {
-        method: "POST",
-        body: formData,
-        mode: "no-cors",
-      });
+      const response = await fetch(
+        "https://docs.google.com/forms/d/e/1FAIpQLScp7ZpRW7OgeVPTwVtCkjg44IKbBO8MmKBQn8pIB0x2xKVL1w/formResponse",
+        {
+          method: "POST",
+          body: formData,
+          mode: "no-cors",
+        }
+      );
 
       setInputs({
         loanAmount: 5000,
