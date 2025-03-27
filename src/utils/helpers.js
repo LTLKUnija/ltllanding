@@ -133,7 +133,7 @@ export const loanFormDataMaker = (inputs) => {
     console.warn("Some env keys are missing!");
   }
 
-  formData.append(keys.loanAmount, inputs.loanAmount.replace(/\s+/g, ""));
+  formData.append(keys.loanAmount, inputs.loanAmount);
   formData.append(keys.loanTerm, inputs.loanTerm);
   formData.append(keys.firstName, inputs.firstName);
   formData.append(keys.lastName, inputs.lastName);
