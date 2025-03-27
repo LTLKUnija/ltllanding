@@ -6,7 +6,7 @@
   background-position: bottom right;
 
   .consumerLoanPageList {
-    padding-left: 312px;
+    padding: 0 156px;
 
     .consumerLoanHeroItem {
       max-width: 600px;
@@ -183,7 +183,7 @@
     background-size: 100%;
 
     .consumerLoanPageList {
-      padding-left: 280px;
+      padding: 0 140px;
     }
   }
 }
@@ -191,7 +191,7 @@
 @media (max-width: 1250px) {
   .consumerLoanPageWrapper {
     .consumerLoanPageList {
-      padding-left: 50px;
+      padding: 0 25px;
     }
   }
 }
@@ -199,7 +199,7 @@
 @media (max-width: 974px) {
   .consumerLoanPageWrapper {
     .consumerLoanPageList {
-      padding-left: 40px;
+      padding: 0 20px;
     }
   }
 }
@@ -256,7 +256,7 @@
 
 @media (max-width: 768px) {
   .consumerLoanPageWrapper {
-    padding: 36px 36px 36px 0;
+    padding: 36px 0;
     background-image: none;
 
     .consumerLoanHeroItem {
@@ -299,7 +299,7 @@
     }
 
     .consumerLoanPageList {
-      padding-left: 40px;
+      padding: 0 20px;
     }
   }
 

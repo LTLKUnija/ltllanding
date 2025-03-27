@@ -6,7 +6,7 @@
     "deposit": "Deposit F.A.Q.",
     "internetBank": "Internet Banking F.A.Q.",
 
-    "loanFormTitle": "Loan Application Now",
+    "loanFormTitle": "Apply for a loan now!",
     "loanFormSubtitle": "Please provide the required information. We will contact you within 1 business day.",
     "loanAmount": "Loan Amount",
     "loanTerm": "Loan Term",
@@ -14,13 +14,21 @@
     "loanFormButton": "Submit Application",
     "loanFormTermsMessage": "I agree that LTL Credit Union processes my personal data provided in this form to register my application, review my request, contact me, and provide a response as indicated",
     "loanFormTermsMessageLink": "in the privacy policy",
-    "firstname": "Firstname",
-    "lastname": "Lastname",
+    "firstname": "First name",
+    "lastname": "Last name",
     "email": "Email",
     "companyName": "Company Name",
     "mobilePhone": "Mobile Phone",
-    "validEmailErrorMessage": "Please enter a valid email",
-    "successLoanFormSend": "Thank you. We have received your request and will contact you shortly."
+    "successLoanFormSend": "Thank you. We have received your request and will contact you shortly.",
+
+    "validationFirstNameRequired": "Please provide your name",
+    "validationLastNameRequired": "Please provide your surname",
+    "validationEmailRequired": "Please provide your email",
+    "validEmailErrorMessage": "Please provide a correct email address",
+
+    "validationCompanyNameRequired": "Please provide your company name",
+    "validationPhoneRequired": "Please provide a telephone number",
+    "validationCheckboxRequired": "Please agree to the terms and conditions of the loan application"
   },
   "headerNavLinks": {
     "private": "Private",

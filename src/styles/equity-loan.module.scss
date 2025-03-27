@@ -6,7 +6,7 @@
   background-position: bottom right;
 
   .pageList {
-    padding-left: 312px;
+    padding: 0 156px;
 
     .heroItem {
       max-width: 700px;
@@ -233,7 +233,7 @@
     background-size: 100%;
 
     .pageList {
-      padding-left: 280px;
+      padding: 0 140px;
     }
   }
 }
@@ -241,7 +241,7 @@
 @media (max-width: 1250px) {
   .pageWrapper {
     .pageList {
-      padding-left: 50px;
+      padding: 0 25px;
     }
   }
 }
@@ -255,7 +255,7 @@
 @media (max-width: 974px) {
   .pageWrapper {
     .pageList {
-      padding-left: 40px;
+      padding: 0 20px;
     }
   }
 }
@@ -316,7 +316,7 @@
 
 @media (max-width: 768px) {
   .pageWrapper {
-    padding: 36px 36px 36px 0;
+    padding: 36px 0;
     background-image: none;
 
     .heroItem {
@@ -359,7 +359,7 @@
     }
 
     .pageList {
-      padding-left: 40px;
+      padding: 0 20px;
     }
   }
 

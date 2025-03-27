@@ -11,6 +11,7 @@ const LoanApplicationForm = ({ type }) => {
 
   const [inputs, setInputs] = useState({
     loanAmount: 5000,
+    loanAmountFormatted: "5 000",
     loanTerm: 3,
     firstName: "",
     lastName: "",
@@ -144,25 +145,37 @@ const LoanApplicationForm = ({ type }) => {
                   </span>
                   <div className={styles.inputWrapper}>
                     <input
-                      type="number"
-                      min="0"
-                      max="3000000"
-                      step="1000"
-                      value={inputs.loanAmount}
+                      type="text"
+                      inputMode="numeric"
+                      value={
+                        inputs.loanAmountFormatted ||
+                        inputs.loanAmount.toString()
+                      }
                       required
                       name={process.env.NEXT_PUBLIC_LOANFORM_LOANAMOUNT}
-                      onChange={(e) =>
+                      onChange={(e) => {
+                        const raw = e.target.value
+                          .replace(/\s/g, "")
+                          .replace(/[^\d]/g, "");
                         setInputs((prev) => ({
                           ...prev,
-                          loanAmount: Number(e.target.value),
-                        }))
-                      }
-                      onBlur={() =>
-                        setInputs((prev) => ({
-                          ...prev,
-                          loanAmount: Math.round(prev.loanAmount / 1000) * 1000,
-                        }))
-                      }
+                          loanAmount: Number(raw),
+                          loanAmountFormatted: raw,
+                        }));
+                      }}
+                      onBlur={() => {
+                        setInputs((prev) => {
+                          const rounded =
+                            Math.round(prev.loanAmount / 1000) * 1000;
+                          return {
+                            ...prev,
+                            loanAmount: rounded,
+                            loanAmountFormatted: rounded
+                              .toLocaleString("fr-FR")
+                              .replace(/\s/g, " "),
+                          };
+                        });
+                      }}
                     />
                     <div>Eur</div>
                   </div>
@@ -174,12 +187,16 @@ const LoanApplicationForm = ({ type }) => {
                     min="0"
                     max="3000000"
                     value={inputs.loanAmount}
-                    onChange={(e) =>
+                    onChange={(e) => {
+                      const val = Number(e.target.value);
                       setInputs((prev) => ({
                         ...prev,
-                        loanAmount: Number(e.target.value),
-                      }))
-                    }
+                        loanAmount: val,
+                        loanAmountFormatted: val
+                          .toLocaleString("fr-FR")
+                          .replace(/\s/g, " "),
+                      }));
+                    }}
                   />
                   <div className={styles.rangeLabels}>
                     <span>5 000</span>
@@ -276,6 +293,14 @@ const LoanApplicationForm = ({ type }) => {
                           firstName: e.target.value,
                         }))
                       }
+                      onInvalid={(e) =>
+                        e.target.setCustomValidity(
+                          e.target.value === ""
+                            ? t("common.validationFirstNameRequired")
+                            : ""
+                        )
+                      }
+                      onInput={(e) => e.target.setCustomValidity("")}
                       required
                     />
                     <input
@@ -290,6 +315,14 @@ const LoanApplicationForm = ({ type }) => {
                           lastName: e.target.value,
                         }))
                       }
+                      onInvalid={(e) =>
+                        e.target.setCustomValidity(
+                          e.target.value === ""
+                            ? t("common.validationLastNameRequired")
+                            : ""
+                        )
+                      }
+                      onInput={(e) => e.target.setCustomValidity("")}
                       required
                     />
                   </div>
@@ -311,7 +344,9 @@ const LoanApplicationForm = ({ type }) => {
                         pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                         onInvalid={(e) =>
                           e.target.setCustomValidity(
-                            t("common.validEmailErrorMessage")
+                            e.target.value === ""
+                              ? t("common.validationEmailRequired")
+                              : t("common.validEmailErrorMessage")
                           )
                         }
                         onInput={(e) => e.target.setCustomValidity("")}
@@ -333,6 +368,12 @@ const LoanApplicationForm = ({ type }) => {
                           companyName: e.target.value,
                         }))
                       }
+                      onInvalid={(e) =>
+                        e.target.setCustomValidity(
+                          t("common.validationCompanyNameRequired")
+                        )
+                      }
+                      onInput={(e) => e.target.setCustomValidity("")}
                       required
                     />
                   )}
@@ -352,7 +393,11 @@ const LoanApplicationForm = ({ type }) => {
                       required
                       pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                       onInvalid={(e) =>
-                        e.target.setCustomValidity("Введите корректный e-mail")
+                        e.target.setCustomValidity(
+                          e.target.value === ""
+                            ? t("common.validationEmailRequired")
+                            : t("common.validEmailErrorMessage")
+                        )
                       }
                       onInput={(e) => e.target.setCustomValidity("")}
                     />
@@ -383,16 +428,37 @@ const LoanApplicationForm = ({ type }) => {
                         phoneNumber: trimmed,
                       }));
                     }}
+                    onInvalid={(e) =>
+                      e.target.setCustomValidity(
+                        t("common.validationPhoneRequired")
+                      )
+                    }
+                    onInput={(e) => e.target.setCustomValidity("")}
                     required
                   />
                 </div>
               </div>
 
               <div className={styles.termsBlock}>
-                <input type="checkbox" id={styles.checkbox} required />
+                <input
+                  type="checkbox"
+                  id={styles.checkbox}
+                  required
+                  onInvalid={(e) =>
+                    e.target.setCustomValidity(
+                      t("common.validationCheckboxRequired")
+                    )
+                  }
+                  onInput={(e) => e.target.setCustomValidity("")}
+                />
                 <div className={styles.termsText}>
                   {t("common.loanFormTermsMessage")}{" "}
-                  <a href="#">{t("common.loanFormTermsMessageLink")}</a>
+                  <a
+                    target="_blank"
+                    href="https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/Privatumo%20politika.pdf"
+                  >
+                    {t("common.loanFormTermsMessageLink")}
+                  </a>
                 </div>
               </div>
             </div>
