@@ -62,7 +62,6 @@ function ContactForm(props) {
         {props?.formTitle && (
           <div>
             <h3>{t("contactForm.title")}</h3>
-            {/* <p>{t("contactForm.description")}</p> */}
           </div>
         )}
         <form className={styles.formBlock} onSubmit={handleOnSubmit}>

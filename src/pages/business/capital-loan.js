@@ -16,6 +16,7 @@ import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getLoanForBusiness } from "@/store/faqList/faqList.slice";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -39,6 +40,7 @@ export default function Mortgage() {
                 page={`${t("headerNavLinks.capitalLoan")}`}
               />
             </div>
+            <LoanApplicationForm type="business" />
             <div className={businessStyle.heroItem}>
               <div className={businessStyle.imgBlock}>
                 <Image

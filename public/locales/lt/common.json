@@ -4,7 +4,30 @@
     "loanForBusiness": "Paskola verslui D.U.K.",
     "currentAccount": "Einamoji sąskaita D.U.K.",
     "deposit": "Depozitas D.U.K.",
-    "internetBank": "Internetinė Bankininkystė D.U.K."
+    "internetBank": "Internetinė Bankininkystė D.U.K.",
+
+    "loanFormTitle": "Pateikite paraišką dabar!",
+    "loanFormSubtitle": "Nurodykite reikiamą informaciją. Susisieksime per 1 darbo dieną.",
+    "loanAmount": "Paskolos suma",
+    "loanTerm": "Paskolos terminas",
+    "months": "mėn",
+    "loanFormButton": "Teikti paraišką",
+    "loanFormTermsMessage": "Sutinku, kad LTL Kredito unija tvarkytų šioje formoje nurodytus mano asmens duomenis, kad užregistruotų mano paraišką, išnagrinėtų mano užklausą ir susisiektų su manimi, bei pateiktų atsakymą, kaip nurodyta",
+    "loanFormTermsMessageLink": "privatumo politikoje",
+    "firstname": "Vardas",
+    "lastname": "Pavardė",
+    "email": "El. paštas",
+    "companyName": "Įmonės pavadinimas",
+    "mobilePhone": "Mobiliojo telefono numeris",
+    "successLoanFormSend": "Ačiū. Jūsų užklausą gavome ir greitu laiku su Jumis susisieksime.",
+
+    "validationFirstNameRequired": "Prašome nurodyti vardą",
+    "validationLastNameRequired": "Prašome nurodyti pavardę",
+    "validationEmailRequired": "Prašome nurodyti el. pašto adresą",
+    "validEmailErrorMessage": "Prašome nurodyti korektišką el. pašto adresą",
+    "validationCompanyNameRequired": "Prašome nurodyti įmonės pavadinimą",
+    "validationPhoneRequired": "Prašome nurodyti telefono numerį",
+    "validationCheckboxRequired": "Prašome sutikti su paskolos paraiškos teikimo sąlygomis"
   },
   "headerNavLinks": {
     "private": "Privatiems",

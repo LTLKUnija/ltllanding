@@ -15,6 +15,7 @@ import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Mortgage() {
   const router = useRouter();
@@ -38,6 +39,7 @@ export default function Mortgage() {
                 page={`${t("headerNavLinks.equityLoan")}`}
               />
             </div>
+            <LoanApplicationForm type="private" />
             <div className={styles.heroItem}>
               <div className={styles.imgBlock}>
                 <Image

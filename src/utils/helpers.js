@@ -67,3 +67,31 @@ export const formatText = (text) => {
     return <p key={idx}>{parts}</p>;
   });
 };
+
+export const loanFormDataMaker = (inputs) => {
+  const formData = new FormData();
+
+  const keys = {
+    loanAmount: process.env.NEXT_PUBLIC_LOANFORM_LOANAMOUNT,
+    loanTerm: process.env.NEXT_PUBLIC_LOANFORM_LOANTERM,
+    firstName: process.env.NEXT_PUBLIC_LOANFORM_FIRSTNAME,
+    lastName: process.env.NEXT_PUBLIC_LOANFORM_LASTNAME,
+    email: process.env.NEXT_PUBLIC_LOANFORM_EMAIL,
+    companyName: process.env.NEXT_PUBLIC_LOANFORM_COMPANYNAME,
+    phone: process.env.NEXT_PUBLIC_LOANFORM_PHONE,
+  };
+
+  if (Object.values(keys).some((v) => !v)) {
+    console.warn("Some env keys are missing!");
+  }
+
+  formData.append(keys.loanAmount, inputs.loanAmount);
+  formData.append(keys.loanTerm, inputs.loanTerm);
+  formData.append(keys.firstName, inputs.firstName);
+  formData.append(keys.lastName, inputs.lastName);
+  formData.append(keys.email, inputs.email);
+  formData.append(keys.companyName, inputs.companyName);
+  formData.append(keys.phone, inputs.phoneNumber);
+
+  return formData;
+};

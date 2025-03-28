@@ -6,10 +6,11 @@
   background-position: bottom right;
 
   .pageList {
-    padding-left: 312px;
+    padding: 0 156px;
 
     .heroItem {
       max-width: 600px;
+      margin-top: 80px;
     }
 
     .title {
@@ -63,7 +64,7 @@
 @media (max-width: 1445px) {
   .pageWrapper {
     .pageList {
-      padding-left: 50px;
+      padding: 0 140px;
     }
   }
 }
@@ -94,6 +95,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-top: 0 !important;
 
       .imgBlock {
         display: flex;
@@ -142,7 +144,7 @@
     padding: 10px 36px 10px 0;
 
     .pageList {
-      padding-left: 40px;
+      padding: 0 20px;
     }
   }
 }
