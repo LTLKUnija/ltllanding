@@ -18,6 +18,7 @@ import { useSelector } from "react-redux";
 import { getDepositFAQ } from "@/store/faqList/faqList.slice";
 import InterestRate from "@/components/InterestRate";
 import { privateRates } from "@/common/Rates";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Deposit() {
   const router = useRouter();
@@ -59,6 +60,7 @@ export default function Deposit() {
         <main>
           <section className={styles.depositPageWrapper}>
             <div className={styles.depositPageList}>
+              <LoanApplicationForm type="private" />
               <div className={styles.depositHeroItem}>
                 <div className={styles.imgBlock}>
                   <Image

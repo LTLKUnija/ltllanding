@@ -6,7 +6,7 @@
   background-position: bottom right;
 
   .pageList {
-    padding-left: 312px;
+    padding: 0 156px;
 
     .heroItem {
       max-width: 500px;
@@ -96,7 +96,7 @@
 @media (max-width: 1320px) {
   .pageWrapper {
     .pageList {
-      padding-left: 280px;
+      padding: 0 140px;
     }
   }
 }
@@ -104,7 +104,7 @@
 @media (max-width: 1445px) {
   .pageWrapper {
     .pageList {
-      padding-left: 50px;
+      padding: 0 50px;
     }
   }
 }
@@ -177,7 +177,7 @@
 
 @media (max-width: 768px) {
   .pageWrapper {
-    padding: 36px 36px 36px 0;
+    padding: 36px 0;
 
     .pageList {
       padding-left: 40px;
