@@ -515,7 +515,7 @@
     },
     "interestRatesArticle": {
       "title": "Indėlių palūkanos",
-      "description": "Sutaupykite maksimaliai naudodamiesi mūsų terminuoto indėlio galimybėmis! Mėgaukitės patraukliomis palūkanų normomis, kurios garantuoja jums fiksuotą investicijų grąžą. Investuokite su mumis ir pradėkite uždirbti daugiau jau šiandien. Nepraleiskite mūsų naujų palūkanų normų pasiūlymų. Palūkanų normos ir sąlygos įsigalioja nuo 2025 m. balandžio 3 d. Prie naujai tvirtinamų indėlių palūkanų normų lieka galioti „Senjorų priedas“ - visiems senjorų indėliams, nepriklausomai nuo termino, naujiems/pratęsiamiems indėliams taikomas 0,05 % palūkanų priedas prie galiojančių įkainių.",
+      "description": "Sutaupykite maksimaliai naudodamiesi mūsų terminuoto indėlio galimybėmis! Mėgaukitės patraukliomis palūkanų normomis, kurios garantuoja jums fiksuotą investicijų grąžą. Investuokite su mumis ir pradėkite uždirbti daugiau jau šiandien. Nepraleiskite mūsų naujų palūkanų normų pasiūlymų. Palūkanų normos ir sąlygos įsigalioja nuo 2025 m. balandžio 3 d.",
       "period": "Laikotarpis",
       "interestRate": "Palūkanų norma",
       "month": "mėn.",
@@ -928,7 +928,7 @@
     "title": "Saugumas",
     "description": "LTL jūsų finansinė gerovė yra mūsų didžiausias rūpestis. Suprantame pasitikėjimo svarbą, kai kalbama apie jūsų sunkiai uždirbtus pinigus, todėl esame įsipareigoję užtikrinti saugią ir patikimą aplinką visiems jūsų bankiniams poreikiams. Štai kodėl LTL yra jūsų patikimas finansinio saugumo partneris:",
     "bullet1": "Griežta atitiktis: Laikomės aukščiausių pramonės standartų ir laikomės visų atitinkamų finansinių taisyklių. Mūsų veikla reguliariai tikrinama ir peržiūrima, kad užtikrintume, jog laikomės visų reikalavimų ir juos viršijame.",
-    "bullet2": "Indėlių draudimas: Jūsų indėlius iki 100,000 EUR saugo VĮ 'Indėlių ir investicijų draudimas'. Daugiau informacijos galite rasti adresu",
+    "bullet2": "Indėlių draudimas: Jūsų indėlius iki 100 000,00 EUR saugo VšĮ 'Indėlių ir investicijų draudimas'. Daugiau informacijos galite rasti adresu",
     "bullet3": "Be reguliaraus vidaus audito, mus taip pat tikrina nepriklausomos audito įmonės, JCKU Kreda ir Lietuvos centrinis bankas. Užtikriname, kad jūsų lėšos ir jūsų asmens duomenų apsauga yra saugiose rankose.",
     "bullet4": "Pažangiausios technologijos: Investuojame į naujausias technologijas, kad apsaugotume jūsų sandorius ir asmeninę informaciją. Mūsų pažangūs šifravimo ir saugumo protokolai saugo jūsų duomenis, todėl galite būti ramūs atlikdami bankines operacijas internetu ar asmeniškai.",
     "bullet5": "Griežta prieigos kontrolė: Įgyvendiname griežtą prieigos kontrolę, kad jūsų sąskaitos informacija galėtų naudotis tik įgalioti asmenys.",
@@ -1031,7 +1031,7 @@
         },
         "article2": {
           "title": "Indėlių apsauga",
-          "description": "Galite drąsiai deponuoti lėšas, žinodami, jog jos yra apsaugotos. LTL Kredito unija yra indėlių draudimo sistemos dalyvis (Lietuvos Respublikos indėlių ir įsipareigojimų investuotojams draudimo įstatymo 10 straipsnio 1 dalis). Indėlių draudimo suma yra lygi indėlininkui priklausančių tinkamų drausti indėlių sumai, buvusiai LTL Kredito unijoje draudžiamojo įvykio dieną, tačiau ji negali būti didesnė kaip 100 000 eurų, išskyrus Įstatyme numatytas išimtis. Detali informacija apie indėlių draudimo sąlygas ir atvejus, kai indėliai nėra draudžiami ir kai yra taikomi indėlių draudimo išmokų mokėjimo apribojimai, pateikiama viešoji įstaiga „Indėlių ir investicijų draudimas“ interneto svetainėje ",
+          "description": "Galite drąsiai deponuoti lėšas, žinodami, jog jos yra apsaugotos. LTL Kredito unija yra indėlių draudimo sistemos dalyvis (Lietuvos Respublikos indėlių ir įsipareigojimų investuotojams draudimo įstatymo 10 straipsnio 1 dalis). Indėlių draudimo suma yra lygi indėlininkui priklausančių tinkamų drausti indėlių sumai, buvusiai LTL Kredito unijoje draudžiamojo įvykio dieną, tačiau ji negali būti didesnė kaip 100 000 eurų, išskyrus Įstatyme numatytas išimtis. Detali informacija apie indėlių draudimo sąlygas ir atvejus, kai indėliai nėra draudžiami ir kai yra taikomi indėlių draudimo išmokų mokėjimo apribojimai, pateikiama VšĮ „Indėlių ir investicijų draudimas“ interneto svetainėje ",
           "link": "www.iidraudimas.lt."
         },
         "article3": {

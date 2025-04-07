@@ -967,7 +967,7 @@ export default {
     bullet1:
       "Rigorous Compliance: We adhere to the highest industry standards and comply with all relevant financial regulations. Our operations are subject to regular audits and reviews to ensure we meet and exceed all requirements.",
     bullet2:
-      "Deposit Insurance: Your deposits up to EUR 100‘000 are protected by VĮ „Indėlių ir investicijų draudimas”. More information can be found at",
+      "Deposit Insurance: Your deposits up to EUR 100 000,00 are protected by VšĮ „Indėlių ir investicijų draudimas”. More information can be found at",
     bullet3:
       "In addition to regular internal audits, we are also audited by independent audit firms, JCKU Kreda and the Central Bank of Lithuania. We ensure that your funds and the protection of your personal data are in safe hands.",
     bullet4:

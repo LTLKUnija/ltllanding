@@ -973,7 +973,7 @@ export default {
       "LTL Kredito unijoje jūsų finansinė gerovė yra mūsų didžiausias rūpestis. Suprantame pasitikėjimo svarbą, kai kalbama apie jūsų sunkiai uždirbtus pinigus, todėl esame įsipareigoję užtikrinti saugią ir patikimą aplinką visiems jūsų bankiniams poreikiams. Štai kodėl LTL Kredito unija yra jūsų patikimas finansinio saugumo partneris:",
     bullet1:
       "Griežta atitiktis: Laikomės aukščiausių pramonės standartų ir laikomės visų atitinkamų finansinių taisyklių. Mūsų veikla reguliariai tikrinama ir peržiūrima, kad užtikrintume, jog laikomės visų reikalavimų ir juos viršijame.",
-    bullet2: `Indėlių draudimas: Jūsų indėlius iki 100,000 EUR saugo VĮ "Indėlių ir investicijų draudimas". Daugiau informacijos galite rasti adresu`,
+    bullet2: `Indėlių draudimas: Jūsų indėlius iki 100 000,00 EUR saugo VšĮ "Indėlių ir investicijų draudimas". Daugiau informacijos galite rasti adresu`,
     bullet3:
       "Be reguliaraus vidaus audito, mus taip pat tikrina nepriklausomos audito įmonės, JCKU Kreda ir Lietuvos centrinis bankas. Užtikriname, kad jūsų lėšos ir jūsų asmens duomenų apsauga yra saugiose rankose.",
     bullet4:
