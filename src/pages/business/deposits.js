@@ -145,6 +145,12 @@ export default function Deposit() {
                   >
                     {t("business.termDeposit.benefitsArticle.article2.link")}
                   </Link>
+                  {t(
+                    "business.termDeposit.benefitsArticle.article1.descriptionRest"
+                  )}
+                  <Link href="https://www.ltlku.lt/en/terms-and-conditions#termDeposits" className="readMoreLink">
+                    {t("business.termDeposit.benefitsArticle.article1.here")}
+                  </Link>
                 </div>
               </div>
               <div className={busynessStyle.benefitsBlock}>
