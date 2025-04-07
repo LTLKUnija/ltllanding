@@ -15,6 +15,7 @@ import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getCurrentAccFAQ } from "@/store/faqList/faqList.slice";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Product() {
   const router = useRouter();
@@ -39,6 +40,10 @@ export default function Product() {
                   page={`${t("headerNavLinks.currentAccount")}`}
                 />
               </div>
+              <div className={styles.formWrapper}>
+                <LoanApplicationForm type="business" />
+              </div>
+
               <div className={styles.currentAccountHeroItem}>
                 <div className={styles.imgBlock}>
                   <Image

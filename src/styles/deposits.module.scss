@@ -4,10 +4,11 @@
   background-image: url("/assets/images/deposit_heroBlock.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: cover;
+  // background-size: cover; -- Keeping it till we have a loan calculator
 
   .depositPageList {
     padding-left: 312px;
+    padding: 0 156px;
 
     .depositHeroItem {
       max-width: 600px;
@@ -415,7 +416,7 @@
     background-size: 90%;
 
     .depositPageList {
-      padding-left: 40px;
+      padding: 0 40px;
     }
   }
 }
@@ -505,7 +506,7 @@
 
 @media (max-width: 768px) {
   .depositPageWrapper {
-    padding: 36px 36px 36px 0;
+    padding: 36px 0;
     background-image: none;
 
     .depositHeroItem {

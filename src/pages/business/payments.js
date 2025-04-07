@@ -8,6 +8,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Payments() {
   const { t } = useTranslation("common");
@@ -27,6 +28,8 @@ export default function Payments() {
                   page={`${t("headerNavLinks.payments")}`}
                 />
               </div>
+              <LoanApplicationForm type="business" />
+
               <div className={styles.heroItem}>
                 <div className={styles.imgBlock}>
                   <Image

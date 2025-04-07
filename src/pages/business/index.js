@@ -9,6 +9,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ArticleImg1 from "@../../../public/assets/images/article1.png";
 import ArticleImg2 from "@../../../public/assets/images/article2.png";
 import ArticleImg3 from "@../../../public/assets/images/article3.png";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -19,6 +20,7 @@ export default function Home() {
         <main>
           <section className={styles.heroblock}>
             <SimpleSlider />
+            <LoanApplicationForm type="business" />
           </section>
           <section className={styles.beneficialArticles}>
             <div className="container">

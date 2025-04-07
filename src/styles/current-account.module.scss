@@ -6,7 +6,7 @@
   background-position: bottom right;
 
   .currentAccountPageList {
-    padding-left: 312px;
+    padding: 0 156px;
 
     .currentAccountHeroItem {
       max-width: 474px;
@@ -281,7 +281,7 @@
 @media (max-width: 1320px) {
   .currentAccountPageWrapper {
     .currentAccountPageList {
-      padding-left: 280px;
+      padding: 0 140px;
     }
   }
 }
@@ -289,7 +289,7 @@
 @media (max-width: 1250px) {
   .currentAccountPageWrapper {
     .currentAccountPageList {
-      padding-left: 50px;
+      padding: 0 50px;
     }
   }
 }
@@ -299,7 +299,7 @@
     background-size: 100%;
 
     .currentAccountPageList {
-      padding-left: 40px;
+      padding: 0 40px;
     }
   }
 }
@@ -374,7 +374,7 @@
 
 @media (max-width: 768px) {
   .currentAccountPageWrapper {
-    padding: 36px 36px 36px 0;
+    padding: 36px 0;
     background-image: none;
 
     .currentAccountPageList {
@@ -447,4 +447,8 @@
       }
     }
   }
+}
+
+.formWrapper {
+  margin-bottom: 30px;
 }

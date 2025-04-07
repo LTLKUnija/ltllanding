@@ -90,8 +90,12 @@ export const loanFormDataMaker = (inputs) => {
   formData.append(keys.firstName, inputs.firstName);
   formData.append(keys.lastName, inputs.lastName);
   formData.append(keys.email, inputs.email);
-  formData.append(keys.companyName, inputs.companyName);
   formData.append(keys.phone, inputs.phoneNumber);
+  if (inputs.companyName === "") {
+    formData.append(keys.companyName, "private");
+  } else {
+    formData.append(keys.companyName, inputs.companyName);
+  }
 
   return formData;
 };
