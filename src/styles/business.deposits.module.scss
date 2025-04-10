@@ -6,7 +6,7 @@
   background-position: bottom right;
 
   .depositPageList {
-    padding-left: 312px;
+    padding: 0 156px;
 
     .depositHeroItem {
       max-width: 600px;
@@ -282,7 +282,7 @@
 @media (max-width: 1390px) {
   .depositPageWrapper {
     .depositPageList {
-      padding-left: 50px;
+      padding: 0 50px;
     }
   }
 }

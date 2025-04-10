@@ -6,6 +6,7 @@ import LandingArticle from "@/components/LandingArticle";
 import styles from "@/styles/Home.module.scss";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Home({ landingArticles }) {
   const { t } = useTranslation("common");
@@ -16,6 +17,9 @@ export default function Home({ landingArticles }) {
         <main>
           <section className={styles.heroblock}>
             <SimpleSlider />
+            <div className={styles.formWrapper}>
+              <LoanApplicationForm type="private" />
+            </div>
           </section>
           <section className={styles.beneficialArticles}>
             <div className="container">

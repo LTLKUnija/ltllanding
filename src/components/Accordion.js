@@ -1,10 +1,43 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import parse from "html-react-parser";
+
+function parseRichText(str) {
+  return parse(str, {
+    replace: (domNode) => {
+      if (domNode.name === "a") {
+        const href = domNode.attribs?.href;
+        return (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="readMoreLink faqLink"
+          >
+            {Array.isArray(domNode.children)
+              ? domNode.children.map((child, idx) =>
+                  typeof child.data === "string" ? child.data : null
+                )
+              : null}
+          </a>
+        );
+      }
+
+      if (domNode.name === "email") {
+        const email = domNode.children?.[0]?.data || "";
+        return (
+          <a href={`mailto:${email}`} className="faqEmailLink">
+            {email}
+          </a>
+        );
+      }
+    },
+  });
+}
 
 export default function Accordion({ faqData, singleLevel }) {
   const router = useRouter();
-
   const [data, setData] = useState(faqData);
 
   const toggleOpened = (item) => {
@@ -59,72 +92,20 @@ export default function Accordion({ faqData, singleLevel }) {
               <div className={`acPanel ${question.opened ? "opened" : ""}`}>
                 {!question.hasInnerChildren
                   ? router.locale === "lt"
-                    ? question.body.map((item, idx) => {
-                        if (typeof item === "string") {
-                          return (
-                            <div className="item" key={idx}>
-                              {item}
-                            </div>
-                          );
-                        } else {
-                          const segments =
-                            item.linkedText.split(/\/\/\/(.*?)\/\/\//g);
-                          return (
-                            <div className="item" key={idx}>
-                              {segments.map((segment, index) => {
-                                if (index % 2 === 0) {
-                                  return segment;
-                                } else {
-                                  const linkIndex = (index - 1) / 2;
-                                  return (
-                                    <Link
-                                      href={question.links[linkIndex]}
-                                      key={index}
-                                      className="readMoreLink faqLink"
-                                      target="_blank"
-                                    >
-                                      {segment}
-                                    </Link>
-                                  );
-                                }
-                              })}
-                            </div>
-                          );
-                        }
-                      })
-                    : question.bodyEn.map((item, idx) => {
-                        if (typeof item === "string") {
-                          return (
-                            <div className="item" key={idx}>
-                              {item}
-                            </div>
-                          );
-                        } else {
-                          const segments =
-                            item.linkedText.split(/\/\/\/(.*?)\/\/\//g);
-                          return (
-                            <div className="item" key={idx}>
-                              {segments.map((segment, index) => {
-                                if (index % 2 === 0) {
-                                  return segment;
-                                } else {
-                                  const linkIndex = (index - 1) / 2;
-                                  return (
-                                    <Link
-                                      href={question.links[linkIndex]}
-                                      key={index}
-                                      target="_blank"
-                                      className="readMoreLink faqLink"
-                                    >
-                                      {segment}
-                                    </Link>
-                                  );
-                                }
-                              })}
-                            </div>
-                          );
-                        }
-                      })
+                    ? question.body.map((item, idx) => (
+                        <div className="item" key={idx}>
+                          {typeof item === "string"
+                            ? parseRichText(item)
+                            : null}
+                        </div>
+                      ))
+                    : question.bodyEn.map((item, idx) => (
+                        <div className="item" key={idx}>
+                          {typeof item === "string"
+                            ? parseRichText(item)
+                            : null}
+                        </div>
+                      ))
                   : question.bodyEn.map((item, index) => {
                       return (
                         <div className="ac" key={index}>
@@ -154,12 +135,20 @@ export default function Accordion({ faqData, singleLevel }) {
                             className={`acPanel ${item.opened ? "opened" : ""}`}
                           >
                             {router.locale === "lt"
-                              ? item.body.map((item, idx) => {
-                                  return <div key={idx}>{item}</div>;
-                                })
-                              : item.bodyEn.map((item, idx) => {
-                                  return <div key={idx}>{item}</div>;
-                                })}
+                              ? item.body.map((item, idx) => (
+                                  <div key={idx}>
+                                    {typeof item === "string"
+                                      ? parseRichText(item)
+                                      : null}
+                                  </div>
+                                ))
+                              : item.bodyEn.map((item, idx) => (
+                                  <div key={idx}>
+                                    {typeof item === "string"
+                                      ? parseRichText(item)
+                                      : null}
+                                  </div>
+                                ))}
                           </div>
                         </div>
                       );

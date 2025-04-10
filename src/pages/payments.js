@@ -7,6 +7,7 @@ import HeroMobile from "../../public/assets/images/product_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Payments() {
   const { t } = useTranslation("common");
@@ -27,6 +28,9 @@ export default function Payments() {
                   area={`${t("headerNavLinks.payments")}`}
                   page={`${t("headerNavLinks.payments")}`}
                 />
+              </div>
+              <div className={styles.formWrapper}>
+                <LoanApplicationForm type="private" />
               </div>
               <div className={styles.heroItem}>
                 <div className={styles.imgBlock}>
