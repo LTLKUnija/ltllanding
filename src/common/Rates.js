@@ -52,15 +52,15 @@ export const privateRates = [
   },
   {
     term: 6,
-    rate: 3.65,
+    rate: 3.55,
   },
   {
     term: 9,
-    rate: 3.65,
+    rate: 3.55,
   },
   {
     term: 12,
-    rate: 3.70,
+    rate: 3.65,
   },
   {
     term: 18,
