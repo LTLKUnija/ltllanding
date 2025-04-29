@@ -215,7 +215,7 @@ const LoanApplicationForm = ({ type }) => {
                       type="number"
                       min="3"
                       required
-                      max="84"
+                      max="360"
                       step="1"
                       name={process.env.NEXT_PUBLIC_LOANFORM_LOANTERM}
                       value={inputs.loanTerm}
@@ -228,7 +228,7 @@ const LoanApplicationForm = ({ type }) => {
                       onBlur={() =>
                         setInputs((prev) => ({
                           ...prev,
-                          loanTerm: Math.min(prev.loanTerm, 84),
+                          loanTerm: Math.min(prev.loanTerm, 360),
                         }))
                       }
                     />
@@ -240,7 +240,7 @@ const LoanApplicationForm = ({ type }) => {
                     type="range"
                     step="1"
                     min="3"
-                    max="84"
+                    max="360"
                     value={inputs.loanTerm}
                     onChange={(e) =>
                       setInputs((prev) => ({
@@ -251,7 +251,7 @@ const LoanApplicationForm = ({ type }) => {
                   />
                   <div className={styles.rangeLabels}>
                     <span>3</span>
-                    <span>84</span>
+                    <span>360</span>
                   </div>
                 </div>
               </div>
