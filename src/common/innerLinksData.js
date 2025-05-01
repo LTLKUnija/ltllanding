@@ -115,10 +115,14 @@ export const finacialReportingInnerLinkList = [
     link: "finacialReporting.innerLinkBlock.contacts",
     id: "#contacts",
   },
+{/* It was asked to hide Financial Calendar, I'm leaving this for future in case this needs to be unhiden
+  
   {
     link: "finacialReporting.innerLinkBlock.finacialCalendar",
     id: "#finacialCalendar",
   },
+  
+*/}  
 ];
 
 export const priceListInnerLinkList = [
