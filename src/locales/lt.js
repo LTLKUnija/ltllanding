@@ -777,7 +777,9 @@ export default {
       factsheets: "Faktų suvestinė",
       presentations: "Pristatymai",
       contacts: "Kontaktai",
+{/* It was asked to hide Financial Calendar, I'm leaving this for future in case this needs to be unhiden      
       finacialCalendar: "Finansinis kalendorius",
+*/}      
     },
     contacts: {
       title: "Kontaktai",

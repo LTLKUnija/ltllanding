@@ -771,7 +771,9 @@ export default {
       factsheets: "Factsheets",
       presentations: "Presentations",
       contacts: "Contacts",
+{/* It was asked to hide Financial Calendar, I'm leaving this for future in case this needs to be unhiden      
       finacialCalendar: "Financial Calendar",
+*/}      
     },
     contacts: {
       title: "Contacts",
