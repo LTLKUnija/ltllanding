@@ -12,11 +12,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { presentationsLinksData } from "@/common/presentationsLinks";
 import { FactSheetsData } from "@/components/FactSheetsData";
 import { useRouter } from "next/router";
-{/* It was asked to hide Financial Calendar, I'm leaving this for future in case this needs to be unhiden
-
 import financialCalendarData from "@/common/finacialCalendarData";
 
-*/}
 export default function FinancialReporting() {
   const { t } = useTranslation("common");
   const router = useRouter();
@@ -165,8 +162,6 @@ export default function FinancialReporting() {
             </div>
           </div>
         </section>
-{/* It was asked to hide Financial Calendar, I'm leaving this for future in case this needs to be unhiden
-
         <section id="finacialCalendar" className={styles.calendarSection}>
           <div className={styles.calendarWrapper}>
             <h3>{t("finacialReporting.finacialCalendar.title")}</h3>
@@ -184,7 +179,6 @@ export default function FinancialReporting() {
             </div>
           </div>
         </section>
-*/}
       </main>
     </IndexLayout>
   );
