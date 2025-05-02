@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "ibslimitai.ltlku.lt"
+        }
+      ],
+      "destination": "https://forms.gle/2ostd4HNirQbyNLA6",
+      "permanent": true
+    }
+  ]
+}
