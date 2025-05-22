@@ -34,7 +34,7 @@ export default function Deposit() {
   const [calc, setCalc] = useState({
     amount: 10000,
     term: 3,
-    selectedRate: 3.55,
+    selectedRate: 3.35,
   });
 
   function createSelectOptions() {
