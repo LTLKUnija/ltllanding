@@ -10,6 +10,7 @@ import {
   getLoanForBusiness,
   getLoanForPrivatesState,
   getInternetBank,
+  getUnionMembership,
 } from "@/store/faqList/faqList.slice";
 
 export default function Deposit() {
@@ -19,6 +20,7 @@ export default function Deposit() {
   const LoanForPrivates = useSelector(getLoanForPrivatesState);
   const LoanForBusiness = useSelector(getLoanForBusiness);
   const InternetBank = useSelector(getInternetBank);
+  const UnionMembership = useSelector(getUnionMembership);
 
   return (
     <>
@@ -37,6 +39,12 @@ export default function Deposit() {
                 <div className={styles.faqList}>
                   <h1>{t("common.currentAccount")}</h1>
                   <Accordion faqData={CurrentAccFAQ.data} singleLevel="true" />
+                </div>
+              )}
+              {!!UnionMembership.data && (
+                <div className={styles.faqList}>
+                  <h1>{t("common.unionMembership")}</h1>
+                  <Accordion faqData={UnionMembership.data} singleLevel="true" />
                 </div>
               )}
               {!!LoanForPrivates.data && (

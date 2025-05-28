@@ -9,6 +9,7 @@ export const faqListSlice = createSlice({
     LoanForPrivates: {},
     ac2: {},
     InternetBank: {},
+    UnionMembership: {},
   },
   reducers: {
     setCurrentAccFAQ: (state, { payload }) => {
@@ -29,6 +30,9 @@ export const faqListSlice = createSlice({
     setInternetBank: (state, { payload }) => {
       return { ...state, InternetBank: payload };
     },
+    setUnionMembership: (state, { payload }) => {
+      return { ...state, UnionMembership: payload };
+    },    
   },
 });
 
@@ -40,3 +44,4 @@ export const getLoanForBusiness = (state) => state.faqList.LoanForBusiness;
 export const getLoanForPrivatesState = (state) => state.faqList.LoanForPrivates;
 export const getac2 = (state) => state.faqList.ac2;
 export const getInternetBank = (state) => state.faqList.InternetBank;
+export const getUnionMembership = (state) => state.faqList.UnionMembership;

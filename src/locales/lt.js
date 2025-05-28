@@ -6,6 +6,7 @@ export default {
     currentAccount: "Einamoji sąskaita D.U.K.",
     deposit: "Depozitas D.U.K.",
     internetBank: "Internetinė Bankininkystė D.U.K.",
+    unionMembership: "Narystė kredito unijoje D.U.K.",    
   },
   headerNavLinks: {
     private: "Privatiems",

@@ -6,6 +6,7 @@ export default {
     currentAccount: "Current Account F.A.Q.",
     deposit: "Deposit F.A.Q.",
     internetBank: "Internet Banking F.A.Q.",
+    unionMembership: "Credit Union Membership F.A.Q.",    
   },
   headerNavLinks: {
     private: "Private",
