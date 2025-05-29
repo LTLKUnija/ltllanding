@@ -16,6 +16,7 @@ export default function SuportAndComplaints() {
             <h1>{t("suportsComplaints.pageTitle")}</h1>
           </div>
         </section>
+                 
         <section className={styles.settlementSection}>
           <div className={styles.settlementsWrapper}>
             <div className={styles.settlementBlock}>
@@ -37,6 +38,14 @@ export default function SuportAndComplaints() {
             </div>
           </div>
         </section>
+
+        <section className={styles.settlementSection}>
+          <div className={styles.settlementsWrapper}>
+            <p>{t("suportsComplaints.articleBlock.article3.description1")}</p>
+            <p>{t("suportsComplaints.articleBlock.article3.description2")}</p>
+          </div>
+        </section>
+
         <section className={styles.formSection}>
           <div className={styles.formTitleBlock}>
             <ContactForm formTitle={true} />
