@@ -957,7 +957,26 @@
       },
       "article3": {
         "description1": "LTL Kredito unija (toliau - Unija) ypatingą dėmesį skiria kokybiškų paslaugų ir produktų, kurie atitiktų Klientų lūkesčius ir suteiktų vertę, teikimui bei nuolatiniam jų tobulinimui. Atsižvelgiant į tai, žinojimas, kokiose situacijose Jus nuvylėme, suteikia mums galimybę pasitaisyti bei užtikrinti gerą aptarnavimą ne tik Jums, bet ir kitiems Klientams.",
-        "description2": "Tais atvejais, kai esate nepatenkinti Unijos teikiamomis paslaugomis, nusiskundimą, galite pateikti Jums patogiausiu bei priimtiniausiu būdu:"      
+        "description2": "Tais atvejais, kai esate nepatenkinti Unijos teikiamomis paslaugomis, nusiskundimą, galite pateikti Jums patogiausiu bei priimtiniausiu būdu:",
+        "bullet1": "Interneto banke: Prisijunkite prie interneto banko ir parašykite mums žinutę.",
+        "bullet2": "Unijos padalinyje: Atvykus į Uniją, Unijos darbo laiku.",
+        "bullet3": "El. paštu: Parašykite mums info@ltlku.lt. El. laiške pridėkite užpildytą skundo formą ir priedus.",
+        "bullet4": "Paštu: Siųskite laišką adresu Sporto g. 18, LT-09238, Vilnius. Laiške pridėkite užpildytą formą ir priedus.",
+        "description3": "Atminkite, kad nusiskundimą Unijai galite pateikti ne vėliau kaip per tris mėnesius nuo tos dienos, sužinojote, arba turėjote sužinoti apie savo teisių arba teisėtų interesų pažeidimą.",
+        "description4": "Kad galėtumėme Jums atsakyti, raštu pateikdami nusiskundimą, nepamirškite įtraukti šių duomenų: ",
+        "bullet5": "• Vardo pavardės ar įmonės pavadinimo (jeigu esate juridinis asmuo);",
+        "bullet6": "• Asmens kodo ar įmonės kodo (jeigu esate juridinis asmuo);",
+        "bullet7": "• Kontaktinių duomenų: gyvenamosios vietos adreso, telefono nr., el. pašto adreso;",
+        "bullet8": "• Detalios situacijos aprašymo (aplinkybės, faktai ir kt.)",
+        "bullet9": "• Būdo, kuriuo norėtumėte gauti mūsų atsakymą.",        
+        "description5": "Pažymime, kad pateiktas nusiskundimas privalo būti pasirašytas, o tuo atveju, jeigu teikiamas el. būdu – pasirašytas kvalifikuoto elektroniniu parašu.",
+        "description6": "Rekomenduojame naudoti žemiau pateiktą skundo formą:",
+        "description7": "Visi gauti nusiskundimai bus nagrinėjami tik tuo atveju, kai jie yra parengti tvarkingai ir įskaitomai, juose yra pateikta aukščiau nurodyta Kliento informacija ir duomenys. Jeigu kuris nors vienas iš aukščiau nurodytų privalomų duomenų nepateikiamas, Unija, siekdama tinkamai parengti Jums atsakymą, turi teisę paprašyti papildyti pretenziją ar paklausimą.",
+        "description8": "Jūsų pateiktus nusiskundimus nagrinėja atsakingi Unijos darbuotojai. Gavę Jūsų nusiskundimą, jie atsakymą neatlygintinai pateiks per 15 (penkiolika) darbo dienų. Kai dėl priežasčių, kurių Unija negali kontroliuoti, atsakymo neįmanoma pateikti per 15 (penkiolika) darbo dienų, per šį terminą pateikiamas negalutinis atsakymas, supažindinant su vėlavimo pateikti atsakymą priežastimis bei terminu, iki kurio gausite galutinį atsakymą, kuris bet kuriuo atveju neviršys 35 (trisdešimt penkių) darbo dienų.",
+        "description9": "Informuojame, kad, pagal Lietuvos Respublikos teisės aktus, Lietuvos bankui priskirta kompetencija spręsti vartotojų ir finansų rinkos dalyvių ginčus, kylančius iš finansinių paslaugų teikimo, todėl tuo atveju, jei Unijos pateiktas atsakymas Jūsų netenkina, dėl kilusio ginčo sprendimo Jūs turite teisę per vienus metus nuo kreipimosi į Uniją keiptis į Lietuvos banką adresu: Totorių g. 4, LT-01121 Vilnius. Daugiau informacijos apie Lietuvos banko nagrinėjimus ginčus pateikiama interneto svetainėje http://www.lb.lt/gincu_nagrinejimas",
+        "description10": "Jei manote, kad buvo pažeisti Jūsų, kaip asmens duomenų subjekto, teisėti interesai, galite kreiptis į Valstybinę duomenų apsaugos inspekciją adresu: L. Sapiegos g. 17, LT-10312 Vilnius. Interneto svetainės adresas vdai.lrv.lt.",
+        "description11": "Vartojimo ginčų, kylančių ne dėl Lietuvos banko kompetencijoje nagrinėjamų ginčų, neteisminių sprendimų subjektas yra Valstybinė vartotojų teisių apsaugos tarnyba, adresas Vilniaus g. 25, 01402, Vilnius, interneto svetainės adresas www.vvtat.lt.",
+        "description12": "Visais atvejais Jūs taip pat turite teisę kreiptis į teismą."
       }
     },
     "readMore": "Skaityti daugiau",

@@ -947,7 +947,26 @@
       },
       "article3": {
         "description1": "LTL Credit Union (hereinafter referred to as ‘the Credit Union’) pays special attention to the provision and continuous improvement of quality services and products that meet customers' expectations and provide value. In this regard, knowing where we have failed you gives us the opportunity to improve and provide good service not only to you, but also to other Customers.",
-        "description2": "If you are dissatisfied with the service provided by the Credit Union, you can complain in the way that is most convenient and acceptable to you:"      
+        "description2": "If you are dissatisfied with the service provided by the Credit Union, you can complain in the way that is most convenient and acceptable to you:",
+        "bullet1": "Online Banking: log in to Online Banking and send us a message.",
+        "bullet2": "At a Union branch: on arrival at the Union, during the Union's opening hours.",
+        "bullet3": "By email: write to us at info@ltlku.lt. Please attach the completed complaint form and attachments to your email.",
+        "bullet4": "By post: Send your letter to Sporto g. 18, LT-09238, Vilnius. Please enclose the completed form and attachments.",
+        "description3": "Please note that you can lodge a complaint with the Union no later than three months after the date on which you became, or should have become, aware of the infringement of your rights or legitimate interests.",
+        "description4": "To enable us to respond to you, please remember to include the following details when submitting your written complaint:",
+        "bullet5": "• Name or company name (if you are a legal person);",
+        "bullet6": "• Personal identification number or company number (if you are a legal person);",
+        "bullet7": "• Contact details: residential address, telephone number, email address;",
+        "bullet8": "• Detailed description of the situation (circumstances, facts, etc.)",
+        "bullet9": "• The way in which you would like to receive our reply.",        
+        "description5": "Please note that the complaint must be signed and, if submitted electronically, signed with a qualified electronic signature.",
+        "description6": "We recommend using the complaint form below:",
+        "description7": "All complaints received will only be dealt with if they are written in a neat and legible manner and contain the Customer's information and data as specified above. If any of the above required information is not provided, the Union has the right to ask you to supplement the complaint or enquiry in order to properly prepare a response to you.",
+        "description8": "Your complaints are dealt with by the responsible Union staff. Upon receipt of your complaint, they will respond within 15 (fifteen) working days free of charge. Where, for reasons beyond the Union's control, it is not possible to provide a reply within 15 (fifteen) working days, a provisional reply shall be provided within this period, informing you of the reasons for the delay in providing a reply and of the time limit by which you will receive the final reply, which in any event shall not exceed 35 (thirty-five) working days.",
+        "description9": "Please be informed that according to the legislation of the Republic of Lithuania, the Bank of Lithuania has the competence to settle disputes between consumers and financial market participants arising from the provision of financial services; therefore, if you are not satisfied with the answer provided by the Union, you have the right to contact the Bank of Lithuania at Totorių g. 4, LT-01121 Vilnius within one year from the day of your application to the Union to resolve your dispute. For more information on disputes handled by the Bank of Lithuania, please visit http://www.lb.lt/gincu_nagrinejimas",
+        "description10": "If you believe that your legitimate interests as a personal data subject have been violated, you may contact the State Data Protection Inspectorate at L. Sapiegos g. 17, LT-10312 Vilnius. Website address vdai.lrv.lt.",
+        "description11": "The State Consumer Rights Protection Service, address Vilniaus g. 25, 01402, Vilnius, website address www.vvtat.lt.",
+        "description12": "In all cases, you also have the right to go to court."
       }
     },
     "readMore": "Read more",
