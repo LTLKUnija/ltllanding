@@ -35,7 +35,15 @@
     }
     ol {
       list-style-position: inside;
-      margin-bottom: 20px;
+      li {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+    }
+    ul {
+      list-style-position: inside;
       li {
         font-size: 16px;
         font-weight: 300;
