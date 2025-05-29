@@ -33,6 +33,16 @@
       color: var(--main-text-color);
       text-decoration: none;
     }
+    ol {
+      list-style-position: inside;
+      margin-bottom: 20px;
+      li {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+    }
   }
 
   .settlementBlock {
