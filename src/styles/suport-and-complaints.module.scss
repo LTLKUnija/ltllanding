@@ -25,9 +25,12 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+  .textBlock {
+    max-width: 100%;
+    text-align: justify;
     p {
-      text-align: justify;
       font-weight: 300;
+    }
     }
     a {
       color: var(--main-text-color);

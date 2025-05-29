@@ -41,31 +41,33 @@ export default function SuportAndComplaints() {
 */}
         <section className={styles.settlementSection}>
           <div className={styles.settlementsWrapper}>
-            <p>{t("suportsComplaints.articleBlock.article3.description1")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description2")}</p>
-            <ol>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet1")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet2")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet3")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet4")}</li>
-            </ol>
-            <p>{t("suportsComplaints.articleBlock.article3.description3")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description4")}</p>
-            <ol>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet5")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet6")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet7")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet8")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet9")}</li>
-            </ol>
-            <p>{t("suportsComplaints.articleBlock.article3.description5")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description6")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description7")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description8")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description9")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description10")}</p>                
-            <p>{t("suportsComplaints.articleBlock.article3.description11")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description12")}</p>                
+            <div className={styles.textBlock}>
+              <p>{t("suportsComplaints.articleBlock.article3.description1")}</p>
+              <p>{t("suportsComplaints.articleBlock.article3.description2")}</p>
+              <ol>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet1")}</li>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet2")}</li>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet3")}</li>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet4")}</li>
+              </ol>
+              <p>{t("suportsComplaints.articleBlock.article3.description3")}</p>
+              <p>{t("suportsComplaints.articleBlock.article3.description4")}</p>
+              <ul>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet5")}</li>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet6")}</li>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet7")}</li>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet8")}</li>
+                <li>{t("suportsComplaints.articleBlock.article3.bullet9")}</li>
+              </ul>
+              <p>{t("suportsComplaints.articleBlock.article3.description5")}</p>
+              <p>{t("suportsComplaints.articleBlock.article3.description6")}</p>
+              <p>{t("suportsComplaints.articleBlock.article3.description7")}</p>
+              <p>{t("suportsComplaints.articleBlock.article3.description8")}</p>
+              <p>{t("suportsComplaints.articleBlock.article3.description9")}</p>
+              <p>{t("suportsComplaints.articleBlock.article3.description10")}</p>                
+              <p>{t("suportsComplaints.articleBlock.article3.description11")}</p>
+              <p>{t("suportsComplaints.articleBlock.article3.description12")}</p>                
+            </div>
           </div>
         </section>
 
