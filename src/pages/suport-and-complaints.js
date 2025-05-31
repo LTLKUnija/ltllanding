@@ -53,8 +53,13 @@ export default function SuportAndComplaints() {
             <p>{t("suportsComplaints.articleBlock.article3.description4")}</p>
             <ul>
               <li>{t("suportsComplaints.articleBlock.article3.bullet5")}</li>
-              <li>
-                {t("suportsComplaints.articleBlock.article3.description6")}{" "}
+              <li>{t("suportsComplaints.articleBlock.article3.bullet6")}</li>
+              <li>{t("suportsComplaints.articleBlock.article3.bullet7")}</li>
+              <li>{t("suportsComplaints.articleBlock.article3.bullet8")}</li>
+              <li>{t("suportsComplaints.articleBlock.article3.bullet9")}</li>
+            </ul>
+            <p>{t("suportsComplaints.articleBlock.article3.description5")}</p>
+            <p>{t("suportsComplaints.articleBlock.article3.description6")}{" "}
                 <Link
                   href="https://storage.googleapis.com/ltlku_web_page/forms/Skundo_forma.docx"
                   target="_blank"
@@ -62,13 +67,7 @@ export default function SuportAndComplaints() {
                 >
                   Skundo_forma.docx
                 </Link>
-              </li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet7")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet8")}</li>
-              <li>{t("suportsComplaints.articleBlock.article3.bullet9")}</li>
-            </ul>
-            <p>{t("suportsComplaints.articleBlock.article3.description5")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description6")}</p>
+            </p>
             <p>{t("suportsComplaints.articleBlock.article3.description7")}</p>
             <p>{t("suportsComplaints.articleBlock.article3.description8")}</p>
             <p>{t("suportsComplaints.articleBlock.article3.description9")}</p>
