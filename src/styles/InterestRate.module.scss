@@ -22,6 +22,22 @@
   }
 }
 
+.ratesNotesWrapper {
+  max-width: 870px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 56px;
+    text-align: justify;
+  }
+}
+
 .ratesContainer {
   display: flex;
   flex-direction: column;
