@@ -70,9 +70,33 @@ export default function SuportAndComplaints() {
             </p>
             <p>{t("suportsComplaints.articleBlock.article3.description7")}</p>
             <p>{t("suportsComplaints.articleBlock.article3.description8")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description9")}</p>
-            <p>{t("suportsComplaints.articleBlock.article3.description10")}</p>                
-            <p>{t("suportsComplaints.articleBlock.article3.description11")}</p>
+            <p>{t("suportsComplaints.articleBlock.article3.description9")}{" "}
+                <Link
+                  href="http://www.lb.lt/gincu_nagrinejimas"
+                  target="_blank"
+                  className="readMoreLink"
+                >
+                  www.lb.lt/gincu_nagrinejimas
+                </Link>
+            </p>
+            <p>{t("suportsComplaints.articleBlock.article3.description10")}{" "}
+                <Link
+                  href="http://vdai.lrv.lt"
+                  target="_blank"
+                  className="readMoreLink"
+                >
+                  vdai.lrv.lt
+                </Link>
+            </p>               
+            <p>{t("suportsComplaints.articleBlock.article3.description11")}{" "}
+                <Link
+                  href="http://www.vvtat.lt"
+                  target="_blank"
+                  className="readMoreLink"
+                >
+                  www.vvtat.lt
+                </Link>
+            </p> 
             <p>{t("suportsComplaints.articleBlock.article3.description12")}</p>                
           </div>
         </section>
