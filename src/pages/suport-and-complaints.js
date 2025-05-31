@@ -54,7 +54,7 @@ export default function SuportAndComplaints() {
             <ul>
               <li>{t("suportsComplaints.articleBlock.article3.bullet5")}</li>
               <li>
-                {t("suportsComplaints.articleBlock.article3.bullet6")}{" "}
+                {t("suportsComplaints.articleBlock.article3.description6")}{" "}
                 <Link
                   href="https://storage.googleapis.com/ltlku_web_page/forms/Skundo_forma.docx"
                   target="_blank"
