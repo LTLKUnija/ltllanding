@@ -12,7 +12,7 @@ import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
-import ClientSupport from "@/components/ClientSupportLoanPrivate";
+import ClientSupportLoanPrivate from "@/components/ClientSupportLoanPrivate";
 import { useSelector } from "react-redux";
 import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
 import Breadcrumbs from "@/components/Breadcrumbs";
