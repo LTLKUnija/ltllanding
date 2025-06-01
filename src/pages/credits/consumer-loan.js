@@ -12,6 +12,7 @@ import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ClientSupport from "@/components/ClientSupport";
+import ClientSupport from "@/components/ClientSupportLoanPrivate";
 import { useSelector } from "react-redux";
 import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -123,6 +124,9 @@ export default function Mortgage() {
         <section id="clientSuport" className={styles.clientSuportSection}>
           <ClientSupport />
         </section>
+        <section id="clientSuportLoanPrivate" className={styles.clientSuportSection}>
+          <ClientSupportLoanPrivate />
+        </section>        
         <section id="faq" className={styles.faqSection}>
           {!!faqData.data && (
             <div className={styles.faqWrapper}>

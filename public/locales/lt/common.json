@@ -1023,6 +1023,11 @@
     "title": "Pagalba klientams",
     "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant terminuoto indėlio operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu ",
     "or": " arba el. paštu "
+  },    
+  "clientSuportLoanPrivate": {
+    "title": "Tipinis pavyzdys",
+    "description1": "Imant 5000 EUR vartojimo kreditą 5 m. laikotarpiui su taikoma fiksuota 10 % metine palūkanų norma, kai sutarties sudarymo mokestis  350 EUR, bendra vartojimo kredito kainos metinė norma būtų 14,005%, bendra kredito gavėjo mokama suma – 6725,54 EUR, o kiekvieno mėnesio įmoka - 106,58 EUR.",
+    "description2": "Bendra vartojimo kredito kainos metinė norma ir bendra vartojimo kredito gavėjo mokama suma apskaičiuotos laikantis prielaidų, kad kredito sutartis galios terminą lygų kredito sutarties trukmei, Unija visą kredito sumą išmoka kredito sutarties pasirašymo dieną, iš kredito sutarties kylančius savo įsipareigojimus kredito sutarties šalys vykdys pagal kredito sutartyje nustatytas sąlygas ir terminus, metinė palūkanų norma, įkainių dydis ir kitos išlaidos išliks tokios pat kaip ir kredito sutarties sudarymo metu ir bus toliau taikomos iki kredito sutarties pabaigos."
   },
   "news": {
     "title": "Naujienos",
