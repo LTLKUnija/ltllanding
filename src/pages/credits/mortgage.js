@@ -11,6 +11,7 @@ import { mortgageLoanInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import ClientSupportLoanLegal from "@/components/ClientSupportLoanLegal";
 import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
@@ -119,6 +120,9 @@ export default function Mortgage() {
             <Steper steperData={mortgageSteperData} />
           </div>
         </section>
+        <section id="clientSuportLoanLegal" className={styles.clientSuportSection}>
+          <ClientSupportLoanLegal />
+        </section>        
         <section id="clientSuport" className={styles.clientSuportSection}>
           <ClientSupport />
         </section>
