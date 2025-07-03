@@ -436,7 +436,10 @@
       "documentsFromArchive": "Sending documents from the archive",
       "actualCostForArchiesServices": "The LTL's actual costs for archive services",
       "translationOfCertificates": "Translation of certificates/agreements into a foreign language (if available)",
-      "actualCostTranslationServices": "The LTL's actual costs of purchasing translation services"
+      "actualCostTranslationServices": "The LTL's actual costs of purchasing translation services",
+      "applicationAnalysisFee": "Application analysis fee",
+      "applicationAnalysisFeePrice": "1.00% of the amount of credit requested, min. EUR 400*",
+      "caseOfApplicationAnalysisFee": "* Payable before the issuance of the letter of guarantee. Not refundable if the customer declines the credit or part of it, or if the letter of guarantee is not issued for any other reason."      
     }
   },
   "licence": {

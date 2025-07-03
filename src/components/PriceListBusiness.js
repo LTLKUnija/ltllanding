@@ -677,6 +677,25 @@ export default function PriceListBusiness() {
               50 EUR + {t("priceList.table.actualCostTranslationServices")}
             </div>
           </li>
+          <li className={styles.priceItem}>
+            <div className={styles.priceDescriptionLeft}>
+              {t("priceList.table.applicationAnalysisFee")}
+            </div>
+            <div className={styles.priceDescription}>
+              {t("priceList.table.applicationAnalysisFeePrice")}
+            </div>
+          </li> 
+          <li
+            className={[styles.priceItem, styles.priceTitle, styles.box].join(
+              " "
+            )}
+          >
+            <div
+              className={[styles.definition, styles.definitionFlex].join(" ")}
+            >
+              <div>{t("priceList.table.caseOfApplicationAnalysisFee")}</div>
+            </div>
+          </li>               
         </ul>
       </div>
     </>

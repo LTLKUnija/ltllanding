@@ -446,7 +446,10 @@
       "documentsFromArchive": "Dokumentų siuntimas iš archyvo",
       "actualCostForArchiesServices": "Faktinės LTL išlaidos už archyvo paslaugas",
       "translationOfCertificates": "Pažymų/ susitarimų vertimas į užsienio kalbą (jei yra galimybė išversti)",
-      "actualCostTranslationServices": "Faktinės LTL išlaidos vertimo paslaugoms įsigyti"
+      "actualCostTranslationServices": "Faktinės LTL išlaidos vertimo paslaugoms įsigyti",
+      "applicationAnalysisFee": "Paraiškos analizės mokestis",
+      "applicationAnalysisFeePrice": "1,00% nuo prašomo suteikti kredito sumos, min. 400 EUR*",
+      "caseOfApplicationAnalysisFee": "* Mokamas prieš garantinio rašto išdavimą. Negrąžinamas klientui atsisakius kredito ar jo dalies, arba jei garantinis raštas neišduodamas dėl bet kurių kitų priežasčių."
     }
   },
   "licence": {
