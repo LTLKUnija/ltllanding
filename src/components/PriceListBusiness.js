@@ -566,6 +566,7 @@ export default function PriceListBusiness() {
               {t("priceList.table.perPropertyComplex")}
             </div>
           </li>
+{/*               
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.creditProjectAnalysis")}
@@ -585,6 +586,7 @@ export default function PriceListBusiness() {
               <div>{t("priceList.table.caseOfLoanToACliant")}</div>
             </div>
           </li>
+*/}          
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.certificateFromCentralDataBnak")}
