@@ -35,7 +35,7 @@ export default function PriceListPrivate() {
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
-              {t("priceList.table.currentAccountAdministration")}
+              {t("priceList.table.currentAccountAdministrationPrivate")}
             </div>
             <div className={styles.priceDescription}>
               {t("priceList.table.fees.freeOfCharge")}
