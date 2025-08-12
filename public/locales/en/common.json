@@ -470,7 +470,8 @@
       "currentAccountContract": "Current account contract for a natural person_standard terms",
       "currentAccountAgreement": "Current account agreement for a legal entity_standard terms",
       "yourRights": "Your rights when making payments in Europe",
-      "paymentsServices": "Terms and conditions for the provision of payment services",
+      "paymentsServices": "Terms and conditions for the provision of payment services (valid to 2025-10-19)",
+      "paymentsServicesNew": "Terms and conditions for the provision of payment services (valid from 2025-10-20)",      
       "generalInfo": "General information on credit related to property."
     }
   },

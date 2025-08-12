@@ -83,6 +83,11 @@ export const tncLinks = [
         linkUrl:
           "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/payments/Mok%C4%97jimo%20paslaug%C5%B3%20teikimo%20s%C4%85lygos.pdf",
       },
+      {
+        linkName: "paymentsServicesNew",
+        linkUrl:
+          "https://storage.googleapis.com/ltlku_web_page/termsAndConditions/payments/Mokejimo_paslaugu_teikimo_salygos_galioja_nuo_2025-10-20.pdf",
+      },      
     ],
   },
   {

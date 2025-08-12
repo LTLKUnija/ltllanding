@@ -480,7 +480,8 @@
       "currentAccountContract": "Einamosios saskaitos sutartis fiziniam asmeniui standartines sąlygos",
       "currentAccountAgreement": "Einamosios saskaitos sutartis juridiniam asmeniui standartines sąlygos",
       "yourRights": " Jūsų teisės vykdant mokėjimus Europoje",
-      "paymentsServices": "Mokėjimo paslaugų teikimo sąlygos",
+      "paymentsServices": "Mokėjimo paslaugų teikimo sąlygos (galioja iki 2025-10-19)",
+      "paymentsServicesNew": "Mokėjimo paslaugų teikimo sąlygos (galioja nuo 2025-10-20)",      
       "generalInfo": "Bendro pobūdžio informacija apie susijusį su nekilnojamuoju turtu kreditą."
     }
   },
