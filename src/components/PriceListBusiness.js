@@ -202,7 +202,7 @@ export default function PriceListBusiness() {
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
-              {t("priceList.table.currentAccountAdministration")}
+              {t("priceList.table.currentAccountAdministrationLegal")}
             </div>
             <div className={styles.priceDescription}>25 EUR</div>
           </li>
