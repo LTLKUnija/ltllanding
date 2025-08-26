@@ -11,6 +11,7 @@ import Script from "next/script"; // Importing Next.js Script component
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter();
+  const nonce = typeof document !== 'undefined' ? (document.querySelector('meta[name="csp-nonce"]')?.getAttribute('content') || '') : ''
 
   useEffect(() => {
     const locale = router.locale || "lt";
@@ -23,8 +24,9 @@ const App = ({ Component, pageProps }) => {
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-6Z2XJJXYH2"
         strategy="afterInteractive"
+        nonce={nonce}
       />
-      <Script id="gtag-init" strategy="afterInteractive">
+      <Script id="gtag-init" strategy="afterInteractive" nonce={nonce}>
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

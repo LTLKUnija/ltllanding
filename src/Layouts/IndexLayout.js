@@ -53,6 +53,7 @@ function IndexLayout({ children }) {
         id="cookieyes"
         type="text/javascript"
         src="https://cdn-cookieyes.com/client_data/33918b941881a09fff1a403a/script.js"
+        nonce={typeof document !== 'undefined' ? (document.querySelector('meta[name="csp-nonce"]')?.getAttribute('content') || '') : ''}
       ></Script>
       <Head>
         <title>
