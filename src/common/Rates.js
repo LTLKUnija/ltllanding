@@ -5,19 +5,19 @@ export const businessRates = [
   },
   {
     term: 3,
-    rate: 2.85,
+    rate: 2.65,
   },
   {
     term: 6,
-    rate: 2.95,
+    rate: 2.85,
   },
   {
     term: 9,
-    rate: 2.95,
+    rate: 2.85,
   },
   {
     term: 12,
-    rate: 3.05,
+    rate: 2.90,
   },
   {
     term: 18,
