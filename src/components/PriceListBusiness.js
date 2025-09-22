@@ -200,13 +200,17 @@ export default function PriceListBusiness() {
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.currentAccountAdministrationLegal")}
             </div>
-            <div className={styles.priceDescription}>25 EUR</div>
+            <div className={styles.priceDescription}>
+              {t("priceList.table.currentAccountAdministrationLegalFee")}
+            </div>
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.managmentCustodyAccount")}
             </div>
-            <div className={styles.priceDescription}>200 EUR</div>
+            <div className={styles.priceDescription}>
+              {t("priceList.table.managmentCustodyAccountBusinessFee")}
+            </div>
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
@@ -560,11 +564,13 @@ export default function PriceListBusiness() {
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.internalValuationFee")}
             </div>
+              <div className={styles.priceDescription}>–</div>               
+          </li>
+{/*    
             <div className={styles.priceDescription}>
               {t("priceList.table.perPropertyComplex")}
             </div>
-          </li>
-{/*               
+          </li>     
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.creditProjectAnalysis")}
@@ -603,7 +609,7 @@ export default function PriceListBusiness() {
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.sendingRepeatedNotification")}
             </div>
-            <div className={styles.priceDescription}>-</div>
+            <div className={styles.priceDescription}>–</div>
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
