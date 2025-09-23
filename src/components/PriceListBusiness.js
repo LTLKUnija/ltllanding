@@ -13,6 +13,11 @@ export default function PriceListBusiness() {
         <ul className={styles.priceList}>
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
             <div className={styles.priceTitle}>
+              {t("priceList.table.accountsFinancialInstitutionsTitle")}
+            </div>
+          </li>          
+          <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
+            <div className={styles.priceTitle}>
               {t("priceList.table.accountsFinancialInstitutions")}
             </div>
           </li>
@@ -93,6 +98,41 @@ export default function PriceListBusiness() {
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
             <div className={styles.priceTitle}>
               {t("priceList.table.transferMoneyCustomerService")}
+            </div>
+          </li>
+          <li className={styles.priceItem}>
+            <div className={styles.priceDescriptionLeft}>
+              {t("priceList.table.toRecipientsAccountCreditUnion")}
+            </div>
+            <div className={styles.priceDescription}>5 EUR</div>
+          </li>
+          <li className={styles.priceItem}>
+            <div className={styles.priceDescriptionLeft}>
+              {t("priceList.table.betweenAccounts2")}
+            </div>
+            <div className={styles.priceDescription}>5 EUR</div>
+          </li>
+          <li className={styles.priceItem}>
+            <div className={styles.priceDescriptionLeft}>
+              {t("priceList.table.paymentsInEuro")}
+            </div>
+            <div className={styles.priceDescription}>5 EUR</div>
+          </li>
+          <li className={styles.priceItem}>
+            <div className={styles.priceDescriptionLeft}>
+              {t("priceList.table.compulsoryDecommitment")}
+            </div>
+            <div className={styles.priceDescription}>5 EUR</div>
+          </li>
+          <li className={styles.priceItem}>
+            <div className={styles.priceDescriptionLeft}>
+              {t("priceList.table.paymentCancellation")}
+            </div>
+            <div className={styles.priceDescription}>10 EUR</div>
+          </li>
+          <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
+            <div className={styles.priceTitle}>
+              {t("priceList.table.transferMoneyOnline")}
             </div>
           </li>
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
@@ -406,12 +446,13 @@ export default function PriceListBusiness() {
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
-              {t("priceList.table.cashPayment")}
+              {t("priceList.table.cashPaymentLegal")}
             </div>
             <div className={styles.priceDescription}>
               2,00% {t("priceList.table.onTheAmount")}
             </div>
           </li>
+{/*                        
           <li
             className={[styles.priceItem, styles.priceTitle, styles.box].join(
               " "
@@ -425,6 +466,7 @@ export default function PriceListBusiness() {
               <div>{t("priceList.table.repayingShareContribution")}</div>
             </div>
           </li>
+*/}                    
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.penaltyForFailingToCollectFunds")}
@@ -593,6 +635,25 @@ export default function PriceListBusiness() {
 */}          
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
+              {t("priceList.table.applicationAnalysisFee")}
+            </div>
+            <div className={styles.priceDescription}>
+              {t("priceList.table.applicationAnalysisFeePrice")}
+            </div>
+          </li> 
+          <li
+            className={[styles.priceItem, styles.priceTitle, styles.box].join(
+              " "
+            )}
+          >
+            <div
+              className={[styles.definition, styles.definitionFlex].join(" ")}
+            >
+              <div>{t("priceList.table.caseOfApplicationAnalysisFee")}</div>
+            </div>
+          </li> 
+          <li className={styles.priceItem}>
+            <div className={styles.priceDescriptionLeft}>
               {t("priceList.table.certificateFromCentralDataBnak")}
             </div>
             <div className={styles.priceDescription}>30 EUR</div>
@@ -610,6 +671,11 @@ export default function PriceListBusiness() {
               {t("priceList.table.sendingRepeatedNotification")}
             </div>
             <div className={styles.priceDescription}>–</div>
+          </li>
+          <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
+            <div className={styles.priceTitle}>
+              {t("priceList.table.preparationOfCertificateInLt")}
+            </div>
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
@@ -672,7 +738,7 @@ export default function PriceListBusiness() {
               {t("priceList.table.documentsFromArchive")}
             </div>
             <div className={styles.priceDescription}>
-              50 EUR + {t("priceList.table.actualCostForArchiesServices")}
+              {t("priceList.table.actualCostForArchiesServices")}
             </div>
           </li>
           <li className={styles.priceItem}>
@@ -682,26 +748,21 @@ export default function PriceListBusiness() {
             <div className={styles.priceDescription}>
               30 EUR + {t("priceList.table.actualCostTranslationServices")}
             </div>
+          </li>     
+          <li className={styles.priceItem}>
+            <div className={styles.priceDescriptionLeft}>
+              {t("priceList.table.fundAdministrationFeeUponTerminationOfBusinessRelationship")}
+            </div>
+            <div className={styles.priceDescription}>
+              {t("priceList.table.fundAdministrationFeeUponTerminationOfBusinessRelationshipFee")}
+            </div>
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
-              {t("priceList.table.applicationAnalysisFee")}
+              {t("priceList.table.preparationOfInformationForThirdParty")}
             </div>
-            <div className={styles.priceDescription}>
-              {t("priceList.table.applicationAnalysisFeePrice")}
-            </div>
+            <div className={styles.priceDescription}>50 EUR</div>
           </li> 
-          <li
-            className={[styles.priceItem, styles.priceTitle, styles.box].join(
-              " "
-            )}
-          >
-            <div
-              className={[styles.definition, styles.definitionFlex].join(" ")}
-            >
-              <div>{t("priceList.table.caseOfApplicationAnalysisFee")}</div>
-            </div>
-          </li>               
         </ul>
       </div>
     </>
