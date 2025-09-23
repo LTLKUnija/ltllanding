@@ -300,7 +300,8 @@
     "innerLinkBlock": {
       "rates": "Interest rates on term-deposits",
       "private": "Price list for private individuals",
-      "corporate": "Price list for corporate"
+      "corporate": "Price list for corporate",
+      "corporateDate": "Valid from 2025-09-20"      
     },
     "table": {
       "accounts": "Accounts",
@@ -323,6 +324,7 @@
       "openingCurrentAccount": "Opening a current account",
       "currentAccountAdministrationPrivate": "Current account administration/management",
       "currentAccountAdministrationLegal": "Current account administration/management",
+      "currentAccountAdministrationLegalAsterisk": "Current account administration/management*",
       "currentAccountAdministrationLegalFee": "25 EUR/month",     
       "cashBalance": "Fee for keeping cash balances on account ",
       "accountStatmentCollectionAtBranch": "Account statement upon collection at a credit union branch:",

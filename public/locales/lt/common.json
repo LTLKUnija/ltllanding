@@ -310,7 +310,8 @@
     "innerLinkBlock": {
       "rates": "Terminuotųjų indėlių palūkanų normos",
       "private": "Kainoraštis privatiems asmenims",
-      "corporate": "Kainoraštis įmonėms"
+      "corporate": "Kainoraštis įmonėms",
+      "corporateDate": "Galioja nuo 2025-09-20"
     },
     "table": {
       "accounts": "Sąskaitos",
@@ -333,6 +334,7 @@
       "openingCurrentAccount": "Einamosios sąskaitos atidarymas",
       "currentAccountAdministrationPrivate": "Einamosios sąskaitos administravimas/tvarkymas",
       "currentAccountAdministrationLegal": "Einamosios sąskaitos administravimas/tvarkymas",
+      "currentAccountAdministrationLegalAsterisk": "Einamosios sąskaitos administravimas/tvarkymas*",      
       "currentAccountAdministrationLegalFee": "25 EUR/mėn.",            
       "cashBalance": "Mokestis už piniginių lėšų likučio laikymą sąskaitoje",
       "accountStatmentCollectionAtBranch": "Sąskaitos išrašas, atsiimant kredito unijos padalinyje:",

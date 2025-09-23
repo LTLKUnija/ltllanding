@@ -10,6 +10,9 @@ export default function PriceListBusiness() {
         <h3 className={styles.priceHeader}>
           {t("priceList.innerLinkBlock.corporate")}
         </h3>
+        <h3 className={styles.priceHeaderDate}>
+          {t("priceList.innerLinkBlock.corporateDate")}
+        </h3> 
         <ul className={styles.priceList}>
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
             <div className={styles.priceTitle}>
@@ -37,7 +40,7 @@ export default function PriceListBusiness() {
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
-              {t("priceList.table.currentAccountAdministrationLegal")}
+              {t("priceList.table.currentAccountAdministrationLegalAsterisk")}
             </div>
             <div className={styles.priceDescription}>
               5 {t("priceList.table.month")}
@@ -477,7 +480,7 @@ export default function PriceListBusiness() {
           </li>
           <li className={[styles.priceItem, styles.priceTitle].join(" ")}>
             <div className={styles.priceTitle}>
-              {t("priceList.table.feesForCreditServices")}
+              {t("priceList.table.feesForCreditServicesLegal")}
             </div>
           </li>
           <li className={styles.priceItem}>
