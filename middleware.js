@@ -117,7 +117,7 @@ function applyCsp(res, nonce) {
     "base-uri 'self'",
     "form-action 'self'",
     `script-src ${scriptSrc}`,
-    `style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
+    `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
     "font-src 'self' https://fonts.gstatic.com",
     "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com",
     "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com",
