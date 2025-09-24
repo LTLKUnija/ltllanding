@@ -59,7 +59,7 @@ export function middleware(request) {
       },
     });
     addAntiClickjackingHeaders(res);
-    applyCsp(res, nonce);
+    applyCsp(res, nonce, request);
     return res;
   }
 
@@ -69,14 +69,14 @@ export function middleware(request) {
     url.pathname = `/${cookieLocale}${pathname}`;
     const res = NextResponse.redirect(url);
     addAntiClickjackingHeaders(res);
-    applyCsp(res, nonce);
+    applyCsp(res, nonce, request);
     return res;
   }
 
   url.pathname = `/${defaultLocale}${pathname}`;
   const res = NextResponse.redirect(url);
   addAntiClickjackingHeaders(res);
-  applyCsp(res, nonce);
+  applyCsp(res, nonce, request);
   return res;
 }
 
@@ -98,8 +98,12 @@ function addAntiClickjackingHeaders(res) {
   }
 }
 
-function applyCsp(res, nonce) {
-  const isDev = process.env.NODE_ENV !== "production";
+function applyCsp(res, nonce, request) {
+  const hostname = request?.nextUrl?.hostname || (request?.headers?.get?.("host") || "").split(":")[0];
+  const normalizedHost = (hostname || "").toLowerCase();
+  const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(normalizedHost) || normalizedHost.endsWith(".localhost") || normalizedHost.endsWith(".local");
+  const isDevEnv = process.env.NODE_ENV !== "production";
+  const isDev = isDevEnv || isLocalHost;
   const scriptSrc = [
     "'self'",
     `'nonce-${nonce}'`,
