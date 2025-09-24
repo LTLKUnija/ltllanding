@@ -16,6 +16,18 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=(), payment=()" },
+          {
+            key: "Content-Security-Policy",
+            value: "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-ancestors 'none'; object-src 'none';"
+          },
+          {
+            key: "Access-Control-Allow-Origin",
+            value: "https://www.ltlku.lt"
+          },
+          {
+            key: "Vary",
+            value: "Origin"
+          }
         ],
       },
       {
