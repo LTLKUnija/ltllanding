@@ -104,6 +104,7 @@ function applyCsp(res, nonce) {
     "'self'",
     `'nonce-${nonce}'`,
     "'strict-dynamic'",
+    "'unsafe-inline'",
     ...(isDev ? ["'unsafe-eval'"] : []),
     "https://www.googletagmanager.com",
     "https://www.google-analytics.com",
@@ -111,6 +112,10 @@ function applyCsp(res, nonce) {
     "https://www.google.com",
     "https://cdn-cookieyes.com",
     "https://www.gstatic.com",
+    "https://firestore.googleapis.com",
+    "https://www.gstatic.com/firebasejs",
+    "https://maps.googleapis.com",
+    "https://maps.gstatic.com",
   ].join(" ");
   const directives = [
     "default-src 'self'",
