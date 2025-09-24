@@ -117,6 +117,7 @@ function applyCsp(res, nonce) {
     "https://maps.googleapis.com",
     "https://maps.gstatic.com",
     "https://www.google.com/recaptcha/",
+    "https://www.gstatic.com/recaptcha/",
   ].join(" ");
   const directives = [
     "default-src 'self'",
@@ -125,7 +126,7 @@ function applyCsp(res, nonce) {
     `script-src ${scriptSrc}`,
     `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
     "font-src 'self' https://fonts.gstatic.com",
-    "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com",
+    "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
     "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com",
     "frame-src 'self' https://www.google.com",
     "manifest-src 'self'",
