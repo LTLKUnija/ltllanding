@@ -116,6 +116,7 @@ function applyCsp(res, nonce) {
     "https://www.gstatic.com/firebasejs",
     "https://maps.googleapis.com",
     "https://maps.gstatic.com",
+    "https://www.google.com/recaptcha/",
   ].join(" ");
   const directives = [
     "default-src 'self'",
@@ -130,7 +131,6 @@ function applyCsp(res, nonce) {
     "manifest-src 'self'",
     "media-src 'self'",
     "child-src 'none'",
-    "prefetch-src 'self'",
     "object-src 'none'",
     "frame-ancestors 'none'",
     "worker-src 'self' blob:",
