@@ -51,10 +51,10 @@ function IndexLayout({ children }) {
     <div>
       <Script
         id="cookieyes"
-        type="text/javascript"
-        src="https://cdn-cookieyes.com/client_data/33918b941881a09fff1a403a/script.js"
+        src="/api/cookieyes.js"
+        strategy="afterInteractive"
         nonce={typeof document !== 'undefined' ? (document.querySelector('meta[name="csp-nonce"]')?.getAttribute('content') || '') : ''}
-      ></Script>
+      />
       <Head>
         <title>
           {locale === "lt" ? "LTL kredito unija" : "LTL Credit Union"}

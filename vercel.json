@@ -11,5 +11,21 @@
       "destination": "https://forms.gle/2ostd4HNirQbyNLA6",
       "permanent": true
     }
+  ],
+  "headers": [
+    {
+      "source": "/_next/static/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://www.ltlku.lt" },
+        { "key": "Vary", "value": "Origin" }
+      ]
+    },
+    {
+      "source": "/_next/data/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://www.ltlku.lt" },
+        { "key": "Vary", "value": "Origin" }
+      ]
+    }
   ]
 }
