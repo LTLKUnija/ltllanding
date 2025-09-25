@@ -1,42 +1,7 @@
 const { i18n } = require("./next-i18next.config");
 
-const buildCspValue = () => {
-  const isProd = process.env.NODE_ENV === "production";
-  const scriptSrc = [
-    "'self'",
-    "'unsafe-inline'",
-    ...(isProd ? [] : ["'unsafe-eval'"]),
-    "https://www.googletagmanager.com",
-    "https://www.google-analytics.com",
-    "https://firestore.googleapis.com",
-    "https://www.gstatic.com/firebasejs",
-    "https://maps.googleapis.com",
-    "https://maps.gstatic.com",
-    "https://cdn-cookieyes.com",
-    "https://www.google.com/recaptcha/",
-    "https://www.gstatic.com/recaptcha/",
-  ].join(" ");
-
-  return [
-    "default-src 'self'",
-    `script-src ${scriptSrc}`,
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-    "font-src 'self' https://fonts.gstatic.com",
-    "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com",
-    "connect-src 'self' https://www.google-analytics.com https://firestore.googleapis.com https://region1.google-analytics.com https://maps.googleapis.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
-    "frame-src 'self' https://www.google.com",
-    "frame-ancestors 'none'",
-    "object-src 'none'",
-    "base-uri 'self'",
-    "form-action 'self'",
-    "manifest-src 'self'",
-    "media-src 'self'",
-    "worker-src 'self' blob:",
-    "upgrade-insecure-requests",
-  ].join("; ");
-};
-
-const contentSecurityPolicy = buildCspValue();
+// CSP is applied dynamically via middleware with a per-request nonce.
+// To avoid conflicts and remove 'unsafe-inline' in script-src, we omit CSP here.
 
 const nextConfig = {
   reactStrictMode: false,
@@ -54,7 +19,6 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=(), payment=()" },
-          { key: "Content-Security-Policy", value: contentSecurityPolicy },
           {
             key: "Access-Control-Allow-Origin",
             value: "https://www.ltlku.lt"
@@ -68,7 +32,6 @@ const nextConfig = {
       {
         source: "/_next/:path*",
         headers: [
-          { key: "Content-Security-Policy", value: contentSecurityPolicy },
           {
             key: "Access-Control-Allow-Origin",
             value: "https://www.ltlku.lt"
