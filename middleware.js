@@ -17,6 +17,7 @@ export function middleware(request) {
   const { pathname } = request.nextUrl;
   const origin = request.headers.get("origin") || "";
   const nonce = generateNonce(16);
+  const isDev = process.env.NODE_ENV !== "production";
 
   const isApi = pathname.startsWith("/api/");
   if (isApi) {
@@ -63,22 +64,35 @@ export function middleware(request) {
     return res;
   }
 
-  const cookieLocale = request.cookies["NEXT_LOCALE"];
+  const cookieLocale =
+    (typeof request.cookies?.get === "function"
+      ? request.cookies.get("NEXT_LOCALE")?.value
+      : request.cookies?.NEXT_LOCALE) || undefined;
 
   if (cookieLocale && locales.includes(cookieLocale)) {
     url.pathname = `/${cookieLocale}${pathname}`;
-    const res = NextResponse.redirect(url);
+    const res = isDev ? NextResponse.rewrite(url) : NextResponse.redirect(url);
     addAntiClickjackingHeaders(res);
     applyCsp(res, nonce, request);
     return res;
   }
 
   url.pathname = `/${defaultLocale}${pathname}`;
-  const res = NextResponse.redirect(url);
+  // For root path in development, rewrite instead of redirect to ensure CSP header is present on the response body
+  const res = isDev && pathname === "/" ? NextResponse.rewrite(url) : NextResponse.redirect(url);
   addAntiClickjackingHeaders(res);
   applyCsp(res, nonce, request);
   return res;
 }
+
+// Ensure middleware runs on HTML routes (including "/") but skip static assets.
+export const config = {
+  matcher: [
+    "/", // ensure root matches
+    // Run on all routes except Next internals and static assets
+    "/((?!api|_next/static|_next/image|_next/data|favicon.ico|robots.txt|sitemap.xml|assets/).*)",
+  ],
+};
 
 function addAntiClickjackingHeaders(res) {
   res.headers.set("X-Frame-Options", "DENY");
