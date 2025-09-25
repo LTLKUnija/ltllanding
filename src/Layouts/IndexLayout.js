@@ -51,7 +51,7 @@ function IndexLayout({ children }) {
     <div>
       <Script
         id="cookieyes"
-        src="/api/cookieyes.js"
+        src="/api/cookieyes"
         strategy="afterInteractive"
         nonce={typeof document !== 'undefined' ? (document.querySelector('meta[name="csp-nonce"]')?.getAttribute('content') || '') : ''}
       />
