@@ -92,6 +92,10 @@ const LoanApplicationForm = ({ type }) => {
       script.src = "https://www.google.com/recaptcha/api.js";
       script.async = true;
       script.defer = true;
+      const nonce = document.querySelector('meta[name="csp-nonce"]')?.getAttribute('content') || '';
+      if (nonce) {
+        script.setAttribute('nonce', nonce);
+      }
       document.body.appendChild(script);
     }
 

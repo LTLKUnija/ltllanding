@@ -47,14 +47,18 @@ function IndexLayout({ children }) {
     };
   }, []);
 
+  const isProd = process.env.NODE_ENV === "production";
+
   return (
     <div>
-      <Script
-        id="cookieyes"
-        src="/api/cookieyes"
-        strategy="afterInteractive"
-        nonce={typeof document !== 'undefined' ? (document.querySelector('meta[name="csp-nonce"]')?.getAttribute('content') || '') : ''}
-      />
+      {isProd && (
+        <Script
+          id="cookieyes"
+          src="/api/cookieyes"
+          strategy="afterInteractive"
+          nonce={typeof document !== "undefined" ? (document.querySelector("meta[name=\"csp-nonce\"]")?.getAttribute("content") || "") : ""}
+        />
+      )}
       <Head>
         <title>
           {locale === "lt" ? "LTL kredito unija" : "LTL Credit Union"}
