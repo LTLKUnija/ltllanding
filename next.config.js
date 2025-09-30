@@ -12,6 +12,26 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: "/robots.txt",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; img-src 'none'; script-src 'none'; style-src 'none'; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'",
+          },
+        ],
+      },
+      {
+        source: "/sitemap.xml",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; img-src 'none'; script-src 'none'; style-src 'none'; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'",
+          },
+        ],
+      },
+      {
         source: "/:path*",
         headers: [
           { key: "X-Frame-Options", value: "DENY" },
@@ -19,8 +39,6 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=(), payment=()" },
-          // Minimal CSP so non-middleware responses still emit a CSP header without conflicting with nonce-based policy
-          { key: "Content-Security-Policy", value: "frame-ancestors 'none'" },
           {
             key: "Access-Control-Allow-Origin",
             value: "https://www.ltlku.lt"
@@ -34,8 +52,6 @@ const nextConfig = {
       {
         source: "/_next/:path*",
         headers: [
-          // Add a safe CSP header on static/optimized assets to satisfy scanners
-          { key: "Content-Security-Policy", value: "frame-ancestors 'none'" },
           {
             key: "Access-Control-Allow-Origin",
             value: "https://www.ltlku.lt"
