@@ -5,7 +5,11 @@ class MyDocument extends Document {
     const initialProps = await Document.getInitialProps(ctx)
     const req = ctx.req
     const res = ctx.res
-    const nonce = (req && req.headers && req.headers['x-csp-nonce']) || (res && res.getHeader && res.getHeader('x-csp-nonce')) || ''
+    const fromHeader = (req && req.headers && req.headers['x-csp-nonce']) || (res && res.getHeader && res.getHeader('x-csp-nonce')) || ''
+    const cookieHeader = (req && req.headers && req.headers['cookie']) || ''
+    const cookieNonceMatch = cookieHeader.match(/(?:^|;\s*)csp-nonce=([^;]+)/)
+    const fromCookie = cookieNonceMatch ? decodeURIComponent(cookieNonceMatch[1]) : ''
+    const nonce = fromHeader || fromCookie || ''
     return { ...initialProps, nonce }
   }
 

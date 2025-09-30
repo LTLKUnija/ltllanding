@@ -12,13 +12,6 @@ const ALLOWED_ORIGINS = new Set([
   "https://www.ltlku.lt",
 ]);
 
-export const config = {
-  matcher: [
-    '/',
-    '/((?!_next|assets).*)',
-  ],
-}
-
 export function middleware(request) {
   const { pathname } = request.nextUrl;
   const origin = request.headers.get("origin") || "";
@@ -172,3 +165,11 @@ function applyCsp(res, nonce, request) {
   res.headers.set("Content-Security-Policy", directives.join("; "));
   res.headers.set("x-csp-nonce", nonce);
 }
+
+// Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
+export const config = {
+  matcher: [
+    "/",
+    "/((?!_next/static|_next/image|_next/data|api|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
+  ],
+};
