@@ -60,23 +60,28 @@ export function middleware(request) {
     });
     addAntiClickjackingHeaders(res);
     applyCsp(res, nonce, request);
+    try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
     return res;
   }
 
-  const cookieLocale = request.cookies["NEXT_LOCALE"];
+  const cookieHeader = request.headers.get("cookie") || "";
+  const cookieLocaleMatch = cookieHeader.match(/(?:^|;\s*)NEXT_LOCALE=([^;]+)/);
+  const cookieLocale = cookieLocaleMatch ? decodeURIComponent(cookieLocaleMatch[1]) : undefined;
 
   if (cookieLocale && locales.includes(cookieLocale)) {
     url.pathname = `/${cookieLocale}${pathname}`;
-    const res = NextResponse.redirect(url);
+    const res = NextResponse.rewrite(url);
     addAntiClickjackingHeaders(res);
     applyCsp(res, nonce, request);
+    try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
     return res;
   }
 
   url.pathname = `/${defaultLocale}${pathname}`;
-  const res = NextResponse.redirect(url);
+  const res = NextResponse.rewrite(url);
   addAntiClickjackingHeaders(res);
   applyCsp(res, nonce, request);
+  try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
   return res;
 }
 
@@ -144,3 +149,11 @@ function applyCsp(res, nonce, request) {
   res.headers.set("Content-Security-Policy", directives.join("; "));
   res.headers.set("x-csp-nonce", nonce);
 }
+
+// Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
+export const config = {
+  matcher: [
+    "/", 
+    "/((?!_next/static|_next/image|_next/data|api|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
+  ],
+};
