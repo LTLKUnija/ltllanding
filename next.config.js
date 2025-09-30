@@ -19,6 +19,8 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=(), payment=()" },
+          // Minimal CSP so non-middleware responses still emit a CSP header without conflicting with nonce-based policy
+          { key: "Content-Security-Policy", value: "frame-ancestors 'none'" },
           {
             key: "Access-Control-Allow-Origin",
             value: "https://www.ltlku.lt"
@@ -32,6 +34,8 @@ const nextConfig = {
       {
         source: "/_next/:path*",
         headers: [
+          // Add a safe CSP header on static/optimized assets to satisfy scanners
+          { key: "Content-Security-Policy", value: "frame-ancestors 'none'" },
           {
             key: "Access-Control-Allow-Origin",
             value: "https://www.ltlku.lt"
