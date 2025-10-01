@@ -21,25 +21,21 @@ const App = ({ Component, pageProps }) => {
   return (
     <Provider store={store}>
       {/* Google Analytics Script */}
-      {nonce && (
-        <>
-          <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-6Z2XJJXYH2"
-            strategy="afterInteractive"
-            nonce={nonce}
-          />
-          <Script id="gtag-init" strategy="afterInteractive" nonce={nonce}>
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-6Z2XJJXYH2', {
-                page_path: window.location.pathname,
-              });
-            `}
-          </Script>
-        </>
-      )}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-6Z2XJJXYH2"
+        strategy="afterInteractive"
+        nonce={nonce}
+      />
+      <Script id="gtag-init" strategy="afterInteractive" nonce={nonce}>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-6Z2XJJXYH2', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
 
       <Component {...pageProps} />
     </Provider>
