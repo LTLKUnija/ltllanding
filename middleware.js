@@ -149,7 +149,10 @@ function applyCsp(res, nonce, request) {
     `script-src ${scriptSrc}`,
     // Mirror for browsers that separate element vs attr contexts
     `script-src-elem ${scriptSrc}`,
-    `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
+    // Allow style elements with nonce; keep attributes handled separately
+    `style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
+    `style-src-elem 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
+    `style-src-attr 'unsafe-inline'`,
     "font-src 'self' https://fonts.gstatic.com",
     "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
     "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com https://images.ctfassets.net https://storage.googleapis.com",
