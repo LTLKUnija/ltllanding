@@ -129,7 +129,6 @@ function applyCsp(res, nonce, request) {
   const scriptSrc = [
     "'self'",
     `'nonce-${nonce}'`,
-    "'strict-dynamic'",
     // 'unsafe-inline',  // removed for CSP hardening; nonce is used instead
     ...(isDev ? ["'unsafe-eval'"] : []),
     "https://www.googletagmanager.com",
@@ -150,6 +149,8 @@ function applyCsp(res, nonce, request) {
     "base-uri 'self'",
     "form-action 'self'",
     `script-src ${scriptSrc}`,
+    // Mirror for browsers that distinguish element/attr contexts explicitly
+    `script-src-elem ${scriptSrc}`,
     `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
     "font-src 'self' https://fonts.gstatic.com",
     "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
