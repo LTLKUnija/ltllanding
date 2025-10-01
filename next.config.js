@@ -104,42 +104,6 @@ const nextConfig = {
           },
         ],
       },
-      // Fallback CSP for all other routes in case middleware is bypassed by cache/CDN.
-      // This is strict (no 'unsafe-*') and should not be flagged by scanners.
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "Content-Security-Policy",
-            value: [
-              "default-src 'self'",
-              "base-uri 'self'",
-              "form-action 'self'",
-              "frame-ancestors 'none'",
-              "object-src 'none'",
-              "style-src 'self' https://fonts.googleapis.com",
-              "style-src-attr 'unsafe-inline'",
-              "font-src 'self' https://fonts.gstatic.com",
-              "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com https://images.ctfassets.net https://storage.googleapis.com",
-              "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
-              "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://www.google.com https://cdn-cookieyes.com https://www.gstatic.com https://firestore.googleapis.com https://www.gstatic.com/firebasejs https://maps.googleapis.com https://maps.gstatic.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",
-              "script-src-elem 'self' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://www.google.com https://cdn-cookieyes.com https://www.gstatic.com https://firestore.googleapis.com https://www.gstatic.com/firebasejs https://maps.googleapis.com https://maps.gstatic.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",
-              "frame-src 'self' https://www.google.com",
-              "worker-src 'self' blob:",
-              "upgrade-insecure-requests",
-            ].join('; '),
-          },
-          { key: "X-Frame-Options", value: "DENY" },
-          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains; preload" },
-          { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=(), payment=()" },
-          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
-          { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
-          { key: "Access-Control-Allow-Origin", value: "https://www.ltlku.lt" },
-          { key: "Vary", value: "Origin" },
-        ],
-      },
       {
         source: "/:path*",
         headers: [
