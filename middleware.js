@@ -171,8 +171,8 @@ function applyCsp(res, nonce, request) {
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
 export const config = {
+  // Run on all routes except obvious static and API. Keep pattern simple to avoid matcher quirks.
   matcher: [
-    "/", 
-    "/((?!_next/static|_next/image|_next/data|api|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
+    "/((?!api|_next/static|_next/image|_next/data|favicon.ico|robots.txt|sitemap.xml|assets).*)",
   ],
 };
