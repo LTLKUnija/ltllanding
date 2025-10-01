@@ -70,7 +70,14 @@ export function middleware(request) {
 
   if (cookieLocale && locales.includes(cookieLocale)) {
     url.pathname = `/${cookieLocale}${pathname}`;
-    const res = NextResponse.rewrite(url);
+    const res = NextResponse.rewrite(url, {
+      request: {
+        headers: new Headers({
+          ...Object.fromEntries(request.headers),
+          "x-csp-nonce": nonce,
+        }),
+      },
+    });
     addAntiClickjackingHeaders(res);
     applyCsp(res, nonce, request);
     try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
@@ -78,7 +85,14 @@ export function middleware(request) {
   }
 
   url.pathname = `/${defaultLocale}${pathname}`;
-  const res = NextResponse.rewrite(url);
+  const res = NextResponse.rewrite(url, {
+    request: {
+      headers: new Headers({
+        ...Object.fromEntries(request.headers),
+        "x-csp-nonce": nonce,
+      }),
+    },
+  });
   addAntiClickjackingHeaders(res);
   applyCsp(res, nonce, request);
   try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
