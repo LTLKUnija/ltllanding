@@ -19,12 +19,20 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head nonce={nonce}>
             <meta name="csp-nonce" content={nonce} />
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-            <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+            <link nonce={nonce} rel="preconnect" href="https://fonts.googleapis.com" />
+            <link nonce={nonce} rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+            <link nonce={nonce} href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
+          <script
+            id="__NEXT_DATA__"
+            type="application/json"
+            nonce={nonce}
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(this.props.__NEXT_DATA__),
+            }}
+          />
           <NextScript nonce={nonce} />
         </body>
       </Html>
