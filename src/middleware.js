@@ -13,7 +13,6 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 export function middleware(request) {
-  const url = request.nextUrl.clone();
   const { pathname } = request.nextUrl;
   const origin = request.headers.get("origin") || "";
   const nonce = generateNonce(16);
@@ -52,6 +51,20 @@ export function middleware(request) {
   }
 
   if (locales.some((locale) => pathname.startsWith(`/${locale}`))) {
+    // Skip redirect for static files and Next.js internals
+    if (
+      pathname.includes('.') || // has file extension
+      pathname.startsWith('/_next') ||
+      pathname.startsWith('/api')
+    ) {
+      const response = NextResponse.next({
+        request: { headers: request.headers }
+      });
+      addAntiClickjackingHeaders(response);
+      applyCsp(response, nonce, request);
+      return response;
+    }
+
     // Non-API, already localized: continue, but add anti-clickjacking headers
     const res = NextResponse.next({
       request: {
@@ -59,30 +72,34 @@ export function middleware(request) {
       },
     });
     addAntiClickjackingHeaders(res);
+    res.headers.set("x-csp-nonce", nonce);
     applyCsp(res, nonce, request);
-    try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
     return res;
+  } else {
+    const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
+
+    const changeLocaleLogic = false // todo: remove and fix redirect loop
+    if (changeLocaleLogic && cookieLocale && locales.includes(cookieLocale)) {
+      const { pathname, search } = request.nextUrl;
+
+      const newUrl = new URL(`/${cookieLocale}${pathname}${search}`, request.url);
+
+      const res =  NextResponse.redirect(newUrl);
+      addAntiClickjackingHeaders(res);
+      applyCsp(res, nonce, request);
+      return res;
+    }
   }
 
-  const cookieHeader = request.headers.get("cookie") || "";
-  const cookieLocaleMatch = cookieHeader.match(/(?:^|;\s*)NEXT_LOCALE=([^;]+)/);
-  const cookieLocale = cookieLocaleMatch ? decodeURIComponent(cookieLocaleMatch[1]) : undefined;
+  const response = NextResponse.next({
+    request: {
+      headers: request.headers,
+    },
+  })
 
-  if (cookieLocale && locales.includes(cookieLocale)) {
-    url.pathname = `/${cookieLocale}${pathname}`;
-    const res = NextResponse.rewrite(url);
-    addAntiClickjackingHeaders(res);
-    applyCsp(res, nonce, request);
-    try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
-    return res;
-  }
-
-  url.pathname = `/${defaultLocale}${pathname}`;
-  const res = NextResponse.rewrite(url);
-  addAntiClickjackingHeaders(res);
-  applyCsp(res, nonce, request);
-  try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
-  return res;
+  addAntiClickjackingHeaders(response);
+  applyCsp(response, nonce, request)
+  return response
 }
 
 function addAntiClickjackingHeaders(res) {
@@ -112,7 +129,7 @@ function applyCsp(res, nonce, request) {
   const scriptSrc = [
     "'self'",
     `'nonce-${nonce}'`,
-    // 'strict-dynamic', // removed due to use of nonce
+    "'strict-dynamic'",
     // 'unsafe-inline',  // removed for CSP hardening; nonce is used instead
     ...(isDev ? ["'unsafe-eval'"] : []),
     "https://www.googletagmanager.com",
@@ -136,7 +153,7 @@ function applyCsp(res, nonce, request) {
     `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
     "font-src 'self' https://fonts.gstatic.com",
     "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
-    "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com",
+    "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com https://images.ctfassets.net https://storage.googleapis.com",
     "frame-src 'self' https://www.google.com",
     "manifest-src 'self'",
     "media-src 'self'",
@@ -153,7 +170,7 @@ function applyCsp(res, nonce, request) {
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
 export const config = {
   matcher: [
-    "/", 
+    "/",
     "/((?!_next/static|_next/image|_next/data|api|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
   ],
 };
