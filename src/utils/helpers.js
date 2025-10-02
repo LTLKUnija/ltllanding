@@ -99,3 +99,11 @@ export const loanFormDataMaker = (inputs) => {
 
   return formData;
 };
+
+export const isLocalhost = (request) => {
+  const hostname = request?.nextUrl?.hostname || (request?.headers?.get?.("host") || "").split(":")[0];
+  const normalizedHost = (hostname || "").toLowerCase();
+  return ["localhost", "127.0.0.1", "::1"].includes(normalizedHost)
+    || normalizedHost.endsWith(".localhost")
+    || normalizedHost.endsWith(".local");
+}

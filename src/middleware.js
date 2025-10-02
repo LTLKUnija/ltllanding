@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { isLocalhost } from "@/utils/helpers";
 
 function generateNonce() {
   // Edge-safe nonce: UUID without dashes (sufficiently random for CSP nonces)
@@ -121,50 +122,31 @@ function addAntiClickjackingHeaders(res) {
 }
 
 function applyCsp(res, nonce, request) {
-  const hostname = request?.nextUrl?.hostname || (request?.headers?.get?.("host") || "").split(":")[0];
-  const normalizedHost = (hostname || "").toLowerCase();
-  const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(normalizedHost) || normalizedHost.endsWith(".localhost") || normalizedHost.endsWith(".local");
   const isDevEnv = process.env.NODE_ENV !== "production";
-  const isDev = isDevEnv || isLocalHost;
-  const scriptSrc = [
-    "'self'",
-    `'nonce-${nonce}'`,
-    "'strict-dynamic'",
-    // 'unsafe-inline',  // removed for CSP hardening; nonce is used instead
-    ...(isDev ? ["'unsafe-eval'"] : []),
-    "https://www.googletagmanager.com",
-    "https://www.google-analytics.com",
-    "https://maps.googleapis.com",
-    "https://www.google.com",
-    "https://cdn-cookieyes.com",
-    "https://www.gstatic.com",
-    "https://firestore.googleapis.com",
-    "https://www.gstatic.com/firebasejs",
-    "https://maps.googleapis.com",
-    "https://maps.gstatic.com",
-    "https://www.google.com/recaptcha/",
-    "https://www.gstatic.com/recaptcha/",
-  ].join(" ");
-  const directives = [
-    "default-src 'self'",
-    "base-uri 'self'",
-    "form-action 'self'",
-    `script-src ${scriptSrc}`,
-    `style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
-    "font-src 'self' https://fonts.gstatic.com",
-    "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
-    "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com https://images.ctfassets.net https://storage.googleapis.com",
-    "frame-src 'self' https://www.google.com",
-    "manifest-src 'self'",
-    "media-src 'self'",
-    "child-src 'none'",
-    "object-src 'none'",
-    "frame-ancestors 'none'",
-    "worker-src 'self' blob:",
-    "upgrade-insecure-requests",
-  ];
-  res.headers.set("Content-Security-Policy", directives.join("; "));
+  const isDev = isDevEnv || isLocalhost(request);
+
+  const cspHeader = `
+    default-src 'self';
+    ${isDev ? "'unsafe-eval';" : ""}
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com https://www.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://www.gstatic.com/firebasejs https://www.gstatic.com/recaptcha/;
+    style-src 'self' 'nonce-${nonce}' 'unsafe-inline' https://fonts.googleapis.com;
+    img-src 'self' blob: data: https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com;
+    font-src 'self' data: https://fonts.gstatic.com;
+    connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://firestore.googleapis.com https://www.google.com;
+    frame-src 'self' https://www.google.com https://www.recaptcha.net;
+    worker-src 'self' blob:;
+    child-src 'self' blob:;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    frame-ancestors 'none';
+    upgrade-insecure-requests;
+  `.replace(/\s{2,}/g, ' ').trim();
+
+  res.headers.set('Content-Security-Policy', cspHeader);
+  res.headers.set('X-Content-Security-Policy', cspHeader);
   res.headers.set("x-csp-nonce", nonce);
+  res.headers.set('X-Nonce', nonce);
 }
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
