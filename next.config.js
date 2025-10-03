@@ -23,7 +23,49 @@ const nextConfig = {
         ],
       },
       {
+        source: "/_next/data/:path*",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; script-src 'none'; style-src 'none'; img-src 'none'; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'",
+          },
+        ],
+      },
+      {
         source: "/_next/image/:path*",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; script-src 'none'; style-src 'none'; img-src 'self' data:; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'",
+          },
+        ],
+      },
+      // Some scanners request a mis-encoded path where the value of the image URL is placed into the pathname
+      // e.g. "/%2F_next%2Fstatic%2Fmedia%2F...&w=640&q=75". Provide a strict CSP for those requests too.
+      {
+        source: "/%2F_next%2Fstatic/:path*",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; script-src 'none'; style-src 'none'; img-src 'self'; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'",
+          },
+        ],
+      },
+      {
+        source: "/:locale/%2F_next%2Fstatic/:path*",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; script-src 'none'; style-src 'none'; img-src 'self'; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'",
+          },
+        ],
+      },
+      {
+        source: "/assets/:path*",
         headers: [
           {
             key: "Content-Security-Policy",
@@ -53,6 +95,16 @@ const nextConfig = {
         ],
       },
       {
+        source: "/favicon.ico",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; img-src 'none'; script-src 'none'; style-src 'none'; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'",
+          },
+        ],
+      },
+      {
         source: "/:path*",
         headers: [
           { key: "X-Frame-Options", value: "DENY" },
@@ -60,14 +112,10 @@ const nextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=(), payment=()" },
-          {
-            key: "Access-Control-Allow-Origin",
-            value: "https://www.ltlku.lt"
-          },
-          {
-            key: "Vary",
-            value: "Origin"
-          }
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+          { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
+          { key: "Access-Control-Allow-Origin", value: "https://www.ltlku.lt" },
+          { key: "Vary", value: "Origin" },
         ],
       },
       {
