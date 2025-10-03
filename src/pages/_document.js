@@ -58,6 +58,105 @@ class MyDocument extends Document {
                     w.__next_script_nonce__ = n;
                     w.__NEXT_SCRIPT_NONCE__ = n;
                     try { if (w.__NEXT_DATA__) w.__NEXT_DATA__.nonce = n; } catch (e) {}
+
+                    // Avoid double patching
+                    if (!w.__cspNoncePatched__) {
+                      w.__cspNoncePatched__ = true;
+
+                      // 1) Ensure elements created programmatically get a nonce
+                      var d = document;
+                      var origCreate = d.createElement;
+                      d.createElement = function(name, options) {
+                        var el = origCreate.call(d, name, options);
+                        try {
+                          var t = (name || '').toString().toUpperCase();
+                          if (t === 'SCRIPT' || t === 'STYLE') {
+                            if (!el.getAttribute('nonce')) el.setAttribute('nonce', n);
+                          }
+                        } catch (_) {}
+                        return el;
+                      };
+
+                      // 2) Patch common DOM insertion methods to attach nonce pre-insert
+                      function patchInsert(proto, method) {
+                        var orig = proto && proto[method];
+                        if (!orig) return;
+                        proto[method] = function(node) {
+                          try {
+                            if (node && node.nodeType === 1) {
+                              var tag = node.tagName;
+                              if ((tag === 'SCRIPT' || tag === 'STYLE') && !node.getAttribute('nonce')) {
+                                node.setAttribute('nonce', n);
+                              }
+                            }
+                          } catch (_) {}
+                          return orig.apply(this, arguments);
+                        };
+                      }
+                      patchInsert(Element.prototype, 'appendChild');
+                      patchInsert(Element.prototype, 'insertBefore');
+                      patchInsert(Element.prototype, 'replaceChild');
+
+                      // 3) Intercept HTML string insertions to inject nonce attributes at parse time
+                      var reTag = /<(script|style)(\b[^>]*)?>/gi;
+                      var origIAH = Element.prototype.insertAdjacentHTML;
+                      if (origIAH) {
+                        Element.prototype.insertAdjacentHTML = function(pos, html) {
+                          try {
+                            if (typeof html === 'string' && html.indexOf('<') !== -1) {
+                              html = html.replace(reTag, function(m, tag, attrs) {
+                                return '<' + tag + (attrs || '') + ' nonce="' + n + '">';
+                              });
+                            }
+                          } catch (_) {}
+                          return origIAH.call(this, pos, html);
+                        };
+                      }
+
+                      var desc = Object.getOwnPropertyDescriptor(Element.prototype, 'innerHTML');
+                      if (desc && desc.set) {
+                        Object.defineProperty(Element.prototype, 'innerHTML', {
+                          get: desc.get,
+                          set: function(value) {
+                            try {
+                              if (typeof value === 'string' && value.indexOf('<') !== -1) {
+                                value = value.replace(reTag, function(m, tag, attrs) {
+                                  return '<' + tag + (attrs || '') + ' nonce="' + n + '">';
+                                });
+                              }
+                            } catch (_) {}
+                            return desc.set.call(this, value);
+                          },
+                          enumerable: desc.enumerable,
+                          configurable: true,
+                        });
+                      }
+
+                      // 4) Fallback observer to catch any late-added nodes
+                      try {
+                        var mo = new MutationObserver(function(muts){
+                          for (var i = 0; i < muts.length; i++) {
+                            var nodes = muts[i].addedNodes;
+                            for (var j = 0; j < nodes.length; j++) {
+                              var node = nodes[j];
+                              if (node && node.nodeType === 1) {
+                                var tag = node.tagName;
+                                if ((tag === 'SCRIPT' || tag === 'STYLE') && !node.getAttribute('nonce')) {
+                                  node.setAttribute('nonce', n);
+                                }
+                                if (node.querySelectorAll) {
+                                  var list = node.querySelectorAll('script,style');
+                                  for (var k = 0; k < list.length; k++) {
+                                    if (!list[k].getAttribute('nonce')) list[k].setAttribute('nonce', n);
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        });
+                        mo.observe(document.documentElement, { childList: true, subtree: true });
+                      } catch (_) {}
+                    }
                   } catch (e) {}
                 })(${JSON.stringify(nonce || '')});
               `,
