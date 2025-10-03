@@ -116,6 +116,10 @@ const nextConfig = {
           { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
           { key: "Access-Control-Allow-Origin", value: "https://www.ltlku.lt" },
           { key: "Vary", value: "Origin" },
+          {
+            key: "Content-Security-Policy",
+            value: "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.gstatic.com https://www.google.com https://www.gstatic.com/recaptcha/ https://firestore.googleapis.com 'strict-dynamic'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
+          }
         ],
       },
       {
