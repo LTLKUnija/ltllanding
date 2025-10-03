@@ -10,7 +10,7 @@ import LoanApplicationForm from "@/components/LoanApplicationForm";
 
 export default function Home({ landingArticles }) {
   const { t } = useTranslation("common");
-  console.log("HERE WE ARE")
+  console.log("HERE WE ARE2")
 
   return (
     <>
