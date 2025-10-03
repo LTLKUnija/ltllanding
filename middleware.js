@@ -13,6 +13,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 export function middleware(request) {
+  console.log("Middleware invoked for:");
   const url = request.nextUrl.clone();
   const { pathname } = request.nextUrl;
   const origin = request.headers.get("origin") || "";
