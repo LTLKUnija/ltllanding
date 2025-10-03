@@ -126,8 +126,7 @@ function applyCsp(res, nonce, request) {
   const scriptSrc = [
     "'self'",
     `'nonce-${nonce}'`,
-    "'strict-dynamic'",
-    // 'unsafe-inline',  // removed for CSP hardening; nonce is used instead
+    // 'strict-dynamic',  // removed for CSP hardening; nonce is used instead
     ...(isDev ? ["'unsafe-eval'"] : []),
     "https://www.googletagmanager.com",
     "https://www.google-analytics.com",

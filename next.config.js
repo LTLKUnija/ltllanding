@@ -118,7 +118,18 @@ const nextConfig = {
           { key: "Vary", value: "Origin" },
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.gstatic.com https://www.google.com https://www.gstatic.com/recaptcha/ https://firestore.googleapis.com 'strict-dynamic'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
+            value: [
+              "default-src 'self'",
+              "script-src 'self' https://www.googletagmanager.com https://www.gstatic.com https://www.google.com https://www.gstatic.com/recaptcha/ https://firestore.googleapis.com",
+              "style-src 'self' https://fonts.googleapis.com",
+              "font-src 'self' https://fonts.gstatic.com",
+              "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com https://images.ctfassets.net https://storage.googleapis.com",
+              "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
+              "frame-src 'self' https://www.google.com",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "frame-ancestors 'none'"
+            ].join("; ")
           }
         ],
       },
