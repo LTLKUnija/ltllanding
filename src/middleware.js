@@ -16,14 +16,7 @@ export function middleware(request) {
   const url = request.nextUrl.clone();
   const { pathname } = request.nextUrl;
   const origin = request.headers.get("origin") || "";
-  const nonce = generateNonce();
-
-  const path = request.nextUrl.pathname;
-  if (/\.(?:js|css|png|jpe?g|gif|svg|ico|webmanifest|json|xml|txt|map)$/i.test(path) ||
-      path.startsWith('/_next/') ||
-      path.startsWith('/api/')) {
-    return NextResponse.next();
-  }
+  const nonce = generateNonce(16);
 
   const isApi = pathname.startsWith("/api/");
   if (isApi) {
@@ -133,7 +126,8 @@ function applyCsp(res, nonce, request) {
   const scriptSrc = [
     "'self'",
     `'nonce-${nonce}'`,
-    // 'strict-dynamic',  // removed for CSP hardening; nonce is used instead
+    // 'strict-dynamic', // removed due to use of nonce
+    // 'unsafe-inline',  // removed for CSP hardening; nonce is used instead
     ...(isDev ? ["'unsafe-eval'"] : []),
     "https://www.googletagmanager.com",
     "https://www.google-analytics.com",
@@ -176,4 +170,9 @@ function applyCsp(res, nonce, request) {
 }
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
-export const config = {};
+export const config = {
+  matcher: [
+    "/", 
+    "/((?!_next/static|_next/image|_next/data|api|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
+  ],
+};
