@@ -63,6 +63,15 @@ export function middleware(request) {
   // Apply CSP for all matched non-API routes to avoid missing headers when clients omit Accept or send */*
   applyCsp(res, nonce, request);
   try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
+  // Ensure our headers override any cached/static response headers
+  try {
+    const overrideList = [
+      'content-security-policy',
+      'x-csp-nonce',
+      'x-frame-options',
+    ].join(',');
+    res.headers.set('x-middleware-override-headers', overrideList);
+  } catch (_) {}
   // Temporary diagnostics header: helps verify Middleware hit in prod
   try { res.headers.set('x-mw-test', 'hit'); } catch (_) {}
   return res;
