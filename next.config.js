@@ -116,9 +116,32 @@ const nextConfig = {
           { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
           { key: "Access-Control-Allow-Origin", value: "https://www.ltlku.lt" },
           { key: "Vary", value: "Origin" },
-          // Fallback CSP to satisfy scanners if middleware headers are bypassed.
-          // Safe minimal directive that does not break assets and complements nonce-CSP from middleware.
-          { key: "Content-Security-Policy", value: "frame-ancestors 'none'" },
+          // Fallback baseline CSP for all routes (scanners). Middleware sets a stricter nonce-based CSP for HTML.
+          { key: "Content-Security-Policy", value: [
+            "default-src 'self'",
+            "base-uri 'self'",
+            "form-action 'self'",
+            "frame-ancestors 'none'",
+            "object-src 'none'",
+            // Scripts from self and approved CDNs (no 'unsafe-inline', no 'unsafe-eval' here)
+            "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://www.google.com https://cdn-cookieyes.com https://www.gstatic.com https://firestore.googleapis.com https://www.gstatic.com/firebasejs https://maps.googleapis.com https://maps.gstatic.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",
+            // Mirror element-specific policies (helps some scanners)
+            "script-src-elem 'self' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://www.google.com https://cdn-cookieyes.com https://www.gstatic.com https://firestore.googleapis.com https://www.gstatic.com/firebasejs https://maps.googleapis.com https://maps.gstatic.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",
+            // Styles from self and Google Fonts (no 'unsafe-inline' here)
+            "style-src 'self' https://fonts.googleapis.com",
+            "style-src-elem 'self' https://fonts.googleapis.com",
+            // Fonts and images
+            "font-src 'self' https://fonts.gstatic.com",
+            "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com https://images.ctfassets.net https://storage.googleapis.com",
+            // XHR/fetch endpoints
+            "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://region1.google-analytics.com https://maps.googleapis.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
+            // Frames and others
+            "frame-src 'self' https://www.google.com",
+            "manifest-src 'self'",
+            "media-src 'self'",
+            "worker-src 'self' blob:",
+            "upgrade-insecure-requests",
+          ].join('; ') },
         ],
       },
       {
