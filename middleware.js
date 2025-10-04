@@ -52,46 +52,10 @@ export function middleware(request) {
     return res;
   }
 
-  if (locales.some((locale) => pathname.startsWith(`/${locale}`))) {
-    // Non-API, already localized: continue, but add anti-clickjacking headers
-    const res = NextResponse.next({
-      request: {
-        headers: new Headers({ ...Object.fromEntries(request.headers), "x-csp-nonce": nonce }),
-      },
-    });
-    addAntiClickjackingHeaders(res);
-    applyCsp(res, nonce, request);
-    try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
-    return res;
-  }
-
-  const cookieHeader = request.headers.get("cookie") || "";
-  const cookieLocaleMatch = cookieHeader.match(/(?:^|;\s*)NEXT_LOCALE=([^;]+)/);
-  const cookieLocale = cookieLocaleMatch ? decodeURIComponent(cookieLocaleMatch[1]) : undefined;
-
-  if (cookieLocale && locales.includes(cookieLocale)) {
-    url.pathname = `/${cookieLocale}${pathname}`;
-    const res = NextResponse.rewrite(url, {
-      request: {
-        headers: new Headers({
-          ...Object.fromEntries(request.headers),
-          "x-csp-nonce": nonce,
-        }),
-      },
-    });
-    addAntiClickjackingHeaders(res);
-    applyCsp(res, nonce, request);
-    try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
-    return res;
-  }
-
-  url.pathname = `/${defaultLocale}${pathname}`;
-  const res = NextResponse.rewrite(url, {
+  // For all non-API HTML routes: do not rewrite paths; just continue and attach CSP.
+  const res = NextResponse.next({
     request: {
-      headers: new Headers({
-        ...Object.fromEntries(request.headers),
-        "x-csp-nonce": nonce,
-      }),
+      headers: new Headers({ ...Object.fromEntries(request.headers), "x-csp-nonce": nonce }),
     },
   });
   addAntiClickjackingHeaders(res);

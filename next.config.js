@@ -116,6 +116,9 @@ const nextConfig = {
           { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
           { key: "Access-Control-Allow-Origin", value: "https://www.ltlku.lt" },
           { key: "Vary", value: "Origin" },
+          // Fallback CSP to satisfy scanners if middleware headers are bypassed.
+          // Safe minimal directive that does not break assets and complements nonce-CSP from middleware.
+          { key: "Content-Security-Policy", value: "frame-ancestors 'none'" },
         ],
       },
       {
