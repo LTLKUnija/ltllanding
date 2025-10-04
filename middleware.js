@@ -152,6 +152,7 @@ function applyCsp(res, nonce, request) {
 export const config = {
   // Match all paths except Next internals and common static assets
   matcher: [
+    "/", // ensure root path is processed by middleware
     "/((?!_next/|_next\\.|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
   ],
 };
