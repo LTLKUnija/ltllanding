@@ -57,6 +57,8 @@ export function middleware(request) {
       headers: new Headers({ ...Object.fromEntries(request.headers), "x-csp-nonce": nonce }),
     },
   });
+  // Ensure headers from Middleware are not bypassed on CDN cache hits
+  try { res.headers.set('x-middleware-cache', 'no-cache'); } catch (_) {}
   addAntiClickjackingHeaders(res);
   // Apply CSP for all matched non-API routes to avoid missing headers when clients omit Accept or send */*
   applyCsp(res, nonce, request);
