@@ -17,8 +17,6 @@ export function middleware(request) {
   const { pathname } = request.nextUrl;
   const origin = request.headers.get("origin") || "";
   const nonce = generateNonce(16);
-  const accept = request.headers.get("accept") || "";
-  const isHtml = /text\/html/i.test(accept);
 
   const isApi = pathname.startsWith("/api/");
   if (isApi) {
@@ -60,10 +58,9 @@ export function middleware(request) {
     },
   });
   addAntiClickjackingHeaders(res);
-  if (isHtml) {
-    applyCsp(res, nonce, request);
-    try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
-  }
+  // Apply CSP for all matched non-API routes to avoid missing headers when clients omit Accept or send */*
+  applyCsp(res, nonce, request);
+  try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
   // Temporary diagnostics header: helps verify Middleware hit in prod
   try { res.headers.set('x-mw-test', 'hit'); } catch (_) {}
   return res;
