@@ -130,6 +130,7 @@ function applyCsp(res, nonce, request) {
     "worker-src 'self' blob:",
     "upgrade-insecure-requests",
   ];
+  try { res.headers.delete("Content-Security-Policy"); } catch (_) {}
   res.headers.set("Content-Security-Policy", directives.join("; "));
   res.headers.set("x-csp-nonce", nonce);
 }

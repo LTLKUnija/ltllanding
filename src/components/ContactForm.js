@@ -109,10 +109,7 @@ function ContactForm(props) {
             />
           </div>
           <div
-            style={{
-              marginBottom: "30px",
-            }}
-            className="g-recaptcha"
+            className={`${styles.captchaSpacer} g-recaptcha`}
             data-callback="captchaCompleted"
             data-sitekey="6LfxFv4pAAAAAA0JxUq4Ho4nh7_9ipPgTUzsN2Bu"
           />

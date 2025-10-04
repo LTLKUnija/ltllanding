@@ -488,14 +488,10 @@ const LoanApplicationForm = ({ type }) => {
             {showCaptcha && (
               <div
                 id="g-recaptcha"
-                className="g-recaptcha"
+                className={`g-recaptcha ${styles.recaptchaScaled}`}
                 data-sitekey="6LfxFv4pAAAAAA0JxUq4Ho4nh7_9ipPgTUzsN2Bu"
                 data-callback="hello"
                 data-theme="light"
-                style={{
-                  transform: "scale(0.77)",
-                  transformOrigin: "0 0",
-                }}
               ></div>
             )}
           </div>

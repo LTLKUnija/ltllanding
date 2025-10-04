@@ -283,11 +283,11 @@
       align-self: center;
     }
 
-    .actionBlock {
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
+  .actionBlock {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 
       .submitButton {
         width: 236px;
@@ -299,6 +299,12 @@
       }
     }
   }
+}
+
+/* Default scaling for reCAPTCHA when shown alongside submit button */
+.recaptchaScaled {
+  transform: scale(0.77);
+  transform-origin: 0 0;
 }
 
 @media (max-width: 768px) {
