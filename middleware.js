@@ -13,11 +13,12 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 export function middleware(request) {
-  console.log("Middleware invoked for:");
   const url = request.nextUrl.clone();
   const { pathname } = request.nextUrl;
   const origin = request.headers.get("origin") || "";
   const nonce = generateNonce(16);
+  const accept = request.headers.get("accept") || "";
+  const isHtml = /text\/html/i.test(accept);
 
   const isApi = pathname.startsWith("/api/");
   if (isApi) {
@@ -52,15 +53,19 @@ export function middleware(request) {
     return res;
   }
 
-  // For all non-API HTML routes: do not rewrite paths; just continue and attach CSP.
+  // For all non-API routes: continue; attach CSP only for HTML documents.
   const res = NextResponse.next({
     request: {
       headers: new Headers({ ...Object.fromEntries(request.headers), "x-csp-nonce": nonce }),
     },
   });
   addAntiClickjackingHeaders(res);
-  applyCsp(res, nonce, request);
-  try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
+  if (isHtml) {
+    applyCsp(res, nonce, request);
+    try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
+  }
+  // Temporary diagnostics header: helps verify Middleware hit in prod
+  try { res.headers.set('x-mw-test', 'hit'); } catch (_) {}
   return res;
 }
 
@@ -137,8 +142,8 @@ function applyCsp(res, nonce, request) {
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
 export const config = {
+  // Match all paths except Next internals and common static assets
   matcher: [
-    "/", 
-    "/((?!_next/static|_next/image|_next/data|api|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
+    "/((?!_next/|_next\\.|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
   ],
 };
