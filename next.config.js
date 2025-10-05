@@ -236,21 +236,6 @@ const nextConfig = {
           { key: "Vary", value: "Origin" },
         ],
       },
-      // Consolidated regex-style catch-all for encoded assets and encoded absolute URLs
-      // Matches:
-      //  - /%2F_next%2F(static|image|data)/...
-      //  - /.../%2F_next%2F(static|image|data)/...
-      //  - /https%3A%2F%2F... and /http%3A%2F%2F...
-      {
-        source: "/(.*)(?:%2F_next%2F(?:static|image|data)/.*|https%3A%2F%2F.*|http%3A%2F%2F.*)",
-        headers: [
-          {
-            key: "Content-Security-Policy",
-            value:
-              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; script-src 'none'; style-src 'none'; img-src 'self' data:; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'",
-          },
-        ],
-      },
       {
         source: "/_next/:path*",
         headers: [
