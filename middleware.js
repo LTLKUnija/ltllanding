@@ -68,7 +68,8 @@ export function middleware(request) {
     },
   });
   // Ensure headers from Middleware are not bypassed on CDN cache hits
-  try { res.headers.set('x-middleware-cache', 'no-cache'); } catch (_) {}
+    
+  try { res.headers.set('x-middleware-cache', 'no-cache'); res.headers.set("x-Dimaka-9", "HERE9");} catch (_) {}
   addAntiClickjackingHeaders(res);
   // Apply CSP for all matched non-API routes to avoid missing headers when clients omit Accept or send */*
   applyCsp(res, nonce, request);
@@ -81,14 +82,17 @@ export function middleware(request) {
       'x-frame-options',
     ].join(',');
     res.headers.set('x-middleware-override-headers', overrideList);
+    res.headers.set("x-Dimaka-9", "HERE9");
   } catch (_) {}
   // Temporary diagnostics header: helps verify Middleware hit in prod
-  try { res.headers.set('x-mw-test', 'hit'); } catch (_) {}
+  try { res.headers.set('x-mw-test', 'hit'); res.headers.set("x-Dimaka-9", "HERE9");} catch (_) {}
   return res;
 }
 
 function addAntiClickjackingHeaders(res) {
   res.headers.set("X-Frame-Options", "DENY");
+  res.headers.set("x-Dimaka-7", "HERE7");
+
   const existingCSP = res.headers.get("Content-Security-Policy");
   if (existingCSP) {
     if (!/frame-ancestors\s+'none'/.test(existingCSP)) {
@@ -96,12 +100,16 @@ function addAntiClickjackingHeaders(res) {
       if (!newCSP.endsWith(";") && newCSP.length > 0) newCSP += ";";
       newCSP += " frame-ancestors 'none';";
       res.headers.set("Content-Security-Policy", newCSP);
+      res.headers.set("x-Dimaka-8", "HERE8");
+
     }
   } else {
     res.headers.set(
       "Content-Security-Policy",
       "frame-ancestors 'none';"
     );
+    res.headers.set("x-Dimaka-9", "HERE9");
+
   }
 }
 
@@ -164,9 +172,9 @@ function applyCsp(res, nonce, request) {
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
 export const config = {
-  // Match root and all non-static, non-Next internals
   matcher: [
     '/',
+    '/(en|lt)/:path*',
     '/((?!api/|_next/|_next\\.|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)',
   ],
 };
