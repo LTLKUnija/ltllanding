@@ -51,28 +51,27 @@ export function middleware(request) {
     return res;
   }
 
-  // Compose CSP value and set override request headers to ensure application even on cached HTML
-  const csp = buildCsp(nonce, request);
-  const reqHeaders = new Headers(request.headers);
-  try {
-    reqHeaders.set('x-csp-nonce', nonce);
-    reqHeaders.set('x-middleware-cache', 'no-cache');
-    reqHeaders.set('x-middleware-override-headers', 'content-security-policy,x-csp-nonce,x-frame-options,x-mw-test');
-    reqHeaders.set('x-middleware-override-headers-content-security-policy', csp);
-    reqHeaders.set('x-middleware-override-headers-x-csp-nonce', nonce);
-    reqHeaders.set('x-middleware-override-headers-x-frame-options', 'DENY');
-    reqHeaders.set('x-middleware-override-headers-x-mw-test', 'hit');
-  } catch (_) {}
-
-  const res = NextResponse.next({ request: { headers: reqHeaders } });
-
-  // Also set response headers (effective for SSR/non-cached)
+  // For all non-API routes: continue; attach CSP only for HTML documents.
+  const res = NextResponse.next({
+    request: {
+      headers: new Headers({ ...Object.fromEntries(request.headers), "x-csp-nonce": nonce }),
+    },
+  });
+  // Ensure headers from Middleware are not bypassed on CDN cache hits
+  try { res.headers.set('x-middleware-cache', 'no-cache'); } catch (_) {}
   addAntiClickjackingHeaders(res);
-  try { res.headers.delete('Content-Security-Policy'); } catch (_) {}
-  try { res.headers.set('Content-Security-Policy', csp); } catch (_) {}
-  try { res.headers.set('x-csp-nonce', nonce); } catch (_) {}
-  try { res.cookies.set('csp-nonce', nonce, { path: '/', httpOnly: false, sameSite: 'strict', secure: true }); } catch (_) {}
-
+  // Apply CSP for all matched non-API routes to avoid missing headers when clients omit Accept or send */*
+  applyCsp(res, nonce, request);
+  try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
+  // Ensure our headers override any cached/static response headers
+  try {
+    const overrideList = [
+      'content-security-policy',
+      'x-csp-nonce',
+      'x-frame-options',
+    ].join(',');
+    res.headers.set('x-middleware-override-headers', overrideList);
+  } catch (_) {}
   // Temporary diagnostics header: helps verify Middleware hit in prod
   try { res.headers.set('x-mw-test', 'hit'); } catch (_) {}
   return res;
@@ -97,7 +96,6 @@ function addAntiClickjackingHeaders(res) {
 }
 
 function applyCsp(res, nonce, request) {
-  // Deprecated for override flow. Left for compatibility where response headers are respected.
   const hostname = request?.nextUrl?.hostname || (request?.headers?.get?.("host") || "").split(":")[0];
   const normalizedHost = (hostname || "").toLowerCase();
   const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(normalizedHost) || normalizedHost.endsWith(".localhost") || normalizedHost.endsWith(".local");
@@ -150,53 +148,6 @@ function applyCsp(res, nonce, request) {
   res.headers.set("Cache-Control", "no-store, must-revalidate");
   res.headers.set("Vercel-CDN-Cache-Control", "no-store");
   res.headers.set("x-csp-nonce", nonce);
-}
-
-function buildCsp(nonce, request) {
-  const hostname = request?.nextUrl?.hostname || (request?.headers?.get?.("host") || "").split(":")[0];
-  const normalizedHost = (hostname || "").toLowerCase();
-  const isLocalHost = ["localhost", "127.0.0.1", "::1"].includes(normalizedHost) || normalizedHost.endsWith(".localhost") || normalizedHost.endsWith(".local");
-  const isDevEnv = process.env.NODE_ENV !== "production";
-  const isDev = isDevEnv || isLocalHost;
-  const scriptSrc = [
-    "'self'",
-    `'nonce-${nonce}'`,
-    ...(isDev ? ["'unsafe-eval'"] : []),
-    "https://www.googletagmanager.com",
-    "https://www.google-analytics.com",
-    "https://maps.googleapis.com",
-    "https://www.google.com",
-    "https://cdn-cookieyes.com",
-    "https://www.gstatic.com",
-    "https://firestore.googleapis.com",
-    "https://www.gstatic.com/firebasejs",
-    "https://maps.googleapis.com",
-    "https://maps.gstatic.com",
-    "https://www.google.com/recaptcha/",
-    "https://www.gstatic.com/recaptcha/",
-  ].join(" ");
-  const directives = [
-    "default-src 'self'",
-    "base-uri 'self'",
-    "form-action 'self'",
-    `script-src ${scriptSrc}`,
-    `script-src-elem ${scriptSrc}`,
-    `style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
-    `style-src-elem 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
-    `style-src-attr 'unsafe-inline'`,
-    "font-src 'self' https://fonts.gstatic.com",
-    "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
-    "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com https://images.ctfassets.net https://storage.googleapis.com",
-    "frame-src 'self' https://www.google.com",
-    "manifest-src 'self'",
-    "media-src 'self'",
-    "child-src 'none'",
-    "object-src 'none'",
-    "frame-ancestors 'none'",
-    "worker-src 'self' blob:",
-    "upgrade-insecure-requests",
-  ];
-  return directives.join('; ');
 }
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
