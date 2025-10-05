@@ -50,6 +50,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+          <script nonce={nonce} dangerouslySetInnerHTML={{ __html: 'console.log("Secure")' }} />
           {/* Expose nonce to runtime so dynamically created scripts get nonced */}
           <script
             nonce={nonce}
