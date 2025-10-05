@@ -20,62 +20,50 @@ export function middleware(request) {
   const url = request.nextUrl.clone();
   const { pathname } = request.nextUrl;
   const origin = request.headers.get("origin") || "";
-  const nonce = generateNonce(16);
+  const nonce = generateNonce();
 
-  const isApi = pathname.startsWith("/api/");
-  if (isApi) {
-    if (request.method === "OPTIONS") {
-      const res = new NextResponse(null, { status: 204 });
-      if (ALLOWED_ORIGINS.has(origin)) {
-        res.headers.set("Access-Control-Allow-Origin", origin);
-        res.headers.set("Vary", "Origin");
-        res.headers.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
-        res.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
-        res.headers.set("Access-Control-Max-Age", "600");
-        res.headers.set("x-Dimaka-1", "HERE1");
-        // res.headers.set("Access-Control-Allow-Credentials", "true"); // only if needed
-      }
-      res.headers.set("x-csp-nonce", nonce);
-      res.headers.set("x-Dimaka-2", "HERE2");
-
-      return res;
-    }
-    // For non-OPTIONS API requests: pass through but add CORS headers when origin is allowed
-    const res = NextResponse.next({
-      request: {
-        headers: new Headers({ ...Object.fromEntries(request.headers), "x-csp-nonce": nonce }),
-      },
-    });
+  if (request.method === "OPTIONS") {
+    const res = new NextResponse(null, { status: 204 });
     if (ALLOWED_ORIGINS.has(origin)) {
       res.headers.set("Access-Control-Allow-Origin", origin);
       res.headers.set("Vary", "Origin");
       res.headers.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
       res.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
       res.headers.set("Access-Control-Max-Age", "600");
-      res.headers.set("x-Dimaka-3", "HERE3");
-
       // res.headers.set("Access-Control-Allow-Credentials", "true"); // only if needed
     }
     res.headers.set("x-csp-nonce", nonce);
-    res.headers.set("x-Dimaka-4", "HERE4");
-
     return res;
   }
 
-  // For all non-API routes: continue; attach CSP only for HTML documents.
   const res = NextResponse.next({
     request: {
       headers: new Headers({ ...Object.fromEntries(request.headers), "x-csp-nonce": nonce }),
     },
   });
-  // Ensure headers from Middleware are not bypassed on CDN cache hits
-    
-  try { res.headers.set('x-middleware-cache', 'no-cache'); res.headers.set("x-Dimaka-9", "HERE9");} catch (_) {}
+
+  if (ALLOWED_ORIGINS.has(origin)) {
+    res.headers.set("Access-Control-Allow-Origin", origin);
+    res.headers.set("Vary", "Origin");
+    res.headers.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+    res.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
+    res.headers.set("Access-Control-Max-Age", "600");
+    // res.headers.set("Access-Control-Allow-Credentials", "true"); // only if needed
+  }
+
+  res.headers.set("x-csp-nonce", nonce);
+
+  try {
+    res.headers.set('x-middleware-cache', 'no-cache');
+  } catch (_) {}
+
   addAntiClickjackingHeaders(res);
-  // Apply CSP for all matched non-API routes to avoid missing headers when clients omit Accept or send */*
   applyCsp(res, nonce, request);
-  try { res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true }); } catch (_) {}
-  // Ensure our headers override any cached/static response headers
+
+  try {
+    res.cookies.set("csp-nonce", nonce, { path: "/", httpOnly: false, sameSite: "strict", secure: true });
+  } catch (_) {}
+
   try {
     const overrideList = [
       'content-security-policy',
@@ -83,16 +71,17 @@ export function middleware(request) {
       'x-frame-options',
     ].join(',');
     res.headers.set('x-middleware-override-headers', overrideList);
-    res.headers.set("x-Dimaka-9", "HERE9");
   } catch (_) {}
-  // Temporary diagnostics header: helps verify Middleware hit in prod
-  try { res.headers.set('x-mw-test', 'hit'); res.headers.set("x-Dimaka-9", "HERE9");} catch (_) {}
+
+  try {
+    res.headers.set('x-mw-test', 'hit');
+  } catch (_) {}
+
   return res;
 }
 
 function addAntiClickjackingHeaders(res) {
   res.headers.set("X-Frame-Options", "DENY");
-  res.headers.set("x-Dimaka-7", "HERE7");
 
   const existingCSP = res.headers.get("Content-Security-Policy");
   if (existingCSP) {
@@ -101,16 +90,12 @@ function addAntiClickjackingHeaders(res) {
       if (!newCSP.endsWith(";") && newCSP.length > 0) newCSP += ";";
       newCSP += " frame-ancestors 'none';";
       res.headers.set("Content-Security-Policy", newCSP);
-      res.headers.set("x-Dimaka-8", "HERE8");
-
     }
   } else {
     res.headers.set(
       "Content-Security-Policy",
       "frame-ancestors 'none';"
     );
-    res.headers.set("x-Dimaka-9", "HERE9");
-
   }
 }
 
@@ -123,8 +108,6 @@ function applyCsp(res, nonce, request) {
   const scriptSrc = [
     "'self'",
     `'nonce-${nonce}'`,
-    // 'strict-dynamic', // removed due to use of nonce
-    // 'unsafe-inline',  // removed for CSP hardening; nonce is used instead
     ...(isDev ? ["'unsafe-eval'"] : []),
     "https://www.googletagmanager.com",
     "https://www.google-analytics.com",
@@ -144,9 +127,7 @@ function applyCsp(res, nonce, request) {
     "base-uri 'self'",
     "form-action 'self'",
     `script-src ${scriptSrc}`,
-    // Mirror for browsers that separate element vs attr contexts
     `script-src-elem ${scriptSrc}`,
-    // Allow style elements with nonce; keep attributes handled separately
     `style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
     `style-src-elem 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
     `style-src-attr 'unsafe-inline'`,
@@ -167,9 +148,7 @@ function applyCsp(res, nonce, request) {
   res.headers.set("Cache-Control", "no-store, must-revalidate");
   res.headers.set("Vercel-CDN-Cache-Control", "no-store");
   res.headers.set("x-csp-nonce", nonce);
-  res.headers.set("x-Dimaka5", "HERE5");
-
-}
+} 
 
 // Ensure middleware runs on all routes, including localized and root ones
 export const config = {
