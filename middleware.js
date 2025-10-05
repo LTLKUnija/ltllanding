@@ -13,6 +13,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 export const dynamic = 'force-dynamic';
+export const fetchCache = 'force-no-store';
 export const revalidate = 0;
 
 export function middleware(request) {
@@ -170,11 +171,7 @@ function applyCsp(res, nonce, request) {
 
 }
 
-// Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
+// Ensure middleware runs on all routes, including localized and root ones
 export const config = {
-  matcher: [
-    '/',
-    '/(en|lt)/:path*',
-    '/((?!api/|_next/|_next\\.|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)',
-  ],
+  matcher: '/:path*',
 };
