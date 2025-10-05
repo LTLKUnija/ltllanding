@@ -11,6 +11,12 @@ const nextConfig = {
   },
   async headers() {
     return [
+      {
+        source: "/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "no-store, must-revalidate" },
+        ],
+      },
       // Harden CSP for static assets to satisfy scanners without affecting HTML
       {
         source: "/_next/static/:path*",
@@ -154,6 +160,9 @@ const nextConfig = {
         ],
       },
     ];
+  },
+  experimental: {
+    dynamicIO: true,
   },
 };
 
