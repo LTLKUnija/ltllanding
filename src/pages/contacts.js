@@ -5,6 +5,7 @@ import Gmap from "@/components/Gmap";
 import { useJsApiLoader } from "@react-google-maps/api";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import Link from "next/link";
 
 export default function Contacts() {
@@ -87,7 +88,8 @@ export default function Contacts() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

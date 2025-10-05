@@ -5,6 +5,7 @@ import Link from "next/link";
 import { tncLinks } from "@/common/tnclinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 
 export default function TemrsAndConditions() {
   const { t } = useTranslation("common");
@@ -91,7 +92,8 @@ export default function TemrsAndConditions() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

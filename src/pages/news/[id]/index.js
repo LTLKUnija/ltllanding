@@ -5,6 +5,7 @@ import { formatText } from "@/utils/helpers";
 import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import { getNewsList } from "@/common/dataGetters";
 import { useSelector } from "react-redux";
 import { getNewsState } from "@/store/news/news.slice";
@@ -75,21 +76,8 @@ export default function NewsPage() {
   );
 }
 
-export async function getStaticPaths() {
-  const news = await getNewsList();
-  const paths = [];
-  news.forEach((n) => {
-    n.news.forEach((newsItem, i) => {
-      paths.push(`/news/${n.id}-${i}`);
-    });
-  });
-  return {
-    paths,
-    fallback: true,
-  };
-}
-
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

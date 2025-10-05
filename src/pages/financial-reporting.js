@@ -9,6 +9,7 @@ import { finacialReportingInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import { presentationsLinksData } from "@/common/presentationsLinks";
 import { FactSheetsData } from "@/components/FactSheetsData";
 import { useRouter } from "next/router";
@@ -184,7 +185,8 @@ export default function FinancialReporting() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

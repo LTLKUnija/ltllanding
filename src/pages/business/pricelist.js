@@ -7,6 +7,7 @@ import PriceListPrivate from "@/components/PriceListPrivate";
 import PriceListBusiness from "@/components/PriceListBusiness";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import { useSelector } from "react-redux";
 import { getLoanForBusiness } from "@/store/faqList/faqList.slice";
 
@@ -51,7 +52,8 @@ export default function PriceListPage() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

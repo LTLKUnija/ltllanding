@@ -6,6 +6,7 @@ import HeroMobile from "../../../public/assets/images/currentAccount_Hero_mobile
 import BackBtn from "../../../public/assets/images/backBtn.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import LoanApplicationForm from "@/components/LoanApplicationForm";
@@ -119,7 +120,8 @@ export default function Payments() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

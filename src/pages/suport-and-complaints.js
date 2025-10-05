@@ -4,6 +4,7 @@ import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 
 export default function SuportAndComplaints() {
   const { t } = useTranslation("common");
@@ -111,7 +112,8 @@ export default function SuportAndComplaints() {
   );
 }
 
-export async function getServerSideProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

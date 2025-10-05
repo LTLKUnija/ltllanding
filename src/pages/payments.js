@@ -2,6 +2,7 @@ import styles from "@/styles/payments.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import Image from "next/image";
 import HeroMobile from "../../public/assets/images/product_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
@@ -99,7 +100,8 @@ export default function Payments() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

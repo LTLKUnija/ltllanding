@@ -11,6 +11,7 @@ import { consumerLoanInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import ClientSupportLoanPrivate from "@/components/ClientSupportLoanPrivate";
 import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
@@ -142,7 +143,8 @@ export default function Mortgage() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

@@ -6,6 +6,7 @@ import Image from "next/image";
 import LicenceImg from "@../../../public/assets/images/Licence.png";
 import LicenceImgEn from "@../../../public/assets/images/LicenceEn.png";
 import { useRouter } from "next/router";
+import { applyPageCspHeaders } from "@/lib/csp";
 
 export default function Licence() {
   const { t } = useTranslation("common");
@@ -44,7 +45,8 @@ export default function Licence() {
   );
 }
 
-export async function getServerSideProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

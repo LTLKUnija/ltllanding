@@ -1,4 +1,3 @@
-import crypto from "crypto";
 import { createClient } from "contentful";
 import IndexLayout from "@/Layouts/IndexLayout";
 import SimpleSlider from "@/components/IndexHeroSlider";
@@ -8,6 +7,7 @@ import styles from "@/styles/Home.module.scss";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import LoanApplicationForm from "@/components/LoanApplicationForm";
+import { applyPageCspHeaders } from "@/lib/csp";
 
 
 export default function Home({ landingArticles }) {
@@ -110,6 +110,7 @@ export default function Home({ landingArticles }) {
 }
 
 export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
     accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_API,
@@ -120,31 +121,9 @@ export async function getServerSideProps({ locale, res }) {
     locale: locale === "lt" ? "lt-LT" : "en-US",
   });
 
-  const nonce = crypto.randomUUID().replace(/-/g, "");
-
-  res.setHeader(
-    "Content-Security-Policy",
-    [
-      "default-src 'self'",
-      "base-uri 'self'",
-      "form-action 'self'",
-      `script-src 'self' 'nonce-${nonce}' https://www.googletagmanager.com https://www.google-analytics.com https://cdn-cookieyes.com https://www.gstatic.com https://www.google.com https://firestore.googleapis.com`,
-      `style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
-      "font-src 'self' https://fonts.gstatic.com",
-      "img-src 'self' data:",
-      "connect-src 'self' https://firestore.googleapis.com",
-      "object-src 'none'",
-      "frame-ancestors 'none'",
-      "upgrade-insecure-requests",
-    ].join("; ")
-  );
-
-  res.setHeader("x-csp-nonce", nonce);
-
   return {
     props: {
       landingArticles: resData.items.reverse(),
-      nonce,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };

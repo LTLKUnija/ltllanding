@@ -4,6 +4,7 @@ import Link from "next/link";
 import { privacyLinks } from "@/common/privacyLinks";
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { applyPageCspHeaders } from "@/lib/csp";
 
 export default function PrivacyPolicy() {
   const {t} = useTranslation('common');
@@ -39,7 +40,8 @@ export default function PrivacyPolicy() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, [

@@ -6,6 +6,7 @@ import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import ArticleImg1 from "@../../../public/assets/images/article1.png";
 import ArticleImg2 from "@../../../public/assets/images/article2.png";
 import ArticleImg3 from "@../../../public/assets/images/article3.png";
@@ -101,7 +102,8 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

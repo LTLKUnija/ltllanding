@@ -2,6 +2,7 @@ import styles from "@/styles/money-loundrying.module.scss";
 import IndexLayout from "@/Layouts/IndexLayout";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import { useRouter } from "next/router";
 import HeroMobile from "../../public/assets/images/moneyLoundryingPage_heroBlock_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
@@ -73,7 +74,8 @@ export default function MoneyLoundrying() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

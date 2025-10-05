@@ -6,6 +6,7 @@ import Accordion from "@/components/Accordion";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import { useSelector } from "react-redux";
 import { getLoanForPrivatesState } from "@/store/faqList/faqList.slice";
 
@@ -193,7 +194,8 @@ export default function Credits() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

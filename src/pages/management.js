@@ -10,6 +10,7 @@ import { aboutUsInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 export default function About() {
   const router = useRouter();
   const { t } = useTranslation("common");
@@ -241,7 +242,8 @@ export default function About() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

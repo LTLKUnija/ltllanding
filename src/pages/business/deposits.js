@@ -14,6 +14,7 @@ import { businessTermDepositInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getDepositFAQ } from "@/store/faqList/faqList.slice";
@@ -289,7 +290,8 @@ export default function Deposit() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

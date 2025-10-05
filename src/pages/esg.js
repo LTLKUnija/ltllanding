@@ -12,6 +12,7 @@ import { esgInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import FinancialReporting from "../components/FinacialReportsData";
 
 export default function Esg() {
@@ -166,7 +167,8 @@ export default function Esg() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

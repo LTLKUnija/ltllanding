@@ -3,6 +3,7 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import HeroMobile from "../../public/assets/images/operBankingPage_HeroBlock_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
 import { useRouter } from "next/router";
@@ -81,7 +82,8 @@ export default function OpenBanking() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),

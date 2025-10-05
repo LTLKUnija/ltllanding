@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { previewTextMaker } from "../../utils/helpers";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { applyPageCspHeaders } from "@/lib/csp";
 import { useSelector } from "react-redux";
 import { getNewsState } from "@/store/news/news.slice";
 import { yearsLinksVocabData } from "@/common/Constantas";
@@ -120,7 +121,8 @@ export default function News() {
   );
 }
 
-export async function getServerSideProps({ locale }) {
+export async function getServerSideProps({ locale, res }) {
+  applyPageCspHeaders(res);
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),
