@@ -24,5 +24,5 @@ const App = ({ Component, pageProps }) => {
     </Provider>
   );
 };
-
+export const dynamic = 'force-dynamic';
 export default appWithTranslation(App);
