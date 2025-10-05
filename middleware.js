@@ -145,14 +145,18 @@ function applyCsp(res, nonce, request) {
   ];
   try { res.headers.delete("Content-Security-Policy"); } catch (_) {}
   res.headers.set("Content-Security-Policy", directives.join("; "));
+  res.headers.set("Cache-Control", "no-store, must-revalidate");
+  res.headers.set("Vercel-CDN-Cache-Control", "no-store");
   res.headers.set("x-csp-nonce", nonce);
 }
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
 export const config = {
-  // Match all paths except Next internals and common static assets
-  matcher: [
-    "/", // ensure root path is processed by middleware
-    "/((?!_next/|_next\\.|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)",
-  ],
+  matcher: [{
+    source: '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    missing: [
+      { type: 'header', key: 'next-router-prefetch' },
+      { type: 'header', key: 'purpose', value: 'prefetch' },
+    ],
+  }],
 };
