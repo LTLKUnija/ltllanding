@@ -152,11 +152,9 @@ function applyCsp(res, nonce, request) {
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals
 export const config = {
-  matcher: [{
-    source: '/((?!api|_next/static|_next/image|favicon.ico).*)',
-    missing: [
-      { type: 'header', key: 'next-router-prefetch' },
-      { type: 'header', key: 'purpose', value: 'prefetch' },
-    ],
-  }],
+  // Match root and all non-static, non-Next internals
+  matcher: [
+    '/',
+    '/((?!api/|_next/|_next\\.|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|ico|webmanifest|json|xml|txt|map)).*)',
+  ],
 };
