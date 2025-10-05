@@ -12,6 +12,9 @@ const ALLOWED_ORIGINS = new Set([
   "https://www.ltlku.lt",
 ]);
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export function middleware(request) {
   const url = request.nextUrl.clone();
   const { pathname } = request.nextUrl;
@@ -155,7 +158,7 @@ function applyCsp(res, nonce, request) {
   res.headers.set("Cache-Control", "no-store, must-revalidate");
   res.headers.set("Vercel-CDN-Cache-Control", "no-store");
   res.headers.set("x-csp-nonce", nonce);
-  res.headers.set("X-Dimaka5", "HERE5");
+  res.headers.set("x-Dimaka5", "HERE5");
 
 }
 
