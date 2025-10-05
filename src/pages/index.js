@@ -7,7 +7,6 @@ import styles from "@/styles/Home.module.scss";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import LoanApplicationForm from "@/components/LoanApplicationForm";
-import { headers } from "next/headers";
 
 
 export default function Home({ landingArticles }) {
