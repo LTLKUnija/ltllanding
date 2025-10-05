@@ -28,9 +28,12 @@ export function middleware(request) {
         res.headers.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
         res.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
         res.headers.set("Access-Control-Max-Age", "600");
+        res.headers.set("x-Dimaka-1", "HERE1");
         // res.headers.set("Access-Control-Allow-Credentials", "true"); // only if needed
       }
       res.headers.set("x-csp-nonce", nonce);
+      res.headers.set("x-Dimaka-2", "HERE2");
+
       return res;
     }
     // For non-OPTIONS API requests: pass through but add CORS headers when origin is allowed
@@ -45,9 +48,13 @@ export function middleware(request) {
       res.headers.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
       res.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization");
       res.headers.set("Access-Control-Max-Age", "600");
+      res.headers.set("x-Dimaka-3", "HERE3");
+
       // res.headers.set("Access-Control-Allow-Credentials", "true"); // only if needed
     }
     res.headers.set("x-csp-nonce", nonce);
+    res.headers.set("x-Dimaka-4", "HERE4");
+
     return res;
   }
 
@@ -148,6 +155,8 @@ function applyCsp(res, nonce, request) {
   res.headers.set("Cache-Control", "no-store, must-revalidate");
   res.headers.set("Vercel-CDN-Cache-Control", "no-store");
   res.headers.set("x-csp-nonce", nonce);
+  res.headers.set("X-Dimaka5", "HERE5");
+
 }
 
 // Ensure middleware runs on HTML routes and skips obvious static assets and Next internals

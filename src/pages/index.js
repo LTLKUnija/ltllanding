@@ -10,8 +10,7 @@ import LoanApplicationForm from "@/components/LoanApplicationForm";
 import { headers } from "next/headers";
 
 
-export default async function Home({ landingArticles }) {
-  await headers();
+export default function Home({ landingArticles }) {
   const { t } = useTranslation("common");
   console.log("HERE WE ARE")
 
