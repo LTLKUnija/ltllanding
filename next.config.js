@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     domains: ["images.ctfassets.net", "storage.googleapis.com"],
   },
+  experimental: {
+    runtime: 'nodejs',
+  },
   async headers() {
     return [
       {
