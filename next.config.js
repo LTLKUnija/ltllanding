@@ -149,7 +149,7 @@ const nextConfig = {
       // Some scanners request a mis-encoded path where the value of the image URL is placed into the pathname
       // e.g. "/%2F_next%2Fstatic%2Fmedia%2F...&w=640&q=75". Provide a strict CSP for those requests too.
       {
-        source: "/%2F_next%2Fstatic/:path*",
+        source: "/%2F_next%2Fstatic/(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
@@ -159,7 +159,7 @@ const nextConfig = {
         ],
       },
       {
-        source: "/:locale/%2F_next%2Fstatic/:path*",
+        source: "/:locale/%2F_next%2Fstatic/(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
@@ -234,6 +234,21 @@ const nextConfig = {
           { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
           { key: "Access-Control-Allow-Origin", value: "https://www.ltlku.lt" },
           { key: "Vary", value: "Origin" },
+        ],
+      },
+      // Consolidated regex-style catch-all for encoded assets and encoded absolute URLs
+      // Matches:
+      //  - /%2F_next%2F(static|image|data)/...
+      //  - /.../%2F_next%2F(static|image|data)/...
+      //  - /https%3A%2F%2F... and /http%3A%2F%2F...
+      {
+        source: "/(.*)(?:%2F_next%2F(?:static|image|data)/.*|https%3A%2F%2F.*|http%3A%2F%2F.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; script-src 'none'; style-src 'none'; img-src 'self' data:; font-src 'none'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'",
+          },
         ],
       },
       {
