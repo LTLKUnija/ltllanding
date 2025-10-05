@@ -22,6 +22,14 @@ class MyDocument extends Document {
             <link nonce={nonce} rel="preconnect" href="https://fonts.googleapis.com" />
             <link nonce={nonce} rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
             <link nonce={nonce} href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+            {/* CookieYes consent banner */}
+            <script
+              nonce={nonce}
+              id="cookieyes"
+              type="text/javascript"
+              src="https://cdn-cookieyes.com/client_data/33918b941881a09fff1a403a/script.js"
+              async
+            />
             {/* Google Analytics with nonce */}
             <script
               nonce={nonce}

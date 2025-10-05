@@ -105,6 +105,13 @@ const nextConfig = {
         ],
       },
       {
+        source: "/cdn-cookieyes.com/:path*",
+        headers: [
+          { key: "Access-Control-Allow-Origin", value: "https://www.ltlku.lt" },
+          { key: "Vary", value: "Origin" },
+        ],
+      },
+      {
         source: "/:path*",
         headers: [
           { key: "Cache-Control", value: "no-store, must-revalidate" },
