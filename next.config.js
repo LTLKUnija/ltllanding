@@ -53,7 +53,7 @@ const nextConfig = {
       },
       // Catch mis-encoded static paths that scanners sometimes request
       {
-        source: "/:prefix*/%2F_next%2Fstatic/:path*",
+        source: "/:prefix*/%2F_next%2Fstatic/(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
@@ -64,7 +64,7 @@ const nextConfig = {
       },
       // Catch encoded absolute URLs embedded into the path (http)
       {
-        source: "/http%3A%2F%2F:path*",
+        source: "/http%3A%2F%2F(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
@@ -75,7 +75,7 @@ const nextConfig = {
       },
       // Catch encoded absolute URLs embedded after another path segment
       {
-        source: "/:prefix*/http%3A%2F%2F:path*",
+        source: "/:prefix*/http%3A%2F%2F(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
@@ -86,7 +86,7 @@ const nextConfig = {
       },
       // Same for https encoded
       {
-        source: "/https%3A%2F%2F:path*",
+        source: "/https%3A%2F%2F(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
@@ -96,7 +96,7 @@ const nextConfig = {
         ],
       },
       {
-        source: "/:prefix*/https%3A%2F%2F:path*",
+        source: "/:prefix*/https%3A%2F%2F(.*)",
         headers: [
           {
             key: "Content-Security-Policy",

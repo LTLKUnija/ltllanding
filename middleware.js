@@ -13,9 +13,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 export const dynamic = 'force-dynamic';
-export const fetchCache = 'force-no-store';
 export const revalidate = 0;
-export const runtime = 'nodejs';
 
 export function middleware(request) {
   const url = request.nextUrl.clone();
