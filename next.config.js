@@ -208,6 +208,18 @@ const nextConfig = {
           },
         ],
       },
+      // Generic catch-all for static file extensions anywhere in path
+      // Covers mutated scanner URLs that still end with a file extension
+      {
+        source: "/:rest(.*\\.(?:png|jpe?g|webp|gif|svg|ico|css|js|map|xml|txt|json|webmanifest|woff2?|ttf|otf))",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; script-src 'none'; style-src 'none'; img-src 'self' data:; font-src 'self'; connect-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'",
+          },
+        ],
+      },
       {
         source: "/cdn-cookieyes.com/:path*",
         headers: [
