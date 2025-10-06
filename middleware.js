@@ -21,6 +21,16 @@ export function middleware(request) {
   const origin = request.headers.get("origin") || "";
   const nonce = generateNonce();
 
+  // Handle static file requests to eliminate ZAP CSP Header Not Set warning
+  if (pathname.startsWith('/_next/static/media/')) {
+    const res = NextResponse.next();
+    res.headers.set("Content-Security-Policy", "default-src 'none'; img-src 'self' data:; style-src 'none'; script-src 'none'; object-src 'none';");
+    res.headers.set("Cache-Control", "public, max-age=31536000, immutable");
+    res.headers.set("x-csp-nonce", nonce);
+    addAntiClickjackingHeaders(res);
+    return res;
+  }
+
   if (request.method === "OPTIONS") {
     const res = new NextResponse(null, { status: 204 });
     if (ALLOWED_ORIGINS.has(origin)) {
