@@ -21,7 +21,7 @@ export function applyPageCspHeaders(res) {
       // Images (Contentful, GCS, Maps assets, CookieYes)
       "img-src 'self' data: https://images.ctfassets.net https://storage.googleapis.com https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com",
       // XHR/fetch endpoints
-      "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://region1.google-analytics.com https://maps.googleapis.com https://www.google.com https://cdn-cookieyes.com https://log.cookieyes.com https://submit-form.com https://docs.google.com",
+      "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://region1.google-analytics.com https://maps.googleapis.com https://www.google.com https://cdn-cookieyes.com https://directory.cookieyes.com https://log.cookieyes.com https://submit-form.com https://docs.google.com",
       // Frames (Recaptcha)
       "frame-src 'self' https://www.google.com",
       // Hardening

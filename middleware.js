@@ -141,7 +141,7 @@ function applyCsp(res, nonce, request) {
     `style-src-elem 'self' 'nonce-${nonce}' https://fonts.googleapis.com 'unsafe-inline'`,
     `style-src-attr 'unsafe-inline'`,
     "font-src 'self' https://fonts.gstatic.com",
-    "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
+    "connect-src 'self' https://firestore.googleapis.com https://www.google-analytics.com https://maps.googleapis.com https://region1.google-analytics.com https://www.google.com https://cdn-cookieyes.com https://directory.cookieyes.com https://submit-form.com https://docs.google.com https://log.cookieyes.com",
     "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://cdn-cookieyes.com https://images.ctfassets.net https://storage.googleapis.com",
     "frame-src 'self' https://www.google.com",
     "manifest-src 'self'",
