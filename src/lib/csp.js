@@ -12,8 +12,8 @@ export function applyPageCspHeaders(res) {
       // Some scanners/browsers look at *-elem specifically
       `script-src-elem 'self' 'nonce-${nonce}' https://www.googletagmanager.com https://www.google-analytics.com https://cdn-cookieyes.com https://www.gstatic.com https://www.google.com https://firestore.googleapis.com https://www.gstatic.com/firebasejs https://maps.googleapis.com https://maps.gstatic.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/`,
       // Stylesheets and inline style elements
-      `style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
-      `style-src-elem 'self' 'nonce-${nonce}' https://fonts.googleapis.com`,
+      `style-src 'self' 'nonce-${nonce}' https://fonts.googleapis.com 'unsafe-inline'`,
+      `style-src-elem 'self' 'nonce-${nonce}' https://fonts.googleapis.com 'unsafe-inline'`,
       // Allow style attributes (React inline style attributes, vendor widgets)
       `style-src-attr 'unsafe-inline'`,
       // Fonts
