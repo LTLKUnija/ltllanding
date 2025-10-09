@@ -12,7 +12,6 @@ import { applyPageCspHeaders } from "@/lib/csp";
 
 export default function Home({ landingArticles }) {
   const { t } = useTranslation("common");
-  console.log("HERE WE ARE")
 
   return (
     <>
