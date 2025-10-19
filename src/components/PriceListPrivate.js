@@ -510,7 +510,7 @@ export default function PriceListPrivate() {
               {t("priceList.table.sendingDefaultNotice")}
             </div>
             <div className={styles.priceDescription}>
-              {t("priceList.table.fees.sendingDefaultNoticePrivateFee")}
+              {t("priceList.table.sendingDefaultNoticePrivateFee")}
             </div>
           </li>
           <li className={styles.priceItem}>
