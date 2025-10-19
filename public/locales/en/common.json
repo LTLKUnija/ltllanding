@@ -300,7 +300,7 @@
     "innerLinkBlock": {
       "rates": "Interest rates on term-deposits",
       "private": "Price list for private individuals",
-      "PrivateDate": "Valid from 2025-10-20"        
+      "PrivateDate": "Valid from 2025-10-20",        
       "corporate": "Price list for corporate",
       "corporateDate": "Valid from 2025-09-20"      
     },
