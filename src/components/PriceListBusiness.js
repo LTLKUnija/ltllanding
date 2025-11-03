@@ -74,7 +74,7 @@ export default function PriceListBusiness() {
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
-              {t("priceList.table.otherMonthCurrentYeasr")}
+              {t("priceList.table.otherMonthCurrentYears")}
             </div>
             <div className={styles.priceDescription}>15 EUR</div>
           </li>
@@ -274,7 +274,7 @@ export default function PriceListBusiness() {
           </li>
           <li className={styles.priceItem}>
             <div className={styles.priceDescriptionLeft}>
-              {t("priceList.table.otherMonthCurrentYeasr")}
+              {t("priceList.table.otherMonthCurrentYears")}
             </div>
             <div className={styles.priceDescription}>10 EUR</div>
           </li>
