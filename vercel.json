@@ -10,7 +10,18 @@
       ],
       "destination": "https://forms.gle/2ostd4HNirQbyNLA6",
       "permanent": true
-    }
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "nuotolinis.ltlku.lt"
+        }
+      ],
+      "destination": "https://forms.gle/q7picPpJL6jbDoZS6",
+      "permanent": true
+    },    
   ],
   "headers": [
     {
