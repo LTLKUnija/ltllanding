@@ -17,12 +17,12 @@ export const tncLinks = [
       {
         linkName: "kycPhysical",
         linkUrl:
-          "https://docs.google.com/forms/d/e/1FAIpQLScSSKumnghywSfwchctheYOMPsyr73LKLxFHipV6_e95Npkwg/viewform",
+          "https://anketafiziniai.ltlku.lt",
       },        
       {
         linkName: "kycLegal",
         linkUrl:
-          "https://docs.google.com/forms/d/1g9cuTfoiJwXWZ72hfJp_kwD-wbtr8FPVFFCFr9aq508/viewform",
+          "https://anketajuridiniai.ltlku.lt",
       },    
         {
         linkName: "glossary",
