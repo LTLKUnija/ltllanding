@@ -16,26 +16,49 @@
       "has": [
         {
           "type": "host",
-          "value": "nuotolinis.ltlku.lt"
+          "value": "anketafiziniai.ltlku.lt"
         }
       ],
-      "destination": "https://forms.gle/q7picPpJL6jbDoZS6",
+      "destination": "https://forms.gle/cADzLeXuDn9T3F4L9",
       "permanent": true
-    }  
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "anketajuridiniai.ltlku.lt"
+        }
+      ],
+      "destination": "https://forms.gle/b1rmcLoynhgnCXkF8",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/_next/static/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "https://www.ltlku.lt" },
-        { "key": "Vary", "value": "Origin" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.ltlku.lt"
+        },
+        {
+          "key": "Vary",
+          "value": "Origin"
+        }
       ]
     },
     {
       "source": "/_next/data/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "https://www.ltlku.lt" },
-        { "key": "Vary", "value": "Origin" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.ltlku.lt"
+        },
+        {
+          "key": "Vary",
+          "value": "Origin"
+        }
       ]
     }
   ]
