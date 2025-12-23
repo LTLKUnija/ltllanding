@@ -32,7 +32,18 @@
       ],
       "destination": "https://forms.gle/b1rmcLoynhgnCXkF8",
       "permanent": true
-    }
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "nuotolinis.ltlku.lt"
+        }
+      ],
+      "destination": "https://forms.gle/kBnZaKH8kHMqfhhv9",
+      "permanent": true
+    }    
   ],
   "headers": [
     {
