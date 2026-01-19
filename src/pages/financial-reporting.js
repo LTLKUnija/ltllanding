@@ -54,9 +54,12 @@ export default function FinancialReporting() {
         <section className={styles.innerNavigationSection}>
           <InnerLinks innerLinksData={finacialReportingInnerLinkList} />
         </section>
+{/*   It was askled to hide this block for now. Maybe will be reopened in the future  */}
+{/* 
         <section id="quarterlyReports" className={styles.ReportsSection}>
           <FinancialQuarterReportsData />
         </section>
+*/}        
         <section id="annualReporting" className={styles.presentationsSection}>
           <FinacialReportsData />
         </section>
@@ -68,14 +71,15 @@ export default function FinancialReporting() {
         >
           <FactSheetsData />
         </section>
+{/*   It was askled to hide this block for now. Maybe will be reopened in the future  */}
+{/* 
         <section id="presentations" className={styles.presentationsSection}>
           <div className={styles.presentationsWrapper}>
             <h3 className={styles.sectionTitle}>
               {t("finacialReporting.presentations")}
             </h3>
-            {/* client asked to hide date's, im lieving this for future reference, becus its not final theys desition  */}
-
-            {/* <ul className={[styles.tabsList, styles.center].join(" ")}>
+            
+            <ul className={[styles.tabsList, styles.center].join(" ")}>
               {presentationsList.map((year, idx) => {
                 return (
                   <li
@@ -90,10 +94,12 @@ export default function FinancialReporting() {
                   </li>
                 );
               })}
-            </ul> */}
+            </ul>
+            
             <div className={styles.reporstBlockList}>
               <h2>{t("finacialReporting.innerLinkBlock.noLinksStatus")}</h2>
-              {/* {activePresentationsList.map((link, idx) => {
+              
+              {activePresentationsList.map((link, idx) => {
                 return (
                   <div key={idx} className={styles.reportItem}>
                     <img src="assets/images/Pdficon.svg" alt="Pdf File" />
@@ -106,10 +112,12 @@ export default function FinancialReporting() {
                     </Link>
                   </div>
                 );
-              })} */}
+              })} 
+            
             </div>
           </div>
-        </section>
+        </section> 
+*/}
         <section id="contacts" className={styles.contactsSection}>
           <div className={styles.contactsWrapper}>
             <h3>{t("finacialReporting.contacts.title")}</h3>
@@ -163,6 +171,8 @@ export default function FinancialReporting() {
             </div>
           </div>
         </section>
+{/*   It was askled to hide this block for now. Maybe will be reopened in the future  */}
+{/* 
         <section id="finacialCalendar" className={styles.calendarSection}>
           <div className={styles.calendarWrapper}>
             <h3>{t("finacialReporting.finacialCalendar.title")}</h3>
@@ -180,6 +190,7 @@ export default function FinancialReporting() {
             </div>
           </div>
         </section>
+*/}        
       </main>
     </IndexLayout>
   );

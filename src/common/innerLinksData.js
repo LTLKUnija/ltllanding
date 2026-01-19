@@ -95,10 +95,12 @@ export const aboutUsInnerLinkList = [
 ];
 
 export const finacialReportingInnerLinkList = [
+{/*
   {
     link: "finacialReporting.innerLinkBlock.quarterlyReports",
     id: "#quarterlyReports",
   },
+*/}  
   {
     link: "finacialReporting.innerLinkBlock.annualReporting",
     id: "#annualReporting",
@@ -107,18 +109,22 @@ export const finacialReportingInnerLinkList = [
     link: "finacialReporting.innerLinkBlock.factsheets",
     id: "#factsheets",
   },
+{/*    
   {
     link: "finacialReporting.innerLinkBlock.presentations",
     id: "#presentations",
   },
+*/}    
   {
     link: "finacialReporting.innerLinkBlock.contacts",
     id: "#contacts",
   },
+{/*    
   {
     link: "finacialReporting.innerLinkBlock.finacialCalendar",
     id: "#finacialCalendar",
   },
+*/}
 ];
 
 export const priceListInnerLinkList = [
