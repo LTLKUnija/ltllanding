@@ -13,7 +13,7 @@ export const privacyLinks = [
     {
     linkName: "privacyPolicy",
     linkUrl:
-      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/Privatumo%20politika.pdf",
+      "https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/Privatumo_politika.pdf",
   },
   {
     linkName: "cookiePolicy",
