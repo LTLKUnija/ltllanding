@@ -726,7 +726,7 @@
         "description2": "After successful identity verification, you will be provided with a link to fill out the Customer Due Diligence Questionnaire. When filling out the questionnaire, you must provide the information and documents specified therein."
       },
       "step3": {
-        "title": "Agreement",
+        "title": "Agreements",
         "description": "Sign the Agreements.",
         "description2": "You will be presented with agreements for signing for the Share, Current Account, and Provision of Electronic Services. The agreements must be signed within 5 (five) business days."
       },

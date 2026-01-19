@@ -16,7 +16,7 @@ const Steper = ({ steperData }) => {
           <div className={styles.stepsDescription}>
               {(step.description || step.stepLink || step.restOfDescription) && (
                 <p>
-                  {step.description && t(step.description)}{" "}
+                  {step.description && t(step.description)}
                   {step.stepLink && (
                     <Link
                       href={step.stepLink.href}
@@ -24,7 +24,7 @@ const Steper = ({ steperData }) => {
                     >
                       {t(step.stepLink.label)}
                     </Link>
-                  )}{" "}
+                  )}
                   {step.restOfDescription && t(step.restOfDescription)}
                 </p>
               )}
