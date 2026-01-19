@@ -718,7 +718,7 @@
       },
       "article2": {
         "title": "Unijos paslaugų naudojimas",
-        "text": "Unijos narys pasirašo Pajaus sutartį ir Einamosios sąskaitos arba Riboto naudojimo sąskaitos sutartį. Taip pat gali būti sudaroma Elektroninių paslaugų teikimo sutartis. Sudarius Elektroninių paslaugų teikimo sutartį, Indėlių sutartis ir overdrafto sutartis galima tvarkyti el. bankininkystės sistemoje."
+        "text": "Unijos narys pasirašo Pajaus sutartį ir Einamosios sąskaitos arba Riboto naudojimo sąskaitos sutartį. Taip pat gali būti sudaroma Elektroninių paslaugų teikimo  sutartis. Sudarius Elektroninių paslaugų teikimo sutartį, Indėlių sutartis ir sąskaitos likučio perviršio (overdrafto) sutartis galima tvarkyti el. bankininkystės sistemoje."
       }
     },
     "stepProcess": {
@@ -728,11 +728,11 @@
         "description": "Paspauskite ",
         "link": "nuorodą",
         "restOfDescription": " ir registruokitės nuotoliniam sąskaitos atidarymui bei nuotoliniam asmens tapatybės patvirtinimui.",
-        "description2": "Nuotoliniam tapatybės patvirtinimui turėkite asmens dokumentą (pasą, asmens tapatybės kortelę), mobilųjų telefoną, mobilųjį elektroninį parašą."
+        "description2": "Nuotoliniam tapatybės patvirtinimui turėkite asmens dokumentą (pasą, asmens tapatybės kortelę), mobilųjį telefoną, mobilųjį elektroninį parašą."
       },
       "step2": {
         "title": "Duomenys",
-        "description": "Pateikite duomenis dalykinių santykių užmezgimo vertnimui.",
+        "description": "Pateikite duomenis dalykinių santykių užmezgimo vertinimui.",
         "description2": "Po sėkmingo tapatybės patvirtinimo Jums bus pateikta nuoroda Kliento pažinimo anketos pildymui. Anketos pildymo metu reikia pateikti joje nurodytus duomenis ir dokumentus."
       },
       "step3": {
