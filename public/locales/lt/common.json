@@ -697,6 +697,67 @@
     },
     "faq": "D.U.K."
   },
+  "openAccount": {
+    "pageTitle": "Nebereikia būti dideliam, kad būtumėte pasaulinio masto",
+    "heroBlock": {
+      "description": "Atsidarykite pas mus IBAN sąskaitą, atlikite ir gaukite mokėjimus iš visos euro zonos.",
+      "bullet1": "24/7 internetinė bankininkystė jūsų paslaugoms",
+      "bullet2": "Lengvai siųskite ir gaukite savo lėšas",
+      "bullet3": "Apsaugokite paskyrą naudodami pažangias saugos funkcijas"
+    },
+    "innerLinkBlock": {
+      "info": "Bendra informacija",
+      "steps": "Procesas",
+      "clientSupport": "Pagalba klientams",
+      "faq": "D.U.K."
+    },
+    "articleBlock": {
+      "article1": {
+        "title": "Sąskaitos atidarymas",
+        "text": "Sąskaita atidaroma LTL Kredito unijos nariams sumokėjusiems nustatyto dydžio pajinį įnašą ir pateikus Unijos nustatytos formos dokumentus. Sąskaita gali būti atidaroma nuotoliniu būdu arba atvykus į unijos padalinį."
+      },
+      "article2": {
+        "title": "Unijos paslaugų naudojimas",
+        "text": "Unijos narys pasirašo Pajaus sutartį ir Einamosios sąskaitos arba Riboto naudojimo sąskaitos sutartį. Taip pat gali būti sudaroma Elektroninių paslaugų teikimo sutartis. Sudarius Elektroninių paslaugų teikimo sutartį, Indėlių sutartis ir overdrafto sutartis galima tvarkyti el. bankininkystės sistemoje."
+      }
+    },
+    "stepProcess": {
+      "blockTitle": "Nuotolinis sąskaitos atidarymas",
+      "step1": {
+        "title": "Registracija",
+        "description": "Paspauskite ",
+        "link": "nuorodą",
+        "restOfDescription": " ir registruokitės nuotoliniam sąskaitos atidarymui bei nuotoliniam asmens tapatybės patvirtinimui.",
+        "description2": "Nuotoliniam tapatybės patvirtinimui turėkite asmens dokumentą (pasą, asmens tapatybės kortelę), mobilųjų telefoną, mobilųjį elektroninį parašą."
+      },
+      "step2": {
+        "title": "Duomenys",
+        "description": "Pateikite duomenis dalykinių santykių užmezgimo vertnimui.",
+        "description2": "Po sėkmingo tapatybės patvirtinimo Jums bus pateikta nuoroda Kliento pažinimo anketos pildymui. Anketos pildymo metu reikia pateikti joje nurodytus duomenis ir dokumentus."
+      },
+      "step3": {
+        "title": "Sutartis",
+        "description": "Pasirašykite sutartis.",
+        "description2": "Jums bus pateiktos pasirašyti Pajaus, Einamosios sąskaitos bei Elektroninių paslaugų teikimo  sutartys. Sutartis būtina pasirašyti ne vėliau kaip per 5 (penkias) darbo dienas."
+      },
+      "step4": {
+        "title": "Apmokėjimas ir paslaugų aktyvavimas",
+        "description": "Sumokėkite pajų, nurodytą Pajaus sutartyje, ir naudokitės LTL Kredito unijos paslaugomis.",
+        "description2": "Unijos paslaugų teikimas bus aktyvuotas Jums pasirašius aukščiau nurodytas sutartis ir pervedus pajų."
+      }
+    },
+    "clientSuport": {
+      "title": "Klientų aptarnavimas",
+      "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
+    },
+    "faq": "D.U.K."
+  },
+    "clientSuport": {
+      "title": "Klientų aptarnavimas",
+      "description": "Jeigu reikia mūsų pagalbos atidarant sąskaitą, atliekant mokėjimo operacijas ar kitais sąskaitos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
+    },
+    "faq": "D.U.K."
+  },  
   "consumerLoan": {
     "heroBlock": {
       "title": "Nebereikia būti dideliam, kad gautumėte paskolą",

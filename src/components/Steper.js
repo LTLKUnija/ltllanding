@@ -14,13 +14,17 @@ const Steper = ({ steperData }) => {
         <div className={styles.stepsText}>
           <h2 className={styles.stepsTitle}>{t(step.title)}</h2>
           <div className={styles.stepsDescription}>
-            {t(step.description)}
-            {step.showStepLink && (
-              <Link href="/contacts" className="showStepLink">
-                {t("headerNavLinks.office")}
+            {step.description && <p>{t(step.description)}</p>}
+            {step.description2 && <p>{t(step.description2)}</p>}
+            {(step.stepLink || step.showStepLink) && (
+              <Link
+                href={step.stepLink?.href ?? "/contacts"}
+                className="showStepLink"
+              >
+                {t(step.stepLink?.label ?? "headerNavLinks.office")}
               </Link>
             )}
-            {t(step.restOfDescription)}
+            {step.restOfDescription && <p>{t(step.restOfDescription)}</p>}
             {step.bulletBlock && (
               <ul>
                 {step.bulletBlock?.map((bullet, idx) => {

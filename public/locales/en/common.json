@@ -687,6 +687,61 @@
     },
     "faq": "F.A.Q."
   },
+  "openAccount": {
+    "pageTitle": "You don’t have to be big to be international",
+    "heroBlock": {
+      "description": "Open an IBAN account with us, make and receive payments from all over the Euro area.",
+      "bullet1": "Bank on the go with our 24/7 online banking services",
+      "bullet2": "Move your inbound and outbound funds effortlessly",
+      "bullet3": "Keep your account secure with advances security features"
+    },
+    "innerLinkBlock": {
+      "info": "Information",
+      "steps": "Process",
+      "clientSupport": "Client Support",
+      "faq": "F.A.Q."
+    },
+    "articleBlock": {
+      "article1": {
+        "title": "Opening an account",
+        "text": "The account is opened for LTL Credit Union members who have paid a fixed membership fee and submitted the documents in the form specified by the Union. The account can be opened remotely or by visiting a branch of the Union."
+      },
+      "article2": {
+        "title": "Use of Union services",
+        "text": "A member of the Union signs a Share Agreement and a Current Account or Restricted Use Account Agreement. An Electronic Services Agreement may also be concluded. Once an Electronic Services Agreement has been concluded, Deposit Agreements and Overdraft Agreements can be managed in the e-banking system."
+      }
+    },
+    "stepProcess": {
+      "blockTitle": "Remote account opening",
+      "step1": {
+        "title": "Registration",
+        "description": "Press the ",
+        "link": "link",
+        "restOfDescription": " and register for remote account opening and remote identity verification.",
+        "description2": "For remote identity verification, please have your personal identification document (passport, ID card), mobile phone, and mobile electronic signature ready."
+      },
+      "step2": {
+        "title": "Data",
+        "description": "Provide data for the assessment of business relations.",
+        "description2": "After successful identity verification, you will be provided with a link to fill out the Customer Due Diligence Questionnaire. When filling out the questionnaire, you must provide the information and documents specified therein."
+      },
+      "step3": {
+        "title": "Agreement",
+        "description": "Sign the Agreements.",
+        "description2": "You will be presented with agreements for signing for the Share, Current Account, and Provision of Electronic Services. The agreements must be signed within 5 (five) business days."
+      },
+      "step4": {
+        "title": "Payment and activation of services",
+        "description": "Pay the share specified in the Share Agreement and use the services of LTL Credit Union.",
+        "description2": "The provision of Union services will be activated once you have signed the above-mentioned agreements and transferred the share."
+      }
+    },
+    "clientSuport": {
+      "title": "Client support",
+      "description": "If you need any assistance opening an account, performing payment transactions or other account related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt."
+    },
+    "faq": "F.A.Q."
+  },  
   "consumerLoan": {
     "heroBlock": {
       "title": "You don‘t have to be big to get a loan",

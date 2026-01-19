@@ -312,10 +312,45 @@ export const privetCurrentAccountSteperData = [
   },
   {
     number: "4",
-    showStepLink: true,
     title: "privetCurrentAccount.stepProcess.step4.title",
     description: "privetCurrentAccount.stepProcess.step4.description",
     restOfDescription:
       "privetCurrentAccount.stepProcess.step4.restOfDescription",
+    stepLink: {
+      href: "/contacts",
+      label: "headerNavLinks.office",
+    },
+  },
+];
+
+export const openAccountSteperData = [
+  {
+    number: "1",
+    title: "openAccount.stepProcess.step1.title",
+    description: "openAccount.stepProcess.step1.description",
+    restOfDescription: "openAccount.stepProcess.step1.restOfDescription",
+    stepLink: {
+      href: "https://www.ltlku.lt",
+      label: "openAccount.stepProcess.step1.link",
+    },    
+    description2: "openAccount.stepProcess.step1.description2",    
+  },
+  {
+    number: "2",
+    title: "openAccount.stepProcess.step2.title",
+    description: "openAccount.stepProcess.step2.description",
+    description2: "openAccount.stepProcess.step2.description2",  
+  },
+  {
+    number: "3",
+    title: "openAccount.stepProcess.step3.title",
+    description: "openAccount.stepProcess.step3.description",
+    description2: "openAccount.stepProcess.step3.description2",  
+  },
+  {
+    number: "4",
+    title: "openAccount.stepProcess.step4.title",
+    description: "openAccount.stepProcess.step4.description",
+    description2: "openAccount.stepProcess.step4.description2",  
   },
 ];

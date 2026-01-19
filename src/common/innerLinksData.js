@@ -67,6 +67,25 @@ export const privetCurrentAccountInnerLinkList = [
   },
 ];
 
+export const openAccountInnerLinkList = [
+  {
+    link: "openAccount.innerLinkBlock.info",
+    id: "#info",
+  },
+  {
+    link: "openAccount.innerLinkBlock.steps",
+    id: "#steps",
+  },
+  {
+    link: "openAccount.innerLinkBlock.clientSupport",
+    id: "#clientSuport",
+  },
+  {
+    link: "openAccount.innerLinkBlock.faq",
+    id: "#faq",
+  },
+];
+
 export const aboutUsInnerLinkList = [
   {
     link: "aboutUs.innerLinkBlock.people",
