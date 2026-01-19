@@ -151,7 +151,6 @@ export default function FinancialReporting() {
                   </Link>
                 </p>
 */}
-
               </div>
               <div className={styles.contactsInfo}>
                 <h4>{t("finacialReporting.contacts.companyName")}</h4>
@@ -190,7 +189,7 @@ export default function FinancialReporting() {
             </div>
           </div>
         </section>
-*/}        
+*/}       
       </main>
     </IndexLayout>
   );
