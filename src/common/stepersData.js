@@ -6,7 +6,10 @@ export const termDepositSteperData = [
   },
   {
     number: "2",
-    showStepLink: true,
+    stepLink: {
+      href: "/contacts",
+      label: "headerNavLinks.office"
+    },
     title: "business.termDeposit.stepProcess.step2.title",
     description: "business.termDeposit.stepProcess.step2.description",
     restOfDescription:
@@ -30,7 +33,10 @@ export const termDepositSteperData = [
   },
   {
     number: "5",
-    showStepLink: true,
+    stepLink: {
+      href: "/contacts",
+      label: "headerNavLinks.office"
+    },
     title: "business.termDeposit.stepProcess.step5.title",
     description: "business.termDeposit.stepProcess.step5.description",
     restOfDescription:
