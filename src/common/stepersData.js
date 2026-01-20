@@ -52,7 +52,10 @@ export const capitalLoanSteperData = [
   },
   {
     number: "2",
-    showStepLink: true,
+    stepLink: {
+      href: "/contacts",
+      label: "headerNavLinks.office"
+    },
     title: "business.capitalLoan.stepProcess.step2.title",
     description: "business.capitalLoan.stepProcess.step2.description",
     restOfDescription:
@@ -101,7 +104,10 @@ export const currentAccountSteperData = [
   },
   {
     number: "2",
-    showStepLink: true,
+    stepLink: {
+      href: "/contacts",
+      label: "headerNavLinks.office"
+    },
     title: "business.currentAccount.stepProcess.step2.title",
     description: "business.currentAccount.stepProcess.step2.description",
     restOfDescription:
@@ -139,7 +145,10 @@ export const investmentLoanSteperData = [
   },
   {
     number: "2",
-    showStepLink: true,
+    stepLink: {
+      href: "/contacts",
+      label: "headerNavLinks.office"
+    },
     title: "business.investmentLoan.stepProcess.step2.title",
     description: "business.investmentLoan.stepProcess.step2.description",
     restOfDescription:
@@ -289,7 +298,10 @@ export const depositSteperData = [
   },
   {
     number: "4",
-    showStepLink: true,
+    stepLink: {
+      href: "/contacts",
+      label: "headerNavLinks.office"
+    },
     title: "termDeposit.stepProcess.step4.title",
     description: "termDeposit.stepProcess.step4.description",
     restOfDescription: "termDeposit.stepProcess.step4.restOfDescription",
