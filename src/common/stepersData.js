@@ -348,7 +348,7 @@ export const openAccountSteperData = [
     description: "openAccount.stepProcess.step1.description",
     restOfDescription: "openAccount.stepProcess.step1.restOfDescription",
     stepLink: {
-      href: "https://www.ltlku.lt",
+      href: "https://idv.ondato.com/setups/e4502901-1775-45a9-9315-bcdc85f9971c",
       label: "openAccount.stepProcess.step1.link",
     },    
     description2: "openAccount.stepProcess.step1.description2",    

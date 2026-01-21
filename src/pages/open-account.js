@@ -3,10 +3,13 @@ import IndexLayout from "@/Layouts/IndexLayout";
 import Steper from "@/components/Steper";
 import { openAccountSteperData } from "@/common/stepersData";
 import Accordion from "@/components/Accordion";
+/* 
 import { useRouter } from "next/router";
 import Image from "next/image";
 import HeroMobile from "../../public/assets/images/product_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
+import LoanApplicationForm from "@/components/LoanApplicationForm";
+*/
 import { openAccountInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
@@ -16,17 +19,18 @@ import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getCurrentAccFAQ } from "@/store/faqList/faqList.slice";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import LoanApplicationForm from "@/components/LoanApplicationForm";
+
 
 export default function Product() {
-  const router = useRouter();
+//   const router = useRouter();
   const { t } = useTranslation("common");
 
   const faqData = useSelector(getCurrentAccFAQ);
-
+  /* 
   const handleBack = () => {
     router.back();
   };
+  */
 
   return (
     <>
@@ -39,8 +43,9 @@ export default function Product() {
                   business={false}
                   area={`${t("headerNavLinks.payments")}`}
                   page={`${t("headerNavLinks.currentAccount")}`}
-                />
+                />            
               </div>
+              {/*    
               <div className={styles.formWrapper}>
                 <LoanApplicationForm type="business" />
               </div>
@@ -73,6 +78,7 @@ export default function Product() {
                   </ul>
                 </div>
               </div>
+              */}              
             </div>
           </section>
           <section className={styles.innerNavigationSection}>
