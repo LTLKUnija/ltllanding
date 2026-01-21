@@ -49,7 +49,7 @@ export default function SimpleSlider() {
               className={styles.heroImage}
             />
             <h1 className={styles.slideOneTitle}>
-              {t("businessIndexPage.slideOne.heroBlockH1")}
+              {t("businessIndexPage.slideOne.heroBlockH1New")}
             </h1>
 
             <ul className={styles.slideOneBullets}>
