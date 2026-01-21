@@ -56,6 +56,7 @@ export default function SimpleSlider() {
                 <li>{t("indexPage.slideOne.bullet2")}</li>
                 <li>{t("indexPage.slideOne.bullet3")}</li>
                 <li>{t("indexPage.slideOne.bullet4")}</li>
+                <li>{t("indexPage.slideOne.bullet5")}</li>
               </ul>
             <div className="action-button-block">
               <Link className="outlinedBtn" href="/deposits#process">
