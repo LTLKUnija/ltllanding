@@ -17,7 +17,7 @@ export default function SimpleSlider() {
     infinite: true,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 5500,
+    autoplaySpeed: 10000,
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: function () {
@@ -48,12 +48,17 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1>{t("indexPage.slideOne.heroBlockH1")}</h1>
-            <p className={styles.description}>
-              {t("indexPage.slideOne.heroBlockText")}
-            </p>
+              <h1 className={styles.slideOneTitle}>
+                {t("indexPage.slideOne.heroBlockH1New")}
+              </h1>
+              <ul className={styles.slideOneBullets}>
+                <li>{t("indexPage.slideOne.bullet1")}</li>
+                <li>{t("indexPage.slideOne.bullet2")}</li>
+                <li>{t("indexPage.slideOne.bullet3")}</li>
+                <li>{t("indexPage.slideOne.bullet4")}</li>
+              </ul>
             <div className="action-button-block">
-              <Link className="outlinedBtn" href="/deposits">
+              <Link className="outlinedBtn" href="/deposits#process">
                 {t("indexPage.slideOne.learnMoreButton")}
               </Link>
             </div>
