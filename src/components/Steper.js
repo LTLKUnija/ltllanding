@@ -18,12 +18,14 @@ const Steper = ({ steperData }) => {
                 <p>
                   {step.description && t(step.description)}
                   {step.stepLink && (
-                    <Link
+                    <a
                       href={step.stepLink.href}
                       className="showStepLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {t(step.stepLink.label)}
-                    </Link>
+                    </a>
                   )}
                   {step.restOfDescription && t(step.restOfDescription)}
                 </p>
