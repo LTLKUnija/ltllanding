@@ -76,7 +76,13 @@
     "slideOne": {
       "heroBlockH1": "Nebereikia būti dideliam, kad susikrautumėte turtus",
       "heroBlockText": "Taupykite savo pinigus ir stebėkite, kaip auga jūsų turtas!",
-      "learnMoreButton": "Sužinokite daugiau"
+      "learnMoreButton": "Sužinokite daugiau",
+      "heroBlockH1": "Terminuotų indėlių akcija!",
+      "bullet1": "Metinė palūkanų norma iki 3,3% taikoma sudarant terminuoto indėlio sutartį kredito unijos padalinyje (ne internetu), 12 mėn. laikotarpiui;",
+      "bullet2": "Pasiūlymas galioja 2026 01 14 – 2026 03 13 laikotarpiu",
+      "bullet3": "Indėlis gali būti sudaromas tik iš pasiūlymo metu naujai į kredito uniją įneštų lėšų;",
+      "bullet4": "Minimali indėlio suma – nuo 100 Eur.;",
+      "bullet5": "Palūkanos išmokamos terminuoto indėlio sutarties pabaigoje;"
     },
     "slideTwo": {
       "heroBlockH1": "Niekur kitur nėra taip gerai kaip namuose, ypač su mūsų būsto paskola!",

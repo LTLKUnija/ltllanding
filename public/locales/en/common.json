@@ -77,7 +77,13 @@
     "slideOne": {
       "heroBlockH1": "You don’t have to be big to make a fortune",
       "heroBlockText": "Save your own money and watch your wealth grow – free is now more powerful than ever!",
-      "learnMoreButton": "Learn more"
+      "learnMoreButton": "Learn more",
+      "heroBlockH1": "Term deposit promotion!",
+      "bullet1": "An annual interest rate of up to 3.3% applies when concluding a term deposit agreement at a credit union branch (not online) for a period of 12 months;",
+      "bullet2": "The offer is valid from January 14, 2026, to March 13, 2026;",
+      "bullet3": "The deposit may only consist of funds newly deposited into the credit union at the time of the offer;",
+      "bullet4": "The minimum deposit amount is 100€;",
+      "bullet5": "Interest is paid at the end of the term deposit agreement;"      
     },
     "slideTwo": {
       "heroBlockH1": "There’s no place like home, especially with a mortgage loan from us!",

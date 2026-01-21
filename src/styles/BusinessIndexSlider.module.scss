@@ -46,6 +46,24 @@
       margin-bottom: 44px;
     }
   }
+  
+  .slideOneTitle {
+    font-size: 20px; // reduce as needed
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .slideOneBullets {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 24px;
+
+    li {
+      margin-bottom: 6px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
 }
 
 // ----- Media queries -----

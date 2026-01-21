@@ -48,12 +48,19 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1>{t("businessIndexPage.slideOne.heroBlockH1")}</h1>
-            <p className={styles.description}>
-              {t("businessIndexPage.slideOne.heroBlockText")}
-            </p>
+            <h1 className={styles.slideOneTitle}>
+              {t("businessIndexPage.slideOne.heroBlockH1")}
+            </h1>
+
+            <ul className={styles.slideOneBullets}>
+              <li>{t("businessIndexPage.slideOne.bullet1")}</li>
+              <li>{t("businessIndexPage.slideOne.bullet2")}</li>
+              <li>{t("businessIndexPage.slideOne.bullet3")}</li>
+              <li>{t("businessIndexPage.slideOne.bullet4")}</li>
+              <li>{t("businessIndexPage.slideOne.bullet5")}</li>
+            </ul>
             <div className="action-button-block">
-              <Link className="outlinedBtn blue" href="/business/deposits">
+              <Link className="outlinedBtn blue" href="/business/deposits#process">
                 {t("businessIndexPage.slideOne.learnMoreButton")}
               </Link>
             </div>
