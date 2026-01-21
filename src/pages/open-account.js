@@ -36,6 +36,7 @@ export default function Product() {
     <>
       <IndexLayout>
         <main className={styles.currentAccountPage}>
+          {/*
           <section className={styles.currentAccountPageWrapper}>
             <div className={styles.currentAccountPageList}>
               <div className="breadcrumbs_Wrapper">
@@ -44,8 +45,7 @@ export default function Product() {
                   area={`${t("headerNavLinks.payments")}`}
                   page={`${t("headerNavLinks.currentAccount")}`}
                 />            
-              </div>
-              {/*    
+              </div>    
               <div className={styles.formWrapper}>
                 <LoanApplicationForm type="business" />
               </div>
@@ -77,10 +77,10 @@ export default function Product() {
                     <li>{t("openAccount.heroBlock.bullet3")}</li>
                   </ul>
                 </div>
-              </div>
-              */}              
+              </div>             
             </div>
           </section>
+          */}
           <section className={styles.innerNavigationSection}>
             <InnerLinks innerLinksData={openAccountInnerLinkList} />
           </section>
