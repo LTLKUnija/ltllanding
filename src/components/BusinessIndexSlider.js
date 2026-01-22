@@ -2,11 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import styles from "@/styles/BusinessIndexSlider.module.scss";
 import Link from "next/link";
-import { useTranslation } from "next-i18next";
+//import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import SliderMobile from "../../public/assets/images/Business_Hero_mobile.png";
 import SliderMobile2 from "../../public/assets/images/investmentLoan_Hero_mobile.png";
 import SliderMobile3 from "../../public/assets/images/currentAccount_Hero_mobile.png";
+import { Trans, useTranslation } from "next-i18next";
 
 export default function SimpleSlider() {
   const { t } = useTranslation("common");
@@ -53,11 +54,36 @@ export default function SimpleSlider() {
             </h1>
 
             <ul className={styles.slideOneBullets}>
-              <li>{t("businessIndexPage.slideOne.bullet1")}</li>
-              <li>{t("businessIndexPage.slideOne.bullet2")}</li>
-              <li>{t("businessIndexPage.slideOne.bullet3")}</li>
-              <li>{t("businessIndexPage.slideOne.bullet4")}</li>
-              <li>{t("businessIndexPage.slideOne.bullet5")}</li>
+              <li>
+                <Trans
+                  i18nKey="businessIndexPage.slideOne.bullet1"
+                  components={{ strong: <strong />, em: <em /> }}
+                />
+              </li>
+              <li>
+                <Trans
+                  i18nKey="businessIndexPage.slideOne.bullet2"
+                  components={{ strong: <strong />, em: <em /> }}
+                />
+              </li>
+              <li>
+                <Trans
+                  i18nKey="businessIndexPage.slideOne.bullet3"
+                  components={{ strong: <strong />, em: <em /> }}
+                />
+              </li>
+              <li>
+                <Trans
+                  i18nKey="businessIndexPage.slideOne.bullet4"
+                  components={{ strong: <strong />, em: <em /> }}
+                />
+              </li>
+              <li>
+                <Trans
+                  i18nKey="businessIndexPage.slideOne.bullet5"
+                  components={{ strong: <strong />, em: <em /> }}
+                />
+              </li>
             </ul>
             <div className="action-button-block">
               <Link className="outlinedBtn blue" href="/business/deposits#process">

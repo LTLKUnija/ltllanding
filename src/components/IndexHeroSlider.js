@@ -59,10 +59,30 @@ export default function SimpleSlider() {
                     components={{ strong: <strong />, em: <em /> }}
                   />
                 </li>
-                <li>{t("indexPage.slideOne.bullet2")}</li>
-                <li>{t("indexPage.slideOne.bullet3")}</li>
-                <li>{t("indexPage.slideOne.bullet4")}</li>
-                <li>{t("indexPage.slideOne.bullet5")}</li>
+                 <li>
+                  <Trans
+                    i18nKey="indexPage.slideOne.bullet2"
+                    components={{ strong: <strong />, em: <em /> }}
+                  />
+                </li>
+                 <li>
+                  <Trans
+                    i18nKey="indexPage.slideOne.bullet3"
+                    components={{ strong: <strong />, em: <em /> }}
+                  />
+                </li>
+                 <li>
+                  <Trans
+                    i18nKey="indexPage.slideOne.bullet4"
+                    components={{ strong: <strong />, em: <em /> }}
+                  />
+                </li>
+                 <li>
+                  <Trans
+                    i18nKey="indexPage.slideOne.bullet5"
+                    components={{ strong: <strong />, em: <em /> }}
+                  />
+                </li>
               </ul>
             <div className="action-button-block">
               <Link className="outlinedBtn" href="/deposits#process">
