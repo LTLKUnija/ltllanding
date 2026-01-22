@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import styles from "@/styles/IndexHeroSlider.module.scss";
 import Link from "next/link";
-import { useTranslation } from "next-i18next";
+//import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import SliderMobile from "../../public/assets/images/slider1_mobile.png";
 import SliderMobile2 from "../../public/assets/images/mortgageLoan_Hero_mobile.png";
