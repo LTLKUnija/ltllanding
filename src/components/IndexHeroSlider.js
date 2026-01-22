@@ -7,6 +7,7 @@ import Image from "next/image";
 import SliderMobile from "../../public/assets/images/slider1_mobile.png";
 import SliderMobile2 from "../../public/assets/images/mortgageLoan_Hero_mobile.png";
 import SliderMobile3 from "../../public/assets/images/product_Hero_mobile.png";
+import { Trans, useTranslation } from "next-i18next";
 
 export default function SimpleSlider() {
   const { t } = useTranslation("common");
@@ -52,7 +53,12 @@ export default function SimpleSlider() {
                 {t("indexPage.slideOne.heroBlockH1New")}
               </h1>
               <ul className={styles.slideOneBullets}>
-                <li>{t("indexPage.slideOne.bullet1")}</li>
+                 <li>
+                  <Trans
+                    i18nKey="indexPage.slideOne.bullet1"
+                    components={{ strong: <strong />, em: <em /> }}
+                  />
+                </li>
                 <li>{t("indexPage.slideOne.bullet2")}</li>
                 <li>{t("indexPage.slideOne.bullet3")}</li>
                 <li>{t("indexPage.slideOne.bullet4")}</li>
