@@ -81,7 +81,7 @@
       "bullet1": "Metinė palūkanų norma <strong>iki 3,3% taikoma</strong> sudarant terminuoto indėlio sutartį kredito unijos padalinyje (ne internetu), <strong>12 mėn. laikotarpiui</strong>;",
       "bullet2": "Pasiūlymas galioja <strong>2026 01 14 – 2026 03 13</strong> laikotarpiu;",
       "bullet3": "Indėlis gali būti sudaromas <strong>tik iš</strong> pasiūlymo metu <strong>naujai</strong> į kredito uniją <strong>įneštų lėšų</strong>;",
-      "bullet4": "Minimali indėlio suma – <strong>nuo 100 Eur</strong>;",
+      "bullet4": "Minimali indėlio suma – <strong>nuo 200 Eur</strong>;",
       "bullet5": "Palūkanos išmokamos terminuoto indėlio sutarties pabaigoje;"      
     },
     "slideTwo": {
@@ -128,7 +128,7 @@
       "bullet1": "Metinė palūkanų norma <strong>iki 3,3% taikoma</strong> sudarant terminuoto indėlio sutartį kredito unijos padalinyje (ne internetu), <strong>12 mėn. laikotarpiui</strong>;",
       "bullet2": "Pasiūlymas galioja <strong>2026 01 14 – 2026 03 13</strong> laikotarpiu;",
       "bullet3": "Indėlis gali būti sudaromas <strong>tik iš</strong> pasiūlymo metu <strong>naujai</strong> į kredito uniją <strong>įneštų lėšų</strong>;",
-      "bullet4": "Minimali indėlio suma – <strong>nuo 100 Eur</strong>;",
+      "bullet4": "Minimali indėlio suma – <strong>nuo 1 000 Eur</strong>;",
       "bullet5": "Palūkanos išmokamos terminuoto indėlio sutarties pabaigoje;"      
     },
     "slideTwo": {
@@ -533,7 +533,7 @@
       "description": "Gaukite geriausias palūkanų normas rinkoje. Jūsų indėliai yra apsaugoti indėlių draudimu. ",
       "bullet1": "Patrauklus lojalumo atlygis ir nauda",
       "bullet2": "Gaukite individualius pasiūlymus",
-      "bullet3": "Indėlių terminas nuo 3 iki 60 mėnesių",
+      "bullet3": "Indėlių terminas nuo 1 iki 60 mėnesių",
       "bullet4": "Indėlių palūkanos iki 3,55%",
       "button": "Pateikti indėlio paraišką"
     },
@@ -1151,7 +1151,7 @@
         "bullet2": "Jūsų indėliai yra apsaugoti indėlių ",
         "bullet3": "Patrauklus lojalumo atlygis ir nauda",
         "bullet4": "Gaukite individualius pasiūlymus",
-        "bullet5": "Indėlių terminas nuo 3 iki 60 mėnesių",
+        "bullet5": "Indėlių terminas nuo 1 iki 60 mėnesių",
         "bullet6": "Paskolos palūkanos nuo 3,50%",
         "learnMore": "draudimu"
       },

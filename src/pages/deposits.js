@@ -87,7 +87,6 @@ export default function Deposit() {
                     <li>{t("termDeposit.heroBlock.bullet1")}</li>
                     <li>{t("termDeposit.heroBlock.bullet2")}</li>
                     <li>{t("termDeposit.heroBlock.bullet3")}</li>
-                    <li>{t("termDeposit.heroBlock.bullet4")}</li>
                   </ul>
                 </div>
               </div>
