@@ -25,13 +25,13 @@ export default function InterestRate({ rateList }) {
 
   return (
     <div className={styles.ratesTableWrapper}>
-      <Image
-        src={DepositCampaign}
-        alt="Deposits campaign"
-        className={styles.headerImage}
-        priority
-      />  
       <h3>{t("termDeposit.interestRatesArticle.title")}</h3>
+      <Image
+      src={DepositCampaign}
+      alt="Deposits campaign"
+      className={styles.headerImage}
+      priority
+      />  
       <p>{t("termDeposit.interestRatesArticle.description")}</p>
       <div className={styles.ratesNotesWrapper}>
         <h1>{t("termDeposit.interestRatesArticle.note1")}</h1>
