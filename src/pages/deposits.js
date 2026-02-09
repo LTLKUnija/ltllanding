@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import HeroMobile from "../../public/assets/images/deposit_Hero_mobile.png";
 import BackBtn from "../../public/assets/images/backBtn.png";
+import DepositCampaign from "../../public/assets/images/consumer_depositPage_campaign.jpg";
 import { termDepositInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
@@ -134,7 +135,10 @@ export default function Deposit() {
             </div>
           </section>
           <section id="interestRates" className={styles.ratesTableSection}>
-            <InterestRate rateList={privateRates} />
+            <InterestRate 
+              rateList={privateRates}
+              headerImage={DepositCampaign}
+            />
           </section>
           <section id="calculator" className={styles.calculatorSection}>
             <h2>{t("termDeposit.calcBlock.title")}</h2>
