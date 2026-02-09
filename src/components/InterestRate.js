@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/InterestRate.module.scss";
 import { useTranslation } from "next-i18next";
+import DepositCampaign from "../../public/assets/images/consumer_depositPage_campaign.jpg";
 
 export default function InterestRate({ rateList }) {
   const { t } = useTranslation("common");
@@ -23,6 +24,12 @@ export default function InterestRate({ rateList }) {
 
   return (
     <div className={styles.ratesTableWrapper}>
+      <Image
+        src={DepositCampaign}
+        alt="Deposits campaign"
+        className={styles.headerImage}
+        priority
+      />  
       <h3>{t("termDeposit.interestRatesArticle.title")}</h3>
       <p>{t("termDeposit.interestRatesArticle.description")}</p>
       <div className={styles.ratesNotesWrapper}>
