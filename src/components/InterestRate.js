@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/InterestRate.module.scss";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
 import DepositCampaign from "../../public/assets/images/consumer_depositPage_campaign.jpg";
 
 export default function InterestRate({ rateList }) {
