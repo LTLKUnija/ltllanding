@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import HeroMobile from "../../../public/assets/images/Business_Hero_mobile.png";
 import BackBtn from "../../../public/assets/images/backBtn.png";
-import DepositCampaign from "../../public/assets/images/business_depositPage_campaign.jpg";
+import DepositCampaign from "../../../public/assets/images/business_depositPage_campaign.jpg";
 import { businessTermDepositInnerLinkList } from "@/common/innerLinksData";
 import InnerLinks from "@/components/InnerLinks";
 import { useTranslation } from "next-i18next";
