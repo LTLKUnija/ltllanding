@@ -574,7 +574,7 @@
         "title": "Submit the documents",
         "subTitle": "Please bring:\n\n",
         "bulletBlock": {
-          "bulet1": "Passport, ID document or copy of your residence permit",
+          "bulet1": "Passport, ID document, your residence permit",
           "bulet2": "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
         }
       },
@@ -679,7 +679,7 @@
         "title": "Submit your documents",
         "subTitle": "Please bring:\n\n",
         "bulletBlock": {
-          "bulet1": "Passport, ID document or copy of your residence permit",
+          "bulet1": "Passport, ID document, your residence permit",
           "bulet2": "A document confirming that you live, work or study in the municipality of Vilnius City, Vilnius District or Trakai District, if your declared place of residence is registered in other municipalities"
         }
       },
