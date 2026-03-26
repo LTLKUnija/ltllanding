@@ -122,10 +122,10 @@ export const finacialReportingInnerLinkList = [
     link: "finacialReporting.innerLinkBlock.annualReporting",
     id: "#annualReporting",
   },
-  {
-    link: "finacialReporting.innerLinkBlock.factsheets",
-    id: "#factsheets",
-  },    
+//  {
+//    link: "finacialReporting.innerLinkBlock.factsheets",
+//    id: "#factsheets",
+//  },    
 //  {
 //    link: "finacialReporting.innerLinkBlock.presentations",
 //    id: "#presentations",
