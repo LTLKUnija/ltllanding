@@ -63,6 +63,9 @@ export default function FinancialReporting() {
         <section id="annualReporting" className={styles.presentationsSection}>
           <FinacialReportsData />
         </section>
+
+{/*   It was askled to hide this block for now. Maybe will be reopened in the future  */}
+{/* 
         <section
           id="factsheets"
           className={[styles.ReportsSection, styles.factsheetsSection].join(
@@ -71,8 +74,7 @@ export default function FinancialReporting() {
         >
           <FactSheetsData />
         </section>
-{/*   It was askled to hide this block for now. Maybe will be reopened in the future  */}
-{/* 
+
         <section id="presentations" className={styles.presentationsSection}>
           <div className={styles.presentationsWrapper}>
             <h3 className={styles.sectionTitle}>
