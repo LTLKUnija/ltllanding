@@ -71,7 +71,6 @@ export default function SimpleSlider() {
                     components={{ strong: <strong />, em: <em /> }}
                   />
                 </li>
-                </li>
                  <li>
                   <Trans
                     i18nKey="indexPage.slideOne.bullet5"
