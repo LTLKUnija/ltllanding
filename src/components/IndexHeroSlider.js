@@ -85,7 +85,7 @@ export default function SimpleSlider() {
                 </li>
               </ul>
             <div className="action-button-block">
-              <Link className="outlinedBtn" href="/deposits#process">
+              <Link className="outlinedBtn" href="/deposits#interestRates">
                 {t("indexPage.slideOne.learnMoreButton")}
               </Link>
             </div>
