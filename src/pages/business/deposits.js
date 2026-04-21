@@ -18,7 +18,7 @@ import { applyPageCspHeaders } from "@/lib/csp";
 import ClientSupport from "@/components/ClientSupport";
 import { useSelector } from "react-redux";
 import { getDepositFAQ } from "@/store/faqList/faqList.slice";
-import InterestRate from "@/components/InterestRate";
+import InterestRate from "@/components/InterestRateBusiness";
 import { businessRates } from "@/common/Rates";
 import LoanApplicationForm from "@/components/LoanApplicationForm";
 
