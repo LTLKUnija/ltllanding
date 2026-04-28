@@ -668,7 +668,7 @@
     "articleBlock": {
       "article1": {
         "title": "Banko sąskaitos atidarymas",
-        "text": "Norint atsidaryti sąskaitą LTL, būtina turėti Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat norint atidaryti sąskaitą, reikia tapti kredito unijos nariu, įsigyjant pagrindinį pajų ir sumokant 30 Eur stojamąjį mokestį. Peržvelkite apačioje pateiktą sąskaitos atidarymo procesą."
+        "text": "Norint atsidaryti sąskaitą LTL, būtina turėti Lietuvos Respublikos pasą, asmens tapatybės kortelę arba Lietuvos Respublikos Vyriausybės išduotą leidimą gyventi. Taip pat norint atidaryti sąskaitą, reikia tapti kredito unijos nariu, įsigyjant 30 Eur pagrindinį pajų. Peržvelkite apačioje pateiktą sąskaitos atidarymo procesą."
       },
       "article2": {
         "title": "Prisijungimas prie sąskaitos",
@@ -805,7 +805,7 @@
       "title": "Paskolos paraiškos teikimo procesas",
       "step1": {
         "title": "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
-        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinigus atsiimti)."
+        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės ir sumokėkite  30 EUR vertės pajų (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinigus atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
@@ -910,7 +910,7 @@
       "title": "Paskolos paraiškos teikimo procesas",
       "step1": {
         "title": "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
-        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinugus atsiimti)."
+        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės ir sumokėkite  30 EUR vertės pajų (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinugus atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
@@ -972,7 +972,7 @@
       "title": "Paskolos paraiškos teikimo procesas",
       "step1": {
         "title": "Norint gauti paskolą, pirmiausiai reikia tapti LTL nariu",
-        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės, susimokėkite  30 EUR vertės stojamąjį mokestį 30 EUR vertės pajaus įsigijimui (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinigus atsiimti)."
+        "description": "Jeigu gyvenate, dirbate arba mokotės Vilniuje arba Vilniaus, Trakų rajonuose, su asmens dokumentu atvykite į uniją, užpildykite prašymą dėl narystės ir sumokėkite  30 EUR vertės pajų (jis lieka Jūsų nuosavybe, išstodami iš unijos galėsite pinigus atsiimti)."
       },
       "step2": {
         "title": "Užpildykite paraišką paskolai gauti",
