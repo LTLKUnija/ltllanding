@@ -56,7 +56,7 @@ export default function About() {
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
-                    src="https://storage.googleapis.com/ltlku_web_page/photo/Krasimir_Kirov.png"
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Krasimir_Kirov.jpg"
                     width={154}
                     height={154}
                     alt=""
@@ -84,7 +84,7 @@ export default function About() {
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
-                    src="https://storage.googleapis.com/ltlku_web_page/photo/Saulius_Mickus.png"
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Saulius_Mickus.jpg"
                     width={154}
                     height={154}
                     alt=""
@@ -98,7 +98,7 @@ export default function About() {
               <div className={styles.teamMembers}>
                 <div className={styles.membersPhoto}>
                   <Image
-                    src="https://storage.googleapis.com/ltlku_web_page/photo/photo_man.jpg"
+                    src="https://storage.googleapis.com/ltlku_web_page/photo/Martynas_Brazauskas.jpg"
                     width={154}
                     height={154}
                     alt=""
