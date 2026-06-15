@@ -47,6 +47,7 @@
     "investmentLoan": "Investment loan",
     "faq": "F.A.Q",
     "capitalLoan": "Capital loan",
+    "overdraft": "Overdraft",
     "office": "office. "
   },
   "footerNavLinks": {
@@ -1474,6 +1475,44 @@
       "clientSuport": {
         "title": "Client support",
         "description": "If you need any assistance applying for a corporate loan, signing the agreements, performing loan repayments or any other credit related issues, please reach out to us via phone +370 5 205 5240 / +370 5 205 5241 or email pagalba@ltlku.lt."
+      },
+      "faq": "F.A.Q."
+    },
+    "overdraft": {
+      "heroBlock": {
+        "title": "Manage your cash flow successfully with LTL KU overdraft",
+        "description": "An account overdraft is the simplest way to smooth out cash flows when income is delayed but bills are due today.",
+        "bullet1": "We finance one month's working capital needs",
+        "bullet2": "Up to €30,000 may not require collateral",
+        "bullet3": "Use funds only when you need them — interest is charged only on the amount actually used",
+        "bullet4": "Term of up to 36 months",
+        "bullet5": "Fixed interest rate for 12 months",
+        "bullet6": "Overdraft proposal within 48 hours"
+      },
+      "innerLinkBlock": {
+        "benefits": "Benefits",
+        "process": "Process",
+        "priceList": "Price List",
+        "clientSuport": "Client Support",
+        "faq": "F.A.Q."
+      },
+      "benefitsArticle": {
+        "article1": {
+          "title": "Overdraft",
+          "description": "A business doesn't always need a loan for the full amount — sometimes all it takes is the ability to briefly go into the negative on your current account while waiting for a client to pay or to complete a quarterly order. An overdraft gives you exactly that flexibility: set your limit in advance and use the funds only when you need them, and only as much as you need."
+        },
+        "article2": {
+          "title": "Only pay for what you use",
+          "description": "Interest is charged only on the portion of the overdraft limit actually used. The approved limit is available at any time during the contract period — no need to submit a new application each time you need working capital financing."
+        },
+        "article3": {
+          "title": "Flexible repayment schedule",
+          "description": "With an overdraft, you only pay the accrued interest each month — principal repayment depends on the chosen term (maximum up to 36 months)."
+        },
+        "article4": {
+          "title": "Quick initial offer",
+          "description": "You'll receive an initial overdraft proposal within 48 hours from submitting your documents. The overdraft approval process is simpler than a traditional loan."
+        }
       },
       "faq": "F.A.Q."
     },

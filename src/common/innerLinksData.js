@@ -315,3 +315,26 @@ export const businessInvestmentLoanInnerLinkList = [
     id: "#faq",
   },
 ];
+
+export const businessOverdraftInnerLinkList = [
+  {
+    link: "business.overdraft.innerLinkBlock.benefits",
+    id: "#benefits",
+  },
+  {
+    link: "business.overdraft.innerLinkBlock.priceList",
+    id: "/business/pricelist",
+  },
+  {
+    link: "business.overdraft.innerLinkBlock.process",
+    id: "#process",
+  },
+  {
+    link: "business.overdraft.innerLinkBlock.clientSuport",
+    id: "#clientSuport",
+  },
+  {
+    link: "business.overdraft.innerLinkBlock.faq",
+    id: "#faq",
+  },
+];

@@ -45,6 +45,7 @@
     "openAccount": "Atidaryti sąskaitą",
     "investmentLoan": "Investicinė paskola",
     "capitalLoan": "Paskola apyvartiniam kapitalui",
+    "overdraft": "Sąskaitos kreditavimas (Overdraftas)",
     "faq": "D.U.K",
     "office": "biure"
   },
@@ -1482,6 +1483,44 @@
       "clientSuport": {
         "title": "Klientų aptarnavimas",
         "description": "Jeigu reikia mūsų pagalbos teikiant verslo paskolos paraišką, sudarant sutartis, atliekant paskolos įmokas ar kitais paskolos klausimais, susisiekite su mumis telefonu +370 5 205 5240 / +370 5 205 5241 arba el. paštu support@ltlku.lt."
+      },
+      "faq": "D.U.K."
+    },
+    "overdraft": {
+      "heroBlock": {
+        "title": "Sėkmingai valdykite savo pinigų srautus su LTL KU sąskaitos kreditavimu (angl. Overdraft)",
+        "description": "Sąskaitos kreditavimas (angl. overdraft) – paprasčiausias būdas išlyginti pinigų srautus, kai pajamos vėluoja, o sąskaitas reikia mokėti šiandien.",
+        "bullet1": "Finansuojame vieno mėnesio apyvartą",
+        "bullet2": "Iki 30 000 EUR gali būti be užtikrinimo priemonių",
+        "bullet3": "Naudokitės kreditu tik tada, kai reikia – palūkanos skaičiuojamos tik už faktiškai panaudotą pinigų sumą",
+        "bullet4": "Terminas iki 36 mėnesių",
+        "bullet5": "12 mėnesių fiksuota palūkanų norma",
+        "bullet6": "Sprendimas dėl overdrafto pasiūlymo per 48 valandas"
+      },
+      "innerLinkBlock": {
+        "benefits": "Privalumai",
+        "process": "Procesas",
+        "priceList": "Kainoraštis",
+        "clientSuport": "Klientų aptarnavimas",
+        "faq": "D.U.K."
+      },
+      "benefitsArticle": {
+        "article1": {
+          "title": "Sąskaitos kreditavimas (angl. Overdraft)",
+          "description": "Verslui ne visada reikia paskolos pilnai sumai – kartais užtenka galimybės trumpam „minusuoti“ savo einamąją sąskaitą, kol klientas atsiskaitys arba užbaigsite ketvirčio užsakymą. Overdraftas suteikia būtent tokį lankstumą: limitą nustatote iš anksto, o overdrafto lėšas naudojate tik tada ir tiek, kiek reikia. Taip pat, turėdami pinigų, iš karto galite grąžinti dalį arba visą panaudotą overdrafto sumą."
+        },
+        "article2": {
+          "title": "Mokate tik už tai, ką naudojate",
+          "description": "Palūkanos skaičiuojamos tik už faktiškai panaudotą Overdrafto limito dalį. Patvirtintu limitu galite naudotis bet kuriuo metu overdrafto sutarties galiojimo laikotarpiu. Nereikia teikti naujos paraiškos kiekvieną kartą, kai prireikia apyvartinio kapitalo finansavimo."
+        },
+        "article3": {
+          "title": "Lankstus grąžinimo grafikas",
+          "description": "Naudojantis overdrafto produktu, mokate tik kalendorinio mėnesio metu susikaupusias palūkanas, o pagrindinės overdrafto sumos grąžinimas priklauso nuo pasirinkto termino (ilgiausias gali būti iki 36 mėnesių)."
+        },
+        "article4": {
+          "title": "Greitas pradinis pasiūlymas",
+          "description": "Pradinį overdrafto pasiūlymą gausite per 48 valandas nuo dokumentų pateikimo. Kreditavimo procesas paprastesnis nei klasikinės paskolos."
+        }
       },
       "faq": "D.U.K."
     },
