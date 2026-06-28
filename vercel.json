@@ -43,7 +43,29 @@
       ],
       "destination": "https://forms.gle/kBnZaKH8kHMqfhhv9",
       "permanent": true
-    }    
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "pastas.ltlku.lt"
+        }
+      ],
+      "destination": "https://outlook.cloud.microsoft/mail/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "intranetas.ltlku.lt"
+        }
+      ],
+      "destination": "https://ltlku.sharepoint.com/sites/INTRANETAS2/Shared%20Documents/Forms/AllItems.aspx",
+      "permanent": false
+    }
   ],
   "headers": [
     {
