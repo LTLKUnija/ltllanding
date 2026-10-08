@@ -91,6 +91,12 @@ const BurgerMenu = ({ isOpen, onClose }) => {
             >
               {t("headerNavLinks.capitalLoan")}
             </Link>
+            <Link
+              className={styles.lowerCaseLink}
+              href="/business/overdraft"
+            >
+              {t("headerNavLinks.overdraft")}
+            </Link>
           </div>
           <div
             className={styles.burgerItem}
