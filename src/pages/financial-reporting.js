@@ -106,7 +106,7 @@ export default function FinancialReporting() {
                   <div key={idx} className={styles.reportItem}>
                     <img src="assets/images/Pdficon.svg" alt="Pdf File" />
                     <Link
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                       href={link.linkUrl}
                       className={styles.linkStyle}
                     >

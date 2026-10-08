@@ -458,7 +458,7 @@ const LoanApplicationForm = ({ type }) => {
                 <div className={styles.termsText}>
                   {t("common.loanFormTermsMessage")}{" "}
                   <a
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     href="https://storage.googleapis.com/ltlku_web_page/privacyAndPolicy/Privatumo%20politika.pdf"
                   >
                     {t("common.loanFormTermsMessageLink")}

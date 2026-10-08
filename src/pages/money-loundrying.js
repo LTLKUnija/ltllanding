@@ -62,7 +62,7 @@ export default function MoneyLoundrying() {
 
             <Link
               href={links[locale] || links.lt}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               className="readMoreLink"
             >
               {t("moneyLoundering.articleBlock.link")}

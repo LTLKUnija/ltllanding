@@ -212,7 +212,7 @@ function Footer({ setShowLinks, showLinks }) {
             <div className="social-links-block">
               <Link
                 className="social-link"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 href="https://www.facebook.com/LTLKreditoUnija"
               >
                 <Image
@@ -224,7 +224,7 @@ function Footer({ setShowLinks, showLinks }) {
               </Link>
               <Link
                 className="social-link"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 href="https://www.linkedin.com"
               >
                 <Image
@@ -249,7 +249,7 @@ function Footer({ setShowLinks, showLinks }) {
 
           <Link
             className="social-link"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             href="https://www.kreda.lt/jcku-kreda-grupe-jungtine-centrine-kredito-unija/"
           >
             <Image

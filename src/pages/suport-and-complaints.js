@@ -63,7 +63,7 @@ export default function SuportAndComplaints() {
             <p>{t("suportsComplaints.articleBlock.article3.description6")}{" "}
                 <Link
                   href="https://storage.googleapis.com/ltlku_web_page/forms/Skundo_forma.docx"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="readMoreLink"
                 >
                   Skundo_forma.docx
@@ -74,7 +74,7 @@ export default function SuportAndComplaints() {
             <p>{t("suportsComplaints.articleBlock.article3.description9")}{" "}
                 <Link
                   href="http://www.lb.lt/gincu_nagrinejimas"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="readMoreLink"
                 >
                   www.lb.lt/gincu_nagrinejimas
@@ -83,7 +83,7 @@ export default function SuportAndComplaints() {
             <p>{t("suportsComplaints.articleBlock.article3.description10")}{" "}
                 <Link
                   href="http://vdai.lrv.lt"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="readMoreLink"
                 >
                   vdai.lrv.lt
@@ -92,7 +92,7 @@ export default function SuportAndComplaints() {
             <p>{t("suportsComplaints.articleBlock.article3.description11")}{" "}
                 <Link
                   href="http://www.vvtat.lt"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="readMoreLink"
                 >
                   www.vvtat.lt

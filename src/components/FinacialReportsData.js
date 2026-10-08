@@ -64,7 +64,7 @@ export default function FinacialReportsData({ name, reportsList }) {
             <Link
               href={link.linkUrl}
               className={styles.linkStyle}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
               {router.locale === "lt" ? link.linkName : link.linkNameEn}
             </Link>

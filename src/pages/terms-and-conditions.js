@@ -75,7 +75,7 @@ export default function TemrsAndConditions() {
                 return (
                   <li key={idx}>
                     <Link
-                      target="_blank"
+                      target="_blank" rel="noopener noreferrer"
                       href={link.linkUrl}
                       className={styles.linkStyle}
                     >

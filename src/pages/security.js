@@ -27,7 +27,7 @@ export default function Security() {
                 {t("security.bullet2")}{" "}
                 <Link
                   href="http://www.iidraudimas.lt"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="readMoreLink"
                 >
                   www.iidraudimas.lt

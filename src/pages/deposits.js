@@ -114,7 +114,7 @@ export default function Deposit() {
                   {t("termDeposit.benefitsArticle.article2.description")}
                   <Link
                     className="readMoreLink"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     href="https://www.iidraudimas.lt/lt/indeliu-draudimas/duk-4/"
                   >
                     {t("termDeposit.link")}

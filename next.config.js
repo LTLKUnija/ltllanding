@@ -5,12 +5,15 @@ const { i18n } = require("./next-i18next.config");
 
 const nextConfig = {
   reactStrictMode: false,
+  poweredByHeader: false,
   i18n,
   images: {
-    domains: ["images.ctfassets.net", "storage.googleapis.com"],
-  },
-  experimental: {
-    runtime: 'nodejs',
+    // No protocol set: LandingArticle builds Contentful URLs with "http:", so
+    // both protocols must stay allowed (same behaviour as the old `domains`).
+    remotePatterns: [
+      { hostname: "images.ctfassets.net" },
+      { hostname: "storage.googleapis.com" },
+    ],
   },
   async headers() {
     return [
@@ -18,6 +21,7 @@ const nextConfig = {
         source: "/(.*)",
         headers: [
           { key: "Cache-Control", value: "no-store, must-revalidate" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
         ],
       },
       // Harden CSP for static assets to satisfy scanners without affecting HTML

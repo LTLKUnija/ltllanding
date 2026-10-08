@@ -73,7 +73,7 @@ export default function FinacialQuartalReportsData() {
                     <div className={styles.iconImg}>
                       <img src="/assets/images/Pdficon.svg" alt="Pdf IFile" />
                     </div>
-                    <Link href={link.linkUrl} target="_blank">
+                    <Link href={link.linkUrl} target="_blank" rel="noopener noreferrer">
                       {link.linkName}
                     </Link>
                   </div>

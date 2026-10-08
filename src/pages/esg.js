@@ -50,7 +50,7 @@ export default function Esg() {
                   {t("esg.heroBlock.description")}
                   <Link
                     href="https://storage.googleapis.com/ltl-storage/AnnualESGReports/ESG%20Policy%20LTL%202024_ENG.pdf"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     className="readMoreLink"
                   >
                     {t("esg.heroBlock.restOfDescription")}
@@ -85,7 +85,7 @@ export default function Esg() {
                 {t("esg.articleBlock.article1.text")}
                 <Link
                   href="https://storage.googleapis.com/ltl-storage/AnnualESGReports/Environmental%20Policy%20LTL%202024_ENG.pdf"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   className="readMoreLink"
                 >
                   {t("esg.articleBlock.article1.link")}
@@ -109,7 +109,7 @@ export default function Esg() {
               <p className={styles.description}>
                 {t("esg.articleBlock.article2.text")}
                 <Link
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   href="https://storage.googleapis.com/ltl-storage/AnnualESGReports/Equal%20Opportunities%20Policy%20LTL%202024_ENG.pdf"
                   className="readMoreLink"
                 >
@@ -142,7 +142,7 @@ export default function Esg() {
               <p className={styles.description}>
                 {t("esg.articleBlock.article3.text")}
                 <Link
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   href="https://storage.googleapis.com/ltl-storage/AnnualESGReports/Etikos%20kodeksas%20LTL%202024_LT.pdf"
                   className="readMoreLink"
                 >
