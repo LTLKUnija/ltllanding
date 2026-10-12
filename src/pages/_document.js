@@ -163,14 +163,9 @@ class MyDocument extends Document {
         <body>
           <Main />
           <script nonce={nonce} dangerouslySetInnerHTML={{ __html: 'console.log("Secure")' }} />
-          <script
-            id="__NEXT_DATA__"
-            type="application/json"
-            nonce={nonce}
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(this.props.__NEXT_DATA__),
-            }}
-          />
+          {/* __NEXT_DATA__ is emitted by <NextScript>, which HTML-escapes it.
+              Do not render it here with plain JSON.stringify: URL query
+              params end up in it unescaped and allow reflected XSS. */}
           <NextScript nonce={nonce} />
         </body>
       </Html>
