@@ -1,7 +1,7 @@
 import styles from "@/styles/news[id].module.scss";
 import { useRouter } from "next/router";
 import IndexLayout from "@/Layouts/IndexLayout";
-import { formatText } from "@/utils/helpers";
+import { findNewsBySlug, formatText } from "@/utils/helpers";
 import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -30,17 +30,15 @@ export default function NewsPage() {
   useEffect(() => {
     if (newsData.length < 1) return;
 
-    const id = router.asPath.split("/")[2];
-    if (id) {
-      const [year, idx] = id.split("-");
-      const currentNews = newsData?.filter((newsItem) => {
-        return newsItem.id === year;
-      })[0].news;
-      setSelectedNews([...currentNews].reverse()[idx]);
+    const found = findNewsBySlug(newsData, router.query.id);
+    setSelectedNews(found?.item);
+    setCurrentYear(found?.year ?? "");
 
-      setCurrentYear(year);
+    // Old /news/<year>-<idx> links: show the date-based URL instead.
+    if (found && found.slug !== router.query.id) {
+      router.replace(`/news/${found.slug}`, undefined, { shallow: true });
     }
-  }, [newsData]);
+  }, [newsData, router.query.id]);
 
   return (
     <IndexLayout>

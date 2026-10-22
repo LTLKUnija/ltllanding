@@ -107,6 +107,43 @@ export const formatText = (text) => {
   });
 };
 
+// URL slug for a news item: its date as YYYY-MM-DD, plus -2, -3… when several
+// items in the year share a date (numbered in Firestore array order, so adding
+// news at the end never changes an existing slug).
+export const newsSlug = (yearNews, idx) => {
+  const toDate = (date) => (date || "").replaceAll("/", "-");
+  const date = toDate(yearNews[idx].date) || "news";
+  const sameDateBefore = yearNews
+    .slice(0, idx)
+    .filter((item) => (toDate(item.date) || "news") === date).length;
+
+  return sameDateBefore === 0 ? date : `${date}-${sameDateBefore + 1}`;
+};
+
+// Finds a news item by slug. Also accepts old /news/<year>-<idx> links, where
+// idx counts from the newest item of that year.
+export const findNewsBySlug = (newsData, slug) => {
+  const legacy = slug?.match(/^(\d{4})-(\d+)$/);
+
+  for (const year of newsData) {
+    if (legacy) {
+      if (year.id !== legacy[1]) continue;
+      const idx = year.news.length - 1 - Number(legacy[2]);
+      if (!year.news[idx]) return null;
+      return {
+        year: year.id,
+        item: year.news[idx],
+        slug: newsSlug(year.news, idx),
+      };
+    }
+
+    const idx = year.news.findIndex((_, i) => newsSlug(year.news, i) === slug);
+    if (idx !== -1) return { year: year.id, item: year.news[idx], slug };
+  }
+
+  return null;
+};
+
 export const loanFormDataMaker = (inputs) => {
   const formData = new FormData();
 

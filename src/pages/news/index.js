@@ -3,7 +3,7 @@ import styles from "@/styles/news.module.scss";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { previewTextMaker } from "../../utils/helpers";
+import { newsSlug, previewTextMaker } from "../../utils/helpers";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { applyPageCspHeaders } from "@/lib/csp";
@@ -27,7 +27,9 @@ export default function News() {
   const getCurrentYearNewsData = (data) => {
     const currentYear = yearsLinksVocab.filter((year) => year.selected)[0];
     let currentYearNews = data?.filter((n) => n.id === currentYear?.year)[0];
-    let reverseNews = [...currentYearNews?.news].reverse();
+    let reverseNews = [...currentYearNews?.news]
+      .map((item, idx, yearNews) => ({ ...item, slug: newsSlug(yearNews, idx) }))
+      .reverse();
     setCurrentYearNewsData({ ...currentYearNews, news: reverseNews });
   };
 
@@ -105,7 +107,7 @@ export default function News() {
                       <div>
                         <Link
                           className={styles.readMoreLink}
-                          href={`news/${currentYearNewsData?.id}-${idx}`}
+                          href={`/news/${item.slug}`}
                         >
                           {t("news.readMore")} &#x3e;
                         </Link>

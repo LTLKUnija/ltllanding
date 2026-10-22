@@ -4,7 +4,7 @@ import styles from "@/styles/IndexNews.module.scss";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
-import { formatText, previewTextMaker } from "@/utils/helpers";
+import { newsSlug, previewTextMaker } from "@/utils/helpers";
 import { useSelector } from "react-redux";
 import { getNewsState } from "@/store/news/news.slice";
 
@@ -20,16 +20,17 @@ export default function IndexNews() {
     const lastSix = [];
 
     newsData.forEach((year) => {
-      let reversedNews = [...year.news].reverse();
-      reversedNews.forEach((news, idx) => {
+      let reversedNews = year.news
+        .map((news, idx, yearNews) => ({ ...news, slug: newsSlug(yearNews, idx) }))
+        .reverse();
+      reversedNews.forEach((news) => {
         if (lastSix.length > 5) return;
         lastSix.push({
-          id: year.id,
           text: news.text,
           textEn: news.textEn,
           title: news.title,
           titleEn: news.titleEn,
-          idx,
+          slug: news.slug,
           date: news.date,
           link: ``,
         });
@@ -48,7 +49,7 @@ export default function IndexNews() {
       <div className={styles.newsItem} key={idx}>
         <div className={styles.newsDate}>{news.date}</div>
         <h3>
-          <Link href={`news/${news.id}-${news.idx}`}>
+          <Link href={`/news/${news.slug}`}>
             {router.locale === "lt" ? news.title : news.titleEn}
           </Link>
         </h3>
@@ -58,7 +59,7 @@ export default function IndexNews() {
             20
           ) + " ..."}
         </p>
-        <Link href={`news/${news.id}-${news.idx}`}>
+        <Link href={`/news/${news.slug}`}>
           {t("news.readMore")} &#x3e;
         </Link>
       </div>
