@@ -36,6 +36,7 @@ export default function Product() {
     <>
       <IndexLayout>
         <main className={styles.currentAccountPage}>
+          <h1 className="visually-hidden">{t("openAccount.pageTitle")}</h1>
           {/*
           <section className={styles.currentAccountPageWrapper}>
             <div className={styles.currentAccountPageList}>
