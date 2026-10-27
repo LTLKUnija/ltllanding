@@ -37,7 +37,7 @@ export default function Partnership() {
       <main>
         <section className={styles.careerSection}>
           <div className={styles.careerWrapper}>
-            <h3>{t("career.title")}</h3>
+            <h1>{t("career.title")}</h1>
             <div className={styles.innerNavigationLinkList}>
               {links.map((tab, idx) => {
                 return (

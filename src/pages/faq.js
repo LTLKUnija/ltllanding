@@ -29,28 +29,28 @@ export default function Deposit() {
         <main>
           <section id="faq" className={styles.faqSection}>
             <div className={styles.faqWrapper}>
-              <h3 className={styles.faqHeader}>{t("faq.pageTitle")}</h3>
+              <h1 className={styles.faqHeader}>{t("faq.pageTitle")}</h1>
               {!!DepositFAQ.data && (
                 <div className={styles.faqList}>
-                  <h1>{t("common.deposit")}</h1>
+                  <h2>{t("common.deposit")}</h2>
                   <Accordion faqData={DepositFAQ.data} singleLevel="true" />
                 </div>
               )}
               {!!CurrentAccFAQ.data && (
                 <div className={styles.faqList}>
-                  <h1>{t("common.currentAccount")}</h1>
+                  <h2>{t("common.currentAccount")}</h2>
                   <Accordion faqData={CurrentAccFAQ.data} singleLevel="true" />
                 </div>
               )}
               {!!UnionMembership.data && (
                 <div className={styles.faqList}>
-                  <h1>{t("common.unionMembership")}</h1>
+                  <h2>{t("common.unionMembership")}</h2>
                   <Accordion faqData={UnionMembership.data} singleLevel="true" />
                 </div>
               )}
               {!!LoanForPrivates.data && (
                 <div className={styles.faqList}>
-                  <h1>{t("common.loanForPrivates")}</h1>
+                  <h2>{t("common.loanForPrivates")}</h2>
                   <Accordion
                     faqData={LoanForPrivates.data}
                     singleLevel="true"
@@ -59,7 +59,7 @@ export default function Deposit() {
               )}
               {!!LoanForBusiness.data && (
                 <div className={styles.faqList}>
-                  <h1>{t("common.loanForBusiness")}</h1>
+                  <h2>{t("common.loanForBusiness")}</h2>
                   <Accordion
                     faqData={LoanForBusiness.data}
                     singleLevel="true"
@@ -68,7 +68,7 @@ export default function Deposit() {
               )}
               {!!InternetBank.data && (
                 <div className={styles.faqList}>
-                  <h1>{t("common.internetBank")}</h1>
+                  <h2>{t("common.internetBank")}</h2>
                   <Accordion
                     faqData={InternetBank.data}
                     singleLevel="true"

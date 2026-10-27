@@ -1554,5 +1554,150 @@
   },
   "faq": {
     "pageTitle": "D.U.K."
+  },
+  "seo": {
+    "default": {
+      "title": "LTL kredito unija",
+      "description": "LTL kredito unija Vilniuje: vartojimo ir būsto paskolos, terminuoti indėliai, einamoji sąskaita ir mokėjimai privatiems ir verslo klientams."
+    },
+    "home": {
+      "title": "LTL kredito unija – paskolos, indėliai ir sąskaitos",
+      "description": "Kredito unija Vilniuje: vartojimo ir būsto paskolos, terminuoti indėliai, einamoji sąskaita ir mokėjimai privatiems ir verslo klientams.",
+      "h1": "LTL kredito unija – finansinės paslaugos privatiems klientams"
+    },
+    "business": {
+      "title": "Verslui – paskolos, indėliai, sąskaitos | LTL kredito unija",
+      "description": "Finansiniai sprendimai verslui: investicinės ir apyvartinio kapitalo paskolos, overdraftas, terminuoti indėliai, einamoji sąskaita ir mokėjimai.",
+      "h1": "LTL kredito unija – finansinės paslaugos verslui"
+    },
+    "business_capital-loan": {
+      "title": "Paskola apyvartiniam kapitalui | LTL kredito unija",
+      "description": "Paskola apyvartiniam kapitalui įmonės kasdienei veiklai, atsargoms ir sezoniniams poreikiams finansuoti. Sužinokite sąlygas ir pateikite paraišką."
+    },
+    "business_current-account": {
+      "title": "Einamoji sąskaita verslui | LTL kredito unija",
+      "description": "Einamoji sąskaita įmonėms LTL kredito unijoje: mokėjimai eurais, SEPA pervedimai ir internetinė bankininkystė. Sužinokite, kaip atsidaryti sąskaitą."
+    },
+    "business_deposits": {
+      "title": "Terminuoti indėliai verslui | LTL kredito unija",
+      "description": "Terminuoti indėliai įmonėms su fiksuotomis palūkanomis ir įvairiais terminais. Palyginkite palūkanų normas ir apskaičiuokite pajamas skaičiuokle."
+    },
+    "business_investment-loan": {
+      "title": "Investicinė paskola verslui | LTL kredito unija",
+      "description": "Investicinė paskola įmonės plėtrai: įrangai, nekilnojamajam turtui ir kitoms investicijoms. Sužinokite sąlygas ir pateikite paraišką."
+    },
+    "business_overdraft": {
+      "title": "Overdraftas verslui | LTL kredito unija",
+      "description": "Sąskaitos kreditavimas (overdraftas) – kredito limitas einamojoje sąskaitoje. Naudokite lėšas, kai jų reikia, ir mokėkite palūkanas tik už panaudotą sumą."
+    },
+    "business_payments": {
+      "title": "Mokėjimai verslui | LTL kredito unija",
+      "description": "Mokėjimo paslaugos įmonėms: SEPA pervedimai eurais ir einamoji sąskaita LTL kredito unijoje. Sužinokite, kaip atsidaryti sąskaitą."
+    },
+    "business_pricelist": {
+      "title": "Paslaugų įkainiai verslui | LTL kredito unija",
+      "description": "LTL kredito unijos paslaugų įkainiai verslo klientams: sąskaitos, mokėjimai, kreditavimas ir kitos paslaugos."
+    },
+    "career": {
+      "title": "Karjera | LTL kredito unija",
+      "description": "Darbo galimybės LTL kredito unijoje. Peržiūrėkite laisvas darbo vietas ir prisijunkite prie mūsų komandos Vilniuje."
+    },
+    "contacts": {
+      "title": "Kontaktai – adresas, telefonas, darbo laikas | LTL",
+      "description": "LTL kredito unija: Sporto g. 18, Vilnius, tel. +370 5 205 5240, info@ltlku.lt. Darbo laikas, rekvizitai ir užklausos forma.",
+      "h1": "Kontaktai"
+    },
+    "credits": {
+      "title": "Vartojimo paskola | LTL kredito unija",
+      "description": "Vartojimo paskola automobiliui, baldams, kelionėms ar mokslams: be užstato, fiksuotos įmokos, terminas iki 84 mėnesių. Pateikite paraišką internetu."
+    },
+    "credits_consumer-loan": {
+      "title": "Vartojimo paskola | LTL kredito unija",
+      "description": "Vartojimo paskola automobiliui, baldams, kelionėms ar mokslams: be užstato, fiksuotos įmokos, terminas iki 84 mėnesių. Pateikite paraišką internetu."
+    },
+    "credits_equity-loan": {
+      "title": "Paskola įkeičiant nuosavą turtą | LTL kredito unija",
+      "description": "Paskola įkeičiant turimą nekilnojamąjį turtą – didesnei sumai ir ilgesniam terminui. Sužinokite sąlygas ir pateikite paraišką."
+    },
+    "credits_mortgage": {
+      "title": "Būsto paskola | LTL kredito unija",
+      "description": "Būsto paskola būstui įsigyti, statyti ar renovuoti. Sužinokite sąlygas, apskaičiuokite mėnesinę įmoką ir pateikite paraišką."
+    },
+    "current-account": {
+      "title": "Einamoji sąskaita privatiems | LTL kredito unija",
+      "description": "Einamoji sąskaita privatiems klientams: mokėjimai eurais, SEPA pervedimai ir internetinė bankininkystė. Sužinokite, kaip atsidaryti sąskaitą."
+    },
+    "deposits": {
+      "title": "Terminuoti indėliai | LTL kredito unija",
+      "description": "Terminuoti indėliai privatiems klientams su fiksuotomis palūkanomis ir įvairiais terminais. Palyginkite palūkanų normas ir apskaičiuokite pajamas."
+    },
+    "esg": {
+      "title": "ESG politika | LTL kredito unija",
+      "description": "LTL kredito unijos tvarumo (ESG) politika: atsakomybė aplinkai, visuomenei ir skaidri valdysena."
+    },
+    "faq": {
+      "title": "D.U.K. – dažniausiai užduodami klausimai | LTL",
+      "description": "Atsakymai į dažniausius klausimus apie indėlius, einamąją sąskaitą, narystę kredito unijoje, paskolas ir mokėjimus."
+    },
+    "financial-reporting": {
+      "title": "Finansinė atskaitomybė | LTL kredito unija",
+      "description": "LTL kredito unijos metinės ir ketvirčio finansinės ataskaitos bei kita atskaitomybės informacija nariams ir visuomenei."
+    },
+    "licence": {
+      "title": "Licencija | LTL kredito unija",
+      "description": "LTL kredito unijos licencija ir veikla Lietuvoje. Unija teikia licencijuotas finansines paslaugas, prižiūrimas Lietuvos banko."
+    },
+    "management": {
+      "title": "Valdymas | LTL kredito unija",
+      "description": "LTL kredito unijos valdymo struktūra, valdyba ir vadovai."
+    },
+    "money-loundrying": {
+      "title": "Pinigų plovimo prevencija | LTL kredito unija",
+      "description": "Pinigų plovimo ir teroristų finansavimo prevencijos priemonės LTL kredito unijoje ir klientų pareigos."
+    },
+    "news": {
+      "title": "Naujienos | LTL kredito unija",
+      "description": "LTL kredito unijos naujienos, pranešimai nariams ir informacija apie paslaugų pokyčius."
+    },
+    "news_article": {
+      "title": "Naujienos | LTL kredito unija",
+      "description": "LTL kredito unijos naujienos, pranešimai nariams ir informacija apie paslaugų pokyčius."
+    },
+    "open-account": {
+      "title": "Atidaryti sąskaitą | LTL kredito unija",
+      "description": "Kaip tapti LTL kredito unijos nariu ir atsidaryti sąskaitą: žingsnis po žingsnio ir reikalinga informacija."
+    },
+    "open-banking": {
+      "title": "Atviroji bankininkystė (API) | LTL kredito unija",
+      "description": "Atvirosios bankininkystės API pagal PSD2 trečiųjų šalių paslaugų teikėjams: prieiga prie sąskaitų informacijos ir mokėjimų inicijavimas."
+    },
+    "partnership": {
+      "title": "Tapk partneriu | LTL kredito unija",
+      "description": "Bendradarbiavimo galimybės su LTL kredito unija. Susisiekite ir tapkime partneriais."
+    },
+    "payments": {
+      "title": "Mokėjimai | LTL kredito unija",
+      "description": "Mokėjimo paslaugos privatiems klientams: SEPA pervedimai eurais ir einamoji sąskaita LTL kredito unijoje."
+    },
+    "pricelist": {
+      "title": "Paslaugų įkainiai | LTL kredito unija",
+      "description": "LTL kredito unijos paslaugų įkainiai privatiems klientams: sąskaitos, mokėjimai, paskolos ir kitos paslaugos."
+    },
+    "privacy-policy": {
+      "title": "Privatumo politika ir slapukai | LTL kredito unija",
+      "description": "Kaip LTL kredito unija tvarko asmens duomenis ir naudoja slapukus."
+    },
+    "security": {
+      "title": "Saugumas | LTL kredito unija",
+      "description": "Kaip saugiai naudotis internetine bankininkyste ir apsisaugoti nuo sukčių. Svarbiausi LTL kredito unijos saugumo patarimai."
+    },
+    "suport-and-complaints": {
+      "title": "Atsiliepimai ir skundai | LTL kredito unija",
+      "description": "Kaip pateikti atsiliepimą ar skundą LTL kredito unijai ir kaip jis nagrinėjamas."
+    },
+    "terms-and-conditions": {
+      "title": "Sąlygos ir nuostatos | LTL kredito unija",
+      "description": "LTL kredito unijos paslaugų teikimo sąlygos, taisyklės ir susiję dokumentai."
+    }
   }
 }

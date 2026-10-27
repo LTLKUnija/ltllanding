@@ -28,7 +28,7 @@ export default function PriceListPage() {
       <IndexLayout>
         <main>
           <section className={styles.priceListHero}>
-            <h3 className={styles.priceHeaderTitle}>{t("priceList.title")}</h3>
+            <h1 className={styles.priceHeaderTitle}>{t("priceList.title")}</h1>
             <div className={styles.innerNavigationLinkList}>
               <InnerLinks innerLinksData={priceListInnerLinkList} />
             </div>

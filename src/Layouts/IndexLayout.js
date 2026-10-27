@@ -2,14 +2,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import React from "react";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import Script from "next/script";
 import Head from "next/head";
+import Seo from "@/components/Seo";
 
-function IndexLayout({ children }) {
-  const router = useRouter();
-  const { locale } = router;
-
+function IndexLayout({ children, seoTitle, seoDescription, canonicalPath }) {
   const [showLinks, setShowLinks] = useState({
     usefulLinks: false,
     aboutUs: false,
@@ -59,10 +56,12 @@ function IndexLayout({ children }) {
           nonce={typeof document !== "undefined" ? (document.querySelector("meta[name=\"csp-nonce\"]")?.getAttribute("content") || "") : ""}
         />
       )}
+      <Seo
+        title={seoTitle}
+        description={seoDescription}
+        canonicalPath={canonicalPath}
+      />
       <Head>
-        <title>
-          {locale === "lt" ? "LTL kredito unija" : "LTL Credit Union"}
-        </title>
         <link
           rel="icon"
           type="image/svg+xml"

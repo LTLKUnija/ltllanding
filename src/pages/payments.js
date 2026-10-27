@@ -65,9 +65,9 @@ export default function Payments() {
             <div className={styles.paymentsArticleBlock}>
               <div className={styles.paymentsArticeBlockList}>
                 <div className={styles.paymentsArticeBlockItem}>
-                  <h1 className={styles.paymentsArticleTitle}>
+                  <h2 className={styles.paymentsArticleTitle}>
                     {t("payments.benefitsArticle.article1.title")}
-                  </h1>
+                  </h2>
                   <div className={styles.paymentsArticleDescription}>
                     {t("payments.benefitsArticle.article1.description")}
                     <Link className="readMoreLink" href="/pricelist">
@@ -84,9 +84,9 @@ export default function Payments() {
                   </div>
                 </div>
                 <div className={styles.paymentsArticeBlockItem}>
-                  <h1 className={styles.paymentsArticleTitle}>
+                  <h2 className={styles.paymentsArticleTitle}>
                     {t("payments.benefitsArticle.article2.title")}
-                  </h1>
+                  </h2>
                   <div className={styles.paymentsArticleDescription}>
                     {t("payments.benefitsArticle.article2.description")}
                   </div>

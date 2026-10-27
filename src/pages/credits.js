@@ -21,7 +21,7 @@ export default function Credits() {
     return arr.map((el, idx) => <option key={idx}>{el}</option>);
   }
   return (
-    <IndexLayout>
+    <IndexLayout canonicalPath="/credits/consumer-loan">
       <main className={styles.creditsPage}>
         <section className={styles.creditsPageWrapper}>
           <div className={styles.creditsPageList}>

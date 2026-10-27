@@ -17,6 +17,7 @@ export default function Home({ landingArticles }) {
     <>
       <IndexLayout>
         <main>
+          <h1 className="visually-hidden">{t("seo.home.h1")}</h1>
           <section className={styles.heroblock}>
             <SimpleSlider />
             <div className={styles.formWrapper}>

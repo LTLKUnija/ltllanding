@@ -49,9 +49,9 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-              <h1 className={styles.slideOneTitle}>
+              <h2 className={styles.slideOneTitle}>
                 {t("indexPage.slideOne.heroBlockH1New")}
-              </h1>
+              </h2>
               <ul className={styles.slideOneBullets}>
                  <li>
                   <Trans
@@ -95,7 +95,7 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1>{t("indexPage.slideTwo.heroBlockH1")}</h1>
+            <h2>{t("indexPage.slideTwo.heroBlockH1")}</h2>
             <p className={styles.description}>
               {t("indexPage.slideTwo.heroBlockText")}
             </p>
@@ -116,7 +116,7 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1>{t("indexPage.slideThree.heroBlockH1")}</h1>
+            <h2>{t("indexPage.slideThree.heroBlockH1")}</h2>
             <p className={styles.description}>
               {t("indexPage.slideThree.heroBlockText")}
             </p>

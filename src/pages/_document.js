@@ -14,9 +14,9 @@ class MyDocument extends Document {
   }
 
   render() {
-    const { nonce } = this.props
+    const { nonce, locale } = this.props
     return (
-      <Html lang="en">
+      <Html lang={locale || 'lt'}>
         <Head nonce={nonce}>
             <meta name="csp-nonce" content={nonce} />
             <link nonce={nonce} rel="preconnect" href="https://fonts.googleapis.com" />

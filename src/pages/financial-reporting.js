@@ -47,9 +47,9 @@ export default function FinancialReporting() {
     <IndexLayout>
       <main>
         <section className={styles.financialReportingSection}>
-          <h3 className={styles.financialReportingTitle}>
+          <h1 className={styles.financialReportingTitle}>
             {t("finacialReporting.title")}
-          </h3>
+          </h1>
         </section>
         <section className={styles.innerNavigationSection}>
           <InnerLinks innerLinksData={finacialReportingInnerLinkList} />

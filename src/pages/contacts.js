@@ -25,6 +25,7 @@ export default function Contacts() {
   return (
     <IndexLayout>
       <main>
+        <h1 className="visually-hidden">{t("seo.contacts.h1")}</h1>
         <section className={styles.contactsPageWrapper}>
           <div className={styles.contactsPageList}>
             <div className={styles.contactsHeroItem}>
@@ -56,7 +57,7 @@ export default function Contacts() {
               </div>
             </div>
           </div>
-          {gmapIsLoaded ? <Gmap center={defaultCenter} /> : <h2>Is Loading</h2>}
+          {gmapIsLoaded && <Gmap center={defaultCenter} />}
         </section>
         <section className={styles.contactsCustomerServiceSection}>
           <div className={styles.contactsCustomerServiceWrapper}>

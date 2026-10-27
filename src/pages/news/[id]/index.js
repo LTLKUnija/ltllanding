@@ -1,7 +1,7 @@
 import styles from "@/styles/news[id].module.scss";
 import { useRouter } from "next/router";
 import IndexLayout from "@/Layouts/IndexLayout";
-import { findNewsBySlug, formatText } from "@/utils/helpers";
+import { findNewsBySlug, formatText, previewTextMaker } from "@/utils/helpers";
 import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -40,25 +40,26 @@ export default function NewsPage() {
     }
   }, [newsData, router.query.id]);
 
+  const isLt = router.locale === "lt";
+  const newsTitle = selectedNews && (isLt ? selectedNews.title : selectedNews.titleEn);
+  const newsText = selectedNews && (isLt ? selectedNews.text : selectedNews.textEn);
+  const seoDescription =
+    newsText && previewTextMaker(newsText, 30).slice(0, 155).trim();
+
   return (
-    <IndexLayout>
+    <IndexLayout
+      seoTitle={newsTitle && `${newsTitle} | ${t("seo.default.title")}`}
+      seoDescription={seoDescription}
+    >
       <main className={styles.newsPageMain}>
         <div className={styles.silngleNewsWrapper}>
-          <h1 className="page-title">{t("footerNavLinks.news")}</h1>
+          <div className="page-title">{t("footerNavLinks.news")}</div>
 
           {selectedNews && (
             <div>
               <div className={styles.newsDate}>{selectedNews.date}</div>
-              <div className={styles.newsTitle}>
-                {router.locale === "lt"
-                  ? selectedNews.title
-                  : selectedNews.titleEn}
-              </div>
-              <div className={styles.newsText}>
-                {router.locale === "lt"
-                  ? formatText(selectedNews.text)
-                  : formatText(selectedNews.textEn)}
-              </div>
+              <h1 className={styles.newsTitle}>{newsTitle}</h1>
+              <div className={styles.newsText}>{formatText(newsText)}</div>
             </div>
           )}
           <span

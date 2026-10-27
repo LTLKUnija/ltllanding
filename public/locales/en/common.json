@@ -1546,5 +1546,150 @@
   },
   "faq": {
     "pageTitle": "F.A.Q."
+  },
+  "seo": {
+    "default": {
+      "title": "LTL Credit Union",
+      "description": "LTL Credit Union in Vilnius: consumer and mortgage loans, term deposits, current accounts and payments for private and business customers."
+    },
+    "home": {
+      "title": "LTL Credit Union – loans, deposits and accounts",
+      "description": "Credit union in Vilnius: consumer and mortgage loans, term deposits, current accounts and payments for private and business customers.",
+      "h1": "LTL Credit Union – financial services for private customers"
+    },
+    "business": {
+      "title": "Business – loans, deposits, accounts | LTL Credit Union",
+      "description": "Financial solutions for business: investment and working capital loans, overdraft, term deposits, current accounts and payments.",
+      "h1": "LTL Credit Union – financial services for business"
+    },
+    "business_capital-loan": {
+      "title": "Working capital loan | LTL Credit Union",
+      "description": "A working capital loan to finance your company's day-to-day operations, inventory and seasonal needs. See the terms and apply."
+    },
+    "business_current-account": {
+      "title": "Business current account | LTL Credit Union",
+      "description": "A current account for companies at LTL Credit Union: euro payments, SEPA transfers and online banking. Find out how to open an account."
+    },
+    "business_deposits": {
+      "title": "Term deposits for business | LTL Credit Union",
+      "description": "Term deposits for companies with fixed interest rates and a choice of terms. Compare rates and calculate your return with the calculator."
+    },
+    "business_investment-loan": {
+      "title": "Investment loan for business | LTL Credit Union",
+      "description": "An investment loan for business growth: equipment, real estate and other investments. See the terms and apply."
+    },
+    "business_overdraft": {
+      "title": "Business overdraft | LTL Credit Union",
+      "description": "An overdraft is a credit limit on your current account. Use funds when you need them and pay interest only on the amount used."
+    },
+    "business_payments": {
+      "title": "Business payments | LTL Credit Union",
+      "description": "Payment services for companies: SEPA euro transfers and a current account at LTL Credit Union. Find out how to open an account."
+    },
+    "business_pricelist": {
+      "title": "Business price list | LTL Credit Union",
+      "description": "LTL Credit Union fees for business customers: accounts, payments, lending and other services."
+    },
+    "career": {
+      "title": "Careers | LTL Credit Union",
+      "description": "Job opportunities at LTL Credit Union. See open positions and join our team in Vilnius."
+    },
+    "contacts": {
+      "title": "Contacts – address, phone, opening hours | LTL",
+      "description": "LTL Credit Union: Sporto str. 18, Vilnius, phone +370 5 205 5240, info@ltlku.lt. Opening hours, company details and contact form.",
+      "h1": "Contacts"
+    },
+    "credits": {
+      "title": "Consumer loan | LTL Credit Union",
+      "description": "A consumer loan for a car, furniture, travel or studies: no collateral, fixed payments, terms up to 84 months. Apply online."
+    },
+    "credits_consumer-loan": {
+      "title": "Consumer loan | LTL Credit Union",
+      "description": "A consumer loan for a car, furniture, travel or studies: no collateral, fixed payments, terms up to 84 months. Apply online."
+    },
+    "credits_equity-loan": {
+      "title": "Equity loan | LTL Credit Union",
+      "description": "A loan secured by real estate you own, for a larger amount and a longer term. See the terms and apply."
+    },
+    "credits_mortgage": {
+      "title": "Mortgage loan | LTL Credit Union",
+      "description": "A mortgage loan to buy, build or renovate a home. See the terms, calculate your monthly payment and apply."
+    },
+    "current-account": {
+      "title": "Current account | LTL Credit Union",
+      "description": "A current account for private customers: euro payments, SEPA transfers and online banking. Find out how to open an account."
+    },
+    "deposits": {
+      "title": "Term deposits | LTL Credit Union",
+      "description": "Term deposits for private customers with fixed interest rates and a choice of terms. Compare rates and calculate your return."
+    },
+    "esg": {
+      "title": "ESG policy | LTL Credit Union",
+      "description": "LTL Credit Union's sustainability (ESG) policy: responsibility to the environment and society, and transparent governance."
+    },
+    "faq": {
+      "title": "FAQ – frequently asked questions | LTL Credit Union",
+      "description": "Answers to the most common questions about deposits, current accounts, credit union membership, loans and payments."
+    },
+    "financial-reporting": {
+      "title": "Financial reporting | LTL Credit Union",
+      "description": "LTL Credit Union's annual and quarterly financial statements and other reporting for members and the public."
+    },
+    "licence": {
+      "title": "Licence | LTL Credit Union",
+      "description": "LTL Credit Union's licence and activities in Lithuania. The credit union provides licensed financial services supervised by the Bank of Lithuania."
+    },
+    "management": {
+      "title": "Management | LTL Credit Union",
+      "description": "LTL Credit Union's management structure, board and executives."
+    },
+    "money-loundrying": {
+      "title": "Money laundering prevention | LTL Credit Union",
+      "description": "Anti-money laundering and counter-terrorist financing measures at LTL Credit Union and customers' obligations."
+    },
+    "news": {
+      "title": "News | LTL Credit Union",
+      "description": "LTL Credit Union news, announcements for members and information about changes to services."
+    },
+    "news_article": {
+      "title": "News | LTL Credit Union",
+      "description": "LTL Credit Union news, announcements for members and information about changes to services."
+    },
+    "open-account": {
+      "title": "Open an account | LTL Credit Union",
+      "description": "How to become a member of LTL Credit Union and open an account: step by step and the information you need."
+    },
+    "open-banking": {
+      "title": "Open banking (API) | LTL Credit Union",
+      "description": "Open banking API under PSD2 for third-party providers: access to account information and payment initiation."
+    },
+    "partnership": {
+      "title": "Become a partner | LTL Credit Union",
+      "description": "Partnership opportunities with LTL Credit Union. Get in touch and let's work together."
+    },
+    "payments": {
+      "title": "Payments | LTL Credit Union",
+      "description": "Payment services for private customers: SEPA euro transfers and a current account at LTL Credit Union."
+    },
+    "pricelist": {
+      "title": "Price list | LTL Credit Union",
+      "description": "LTL Credit Union fees for private customers: accounts, payments, loans and other services."
+    },
+    "privacy-policy": {
+      "title": "Privacy policy and cookies | LTL Credit Union",
+      "description": "How LTL Credit Union processes personal data and uses cookies."
+    },
+    "security": {
+      "title": "Security | LTL Credit Union",
+      "description": "How to use online banking safely and protect yourself from fraud. Key security tips from LTL Credit Union."
+    },
+    "suport-and-complaints": {
+      "title": "Feedback and complaints | LTL Credit Union",
+      "description": "How to submit feedback or a complaint to LTL Credit Union and how it is handled."
+    },
+    "terms-and-conditions": {
+      "title": "Terms and conditions | LTL Credit Union",
+      "description": "LTL Credit Union's terms of service, rules and related documents."
+    }
   }
 }

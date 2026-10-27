@@ -49,9 +49,9 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1 className={styles.slideOneTitle}>
+            <h2 className={styles.slideOneTitle}>
               {t("businessIndexPage.slideOne.heroBlockH1New")}
-            </h1>
+            </h2>
 
             <ul className={styles.slideOneBullets}>
               <li>
@@ -96,7 +96,7 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1>{t("businessIndexPage.slideTwo.heroBlockH1")}</h1>
+            <h2>{t("businessIndexPage.slideTwo.heroBlockH1")}</h2>
             <p className={styles.description}>
               {t("businessIndexPage.slideTwo.heroBlockText")}
             </p>
@@ -120,7 +120,7 @@ export default function SimpleSlider() {
               style={{ width: 200, height: 190 }}
               className={styles.heroImage}
             />
-            <h1>{t("businessIndexPage.slideThree.heroBlockH1")}</h1>
+            <h2>{t("businessIndexPage.slideThree.heroBlockH1")}</h2>
             <p className={styles.description}>
               {t("businessIndexPage.slideThree.heroBlockText")}
             </p>

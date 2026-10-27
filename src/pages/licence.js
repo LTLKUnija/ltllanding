@@ -17,7 +17,7 @@ export default function Licence() {
       <main>
         <section className={styles.licenceSection}>
           <div className={styles.licenceWrapper}>
-            <h3>{t("licence.pageTitle")}</h3>
+            <h1>{t("licence.pageTitle")}</h1>
             <p>{t("licence.description")}</p>
           </div>
         </section>

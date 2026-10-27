@@ -19,6 +19,7 @@ export default function Home() {
     <>
       <IndexLayout>
         <main>
+          <h1 className="visually-hidden">{t("seo.business.h1")}</h1>
           <section className={styles.heroblock}>
             <SimpleSlider />
             <LoanApplicationForm type="business" />

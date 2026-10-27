@@ -27,7 +27,7 @@ export default function InterestRate({ rateList }) {
 
       <p>{t("termDeposit.interestRatesArticle.description")}</p>
       <div className={styles.ratesNotesWrapper}>
-        <h1>{t("termDeposit.interestRatesArticle.note1")}</h1>
+        <p className={styles.note}>{t("termDeposit.interestRatesArticle.note1")}</p>
         <p>{t("termDeposit.interestRatesArticle.note2")}</p>
       </div>
       <div className={styles.ratesContainer}>
